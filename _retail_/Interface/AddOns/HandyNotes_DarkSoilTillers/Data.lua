@@ -43,7 +43,7 @@ points[ns.votfw] = {	-- "D", ["Author"], tip
 	[36485291] = { "D" },
 	[36765099] = { "D" },
 	[37184876] = { "D" },
-	[37734622] = { "D", "Author" },	-- *
+	[37734623] = { "D" },
 	[37994414] = { "D" },
 	[38245042] = { "D" },
 	[38374595] = { "D" },
@@ -61,9 +61,9 @@ points[ns.votfw] = {	-- "D", ["Author"], tip
 	[39683888] = { "D", "Under the trees.\nVery difficult to see" },
 	[39835116] = { "D", "Under the foliage" },
 	[39854587] = { "D" },
-	[39944846] = { "D", "Author", "Under the foliage" },	-- *
+	[39944845] = { "D", "Under the foliage" },
 	[39985194] = { "D", "Under the foliage" },
-	[40034753] = { "D", "Author" }, -- or 47.54
+	[40034754] = { "D", },
 	[40115108] = { "D", "Under the foliage" },
 	[40233989] = { "D" },
 	[40283825] = { "D", "Under the foliage" },
@@ -86,6 +86,7 @@ points[ns.votfw] = {	-- "D", ["Author"], tip
 	[41264902] = { "D", "Under the foliage" },
 	[41404578] = { "D", "Under the foliage" },
 	[41413992] = { "D", "Author" },	-- *
+	[41493820] = { "D", "Descend into the Springtail Warren" },
 	[41494400] = { "D", "Author", "Under the foliage" },	-- *
 	[41585279] = { "D", "Under the foliage" },
 	[41653332] = { "D" },
@@ -143,7 +144,7 @@ points[ns.votfw] = {	-- "D", ["Author"], tip
 	[46383631] = { "D" },
 	[46453447] = { "D", "Under the bridge" },
 	[46584225] = { "D", "Under the water tower" },
-	[46625282] = { "D", "Author", "Under the foliage" },	-- *
+	[46635283] = { "D", "Under the foliage" },
 	[46653394] = { "D", "Under the foliage" },
 	[46743295] = { "D", "Under the foliage" },
 	[46815580] = { "D", "Author" },	-- *
@@ -180,16 +181,21 @@ points[ns.votfw] = {	-- "D", ["Author"], tip
 	[51143083] = { "D", "Under the foliage" },
 	[51192938] = { "D" },
 	[51342897] = { "D" },
-	[29533059] = { "N", 1278, "Sho" },
+	[29533059] = { "N", 1278, "Sho" }, -- 4
 	[30945310] = { "N", 1276, "Old Hillpaw" },
-	[31515807] = { "N", 1275, "Ella" },
-	[34414676] = { "N", 1277, "Chee Chee" },
+	[31515807] = { "N", 1275, "Ella" }, -- 3
+	[34414676] = { "N", 1277, "Chee Chee" }, -- 3
 	[41733002] = { "N", 1282, "Fish Fellreed" },
 	[44653406] = { "N", 1279, "Haohan Mudclaw" },
-	[45093377] = { "N", 1280, "Tina Mudclaw" , "Inside the building" },
+	[45093377] = { "N", 1280, "Tina Mudclaw" , "Inside the building" }, -- 3
 	[48283385] = { "N", 1283, "Farmer Fung" },
-	[53575257] = { "N", 1273, "Jogu the Drunk" },
+	[53575257] = { "N", 1273, "Jogu the Drunk" }, -- 4
 	[53165180] = { "N", 1281, "Gina Mudclaw" },
+	[52254894] = { "O", 30526, "Dog", "Please see my \"Loose Pebble\" AddOn for\n"
+										.."allowing Dog to visit (Broken Isles) Dalaran!" },
+						-- Reminder: See core for how I treat 30526
+	[42395000] = { "O", 30526, "Lost Dog", "A Lost Dog will appear here when you\n"
+										.."reach Revered +12,600 with The Tillers" },
 	[52024800] = { "O", 30252, "Farmer Yoon", "Begin your Tillers journey here!\n"
 											.."Please enable \"low level\" quests" },
 	[52254879] = { "O", 30257, "Farmer Yoon", "Continue your Tillers journey here!" },
@@ -225,6 +231,13 @@ points[ns.votfw] = {	-- "D", ["Author"], tip
 											.."Tillers rep.\n\n"
 											.."(You'll notice a cooking daily too. This\n"
 											.."does nothing for The Tillers)" },
+	[54004650] = { "O", 31945, "One-Off Quests", "Sho (4), Ella (3), Chee Chee (4), Tina (4) and\n"
+												.."Jogu (4) have one-off quests which become\n"
+												.."available at reputation milestones, such as\n"
+												.."when you newly attain \"Friend\" status.\n"
+												.."These award a nice chunk of reputation.\n\n"
+												.."Tina's quests are actually items dropped by\n"
+												.."mobs and which are then turned in to her" },
 	-- Note: Author not implemented for "B"
 	[32886269] = { "B", "Blackhoof", "Battle Horn" },
 	[34545922] = { "B", "Blackhoof", "Battle Horn"  },

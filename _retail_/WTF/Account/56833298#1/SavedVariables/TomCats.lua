@@ -1,7 +1,7 @@
 
 TomCats_Account = {
 	["errorLog"] = {
-		["version"] = "2.4.45",
+		["version"] = "2.4.46",
 	},
 	["hallowsend"] = {
 		["iconScale"] = 1,
@@ -124,7 +124,7 @@ TomCats_Account = {
 		},
 	},
 	["discoveriesVersion"] = "2.4.35",
-	["lastVersionSeen"] = "2.4.45",
+	["lastVersionSeen"] = "2.4.46",
 	["preferences"] = {
 		["dragonGlyphsTipShown"] = true,
 		["TomCats-LunarFestivalMinimapButton"] = {

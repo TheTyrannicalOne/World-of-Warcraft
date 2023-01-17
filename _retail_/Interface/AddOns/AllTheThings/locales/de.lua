@@ -515,6 +515,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
 		L.PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
 		L.PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		L.SYNC = "Sync";
@@ -823,15 +824,12 @@ for key,value in pairs({
 		[-910] = "Jagd: Seelenfresser",								-- Hunt: Alpha Devourers
 		[-911] = "Jagd: Schemenhunde",								-- Hunt: Shadehounds
 		[-912] = "Jagd: Geflügelte Seelenfresser",					-- Hunt: Winged Soul Eaters
-		[-913] = "Peiniger von Torghast",							-- Tormentors of Torghast
-		[-977] = "Maelie die Wanderin",								-- Maelie the Wanderer
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "Seelengestalt Formen",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Rat der Aufgestiegenen",						-- Ascended Counil
 			[-973] = "Loyalität",									-- Loyalty
 			[-975] = "Demut",										-- Humility
 		-- SL Revendreth/Venthyr
@@ -866,6 +864,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Valdrakkenabkommen",								-- Valdrakken Accord
 		[-1142] = "Luftige Herausforderungen",						-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent
@@ -3169,8 +3168,13 @@ for key,value in pairs({
 	[357246] = "Zerfledderte Schriftrolle",	-- Tattered Scroll
 	[357467] = "Verbotene Tinte",	-- Forbidden Ink
 	[357487] = "Schicker Sonnenschirm",	-- Stylish Parasol
+	[357515] = "Sack Hafer",	-- Sack of Oats
+	[357526] = "Leerer Wassereimer",	-- Empty Water Bucket
+	[357541] = "Weggeworfenes Hufeisen",	-- Discarded Horseshoe
 	[357565] = "Vergessene Angelrute",	-- Forgotten Angler's Rod
+	[357572] = "Rapier der Furchtlosen",	-- Rapier of the Fearless
 	[357584] = "Vyrthas Schreckensgleve",	-- Vyrtha's Dredglaive
+	[357683] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	[357697] = "Schatz des Zuchtmeisters",	-- Taskmaster's Trove
 	[357726] = "Zerbrochener Speer",	-- Broken Spear
 	[357758] = "Seuchenfass",	-- Plague Barrel
@@ -3194,6 +3198,8 @@ for key,value in pairs({
 	[364932] = "Lodernder Barren",	-- Blazing Ingot
 	[364937] = "Phasenschröpfer",	-- Phasic Siphoner
 	[364987] = "Mittlertagebuch",	-- Broker Journal
+	[364994] = "Spektralhacke",	-- Spectral Pick
+	[365084] = "Pike des Quälers",	-- Tormentor's Pike
 	[365093] = "Theotars Liederbücher",	-- Theotar's Caroling Books
 	[368205] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[368206] = "Schlundgebundene Truhe",	-- Mawsworn Cache
@@ -3424,13 +3430,18 @@ for key,value in pairs({
 	[377534] = "Abgelieferter Tresor",	-- Delivered Vault
 	[377899] = "Versteckte Flunkergeisel",	-- Hidden Hornswog Hostage
 	[377900] = "Kriegsspeer der Nokhud",	-- Nokhud Warspear
+	[377938] = "Prismatischer Springerschwarm",	-- Prismatic Leaper School
 	[378010] = "Vergessener Drachenschatz",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Springflutbräu",	-- Riptide Brew
+	[378088] = "Kristalline Blume",	-- Crystalline Flower
 	[378820] = "Sprudelpunsch",	-- Popfizz Punch
 	[378857] = "Verlorene Obsidiantruhe",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Verzierte Statue",	-- Ornamented Statue
 	[379296] = "Abgebrochene Leiste",	-- Broken Banding
 	[379297] = "Krach-Bumm-Gesöff",	-- Slam Bam Swill
+	[379314] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[379321] = "Mysteriöser Tatzenabdruck",	-- Mysterious Paw Print
 	[380429] = "Goldene Klaue",	-- Golden Claw
 	[380430] = "Schwanzfragment",	-- Tail Fragment
@@ -3506,6 +3517,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Die Große Schatzkammer",	-- The Great Vault
 	[381045] = "Goldener Drachenkelch",	-- Golden Dragon Goblet
+	[381069] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[381094] = "Eleganter Leinwandpinsel",	-- Elegant Canvas Brush
 	[381107] = "Sandhaufen",	-- Sand Pile
 	[381108] = "Yennus Karte",	-- Yennu's Map
@@ -3539,7 +3551,7 @@ for key,value in pairs({
 	[381650] = "Anfrage des Archivars",	-- Archivists' Request
 	[381653] = "Einschreibungen für Zahnflatterfeuer",	-- Fang Flap Fire Signups
 	[381661] = "Anfrage des Archivars",	-- Archivists' Request
-	[381662] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Anfrage des Archivars",	-- Archivists' Request
 	[381663] = "Manastürmen für Anfänger",	-- Manastorming For Beginners
 	[381664] = "Anfrage des Archivars",	-- Archivists' Request
 	[381667] = "Anfrage des Archivars",	-- Archivists' Request
@@ -3552,18 +3564,20 @@ for key,value in pairs({
 	[381701] = "GESUCHT: Mara'nar der Donnernde",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Truhe der Flut",	-- Chest of the Flood
 	[382029] = "Bewegte Erde",	-- Disturbed Dirt
+	[382071] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[382166] = "Das Rubinfestmahl!",	-- The Ruby Feast!
+	[382180] = "Überhitzter Magmadrescherschwarm",	-- Overheated Magma Thresher Pool
 	[382193] = "Truhe der Elemente",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Kiste mit frischem Leuchtfisch",	-- Case of Fresh Gleamfish
 	[384318] = "Unauffälliges Lesezeichen",	-- Inconspicuous Bookmark
+	[384370] = "Vorsätzlich schlampige Notizen",	-- Deliberately Delinquent Notes
 	[384405] = "Halbgarer Fisch",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Versteinertes Drachenei",	-- Petrified Dragon Egg
 	[385022] = "Erodiertes Fossil",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

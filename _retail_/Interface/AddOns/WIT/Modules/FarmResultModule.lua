@@ -1,7 +1,31 @@
 local WIT, core = ...
 
-function core.FarmResultModule(name, data, category)
+function core.FarmResultModule(name, data, category, activity)
     local self = core.GridModule(name, data, category)
+    self.Activity = activity
+
+    function self.GetData()
+        local data = {}
+        local ignoredIds = core.Config.GetUserIgnoredFarms()
+
+        for _, farm in pairs(self.Data) do
+            if not core.TableHelper.IndexOf(ignoredIds, farm.Id) then
+                table.insert(data, farm)
+            end
+        end
+
+        if not self.Activity then
+            return data
+        end
+
+        for _, farm in pairs(core.Config.GetUserFarms()) do
+            if farm.Activity == self.Activity then
+                table.insert(data, farm)
+            end
+        end
+
+        return data
+    end
 
     local resultColumn = core.GridColumns.ResultsValueColumn()
 
@@ -55,6 +79,25 @@ local function removePlannedFarm(row)
     module.Refresh()
 end
 
+local function remove(row)
+    if row.Data.IsCustom then
+        row.Data.Activity = nil
+        local module = core.UI.MainWindow.CurrentModule()
+        module.ClearCache()
+        module.Refresh()
+
+        return
+    end
+
+    core.UI.ConfirmableDialog({ Text = core.GetString("RemovePredefinedFarmConfirmationMessage"), OnAccept = function()
+        core.TableHelper.Insert(core.Config.GetUserIgnoredFarms(), row.Data.Id)
+
+        local module = core.UI.MainWindow.CurrentModule()
+        module.ClearCache()
+        module.Refresh()
+    end })
+end
+
 local function importRoute(row)
     local route = nil
 
@@ -96,6 +139,13 @@ function core.FarmResultItemMenu(module, row)
             Action = removePlannedFarm,
             ActionArg = row,
             IsVisible = function(row) return tContains(core.Config.GetPlannedFarmIds(), row.Data.Id) end
+        },
+        {
+            Name = "Remove",
+            DisplayName = core.GetString("Remove"),
+            Action = remove,
+            ActionArg = row,
+            --IsVisible = function(row) return not row.Data.IsCustom end
         },
     }
 

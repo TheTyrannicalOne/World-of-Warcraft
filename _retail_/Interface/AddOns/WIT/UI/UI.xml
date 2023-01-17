@@ -10,4 +10,5 @@
     <Script file="MainWindow.lua"/>
     <Script file="MinimapIcon.lua"/>
     <Script file="Recorder.lua"/>
+    <Script file="FlipEditor.lua"/>
 </Ui>

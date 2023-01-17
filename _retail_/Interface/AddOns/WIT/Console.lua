@@ -115,6 +115,11 @@ local function OpenWITRecorderWindow()
     core.Recorder().Show()
 end
 
+local function OpenWITFlipEditorWindow()
+    core.UI.MainWindow.Init()
+    core.FlipEditor().Show()
+end
+
 local function CloseWITWindow()
     core.UI.MainWindow.Close()
 end
@@ -136,6 +141,8 @@ local function ConsoleHandler(input)
     options["close"] = CloseWITWindow
     options["recorder"] = OpenWITRecorderWindow
     options["rec"] = OpenWITRecorderWindow
+    options["flip"] = OpenWITFlipEditorWindow
+    options["flipeditor"] = OpenWITFlipEditorWindow
     options["bagvalue"] = core.PrintInventoryValue
     options["bankvalue"] = core.PrintBankValue
     options["baglist"] = core.ListInventory

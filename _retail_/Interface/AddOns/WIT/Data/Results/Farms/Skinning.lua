@@ -362,3 +362,62 @@ core.Data.Results.Farms.DesolateLeather = {
 		{ Id = core.Items.Skins.HeavyCallousHide, Quantity = 8 },
     }
 }
+
+
+
+-- Dragonflight
+
+core.Data.Results.Farms.DenseHide = {
+    Id = 'DenseHide',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Skins.DenseHide,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.OhnahranPlains },
+    Routes = { core.Data.Routes.Skinning.DenseHide },
+    Results = {
+		
+		
+		{ Id = core.Items.Skins.ResilientLeather, Quantity = 420 },
+		{ Id = core.Items.Skins.DenseHide, Quantity = 11 },
+
+		
+    }
+}
+
+core.Data.Results.Farms.AdamantScales = {
+    Id = 'AdamantScales',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Skins.AdamantScales,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Skinning.AdamantScales },
+    Results = {
+		
+		
+		{ Id = core.Items.Skins.AdamantScales, Quantity = 472 },
+		
+		{ Id = core.Items.Skins.LustrousScaledHide, Quantity = 8 },
+		{ Id = core.Items.Skins.FlawlessProtoDragonScale, Quantity = 34 },
+
+		
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

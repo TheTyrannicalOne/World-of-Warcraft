@@ -1,6 +1,7 @@
 local WIT, core = ...
 
 core.Data.Results.Flips.ProspectingCopperOre = {
+    Id = "ProspectingCopperOre",
     ItemId = core.Items.Ores.Copper,
     Quantity = 200,
     Content = core.Content.Vanilla,
@@ -15,6 +16,7 @@ core.Data.Results.Flips.ProspectingCopperOre = {
 }
 
 core.Data.Results.Flips.ProspectingTinOre = {
+    Id = "ProspectingTinOre",
     ItemId = core.Items.Ores.Tin,
     Quantity = 200,
     Content = core.Content.Vanilla,
@@ -32,6 +34,7 @@ core.Data.Results.Flips.ProspectingTinOre = {
 }
 
 core.Data.Results.Flips.ProspectingIronOre = {
+    Id = "ProspectingIronOre",
     ItemId = core.Items.Ores.Iron,
     Quantity = 200,
     Content = core.Content.Vanilla,
@@ -47,6 +50,7 @@ core.Data.Results.Flips.ProspectingIronOre = {
 }
 
 core.Data.Results.Flips.ProspectingThoriumOre = {
+    Id = "ProspectingThoriumOre",
     ItemId = core.Items.Ores.Thorium,
     Quantity = 200,
     Content = core.Content.Vanilla,
@@ -63,6 +67,7 @@ core.Data.Results.Flips.ProspectingThoriumOre = {
 }
 
 core.Data.Results.Flips.ProspectingFelIronOre = {
+    Id = "ProspectingFelIronOre",
     ItemId = core.Items.Ores.FelIron,
     Quantity = 200,
     Content = core.Content.TBC,
@@ -85,6 +90,7 @@ core.Data.Results.Flips.ProspectingFelIronOre = {
 }
 
 core.Data.Results.Flips.ProspectingSaroniteOre = {
+    Id = "ProspectingSaroniteOre",
     ItemId = core.Items.Ores.Saronite,
     Quantity = 200,
     Content = core.Content.WotLK,
@@ -109,6 +115,7 @@ core.Data.Results.Flips.ProspectingSaroniteOre = {
 }
 
 core.Data.Results.Flips.ProspectingGhostIronOre = {
+    Id = "ProspectingGhostIronOre",
     ItemId = core.Items.Ores.GhostIron,
     Quantity = 200,
     Content = core.Content.MoP,
@@ -130,6 +137,7 @@ core.Data.Results.Flips.ProspectingGhostIronOre = {
 }
 
 core.Data.Results.Flips.ProspectingLeystone = {
+    Id = "ProspectingLeystone",
     ItemId = core.Items.Ores.Leystone,
     Quantity = 200,
     Content = core.Content.Legion,
@@ -147,6 +155,7 @@ core.Data.Results.Flips.ProspectingLeystone = {
 }
 
 core.Data.Results.Flips.ProspectingFelslate = {
+    Id = "ProspectingFelslate",
     ItemId = core.Items.Ores.Felslate,
     Quantity = 200,
     Content = core.Content.Legion,
@@ -165,6 +174,7 @@ core.Data.Results.Flips.ProspectingFelslate = {
 }
 
 core.Data.Results.Flips.ProspectingMoneliteOre = {
+    Id = "ProspectingMoneliteOre",
     ItemId = core.Items.Ores.Monelite,
     Quantity = 200,
     Content = core.Content.Legion,
@@ -186,6 +196,7 @@ core.Data.Results.Flips.ProspectingMoneliteOre = {
 }
 
 core.Data.Results.Flips.ProspectingOsmeniteOre = {
+    Id = "ProspectingOsmeniteOre",
     ItemId = core.Items.Ores.Osmenite,
     Quantity = 200,
     Content = core.Content.Legion,
@@ -207,6 +218,7 @@ core.Data.Results.Flips.ProspectingOsmeniteOre = {
 
 
 core.Data.Results.Flips.ProspectingLaestriteOre = {
+    Id = "ProspectingLaestriteOre",
     ItemId = core.Items.Ores.LaestriteOre,
     Quantity = 200,
     Content = core.Content.Shadowlands,

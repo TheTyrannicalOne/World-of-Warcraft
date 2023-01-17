@@ -244,19 +244,6 @@ spec:RegisterCombatLogEvent( function( _, subtype, _, source, _, _, _, destGUID,
                     imp.max = imp.max + 15
                 end
 
-            elseif spellID == 364198 then
-                -- Tier 28: Malicious Imp
-                -- TODO: Revise to Imp Gang Boss.
-                imps[ destGUID ] = {
-                    t = now,
-                    casts = 0,
-                    expires = math.ceil( now + 40 ),
-                    max = math.ceil( now + 40 ),
-                    gang_boss = true
-                }
-                table.insert( imp_gang_boss, now + 40 )
-
-
             -- Other Demons, 15 seconds uptime.
             -- 267986 - Prince Malchezaar
             -- 267987 - Illidari Satyr
@@ -270,6 +257,9 @@ spec:RegisterCombatLogEvent( function( _, subtype, _, source, _, _, _, destGUID,
             -- 268001 - Ur'zul
             elseif spellID >= 267986 and spellID <= 268001 then table.insert( other_demon, now + 15 )
             elseif spellID == 387590 then table.insert( other_demon, now + 10 ) end -- Pit Lord from Gul'dan's Ambition
+
+        elseif spellID == 387458 and imps[ destGUID ] then
+            imps[ destGUID ].boss = true
 
         elseif subtype == "SPELL_CAST_START" and spellID == 105174 then
             C_Timer.After( 0.25, UpdateShardsForGuldan )
@@ -403,14 +393,14 @@ spec:RegisterHook( "reset_precast", function()
     wipe( imp_gang_boss_v )
 
     for n, t in pairs( imps ) do
-        if t.gang_boss then table.insert( imp_gang_boss_v, t.expires )
+        if t.boss then table.insert( imp_gang_boss_v, t.expires )
         else table.insert( wild_imps_v, t.expires ) end
     end
 
     table.sort( wild_imps_v )
     table.sort( imp_gang_boss_v )
 
-    local difference = #wild_imps_v - GetSpellCount( 196277 )
+    local difference = #wild_imps_v + #imp_gang_boss_v - GetSpellCount( 196277 )
 
     while difference > 0 do
         table.remove( wild_imps_v, 1 )
@@ -432,7 +422,6 @@ spec:RegisterHook( "reset_precast", function()
 
     wipe( other_demon_v )
     for n, t in ipairs( other_demon ) do other_demon_v[ n ] = t end
-
 
     if #dreadstalkers_v > 0  then wipe( dreadstalkers_v ) end
     if #vilefiend_v > 0      then wipe( vilefiend_v )     end
@@ -555,6 +544,12 @@ spec:RegisterStateExpr( "spawn_remains", function ()
         return max( 0, guldan_v[ #guldan_v ] - query_time )
     end
     return 0
+end )
+
+
+-- 20230109
+spec:RegisterStateExpr( "igb_ratio", function ()
+    return buff.imp_gang_boss.stack / buff.wild_imps.stack
 end )
 
 
@@ -787,6 +782,29 @@ spec:RegisterStateTable( "imps_spawned_during", setmetatable( {}, {
     end,
 } ) )
 
+
+spec:RegisterPhasedVariable( "next_tyrant",
+    -- Default value.
+    function() return 14 + talent.grimoire_felguard.rank + talent.summon_vilefiend.rank end,
+    -- Value update function; include all conditions here.
+    function( current, default )
+        if current == nil or time < default then return default end
+
+            -- if: current <= time
+        if current <= time and talent.summon_demonic_tyrant.enabled and
+            -- #1: list-if: talent.summon_demonic_tyrant.enabled and time - current <= 12 + 2 and cooldown.summon_demonic_tyrant.remains <= gcd.max
+            ( time - current <= 12 + 2 and cooldown.summon_demonic_tyrant.remains <= gcd.max or
+            -- #2: list-if: talent.summon_demonic_tyrant.enabled and cooldown.summon_demonic_tyrant.remains_expected <= 12
+            cooldown.summon_demonic_tyrant.remains_expected <= 12 ) then
+            -- value: time + 14 + cooldown.grimoire_felguard.ready + cooldown.summon_vilefiend.ready
+            return time + 14
+                + ( cooldown.grimoire_felguard.remains < gcd.max and talent.grimoire_felguard.rank or 0 )
+                + ( cooldown.summon_vilefiend.remains  < gcd.max and talent.summon_vilefiend.rank  or 0 )
+        end
+
+        return current
+    end,
+"reset_precast", "advance_end", "runHandler" )
 
 
 -- Auras
@@ -1894,4 +1912,4 @@ spec:RegisterSetting( "dcon_imps", 0, {
 } )
 
 
-spec:RegisterPack( "Demonology", 20221223, [[Hekili:nR1wVnUnw4FlbfWt84uBlz7STf25HT7lDWU9fxG9nltlrltejrvjQCzHH(TVhsDJKIu2UZmzxuGMeXdp3535CiNDo7(JDBdqm8UF3DURRJR7IPZ)5vlNVy3w27P4DBtr(pJcHFjbfd)))boMMqJOHVZx69ikkGZICArMpS8jgln)xMnlKWovCyQpnEwojUicXi0e)m0rg)V9NDiIEywqgkKMCmIeEIndNessWZ8Jq55EX0GIiC(muA0Sxrzru)NN6NMUB7Hcse73s2DWSw7cAsk2h(8Jpckdjiaxrlo3F32DBJi5SCU(sy4y(V87chaobDichS7VVBlYNRPGXtIXhYWi)tKKqpgkI)r)myFzeexpoECAa3xq89sPVIZMwKwU)85Y93vUhihNWMMxede41qg79me81AHvUFu5(7l3l4ucMDcNbmkd2QboPUElhg3evmPTmWlWnUglQih7vz2s2ld(pW7CeveXADhn7a9g2JrZ12GkxdWVaHEVyuiXxJUfAU2oV3T4FEbbBb(a4dEJvtt5(FeCnGndUGY9R3OsyfnEPz4uVCgkdiFs5ExbTap9P0Oa6RjweFJZ)Q1XlWVmCmIKK7HFdsmz89W1x7kBNR1hff5v9hE8e3Q0xV6iUyFC38sRU5dqStOICxfej9ciGhBTWx85Y9H(btJrV1jqsCAenNuL7SYkBVLeCaxiYl)ekd(ZNecM7BTQylM3Pnk58Cn6r7gQPZqDC6ekjWJE0lSikajmU)MLt9d6YRo8a7(Ngwr()byHRYGOqga3E(zR2ZnNBdX4AP1SvnDjaqPcGe9ONXzcNPZ8V(enX5vTujNLxuY6y))fLS1S5B071PVHzKykjd7DehfwahEeQR73g19g1ktXubG6q4TFFCl10)cjcFKGtQ8k2RY0kNgbKZYGUmyNAeHKdhARiIYGgqe8CPAfo1DRvLZzqGYumBQM9X57l4o(FamNCFOiAi27an(qt2PD4ozqvWFUQYlxLaazmqy6fyFAykcafLvR9cv8qYlFcbEnqvIeLxC0Xk70JklXdNGJj48ga(gz9kjkWdkPKpfsk8FgwgQ79OLQno2XunATgeTJKji2clJ8Cv80oaNj(0zcmAwm4uXbECo2yhGz4mVxwjNINX4uCMOhj7OAk1i8PzybWUwTsWqxQLc2eqCTdB1N11Q86gZQPYIcyyxMay(lQp92NQQt(sfxef48YjPNQB30ocv)(aQuMV7ixxrxHd1OGRo8sBiHsJLnWm8XmmyGaDWNF3pcG8qWrAyCdOPAoNS3NMEgU1ez3vYatYhu1BPhmty2RdiMPzCKAex0dn4MMlci1awOi4mrZhejcTfKaNtoc2)rIpwPhloYsanMKiM0R3yc1rmG7MgsOfsi5pli5e4yxUxi6)G1Ov3dsb5NJL6yUjyZ)TOc4hqnt(hv6zwUx7M(CnMrRk8RbooxcH6(MkG8m3k(pT9C8uFuotGKmxXpllFbSWylGa2bLnRn39DqHuluWANj5kY4w3abmqQVAziLSj1rdgiHQFJugYOS2EHkTkjkg6O8AtxS0zV(WsqOWvfi4qrwcV)9eSh03(2LZhor4cdolJcpWWggbUVaR5vBC7V9nIKXbHBT3fqtvcUFGwa7ZWytxwTwEn012VRL6m8JkECshYsS3YXL1Ywbigt3TxgQQ(SB4HOm1UHfqLbgiYshDnTvCNLCi79k4OwEqQoNw71lU2sEIPz1VcRuA1pv4PIO59BJZEMKeoeqYHiknW7yr27dHGCeGAeuQRCG69cihorn3yjewFfLLaYfGo(JtqSg8SuEBjhPzL7)K42g(u5(mmutmJNHNt5zeOcgngjAVXhs7cX5tl)Y)eafGyXVuU)xPjGKel)PH6Sc4mJEbAAoCb0EVZBJVKCuc(A834nv0X3YVyWduFTK3MpyXhKp4JsoR(GKZp9)w58vK7uNto)dYaC(WoL5(rjOhnli5llqJ)MULbD26(9x)ncB0YWBa1Ww2Vw3g6APLMrKvWFtOBCMUQPTIY9INHcwgQCuWorZ2TDlj(x5tTrpsIA7RiFA7yCt2mtDcRhih3WBr4P5JURDMTr3n40ALFXeF7gnZ866dLzMQMUAEGpQ1MEtA9anDdmQ2dI5Y2aDh(LF4hk3)VGuiWZO0ie3b)VREYVU3ACAubQAlxw2sCttQlNuh46nwWuG6NNOM81ohGyrZwTCxnMPOTblEatA2S1RgDpFCSZNnok2M51XsTbWgBjg21xuF5C3Frb1kkqanpfO83KF6p5VR)MdYPeI02boJp6EtTh)J8m9XR3CV9BZzI74rx8L9oFEqzFJ3V06ndC5ss(J2l6KB88qXiPBeFT7NH(wLjxPChFl3nOs3fRFY985ESFXCzERoNIqFmo63fJMIUtVmz8EYBLsJI38UyNppSLDVrDRBxkRmUNYOmDoxjUXW7tTV2Xf58G2bK0jfpCwkZUEarxb36fIVr7sw(6qDxH4VrP16fNy)WY3wBQ7TCuc6nCq)rGur0uPrEndptJWBz9fEu8Z2WNb4zdTunY6J1SELvKLkP28ugp5oY0m7pT5rf9QBU7E6Lg)CmK309MhguaNrwFdLnoZ752B8nMUVcjqU1kNFKlAzEZc5T2PgmX4ZE80cib08ZDmEyWtzS3r3)n(GZG16uCFuA8dkp5WghU2j9Kexzm3skRuRatfa)WYn)RjQU4E))9h9rd73tZYLvBEHir(c)p795U7aQ)sTx8tVLAVThUG(kBNTI8jxDVSCh(eOH22KkdT0cjZVprpRtQRw(68OKPoUwlKqNj3QFAizCQw7oYysu3MuczgwVNYBsWA6Vbs6xC2eFQVjDRn)i3r1g3hQVV9nlNBGz9HeS2(khHWsMTcmIvgS2XvM0nRgFvkKLzvhqolTV2tvc0cew39wBn8PUJbDyRBz3NDnWWlw0WWEmwUqVcPt9arwBkwnxQgkD4JkIRaE3)9]] )
+spec:RegisterPack( "Demonology", 20230116, [[Hekili:nR1wZjoow4Fl5f3qNma2HKmzkmpSZ(Y01wZl0pJrylavX2YRVKlBr5F77rY3KKLSHz6o7wDxjG9rN767CoszR92VVDtakhV9pDw4C)cB7hN5SyXtopVDt(hj4TBsq(VGocFigfb)8FIJOX0q6XpyV6JqkkGXImArQp86t55jz)285hj5Nk2pZNgnpJeveIYj0y)u0HC239NVpKUFEqk6in(qi54P8544JKy8C)quwMxenOieNnhLeo)nuAi1)Lz(jjB3SVGeM)hXB3RxRFc0KeSp84hFeugsqaUIwCM)2nB3esYYZy6ljhhX(WFYDa4y0(qCW2)X2niFMMcgpjcVpfJ8prIp6LJczp0pfwxkbX0JdhMfW8feFVe6B40zfjL7oFUC3nL7aYXX5ZYkIac8Ail)Jue80AHvUZQC3KYDCofJZpHtbgLclvdNKFFlhM2ev0PT5GxGzCnwurg2RYSfS3C4FG35aQimV1D0Sc07yVCAMYcK5Aa(vi07fHos8vO7EfxBN37A8pW)FfbRcEg4gEpVMSYD)c4DaZg8cL7w5ktyfnEjP4eVSCukq(TL7C40cS1NsddOVfBqdA8)JqwkocrIZ8WVdPC5mnMPgdPdt78B(OWqVQV4XYkRYn9QdN8LY8Hln6d3dbgUXWCcqyYlGa(IvCR8RL7o6hmlc9ENajrjH0msvIXdgz71K9cB6d9YoHsHVUMlyMxZOID)IoTrkHMPrpA2q1TbPJtNqXbE0dEhlcdqCJ7jdBPh0LxTZaw9VoSI8)d75VidIczam75zJ2ZvNEdX4AP1SufDjaGGcGC9WxWPCNP9I)(jAmVIAQK9YrLSkW(FrjBmB(k9ED67XuseLKI9oGdpwaBE4QRZpg19k1kDXuou5qOy)CCl10)kjeFGGJR8kMlH0kNgbKLNcTqKFQrecoCONHqAo0DbNNlLlFjVALsy2dcuMGZNPyFm((kUJ)7bZjZhQqEe7TNgTVj70mCNiOk4pFOYlxLaazmqy6vyDkykCafP3w7fQ4HGx(ec8AGQeYlVyRIvkuJ(nQNpcGtGchz88KfDIQ2ARsxSQsHEf7HJXreCf1288OjDjViG3hi(4apMjMPfrtQiL9iqXVrcd4A3miX0)fUuFUNoYaw1RHonAOnVI546PCVd9XD6C6m7)jXihaLZZ5JdymRLPMSCZG2Q2Hlx9bbfYIvxCaRwTas9oIGwgz7NLYOUzuhIbD3XmKV2uBDPoc5R8LKNsEHV51XmQU(uWw7NMgbgtTn0KWWCEl6bbXO4fmobNYfPzKzPgc8PP4MKnfdDPcEtZUphZWB9zDTkVQXSAAJWCg491q19PQknqyFhVBgVmsYP6GO5(o730xLY8tVm1f0C)qDf6OcL3gsO0irdmfFifdgiqh84p8dH6Bia)ggCegpIXPlh82CI8tIvHerLvhodmtyk69OCDtRkaxZhfQDtFD1juiSNO5b8eH2UpaNt7oBPgQzLrcOrKy(m79g4RoIbCx34ETqcX)7csgb22Lbam)hScTQPxuq(zmo2S(MGn7tHfWVGgKypuAajHuG2HA0Mrll8lj8LjGqnPPDhwMBf)N1UpEgdYLJKSqYplkFoSWudGaMRaRxBU5NGcj3vqE7aOxqg3QgiGbs9L75qkBsEoWbsO631SMmkLC0UEjLPvkrrZ4dxA6IHX4uNmgcfoYab7lsJzdRfJ9GH02SCXWjcJC(hIOWdmzPwG7rynRAJt)L7YtgheU1CVBnvjy(bAbSonZipUAT8sORD4gd1z4TlXiDilXCVyJRLTcG3HPtVmuz9z7WtmRRDddGkdm9RXwNTLGlmFGlQ9kylxEqOoNYSu3FPL84hDH6HrMqR(TepLenB4kC6lK4JdbKSpKsd8ouK(XqiihaOgoLQkhOEVcYHruZzpdDq(gkngKlaD89tqSg8SuwBjhOPL7(c)OL(s5UumutmLLHNrzzeOICAeI3EJpK2DeglO8B)lauaIf)w5UFNgdsI)6VmuNvaNZPJqtZMlG2j2VpDm5if8v4V2JLQJVLFtJhO(aMVoFW9Fs(Gh(KKZV()w583iMwNRS4tYaS)0Y(D(Se0J6fK4j2OWFDh1tp2AiuRCydkC2Wrr0J5pBW5OCCaQ(fdNwGk7Dw(t33RfkQLHxbsKPDUkDWOQLgAWrub)dUUXy6dnTQuUJFjLWRzZ(rpqcB7ojBw7WG36oxEoT7ihCznASEH1nTt(zDZGZ8v(nD8TBap9VxD0o9u10B0DSb2C7nV2D0exyGV74t35c9yQLjITAONI2UEy2VWatREWAcBgPZN1oFK7IAxJYurtn4s6AwPVCU5VOGAffiGMBAv8zI3SQ4ZvV1hrpmplyGnjwtMORP1FHL5mDL7eZNXYTotTg9AtpF(kpyNvUML4urJU9igzwiZFBjCXdRC(k0XOi5sf0yl5Mb9kDb01oNp3J93VqK3YtiW1hTdDnAiJ3x44KX6gUvknkEZ1pE(8Ww2eT6w3QKEZ0EkJ0CXmL4kJVRBVuPr58G2X5ZIXd7LISR3jdCbCRxi(kTlr5REydxG4VsP16fV18ULFS2u3vMjf0B4G6DTjdBjtJ470CByCVLXlstYpBcegWG100KLX7eB1dgrwKU0lOuQ6DNyvPwn3YWA7BNmsFpdGIPzq81pBjF3vQc052j2FDmrADb3r1A7NS03qOrfwwvCTTKVYjDURAjO9AMSUXGDif07ooHEbD1yHMnLDxLtFdyTTLXRgY1ErVC6MepDhdJqfKvsGtIL91VyU8wzxJuRpwDpS7w)T4mD4ktIf2SM8dgvAWMfKCFuA0Ds3KIRnt7eUPLlmMBapqOzQz8QQWRB(ZDRU9O()bY9zxtTNMLjQ2SQ888f2x794UJ2Q)RAppREVQ9qSefuLr0hpL5Hw5yP1B3TijBtZ77vmwNGvkyQHK(4w64t9jPBSfmX(6CDUR(82DxUqdZ6V3XyJYSTsgsbK2VzKbRSDej19HPxKcLRFUYbKZsZVBDLah7GXnh(KxXGoSvTS7RoAy4OORAwJwCv1IP21ZEzS1C5CPAmNH3QaZIxKFIMUDZgs0VZpq4T)3p]] )

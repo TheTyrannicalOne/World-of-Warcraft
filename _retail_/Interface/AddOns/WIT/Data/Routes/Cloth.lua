@@ -236,6 +236,27 @@ core.Data.Routes.Cloth.GildedSeaweaveNazjatar = {
 }
 
 
+-- Dragonflight
+
+core.Data.Routes.Cloth.Wildercloth = {
+    Name = "RouteWildercloth",
+    MapId = core.Maps.TheAzureSpan,
+    Data = {
+		["color"] = {
+						1, -- [1]
+						0.04313725605607033, -- [2]
+						0, -- [3]
+						1, -- [4]
+		},
+		["length"] = 19123.93513538704,
+		["route"] = {
+						9983806, -- [1]
+						11704448, -- [2]
+						8194457, -- [3]
+		},
+	}
+}
+
 
 
 

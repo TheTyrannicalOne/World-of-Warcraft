@@ -21,6 +21,12 @@ if L then
 end
 
 --------------------------------------------------------------------------------
+-- Locals
+--
+
+local shardsOfStoneRemaining = 2
+
+--------------------------------------------------------------------------------
 -- Initialization
 --
 
@@ -62,6 +68,7 @@ function mod:OnBossEnable()
 end
 
 function mod:OnEngage()
+	shardsOfStoneRemaining = 2
 	self:CDBar(388283, 28.8) -- Eruption
 	self:CDBar(388817, 10.6) -- Shards of Stone
 	self:CDBar(385916, 15.5) -- Tectonic Stomp
@@ -85,9 +92,12 @@ function mod:Eruption(args)
 end
 
 function mod:ShardsOfStone(args)
+	shardsOfStoneRemaining = shardsOfStoneRemaining - 1
 	self:Message(args.spellId, "yellow")
 	self:PlaySound(args.spellId, "alert")
-	self:CDBar(args.spellId, 13.3)
+	if shardsOfStoneRemaining > 0 then
+		self:CDBar(args.spellId, 13.3)
+	end
 end
 
 function mod:TectonicStomp(args)
@@ -138,10 +148,13 @@ function mod:ReloadSuccess(args)
 end
 
 function mod:Lanced(args)
+	shardsOfStoneRemaining = 2
 	self:Message(386530, "green", args.spellName) -- Dragonkiller Lance
 	self:PlaySound(386530, "info") -- Dragonkiller Lance
 	self:StopBar(CL.cast:format(self:SpellName(388283))) -- Eruption
-	self:CDBar(386320, 5.3) -- Summon Saboteur
+	if self:Mythic() then
+		self:CDBar(386320, 5.3) -- Summon Saboteur
+	end
 	self:CDBar(388817, 15.4) -- Shards of Stone
 	self:CDBar(385916, 20.1) -- Tectonic Stomp
 	self:CDBar(388283, 33.1) -- Eruption 5s stun, 27s energy gain, ~1s delay

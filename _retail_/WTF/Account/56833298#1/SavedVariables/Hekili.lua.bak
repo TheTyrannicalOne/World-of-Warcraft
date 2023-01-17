@@ -5182,8 +5182,8 @@ HekiliDB = {
 				},
 				[71] = {
 					["settings"] = {
-						["heroic_charge"] = false,
 						["shockwave_interrupt"] = true,
+						["heroic_charge"] = false,
 					},
 					["potion"] = "potion_of_phantom_fire",
 					["potionsReset"] = 20180919.1,
@@ -5205,7 +5205,7 @@ HekiliDB = {
 				["Fury"] = {
 					["source"] = "https://github.com/simulationcraft/simc/",
 					["builtIn"] = true,
-					["date"] = 20230102,
+					["date"] = 20230104,
 					["author"] = "SimC",
 					["desc"] = "",
 					["lists"] = {
@@ -5372,68 +5372,73 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
+								["name"] = "algethar_puzzle_box",
+								["action"] = "algethar_puzzle_box",
+							}, -- [7]
+							{
+								["enabled"] = true,
 								["criteria"] = "cooldown.avatar.remains < 3",
 								["action"] = "ravager",
-							}, -- [7]
+							}, -- [8]
 							{
 								["action"] = "blood_fury",
 								["enabled"] = true,
-							}, -- [8]
+							}, -- [9]
 							{
 								["enabled"] = true,
 								["criteria"] = "buff.recklessness.up",
 								["action"] = "berserking",
-							}, -- [9]
+							}, -- [10]
 							{
 								["enabled"] = true,
 								["criteria"] = "buff.recklessness.down",
 								["action"] = "lights_judgment",
-							}, -- [10]
+							}, -- [11]
 							{
 								["action"] = "fireblood",
 								["enabled"] = true,
-							}, -- [11]
+							}, -- [12]
 							{
 								["action"] = "ancestral_call",
 								["enabled"] = true,
-							}, -- [12]
+							}, -- [13]
 							{
 								["enabled"] = true,
 								["criteria"] = "buff.recklessness.down & buff.enrage.up",
 								["action"] = "bag_of_tricks",
-							}, -- [13]
+							}, -- [14]
 							{
 								["enabled"] = true,
 								["criteria"] = "talent.titans_torment.enabled & buff.enrage.up & raid_event.adds.in > 15 || ! talent.titans_torment.enabled & ( buff.recklessness.up || boss & fight_remains < 20 )",
 								["action"] = "avatar",
-							}, -- [14]
+							}, -- [15]
 							{
 								["enabled"] = true,
 								["criteria"] = "! raid_event.adds.exists & ( talent.annihilator.enabled & cooldown.avatar.remains < 1 || cooldown.avatar.remains > 40 || ! talent.avatar.enabled || boss & fight_remains < 12 )",
 								["action"] = "recklessness",
-							}, -- [15]
+							}, -- [16]
 							{
 								["enabled"] = true,
 								["criteria"] = "! raid_event.adds.exists & ! talent.annihilator.enabled || boss & fight_remains < 12",
 								["action"] = "recklessness",
-							}, -- [16]
+							}, -- [17]
 							{
 								["enabled"] = true,
 								["criteria"] = "buff.enrage.up & ( buff.recklessness.up || buff.avatar.up || boss & fight_remains < 20 || active_enemies > 1 ) & raid_event.adds.in > 15",
 								["action"] = "spear_of_bastion",
-							}, -- [17]
+							}, -- [18]
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
 								["strict"] = 1,
 								["criteria"] = "active_enemies > 2",
 								["list_name"] = "multi_target",
-							}, -- [18]
+							}, -- [19]
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "single_target",
-							}, -- [19]
+							}, -- [20]
 						},
 						["multi_target"] = {
 							{
@@ -5562,10 +5567,10 @@ HekiliDB = {
 							}, -- [26]
 						},
 					},
-					["version"] = 20230102,
-					["warnings"] = "The import for 'single_target' required some automated changes.\nLine 1: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 1: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 4: Converted 'talent.dancing_blades' to 'talent.dancing_blades.enabled' (1x).\nLine 4: Converted 'talent.dancing_blades' to 'talent.dancing_blades.enabled' (1x).\nLine 6: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 7: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 7: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 9: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 9: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 10: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 11: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 11: Converted 'talent.tenderize' to 'talent.tenderize.enabled' (1x).\nLine 12: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 13: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 14: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 15: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 16: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 19: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\n\nThe import for 'multi_target' required some automated changes.\nLine 2: Converted 'talent.titanic_rage' to 'talent.titanic_rage.enabled' (1x).\nLine 3: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 3: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 7: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 10: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 10: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 12: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 12: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 13: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 14: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 14: Converted 'talent.tenderize' to 'talent.tenderize.enabled' (1x).\nLine 15: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 16: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 17: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 18: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 19: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 22: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\n\nThe import for 'default' required some automated changes.\nLine 14: Converted 'talent.titans_torment' to 'talent.titans_torment.enabled' (1x).\nLine 14: Converted 'talent.titans_torment' to 'talent.titans_torment.enabled' (1x).\nLine 15: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 15: Converted 'talent.avatar' to 'talent.avatar.enabled' (1x).\nLine 16: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\n\nImported 4 action lists.\n",
+					["version"] = 20230104,
+					["warnings"] = "The import for 'single_target' required some automated changes.\nLine 1: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 1: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 4: Converted 'talent.dancing_blades' to 'talent.dancing_blades.enabled' (1x).\nLine 4: Converted 'talent.dancing_blades' to 'talent.dancing_blades.enabled' (1x).\nLine 6: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 7: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 7: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 9: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 9: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 10: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 11: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 11: Converted 'talent.tenderize' to 'talent.tenderize.enabled' (1x).\nLine 12: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 13: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 14: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 15: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 16: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 19: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\n\nThe import for 'multi_target' required some automated changes.\nLine 2: Converted 'talent.titanic_rage' to 'talent.titanic_rage.enabled' (1x).\nLine 3: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 3: Converted 'talent.improved_whirlwind' to 'talent.improved_whirlwind.enabled' (1x).\nLine 7: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 10: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 10: Converted 'talent.overwhelming_rage' to 'talent.overwhelming_rage.enabled' (1x).\nLine 12: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 12: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 13: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 14: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 14: Converted 'talent.tenderize' to 'talent.tenderize.enabled' (1x).\nLine 15: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 16: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 17: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 18: Converted 'talent.reckless_abandon' to 'talent.reckless_abandon.enabled' (1x).\nLine 19: Converted 'talent.wrath_and_fury' to 'talent.wrath_and_fury.enabled' (1x).\nLine 22: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\n\nThe import for 'default' required some automated changes.\nLine 15: Converted 'talent.titans_torment' to 'talent.titans_torment.enabled' (1x).\nLine 15: Converted 'talent.titans_torment' to 'talent.titans_torment.enabled' (1x).\nLine 16: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\nLine 16: Converted 'talent.avatar' to 'talent.avatar.enabled' (1x).\nLine 17: Converted 'talent.annihilator' to 'talent.annihilator.enabled' (1x).\n\nImported 4 action lists.\n",
 					["spec"] = 72,
-					["profile"] = "actions.precombat+=/berserker_stance\nactions.precombat+=/battle_shout\nactions.precombat+=/use_item,name=algethar_puzzle_box\n\nactions+=/charge,if=time<=0.5||movement.distance>5\nactions+=/heroic_leap,if=(raid_event.movement.distance>25&raid_event.movement.in>45)\nactions+=/pummel\nactions+=/potion\nactions+=/conquerors_banner\nactions+=/use_items\nactions+=/ravager,if=cooldown.avatar.remains<3\nactions+=/blood_fury\nactions+=/berserking,if=buff.recklessness.up\nactions+=/lights_judgment,if=buff.recklessness.down\nactions+=/fireblood\nactions+=/ancestral_call\nactions+=/bag_of_tricks,if=buff.recklessness.down&buff.enrage.up\nactions+=/avatar,if=talent.titans_torment&buff.enrage.up&raid_event.adds.in>15||!talent.titans_torment&(buff.recklessness.up||boss&fight_remains<20)\nactions+=/recklessness,if=!raid_event.adds.exists&(talent.annihilator&cooldown.avatar.remains<1||cooldown.avatar.remains>40||!talent.avatar||boss&fight_remains<12)\nactions+=/recklessness,if=!raid_event.adds.exists&!talent.annihilator||boss&fight_remains<12\nactions+=/spear_of_bastion,if=buff.enrage.up&(buff.recklessness.up||buff.avatar.up||boss&fight_remains<20||active_enemies>1)&raid_event.adds.in>15\nactions+=/call_action_list,name=multi_target,strict=1,if=active_enemies>2\nactions+=/call_action_list,name=single_target\n\nactions.multi_target+=/recklessness,if=raid_event.adds.in>15||active_enemies>1||boss&fight_remains<12\nactions.multi_target+=/odyns_fury,if=active_enemies>1&talent.titanic_rage&(!buff.meat_cleaver.up||buff.avatar.up||buff.recklessness.up)\nactions.multi_target+=/whirlwind,if=spell_targets.whirlwind>1&talent.improved_whirlwind&!buff.meat_cleaver.up||raid_event.adds.in<2&talent.improved_whirlwind&!buff.meat_cleaver.up\nactions.multi_target+=/execute,if=buff.ashen_juggernaut.up&buff.ashen_juggernaut.remains<gcd\nactions.multi_target+=/thunderous_roar,if=buff.enrage.up&(spell_targets.whirlwind>1||raid_event.adds.in>15)\nactions.multi_target+=/odyns_fury,if=active_enemies>1&buff.enrage.up&raid_event.adds.in>15\nactions.multi_target+=/crushing_blow,if=talent.wrath_and_fury&buff.enrage.up\nactions.multi_target+=/execute,if=buff.enrage.up\nactions.multi_target+=/odyns_fury,if=buff.enrage.up&raid_event.adds.in>15\nactions.multi_target+=/rampage,if=buff.recklessness.up||buff.enrage.remains<gcd||(rage>110&talent.overwhelming_rage)||(rage>80&!talent.overwhelming_rage)\nactions.multi_target+=/execute\nactions.multi_target+=/bloodbath,if=buff.enrage.up&talent.reckless_abandon&!talent.wrath_and_fury\nactions.multi_target+=/bloodthirst,if=buff.enrage.down||(talent.annihilator&!buff.recklessness.up)\nactions.multi_target+=/onslaught,if=!talent.annihilator&buff.enrage.up||talent.tenderize\nactions.multi_target+=/raging_blow,if=charges>1&talent.wrath_and_fury\nactions.multi_target+=/crushing_blow,if=charges>1&talent.wrath_and_fury\nactions.multi_target+=/bloodbath,if=buff.enrage.down||!talent.wrath_and_fury\nactions.multi_target+=/crushing_blow,if=buff.enrage.up&talent.reckless_abandon\nactions.multi_target+=/bloodthirst,if=!talent.wrath_and_fury\nactions.multi_target+=/raging_blow,if=charges>=1\nactions.multi_target+=/rampage\nactions.multi_target+=/slam,if=talent.annihilator\nactions.multi_target+=/bloodbath\nactions.multi_target+=/raging_blow\nactions.multi_target+=/crushing_blow\nactions.multi_target+=/whirlwind\n\nactions.single_target+=/whirlwind,if=spell_targets.whirlwind>1&talent.improved_whirlwind&!buff.meat_cleaver.up||raid_event.adds.in<2&talent.improved_whirlwind&!buff.meat_cleaver.up\nactions.single_target+=/execute,if=buff.ashen_juggernaut.up&buff.ashen_juggernaut.remains<gcd\nactions.single_target+=/thunderous_roar,if=buff.enrage.up&(spell_targets.whirlwind>1||raid_event.adds.in>15)\nactions.single_target+=/odyns_fury,if=buff.enrage.up&(spell_targets.whirlwind>1||raid_event.adds.in>15)&(talent.dancing_blades&buff.dancing_blades.remains<5||!talent.dancing_blades)\nactions.single_target+=/execute,if=buff.enrage.up\nactions.single_target+=/crushing_blow,if=talent.wrath_and_fury&buff.enrage.up\nactions.single_target+=/rampage,if=buff.recklessness.up||buff.enrage.remains<gcd||(rage>110&talent.overwhelming_rage)||(rage>80&!talent.overwhelming_rage)\nactions.single_target+=/execute\nactions.single_target+=/bloodbath,if=buff.enrage.up&talent.reckless_abandon&!talent.wrath_and_fury\nactions.single_target+=/bloodthirst,if=buff.enrage.down||(talent.annihilator&!buff.recklessness.up)\nactions.single_target+=/onslaught,if=!talent.annihilator&buff.enrage.up||talent.tenderize\nactions.single_target+=/raging_blow,if=charges>1&talent.wrath_and_fury\nactions.single_target+=/crushing_blow,if=charges>1&talent.wrath_and_fury\nactions.single_target+=/bloodbath,if=buff.enrage.down||!talent.wrath_and_fury\nactions.single_target+=/crushing_blow,if=buff.enrage.up&talent.reckless_abandon\nactions.single_target+=/bloodthirst,if=!talent.wrath_and_fury\nactions.single_target+=/raging_blow,if=charges>1\nactions.single_target+=/rampage\nactions.single_target+=/slam,if=talent.annihilator\nactions.single_target+=/bloodbath\nactions.single_target+=/raging_blow\nactions.single_target+=/crushing_blow\nactions.single_target+=/whirlwind\nactions.single_target+=/wrecking_throw\nactions.single_target+=/storm_bolt",
+					["profile"] = "actions.precombat+=/berserker_stance\nactions.precombat+=/battle_shout\nactions.precombat+=/use_item,name=algethar_puzzle_box\n\nactions+=/charge,if=time<=0.5||movement.distance>5\nactions+=/heroic_leap,if=(raid_event.movement.distance>25&raid_event.movement.in>45)\nactions+=/pummel\nactions+=/potion\nactions+=/conquerors_banner\nactions+=/use_items\nactions+=/use_item,name=algethar_puzzle_box\nactions+=/ravager,if=cooldown.avatar.remains<3\nactions+=/blood_fury\nactions+=/berserking,if=buff.recklessness.up\nactions+=/lights_judgment,if=buff.recklessness.down\nactions+=/fireblood\nactions+=/ancestral_call\nactions+=/bag_of_tricks,if=buff.recklessness.down&buff.enrage.up\nactions+=/avatar,if=talent.titans_torment&buff.enrage.up&raid_event.adds.in>15||!talent.titans_torment&(buff.recklessness.up||boss&fight_remains<20)\nactions+=/recklessness,if=!raid_event.adds.exists&(talent.annihilator&cooldown.avatar.remains<1||cooldown.avatar.remains>40||!talent.avatar||boss&fight_remains<12)\nactions+=/recklessness,if=!raid_event.adds.exists&!talent.annihilator||boss&fight_remains<12\nactions+=/spear_of_bastion,if=buff.enrage.up&(buff.recklessness.up||buff.avatar.up||boss&fight_remains<20||active_enemies>1)&raid_event.adds.in>15\nactions+=/call_action_list,name=multi_target,strict=1,if=active_enemies>2\nactions+=/call_action_list,name=single_target\n\nactions.multi_target+=/recklessness,if=raid_event.adds.in>15||active_enemies>1||boss&fight_remains<12\nactions.multi_target+=/odyns_fury,if=active_enemies>1&talent.titanic_rage&(!buff.meat_cleaver.up||buff.avatar.up||buff.recklessness.up)\nactions.multi_target+=/whirlwind,if=spell_targets.whirlwind>1&talent.improved_whirlwind&!buff.meat_cleaver.up||raid_event.adds.in<2&talent.improved_whirlwind&!buff.meat_cleaver.up\nactions.multi_target+=/execute,if=buff.ashen_juggernaut.up&buff.ashen_juggernaut.remains<gcd\nactions.multi_target+=/thunderous_roar,if=buff.enrage.up&(spell_targets.whirlwind>1||raid_event.adds.in>15)\nactions.multi_target+=/odyns_fury,if=active_enemies>1&buff.enrage.up&raid_event.adds.in>15\nactions.multi_target+=/crushing_blow,if=talent.wrath_and_fury&buff.enrage.up\nactions.multi_target+=/execute,if=buff.enrage.up\nactions.multi_target+=/odyns_fury,if=buff.enrage.up&raid_event.adds.in>15\nactions.multi_target+=/rampage,if=buff.recklessness.up||buff.enrage.remains<gcd||(rage>110&talent.overwhelming_rage)||(rage>80&!talent.overwhelming_rage)\nactions.multi_target+=/execute\nactions.multi_target+=/bloodbath,if=buff.enrage.up&talent.reckless_abandon&!talent.wrath_and_fury\nactions.multi_target+=/bloodthirst,if=buff.enrage.down||(talent.annihilator&!buff.recklessness.up)\nactions.multi_target+=/onslaught,if=!talent.annihilator&buff.enrage.up||talent.tenderize\nactions.multi_target+=/raging_blow,if=charges>1&talent.wrath_and_fury\nactions.multi_target+=/crushing_blow,if=charges>1&talent.wrath_and_fury\nactions.multi_target+=/bloodbath,if=buff.enrage.down||!talent.wrath_and_fury\nactions.multi_target+=/crushing_blow,if=buff.enrage.up&talent.reckless_abandon\nactions.multi_target+=/bloodthirst,if=!talent.wrath_and_fury\nactions.multi_target+=/raging_blow,if=charges>=1\nactions.multi_target+=/rampage\nactions.multi_target+=/slam,if=talent.annihilator\nactions.multi_target+=/bloodbath\nactions.multi_target+=/raging_blow\nactions.multi_target+=/crushing_blow\nactions.multi_target+=/whirlwind\n\nactions.single_target+=/whirlwind,if=spell_targets.whirlwind>1&talent.improved_whirlwind&!buff.meat_cleaver.up||raid_event.adds.in<2&talent.improved_whirlwind&!buff.meat_cleaver.up\nactions.single_target+=/execute,if=buff.ashen_juggernaut.up&buff.ashen_juggernaut.remains<gcd\nactions.single_target+=/thunderous_roar,if=buff.enrage.up&(spell_targets.whirlwind>1||raid_event.adds.in>15)\nactions.single_target+=/odyns_fury,if=buff.enrage.up&(spell_targets.whirlwind>1||raid_event.adds.in>15)&(talent.dancing_blades&buff.dancing_blades.remains<5||!talent.dancing_blades)\nactions.single_target+=/execute,if=buff.enrage.up\nactions.single_target+=/crushing_blow,if=talent.wrath_and_fury&buff.enrage.up\nactions.single_target+=/rampage,if=buff.recklessness.up||buff.enrage.remains<gcd||(rage>110&talent.overwhelming_rage)||(rage>80&!talent.overwhelming_rage)\nactions.single_target+=/execute\nactions.single_target+=/bloodbath,if=buff.enrage.up&talent.reckless_abandon&!talent.wrath_and_fury\nactions.single_target+=/bloodthirst,if=buff.enrage.down||(talent.annihilator&!buff.recklessness.up)\nactions.single_target+=/onslaught,if=!talent.annihilator&buff.enrage.up||talent.tenderize\nactions.single_target+=/raging_blow,if=charges>1&talent.wrath_and_fury\nactions.single_target+=/crushing_blow,if=charges>1&talent.wrath_and_fury\nactions.single_target+=/bloodbath,if=buff.enrage.down||!talent.wrath_and_fury\nactions.single_target+=/crushing_blow,if=buff.enrage.up&talent.reckless_abandon\nactions.single_target+=/bloodthirst,if=!talent.wrath_and_fury\nactions.single_target+=/raging_blow,if=charges>1\nactions.single_target+=/rampage\nactions.single_target+=/slam,if=talent.annihilator\nactions.single_target+=/bloodbath\nactions.single_target+=/raging_blow\nactions.single_target+=/crushing_blow\nactions.single_target+=/whirlwind\nactions.single_target+=/wrecking_throw\nactions.single_target+=/storm_bolt",
 				},
 				["Protection Warrior"] = {
 					["source"] = "https://github.com/simulationcraft/simc/",
@@ -14778,15 +14783,15 @@ HekiliDB = {
 			["packs"] = {
 				["Feral"] = {
 					["builtIn"] = true,
-					["date"] = 20221213,
+					["date"] = 20230101,
 					["author"] = "SimC",
 					["desc"] = "",
 					["lists"] = {
 						["bloodtalons"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "( refreshable || 1.4 * persistent_multiplier > dot.rake.pmultiplier ) & buff.bt_rake.down",
 								["action"] = "rake",
+								["criteria"] = "( refreshable || 1.4 * persistent_multiplier > dot.rake.pmultiplier ) & buff.bt_rake.down",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
@@ -14801,8 +14806,8 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable & buff.bt_thrash.down",
 								["action"] = "thrash_cat",
+								["criteria"] = "refreshable & buff.bt_thrash.down",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -14839,25 +14844,25 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable & spell_targets.primal_wrath > 1",
 								["action"] = "primal_wrath",
+								["criteria"] = "refreshable & spell_targets.primal_wrath > 1",
 								["cycle_targets"] = 1,
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable & target.time_to_die >= settings.rip_duration",
 								["action"] = "rip",
+								["criteria"] = "refreshable & target.time_to_die >= settings.rip_duration",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["max_energy"] = 1,
-								["criteria"] = "( active_dot.rip > 0 || target.time_to_die < settings.rip_duration ) & ( ! buff.bs_inc.up || buff.bs_inc.up & ! talent.soul_of_the_forest.enabled )",
 								["action"] = "ferocious_bite",
+								["criteria"] = "( dot.rip.ticking || target.time_to_die < settings.rip_duration ) & ( ! buff.bs_inc.up || ( buff.bs_inc.up & ! talent.soul_of_the_forest.enabled ) )",
+								["max_energy"] = 1,
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "( active_dot.rip > 0 || target.time_to_die < settings.rip_duration ) & ( buff.bs_inc.up & talent.soul_of_the_forest.enabled )",
+								["criteria"] = "( dot.rip.ticking || target.time_to_die < settings.rip_duration ) & buff.bs_inc.up & talent.soul_of_the_forest.enabled",
 								["action"] = "ferocious_bite",
 							}, -- [5]
 						},
@@ -14885,26 +14890,26 @@ HekiliDB = {
 						["builder"] = {
 							{
 								["enabled"] = true,
-								["action"] = "run_action_list",
 								["criteria"] = "buff.clearcasting.react",
+								["action"] = "run_action_list",
 								["list_name"] = "clearcasting",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable || ( buff.sudden_ambush.up & persistent_multiplier > dot.rake.pmultiplier & dot.rake.duration > 6 )",
 								["action"] = "rake",
+								["criteria"] = "refreshable || ( buff.sudden_ambush.up & persistent_multiplier > dot.rake.pmultiplier & dot.rake.duration > 6 )",
 								["cycle_targets"] = 1,
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "lunar_inspiration",
+								["criteria"] = "refreshable",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "thrash_cat",
+								["criteria"] = "refreshable",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -14973,8 +14978,8 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( ! dot.adaptive_swarm_damage.ticking || dot.adaptive_swarm_damage.remains < 2 ) & ( dot.adaptive_swarm_damage.stack < 3 || ! dot.adaptive_swarm_heal.stack > 1 ) & ! action.adaptive_swarm_heal.in_flight & ! action.adaptive_swarm_damage.in_flight & ! action.adaptive_swarm.in_flight ) & target.time_to_die > 5 || active_enemies > 2 & ! dot.adaptive_swarm_damage.ticking & energy < 35 & target.time_to_die > 5",
 								["action"] = "adaptive_swarm",
+								["criteria"] = "( ( ! dot.adaptive_swarm_damage.ticking || dot.adaptive_swarm_damage.remains < 2 ) & ( dot.adaptive_swarm_damage.stack < 3 || ! dot.adaptive_swarm_heal.stack > 1 ) & ! action.adaptive_swarm_heal.in_flight & ! action.adaptive_swarm_damage.in_flight & ! action.adaptive_swarm.in_flight ) & target.time_to_die > 5 || active_enemies > 2 & ! dot.adaptive_swarm_damage.ticking & energy < 35 & target.time_to_die > 5",
 								["cycle_targets"] = 1,
 							}, -- [10]
 							{
@@ -15003,8 +15008,8 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
 								["criteria"] = "variable.need_bt & ! buff.bs_inc.up",
+								["action"] = "call_action_list",
 								["list_name"] = "bloodtalons",
 							}, -- [15]
 							{
@@ -15025,8 +15030,8 @@ HekiliDB = {
 						["berserk_builders"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "rake",
+								["criteria"] = "refreshable",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
@@ -15041,8 +15046,8 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "lunar_inspiration",
+								["criteria"] = "refreshable",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -15053,9 +15058,9 @@ HekiliDB = {
 						["aoe"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "combo_points = 5",
 								["action"] = "primal_wrath",
 								["description"] = "AoE",
+								["criteria"] = "combo_points = 5",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -15064,14 +15069,14 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "run_action_list",
 								["criteria"] = "variable.need_bt & active_bt_triggers >= 1",
+								["action"] = "run_action_list",
 								["list_name"] = "bloodtalons",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "thrash_cat",
+								["criteria"] = "refreshable",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -15083,15 +15088,15 @@ HekiliDB = {
 								["enabled"] = true,
 								["action"] = "rake",
 								["cycle_targets"] = 1,
-								["description"] = "This means that a full rake (5.5+ ticks) is stronger up to 10ish targets",
 								["criteria"] = "refreshable || active_dot.rake < cycle_enemies",
+								["description"] = "This means that a full rake (5.5+ ticks) is stronger up to 10ish targets",
 							}, -- [6]
 							{
 								["enabled"] = true,
 								["action"] = "lunar_inspiration",
 								["cycle_targets"] = 1,
-								["description"] = "Full Lis beat Swipe up til around 3-ish targets depending on haste",
 								["criteria"] = "refreshable & cycle_enemies - active_dot.lunar_inspiration > 2",
+								["description"] = "Full Lis beat Swipe up til around 3-ish targets depending on haste",
 							}, -- [7]
 							{
 								["action"] = "swipe_cat",
@@ -15099,9 +15104,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "action.shred.damage > action.thrash_cat.damage",
 								["action"] = "shred",
 								["description"] = "If we have BrS and nothing better to cast, check if Thrash DD beats Shred",
+								["criteria"] = "action.shred.damage > action.thrash_cat.damage",
 							}, -- [9]
 							{
 								["action"] = "thrash_cat",
@@ -15138,9 +15143,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["name"] = "manic_grieftorch",
 								["action"] = "manic_grieftorch",
 								["criteria"] = "energy.deficit > 40",
+								["name"] = "manic_grieftorch",
 							}, -- [7]
 							{
 								["action"] = "use_items",
@@ -15163,15 +15168,15 @@ HekiliDB = {
 							}, -- [3]
 						},
 					},
-					["version"] = 20221213,
+					["version"] = 20230101,
 					["warnings"] = "Imported 10 action lists.\n",
-					["profile"] = "actions.precombat+=/mark_of_the_wild,if=buff.prowl.down\nactions.precombat+=/prowl\nactions.precombat+=/cat_form\n\nactions+=/prowl\nactions+=/skull_bash\nactions+=/soothe\nactions+=/prowl\nactions+=/tigers_fury\nactions+=/rake,if=buff.prowl.up||buff.shadowmeld.up\nactions+=/cat_form,if=!buff.cat_form.up\nactions+=/variable,name=need_bt,value=talent.bloodtalons.enabled&buff.bloodtalons.down\nactions+=/call_action_list,name=cooldown\nactions+=/adaptive_swarm,cycle_targets=1,if=((!dot.adaptive_swarm_damage.ticking||dot.adaptive_swarm_damage.remains<2)&(dot.adaptive_swarm_damage.stack<3||!dot.adaptive_swarm_heal.stack>1)&!action.adaptive_swarm_heal.in_flight&!action.adaptive_swarm_damage.in_flight&!action.adaptive_swarm.in_flight)&target.time_to_die>5||active_enemies>2&!dot.adaptive_swarm_damage.ticking&energy<35&target.time_to_die>5\nactions+=/feral_frenzy,if=combo_points<2||combo_points=2&buff.bs_inc.up\nactions+=/run_action_list,name=aoe,strict=1,if=spell_targets.swipe_cat>1&talent.primal_wrath.enabled\nactions+=/ferocious_bite,if=buff.apex_predators_craving.up\nactions+=/call_action_list,name=finisher,strict=1,if=combo_points=5\nactions+=/call_action_list,name=bloodtalons,if=variable.need_bt&!buff.bs_inc.up\nactions+=/call_action_list,name=berserk_builders,strict=1,if=combo_points<5&buff.bs_inc.up\nactions+=/call_action_list,name=builder,strict=1,if=combo_points<5\n\n# AoE\n## actions.aoe+=/pool_resource,for_next=1\nactions.aoe+=/primal_wrath,if=combo_points=5\nactions.aoe+=/ferocious_bite,if=buff.apex_predators_craving.up&buff.sabertooth.down\nactions.aoe+=/run_action_list,name=bloodtalons,if=variable.need_bt&active_bt_triggers>=1\n## actions.aoe+=/pool_resource,for_next=1\nactions.aoe+=/thrash_cat,cycle_targets=1,if=refreshable\n# At this target count BRS also crushes everything except full thrashes\nactions.aoe+=/brutal_slash\n## actions.aoe+=/pool_resource,for_next=1\n## TODO: actions.aoe+=/rake,cycle_targets=1,if=((dot.rake.ticks_gained_on_refresh.pmult*(1+talent.doubleclawed_rake.enabled))>(spell_targets.swipe_cat*0.216+3.32))\n# This means that a full rake (5.5+ ticks) is stronger up to 10ish targets\nactions.aoe+=/rake,cycle_targets=1,if=refreshable||active_dot.rake<cycle_enemies\n## TODO: actions.aoe+=/lunar_inspiration,cycle_targets=1,if=max((ticks_gained_on_refresh+1)-(spell_targets.swipe_cat*2.492))\n# Full Lis beat Swipe up til around 3-ish targets depending on haste\nactions.aoe+=/lunar_inspiration,cycle_targets=1,if=refreshable&cycle_enemies-active_dot.lunar_inspiration>2\nactions.aoe+=/swipe_cat\n# If we have BrS and nothing better to cast, check if Thrash DD beats Shred\nactions.aoe+=/shred,if=action.shred.damage>action.thrash_cat.damage\nactions.aoe+=/thrash_cat\n\nactions.bloodtalons+=/rake,cycle_targets=1,if=(refreshable||1.4*persistent_multiplier>dot.rake.pmultiplier)&buff.bt_rake.down\nactions.bloodtalons+=/lunar_inspiration,if=refreshable&buff.bt_moonfire.down\nactions.bloodtalons+=/brutal_slash,if=buff.bt_brutal_slash.down\nactions.bloodtalons+=/thrash_cat,cycle_targets=1,if=refreshable&buff.bt_thrash.down\nactions.bloodtalons+=/swipe_cat,if=spell_targets.swipe_cat>1&buff.bt_swipe.down\nactions.bloodtalons+=/shred,if=buff.bt_shred.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down\nactions.bloodtalons+=/thrash_cat,if=buff.bt_thrash.down\nactions.bloodtalons+=/rake,if=buff.bt_rake.down&combo_points>4\n\nactions.berserk_builders+=/rake,cycle_targets=1,if=refreshable\nactions.berserk_builders+=/swipe_cat,if=spell_targets.swipe_cat>1\nactions.berserk_builders+=/brutal_slash,if=active_bt_triggers=2&buff.bt_brutal_slash.down\nactions.berserk_builders+=/moonfire_cat,cycle_targets=1,if=refreshable\nactions.berserk_builders+=/shred\n\nactions.builder+=/run_action_list,name=clearcasting,if=buff.clearcasting.react\nactions.builder+=/rake,cycle_targets=1,if=refreshable||(buff.sudden_ambush.up&persistent_multiplier>dot.rake.pmultiplier&dot.rake.duration>6)\nactions.builder+=/moonfire_cat,cycle_targets=1,if=refreshable\n## actions.builder+=/pool_resource,for_next=1\nactions.builder+=/thrash_cat,cycle_targets=1,if=refreshable\nactions.builder+=/brutal_slash\nactions.builder+=/swipe_cat,if=spell_targets.swipe_cat>1\nactions.builder+=/shred\n\nactions.clearcasting+=/thrash_cat,if=refreshable\nactions.clearcasting+=/swipe_cat,if=spell_targets.swipe_cat>1\nactions.clearcasting+=/brutal_slash,if=spell_targets.brutal_slash>5&talent.moment_of_clarity.enabled\nactions.clearcasting+=/shred\n\nactions.cooldown+=/berserk\nactions.cooldown+=/incarnation\nactions.cooldown+=/convoke_the_spirits,if=buff.tigers_fury.up&combo_points<3||boss&fight_remains<5\nactions.cooldown+=/berserking\nactions.cooldown+=/shadowmeld,if=buff.tigers_fury.up&buff.bs_inc.down&combo_points<4&buff.sudden_ambush.down&dot.rake.pmultiplier<1.6&energy>40&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2&target.time_to_die>5\nactions.cooldown+=/potion,if=buff.bs_inc.up||boss&fight_remains<cooldown.bs_inc.remains||boss&fight_remains<35\nactions.cooldown+=/use_item,name=manic_grieftorch,if=energy.deficit>40\nactions.cooldown+=/use_items\n\nactions.finisher+=/primal_wrath,if=spell_targets.primal_wrath>2\nactions.finisher+=/primal_wrath,cycle_targets=1,if=refreshable&spell_targets.primal_wrath>1\nactions.finisher+=/rip,cycle_targets=1,if=refreshable&target.time_to_die>=settings.rip_duration\n## actions.finisher+=/pool_resource,for_next=1\nactions.finisher+=/ferocious_bite,max_energy=1,if=(active_dot.rip>0||target.time_to_die<settings.rip_duration)&(!buff.bs_inc.up||buff.bs_inc.up&!talent.soul_of_the_forest.enabled)\nactions.finisher+=/ferocious_bite,if=(active_dot.rip>0||target.time_to_die<settings.rip_duration)&(buff.bs_inc.up&talent.soul_of_the_forest.enabled)\n\nactions.owlweaving+=/sunfire,line_cd=4*gcd",
 					["spec"] = 103,
+					["profile"] = "actions.precombat+=/mark_of_the_wild,if=buff.prowl.down\nactions.precombat+=/prowl\nactions.precombat+=/cat_form\n\nactions+=/prowl\nactions+=/skull_bash\nactions+=/soothe\nactions+=/prowl\nactions+=/tigers_fury\nactions+=/rake,if=buff.prowl.up||buff.shadowmeld.up\nactions+=/cat_form,if=!buff.cat_form.up\nactions+=/variable,name=need_bt,value=talent.bloodtalons.enabled&buff.bloodtalons.down\nactions+=/call_action_list,name=cooldown\nactions+=/adaptive_swarm,cycle_targets=1,if=((!dot.adaptive_swarm_damage.ticking||dot.adaptive_swarm_damage.remains<2)&(dot.adaptive_swarm_damage.stack<3||!dot.adaptive_swarm_heal.stack>1)&!action.adaptive_swarm_heal.in_flight&!action.adaptive_swarm_damage.in_flight&!action.adaptive_swarm.in_flight)&target.time_to_die>5||active_enemies>2&!dot.adaptive_swarm_damage.ticking&energy<35&target.time_to_die>5\nactions+=/feral_frenzy,if=combo_points<2||combo_points=2&buff.bs_inc.up\nactions+=/run_action_list,name=aoe,strict=1,if=spell_targets.swipe_cat>1&talent.primal_wrath.enabled\nactions+=/ferocious_bite,if=buff.apex_predators_craving.up\nactions+=/call_action_list,name=finisher,strict=1,if=combo_points=5\nactions+=/call_action_list,name=bloodtalons,if=variable.need_bt&!buff.bs_inc.up\nactions+=/call_action_list,name=berserk_builders,strict=1,if=combo_points<5&buff.bs_inc.up\nactions+=/call_action_list,name=builder,strict=1,if=combo_points<5\n\n# AoE\n## actions.aoe+=/pool_resource,for_next=1\nactions.aoe+=/primal_wrath,if=combo_points=5\nactions.aoe+=/ferocious_bite,if=buff.apex_predators_craving.up&buff.sabertooth.down\nactions.aoe+=/run_action_list,name=bloodtalons,if=variable.need_bt&active_bt_triggers>=1\n## actions.aoe+=/pool_resource,for_next=1\nactions.aoe+=/thrash_cat,cycle_targets=1,if=refreshable\n# At this target count BRS also crushes everything except full thrashes\nactions.aoe+=/brutal_slash\n## actions.aoe+=/pool_resource,for_next=1\n## TODO: actions.aoe+=/rake,cycle_targets=1,if=((dot.rake.ticks_gained_on_refresh.pmult*(1+talent.doubleclawed_rake.enabled))>(spell_targets.swipe_cat*0.216+3.32))\n# This means that a full rake (5.5+ ticks) is stronger up to 10ish targets\nactions.aoe+=/rake,cycle_targets=1,if=refreshable||active_dot.rake<cycle_enemies\n## TODO: actions.aoe+=/lunar_inspiration,cycle_targets=1,if=max((ticks_gained_on_refresh+1)-(spell_targets.swipe_cat*2.492))\n# Full Lis beat Swipe up til around 3-ish targets depending on haste\nactions.aoe+=/lunar_inspiration,cycle_targets=1,if=refreshable&cycle_enemies-active_dot.lunar_inspiration>2\nactions.aoe+=/swipe_cat\n# If we have BrS and nothing better to cast, check if Thrash DD beats Shred\nactions.aoe+=/shred,if=action.shred.damage>action.thrash_cat.damage\nactions.aoe+=/thrash_cat\n\nactions.bloodtalons+=/rake,cycle_targets=1,if=(refreshable||1.4*persistent_multiplier>dot.rake.pmultiplier)&buff.bt_rake.down\nactions.bloodtalons+=/lunar_inspiration,if=refreshable&buff.bt_moonfire.down\nactions.bloodtalons+=/brutal_slash,if=buff.bt_brutal_slash.down\nactions.bloodtalons+=/thrash_cat,cycle_targets=1,if=refreshable&buff.bt_thrash.down\nactions.bloodtalons+=/swipe_cat,if=spell_targets.swipe_cat>1&buff.bt_swipe.down\nactions.bloodtalons+=/shred,if=buff.bt_shred.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down\nactions.bloodtalons+=/thrash_cat,if=buff.bt_thrash.down\nactions.bloodtalons+=/rake,if=buff.bt_rake.down&combo_points>4\n\nactions.berserk_builders+=/rake,cycle_targets=1,if=refreshable\nactions.berserk_builders+=/swipe_cat,if=spell_targets.swipe_cat>1\nactions.berserk_builders+=/brutal_slash,if=active_bt_triggers=2&buff.bt_brutal_slash.down\nactions.berserk_builders+=/moonfire_cat,cycle_targets=1,if=refreshable\nactions.berserk_builders+=/shred\n\nactions.builder+=/run_action_list,name=clearcasting,if=buff.clearcasting.react\nactions.builder+=/rake,cycle_targets=1,if=refreshable||(buff.sudden_ambush.up&persistent_multiplier>dot.rake.pmultiplier&dot.rake.duration>6)\nactions.builder+=/moonfire_cat,cycle_targets=1,if=refreshable\n## actions.builder+=/pool_resource,for_next=1\nactions.builder+=/thrash_cat,cycle_targets=1,if=refreshable\nactions.builder+=/brutal_slash\nactions.builder+=/swipe_cat,if=spell_targets.swipe_cat>1\nactions.builder+=/shred\n\nactions.clearcasting+=/thrash_cat,if=refreshable\nactions.clearcasting+=/swipe_cat,if=spell_targets.swipe_cat>1\nactions.clearcasting+=/brutal_slash,if=spell_targets.brutal_slash>5&talent.moment_of_clarity.enabled\nactions.clearcasting+=/shred\n\nactions.cooldown+=/berserk\nactions.cooldown+=/incarnation\nactions.cooldown+=/convoke_the_spirits,if=buff.tigers_fury.up&combo_points<3||boss&fight_remains<5\nactions.cooldown+=/berserking\nactions.cooldown+=/shadowmeld,if=buff.tigers_fury.up&buff.bs_inc.down&combo_points<4&buff.sudden_ambush.down&dot.rake.pmultiplier<1.6&energy>40&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2&target.time_to_die>5\nactions.cooldown+=/potion,if=buff.bs_inc.up||boss&fight_remains<cooldown.bs_inc.remains||boss&fight_remains<35\nactions.cooldown+=/use_item,name=manic_grieftorch,if=energy.deficit>40\nactions.cooldown+=/use_items\n\nactions.finisher+=/primal_wrath,if=spell_targets.primal_wrath>2\nactions.finisher+=/primal_wrath,cycle_targets=1,if=refreshable&spell_targets.primal_wrath>1\nactions.finisher+=/rip,cycle_targets=1,if=refreshable&target.time_to_die>=settings.rip_duration\n## actions.finisher+=/pool_resource,for_next=1\nactions.finisher+=/ferocious_bite,max_energy=1,if=(dot.rip.ticking||target.time_to_die<settings.rip_duration)&(!buff.bs_inc.up||(buff.bs_inc.up&!talent.soul_of_the_forest.enabled))\nactions.finisher+=/ferocious_bite,if=(dot.rip.ticking||target.time_to_die<settings.rip_duration)&buff.bs_inc.up&talent.soul_of_the_forest.enabled\n\nactions.owlweaving+=/sunfire,line_cd=4*gcd",
 				},
 				["Balance"] = {
 					["source"] = "https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt",
 					["builtIn"] = true,
-					["date"] = 20221223,
+					["date"] = 20230106,
 					["author"] = "SimC",
 					["desc"] = "",
 					["lists"] = {
@@ -15410,14 +15415,19 @@ HekiliDB = {
 								["action"] = "force_of_nature",
 							}, -- [21]
 							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.remains > execute_time & spell_targets.starfire < 4",
+								["action"] = "wrath",
+							}, -- [22]
+							{
 								["action"] = "starfire",
 								["enabled"] = true,
-							}, -- [22]
+							}, -- [23]
 							{
 								["enabled"] = true,
 								["action"] = "run_action_list",
 								["list_name"] = "fallthru",
-							}, -- [23]
+							}, -- [24]
 						},
 						["fallthru"] = {
 							{
@@ -15473,13 +15483,13 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.primordial_arcanic_pulsar.value >= 550 & ! buff.ca_inc.up",
-								["action"] = "starfall",
+								["criteria"] = "variable.cd_condition_st & buff.touch_the_cosmos.up || buff.primordial_arcanic_pulsar.value >= 560 & buff.starweavers_weft.up",
+								["action"] = "starsurge",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.cd_condition_st & buff.touch_the_cosmos.up",
-								["action"] = "starsurge",
+								["criteria"] = "buff.primordial_arcanic_pulsar.value >= 550 & ! buff.ca_inc.up",
+								["action"] = "starfall",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -15541,7 +15551,7 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.starweavers_warp.up",
+								["criteria"] = "buff.starweavers_warp.up & ! buff.touch_the_cosmos.up",
 								["action"] = "starfall",
 							}, -- [19]
 							{
@@ -15594,7 +15604,7 @@ HekiliDB = {
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["criteria"] = "eclipse.in_lunar || buff.warrior_of_elune.up & ( buff.eclipse_lunar.up || buff.umbral_embrace.react )",
+								["criteria"] = "eclipse.in_lunar & buff.umbral_embrace.react || buff.eclipse_lunar.up & buff.warrior_of_elune.up",
 								["action"] = "starfire",
 							}, -- [29]
 							{
@@ -15608,10 +15618,10 @@ HekiliDB = {
 							}, -- [31]
 						},
 					},
-					["version"] = 20221223,
+					["version"] = 20230106,
 					["warnings"] = "The import for 'default' required some automated changes.\nLine 6: Converted 'talent.natures_balance' to 'talent.natures_balance.enabled' (1x).\nLine 6: Converted 'talent.orbit_breaker' to 'talent.orbit_breaker.enabled' (1x).\nLine 6: Converted operations in '6%spell_haste+talent.natures_balance.enabled+talent.orbit_breaker.enabled*dot.moonfire.ticking*(buff.orbit_breaker.stack>25)*40' to '6/spell_haste+talent.natures_balance.enabled+talent.orbit_breaker.enabled*dot.moonfire.ticking*(buff.orbit_breaker.stack>25)*40'.\nLine 9: Converted 'trinket.2.ready_cooldown' to 'trinket.t2.ready_cooldown' (1x).\nLine 10: Converted 'trinket.1.ready_cooldown' to 'trinket.t1.ready_cooldown' (1x).\n\nThe import for 'precombat' required some automated changes.\nLine 3: Converted 'talent.celestial_alignment' to 'talent.celestial_alignment.enabled' (1x).\nLine 3: Converted 'talent.incarnation_chosen_of_elune' to 'talent.incarnation_chosen_of_elune.enabled' (1x).\nLine 4: Converted 'talent.power_of_goldrinn' to 'talent.power_of_goldrinn.enabled' (1x).\nLine 6: Converted 'trinket.1.has_use_buff' to 'trinket.t1.has_use_buff' (1x).\nLine 6: Converted 'trinket.1.cooldown.duration' to 'trinket.t1.cooldown.duration' (1x).\nLine 6: Converted 'trinket.1.cooldown.duration' to 'trinket.t1.cooldown.duration'.\nLine 7: Converted 'trinket.2.has_use_buff' to 'trinket.t2.has_use_buff' (1x).\nLine 7: Converted 'trinket.2.cooldown.duration' to 'trinket.t2.cooldown.duration' (1x).\nLine 7: Converted 'trinket.2.cooldown.duration' to 'trinket.t2.cooldown.duration'.\n\nThe import for 'aoe' required some automated changes.\nLine 3: Converted 'talent.orbital_strike' to 'talent.orbital_strike.enabled' (1x).\nLine 3: Converted 'talent.incarnation_chosen_of_elune' to 'talent.incarnation_chosen_of_elune.enabled' (1x).\nLine 5: Converted 'talent.orbital_strike' to 'talent.orbital_strike.enabled' (1x).\nLine 12: Converted 'talent.fungal_growth' to 'talent.fungal_growth.enabled' (1x).\nLine 12: Converted 'talent.waning_twilight' to 'talent.waning_twilight.enabled' (1x).\nLine 16: Converted 'talent.starlord' to 'talent.starlord.enabled' (1x).\nLine 17: Converted 'talent.elunes_guidance' to 'talent.elunes_guidance.enabled' (1x).\n\nThe import for 'fallthru' required some automated changes.\nLine 3: Converted operations in 'dot.moonfire.remains>remains*22%18' to 'dot.moonfire.remains>remains*22/18'.\n\nThe import for 'st' required some automated changes.\nLine 4: Converted 'talent.incarnation_chosen_of_elune' to 'talent.incarnation_chosen_of_elune.enabled' (1x).\nLine 20: Converted 'talent.starlord' to 'talent.starlord.enabled' (1x).\nLine 20: Converted 'talent.rattle_the_stars' to 'talent.rattle_the_stars.enabled' (1x).\nLine 27: Converted 'talent.soul_of_the_forest' to 'talent.soul_of_the_forest.enabled' (1x).\nLine 27: Converted 'talent.astral_communion' to 'talent.astral_communion.enabled' (1x).\nLine 28: Converted 'talent.fungal_growth' to 'talent.fungal_growth.enabled' (1x).\nLine 28: Converted 'talent.stellar_flare' to 'talent.stellar_flare.enabled' (1x).\n\nImported 5 action lists.\n",
+					["profile"] = "actions.precombat+=/moonkin_form\nactions.precombat+=/mark_of_the_wild\nactions.precombat+=/variable,name=no_cd_talent,value=!talent.celestial_alignment&!talent.incarnation_chosen_of_elune\nactions.precombat+=/variable,name=fourpc_starfall_st,value=talent.aetherial_kindling.rank=2&!talent.power_of_goldrinn\nactions.precombat+=/variable,name=on_use_trinket,value=0\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=trinket.1.has_use_buff&trinket.1.cooldown.duration\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=(trinket.2.has_use_buff&trinket.2.cooldown.duration)*2\nactions.precombat+=/wrath,if=(eclipse.any_next||eclipse.lunar_next)\n\n# Executed every time the actor is available.\nactions+=/solar_beam\nactions+=/soothe\nactions+=/wrath,if=time<1&(eclipse.any_next||eclipse.lunar_next)\nactions=variable,name=is_aoe,value=spell_targets.starfall>1\nactions+=/variable,name=is_cleave,value=spell_targets.starfire>1\nactions+=/variable,name=passive_asp,value=6%spell_haste+talent.natures_balance+talent.orbit_breaker*dot.moonfire.ticking*(buff.orbit_breaker.stack>25)*40\nactions+=/berserking,if=buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<15\nactions+=/potion,if=buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<25\nactions+=/use_items,slots=trinket1,if=variable.on_use_trinket!=1&!trinket.2.ready_cooldown||(variable.on_use_trinket=1||variable.on_use_trinket=3)&buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<20||variable.on_use_trinket=0\nactions+=/use_items,slots=trinket2,if=variable.on_use_trinket!=2&!trinket.1.ready_cooldown||variable.on_use_trinket=2&buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<20||variable.on_use_trinket=0\nactions+=/use_items\nactions+=/run_action_list,name=aoe,if=variable.is_aoe\nactions+=/run_action_list,name=st\n\nactions.aoe=sunfire,cycle_targets=1,if=refreshable&(target.time_to_die-remains)>8&astral_power.deficit>variable.passive_asp+3\nactions.aoe+=/moonfire,cycle_targets=1,if=refreshable&(target.time_to_die-remains)>8&astral_power.deficit>variable.passive_asp+3\nactions.aoe+=/variable,name=cd_condition_aoe,value=cooldown.ca_inc.remains<5&!buff.ca_inc.up&(target.1.time_to_die>10-5*talent.orbital_strike||boss&fight_remains<25+10*talent.incarnation_chosen_of_elune)\nactions.aoe+=/wrath,if=variable.cd_condition_aoe&set_bonus.tier29_4pc&eclipse.any_next\nactions.aoe+=/starfall,if=variable.cd_condition_aoe&(talent.orbital_strike&astral_power.deficit<variable.passive_asp+8*spell_targets||buff.touch_the_cosmos.up)||astral_power.deficit<(variable.passive_asp+8+12*(buff.eclipse_lunar.remains<4||buff.eclipse_solar.remains<4))\nactions.aoe+=/celestial_alignment,if=variable.cd_condition_aoe\nactions.aoe+=/incarnation,if=variable.cd_condition_aoe\nactions.aoe+=/warrior_of_elune\nactions.aoe+=/wrath,if=eclipse.any_next||buff.eclipse_lunar.up&buff.eclipse_lunar.remains<action.wrath.execute_time\nactions.aoe+=/fury_of_elune,if=astral_power.deficit>variable.passive_asp+8\nactions.aoe+=/full_moon,if=astral_power.deficit>variable.passive_asp+40&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.aoe+=/wild_mushroom,if=astral_power.deficit>variable.passive_asp+20&(!talent.fungal_growth||!talent.waning_twilight||dot.fungal_growth.remains<2&fight_remains>7)\nactions.aoe+=/starfire,if=(buff.gathering_starstuff.stack=3||buff.umbral_embrace.up)&astral_power.deficit>variable.passive_asp+(8*(1+0.4*buff.warrior_of_elune.up))\nactions.aoe+=/astral_communion,if=astral_power.deficit>variable.passive_asp+55\nactions.aoe+=/stellar_flare,cycle_targets=1,if=refreshable&(target.time_to_die-remains-spell_targets.starfire)>8&astral_power.deficit>variable.passive_asp+8\nactions.aoe+=/starfall,if=target.time_to_die>4&(buff.ca_inc.remains<12&buff.ca_inc.up||buff.starweavers_warp.up||talent.starlord&buff.starlord.stack<3)\nactions.aoe+=/convoke_the_spirits,if=astral_power<50&spell_targets.starfall<3+talent.elunes_guidance&(buff.eclipse_lunar.remains>4||buff.eclipse_solar.remains>4)\nactions.aoe+=/new_moon,if=astral_power.deficit>variable.passive_asp+10\nactions.aoe+=/half_moon,if=astral_power.deficit>variable.passive_asp+20&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.aoe+=/starsurge,if=buff.starweavers_weft.up\nactions.aoe+=/force_of_nature,if=astral_power.deficit>variable.passive_asp+20\nactions.aoe+=/wrath,if=buff.eclipse_solar.remains>execute_time&spell_targets.starfire<4\nactions.aoe+=/starfire\nactions.aoe+=/run_action_list,name=fallthru\n\nactions.fallthru=starfall,if=variable.is_aoe\nactions.fallthru+=/starsurge\nactions.fallthru+=/sunfire,cycle_targets=1,if=dot.moonfire.remains>remains*22%18\nactions.fallthru+=/moonfire\n\nactions.st=sunfire,cycle_targets=1,if=refreshable&remains<2\nactions.st+=/moonfire,cycle_targets=1,if=refreshable&remains<2\nactions.st+=/stellar_flare,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+8&remains<2\nactions.st+=/variable,name=cd_condition_st,value=cooldown.ca_inc.remains<15&!buff.ca_inc.up&(target.1.time_to_die>15||boss&fight_remains<25+10*talent.incarnation_chosen_of_elune)\nactions.st+=/wrath,if=variable.cd_condition_st&set_bonus.tier29_4pc&eclipse.any_next\nactions.st+=/starsurge,if=variable.cd_condition_st&buff.touch_the_cosmos.up||buff.primordial_arcanic_pulsar.value>=560&buff.starweavers_weft.up\nactions.st+=/starfall,if=buff.primordial_arcanic_pulsar.value>=550&!buff.ca_inc.up\nactions.st+=/celestial_alignment,if=variable.cd_condition_st\nactions.st+=/incarnation,if=variable.cd_condition_st\nactions.st+=/warrior_of_elune\nactions.st+=/variable,name=enter_lunar,value=eclipse.any_next||buff.eclipse_lunar.up&buff.eclipse_lunar.remains<action.wrath.execute_time\nactions.st+=/wrath,if=variable.enter_lunar\nactions.st+=/variable,name=convoke_condition,value=buff.ca_inc.remains>4||(cooldown.ca_inc.remains>30||variable.no_cd_talent)&(buff.eclipse_lunar.remains>4||buff.eclipse_solar.remains>4)\nactions.st+=/starsurge,if=action.convoke_the_spirits.known&cooldown.convoke_the_spirits.ready&variable.convoke_condition\nactions.st+=/convoke_the_spirits,if=variable.convoke_condition\nactions.st+=/astral_communion,if=astral_power.deficit>variable.passive_asp+55\nactions.st+=/force_of_nature,if=astral_power.deficit>variable.passive_asp+20\nactions.st+=/fury_of_elune,if=astral_power.deficit>variable.passive_asp+8\nactions.st+=/starfall,if=buff.starweavers_warp.up&!buff.touch_the_cosmos.up\nactions.st+=/starsurge,if=talent.starlord&buff.starlord.stack<3||talent.rattle_the_stars&buff.rattled_stars.up&buff.rattled_stars.remains<gcd.max\nactions.st+=/sunfire,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+3\nactions.st+=/moonfire,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+3\nactions.st+=/stellar_flare,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+8\nactions.st+=/new_moon,if=astral_power.deficit>variable.passive_asp+10\nactions.st+=/half_moon,if=astral_power.deficit>variable.passive_asp+20&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/full_moon,if=astral_power.deficit>variable.passive_asp+40&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/starsurge,if=buff.starweavers_weft.up||astral_power.deficit<variable.passive_asp+(8*(1+0.5*talent.soul_of_the_forest*buff.eclipse_solar.up))||talent.astral_communion&cooldown.astral_communion.remains<3||boss&fight_remains<5\nactions.st+=/wild_mushroom,if=astral_power.deficit>variable.passive_asp+5&(!talent.fungal_growth||talent.stellar_flare||dot.fungal_growth.remains<2)||boss&fight_remains<10\nactions.st+=/starfire,if=eclipse.in_lunar&buff.umbral_embrace.react||buff.eclipse_lunar.up&buff.warrior_of_elune.up\nactions.st+=/wrath\nactions.st+=/run_action_list,name=fallthru",
 					["spec"] = 102,
-					["profile"] = "actions.precombat+=/moonkin_form\nactions.precombat+=/mark_of_the_wild\nactions.precombat+=/variable,name=no_cd_talent,value=!talent.celestial_alignment&!talent.incarnation_chosen_of_elune\nactions.precombat+=/variable,name=fourpc_starfall_st,value=talent.aetherial_kindling.rank=2&!talent.power_of_goldrinn\nactions.precombat+=/variable,name=on_use_trinket,value=0\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=trinket.1.has_use_buff&trinket.1.cooldown.duration\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=(trinket.2.has_use_buff&trinket.2.cooldown.duration)*2\nactions.precombat+=/wrath,if=(eclipse.any_next||eclipse.lunar_next)\n\n# Executed every time the actor is available.\nactions+=/solar_beam\nactions+=/soothe\nactions+=/wrath,if=time<1&(eclipse.any_next||eclipse.lunar_next)\nactions=variable,name=is_aoe,value=spell_targets.starfall>1\nactions+=/variable,name=is_cleave,value=spell_targets.starfire>1\nactions+=/variable,name=passive_asp,value=6%spell_haste+talent.natures_balance+talent.orbit_breaker*dot.moonfire.ticking*(buff.orbit_breaker.stack>25)*40\nactions+=/berserking,if=buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<15\nactions+=/potion,if=buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<25\nactions+=/use_items,slots=trinket1,if=variable.on_use_trinket!=1&!trinket.2.ready_cooldown||(variable.on_use_trinket=1||variable.on_use_trinket=3)&buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<20||variable.on_use_trinket=0\nactions+=/use_items,slots=trinket2,if=variable.on_use_trinket!=2&!trinket.1.ready_cooldown||variable.on_use_trinket=2&buff.ca_inc.up||variable.no_cd_talent||boss&fight_remains<20||variable.on_use_trinket=0\nactions+=/use_items\nactions+=/run_action_list,name=aoe,if=variable.is_aoe\nactions+=/run_action_list,name=st\n\nactions.aoe=sunfire,cycle_targets=1,if=refreshable&(target.time_to_die-remains)>8&astral_power.deficit>variable.passive_asp+3\nactions.aoe+=/moonfire,cycle_targets=1,if=refreshable&(target.time_to_die-remains)>8&astral_power.deficit>variable.passive_asp+3\nactions.aoe+=/variable,name=cd_condition_aoe,value=cooldown.ca_inc.remains<5&!buff.ca_inc.up&(target.1.time_to_die>10-5*talent.orbital_strike||boss&fight_remains<25+10*talent.incarnation_chosen_of_elune)\nactions.aoe+=/wrath,if=variable.cd_condition_aoe&set_bonus.tier29_4pc&eclipse.any_next\nactions.aoe+=/starfall,if=variable.cd_condition_aoe&(talent.orbital_strike&astral_power.deficit<variable.passive_asp+8*spell_targets||buff.touch_the_cosmos.up)||astral_power.deficit<(variable.passive_asp+8+12*(buff.eclipse_lunar.remains<4||buff.eclipse_solar.remains<4))\nactions.aoe+=/celestial_alignment,if=variable.cd_condition_aoe\nactions.aoe+=/incarnation,if=variable.cd_condition_aoe\nactions.aoe+=/warrior_of_elune\nactions.aoe+=/wrath,if=eclipse.any_next||buff.eclipse_lunar.up&buff.eclipse_lunar.remains<action.wrath.execute_time\nactions.aoe+=/fury_of_elune,if=astral_power.deficit>variable.passive_asp+8\nactions.aoe+=/full_moon,if=astral_power.deficit>variable.passive_asp+40&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.aoe+=/wild_mushroom,if=astral_power.deficit>variable.passive_asp+20&(!talent.fungal_growth||!talent.waning_twilight||dot.fungal_growth.remains<2&fight_remains>7)\nactions.aoe+=/starfire,if=(buff.gathering_starstuff.stack=3||buff.umbral_embrace.up)&astral_power.deficit>variable.passive_asp+(8*(1+0.4*buff.warrior_of_elune.up))\nactions.aoe+=/astral_communion,if=astral_power.deficit>variable.passive_asp+55\nactions.aoe+=/stellar_flare,cycle_targets=1,if=refreshable&(target.time_to_die-remains-spell_targets.starfire)>8&astral_power.deficit>variable.passive_asp+8\nactions.aoe+=/starfall,if=target.time_to_die>4&(buff.ca_inc.remains<12&buff.ca_inc.up||buff.starweavers_warp.up||talent.starlord&buff.starlord.stack<3)\nactions.aoe+=/convoke_the_spirits,if=astral_power<50&spell_targets.starfall<3+talent.elunes_guidance&(buff.eclipse_lunar.remains>4||buff.eclipse_solar.remains>4)\nactions.aoe+=/new_moon,if=astral_power.deficit>variable.passive_asp+10\nactions.aoe+=/half_moon,if=astral_power.deficit>variable.passive_asp+20&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.aoe+=/starsurge,if=buff.starweavers_weft.up\nactions.aoe+=/force_of_nature,if=astral_power.deficit>variable.passive_asp+20\nactions.aoe+=/starfire\nactions.aoe+=/run_action_list,name=fallthru\n\nactions.fallthru=starfall,if=variable.is_aoe\nactions.fallthru+=/starsurge\nactions.fallthru+=/sunfire,cycle_targets=1,if=dot.moonfire.remains>remains*22%18\nactions.fallthru+=/moonfire\n\nactions.st=sunfire,cycle_targets=1,if=refreshable&remains<2\nactions.st+=/moonfire,cycle_targets=1,if=refreshable&remains<2\nactions.st+=/stellar_flare,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+8&remains<2\nactions.st+=/variable,name=cd_condition_st,value=cooldown.ca_inc.remains<15&!buff.ca_inc.up&(target.1.time_to_die>15||boss&fight_remains<25+10*talent.incarnation_chosen_of_elune)\nactions.st+=/wrath,if=variable.cd_condition_st&set_bonus.tier29_4pc&eclipse.any_next\nactions.st+=/starfall,if=buff.primordial_arcanic_pulsar.value>=550&!buff.ca_inc.up\nactions.st+=/starsurge,if=variable.cd_condition_st&buff.touch_the_cosmos.up\nactions.st+=/celestial_alignment,if=variable.cd_condition_st\nactions.st+=/incarnation,if=variable.cd_condition_st\nactions.st+=/warrior_of_elune\nactions.st+=/variable,name=enter_lunar,value=eclipse.any_next||buff.eclipse_lunar.up&buff.eclipse_lunar.remains<action.wrath.execute_time\nactions.st+=/wrath,if=variable.enter_lunar\nactions.st+=/variable,name=convoke_condition,value=buff.ca_inc.remains>4||(cooldown.ca_inc.remains>30||variable.no_cd_talent)&(buff.eclipse_lunar.remains>4||buff.eclipse_solar.remains>4)\nactions.st+=/starsurge,if=action.convoke_the_spirits.known&cooldown.convoke_the_spirits.ready&variable.convoke_condition\nactions.st+=/convoke_the_spirits,if=variable.convoke_condition\nactions.st+=/astral_communion,if=astral_power.deficit>variable.passive_asp+55\nactions.st+=/force_of_nature,if=astral_power.deficit>variable.passive_asp+20\nactions.st+=/fury_of_elune,if=astral_power.deficit>variable.passive_asp+8\nactions.st+=/starfall,if=buff.starweavers_warp.up\nactions.st+=/starsurge,if=talent.starlord&buff.starlord.stack<3||talent.rattle_the_stars&buff.rattled_stars.up&buff.rattled_stars.remains<gcd.max\nactions.st+=/sunfire,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+3\nactions.st+=/moonfire,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+3\nactions.st+=/stellar_flare,cycle_targets=1,if=refreshable&astral_power.deficit>variable.passive_asp+8\nactions.st+=/new_moon,if=astral_power.deficit>variable.passive_asp+10\nactions.st+=/half_moon,if=astral_power.deficit>variable.passive_asp+20&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/full_moon,if=astral_power.deficit>variable.passive_asp+40&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/starsurge,if=buff.starweavers_weft.up||astral_power.deficit<variable.passive_asp+(8*(1+0.5*talent.soul_of_the_forest*buff.eclipse_solar.up))||talent.astral_communion&cooldown.astral_communion.remains<3||boss&fight_remains<5\nactions.st+=/wild_mushroom,if=astral_power.deficit>variable.passive_asp+5&(!talent.fungal_growth||talent.stellar_flare||dot.fungal_growth.remains<2)||boss&fight_remains<10\nactions.st+=/starfire,if=eclipse.in_lunar||buff.warrior_of_elune.up&(buff.eclipse_lunar.up||buff.umbral_embrace.react)\nactions.st+=/wrath\nactions.st+=/run_action_list,name=fallthru",
 				},
 				["Guardian"] = {
 					["source"] = "https://github.com/simulationcraft/simc/",

@@ -34,8 +34,8 @@
 	<Script file="Destroying\InktraderModule.lua"/>
 	
     <Script file="Flipping\SmeltingModule.lua"/>
-    <Script file="Flipping\SpiritOfHarmonyFlipsModule.lua"/>
-    <Script file="Flipping\FrozenOrbFlipsModule.lua"/>
+    <Script file="Flipping\TailoringModule.lua"/>
+    <Script file="Flipping\MiscFlipsModule.lua"/>
 
     <Script file="Transmog\VanillaTransmogModule.lua"/>
 
@@ -46,6 +46,7 @@
 
     <Script file="DashboardModule.lua"/>
     <Script file="CustomResultModule.lua"/>
+    <Script file="CustomFlipModule.lua"/>
     <Script file="FarmPlannerModule.lua"/>
     <Script file="ConfigurationModule.lua"/>
 </Ui>

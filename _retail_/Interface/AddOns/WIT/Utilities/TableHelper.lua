@@ -52,3 +52,13 @@ function TableHelper.RemoveValue(t, value)
 
     return t
 end
+
+function TableHelper.Insert(t, value)
+    local index = TableHelper.IndexOf(t, value)
+
+    if not index then
+        table.insert(t, value)
+    end
+
+    return value
+end

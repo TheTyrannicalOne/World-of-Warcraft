@@ -113,13 +113,16 @@ function RoutesHelper.GetRouteTree()
     local zones = {}
 
     for zone, routes in pairs(Routes.db.global.routes) do
-        local data = { Id = zone, Name = C_Map.GetMapInfo(zone).name, Routes = {} }
-        for k, v in pairs(routes) do
-            table.insert(data.Routes, { Name = k, Zone = data, Data = core.TableHelper.ShallowCopy(v) })
-        end
-        table.sort(data.Routes, function(a, b) return a.Name < b.Name end)
-        if #data.Routes > 0 then
-            table.insert(zones, data)
+        local mapInfo = C_Map.GetMapInfo(zone)
+        if mapInfo ~= nil then
+            local data = { Id = zone, Name = mapInfo.name, Routes = {} }
+            for k, v in pairs(routes) do
+                table.insert(data.Routes, { Name = k, Zone = data, Data = core.TableHelper.ShallowCopy(v) })
+            end
+            table.sort(data.Routes, function(a, b) return a.Name < b.Name end)
+            if #data.Routes > 0 then
+                table.insert(zones, data)
+            end
         end
     end
     table.sort(zones, function(a, b) return a.Name == b.Name and a.Id < b.Id or a.Name < b.Name end)

@@ -51,7 +51,7 @@ core.Data.Results.Farms.TeroclawHatchlingTalador,
 	
 }
 
-local module = core.FarmResultModule('RareBattlePets', data, 'BattlePets')
+local module = core.FarmResultModule('RareBattlePets', data, 'BattlePets', core.Activity.BattlePets)
 module.Columns[#module.Columns].Visible = false
 module.ConfigKey = "Pets"
 table.insert(core.Modules, module)

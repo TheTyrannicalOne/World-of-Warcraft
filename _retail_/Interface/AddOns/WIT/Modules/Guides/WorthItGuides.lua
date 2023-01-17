@@ -12,15 +12,15 @@ local sections = {
     core.GuideSections.Text('DataSourceSection_9'),
 }
 
-table.insert(core.Modules, core.GuideModule('DataSource', sections, 'Help'))
+--table.insert(core.Modules, core.GuideModule('DataSource', sections, 'Help'))
 
 sections = {
     core.GuideSections.Heading('AddonsGuideSection_1'),
     core.GuideSections.Text('AddonsGuideSection_2'),
     core.GuideSections.Section('AddonsGuideSection_3'),
     core.GuideSections.Text('AddonsGuideSection_4'),
-    core.GuideSections.Section('AddonsGuideSection_5'),
-    core.GuideSections.Text('AddonsGuideSection_6'),
+--    core.GuideSections.Section('AddonsGuideSection_5'),
+--    core.GuideSections.Text('AddonsGuideSection_6'),
     core.GuideSections.Section('AddonsGuideSection_7'),
     core.GuideSections.Text('AddonsGuideSection_8'),
     core.GuideSections.Section('AddonsGuideSection_9'),
@@ -66,6 +66,47 @@ sections = {
     core.GuideSections.Text('RecorderGuideSection_26'),
 }
 table.insert(core.Modules, core.GuideModule('RecorderGuide', sections, 'Help'))
+
+sections = {
+    core.GuideSections.Heading('FlipEditorGuideSection_1'),
+    core.GuideSections.Text('FlipEditorGuideSection_2'),
+    core.GuideSections.Image('Interface\\AddOns\\WIT\\Images\\Guides\\flip_editor1.jpeg', 512, 512),
+    core.GuideSections.Section('FlipEditorGuideSection_3'),
+    core.GuideSections.Text('FlipEditorGuideSection_4'),
+    core.GuideSections.Section('FlipEditorGuideSection_5'),
+    core.GuideSections.Text('FlipEditorGuideSection_6'),
+    core.GuideSections.Section('FlipEditorGuideSection_7'),
+    core.GuideSections.Text('FlipEditorGuideSection_8'),
+    core.GuideSections.Section('FlipEditorGuideSection_9'),
+    core.GuideSections.Text('FlipEditorGuideSection_10'),
+    core.GuideSections.Section('FlipEditorGuideSection_11'),
+    core.GuideSections.Text('FlipEditorGuideSection_12'),
+    core.GuideSections.Section('FlipEditorGuideSection_13'),
+    core.GuideSections.Image('Interface\\AddOns\\WIT\\Images\\Guides\\flip_editor2.jpeg', 512, 512),
+    core.GuideSections.Text('FlipEditorGuideSection_14'),
+    core.GuideSections.Section('FlipEditorGuideSection_15'),
+    core.GuideSections.Text('FlipEditorGuideSection_16'),
+    core.GuideSections.Section('FlipEditorGuideSection_17'),
+    core.GuideSections.Text('FlipEditorGuideSection_18'),
+    core.GuideSections.Section('FlipEditorGuideSection_19'),
+    core.GuideSections.Text('FlipEditorGuideSection_20'),
+    core.GuideSections.Section('FlipEditorGuideSection_21'),
+    core.GuideSections.Text('FlipEditorGuideSection_22'),
+    core.GuideSections.Section('FlipEditorGuideSection_23'),
+    core.GuideSections.Text('FlipEditorGuideSection_24'),
+    core.GuideSections.Section('FlipEditorGuideSection_25'),
+    core.GuideSections.Text('FlipEditorGuideSection_26'),
+    core.GuideSections.Section('FlipEditorGuideSection_27'),
+    core.GuideSections.Text('FlipEditorGuideSection_28'),
+    core.GuideSections.Section('FlipEditorGuideSection_29'),
+    core.GuideSections.Text('FlipEditorGuideSection_30'),
+    core.GuideSections.Section('FlipEditorGuideSection_31'),
+    core.GuideSections.Text('FlipEditorGuideSection_32'),
+    core.GuideSections.Section('FlipEditorGuideSection_33'),
+    core.GuideSections.Image('Interface\\AddOns\\WIT\\Images\\Guides\\flip_editor3.jpeg', 512, 512),
+    core.GuideSections.Text('FlipEditorGuideSection_34'),
+}
+table.insert(core.Modules, core.GuideModule('FlipEditorGuide', sections, 'Help'))
 
 sections = {
     core.GuideSections.Heading('TricksGuideSection_1'),

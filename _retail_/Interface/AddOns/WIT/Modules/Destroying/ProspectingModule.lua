@@ -15,4 +15,4 @@ local prospectData = {
 	core.Data.Results.Flips.ProspectingLaestriteOre,
 }
 
-table.insert(core.Modules, core.DestroyingResultModule('Prospecting', prospectData, 'Flipping'))
+table.insert(core.Modules, core.DestroyingResultModule('Prospecting', prospectData, 'Flipping', core.FlipActivity.Prospecting))

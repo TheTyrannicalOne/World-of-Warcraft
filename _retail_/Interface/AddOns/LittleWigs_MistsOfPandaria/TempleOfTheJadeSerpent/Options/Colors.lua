@@ -26,10 +26,11 @@ BigWigs:AddColors("Liu Flameheart", {
 
 BigWigs:AddColors("Sha of Doubt", {
 	[106113] = {"blue","yellow"},
-	[117665] = {"green","orange"},
+	[117665] = {"cyan","green","orange"},
 })
 
 BigWigs:AddColors("Temple of the Jade Serpent Trash", {
+	[114646] = "purple",
 	[395859] = "red",
 	[395872] = {"blue","yellow"},
 	[396001] = "orange",

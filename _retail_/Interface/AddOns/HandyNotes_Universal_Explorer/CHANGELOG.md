@@ -34,3 +34,22 @@
 ## Changes in 10.0.2
 * Updated TOC for 10.0.2
 * Added Coordinates for The Forbidden Reach
+## Changes in 10.0.2.1
+* New Tooltip Features:
+  - Show the database coordinates
+  - Show the Achievement id
+  - Show the Criteria id
+  - Show the Source of the coordinate data
+  - Show who worte the coordinate data
+* Updated Coordinates:
+
+  Legion:	Suramar: 		Ruins of Eline'eth		( Thanks to Bubalazzy)
+
+  Outlands: 	Terokkar Forest:	Razorthorn Shelf		( Thanks to Bubalazzy)
+  Outlands: 	Hellfire Peninsula:	The Stair of Destiny		( Thanks to Bubalazzy)
+  Outlands: 	Blade's Edge Mountains:	Razor Ridge			( Thanks to Bubalazzy)
+
+  Northrend: 	Icecrown: 		Valley of Echoes		( Thanks to Bubalazzy)
+
+  Pandaria:	 Dread Wastes:		Rikkitum Village		( Thanks to Bluduz)
+

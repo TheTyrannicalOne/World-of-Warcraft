@@ -297,8 +297,8 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
-			["AppendUnitKoSCheck"] = true,
 			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
 		},
 		["Banuumine - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -682,7 +682,6 @@ SpyDB = {
 				},
 			},
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Laymonan - Zul'jin"] = {

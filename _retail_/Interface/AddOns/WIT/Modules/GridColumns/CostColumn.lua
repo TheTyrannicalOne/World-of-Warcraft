@@ -22,6 +22,10 @@ function GridColumns.CostColumn(options)
     function self.GetItemList(data)
         return data.Materials
     end
+
+    function self.GetMoney(data)
+        return data.InputMoney
+    end
     
     return self
 end

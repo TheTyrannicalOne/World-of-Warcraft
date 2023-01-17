@@ -6,18 +6,18 @@ WoWPro:GuideNextGuide(guide, 'Thaldraszus')
 WoWPro:GuideSteps(guide, function()
 return [[
 ;Renown stuff -- I think since they are all based on someone showing up whereever you are, they should be put at the top of the guide, once we have the REN stuff worked out since everyone will receive those quests at a little bit diff time based on what they have done to earn REN.
-A Community Feasts|QID|70938|M|7.66,44.30|Z|2024|N|From Rowie.|RANK|2|DFREN|Iskaara;2511;3|
-A Fishing Holes|QID|70941|M|PLAYER|Z|2024|N|From Rowie.|DFREN|Iskaara;2511;4|
-A Tuskarr Fishing Gear|QID|71230|LEAD|70871|M|PLAYER|N|From Rowie|DFREN|Iskaara;2511;5|
-A To Dragonbane Keep!|QID|71210|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;5|
-A Aerial Challenges|QID|71227|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;7|;didnt show up till just after I picked up next quest after obtaining REN7 (dont know a 1 minute or so delay, or just picking up any quest then causes them to notice you?
+;A Community Feasts|QID|70938|M|7.66,44.30|Z|2024|N|From Rowie.|RANK|2|DFREN|Iskaara;2511;3|
+;A Fishing Holes|QID|70941|M|PLAYER|Z|2024|N|From Rowie.|DFREN|Iskaara;2511;4|
+;A Tuskarr Fishing Gear|QID|71230|LEAD|70871|N|From Rowie|DFREN|Iskaara;2511;5|
+;A To Dragonbane Keep!|QID|71210|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;5|
+;A Dormant Discovery|QID|66595|N|UI accepted at Dragonscale Expedition Renown 7|DFREN|Dragonscale Exp;2507;7|
+;A Aerial Challenges|QID|71227|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;7|;didnt show up till just after I picked up next quest after obtaining REN7 (dont know a 1 minute or so delay, or just picking up any quest then causes them to notice you?
 
 ;Doc Nanners didn't follow me. You have to have world quests unlocked.
 ;A A Climber's Calling|QID|69855|M|PLAYER|N|From Doc Nanners, who will follow you and get in your way until you accept the quest.|DFREN|Dragonscale Exp;2507;6|ACH|-16363|
-
-A Dormant Discovery|QID|66595|N|UI accepted at Dragonscale Expedition Renown 7|DFREN|Dragonscale Exp;2507;7|
-A Continued Waygate Exploration|QID|70702|M|PLAYER|N|From Doc Nanners.|DFREN|dragonscale exp;2507;8|PRE|70156|
-A A Cataloger's Paradise|QID|69869|ACTIVE|65490|N|From Doc Nanners.|DFREN|Dragonscale Expedition;2507;8|
+;A Continued Waygate Exploration|QID|70702|M|PLAYER|N|From Doc Nanners.|DFREN|dragonscale exp;2507;8|PRE|70156|
+;A A Climber's Calling|QID|69855|M|PLAYER|N|From Doc Nanners, who will follow you and get in your way until you accept the quest.|DFREN|Dragonscale Exp;2507;6|ACH|-16363|
+;A A Cataloger's Paradise|QID|69869|ACTIVE|65490|N|From Doc Nanners.|DFREN|Dragonscale Expedition;2507;8|
 
 ;Dragon Riding Glyphs that need to be worked into the guide.
 ;PLACED F Cobalt Assembly|N|On top of the high tower.|M|45.88,25.75|Z|2024;The Azure Plains!Dragonflight|ACH|16064|
@@ -58,7 +58,7 @@ K Gorger|ACTIVE|67177|M|40.09,37.39|QO|1|Z|2024|L|194901|N|Kill the big Thunderl
 T How To Stop An Exploding Toy Boat|QID|67175|M|41.22,35.88|Z|2024|N|To Miva Star-Eye.|
 T WANTED: Gorger|QID|67177|M|41.42,36.41|Z|2024|N|To Shala.|
 
-R Camp Antonidas|ACTIVE|66228^70746|M|45.94,40.65|Z|2024|N|Continue up the road to Camp Antonidas.\n\n[color=FF0000]NOTE: [/color]Our good friend Hemet Nesingwary drives a wagon around the zone, his full route take a bit over an hour, stopping 6 times offering a different kill quest each time. Keep your eye out for him and grab those quests if you want them. Guide won't tell you when to pick them up, but the kill and Turn in steps are here. It might be worth asking in zone chat for someone to share them with you as he is a pain to find.\n\nYou can also hop on his cart and ride around with him and grab the quests as they pop up.|;not rank 2. the info about Hemet is. but everyone has to run here. and extra info doesnt hurt.
+R Camp Antonidas|ACTIVE|66228^70746|M|45.94,40.65|Z|2024|N|Continue up the road to Camp Antonidas.\n\n[color=FF0000]NOTE: [/color]Our good friend Hemet Nesingwary drives a wagon around the zone, his full route take a bit over an hour, stopping 3 times in Camp Antonidas offering a different kill quest each time. Keep your eye out for him and grab those quests if you want them. Guide won't tell you when to pick them up, but the kill and Turn in steps are here. It might be worth asking in zone chat for someone to share them with you as he is a pain to find.\n\nYou can also hop on his cart and ride around with him and grab the quests as they pop up.|;not rank 2. the info about Hemet is. but everyone has to run here. and extra info doesnt hurt.
 C Shades of Blue|QID|70746|M|45.61,41.25|Z|2024|N|Meet Emberthal and Telash at Camp Antonidas.You can just fly there and don't need to walk with them.|
 T Shades of Blue|QID|70746|M|45.61,41.25|Z|2024|N|To Scalecommander Emberthal.|
 A The Azure Wizard|QID|70747|PRE|70746|M|45.6,41.2|Z|2024|N|From Telash Greywing.\nWait for them to finish their dialogue.|C|EVOKER|
@@ -73,7 +73,7 @@ A Power Procurement|QID|66582|PRE|70215|M|45.94,40.65|Z|2024|N|From Warpcaster D
 T Camp Antonidas|QID|66228|M|46.65,40.17|Z|2024|N|To Noriko the All-Remembering.|
 A Assemble the Defenses|QID|67033|PRE|66228^70747|M|46.69,39.76|Z|2024|N|From Noriko the All-Remembering.|
 A Preservation of Knowledge|QID|67035|PRE|66228^70747|M|46.66,39.74|Z|2024|N|From Althanus.|
-A Supporting the Cobalt Assembly|QID|72784|PRE|66228|M|46.66,39.74|Z|2024|N|From Althanus.|RANK|2|
+A Supporting the Cobalt Assembly|QID|72784|PRE|66228|M|46.66,39.74|Z|2024|N|From Althanus.|LVL|68|RANK|2|
 C Assemble the Defenses|QID|67033|QO|1<1|M|46.16,39.35|Z|2024|H|N|Beware of the bombardment. Pick the first device up here.|
 C Preservation of Knowledge|QID|67035|M|46.11,38.51|Z|2024|H|N|Pick up the tomes in the pavilion.|
 C Assemble the Defenses|QID|67033|M|46.1,40.8;45.85,40.17|CS|Z|2024|H|N|And back thru the bombardment to get to the other two Broken Arcane Devices.|
@@ -289,6 +289,9 @@ C Orientation: Iskaara|QID|72435|QO|1|M|13.17,48.53|Z|2024|NC|N|Check out what A
 C Gather the Family|QID|66210|QO|1<3|M|13.87,49.49|Z|2024|H|N|Pick up the boat from on the piling beside Jinkutuk.|
 C Gather the Family|QID|66210|QO|1|M|13.49,48.55|Z|2024|H|N|Pick up the teapot beside Kinook's cookpot.|
 t Community Feasts|QID|70938|M|13.48,48.61|Z|2024|N|To Big Kinook.|IZ|13837|
+A Cooking Utensils|QID|70939|PRE|70938|M|13.57,48.68|Z|2024|N|At Lil Ki.|RANK|2|
+T Cooking Utensils|QID|70939|M|13.57,48.68|Z|2024|N|At Lil Ki.|
+T Fishing Holes|QID|70941|M|13.94,49.24|Z|2024|N|To Nunvuq.|IZ|13837|
 T Tuskarr Fishing Gear|QID|71230|M|12.82,49.18|N|To Tavio.|IZ|13837|
 A Iskaaran Fishing Net|QID|70871|PRE|71230|M|12.82,49.18|N|From Tavio.|RANK|3|
 C Iskaaran Fishing Net|QID|70871|QO|1|M|13.55,50.20|Z|2024|H|N|Pick up the Sea Kelp in town.|
@@ -306,7 +309,7 @@ A Fishing: Aileron Seamoth|QID|66212|PRE|65849|M|14.08,49.44|Z|2024|N|From Lukot
 C Orientation: Iskaara|QID|72435|QO|2|M|13.91,50.08|Z|2024|NC|N|Click on Rokkutuk to discover he supplies recipes.|
 C Fishing: Aileron Seamoth|QID|66212|M|13.91,50.08|Z|2024|NC|N|Take a break and fish. (or manually close this).|
 K Krojek the Shoreprowler|ACTIVE|66217|M|10.91,55.11|Z|2024|QO|1|N|Run/Fly/Swim out to find Krojek The Shoreprowler who swims around this island.|T|Krojek the Shoreprowler|
-T WANTED: Krojek the Shoreprowler|QID|66217|M|12.53,49.83;13.18,48.76|CN|Z|2024|N|To Bukarakikk. He could be in one of two places
+T WANTED: Krojek the Shoreprowler|QID|66217|M|12.53,49.83;13.18,48.76|CN|Z|2024|N|To Bukarakikk. He could be in one of two places.|
 C Gather the Family|QID|66210|M|13.13,48.54|Z|2024|QO|2|H|N|Offerings placed in the boat.|
 T Orientation: Iskaara|QID|72435|M|13.14,49.27|Z|2024|N|To Murik.|
 T Gather the Family|QID|66210|M|13.24,49.54|Z|2024|N|To Brena.|
@@ -325,9 +328,7 @@ A Toejam the Terrible|QID|70129|PRE|66558|M|16.12,50.43|Z|2024|N|From Rowie.|
 C Toejam the Terrible|QID|70129|M|16.75,49.31|Z|2024|CHAT|N|Have a chat with Toejam and explain the situation, then watch.|
 K Bloodhorn|ACTIVE|66958|M|18.88,49.42|Z|2024|QO|1|N|Bloodhorn's Horn.|
 T Toejam the Terrible|QID|70129|M|13.80,49.00|Z|2024|N|To Auntie Kaunnie.|
-A Cooking Utensils|QID|70939|PRE|70938|M|13.57,48.68|Z|2024|N|At Lil Ki.|RANK|2|DFREN|Iskaara;2511;4|
-T Cooking Utensils|QID|70939|M|13.57,48.68|Z|2024|N|At Lil Ki.|
-T Fishing Holes|QID|70941|M|13.94,49.24|Z|2024|N|To Nunvuq.|IZ|13837||DFREN|Iskaara;2511;4|
+
 R Whaler's Nook|ACTIVE|71234|M|8.75,45.74|Z|2024|N|Follow the road west out of town.|
 T Nook News|QID|71234|M|7.46,44.28|Z|2024|N|To Wayun.|
 A A Matter of Taste|QID|66781|PRE|71234|M|7.64,44.35|Z|2024|N|From Mordigan Ironjaw.|
@@ -369,7 +370,7 @@ A Can We Keep It?|QID|66223|PRE|66218|M|10.60,46.88|Z|2024|N|From Neelo.|
 R Iskaara|ACTIVE|66223|M|12,48|N|Head back to town.|
 B Can We Keep It?|ACTIVE|66223|M|13.85,49.46|Z|2024|QO|1|N|Purchase Frigidfish from Jinkutuk or fish them up yourself.|
 T A Practice Bout|QID|70732|M|13.89,49.85|Z|2024|N|To Patchu.|
-A This Calls for a Specialist.|QID|70849|PRE|70732|M|13.89,49.85|Z|2024|N|From Patchu.|
+A This Calls for a Specialist|QID|70849|PRE|70732|M|13.89,49.85|Z|2024|N|From Patchu.|
 T Can We Keep It?|QID|66223|M|10.59,46.87|Z|2024|N|To Neelo.|
 H Azure Archives|ACTIVE|65911|M|PLAYER|TZ|The Conjured Biscuit Inn|N|Hearth or fly back to Kalecgos.|
 
@@ -381,8 +382,9 @@ T Calling the Blue Dragons|QID|66027|M|39.47,63.01|Z|2024|N|To Kalecgos.|
 A To Rhonin's Shield|QID|65886|PRE|66027|M|39.47,63.01|Z|2024|N|From Kalecgos.|
 C To Rhonin's Shield|QID|65886|M|38.26,61.52;39.58,60.27;41.18,62.27|CN|Z|2024|QO|2|NC|EAB|N|(Optional)\nGo stand in one of the three Arcane Stepping Stones and an [color=33fff9]Extra Action Button [/color] will pop up. Clicking it will take you to the top ring, which makes it much easier to fly nearly all the way to Rhonin's Shield.|
 $ Zelthrak Outpost Glyph|QID|99999|M|52.91,48.70|Z|2024;The Azure Plains!Dragonflight|N|This one is hidden amongst the tree branches. You might have to look around for it a bit.|ACH|16071|
+
+;think about moving Riders in the Snow here - so Field Mages will be available when you get to Rhonin's shield.
 R Rhonin's Shield|ACTIVE|65886|M|65.53,25.76|Z|2024|N|Fly over to Rhonin's Shield. Hemet stops here too if you are interested in getting his quests, keep an eye out for him while you are around.|
-;A Pruning The Pack|QID|66968|PRE|67299|M|65.80,26.46|Z|2024|N|From Hemet Nesingwary, if he happens to be here, if not check off and move along.|RANK|2|
 T To Rhonin's Shield|QID|65886|M|65.81,25.31|Z|2024|N|To Drok Scrollstabber.|
 A To the Mountain|QID|65887|PRE|65886|M|65.81,25.31|Z|2024|N|From Drok Scrollstabber.|
 A Drakes be Gone|QID|67299|PRE|65886|M|65.81,25.31|Z|2024|N|From Drok Scrollstabber.|RANK|2|
@@ -428,37 +430,6 @@ C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|3|N|Use ability #3 to
 C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|4|N|And keep after it, 200 more to kill.|
 T The Storm-Eater's Fury|QID|70041|M|78.22,33.34|Z|2024|N|To Kalecgos.|
 A The Blue Dragon Oathstone|QID|66015|PRE|70041|M|78.22,33.34|Z|2024|N|From Kalecgos.|
-
-;R Rhonin's Shield|AVAILABLE|68639|M|65.81,25.32|Z|2024|N|Use the updraft to get a headstart for you flight back to Rhonin's Shield.|
-;A Field Mages|QID|71235|PRE|70041|M|65.81,25.32|Z|2024|N|From Drok Scrollstabber.|RANK|2|
-;T Field Mages|QID|71235|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
-A Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
-A Mossing the Mark|QID|68641|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
-C Prowling Polar Predators|QID|68639|M|62.94,31.12|Z|2024|N|Kill the Infected Bears.|S|
-C Mossing the Mark|QID|68641|M|62.94,31.12|Z|2024|H|N|Click the moss to pick it up. If its all been picked clean, there is a nother patch east of here just a little ways.|
-C Prowling Polar Predators|QID|68639|M|62.94,31.12|Z|2024|N|Kill the Infected Bears.|US|
-T Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
-T Mossing the Mark|QID|68641|M|63.61,28.82|Z|2024|N|To Steria Duskgrove.|
-A Needles to Say|QID|68642|PRE|68639&68641|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
-A Vitamins and Minerals|QID|68643|PRE|68639&68641|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
-C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|H|N|Click on the Prickly Crystalspines to extract quills. They also rarely drop from Bakar.|S|
-C Vitamins and Minerals|QID|68643|M|64.92,29.84|Z|2024|H|N|Click on the Strange Ice Crystals.|
-C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|H|N|Continue to click on the Prickly Crystalspines until you have enough quills.|US|
-T Vitamins and Minerals|QID|68643|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
-T Needles to Say|QID|68642|M|63.61,28.82|Z|2024|N|To Steria Duskgrove.|
-A Sugar, Spice, and Everything Nice|QID|68644|PRE|68642&68643|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
-C Sugar, Spice, and Everything Nice|QID|68644|QO|1|M|63.58,28.90|Z|2024|CHAT|N|Let Steria know you are ready to begin.|
-C Sugar, Spice, and Everything Nice|QID|68644|QO|2|M|63.59,28.83|Z|2024|H|N|Click on the morter and pestle on the ground.|
-C Sugar, Spice, and Everything Nice|QID|68644|QO|3|M|63.58,28.90|Z|2024|CHAT|N|Ask Callisto for help (either option).|
-C Sugar, Spice, and Everything Nice|QID|68644|QO|4|M|63.59,28.83|Z|2024|CHAT|N|Administer the Medicine to Sylvie.|
-T Sugar, Spice, and Everything Nice|QID|68644|M|63.58,28.83|Z|2024|N|To Steria Duskgrove.|
-A Save a Slyvern|QID|69862|PRE|68644|M|63.58,28.83|Z|2024|N|From Steria Duskgrove.|RANK|2|
-T Save a Slyvern|QID|69862|M|65.70,30.86|Z|2024|N|To Steria Duskgrove.|
-A They Took the Kits|QID|70338|PRE|69862|M|65.70,30.86|Z|2024|N|From Steria Duskgrove.|RANK|2|
-C They Took the Kits|QID|70338|QO|1|M|66.57,30.87|Z|2024|U|200526|H|N|Steria gave you an invis charm, I suggest you use it. Go in and rescue the kits.|
-C They Took the Kits|QID|70338|QO|2|M|65.72,30.78|Z|2024|CHAT|N|Offer Sylvie the kits.|
-T They Took the Kits|QID|70338|M|65.70,30.86|Z|2024|N|To Steria Duskgrove.|
-$ Rhonin's Shield Glyph|QID|99999|N|Inside the very top of the tower, you probably want to land on the outside and then drop down inside.|M|67.67,29.11|Z|2024;The Azure Plains!Dragonflight|ACH|16072|
 
 $ Vakthros Range Glyph|QID|99999|N|Floating above the ground as you head for the missing archeologist.|M|72.57,39.77|Z|2024;The Azure Plains!Dragonflight|ACH|16073|
 R Lost Ruins|ACTIVE|66964|M|67.22,44.42|Z|2024|N|Continue flying to Lost Ruins to find Kattigat.|
@@ -536,7 +507,7 @@ R Camp Nowhere|ACTIVE|66671|M|63.19,58.37|Z|2024|N|And we are off to see the Nes
 t Hunting the Huntmaster|QID|66939|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr.|IZ|13859|
 t A Shadow In The Ice|QID|66957|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr.|IZ|13859|
 t Protect And Herd|QID|66958|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr.|IZ|13859|
-t Pruning The Pack|QID|66968|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr..|IZ|13859|
+t Pruning The Pack|QID|66968|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr.|IZ|13859|
 t The Face of Death|QID|66971|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr.|IZ|13859|
 t Old Stonetusk|QID|66972|M|63.19,58.37|Z|2024|N|To Hemet Nesingwary Jr.|IZ|13859|
 T Path to Nowhere|QID|66671|M|63.22,58.42|Z|2024|N|To Maddy Scattershot.|
@@ -572,6 +543,7 @@ T Friendship For Granted|QID|66428|M|68.49,60.46|Z|2024|N|To Rannan Korren, afte
 A I Will Remember|QID|66429|PRE|66428|M|68.49,60.46|Z|2024|N|From Rannan Korren.|
 $ Ruins of Karnthar Glyph|QID|99999|N|On top of this tower.|M|68.45,60.30|Z|2024;The Azure Plains!Dragonflight|ACH|16066|
 T I Will Remember|QID|66429|M|63.68,58.90|Z|2024|N|To Rannan Korren.|
+
 R Rustpine Den|ACTIVE|66141|M|65.63,54.83|CC|Z|2024|N|Fly to Narn, just outside of Rustpine Den.|
 C Broken Traditions, Broken Bodies|QID|66141|M|65.63,54.83|Z|2024|CHAT|N|Ask Narn what happened.|
 T Broken Traditions, Broken Bodies|QID|66141|M|63.50,52.95|Z|2024|N|To Garz.|
@@ -646,6 +618,37 @@ K Stormshackler Rynea|ACTIVE|66556|M|65.95,10.74|Z|2024|QO|2|N|Kill Stormshackle
 K Frostjaw|ACTIVE|66971|QO|1|M|70.22,17.56|Z|2024|N|Kill Frostjaw.|T|Frostjaw|
 T Ice Cave Ya Got There|QID|66556|M|65.38,15.94|Z|2024|N|To Sonova Snowden.|
 
+R Rhonin's Shield|AVAILABLE|71235|M|65.81,25.32|Z|2024|N|Head back to Rhonin's Shield for one more quest chain that wasn't available earlier.|;moved because bliz made the lead in quest dependant on rescuing Old Grimtusk
+A Field Mages|QID|71235|PRE|71135|M|65.81,25.32|Z|2024|N|From Drok Scrollstabber.|RANK|2|LEAD|68639^68641|
+T Field Mages|QID|71235|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
+A Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
+A Mossing the Mark|QID|68641|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
+C Prowling Polar Predators|QID|68639|M|62.94,31.12|Z|2024|N|Kill the Infected Bears.|S|
+C Mossing the Mark|QID|68641|M|62.94,31.12|Z|2024|H|N|Click the moss to pick it up. If its all been picked clean, there is a nother patch east of here just a little ways.|
+C Prowling Polar Predators|QID|68639|M|62.94,31.12|Z|2024|N|Kill the Infected Bears.|US|
+T Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
+T Mossing the Mark|QID|68641|M|63.61,28.82|Z|2024|N|To Steria Duskgrove.|
+A Needles to Say|QID|68642|PRE|68639&68641|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
+A Vitamins and Minerals|QID|68643|PRE|68639&68641|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
+C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|H|N|Click on the Prickly Crystalspines to extract quills. They also rarely drop from Bakar.|S|
+C Vitamins and Minerals|QID|68643|M|64.92,29.84|Z|2024|H|N|Click on the Strange Ice Crystals.|
+C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|H|N|Continue to click on the Prickly Crystalspines until you have enough quills.|US|
+T Vitamins and Minerals|QID|68643|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
+T Needles to Say|QID|68642|M|63.61,28.82|Z|2024|N|To Steria Duskgrove.|
+A Sugar, Spice, and Everything Nice|QID|68644|PRE|68642&68643|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
+C Sugar, Spice, and Everything Nice|QID|68644|QO|1|M|63.58,28.90|Z|2024|CHAT|N|Let Steria know you are ready to begin.|
+C Sugar, Spice, and Everything Nice|QID|68644|QO|2|M|63.59,28.83|Z|2024|H|N|Click on the morter and pestle on the ground.|
+C Sugar, Spice, and Everything Nice|QID|68644|QO|3|M|63.58,28.90|Z|2024|CHAT|N|Ask Callisto for help (either option).|
+C Sugar, Spice, and Everything Nice|QID|68644|QO|4|M|63.59,28.83|Z|2024|CHAT|N|Administer the Medicine to Sylvie.|
+T Sugar, Spice, and Everything Nice|QID|68644|M|63.58,28.83|Z|2024|N|To Steria Duskgrove.|
+A Save a Slyvern|QID|69862|PRE|68644|M|63.58,28.83|Z|2024|N|From Steria Duskgrove.|RANK|2|
+T Save a Slyvern|QID|69862|M|65.70,30.86|Z|2024|N|To Steria Duskgrove.|
+A They Took the Kits|QID|70338|PRE|69862|M|65.70,30.86|Z|2024|N|From Steria Duskgrove.|RANK|2|
+C They Took the Kits|QID|70338|QO|1|M|66.57,30.87|Z|2024|U|200526|H|N|Steria gave you an invis charm, I suggest you use it. Go in and rescue the kits.|
+C They Took the Kits|QID|70338|QO|2|M|65.72,30.78|Z|2024|CHAT|N|Offer Sylvie the kits.|
+T They Took the Kits|QID|70338|M|65.70,30.86|Z|2024|N|To Steria Duskgrove.|
+$ Rhonin's Shield Glyph|QID|99999|N|Inside the very top of the tower, you probably want to land on the outside and then drop down inside.|M|67.67,29.11|Z|2024;The Azure Plains!Dragonflight|ACH|16072|
+
 F Iskaara|ACTIVE|71014|M|65.38,16.35|Z|2024|N|At Taelmyr Blazewing.|RANK|3|
 T Grimtusk's Sister|QID|71016|M|12.47,49.23|Z|2024|N|To Naluki, in the below groundlevel inn.|
 A Naluki's Letter|QID|71017|PRE|71016|M|12.47,49.23|Z|2024|N|From Naluki.|
@@ -655,7 +658,7 @@ T Tuskarr Champion's Tales|QID|70940|M|12.41,49.34|Z|2024|N|At Elder Poa.|
 T Story of a Memorable Victory|QID|72291|M|12.41,49.34|Z|2024|N|At Elder Poa.|IZ|13837|;from randomly dropped item of same name-201470
 K Bloodhorn|ACTIVE|66958|QO|1|M|18.94,49.28|N|Kill and Loot Bloodhorn.|
 
-F Longclaw Island|ACTIVE|71014|M|1.20,39.22|Z|2024|N|Make sure your vigor is full before you head out, no good place to land over the ocean.|
+R Longclaw Island|ACTIVE|71014|M|1.20,39.22|Z|2024|N|Make sure your vigor is full before you head out, no good place to land over the ocean.|
 T A Far Furbolg Friend|QID|71014|M|1.20,39.22|Z|2024|N|To Barst.|
 A A Little Kelp for My Friends|QID|70996|PRE|71014|M|1.20,39.22|Z|2024|N|From Barst.|
 C A Little Kelp for My Friends|QID|70996|M|.49,38.97;0.85,39.04|CS|Z|2024|N|Kill the Wild Kelp Elemental found in a cave at water's edge.|

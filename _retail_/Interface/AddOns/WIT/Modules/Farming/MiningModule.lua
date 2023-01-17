@@ -22,6 +22,13 @@ local miningData = {
 	core.Data.Results.Farms.OxxeinOre,
 	core.Data.Results.Farms.PhaedrumOre,
 	core.Data.Results.Farms.SoleniumOre,
+	
+	core.Data.Results.Farms.DraconiumOreTheAzureSpan,
+	core.Data.Results.Farms.DraconiumOreOhnahranPlains,
+	core.Data.Results.Farms.DraconiumOreTheWakingShore,
+	
+	
+	
 }
 
-table.insert(core.Modules, core.FarmResultModule('Mining', miningData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Mining', miningData, 'Farming', core.Activity.Mining))

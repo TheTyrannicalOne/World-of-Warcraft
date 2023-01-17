@@ -24,12 +24,12 @@ local vanillamogData = {
     core.Data.Results.Farms.Spire,
 }
 
-local module = core.FarmResultModule('Transmog', vanillamogData, 'Transmog')
-module.DetailsRowHeaderResource = "ItemsOfNote"
+local module = core.FarmResultModule('Transmog', vanillamogData, 'Transmog', core.Activity.Transmog)
+module.DetailsRowHeaderResource = function(row) return row.Data.ItemsOfNote and "ItemsOfNote" or "Loot" end
 module.ConfigKey = "Transmog"
 
 function module.GetDetailsRowData(row)
-    return row.Data.ItemsOfNote
+    return row.Data.ItemsOfNote or row.Data.Results or {}
 end
 
 table.insert(core.Modules, module)

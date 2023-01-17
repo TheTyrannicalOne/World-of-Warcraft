@@ -102,6 +102,10 @@ local function farmPlannerModule(name, category)
             allFarms[farm.Id] = farm
         end
 
+        for _, farm in pairs(core.Config.GetUserFlips()) do
+            allFarms[farm.Id] = farm
+        end
+
         for _, id in pairs(ids) do
             if allFarms[id] then
                 table.insert(data, allFarms[id])

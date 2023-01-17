@@ -169,3 +169,169 @@
 1/3 20:37:17.233  WowMoviePlayer Shutdown
 1/3 21:46:31.965  ----------------------------------------------------- Opened for Append -----------------------------------------------------
 1/4 00:45:10.228  WowMoviePlayer Shutdown
+1/4 19:18:08.425  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/4 20:31:02.617  WowMoviePlayer Shutdown
+1/4 22:27:36.964  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/4 23:27:01.428  WowMoviePlayer CreateStream
+1/4 23:27:01.428  WowMoviePlayer MovieHandle::InitVideoDecoder(1551613, 480P)
+1/4 23:27:01.428  WowMoviePlayer MovieHandle::InitVideoDecoder(1551612, 720P)
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::InitVideoDecoder(1551611, 1080P)
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::FinalizeQueueMovie(720P)
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::InitStreamingBlocks
+1/4 23:27:01.442  WowMoviePlayer QueueMovie ID: 549, Loop: No, Result: Success
+1/4 23:27:01.442  WowMoviePlayer StopMovie
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::StopMovie
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::PrefetchCancel(480P, 0, true)
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 0, true)
+1/4 23:27:01.442  WowMoviePlayer MovieHandle::PrefetchCancel(1080P, 0, true)
+1/4 23:27:01.442  WowMoviePlayer DestroyStream
+1/5 00:07:06.427  WowMoviePlayer CreateStream
+1/5 00:07:06.427  WowMoviePlayer MovieHandle::InitVideoDecoder(1551613, 480P)
+1/5 00:07:06.427  WowMoviePlayer MovieHandle::InitVideoDecoder(1551612, 720P)
+1/5 00:07:06.427  WowMoviePlayer MovieHandle::InitVideoDecoder(1551611, 1080P)
+1/5 00:07:06.441  WowMoviePlayer MovieHandle::FinalizeQueueMovie(720P)
+1/5 00:07:06.441  WowMoviePlayer MovieHandle::InitStreamingBlocks
+1/5 00:07:06.441  WowMoviePlayer QueueMovie ID: 549, Loop: No, Result: Success
+1/5 00:07:06.441  WowMoviePlayer StopMovie
+1/5 00:07:06.441  WowMoviePlayer MovieHandle::StopMovie
+1/5 00:07:06.441  WowMoviePlayer MovieHandle::PrefetchCancel(480P, 0, true)
+1/5 00:07:06.441  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 0, true)
+1/5 00:07:06.441  WowMoviePlayer MovieHandle::PrefetchCancel(1080P, 0, true)
+1/5 00:07:06.441  WowMoviePlayer DestroyStream
+1/5 00:23:16.360  WowMoviePlayer Shutdown
+1/5 07:54:47.134  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/5 13:12:29.429  WowMoviePlayer Shutdown
+1/5 14:16:10.851  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/5 16:02:59.749  WowMoviePlayer CreateStream
+1/5 16:02:59.749  WowMoviePlayer MovieHandle::InitVideoDecoder(1661201, 480P)
+1/5 16:02:59.749  WowMoviePlayer MovieHandle::InitVideoDecoder(1661202, 720P)
+1/5 16:02:59.766  WowMoviePlayer MovieHandle::InitVideoDecoder(1661203, 1080P)
+1/5 16:02:59.766  WowMoviePlayer MovieHandle::FinalizeQueueMovie(720P)
+1/5 16:02:59.766  WowMoviePlayer MovieHandle::InitStreamingBlocks
+1/5 16:02:59.779  WowMoviePlayer QueueMovie ID: 656, Loop: No, Result: Success
+1/5 16:02:59.779  WowMoviePlayer StopMovie
+1/5 16:02:59.779  WowMoviePlayer MovieHandle::StopMovie
+1/5 16:02:59.779  WowMoviePlayer MovieHandle::PrefetchCancel(480P, 0, true)
+1/5 16:02:59.779  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 0, true)
+1/5 16:02:59.779  WowMoviePlayer MovieHandle::PrefetchCancel(1080P, 0, true)
+1/5 16:02:59.779  WowMoviePlayer DestroyStream
+1/5 16:34:44.176  WowMoviePlayer Shutdown
+1/5 16:39:10.224  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/5 19:11:41.684  WowMoviePlayer Shutdown
+1/6 00:18:24.506  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/6 00:36:57.741  WowMoviePlayer Shutdown
+1/6 18:49:14.036  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/6 19:33:11.427  WowMoviePlayer Shutdown
+1/6 19:44:11.927  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/6 19:53:02.419  WowMoviePlayer Shutdown
+1/6 22:14:36.269  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/7 00:41:14.881  WowMoviePlayer Shutdown
+1/7 00:42:30.300  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/7 01:27:07.044  WowMoviePlayer Shutdown
+1/7 10:20:46.941  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/7 10:27:41.423  WowMoviePlayer Shutdown
+1/7 11:20:50.698  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/7 13:25:58.570  WowMoviePlayer Shutdown
+1/7 16:21:54.974  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/7 17:49:00.892  WowMoviePlayer Shutdown
+1/8 15:11:27.152  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/8 20:31:08.418  WowMoviePlayer Shutdown
+1/8 22:46:42.796  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/9 00:11:48.678  WowMoviePlayer Shutdown
+1/10 07:49:21.819  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/10 09:46:13.599  WowMoviePlayer Shutdown
+1/10 10:11:35.770  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/10 10:11:55.029  WowMoviePlayer Shutdown
+1/10 12:34:29.662  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/10 12:40:59.644  WowMoviePlayer Shutdown
+1/10 15:27:04.357  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/10 17:24:38.723  WowMoviePlayer Shutdown
+1/10 22:56:49.151  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/11 01:18:22.754  WowMoviePlayer Shutdown
+1/11 22:23:15.945  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/11 23:23:42.956  WowMoviePlayer Shutdown
+1/12 08:04:13.667  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 09:38:28.217  WowMoviePlayer CreateStream
+1/12 09:38:28.217  WowMoviePlayer MovieHandle::InitVideoDecoder(4687595, 480P)
+1/12 09:38:28.451  WowMoviePlayer MovieHandle::InitVideoDecoder(4687593, 720P)
+1/12 09:38:28.457  WowMoviePlayer MovieHandle::InitVideoDecoder(4687594, 1080P)
+1/12 09:38:28.628  WowMoviePlayer MovieHandle::FinalizeQueueMovie(720P)
+1/12 09:38:28.628  WowMoviePlayer MovieHandle::InitStreamingBlocks
+1/12 09:38:28.628  WowMoviePlayer QueueMovie ID: 963, Loop: No, Result: Success
+1/12 09:38:28.682  WowMoviePlayer WaitForKey
+1/12 09:38:28.682  WowMoviePlayer MovieHandle::WaitForKey m_KeyValid = true
+1/12 09:38:28.682  WowMoviePlayer MovieHandle::GetTactKey
+1/12 09:38:28.926  WowMoviePlayer MovieHandle::BeginPlaying
+1/12 09:38:28.926  WowMoviePlayer MovieHandle::PrefetchVideo isFirstFrameKeyFrame = true
+1/12 09:38:29.161  WowMoviePlayer MovieHandle::SelectResolution 720P selected
+1/12 09:38:29.161  WowMoviePlayer MovieHandle::BeginPlaying Opening Subtitles
+1/12 09:38:29.161  WowMoviePlayer MovieHandle::BeginPlaying Starting Audio
+1/12 09:38:29.234  WowMoviePlayer MovieHandle::ShouldRequestHigherResolution Frame 1 res 1080P (1625191 bytes/sec) returns true at Frame 60
+1/12 09:38:29.234  WowMoviePlayer MovieHandle::RequestHigherResolution CurrentRes 720P
+1/12 09:38:29.234  WowMoviePlayer MovieHandle::RequestResolution(1080P, 60)
+1/12 09:38:29.234  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 3783, false)
+1/12 09:38:29.234  WowMoviePlayer MovieHandle::PrefetchVideo isFirstFrameKeyFrame = true
+1/12 09:38:31.199  WowMoviePlayer MovieHandle::SwitchResolution Frame 60: Switched to resolution 1080P
+1/12 09:40:36.442  WowMoviePlayer StopMovie
+1/12 09:40:36.442  WowMoviePlayer MovieHandle::StopMovie
+1/12 09:40:36.442  WowMoviePlayer MovieHandle::PrefetchCancel(480P, 0, true)
+1/12 09:40:36.442  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 0, true)
+1/12 09:40:36.442  WowMoviePlayer MovieHandle::PrefetchCancel(1080P, 0, true)
+1/12 09:40:36.442  WowMoviePlayer DestroyStream
+1/12 09:58:45.432  WowMoviePlayer Shutdown
+1/12 09:58:51.525  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 09:59:10.761  WowMoviePlayer Shutdown
+1/12 10:48:36.058  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 10:50:57.240  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 10:57:22.942  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 11:06:34.437  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 11:15:29.991  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 13:30:11.847  WowMoviePlayer Shutdown
+1/12 14:17:59.443  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/12 20:18:45.348  WowMoviePlayer Shutdown
+1/12 23:49:41.412  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/13 00:05:02.728  WowMoviePlayer Shutdown
+1/15 19:32:11.819  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/15 20:05:49.962  WowMoviePlayer Shutdown
+1/16 09:47:13.733  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/16 14:27:21.479  WowMoviePlayer Shutdown
+1/16 16:18:59.704  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/16 16:38:51.688  WowMoviePlayer Shutdown
+1/16 17:59:34.101  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/16 19:37:58.774  WowMoviePlayer Shutdown
+1/16 22:42:41.852  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/16 22:43:20.494  WowMoviePlayer Shutdown
+1/16 22:47:30.709  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/16 22:47:51.416  WowMoviePlayer Shutdown
+1/17 07:43:31.280  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/17 08:26:52.213  WowMoviePlayer CreateStream
+1/17 08:26:52.213  WowMoviePlayer MovieHandle::InitVideoDecoder(1551613, 480P)
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::InitVideoDecoder(1551612, 720P)
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::InitVideoDecoder(1551611, 1080P)
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::FinalizeQueueMovie(720P)
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::InitStreamingBlocks
+1/17 08:26:52.218  WowMoviePlayer QueueMovie ID: 549, Loop: No, Result: Success
+1/17 08:26:52.218  WowMoviePlayer StopMovie
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::StopMovie
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::PrefetchCancel(480P, 0, true)
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 0, true)
+1/17 08:26:52.218  WowMoviePlayer MovieHandle::PrefetchCancel(1080P, 0, true)
+1/17 08:26:52.218  WowMoviePlayer DestroyStream
+1/17 08:57:38.661  WowMoviePlayer CreateStream
+1/17 08:57:38.661  WowMoviePlayer MovieHandle::InitVideoDecoder(1551613, 480P)
+1/17 08:57:38.661  WowMoviePlayer MovieHandle::InitVideoDecoder(1551612, 720P)
+1/17 08:57:38.661  WowMoviePlayer MovieHandle::InitVideoDecoder(1551611, 1080P)
+1/17 08:57:38.661  WowMoviePlayer MovieHandle::FinalizeQueueMovie(720P)
+1/17 08:57:38.661  WowMoviePlayer MovieHandle::InitStreamingBlocks
+1/17 08:57:38.672  WowMoviePlayer QueueMovie ID: 549, Loop: No, Result: Success
+1/17 08:57:38.672  WowMoviePlayer StopMovie
+1/17 08:57:38.672  WowMoviePlayer MovieHandle::StopMovie
+1/17 08:57:38.672  WowMoviePlayer MovieHandle::PrefetchCancel(480P, 0, true)
+1/17 08:57:38.672  WowMoviePlayer MovieHandle::PrefetchCancel(720P, 0, true)
+1/17 08:57:38.672  WowMoviePlayer MovieHandle::PrefetchCancel(1080P, 0, true)
+1/17 08:57:38.672  WowMoviePlayer DestroyStream
+1/17 09:56:21.407  WowMoviePlayer Shutdown
+1/17 10:28:17.084  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/17 10:28:36.860  WowMoviePlayer Shutdown
+1/17 11:15:50.318  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+1/17 15:12:22.749  WowMoviePlayer Shutdown

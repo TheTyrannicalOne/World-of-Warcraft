@@ -49,13 +49,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["World Event"] = true,
+			["Vendor"] = true,
 			["Black Market"] = true,
 			["Class"] = true,
-			["Promotion"] = true,
+			["World Event"] = true,
 			["Reputation"] = true,
 			["PVP"] = true,
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Garrison"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
@@ -71,7 +71,11 @@ MJEPersonalSettings = {
 		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
-		["onlyUsable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -233,10 +237,10 @@ MJEPersonalSettings = {
 				["Stone Drakes"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Vombata"] = true,
 			["Drakes"] = {
@@ -280,11 +284,6 @@ MJEPersonalSettings = {
 			["Bats"] = true,
 		},
 		["onlyFavorites"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -294,6 +293,7 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["passenger"] = true,
 		},
+		["onlyUsable"] = false,
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,

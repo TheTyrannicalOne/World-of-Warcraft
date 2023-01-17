@@ -618,6 +618,91 @@ core.Data.Results.Farms.ArdenwealdMultifarm = {
 
 
 
+-- Dragonflight
+
+core.Data.Results.Farms.OhnahranPlainsMultifarm = {
+    Id = 'OhnahranPlainsMultifarm',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Ores.KhazgoriteOre,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.OhnahranPlains },
+    Routes = { core.Data.Routes.Mining.DraconiumOreOhnahranPlains },
+    Results = {
+        { Id = core.Items.Ores.SereviteOre, Quantity = 278 },
+		{ Id = core.Items.Ores.DraconiumOre, Quantity = 23 },
+		{ Id = core.Items.Ores.KhazgoriteOre, Quantity = 18 },
+		
+		
+		{ Id = core.Items.Herbs.BubblePoppy, Quantity = 14 },
+		{ Id = core.Items.Herbs.Hochenblume, Quantity = 77 },
+		{ Id = core.Items.Herbs.Saxifrage, Quantity = 3 },
+		
+		{ Id = core.Items.Misc.RousingAir, Quantity = 5 },
+		{ Id = core.Items.Misc.RousingOrder, Quantity = 13 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 17 },
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 66 },
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 6 },
+		{ Id = core.Items.Misc.RousingIre, Quantity = 11 },
+		
+    }
+}
+
+core.Data.Results.Farms.TheAzureSpanMultifarm = {
+    Id = 'TheAzureSpanMultifarm',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Herbs.Writhebark,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheAzureSpan },
+    Routes = { core.Data.Routes.Mining.DraconiumOreTheAzureSpan },
+    Results = {
+        { Id = core.Items.Ores.SereviteOre, Quantity = 178 },
+		{ Id = core.Items.Ores.DraconiumOre, Quantity = 24 },
+		{ Id = core.Items.Ores.KhazgoriteOre, Quantity = 12 },
+		
+		
+		{ Id = core.Items.Herbs.BubblePoppy, Quantity = 16 },
+		{ Id = core.Items.Herbs.Hochenblume, Quantity = 164 },
+		{ Id = core.Items.Herbs.Saxifrage, Quantity = 8 },
+		{ Id = core.Items.Herbs.Writhebark, Quantity = 9 },
+		
+		
+		{ Id = core.Items.Misc.RousingOrder, Quantity = 15 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 25 },
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 69 },
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 37 },
+		{ Id = core.Items.Misc.RousingIre, Quantity = 4 },
+    }
+}
+
+
+core.Data.Results.Farms.TheWakingShoreMultifarm = {
+    Id = 'TheWakingShoreMultifarm',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Herbs.BubblePoppy,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Mining.DraconiumOreTheWakingShore },
+    Results = {
+        { Id = core.Items.Ores.SereviteOre, Quantity = 184 },
+		{ Id = core.Items.Ores.DraconiumOre, Quantity = 7 },
+		{ Id = core.Items.Ores.KhazgoriteOre, Quantity = 6 },
+		
+		
+		{ Id = core.Items.Herbs.BubblePoppy, Quantity = 18 },
+		{ Id = core.Items.Herbs.Hochenblume, Quantity = 92 },
+		{ Id = core.Items.Herbs.Saxifrage, Quantity = 15 },
+		
+		
+		{ Id = core.Items.Misc.RousingOrder, Quantity = 15 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 22 },
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 24 },
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 2 },
+		{ Id = core.Items.Misc.RousingIre, Quantity = 10 },
+    }
+}
+
+
+
 
 --[[
 

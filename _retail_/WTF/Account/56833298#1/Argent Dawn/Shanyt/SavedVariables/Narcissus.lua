@@ -17,8 +17,8 @@ NarciStatisticsDB_PC = {
 				["time"] = 985,
 			},
 			[2112] = {
-				["visit"] = 9,
-				["time"] = 690,
+				["visit"] = 10,
+				["time"] = 758,
 			},
 			[1670] = {
 				["visit"] = 1,

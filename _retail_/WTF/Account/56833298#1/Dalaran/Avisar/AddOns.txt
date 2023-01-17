@@ -365,3 +365,4 @@ ElvUI_UnitFramePlugin: disabled
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
 Blizzard_CombatText: enabled
+ElvUI_Options: enabled

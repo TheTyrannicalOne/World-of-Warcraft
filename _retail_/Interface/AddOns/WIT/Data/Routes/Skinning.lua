@@ -516,3 +516,54 @@ core.Data.Routes.Skinning.DesolateLeather = {
 
 
 
+-- Dragonflight 
+
+core.Data.Routes.Skinning.DenseHide = {
+    Name = "RouteDenseHide",
+    MapId = core.Maps.OhnahranPlains,
+    Data = {
+		["route"] = {
+						51372628, -- [1]
+						54013467, -- [2]
+						50373853, -- [3]
+						48493012, -- [4]
+		},
+		["color"] = {
+						0, -- [1]
+						0.01176470704376698, -- [2]
+						1, -- [3]
+						1, -- [4]
+		},
+		["length"] = 13309.8744601165,
+	}
+}
+
+
+core.Data.Routes.Skinning.AdamantScales = {
+    Name = "RouteAdamantScales",
+    MapId = core.Maps.TheWakingShore,
+    Data = {
+		["route"] = {
+						79622668, -- [1]
+						80823078, -- [2]
+						84253428, -- [3]
+						83823762, -- [4]
+						81273779, -- [5]
+						78553199, -- [6]
+						77972756, -- [7]
+		},
+		["color"] = {
+						0, -- [1]
+						0.09019608050584793, -- [2]
+						1, -- [3]
+						1, -- [4]
+		},
+		["length"] = 14019.09561304586,
+	}
+}
+
+
+
+
+
+

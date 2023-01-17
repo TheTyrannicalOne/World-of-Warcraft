@@ -152,6 +152,17 @@ function Element:Hide()
 	return self
 end
 
+---Sets whether or not the element is shown.
+---@param isShown boolean
+function Element:SetShown(isShown)
+	if isShown then
+		self:Show()
+	else
+		self:Hide()
+	end
+	return self
+end
+
 ---Returns whether or not the element is visible.
 ---@return boolean
 function Element:IsVisible()
@@ -168,8 +179,10 @@ function Element:SetWidth(width)
 end
 
 ---Sets the height of the element.
+---@generic T: Element
+---@param self T
 ---@param height? number The height of the element, or nil to have an undefined height
----@return Element @The element object
+---@return T
 function Element:SetHeight(height)
 	assert(height == nil or type(height) == "number")
 	self._height = height
@@ -177,9 +190,11 @@ function Element:SetHeight(height)
 end
 
 ---Sets the width and height of the element.
+---@generic T: Element
+---@param self T
 ---@param width? number The width of the element, or nil to have an undefined width
 ---@param height? number The height of the element, or nil to have an undefined height
----@return Element @The element object
+---@return T
 function Element:SetSize(width, height)
 	self:SetWidth(width)
 	self:SetHeight(height)
@@ -187,11 +202,13 @@ function Element:SetSize(width, height)
 end
 
 ---Sets the padding of the element.
+---@generic T: Element
+---@param self T
 ---@param left number The left padding value if all arguments are passed or the value of all sides if a single argument is passed
 ---@param right? number The right padding value if all arguments are passed
 ---@param top? number The top padding value if all arguments are passed
 ---@param bottom? number The bottom padding value if all arguments are passed
----@return Element @The element object
+---@return T
 function Element:SetPadding(left, right, top, bottom)
 	if not right and not top and not bottom then
 		right = left
@@ -213,7 +230,7 @@ end
 ---@param right? number The right margin value if all arguments are passed
 ---@param top? number The top margin value if all arguments are passed
 ---@param bottom? number The bottom margin value if all arguments are passed
----@return T @The element object
+---@return T
 function Element:SetMargin(left, right, top, bottom)
 	if not right and not top and not bottom then
 		right = left

@@ -1,6 +1,7 @@
 # Immersion
 
-## [1.4.18](https://github.com/seblindfors/Immersion/tree/1.4.18) (2022-12-04)
-[Full Changelog](https://github.com/seblindfors/Immersion/compare/1.4.17...1.4.18) [Previous Releases](https://github.com/seblindfors/Immersion/releases)
+## [1.4.19](https://github.com/seblindfors/Immersion/tree/1.4.19) (2023-01-16)
+[Full Changelog](https://github.com/seblindfors/Immersion/compare/1.4.18...1.4.19) [Previous Releases](https://github.com/seblindfors/Immersion/releases)
 
-- Reverse logic for handling custom gossip types  
+- Fix gossip options being in the wrong order on retail  
+- Explicitly remove hidden frames from panel manager  

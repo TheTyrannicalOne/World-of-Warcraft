@@ -4,6 +4,7 @@ local WIT, core = ...
 
 -- Vanilla
 core.Data.Results.Flips.DEGreenLinenBracers = {
+    Id = "DEGreenLinenBracers",
     ItemId = core.Items.Tailoring.GreenLinenBracers,
     Quantity = 100,
     Content = core.Content.Vanilla,
@@ -31,6 +32,7 @@ core.Data.Results.Flips.DEGreenLinenBracers = {
 
 
 core.Data.Results.Flips.RuneclothBelt = {
+    Id = "RuneclothBelt",
     ItemId = core.Items.Tailoring.RuneclothBelt,
     Quantity = 100,
     Content = core.Content.Vanilla,
@@ -54,6 +56,7 @@ core.Data.Results.Flips.RuneclothBelt = {
 -- TBC 
 
 core.Data.Results.Flips.NetherweaveBracers = {
+    Id = "NetherweaveBracers",
     ItemId = core.Items.Tailoring.NetherweaveBracers,
     Quantity = 100,
     Content = core.Content.TBC,
@@ -77,6 +80,7 @@ core.Data.Results.Flips.NetherweaveBracers = {
 -- WOTLK
 
 core.Data.Results.Flips.FrostwovenWristwraps = {
+    Id = "FrostwovenWristwraps",
     ItemId = core.Items.Tailoring.FrostwovenWristwraps,
     Quantity = 100,
     Content = core.Content.WotLK,
@@ -100,6 +104,7 @@ core.Data.Results.Flips.FrostwovenWristwraps = {
 -- Cata
 
 core.Data.Results.Flips.DeathsilkBracers = {
+    Id = "DeathsilkBracers",
     ItemId = core.Items.Tailoring.DeathsilkBracers,
     Quantity = 100,
     Content = core.Content.Cata,
@@ -122,6 +127,7 @@ core.Data.Results.Flips.DeathsilkBracers = {
 -- Mop
 
 core.Data.Results.Flips.WindwoolBelt = {
+    Id = "WindwoolBelt",
     ItemId = core.Items.Tailoring.WindwoolBelt,
     Quantity = 100,
     Content = core.Content.MoP,
@@ -139,6 +145,7 @@ core.Data.Results.Flips.WindwoolBelt = {
 -- Wod
 
 core.Data.Results.Flips.SumptousCowl = {
+    Id = "SumptousCowl",
     ItemId = core.Items.Tailoring.SumptousCowl,
     Quantity = 100,
     Content = core.Content.WoD,
@@ -154,6 +161,7 @@ core.Data.Results.Flips.SumptousCowl = {
 -- Legion
 
 core.Data.Results.Flips.SilkweaveEpaulets = {
+    Id = "SilkweaveEpaulets",
     ItemId = core.Items.Tailoring.SilkweaveEpaulets,
     Quantity = 100,
     Content = core.Content.Legion,
@@ -169,6 +177,7 @@ core.Data.Results.Flips.SilkweaveEpaulets = {
 
 -- BFA
 core.Data.Results.Flips.TidesprayBracers = {
+    Id = "TidesprayBracers",
     ItemId = core.Items.Tailoring.TidesprayBracers,
     Quantity = 100,
     Content = core.Content.BFA,
@@ -192,6 +201,7 @@ core.Data.Results.Flips.TidesprayBracers = {
 -- Shadowlands
 
 core.Data.Results.Flips.ShroudedClothBracers = {
+    Id = "ShroudedClothBracers",
     ItemId = core.Items.Tailoring.ShroudedClothBracers,
     Quantity = 100,
     Content = core.Content.Shadowlands,
@@ -211,6 +221,7 @@ core.Data.Results.Flips.ShroudedClothBracers = {
 }
 
 core.Data.Results.Flips.ShadowlaceCuffs = {
+    Id = "ShadowlaceCuffs",
     ItemId = core.Items.Tailoring.ShadowlaceCuffs,
     Quantity = 100,
     Content = core.Content.Shadowlands,

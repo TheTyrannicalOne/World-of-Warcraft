@@ -53,7 +53,7 @@ core.Data.Results.Farms.FreeHoldRawGold,
 }
 
 local resultColumn = core.GridColumns.ResultsValueColumn()
-local module = core.GridModule('RawGold', rawgoldData, 'Farming')
+local module = core.GridModule('RawGold', rawgoldData, 'Farming', core.Activity.RawGold)
 module.IsExpandabled = false
 module.ConfigKey = "RawGold"
 

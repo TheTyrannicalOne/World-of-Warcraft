@@ -19,4 +19,4 @@ core.Data.Results.Flips.MaroonInk,
 core.Data.Results.Flips.LuminousInk,
 }
 
-table.insert(core.Modules, core.DestroyingResultModule('Milling', millingData, 'Flipping'))
+table.insert(core.Modules, core.DestroyingResultModule('Milling', millingData, 'Flipping', core.FlipActivity.Milling))

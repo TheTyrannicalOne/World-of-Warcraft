@@ -19,6 +19,8 @@ core.Data.Results.Farms.LightweaveCloth,
 core.Data.Results.Farms.TidesprayLinen,
 core.Data.Results.Farms.GildedSeaweave,
 
+core.Data.Results.Farms.Wildercloth,
+
 }
 
-table.insert(core.Modules, core.FarmResultModule('Cloth', clothData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Cloth', clothData, 'Farming', core.Activity.Cloth))

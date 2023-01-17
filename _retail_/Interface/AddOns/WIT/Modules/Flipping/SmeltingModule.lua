@@ -45,11 +45,6 @@ local smeltingData = {
 	core.Data.Results.Flips.SmeltingGhostIronBar,  
 }
 
-local module = core.FlipResultModule('Smelting', smeltingData, 'Flipping')
-module.DetailsRowHeaderResource = "Ingredients"
-
-function module.GetDetailsRowData(row)
-    return row.Data.Materials
-end
+local module = core.FlipResultModule('Smelting', smeltingData, 'Flipping', core.FlipActivity.Smelting)
 
 table.insert(core.Modules, module)

@@ -11,11 +11,30 @@ function GridColumns.ResultsValueColumn(options)
     self.PriceSource = options.PriceSource
     self.Description = core.GetString(options.Name .. 'Description')
 
+    function self.GetMoney(data)
+        return data.Money
+    end
+
     function self.GetItemList(data)
         return data.Results
     end
 
     function self.GetItemPrice(item)
+        local id = item.Id == core.PriceSourceHelper.PetCageItemId and 'p:'.. item.PetId or item.Id
+
+        if item.SellToVendor then
+            if item.ItemLink then
+                local _, _, _, _, _, _, _, _, _, _, itemSellPrice = GetItemInfo(item.ItemLink)
+                item.VandorSellPrice = itemSellPrice or item.VandorSellPrice
+            end
+
+            if item.VandorSellPrice then
+                return item.VandorSellPrice
+            end
+
+            return core.PriceSourceHelper.GetItemVendorSellPrice(id) or 0
+        end
+
         if self.PriceSource ~= nil and not tContains(core.PriceSourceHelper.GetPriceSources(), self.PriceSource) then
             return 0
         end
@@ -27,7 +46,7 @@ function GridColumns.ResultsValueColumn(options)
         local list = self.GetItemList(data)
         local hours = data.Time and data.Time > 0 and (data.Time / 3600) or 1
         local players = data.IsGroupFarm and data.NumberOfPlayers or 1
-        local sum = data.Money or 0
+        local sum = self.GetMoney(data) or 0
         local isValueValid = true
 
         if not list then return sum / hours end

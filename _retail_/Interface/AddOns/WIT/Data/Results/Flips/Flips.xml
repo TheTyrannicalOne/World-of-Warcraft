@@ -4,7 +4,7 @@
     <Script file="Milling.lua"/>
 	<Script file="Smelting.lua"/>
     <Script file="Prospecting.lua"/>
-    <Script file="SpiritOfHarmony.lua"/>
-    <Script file="FrozenOrb.lua"/>
+    <Script file="Misc.lua"/>
+    <Script file="Tailoring.lua"/>
 	<Script file="Inktrader.lua"/>
 </Ui>

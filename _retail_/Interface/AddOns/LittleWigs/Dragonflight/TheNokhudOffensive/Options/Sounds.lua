@@ -24,13 +24,14 @@ BigWigs:AddSounds("Teera And Maruuk", {
 	[385434] = "info",
 	[386063] = "alarm",
 	[386547] = "alert",
-	[392198] = {"info","warning"},
+	[392198] = {"alert","info","warning"},
+	[395669] = "underyou",
 })
 
 BigWigs:AddSounds("Balakar Khan", {
 	[375937] = "alert",
 	[375943] = "alarm",
-	[376660] = "alarm",
+	[376634] = "alarm",
 	[376683] = "alarm",
 	[376827] = {"alert","warning"},
 	[376864] = "alarm",

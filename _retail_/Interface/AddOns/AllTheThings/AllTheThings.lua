@@ -1102,10 +1102,10 @@ app.RefreshTradeSkillCache = function()
 	local cache = app.CurrentCharacter.Professions;
 	wipe(cache);
 	-- "Professions" that anyone can "know"
-	cache[2720] = true;	-- Junkyard Tinkering
-	cache[2791] = true;	-- Ascension Crafting
-	cache[2819] = true;	-- Protoform Synthesis
-	cache[2847] = true;	-- Tuskarr Fishing Gear
+	cache[2720] = 1;	-- Junkyard Tinkering
+	cache[2791] = 1;	-- Ascension Crafting
+	cache[2819] = 1;	-- Protoform Synthesis
+	cache[2847] = 1;	-- Tuskarr Fishing Gear
 	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 		if j ~= 0 then
@@ -2529,11 +2529,31 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		covData = C_Covenants.GetCovenantData(covID);
 		covRenown = C_CovenantSanctumUI.GetRenownLevel();
 	end
+	local DFmajorFactionIDs, majorFactionInfo, info = C_MajorFactions.GetMajorFactionIDs(9), {};
+	if DFmajorFactionIDs then
+		for _,factionID in ipairs(DFmajorFactionIDs) do
+			info = C_MajorFactions.GetMajorFactionData(factionID);
+			tinsert(majorFactionInfo, "|");
+			tinsert(majorFactionInfo, info.name:sub(1,3));
+			tinsert(majorFactionInfo, ":");
+			tinsert(majorFactionInfo, info.renownLevel);
+		end
+	end
 	if position then
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
 		y = math.floor(y * 1000) / 10;
 		coord = x..", "..y;
+	end
+	local u = questRef and questRef.u;
+	local completed = app.CurrentCharacter.Quests[id];
+	local skills = {};
+	for profID,known in pairs(app.CurrentCharacter.Professions) do
+		-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
+		if known ~= 1 then
+			tinsert(skills, "|");
+			tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
+		end
 	end
 	return
 	{
@@ -2542,7 +2562,8 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 
 		questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'",
 		"lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
-		"u:"..tostring(questRef and questRef.u).." skill:"..(questRef and questRef.requireSkill or ""),
+		"renown"..(app.TableConcat(majorFactionInfo)),
+		"u:"..(u or "").." comp:"..(completed or "").." skills"..(app.TableConcat(skills) or ""),
 		"sq:"..app.SourceQuestString(questRef or id),
 		"lq:"..(app.LastQuestTurnedIn or ""),
 		-- TODO: put more info in here as it will be copy-paste into Discord
@@ -2556,12 +2577,20 @@ end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
 app.CheckInaccurateQuestInfo = function(questRef, questChange)
 	if questRef and questRef.questID then
-		-- print("CheckInaccurateQuestInfo",questRef.questID,questChange)
+		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		if not (app.CurrentCharacterFilters(questRef)
+		local completed = app.CurrentCharacter.Quests[id];
+		if not
+			-- expectations for accurate quest data
+			-- meets current character filters
+			(app.CurrentCharacterFilters(questRef)
+			-- is marked as in the game
 			and app.ItemIsInGame(questRef)
-			and not questRef.missingPrequisites) then
-
+			-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check
+			and (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed)
+			-- not missing pre-requisites
+			and not questRef.missingPrequisites)
+		then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
 
@@ -2589,7 +2618,7 @@ local PrintQuestInfo = function(questID, new, info)
 		end
 		-- This quest doesn't meet the filter for this character, then ask to report in chat
 		if questChange == "accepted" then
-			DelayedCallback(app.CheckInaccurateQuestInfo, 0.5, questRef, questChange);
+			DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
 		end
 		local chatMsg;
 		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
@@ -3998,12 +4027,9 @@ ResolveSymbolicLink = function(o)
 			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
 		end
 
-		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
-		if #searchResults > 0 then
-			for _,s in ipairs(searchResults) do
-				tinsert(finalized, s);
-			end
-		end
+		-- Verify the final result is finalized
+		cmdFunc = ResolveFunctions.finalize;
+		cmdFunc(finalized, searchResults);
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
@@ -5253,6 +5279,7 @@ local function DetermineSymlinkGroups(group)
 end
 local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
+	[-26] = true,	-- DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
@@ -5270,7 +5297,7 @@ local function DetermineNPCDrops(group)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID;
+					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
 					-- where headerID is allowed and the nested difficultyID matches
 					if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
 						-- copy the header under the NPC groups
@@ -5283,7 +5310,7 @@ local function DetermineNPCDrops(group)
 			else
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID;
+					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
 					-- where headerID is allowed
 					if headerID and NPCExpandHeaders[headerID] then
 						-- copy the header under the NPC groups
@@ -5297,17 +5324,8 @@ local function DetermineNPCDrops(group)
 		end
 	end
 end
+-- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, depth)
-	-- do not fill 'saved' groups in ATT windows
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if isInWindow and not app.MODE_DEBUG_OR_ACCOUNT then
-		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
-		local parent = group.parent;
-		-- parent is a saved quest, then do not fill with stuff
-		if parent and parent.questID and parent.saved then return; end
-	end
-
 	-- increment depth if things are being nested
 	depth = (depth or 0) + 1;
 	local groups;
@@ -5335,6 +5353,50 @@ local function FillGroupsRecursive(group, depth)
 		end
 	end
 end
+-- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
+-- over multiple frames to reduce stutter
+local function FillGroupsRecursiveAsync(group, depth)
+	-- do not fill 'saved' groups in ATT windows
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
+		local parent = group.parent;
+		-- parent is a saved quest, then do not fill with stuff
+		if parent and parent.questID and parent.saved then return; end
+	end
+
+	-- increment depth if things are being nested
+	depth = (depth or 0) + 1;
+	local groups;
+	-- Determine Cost/Crafted/Symlink groups
+	groups = app.ArrayAppend(groups,
+		DeterminePurchaseGroups(group, depth),
+		DetermineCraftedGroups(group),
+		DetermineSymlinkGroups(group),
+		DetermineNPCDrops(group));
+
+	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- Adding the groups normally based on available-source priority
+	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+	if #groups > 0 then
+		BuildGroups(group);
+		app.DirectGroupUpdate(group);
+	end
+
+	if group.g then
+		-- app.PrintDebug(".g",group.hash,#group.g)
+		-- local hash = group.hash;
+		-- Then nest anything further
+		for _,o in ipairs(group.g) do
+			-- never nest the same Thing under itself
+			-- (prospecting recipes list the input as the output)
+			-- if o.hash ~= hash then
+			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, depth);
+			-- end
+		end
+	end
+end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- Clear search history -- never re-list the starting Thing
@@ -5347,7 +5409,14 @@ app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
-	FillGroupsRecursive(group);
+	if isInWindow then
+		-- 50 seems pretty good for time vs. stutter possibility
+		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
+		app.FunctionRunner.SetPerFrame(50);
+		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
+	else
+		FillGroupsRecursive(group);
+	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
@@ -6977,7 +7046,7 @@ AddTomTomWaypoint = function(group)
 			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
 			return;
 		end
-		if __TomTomWaypointCount == 0 then
+		if __TomTomWaypointCount == 0 and __TomTomWaypointFirst then
 			app.print(format(L["NO_COORDINATES_FORMAT"], group.text));
 		end
 	else
@@ -8046,7 +8115,7 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 				if p[1] == "i" then
 					id = p[2];
 					-- print("Quest Item Provider",p[1], id);
-					local pRef = app.SearchForObject("itemID", id);
+					local pRef = Search("itemID", id);
 					if pRef then
 						NestObject(questRef, pRef, true, 1);
 					else
@@ -9482,7 +9551,7 @@ local fields = {
 		if t._s then return t._s; end
 		local s = t.silentLink;
 		if s then
-			s = app.GetSourceID(s);
+			s = GetSourceID(s);
 			-- print("Artifact Source",s,t.silentLink)
 			if s and s > 0 then
 				rawset(t, "_s", s);
@@ -12958,13 +13027,14 @@ app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAc
 local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
 	["m"] = "mapID",
+	["n"] = "npcID",
 	["i"] = "itemID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
 -- Alternate functions to attach data into a table based on an id for a given type code
 local AlternateDataTypes = {
-	["c"] = function(t, id)
+	["ac"] = function(t, id)
 		local name = GetCategoryInfo(id);
 		t.name = name;
 	end,
@@ -15760,13 +15830,16 @@ local CreateRow;
 local function Refresh(self)
 	if not app.IsReady or not self:IsVisible() then return; end
 	-- app.PrintDebug("Refresh:",self.Suffix)
-	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
-	if self:GetHeight() < 40 then
-		self.CloseButton:Hide();
-		self.Grip:Hide();
-	else
+	local height = self:GetHeight();
+	if height > 80 then
+		self.ScrollBar:Show();
 		self.CloseButton:Show();
-		self.Grip:Show();
+	elseif height > 40 then
+		self.ScrollBar:Hide();
+		self.CloseButton:Show();
+	else
+		self.ScrollBar:Hide();
+		self.CloseButton:Hide();
 	end
 
 	-- If there is no raw data, then return immediately.
@@ -19198,11 +19271,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- FLIGHT_PATHS = -228;
 			[-228] = "flightPathID",
 		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
-			-- [-999] = true,
+		-- [-999] = true,
 		-- HOLIDAY = -3;
 			[-3] = "holidayID",
 		-- PROFESSIONS = -38;
 			[-38] = "professionID",
+		-- PVP = -9;
+			[-9] = true,
 		-- QUESTS = -17;
 			[-17] = "questID",
 		-- RARES = -16;
@@ -20942,54 +21017,17 @@ customWindowUpdates["RWP"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			self.dirty = true;
-			local actions = {
-				['text'] = L["FUTURE_UNOBTAINABLE"],
-				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
+			self:SetData({
+				["text"] = L["FUTURE_UNOBTAINABLE"],
+				["icon"] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
 				["description"] = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
-				['visible'] = true,
-				['expanded'] = true,
-				['back'] = 1,
-				["indent"] = 0,
-				['OnUpdate'] = function(data)
-					if not self.dirty then return nil; end
-					self.dirty = nil;
-
-					local g = {};
-					if not data.results then
-						data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "rwp");
-					end
-					if #data.results > 0 then
-						for i,result in ipairs(data.results) do
-							table.insert(g, result);
-						end
-					end
-					data.g = g;
-					if #g > 0 then
-						for i,entry in ipairs(g) do
-							entry.indent = nil;
-						end
-						data.progress = 0;
-						data.total = 0;
-						data.indent = 0;
-						data.visible = true;
-						BuildGroups(data, data.g);
-						app.UpdateGroups(data, data.g);
-						if not data.expanded then
-							data.expanded = true;
-							ExpandGroupsRecursively(data, true);
-						end
-					end
-					BuildGroups(self.data, self.data.g);
-				end,
-				['options'] = { },
-				['g'] = { },
-			};
-			self.data = actions;
+				["visible"] = true,
+				["back"] = 1,
+				["g"] = app:BuildSearchResponse(app:GetDataCache().g, "rwp"),
+			});
+			self:BuildData();
+			self.ExpandInfo = { Expand = true, Manual = true };
 		end
-
-		-- Update the window and all of its row data
-		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		self:BaseUpdate(true);
 	end
 end;
@@ -21761,7 +21799,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				{
 					1978,	-- Dragon Isles
 					{
-						-- TODO: any un-attached sub-zones
+						{ 2085 },	-- Primalist Tomorrow
+						-- any un-attached sub-zones
 					}
 				},
 				-- Shadowlands Continents

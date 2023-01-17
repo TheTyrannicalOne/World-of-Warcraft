@@ -11,8 +11,10 @@ return [[
 A To Dragonbane Keep!|QID|71210|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;5|;may be earlier
 A Aerial Challenges|QID|71227|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;7|;did not show up till i picked up wheres the cheif.
 A Continued Waygate Exploration|QID|70702|M|PLAYER|N|From Doc Nanners.|DFREN|dragonscale exp;2507;8|PRE|70156|
-A A Cataloger's Paradise|QID|69869|ACTIVE|65490|M|PLAYER|N|From Doc Nanners.|DFREN|Dragonscale Expedition;2507;8|
-A A Climber's Calling|QID|69855|M|PLAYER|N|From Doc Nanners, who will follow you and get in your way until you accept the quest.|DFREN|Dragonscale Exp;2507;6|ACH|-16363|
+
+;Requires Campaign Completion.
+;A A Cataloger's Paradise|QID|69869|ACTIVE|65490|M|PLAYER|N|From Doc Nanners.|DFREN|Dragonscale Expedition;2507;8|
+;A A Climber's Calling|QID|69855|M|PLAYER|N|From Doc Nanners, who will follow you and get in your way until you accept the quest.|DFREN|Dragonscale Exp;2507;6|ACH|16326;;1;true|
 
 ;Dragon Riding Glyphs that need to be worked into the guide.
 ;PLACED F South Hold Gate|N|This one is inside one of the towers, but not the highest tower, the one just below it.|M|35.60,85.66|Z|2025;Thaldraszus!Dragonflight|ACH|16100|
@@ -48,7 +50,7 @@ A Renown Supplies|QID|72282|M|58.18,35.17|Z|2112|N|From Unatos.|RANK|2|DFREN|Val
 T Renown Supplies|QID|72282|M|58.18,35.17|Z|2112|N|To Unatos.|
 A Renown Supplies|QID|70885|M|58.18,35.01|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;8|IZ|2112|
 T Renown Supplies|QID|70885|M|58.18,35.01|Z|2112|N|To Unatos.|
-C To Valdrakken|QID|66244|M|61.82,32.02|Z|2112|QO|2|NC|N|Access teleporter to Seat of the Aspects (Optional in that you can also fly up there on your own, if you want to do it the hard way).|
+P To Valdrakken|QID|66244|M|61.82,32.02|Z|2112|NC|N|Access teleporter to Seat of the Aspects (Optional in that you can also fly up there on your own, if you want to do it the hard way).|
 T Thaldraszsus|QID|72269|M|58.11,34.88|Z|2112|N|To Alexstrasza the Life-Binder, at the top of the Seat of the Aspects.|;adventure mode
 
 T To Valdrakken|QID|66244|M|58.11,34.88|Z|2112|N|To Alexstrasza the Life-Binder, at the top of the Seat of the Aspects.|
@@ -63,7 +65,7 @@ C Nowhere to Hide|QID|66163|M|58.90,36.29|Z|2112|QO|1|NC|U|198859|N|Use the Reve
 C Nowhere to Hide|QID|66163|M|PLAYER|NC|U|198859|N|Looks like your Revealing Dragon's Eye buff is gone, reuse it to allow you to detect the Infiltrators.|BUFF|385996|
 $ Valdrakken Glyph|QID|99999|M|41.26,58.27|Z|2025;Thaldraszus!Dragonflight|N|Above the highest tower over Valdrakken.|ACH|16101|
 C Nowhere to Hide|QID|66163|M|37.92,70.80|Z|2112|QO|2|CHAT|N|As you go about finding the people and places of interest, Question Valdrakken Citizens, (the ones who look a little odd, surrounded by a misty nimbus) to find the infiltrators, when you find one, kill it. Reuse the gem if you should lose the Revealing Dragon's Eye Buff.|S|
-A Garden Variety|QID|72189|M|77.49,66.03|Z|2112|N|From Tender Xina.|RANK|2|
+A Garden Variety|QID|72189|M|77.49,66.03|Z|2112|N|From Tender Xina.|RANK|2|LEAD|66134|
 A A Dryad's Work Is Never Done|QID|67094|M|72.83,66.19|Z|2112|N|From Thalendra.|RANK|2|
 C A Dryad's Work Is Never Done|QID|67094|M|67.21,70.25|Z|2112|QO|1|H|N|Click the Hungry Swoglet.|
 C A Dryad's Work Is Never Done|QID|67094|M|57.08,80.21|Z|2112|QO|3|H|N|Click the Hungry Slyvern Kit.|
@@ -83,7 +85,7 @@ A To Cook With Finery|QID|70880|M|46.50,46.24|Z|2112|N|From Erugosa.|DFREN|valdr
 T To Cook With Finery|QID|70880|M|46.50,46.24|Z|2112|N|To Erugosa.|
 h Valdrakken|ACTIVE|66166|M|47.26,46.47|Z|2112|N|At Tithris.|
 A Archival Assistance|QID|67007|M|47.77,46.65|Z|2112|N|From Discarded Note.|RANK|2|LVL|70|IZ|2112|
-C Orientation: Valdrakken|QID|72406|QO|1|M|36.58,50.59|Z|2112|NC||N|Click on Provisioner Thom.|
+C Orientation: Valdrakken|QID|72406|QO|1|M|36.58,50.59|Z|2112|H||N|Click on Provisioner Thom.|
 C Nowhere to Hide|QID|66163|M|37.92,70.80|Z|2112|QO|2|U|198859|N|If you should lose the buff that allows you to see them, reclick the gem and finish killing the primalist Infiltrators.|US|
 T Nowhere to Hide|QID|66163|M|54.89,47.01|Z|2112|N|To Captain Drine.(at the top of the stairs, not the top of the building where you last saw her.)|
 T Eyes and Ears|QID|66166|M|54.72,47.33|Z|2112|N|To Captain Drine.|
@@ -118,7 +120,7 @@ C Clear the Sky|QID|66249|M|40.88,83.86|Z|2025|QO|1|V|N|The Siege Scorpions are 
 C Clear the Sky|QID|66249|M|40.88,83.86|Z|2025|QO|2|N|Using the vehicle's UI kill the Magmasworn.|
 T Clear the Sky|QID|66249|M|40.57,85.48|Z|2025|N|To Guardian Velomir.|
 A Where's The Chief?|QID|66250|PRE|66249|M|40.57,85.48|Z|2025|N|From Guardian Velomir.|
-C Where's The Chief?|QID|66250|M|40.19,85.16|Z|2025|CHAT|N|Tell Velomir you are ready to investigat the Lookout Tower.|
+C Where's The Chief?|QID|66250|M|40.19,85.16|Z|2025|CHAT|N|Tell Velomir you are ready to investigate the Lookout Tower.|
 T Where's The Chief?|QID|66250|M|40.15,85.14|Z|2025|N|To Guardian Velomir.|
 A Fire Fighter|QID|66251|PRE|66250|M|40.15,85.14|Z|2025|N|From Guardian Velomir.|
 C Fire Fighter|QID|66251|M|40.12,86.68|Z|2025|N|Kill Magmatalon.|
@@ -238,7 +240,7 @@ T A Sketchy Request|QID|66230|M|56.96,67.69|Z|2025|N|To Waywatcher Alvi.|
 A A Poisonous Palette|QID|66456|PRE|66230&66100|M|56.96,67.69|Z|2025|N|From Waywatcher Alvi.|
 A Ending the Blue Period|QID|66457|PRE|66230&66100|M|56.96,67.69|Z|2025|N|From Waywatcher Alvi.|
 C A Poisonous Palette|QID|66456|M|55.68,70.47|Z|2025|N|Kill and loot the Embertooth mobs to find the Envenomed Spears.|S|
-K Bluescale|ACTIVE|66457|QO|1|M|55.89,71.18|Z|2025|N|Bluescale is in a small cave. The plants around him will also agro.|
+K Bluescale|ACTIVE|66457|QO|1|M|55.89,71.18|Z|2025|N|Bluescale is in a small cave. The plants around him will also agro.|T|Bluescale|
 $ Passage of Time Glyph|QID|99999|M|55.63,72.22|Z|2025;Thaldraszus!Dragonflight|N|Floating just under the mountain archway, just behind the viaducts.|ACH|16667|
 C A Poisonous Palette|QID|66456|M|56.73,69.09|Z|2025|N|Continue wiping out the inhabitants of the area until you have enough Envenomed Spears.|US|
 T A Poisonous Palette|QID|66456|M|56.95,67.69|Z|2025|N|To Waywatcher Alvi.|
@@ -277,7 +279,7 @@ C Feels Like the First Time|QID|66083|M|57.61,78.36|Z|2025|QO|1|CHAT|N|Tell Anda
 C Feels Like the First Time|QID|66083|M|57.66,78.34|Z|2025|QO|2|H|N|Click on the Collector.|
 C Feels Like the First Time|QID|66083|M|57.65,78.38|Z|2025|QO|3|H|N|Click on the Blue Crystal Focus.|
 C Feels Like the First Time|QID|66083|M|57.63,78.44|Z|2025|QO|4|H|N|Click on the gold Artifact floating to the right of the Crystal Focus.|
-P Feels Like the First Time|QID|66083|M|57.58,78.32|Z|2025|QO|5|N|Wait for Andantenormu to restore your personal timeline, or when you can, walk into the portal to speed up the process.|
+P Feels Like the First Time|ACTIVE|66083|M|57.58,78.32|Z|2025|QO|5|N|Wait for Andantenormu to restore your personal timeline, or when you can, walk into the portal to speed up the process.|
 T Feels Like the First Time|QID|66083|M|57.52,78.80|Z|2025|N|To Andantenormu.|
 A Times Like These|QID|66084|PRE|66083|M|57.52,78.80|Z|2025|N|From Andantenormu.|
 A If We Could Turn Back Time|QID|66085|PRE|66083|M|57.45,78.93|Z|2025|N|From Siaszerathel.|
@@ -397,14 +399,14 @@ T Entropic Remnants|QID|67154|M|60.29,82.03|Z|2025|N|To Archivist Areniel.|
 
 H Valdrakken|ACTIVE|66221^67093|M|59.9,81.34|N|Hearth back to Valdrakken or fly with the nearby flightmaster as you choose.|TZ|The Roasted Ram|
 t Aiding the Accord|QID|70750^72068^72373^72374^72375|M|50.14,56.28|Z|2112;Thaldraszus|N|To Therazal.|IZ|2112|
-A Renown Supplies|QID|70882|M|58.18,35.17|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;2|IZ|2112|
-T Renown Supplies|QID|70882|M|58.18,35.17|Z|2112|N|To Unatos.|
-A Renown Supplies|QID|72282|M|58.18,35.17|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;4|IZ|2112|
-T Renown Supplies|QID|72282|M|58.18,35.17|Z|2112|N|To Unatos.|
-A Renown Supplies|QID|70885|M|58.18,35.01|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;8|IZ|2112|
-T Renown Supplies|QID|70885|M|58.18,35.01|Z|2112|N|To Unatos.|
+;A Renown Supplies|QID|70882|M|58.18,35.17|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;2|IZ|2112|
+;T Renown Supplies|QID|70882|M|58.18,35.17|Z|2112|N|To Unatos.|
+;A Renown Supplies|QID|72282|M|58.18,35.17|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;4|IZ|2112|
+;T Renown Supplies|QID|72282|M|58.18,35.17|Z|2112|N|To Unatos.|
+;A Renown Supplies|QID|70885|M|58.18,35.01|Z|2112|N|From Unatos.|RANK|2|DFREN|Valdrakken;2510;8|IZ|2112|
+;T Renown Supplies|QID|70885|M|58.18,35.01|Z|2112|N|To Unatos.|
 T An Anomalous Shrine|QID|67093|M|60.98,40.22|Z|2112|N|To Nozdormu, who is on the top level of the Seat of the Aspects.|
-C Moving On|QID|66221|M|57.97,36.04|Z|2112|CHAT|N|Tell Alexstrasza at the top of the tower that all the Oathstones have been restored.|
+C Moving On|QID|66221|M|57.97,36.04|Z|2112|CHAT|N|Tell Alexstrasza (at the top of the tower) that all the Oathstones have been restored.|
 T Moving On|QID|66221|M|57.97,36.04|Z|2112|N|To Alexstrasza.|
 A Renown of the Dragon Isles|QID|71232|PRE|66221|M|57.97,36.04|Z|2112|N|From Alexstrasza.|
 T Report on the Rebels|QID|70879|M|55.86,39.94|Z|2112|N|To Captain Drine.|
@@ -417,7 +419,8 @@ A Oh Where, Oh Where Can He Be?|QID|70647|PRE|66221|M|10.36,58.27|Z|2112|N|From 
 C Oh Where, Oh Where Can He Be?|QID|70647|M|34.79,63.74|Z|2025|QO|1|NC|N|Find Lubbins in a ravine in the Petitioner's Concourse.|
 C Oh Where, Oh Where Can He Be?|QID|70647|M|34.80,63.78|Z|2025|QO|2|H|N|Help Lubbins.|
 T Oh Where, Oh Where Can He Be?|QID|70647|M|10.36,58.27|Z|2112|N|To Jyhanna.|
-A An Expert Opinion|QID|70697|PRE|70647|M|10.41,58.26|Z|2112|N|From Jyhanna.|
+A An Expert Opinion|QID|70697|PRE|70647|M|10.41,58.26|Z|2112|N|From Jyhanna. This quest is account wide and covered in other zone guides.|
+t So How Did It Go?|QID|70854|M|10.32,58.37|Z|2112|N|To Jyhanna.|
 
 T A Dryad's Work Is Never Done|QID|67094|M|72.89,66.17|Z|2112|N|To Thalendra.|
 A A Dryadic Remedy|QID|67606|PRE|67094|M|72.89,66.17|Z|2112|N|From Thalendra.|

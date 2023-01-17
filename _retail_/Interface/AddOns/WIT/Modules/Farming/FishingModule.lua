@@ -18,6 +18,8 @@ core.Data.Results.Farms.SpinefinPiranha,
 core.Data.Results.Farms.SilvergillPike,
 core.Data.Results.Farms.IridescentAmberjack,
 
+core.Data.Results.Farms.IslefinDoradoMultifarm,
+
 }
 
-table.insert(core.Modules, core.FarmResultModule('Fishing', fishingData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Fishing', fishingData, 'Farming', core.Activity.Fishing))

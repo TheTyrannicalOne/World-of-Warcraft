@@ -43,10 +43,14 @@ function Config.Initialize()
     WITDB.Settings.TUJCustomItemPrices = WITDB.Settings.TUJCustomItemPrices or {}
 
     WITDB.Settings.Recorder = WITDB.Settings.Recorder or {}
+    WITDB.Settings.FlipEditor = WITDB.Settings.FlipEditor or {}
 
     WITDB.Settings.Modules = WITDB.Settings.Modules or { Dashboard = { ShowCurrentContent = true, Farms = {} }}
 
     WITDB.UserData = WITDB.UserData or { Farms = {}}
+    WITDB.UserData.Flips = WITDB.UserData.Flips or {}
+    WITDB.UserData.IgnoredFarms = WITDB.UserData.IgnoredFarms or {}
+    WITDB.UserData.IgnoredFlips = WITDB.UserData.IgnoredFlips or {}
 
     WITDB.UserData.ColumnFilters = WITDB.UserData.ColumnFilters or {}
 
@@ -218,6 +222,14 @@ function Config.SetCurrentRecorderSession(session)
     WITDB.Settings.CurrentRecorderSession = session
 end
 
+function Config.GetCurrentFlipEditorSession()
+    return WITDB.Settings.CurrentFlipEditorSession
+end
+
+function Config.SetCurrentFlipEditorSession(session)
+    WITDB.Settings.CurrentFlipEditorSession = session
+end
+
 function Config.GetPlannedFarmIds()
     return WITDB.Settings.FarmPlannerIds
 end
@@ -232,6 +244,18 @@ end
 
 function Config.GetUserFarms()
     return WITDB.UserData.Farms
+end
+
+function Config.GetUserFlips()
+    return WITDB.UserData.Flips
+end
+
+function Config.GetUserIgnoredFarms()
+    return WITDB.UserData.IgnoredFarms
+end
+
+function Config.GetUserIgnoredFlips()
+    return WITDB.UserData.IgnoredFlips
 end
 
 function Config.GetColumnFilter(key)

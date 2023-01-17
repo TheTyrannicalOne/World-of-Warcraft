@@ -122,6 +122,19 @@ core.Items.Gems = {
 	Angerseye = 173109,
 	Oriblase = 173108,
 	
+	-- Dragonflight
+	
+	EternityAmber = 192850,
+	MysticSapphire = 192840,
+	SunderedOnyx = 192848, 
+	VibrantEmerald = 192843, 
+	QueensRuby = 192838,
+	Nozdorite = 192867, 
+	Malygite = 192856, 
+	Neltharite = 192863, 
+	Ysemerald = 192860,
+	Alexstraszite = 192852,
+	IllimitedDiamond = 192869, 
 	
 	
 	

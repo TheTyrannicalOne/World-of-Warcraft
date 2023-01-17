@@ -73,6 +73,11 @@ core.Items.Ores = {
 	ShadedStone = 171841,
 	TwilightBark = 177061,
 	
+	-- Dragonflight
+	
+	SereviteOre = 190395,
+	DraconiumOre = 189143, 
+	KhazgoriteOre = 190312,
 
 	
 	

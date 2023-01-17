@@ -215,11 +215,11 @@ WoWProCharDB = {
 			["done"] = false,
 		},
 	},
-	["EnableGrailBreadcrumbs"] = false,
+	["Enabled"] = true,
 	["EnableGrailQuestLevel"] = false,
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
-	["EnablePetBattles"] = true,
+	["DebugLevel"] = 0,
 	["QID2Guide"] = {
 		[34315] = "LudoGarrCampaign",
 		[34347] = "LudoGarrCampaign",
@@ -545,19 +545,19 @@ WoWProCharDB = {
 		[66196] = true,
 		[66114] = true,
 		[66001] = true,
-		[65999] = true,
+		[66000] = true,
 		[66101] = true,
 		[66998] = true,
 		[65990] = true,
 		[65998] = true,
-		[66000] = true,
-		[65760] = true,
 		[70648] = true,
+		[65760] = true,
 		[66104] = true,
-		[-85659] = true,
 		[8769] = true,
+		[-85659] = true,
 		[66956] = true,
 		[69911] = true,
+		[65999] = true,
 		[72293] = true,
 		[65437] = true,
 		[70150] = true,
@@ -583,8 +583,8 @@ WoWProCharDB = {
 		"Dragonflight Intro", -- [2]
 	},
 	["EnableGrailQuestName"] = false,
-	["Enabled"] = true,
 	["SetWaypoint"] = true,
+	["EnableGrailBreadcrumbs"] = false,
 	["EnableGrailQuestObsolete"] = false,
 	["Tradeskills"] = {
 		[182] = {
@@ -599,22 +599,16 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
-		[794] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 450,
-		},
-		[2586] = {
-			["skillLvl"] = 1,
-			["name"] = "Legion Fishing",
-			["skillMod"] = 0,
-			["skillMax"] = 100,
-		},
 		[171] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
 			["name"] = "Alchemy",
+			["skillMax"] = 100,
+		},
+		[2586] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Legion Fishing",
 			["skillMax"] = 100,
 		},
 		[185] = {
@@ -623,8 +617,19 @@ WoWProCharDB = {
 			["name"] = "Cooking",
 			["skillMax"] = 100,
 		},
+		[794] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Archaeology",
+			["skillMax"] = 450,
+		},
 	},
 	["Taxi"] = {
+		["Forkriver Crossing"] = true,
+		["Dragonscale Basecamp"] = true,
+		["Ruby Life Pools"] = true,
+		["Wingrest Embassy"] = true,
+		["Valdrakken"] = true,
 	},
 	["GuideVersion"] = {
 		["LudoGarrisonPets"] = "2022.12.15.A",
@@ -640,7 +645,7 @@ WoWProCharDB = {
 	["AutoHideInCombat"] = false,
 	["BuildingLocations"] = {
 	},
-	["DebugLevel"] = 0,
+	["EnablePetBattles"] = true,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

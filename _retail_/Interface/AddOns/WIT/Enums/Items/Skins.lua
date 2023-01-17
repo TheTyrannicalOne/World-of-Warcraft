@@ -59,4 +59,16 @@ core.Items.Skins = {
 	HeavyDsolateLeather = 172096,
 	HeavyCallousHide = 172097,
 	
+	
+	-- Dragonflight
+	
+	ResilientLeather = 193208,
+	AdamantScales = 193213,
+	DenseHide = 193216,
+	LustrousScaledHide = 193222,
+	FlawlessProtoDragonScale = 193259,
+	
+	
+	
+	
 }

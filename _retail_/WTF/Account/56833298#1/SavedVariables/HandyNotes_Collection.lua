@@ -19,55 +19,16 @@ HandyNotes_CollectionDB = {
 HandyNotes_CollectionCACHE = {
 	["npcName"] = {
 		[81330] = "Warleader Tome",
-		[87668] = "Orumo the Observer",
-		[87123] = "Vesharr",
 	},
-	["itemSubtype"] = {
-		[119401] = "One-Handed Swords",
-		[119398] = "One-Handed Maces",
-	},
-	["version"] = 47213,
 	["itemLink"] = {
-		[119401] = "|cff0070dd|Hitem:119401::::::::70:71:::::::::|h[Sentinel's Wingblade]|h|r",
-		[119375] = "|cff0070dd|Hitem:119375::::::::70:71:::::::::|h[Chained Orb of Omniscience]|h|r",
 		[121815] = "|cffa335ee|Hitem:121815::::::::70:71:::::::::|h[Voidtalon of the Dark Star]|h|r",
-		[119170] = "|cff0070dd|Hitem:119170::::::::70:71:::::::::|h[Eye of Observation]|h|r",
 		[120276] = "|cff0070dd|Hitem:120276::::::::70:71:::::::::|h[Outrider's Bridle Chain]|h|r",
-		[119398] = "|cff0070dd|Hitem:119398::::::::70:71:::::::::|h[Plunderer's Drill]|h|r",
 		["121815"] = "|cffa335ee|Hitem:121815::::::::70:71:::::::::|h[Voidtalon of the Dark Star]|h|r",
 	},
-	["criteriaName"] = {
-		["960127429"] = "Giga Sentinel",
-		["960127428"] = "Shadow Hulk",
-		["906927006"] = "Vesharr",
-		["960127426"] = "Gluttonous Giant",
-		["972427014"] = "Vesharr",
-		["960127427"] = "Mecha Plunderer",
-		["960126368"] = "Morphed Sentient",
-	},
-	["achievementLink"] = {
-		[9613] = "|cffffff00|Hachievement:9613:Player-75-058380E2:0:0:0:-1:0:0:0:0|h[Fish Gotta Swim, Birds Gotta Eat]|h|r",
-		[9638] = "|cffffff00|Hachievement:9638:Player-75-058380E2:1:7:14:18:4294967295:4294967295:4294967295:4294967295|h[Heralds of the Legion]|h|r",
-		[9601] = "|cffffff00|Hachievement:9601:Player-75-058380E2:0:0:0:-1:0:0:0:0|h[King of the Monsters]|h|r",
-		[9724] = "|cffffff00|Hachievement:9724:Player-75-058380E2:0:0:0:-1:0:0:0:0|h[Taming Draenor]|h|r",
-		[9433] = "|cffffff00|Hachievement:9433:Player-75-058380E2:0:0:0:-1:0:0:0:0|h[A-VOID-ance]|h|r",
-		[9069] = "|cffffff00|Hachievement:9069:Player-75-058380E2:0:0:0:-1:0:0:0:0|h[An Awfully Big Adventure]|h|r",
-	},
-	["achievementIcon"] = {
-		[9613] = "|T134032:0:0:0:-1|t ",
-		[9638] = "|T134332:0:0:0:-1|t ",
-		[9601] = "|T236192:0:0:0:-1|t ",
-		[9724] = "|T1032149:0:0:0:-1|t ",
-		[9433] = "|T132291:0:0:0:-1|t ",
-		[9069] = "|T656597:0:0:0:-1|t ",
-	},
+	["version"] = 47631,
 	["itemIcon"] = {
-		[119375] = "|T1013280:0:0:0:-1|t ",
 		[121815] = "|T1094600:0:0:0:-1|t ",
 		[120276] = "|T971291:0:0:0:-1|t ",
-		[119401] = "|T924822:0:0:0:-1|t ",
-		[119398] = "|T893841:0:0:0:-1|t ",
-		[119170] = "|T236407:0:0:0:-1|t ",
 	},
 }
 HandyNotes_CollectionSTATUS = {

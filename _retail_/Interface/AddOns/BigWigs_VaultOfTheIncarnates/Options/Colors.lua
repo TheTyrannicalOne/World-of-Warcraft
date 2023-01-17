@@ -26,7 +26,7 @@ BigWigs:AddColors("Terros", {
 })
 
 BigWigs:AddColors("The Primal Council", {
-	[371624] = {"blue","purple"},
+	[371624] = {"blue","cyan","green"},
 	[372027] = "orange",
 	[372056] = {"blue","purple"},
 	[372279] = "yellow",
@@ -63,12 +63,12 @@ BigWigs:AddColors("Dathea, Ascended", {
 	[384273] = "yellow",
 	[385812] = "blue",
 	[387849] = "orange",
-	[387943] = "yellow",
 	[388302] = "yellow",
 	[388410] = "yellow",
 	[390450] = "blue",
 	[391686] = "blue",
 	[395501] = "yellow",
+	[397431] = "yellow",
 })
 
 BigWigs:AddColors("Kurog Grimtotem", {
@@ -100,7 +100,7 @@ BigWigs:AddColors("Kurog Grimtotem", {
 	[394416] = "cyan",
 	[394719] = {"cyan","purple"},
 	[395893] = {"cyan","orange"},
-	[396241] = "red",
+	[396241] = {"red","yellow"},
 	[400473] = "red",
 	["stages"] = "cyan",
 })
@@ -148,7 +148,7 @@ BigWigs:AddColors("Raszageth the Storm-Eater", {
 	[387261] = {"green","yellow"},
 	[388643] = "yellow",
 	[389870] = "yellow",
-	[389878] = "cyan",
+	[389878] = {"blue","cyan"},
 	[391285] = {"blue","purple"},
 	[391989] = {"blue","red"},
 	[394582] = "green",

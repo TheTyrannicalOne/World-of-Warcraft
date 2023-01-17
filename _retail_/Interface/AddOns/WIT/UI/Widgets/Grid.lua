@@ -100,7 +100,14 @@ function core.UI.Grid(options)
 
     local function DrawDetailsRow(row, isAlternateRow)
         local data = self.GetDetailsRowData(row)
-        if not data or #(data) == 0 then return end
+        local detailsRowHeaderResource = type(self.DetailsRowHeaderResource) ~= "function" and self.DetailsRowHeaderResource or self.DetailsRowHeaderResource(row)
+
+        if not data or (#(data) == 0 and type(detailsRowHeaderResource) ~= "table") then return end
+
+        if type(detailsRowHeaderResource) ~= "table" then
+            data = { [detailsRowHeaderResource] = data }
+            detailsRowHeaderResource = { detailsRowHeaderResource }
+        end
 
         local group = AceGUI:Create("SimpleGroup")
         group:SetFullWidth(true)
@@ -115,15 +122,18 @@ function core.UI.Grid(options)
             end)
         end
 
-        local header = AceGUI:Create("Label")
-        header:SetFullWidth(true)
-        header:SetText("     " .. core.GetString(self.DetailsRowHeaderResource))
-        group:AddChild(header)
+        for _, resource in pairs(detailsRowHeaderResource) do
+            local header = AceGUI:Create("Label")
+            header:SetFullWidth(true)
 
-        for _, item in pairs(data) do
-            if item.Quantity and type(item.Quantity) == "string" then item.Quantity = tonumber(item.Quantity) end
-            local itemLabel = core.UI.ItemLinkLabel(item, { Prefix = "       ", Suffix = (item.Quantity or 1) > 1 and (" x" .. (item.Quantity or 1)) or "" })
-            group:AddChild(itemLabel)
+            header:SetText("     " .. core.GetString(resource))
+            group:AddChild(header)
+
+            for _, item in pairs(data[resource]) do
+                if item.Quantity and type(item.Quantity) == "string" then item.Quantity = tonumber(item.Quantity) end
+                local itemLabel = core.UI.ItemLinkLabel(item, { Prefix = "       ", Suffix = (item.Quantity or 1) > 1 and (" x" .. (item.Quantity or 1)) or "" })
+                group:AddChild(itemLabel)
+            end
         end
 
         self:AddChild(group)

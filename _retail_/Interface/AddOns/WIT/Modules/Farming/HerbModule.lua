@@ -45,7 +45,12 @@ local herbData = {
 	core.Data.Results.Farms.VigilsTorch,
 	core.Data.Results.Farms.RisingGlory,
 	
+	-- Dragonflight
+	
+	core.Data.Results.Farms.Hochenblume,
+	core.Data.Results.Farms.Saxifrage,
+	
 	
 }
 
-table.insert(core.Modules, core.FarmResultModule('Herb', herbData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Herb', herbData, 'Farming', core.Activity.Herbalism))

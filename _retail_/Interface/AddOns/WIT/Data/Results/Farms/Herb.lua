@@ -423,10 +423,47 @@ core.Data.Results.Farms.RisingGlory = {
 
 
 
+-- Dragonflight
+
+core.Data.Results.Farms.Hochenblume = {
+    Id = 'Hochenblume',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Herbs.Hochenblume,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Herb.Hochenblume },
+    Results = {		
+		
+		{ Id = core.Items.Herbs.BubblePoppy, Quantity = 17 },
+		{ Id = core.Items.Herbs.Hochenblume, Quantity = 538 },
+		{ Id = core.Items.Herbs.Saxifrage, Quantity = 4 },
+		{ Id = core.Items.Herbs.Writhebark, Quantity = 98 },
+		
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 78 },
+		{ Id = core.Items.Misc.RousingDecay, Quantity = 2 },
+    }
+}
 
 
 
-
+core.Data.Results.Farms.Saxifrage = {
+    Id = 'Saxifrage',
+    Activity = core.Activity.Herbalism,
+    ItemId = core.Items.Herbs.Saxifrage,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.OhnahranPlains },
+    Routes = { core.Data.Routes.Herb.Saxifrage },
+    Results = {		
+		
+		{ Id = core.Items.Herbs.BubblePoppy, Quantity = 58 },
+		{ Id = core.Items.Herbs.Hochenblume, Quantity = 525 },
+		{ Id = core.Items.Herbs.Saxifrage, Quantity = 32 },
+		{ Id = core.Items.Herbs.Writhebark, Quantity = 29 },
+		
+		{ Id = core.Items.Misc.RousingAir, Quantity = 76 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 28 },
+    }
+}
 
 
 

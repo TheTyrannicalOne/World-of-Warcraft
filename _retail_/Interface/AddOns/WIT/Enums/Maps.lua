@@ -112,6 +112,13 @@ core.Maps = {
     BFAUldum = 1527,
     BFAValeOfEternalBlossoms = 1530,
 	
+	-- Dragonflight
+	TheWakingShore = 2022,
+    Thaldraszus = 2025,
+	OhnahranPlains = 2023,
+	TheAzureSpan = 2024,
+	
+	
 	-- Dungeons/Raids
 	
 	

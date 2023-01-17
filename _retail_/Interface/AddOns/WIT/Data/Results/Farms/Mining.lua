@@ -328,3 +328,78 @@ core.Data.Results.Farms.SoleniumOre = {
 }
 
 
+
+--- Dragonflight
+
+core.Data.Results.Farms.DraconiumOreTheAzureSpan = {
+    Id = 'DraconiumOreTheAzureSpan',
+    Activity = core.Activity.Mining,
+    ItemId = core.Items.Ores.DraconiumOre,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheAzureSpan },
+    Routes = { core.Data.Routes.Mining.DraconiumOreTheAzureSpan },
+    Results = {
+        { Id = core.Items.Ores.DraconiumOre, Quantity = 46 },
+		{ Id = core.Items.Ores.SereviteOre, Quantity = 150 },
+		{ Id = core.Items.Ores.KhazgoriteOre, Quantity = 9 },
+		
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 26 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 40 },
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 3 },
+		{ Id = core.Items.Misc.RousingOrder, Quantity = 10 },
+
+		
+
+    }
+}
+
+
+
+core.Data.Results.Farms.DraconiumOreOhnahranPlains = {
+    Id = 'DraconiumOreOhnahranPlains',
+    Activity = core.Activity.Mining,
+    ItemId = core.Items.Ores.DraconiumOre,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.OhnahranPlains },
+    Routes = { core.Data.Routes.Mining.DraconiumOreOhnahranPlains },
+    Results = {
+        { Id = core.Items.Ores.DraconiumOre, Quantity = 16 },
+		{ Id = core.Items.Ores.SereviteOre, Quantity = 323 },
+		{ Id = core.Items.Ores.KhazgoriteOre, Quantity = 9 },
+
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 26 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 28 },
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 76 },
+		{ Id = core.Items.Misc.RousingOrder, Quantity = 18 },
+		{ Id = core.Items.Misc.RousingAir, Quantity = 34 },
+
+		
+
+    }
+}
+
+
+
+
+core.Data.Results.Farms.DraconiumOreTheWakingShore = {
+    Id = 'DraconiumOreTheWakingShore',
+    Activity = core.Activity.Mining,
+    ItemId = core.Items.Ores.DraconiumOre,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Mining.DraconiumOreTheWakingShore },
+    Results = {
+        { Id = core.Items.Ores.DraconiumOre, Quantity = 39 },
+		{ Id = core.Items.Ores.SereviteOre, Quantity = 356 },
+		{ Id = core.Items.Ores.KhazgoriteOre, Quantity = 3 },
+
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 69 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 40 },
+		{ Id = core.Items.Misc.RousingOrder, Quantity = 37 },
+
+		
+
+    }
+}
+
+

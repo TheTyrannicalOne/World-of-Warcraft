@@ -310,6 +310,76 @@ core.Data.Results.Farms.RoyalJelly = {
 
 
 
+-- Dragonflight
+
+core.Data.Results.Farms.AwakenedAir = {
+    Id = 'AwakenedAir',
+    Activity = core.Activity.Fishing,
+    ItemId = core.Items.Misc.AwakenedAir,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheAzureSpan },
+    Routes = { core.Data.Routes.Misc.RousingAir },
+    Results = {
+        { Id = core.Items.Misc.AwakenedAir, Quantity = 9 },
+		{ Id = core.Items.Misc.ElementalMote, Quantity = 48 },
+		{ Id = core.Items.Misc.RousingAir, Quantity = 3 },
+
+		
+
+    }
+}
+
+core.Data.Results.Farms.AwakenedEarth = {
+    Id = 'AwakenedEarth',
+    Activity = core.Activity.Fishing,
+    ItemId = core.Items.Misc.AwakenedEarth,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Misc.RousingEarth },
+    Results = {
+        { Id = core.Items.Misc.AwakenedEarth, Quantity = 6 },
+		{ Id = core.Items.Misc.RousingEarth, Quantity = 2 },
+
+		
+
+    }
+}
+
+
+core.Data.Results.Farms.AwakenedDecay = {
+    Id = 'AwakenedDecay',
+    Activity = core.Activity.Fishing,
+    ItemId = core.Items.Misc.AwakenedDecay,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheAzureSpan },
+    Routes = { core.Data.Routes.Misc.RousingDecay },
+    Results = {
+        { Id = core.Items.Misc.AwakenedDecay, Quantity = 4 },
+		{ Id = core.Items.Misc.RousingDecay, Quantity = 4 },
+
+		
+
+    }
+}
+
+
+core.Data.Results.Farms.AwakenedFire = {
+    Id = 'AwakenedFire',
+    Activity = core.Activity.Fishing,
+    ItemId = core.Items.Misc.AwakenedFire,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Misc.RousingFrostFire },
+    Results = {
+        { Id = core.Items.Misc.AwakenedFire, Quantity = 4 },
+		{ Id = core.Items.Misc.AwakenedFrost, Quantity = 5 },
+		{ Id = core.Items.Misc.RousingFire, Quantity = 5 },
+		{ Id = core.Items.Misc.RousingFrost, Quantity = 2 },
+
+		
+
+    }
+}
 
 
 

@@ -30,6 +30,11 @@ TalentTreeTweaksDB = {
 		},
 		["AlwaysShowGates"] = {
 		},
+		["ChangeBackground"] = {
+			["showAlphaInUI"] = true,
+			["alpha"] = 1,
+			["showAlphaInViewerUI"] = true,
+		},
 		["TooltipIds"] = {
 			["professionTooltip"] = {
 				["enabled"] = true,
@@ -60,18 +65,21 @@ TalentTreeTweaksDB = {
 		},
 		["ScaleTalentFrame"] = {
 		},
-		["ReduceTaint"] = {
-		},
-		["RespecButtons"] = {
-		},
-		["ExportInspectedBuild"] = {
-		},
 		["DebugNodeInfo"] = {
 			["viragDevTool"] = true,
 			["luaBrowser"] = true,
 			["slashDump"] = false,
 			["addButtonToTable"] = true,
 			["tinspect"] = true,
+		},
+		["ReduceTaint"] = {
+		},
+		["RespecButtons"] = {
+		},
+		["ExportInspectedBuild"] = {
+		},
+		["MiscFixes"] = {
+			["fixButtonMouseOver"] = true,
 		},
 		["ImportIntoCurrentLoadout"] = {
 			["defaultCheckboxState"] = false,

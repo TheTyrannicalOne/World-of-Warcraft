@@ -44,6 +44,17 @@ core.Data.Results.Farms.SpiritOfHarmony,
 
 core.Data.Results.Farms.RoyalJelly,
 
+
+-- Dragonflight
+
+core.Data.Results.Farms.AwakenedAir,
+core.Data.Results.Farms.AwakenedEarth,
+core.Data.Results.Farms.AwakenedDecay,
+core.Data.Results.Farms.AwakenedFire,
+
+
+
+
 }
 
-table.insert(core.Modules, core.FarmResultModule('Misc', miscData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Misc', miscData, 'Farming', core.Activity.Misc))

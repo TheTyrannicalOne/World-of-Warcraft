@@ -175,6 +175,16 @@ Bastion = 10534,
 
 }
 
+core.Locations.Dragonflight = {
+
+TheWakingShore = 13644,
+Thaldraszus = 13647,
+OhnahranPlains = 13645,
+TheAzureSpan = 13646,
+
+
+}
+
 
 core.Locations.Others = {
     Vashjir = 5146,

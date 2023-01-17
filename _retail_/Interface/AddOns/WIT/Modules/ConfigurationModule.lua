@@ -350,6 +350,210 @@ local function ConfigurationModule()
         core.UI.ToggleQuickSearch(true, function(_, _, term) grid.Search(term) end)
     end
 
+    function drawCustomPricesConfiguration(frame)
+        local grid = nil
+
+        local selectedDataSource = core.Config.GetDataSource()
+        local customItemPrices = selectedDataSource == 2 and core.Config.GetTUJCustomItemPrices() or core.Config.GetCustomItemPrices()
+
+        local function customPriceMenu(module, row)
+            return {
+                {
+                    Name = "SetCustomPrice",
+                    DisplayName = core.GetString("Edit"),
+                    Action = function(row)
+                        core.UI.InputDialog({ Text = core.GetString("SetCustomPrice"), Data = row.Data, HasEditBox = true, TextBoxValue = row.Data.PriceSource, OnAccept = function(self, data)
+                            local customPrice = self.editBox:GetText()
+                            if customPrice == "" or core.PriceSourceHelper.IsValidCustomPrice(customPrice) then
+                                data.PriceSource = customPrice
+                                grid.ClearCache()
+                                grid.Reload()
+                            end
+                        end })
+                    end,
+                    ActionArg = row,
+                },
+                {
+                    Name = "Remove",
+                    DisplayName = core.GetString("Remove"),
+                    Action = function(row)
+                        core.UI.ConfirmableDialog({ Text = core.GetString("RemoveCustomPriceConfirmationMessage"), OnAccept = function()
+                            core.TableHelper.RemoveValue(customItemPrices, row.Data)
+                            grid.ClearCache()
+                            grid.Reload()
+                        end })
+                    end,
+                    ActionArg = row,
+                },
+            }
+        end
+
+        local columns = {
+            core.GridColumns.ContextMenuColumn({ GetMenu = customPriceMenu }),
+            core.GridColumns.ItemNameColumn(),
+            core.GridColumns.PriceSourceValueColumn()
+        }
+        local options = {
+            MinWidth = frame.parent.content.width,
+            Columns = columns,
+            SearchTerm = core.UI.GetSearchTerm(),
+            Sort = { Column = columns[2], Direction = "ASC" }
+        }
+
+        grid = core.UI.Grid(options)
+        grid:SetCallback("OnReload", function() frame:DoLayout() end)
+
+        local intro = AceGUI:Create("Label")
+        intro:SetFullWidth(true)
+        intro:SetText(core.GetString("CustomPricesConfogurationIntro"))
+        frame:AddChild(intro)
+
+        local addItemIcon = AceGUI:Create("Icon")
+        addItemIcon:SetLabel(core.GetString("AddItem"))
+        addItemIcon:SetImageSize(48, 48)
+        addItemIcon:SetFullWidth(true)
+        addItemIcon:SetImage("Interface\\BUTTONS\\UI-EmptySlot")
+        addItemIcon:SetCallback("OnClick", function()
+            local type, id, link = GetCursorInfo()
+	        if type == 'item' then
+                local petId = (id == core.PriceSourceHelper.PetCageItemId and tonumber(link:match("Hbattlepet:(%d+):"))) or nil
+                for _, i in pairs(customItemPrices) do
+                    if i.ItemId == id and i.PetId == petId then
+                        return
+                    end
+                end
+
+                local item = { ItemId = id, PriceSource = "" }
+                if id == core.PriceSourceHelper.PetCageItemId then
+                    item.PetId = petId
+                    item.ItemLink = link
+                end
+
+                table.insert(customItemPrices, item)
+
+                grid.ClearCache()
+                grid.Reload()
+            end
+        end)
+        frame:AddChild(addItemIcon)
+
+        grid.Show(customItemPrices)
+
+        frame:AddChild(grid)
+
+        core.UI.ToggleQuickSearch(true, function(_, _, term) grid.Search(term) end)
+    end
+
+    local function getIgnoredFarms(table, ignoredIds, farms)
+        if type(table) == "table" then
+            for _, farm in pairs(table) do
+                if type(farm) == "table" then
+                    if not farm.Id then
+                        getIgnoredFarms(farm, ignoredIds, farms)
+                    elseif tContains(ignoredIds, farm.Id) then
+                        tinsert(farms, farm)
+                    end
+                end
+            end
+        end
+
+        return farms
+    end
+
+    function drawHiddenFarmsConfiguration(frame)
+        local grid = nil
+
+        local farms = getIgnoredFarms(core.Data.Results, core.Config.GetUserIgnoredFarms(), {})
+
+        local function contextMenu(module, row)
+            return {
+                {
+                    Name = "Restore",
+                    DisplayName = core.GetString("Restore"),
+                    Action = function(row)
+                        core.TableHelper.RemoveValue(core.Config.GetUserIgnoredFarms(), row.Data.Id)
+                        core.TableHelper.RemoveValue(farms, row.Data)
+                        grid.ClearCache()
+                        grid.Reload()
+                    end,
+                    ActionArg = row,
+                },
+            }
+        end
+
+        local columns = {
+            core.GridColumns.ContextMenuColumn({ GetMenu = contextMenu }),
+            core.GridColumns.ItemNameColumn()
+        }
+        local options = {
+            MinWidth = frame.parent.content.width,
+            Columns = columns,
+            SearchTerm = core.UI.GetSearchTerm(),
+            Sort = { Column = columns[2], Direction = "ASC" }
+        }
+
+        grid = core.UI.Grid(options)
+        grid:SetCallback("OnReload", function() frame:DoLayout() end)
+
+        local intro = AceGUI:Create("Label")
+        intro:SetFullWidth(true)
+        intro:SetText(core.GetString("HiddenFarmsConfogurationIntro"))
+        frame:AddChild(intro)
+
+        grid.Show(farms)
+
+        frame:AddChild(grid)
+
+        core.UI.ToggleQuickSearch(true, function(_, _, term) grid.Search(term) end)
+    end
+
+    function drawHiddenFlipsConfiguration(frame)
+        local grid = nil
+
+        local farms = getIgnoredFarms(core.Data.Results, core.Config.GetUserIgnoredFlips(), {})
+
+        local function contextMenu(module, row)
+            return {
+                {
+                    Name = "Restore",
+                    DisplayName = core.GetString("Restore"),
+                    Action = function(row)
+                        core.TableHelper.RemoveValue(core.Config.GetUserIgnoredFlips(), row.Data.Id)
+                        core.TableHelper.RemoveValue(farms, row.Data)
+                        grid.ClearCache()
+                        grid.Reload()
+                    end,
+                    ActionArg = row,
+                },
+            }
+        end
+
+        local columns = {
+            core.GridColumns.ContextMenuColumn({ GetMenu = contextMenu }),
+            core.GridColumns.ItemNameColumn()
+        }
+        local options = {
+            MinWidth = frame.parent.content.width,
+            Columns = columns,
+            SearchTerm = core.UI.GetSearchTerm(),
+            Sort = { Column = columns[2], Direction = "ASC" }
+        }
+
+        grid = core.UI.Grid(options)
+        grid:SetCallback("OnReload", function() frame:DoLayout() end)
+
+        local intro = AceGUI:Create("Label")
+        intro:SetFullWidth(true)
+        intro:SetText(core.GetString("HiddenFlipsConfogurationIntro"))
+        frame:AddChild(intro)
+
+        grid.Show(farms)
+
+        frame:AddChild(grid)
+
+        core.UI.ToggleQuickSearch(true, function(_, _, term) grid.Search(term) end)
+    end
+
     function drawFarm(frame, farm)
         local group = AceGUI:Create("SimpleGroup")
         group:SetLayout("Flow")
@@ -366,7 +570,7 @@ local function ConfigurationModule()
         group:AddChild(checkbox)
 
         local label = AceGUI:Create("InteractiveLabel")
-        local text = farm.PetId and farm.ItemLink or farm.PetId and core.TSMHelper.GetItemLink('p:'.. farm.PetId) or farm.ItemId and core.TSMHelper.GetItemLink(farm.ItemId) or farm.NameMapId and core.LocationHelper.GetMapName(farm.NameMapId) or core.GetString(farm.Name)
+        local text = farm.PetId and farm.ItemLink or farm.PetId and core.TSMHelper.GetItemLink('p:'.. farm.PetId) or farm.ItemId and core.TSMHelper.GetItemLink(farm.ItemId) or farm.NameMapId and core.LocationHelper.GetMapName(farm.NameMapId) or (not farm.IsCustom and core.GetString(farm.Name)) or farm.Name
         label:SetText(text)
         label:SetWidth(label.label:GetStringWidth() + 5)
 
@@ -520,7 +724,7 @@ local function ConfigurationModule()
                     },
                     { 
                         value = "CustomPrices", 
-                        text = "Custom Prices",--core.GetString("BagValue"),
+                        text = core.GetString("CustomPrices"),
                     },
                     {
                         value = "Modules",
@@ -531,6 +735,14 @@ local function ConfigurationModule()
                                 value = "Dashboard", 
                                 text = core.GetString("Dashboard"),
                                 children = dashboardItems
+                            },
+                            { 
+                                value = "HiddenFarms", 
+                                text = core.GetString("HiddenFarms")
+                            },
+                            { 
+                                value = "HiddenFlips", 
+                                text = core.GetString("HiddenFlips")
                             },
                         }
                     },
@@ -557,6 +769,10 @@ local function ConfigurationModule()
                 drawBagValueConfiguration(scrollFrame)
             elseif group == 'WorthIt\001CustomPrices' then
                 drawCustomPricesConfiguration(scrollFrame)
+            elseif group == 'WorthIt\001Modules\001HiddenFarms' then
+                drawHiddenFarmsConfiguration(scrollFrame)
+            elseif group == 'WorthIt\001Modules\001HiddenFlips' then
+                drawHiddenFlipsConfiguration(scrollFrame)
             elseif group == 'WorthIt\001Modules' then
                 drawModulesConfiguration(scrollFrame)
             elseif group == 'WorthIt\001Modules\001Dashboard' then

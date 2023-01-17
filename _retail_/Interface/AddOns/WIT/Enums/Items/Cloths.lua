@@ -54,18 +54,58 @@ core.Items.Cloths = {
 	GreenDye = 2605,
 	
 	
+	-- Dragonflight
+	
+	TatteredWildercloth = 193050,
+	Wildercloth = 193922,
 	
 	
 	
 	
+	-- Bolts
+	
+	
+	LinenBolt = 2996,
+	WoolBolt = 2997,
+	SilkBolt = 4305,
+	MageweaveBolt = 4339,
+	RuneclothBolt = 14048,
+	NetherweaveBolt = 21840,
+	ImbudedNeverweaveBolt = 21842,
+	SoulClothBolt = 21844,
+	FrostweaveBolt = 41510,
+	ImbudedFrostweaveBolt = 41511,
+	EmbersilkBolt = 53643,
+	WindwoolBolt = 82441,
+	
+	
+	InfiniteDust = 34054,
+	SoulEssence = 21882,
+	ArcaneDust = 22445,
 	
 	
 	
+	-- Extra Items for Weaves
+	
+	ImbuedSilkweave = 127004,
+	EmbroideredDeepSeaSatin = 158378,
+	Ebonweave = 41593,
+	Moonshroud = 41594,
+	Spellweave = 41595,
+	PrimalMooncloth = 21845,
+	Shadowcloth = 24272,
+	Mooncloth = 14342,
 	
 	
-	
-	
-	
+	Arkhana = 124440,
+	EternalShadow = 35627,
+	EternalLife = 35625,
+	EternalFire = 36860,
+	PrimalLife = 21886,
+	PrimalWater = 21885,
+	PrimalShadow = 22456,
+	PrimalFire = 21884,
+	Felcloth = 14256,
 	
 	
 	

@@ -42,9 +42,17 @@ core.Data.Results.Farms.RevendrethMultifarm,
 core.Data.Results.Farms.BastionMultifarm, 
 core.Data.Results.Farms.ArdenwealdMultifarm,
 
+-- Dragonflight
+
+
+
+core.Data.Results.Farms.OhnahranPlainsMultifarm,
+core.Data.Results.Farms.TheAzureSpanMultifarm,
+core.Data.Results.Farms.TheWakingShoreMultifarm,
+
 
 
 
 }
 
-table.insert(core.Modules, core.FarmResultModule('MultiFarms', MultiFarmsData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('MultiFarms', MultiFarmsData, 'Farming', core.Activity.MultiFarms))

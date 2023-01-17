@@ -19,13 +19,14 @@ local function DropDownMenu_OnLoad(dropDown, level, menuList)
                 local hasChildren = item.Children ~= nil and #(item.Children) > 0
                 local info = UIDropDownMenu_CreateInfo()
                 info.hasArrow = hasChildren
-                info.notCheckable = true
-                info.disabled = item.IsEnabled and (not item.IsEnabled(item.ActionArg))
+                info.notCheckable = not item.IsCheckable
+                info.checked = item.IsChecked
+                info.disabled = item.IsEnabled and (not item.IsEnabled(item.ActionArg, item.ActionArg2))
                 info.text = item.DisplayName or item.Name
                 info.menuList = item.Children
-                info.func = function (self, arg1) 
+                info.func = function (self, arg1, arg2) 
                     if item.Action then
-                        item.Action(arg1)
+                        item.Action(arg1, arg2)
                     end
 
                     --UIDROPDOWNMENU_OPEN_MENU
@@ -39,6 +40,7 @@ local function DropDownMenu_OnLoad(dropDown, level, menuList)
                     end
                 end
                 info.arg1 = item.ActionArg
+                info.arg2 = item.ActionArg2
 
                 UIDropDownMenu_AddButton(info, level)
             end

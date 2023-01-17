@@ -3,7 +3,7 @@ H.H.T.D. World of Warcraft Add-on
 Copyright (c) 2009-2018 by John Wellesz (hhtd@2072productions.com)
 All rights reserved
 
-Version 2.4.9.14
+Version 2.4.10
 
 In World of Warcraft healers have to die. This is a cruel truth that you're
 taught very early in the game. This add-on helps you influence this unfortunate
@@ -640,6 +640,7 @@ do
             ["PALADIN"] = getIconCoords(3,0), --3,0
             ["PRIEST"]  = getIconCoords(0,1), --0,1
             ["SHAMAN"]  = getIconCoords(1,1), --1,1
+            ["EVOKER"]  = getIconCoords(0,3), --0,3
         },
         [false] = {
             [false]     = getIconCoords(2,1), --2,1
@@ -648,6 +649,7 @@ do
             ["PALADIN"] = getIconCoords(1,2), --1,2
             ["PRIEST"]  = getIconCoords(2,2), --2,2
             ["SHAMAN"]  = getIconCoords(3,2), --3,2
+            ["EVOKER"]  = getIconCoords(1,3), --1,3
         }
     };
 

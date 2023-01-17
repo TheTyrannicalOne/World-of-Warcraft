@@ -28,4 +28,22 @@ core.Items.Fish = {
 	SilvergillPike = 173034,
 	IridescentAmberjack = 173033,
 	
+	
+	-- Dragonflight
+	
+	ThousandbitePiranha = 194966,
+	AileronSeamoth = 194967,
+	TemporalDragonhead = 194969,
+	CeruleanSpinefish = 194968,
+	PrismaticLeaper = 200061,
+	FrostedRimefinTuna = 200074,
+	MagmaThresher = 199344, 
+	
+	DullSpinedClam = 198395,
+	IslefinDorado = 194970,
+	ScalebellyMackerel = 194730,
+
+	
+	
+	
 }

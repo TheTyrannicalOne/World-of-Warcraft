@@ -38,7 +38,7 @@ function CraftingTask.__init(self)
 
 	if not private.registeredCallbacks then
 		Profession.RegisterStateCallback(private.UpdateTasks)
-		TSM.Crafting.ProfessionScanner.RegisterHasScannedCallback(private.UpdateTasks)
+		Profession.RegisterHasScannedCallback(private.UpdateTasks)
 		BagTracking.RegisterCallback(private.UpdateTasks)
 		private.registeredCallbacks = true
 
@@ -111,7 +111,7 @@ function CraftingTask.OnButtonClick(self)
 		local craftString = self._craftStrings[1]
 		local spellId = CraftString.GetSpellId(craftString)
 		local quantity = self._craftQuantity[craftString]
-		local _, numMax = Profession.GetCraftedQuantity(craftString)
+		local _, numMax = Profession.GetCraftedQuantityRange(craftString)
 		if numMax and numMax > 1 then
 			-- need minimum this many repeats
 			quantity = ceil(quantity / numMax)
@@ -159,7 +159,7 @@ function CraftingTask._UpdateState(self)
 	elseif self._profession ~= Profession.GetCurrentProfession() then
 		-- the profession isn't opened
 		return self:_SetButtonState(true, L["OPEN"])
-	elseif not TSM.Crafting.ProfessionScanner.HasScanned() then
+	elseif not Profession.HasScanned() then
 		-- the profession is opened, but we haven't yet fully scanned it
 		return self:_SetButtonState(false, strupper(OPENING))
 	elseif private.currentlyCrafting == self then
@@ -188,7 +188,7 @@ function private.ChatMsgLootEventHandler(_, msg)
 		return
 	end
 	local msgItemLink, quantity = nil, nil
-	local numMin, numMax = Profession.GetCraftedQuantity(CraftString.Get(private.pendingSpellId))
+	local numMin, numMax = Profession.GetCraftedQuantityRange(CraftString.Get(private.pendingSpellId))
 	if numMin == 1 then
 		numMin = numMin + 1
 	end

@@ -10,10 +10,14 @@ WoWProCharDB = {
 		["LudoFishing"] = "2022.12.15.A",
 		["LudoBuildingsAlliance"] = "2022.12.15.A",
 	},
+	["EnableGrailBreadcrumbs"] = false,
 	["EnableGrailQuestLevel"] = false,
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
-	["EnablePetBattles"] = true,
+	["GuideStack"] = {
+		"LudoGarrisonPets", -- [1]
+		"Dragonflight Intro", -- [2]
+	},
 	["QID2Guide"] = {
 		[38435] = "FlucloTanaanJungle",
 		[36423] = "LudoBuildingsAlliance",
@@ -233,9 +237,9 @@ WoWProCharDB = {
 		[38273] = "FlucloTanaanJungle",
 		[33113] = "LudoGarrissonSupportA",
 		[34365] = "LudoGarrCampaign",
-		[36309] = "LudoBuildingsAlliance",
-		[13832] = "LudoFishing",
 		[13836] = "LudoFishing",
+		[13832] = "LudoFishing",
+		[36309] = "LudoBuildingsAlliance",
 		[34281] = "LudoGarrCampaign",
 		[36341] = "LudoGarrCampaign",
 		[37890] = "FlucloTanaanJungle",
@@ -304,18 +308,30 @@ WoWProCharDB = {
 		[35285] = "LudoBuildingsAlliance",
 	},
 	["Trades"] = {
-	},
-	["GuideStack"] = {
-		"LudoGarrisonPets", -- [1]
-		"Dragonflight Intro", -- [2]
+		[393059] = true,
+		[393063] = true,
+		[393067] = true,
+		[391406] = true,
+		[393060] = true,
+		[393064] = true,
+		[393068] = true,
+		[381365] = true,
+		[393061] = true,
+		[393065] = true,
+		[381364] = true,
+		[381363] = true,
+		[393062] = true,
+		[393066] = true,
+		[384692] = true,
 	},
 	["completedQIDs"] = {
-		[72293] = false,
+		[72293] = true,
 		[66076] = false,
 		[-79180] = true,
 		[-79751] = true,
 		[-85677] = true,
 		[-85685] = true,
+		[67053] = true,
 		[-85650] = true,
 		[66577] = true,
 		[-85662] = true,
@@ -324,83 +340,38 @@ WoWProCharDB = {
 		[72708] = false,
 		[-85682] = true,
 		[-85686] = true,
-		[67700] = false,
+		[67700] = true,
 		[72240] = true,
 		[-85659] = true,
-		[70122] = false,
+		[72266] = true,
+		[70122] = true,
 		[-85679] = true,
 		[70124] = false,
-		[70197] = false,
+		[70197] = true,
 		[66596] = true,
 		[66074] = false,
 		[65436] = true,
 		[-85561] = true,
 		[65451] = false,
 		[65453] = false,
-		[69910] = false,
+		[69910] = true,
 		[-85656] = true,
-		[-85660] = true,
+		[72375] = false,
 		[-85664] = true,
 		[72068] = false,
-		[70125] = false,
-		[70123] = false,
-		[72375] = false,
+		[70125] = true,
+		[70123] = true,
+		[-85660] = true,
 		[70750] = false,
 		[72709] = false,
 		[72373] = false,
 		[72374] = false,
 	},
 	["EnableRares"] = true,
+	["EnablePetBattles"] = true,
 	["EnableGrailQuestName"] = false,
-	["EnableGrailBreadcrumbs"] = false,
-	["EnableGrailQuestObsolete"] = false,
 	["DebugLevel"] = 0,
-	["Tradeskills"] = {
-		[182] = {
-			["skillLvl"] = 175,
-			["skillMod"] = 0,
-			["name"] = "Herbalism",
-			["skillMax"] = 175,
-		},
-		[186] = {
-			["skillLvl"] = 147,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 175,
-		},
-		[356] = {
-			["skillLvl"] = 13,
-			["skillMod"] = 0,
-			["name"] = "Fishing",
-			["skillMax"] = 175,
-		},
-		[2585] = {
-			["skillLvl"] = 13,
-			["name"] = "Battle for Azeroth Fishing",
-			["skillMod"] = 0,
-			["skillMax"] = 175,
-		},
-		[185] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
-		},
-		[794] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 950,
-		},
-	},
-	["Taxi"] = {
-	},
-	["BuildingLocations"] = {
-	},
-	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
-	["AutoHideInsideInstancesNotify"] = true,
-	["AutoHideInCombat"] = false,
+	["SetWaypoint"] = false,
 	["Guide"] = {
 		["LudoBuildingsAlliance"] = {
 			["skipped"] = {
@@ -433,9 +404,48 @@ WoWProCharDB = {
 				66596, -- [14]
 				66596, -- [15]
 				66596, -- [16]
-				[56] = false,
+				"AutoCompleteQuestUpdate: AutoComplete", -- [17]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [18]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [19]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [20]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [21]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [22]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [23]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [24]
+				nil, -- [25]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [26]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [27]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [28]
+				nil, -- [29]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [30]
+				nil, -- [31]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [32]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [33]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [37]
+				"AutoCompleteCriteria-Quest", -- [38]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
+				nil, -- [40]
+				nil, -- [41]
+				nil, -- [42]
+				nil, -- [43]
+				nil, -- [44]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
+				"AutoCompleteCriteria-Quest", -- [46]
+				"AutoCompleteQuestUpdate: Accept", -- [47]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [49]
+				nil, -- [50]
+				nil, -- [51]
+				nil, -- [52]
+				nil, -- [53]
+				nil, -- [54]
+				nil, -- [55]
+				false, -- [56]
 			},
-			["progress"] = 16,
+			["progress"] = 39,
 		},
 		["FlucloTanaanJungle"] = {
 			["skipped"] = {
@@ -584,7 +594,58 @@ WoWProCharDB = {
 			},
 		},
 	},
+	["Tradeskills"] = {
+		[182] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Herbalism",
+			["skillMax"] = 100,
+		},
+		[186] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 100,
+		},
+		[356] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 100,
+		},
+		[2585] = {
+			["skillLvl"] = 13,
+			["skillMod"] = 0,
+			["name"] = "Battle for Azeroth Fishing",
+			["skillMax"] = 175,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 100,
+		},
+		[794] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Archaeology",
+			["skillMax"] = 950,
+		},
+	},
+	["Taxi"] = {
+		["Dragonscale Basecamp"] = true,
+		["Valdrakken"] = true,
+		["Wingrest Embassy"] = true,
+		["Forkriver Crossing"] = true,
+	},
+	["BuildingLocations"] = {
+	},
+	["EnableTreasures"] = true,
+	["EnableFlight"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
 	["Enabled"] = true,
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

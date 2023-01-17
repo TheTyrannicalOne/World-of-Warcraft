@@ -10,4 +10,4 @@ core.Data.Results.Farms.PackMule,
 core.Data.Results.Farms.Skate,
 }
 
-table.insert(core.Modules, core.FarmResultModule('Mounts', mountsData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Mounts', mountsData, 'Farming', core.Activity.Mounts))

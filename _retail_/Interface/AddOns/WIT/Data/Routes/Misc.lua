@@ -441,3 +441,83 @@ core.Data.Routes.Misc.RoyalJelly = {
 		},
 	}
 }
+
+core.Data.Routes.Misc.RousingEarth = {
+    Name = "RousingEarth",
+    MapId = core.Maps.TheWakingShore,
+    Data = {
+		["color"] = {
+						0, -- [1]
+						0.1411764770746231, -- [2]
+						1, -- [3]
+						1, -- [4]
+		},
+		["length"] = 14019.09561304586,
+		["route"] = {
+						48993064, -- [1]
+						55533061, -- [2]
+						54833358, -- [3]
+						48983437, -- [4]
+		},
+	}
+}
+
+
+core.Data.Routes.Misc.RousingFrostFire = {
+    Name = "RousingFrostFire",
+    MapId = core.Maps.TheWakingShore,
+    Data = {
+		["color"] = {
+						0.1607843190431595, -- [1]
+						1, -- [2]
+						0, -- [3]
+						1, -- [4]
+		},
+		["length"] = 14019.09561304586,
+		["route"] = {
+						48464311, -- [1]
+						50584626, -- [2]
+						48864804, -- [3]
+						46214803, -- [4]
+		},
+	}
+}
+
+core.Data.Routes.Misc.RousingDecay = {
+    Name = "RousingDecay",
+    MapId = core.Maps.TheAzureSpan,
+    Data = {
+		["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0.1098039299249649, -- [3]
+						1, -- [4]
+		},
+		["length"] = 19123.93513538704,
+		["route"] = {
+						18233470, -- [1]
+						20153438, -- [2]
+						20153749, -- [3]
+						18163902, -- [4]
+		},
+	}
+}
+
+core.Data.Routes.Misc.RousingAir = {
+    Name = "RousingAir",
+    MapId = core.Maps.TheAzureSpan,
+    Data = {
+		["color"] = {
+						0, -- [1]
+						1, -- [2]
+						0.1843137294054031, -- [3]
+						1, -- [4]
+		},
+		["length"] = 19123.93513538704,
+		["route"] = {
+						46325233, -- [1]
+						48875820, -- [2]
+						44206015, -- [3]
+		},
+	}
+}

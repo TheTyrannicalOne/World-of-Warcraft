@@ -60,7 +60,7 @@ local function getPriceSourceForItem(itemId)
         end
     end
 
-    if not priceSource and itemId <= 152500 then
+    if not priceSource and itemId <= 191050 then
         priceSource = core.Config.GetLegacyPriceSource()
         
         if priceSource == priceSources[1] then

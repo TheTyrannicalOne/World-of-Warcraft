@@ -50,5 +50,25 @@ core.Items.Misc = {
 	ThinJelly = 168822,
 	
 	
+	-- Dragonflight
+	
+	RousingAir = 190326,
+	RousingEarth = 190315,
+	RousingFire = 190320,
+	RousingFrost = 190328,
+	RousingDecay = 190330,
+	RousingIre = 190451,
+	RousingOrder = 190322, 
+	
+	AwakenedAir = 190327,
+	AwakenedEarth = 190316,
+	AwakenedFire = 190321,
+	AwakenedFrost = 190329,
+	AwakenedDecay = 190331,
+	
+	ElementalMote = 202071, 
+	
+	
+	
 	
 }

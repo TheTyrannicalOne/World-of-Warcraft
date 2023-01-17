@@ -15,12 +15,14 @@ WITDB = {
 		["CustomPriceSource"] = "DBMinBuyout",
 		["Recorder"] = {
 		},
+		["LegacyPricingSelect"] = "DBMarket",
 		["MinimapIcon"] = {
 		},
-		["LegacyPricingSelect"] = "DBMarket",
+		["FlipEditor"] = {
+		},
 		["DataSource"] = 1,
 		["RecorderMinPrice"] = 0,
-		["BelowTresholdValue"] = 1,
+		["BagValueMinQuality"] = 1,
 		["TUJCustomItemPrices"] = {
 		},
 		["TUJLegacyPricingSelect"] = "market",
@@ -28,17 +30,23 @@ WITDB = {
 		["PricingSelect"] = "DBMarket",
 		["TUJLegacyCustomPriceSource"] = "market",
 		["TUJCustomPriceSource"] = "market",
-		["BagValueMinQuality"] = 1,
 		["RecorderMinQuality"] = 1,
+		["BelowTresholdValue"] = 1,
 		["HideMinimapIcon"] = false,
 		["CustomItemPrices"] = {
 		},
 	},
-	["Version"] = "v4.0.15",
+	["Version"] = "v4.0.16",
 	["UserData"] = {
+		["IgnoredFarms"] = {
+		},
 		["Farms"] = {
 		},
 		["ColumnFilters"] = {
+		},
+		["Flips"] = {
+		},
+		["IgnoredFlips"] = {
 		},
 	},
 }

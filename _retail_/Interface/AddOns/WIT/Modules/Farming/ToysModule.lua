@@ -10,4 +10,4 @@ core.Data.Results.Farms.CrashinThrashinMortarController,
 core.Data.Results.Farms.BigRedRayGun,
 }
 
-table.insert(core.Modules, core.FarmResultModule('Toys', toysData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Toys', toysData, 'Farming', core.Activity.Toys))

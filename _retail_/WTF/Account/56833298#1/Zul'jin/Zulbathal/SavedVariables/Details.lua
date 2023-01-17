@@ -7,13 +7,12 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 585,
 					["tipo"] = 2,
+					["combatId"] = 585,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.004967,
-							["total"] = 33620.004967,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -22,34 +21,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["spec"] = 102,
-							["colocacao"] = 1,
 							["classe"] = "DRUID",
+							["spec"] = 102,
+							["aID"] = "61-0CA8EB69",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004967,
 							["friendlyfire"] = {
 							},
-							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
 							["dps_started"] = false,
-							["end_time"] = 1672381231,
+							["total"] = 33620.004967,
 							["friendlyfire_total"] = 0,
-							["aID"] = "61-0CA8EB69",
+							["on_hold"] = false,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 6601.218332416062,
-							["custom"] = 0,
+							["end_time"] = 1672381231,
 							["last_event"] = 1672381226,
-							["damage_taken"] = 0.004967,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 6601.218332416062,
 							["start_time"] = 1672381226,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["damage_taken"] = 0.004967,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -61,20 +61,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
+							["aID"] = "",
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 33620.005941,
-							["aID"] = "",
+							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
 							["total"] = 33620.005941,
-							["classe"] = "PET",
+							["damage_taken"] = 0.005941,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -105,23 +104,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["end_time"] = 1672381231,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.005941,
+							["last_event"] = 1672381226,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672381226,
 							["delay"] = 0,
-							["last_event"] = 1672381226,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
 							["totalabsorbed"] = 0.00653,
-							["friendlyfire"] = {
-							},
 							["damage_from"] = {
 								["Ruby Whelpling <Zulbathal>"] = true,
 							},
@@ -129,43 +127,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
+							["aID"] = "193994",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00653,
-							["aID"] = "193994",
-							["dps_started"] = false,
-							["total"] = 0.00653,
-							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8213",
+							["fight_component"] = true,
+							["total"] = 0.00653,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
+							["tipo"] = 1,
 							["end_time"] = 1672381231,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 0,
 							["damage_taken"] = 33620.00653,
 							["start_time"] = 1672381231,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 585,
 					["tipo"] = 3,
+					["combatId"] = 585,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 585,
 					["tipo"] = 7,
+					["combatId"] = 585,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.003443,
@@ -181,7 +181,6 @@ _detalhes_database = {
 							["total"] = 0.003443,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -193,129 +192,130 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
-							["alternatepower"] = 12.003443,
-							["last_event"] = 1672381226,
-							["aID"] = "61-0CA8EB69",
+							["alternatepower"] = 31.003443,
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381226,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 552.0034430000001,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 585,
 					["tipo"] = 9,
+					["combatId"] = 585,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 38,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 38,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381231,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 5,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
+										["id"] = 97033,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[383151] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 5,
 										["id"] = 383151,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -324,22 +324,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 2,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 585,
 					["tipo"] = 2,
+					["combatId"] = 585,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -350,64 +350,41 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64632.981,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381226,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 					["Zulbathal"] = {
-						["total"] = 12,
-						["last"] = 6,
+						["total"] = 31,
+						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 970,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
-					33619.957863, -- [1]
-					-0.02981799999997747, -- [2]
+					33619.7351330005, -- [1]
+					-0.1427049999403474, -- [2]
 					{
-						-0.02404300000000603, -- [1]
-						[0] = -0.01332,
+						-0.04803500000000582, -- [1]
+						[0] = -0.05368500000082982,
 						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
+						[3] = -0.02015999999991891,
+						[6] = -0.008030999999999011,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = -0.005705999999999989,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:20:31",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Agitated Weedling",
-				["TotalElapsedCombatTime"] = 5.093000000000757,
-				["CombatEndedAt"] = 64638.074,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:20:26",
-				["end_time"] = 64638.074,
-				["combat_id"] = 585,
-				["tempo_start"] = 1672381226,
-				["frags"] = {
-					["Agitated Weedling"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -422,28 +399,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:20:31",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Weedling",
+				["TotalElapsedCombatTime"] = 5.093000000000757,
+				["CombatEndedAt"] = 64638.074,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -451,16 +440,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64632.981,
-				["TimeData"] = {
+				["end_time"] = 64638.074,
+				["combat_id"] = 585,
+				["data_inicio"] = "01:20:26",
+				["frags"] = {
+					["Agitated Weedling"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 970,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64632.981,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [1]
 			{
 				{
-					["combatId"] = 584,
 					["tipo"] = 2,
+					["combatId"] = 584,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -473,35 +474,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 112862.006696,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006696,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 112862.006696,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381224,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 10280.74391473595,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381224,
 							["tipo"] = 1,
-							["damage_taken"] = 0.006696,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381218,
+							["last_dps"] = 10280.74391473595,
 							["start_time"] = 1672381213,
 							["delay"] = 0,
-							["last_event"] = 1672381218,
+							["damage_taken"] = 0.006696,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -511,22 +512,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Agitated Weedling"] = 112862,
 							},
-							["total"] = 112862.00783,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381224,
+							["last_event"] = 1672381218,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 112862.00783,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381224,
+							["total"] = 112862.00783,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -557,17 +557,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381218,
+							["tipo"] = 1,
 							["damage_taken"] = 0.00783,
 							["start_time"] = 1672381213,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -580,45 +581,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "193994",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002053,
+							["serial"] = "Creature-0-4229-2444-17344-193994-00002E820A",
+							["fight_component"] = true,
+							["total"] = 0.002053,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381224,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "193994",
-							["total"] = 0.002053,
-							["serial"] = "Creature-0-4229-2444-17344-193994-00002E820A",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 207653.002053,
 							["start_time"] = 1672381224,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381224,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 584,
 					["tipo"] = 3,
+					["combatId"] = 584,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 584,
 					["tipo"] = 7,
+					["combatId"] = 584,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.001565,
@@ -634,7 +635,6 @@ _detalhes_database = {
 							["total"] = 0.001565,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -646,118 +646,119 @@ _detalhes_database = {
 										["counter"] = 6,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.001565,
-							["last_event"] = 1672381218,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381218,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1656.001565,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 584,
 					["tipo"] = 9,
+					["combatId"] = 584,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 69,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 69,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381224,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 11,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+									[292364] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
+										["id"] = 292364,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[387678] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 387678,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -766,22 +767,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 13,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 584,
 					["tipo"] = 2,
+					["combatId"] = 584,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -792,12 +793,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64620.845,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381213,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 969,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					112861.980652, -- [1]
@@ -812,41 +815,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:20:25",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Agitated Weedling",
-				["TotalElapsedCombatTime"] = 10.97800000000279,
-				["CombatEndedAt"] = 64631.823,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:20:14",
-				["end_time"] = 64631.823,
-				["combat_id"] = 584,
-				["tempo_start"] = 1672381213,
-				["frags"] = {
-					["Agitated Weedling"] = 5,
-					["Intrusive Pupstinger"] = 3,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -861,28 +838,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:20:25",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Weedling",
+				["TotalElapsedCombatTime"] = 10.97800000000279,
+				["CombatEndedAt"] = 64631.823,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -890,16 +879,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64620.845,
-				["TimeData"] = {
+				["end_time"] = 64631.823,
+				["combat_id"] = 584,
+				["data_inicio"] = "01:20:14",
+				["frags"] = {
+					["Agitated Weedling"] = 5,
+					["Intrusive Pupstinger"] = 3,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 969,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64620.845,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [2]
 			{
 				{
-					["combatId"] = 583,
 					["tipo"] = 2,
+					["combatId"] = 583,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -913,35 +915,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 111497.004227,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004227,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 111497.004227,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381207,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 32002.58445088159,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381207,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004227,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381206,
+							["last_dps"] = 32002.58445088159,
 							["start_time"] = 1672381204,
 							["delay"] = 0,
-							["last_event"] = 1672381206,
+							["damage_taken"] = 0.004227,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -952,22 +954,21 @@ _detalhes_database = {
 								["Agitated Weedling"] = 72866,
 								["Intrusive Pupstinger"] = 38631,
 							},
-							["total"] = 111497.007991,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381207,
+							["last_event"] = 1672381206,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 111497.007991,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381207,
+							["total"] = 111497.007991,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -999,17 +1000,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381206,
+							["tipo"] = 1,
 							["damage_taken"] = 0.007991,
 							["start_time"] = 1672381204,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -1022,33 +1024,33 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "193994",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008959,
+							["serial"] = "Creature-0-4229-2444-17344-193994-0000AE815F",
+							["fight_component"] = true,
+							["total"] = 0.008959,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381207,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "193994",
-							["total"] = 0.008959,
-							["serial"] = "Creature-0-4229-2444-17344-193994-0000AE815F",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 140332.008959,
 							["start_time"] = 1672381207,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381207,
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
@@ -1061,45 +1063,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005075,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E81A6",
+							["fight_component"] = true,
+							["total"] = 0.005075,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381207,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.005075,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E81A6",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 72738.005075,
 							["start_time"] = 1672381207,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381207,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 583,
 					["tipo"] = 3,
+					["combatId"] = 583,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 583,
 					["tipo"] = 7,
+					["combatId"] = 583,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.005974,
@@ -1115,7 +1117,6 @@ _detalhes_database = {
 							["total"] = 0.005974,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -1127,107 +1128,108 @@ _detalhes_database = {
 										["counter"] = 6,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.005974,
-							["last_event"] = 1672381206,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381206,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1655.005974,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 583,
 					["tipo"] = 9,
+					["combatId"] = 583,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 18,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 18,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381207,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 3,
 										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+									[393961] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -1236,22 +1238,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 6,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 583,
 					["tipo"] = 2,
+					["combatId"] = 583,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1262,12 +1264,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64611.258,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381204,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 968,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					111496.981606, -- [1]
@@ -1282,41 +1286,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:20:08",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Agitated Weedling",
-				["TotalElapsedCombatTime"] = 3.366000000001804,
-				["CombatEndedAt"] = 64614.624,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:20:04",
-				["end_time"] = 64614.624,
-				["combat_id"] = 583,
-				["tempo_start"] = 1672381204,
-				["frags"] = {
-					["Agitated Weedling"] = 2,
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -1331,28 +1309,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:20:08",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Weedling",
+				["TotalElapsedCombatTime"] = 3.366000000001804,
+				["CombatEndedAt"] = 64614.624,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -1360,16 +1350,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64611.14,
-				["TimeData"] = {
+				["end_time"] = 64614.624,
+				["combat_id"] = 583,
+				["data_inicio"] = "01:20:04",
+				["frags"] = {
+					["Agitated Weedling"] = 2,
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 968,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64611.14,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [3]
 			{
 				{
-					["combatId"] = 582,
 					["tipo"] = 2,
+					["combatId"] = 582,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1382,35 +1385,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 41320.008906,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008906,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 41320.008906,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381203,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 35743.95234097264,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381203,
 							["tipo"] = 1,
-							["damage_taken"] = 0.008906,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381202,
+							["last_dps"] = 35743.95234097264,
 							["start_time"] = 1672381202,
 							["delay"] = 0,
-							["last_event"] = 1672381202,
+							["damage_taken"] = 0.008906,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -1420,22 +1423,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Intrusive Pupstinger"] = 41320,
 							},
-							["total"] = 41320.007928,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381203,
+							["last_event"] = 1672381202,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 41320.007928,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381203,
+							["total"] = 41320.007928,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -1466,17 +1468,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381202,
+							["tipo"] = 1,
 							["damage_taken"] = 0.007928,
 							["start_time"] = 1672381202,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -1489,45 +1492,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004589,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8078",
+							["fight_component"] = true,
+							["total"] = 0.004589,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381203,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.004589,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8078",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 75059.00458899999,
 							["start_time"] = 1672381203,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381203,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 582,
 					["tipo"] = 3,
+					["combatId"] = 582,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 582,
 					["tipo"] = 7,
+					["combatId"] = 582,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.00409,
@@ -1543,7 +1546,6 @@ _detalhes_database = {
 							["total"] = 0.00409,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -1555,107 +1557,108 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.00409,
-							["last_event"] = 1672381202,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381202,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 552.00409,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 582,
 					["tipo"] = 9,
+					["combatId"] = 582,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 6,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 6,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381203,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 1,
 										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+									[393961] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -1664,22 +1667,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 582,
 					["tipo"] = 2,
+					["combatId"] = 582,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1690,12 +1693,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64609.783,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381202,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 967,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					41319.996705, -- [1]
@@ -1710,40 +1715,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:20:04",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Intrusive Pupstinger",
-				["TotalElapsedCombatTime"] = 1.155999999995402,
-				["CombatEndedAt"] = 64610.939,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:20:03",
-				["end_time"] = 64610.939,
-				["combat_id"] = 582,
-				["tempo_start"] = 1672381202,
-				["frags"] = {
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -1758,28 +1738,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:20:04",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Intrusive Pupstinger",
+				["TotalElapsedCombatTime"] = 1.155999999995402,
+				["CombatEndedAt"] = 64610.939,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -1787,21 +1779,32 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64609.783,
-				["TimeData"] = {
+				["end_time"] = 64610.939,
+				["combat_id"] = 582,
+				["data_inicio"] = "01:20:03",
+				["frags"] = {
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 967,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64609.783,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [4]
 			{
 				{
-					["combatId"] = 581,
 					["tipo"] = 2,
+					["combatId"] = 581,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.00573,
-							["spec"] = 102,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1811,39 +1814,39 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["on_hold"] = false,
-							["end_time"] = 1672381202,
 							["aID"] = "61-0CA8EB69",
+							["spec"] = 102,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00573,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["end_time"] = 1672381202,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 143506.00573,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 34290.56289840629,
-							["custom"] = 0,
+							["total"] = 143506.00573,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00573,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381196,
+							["last_dps"] = 34290.56289840629,
 							["start_time"] = 1672381193,
 							["delay"] = 0,
-							["last_event"] = 1672381196,
+							["damage_taken"] = 0.00573,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
 							["totalabsorbed"] = 0.006087,
-							["aID"] = "",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1852,20 +1855,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["end_time"] = 1672381202,
 							["classe"] = "PET",
+							["last_event"] = 1672381196,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 143506.006087,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
+							["end_time"] = 1672381202,
 							["total"] = 143506.006087,
-							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -1897,16 +1899,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381196,
+							["tipo"] = 1,
 							["damage_taken"] = 0.006087,
 							["start_time"] = 1672381193,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -1918,22 +1922,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Lifeshrine Door"] = 8698,
 							},
-							["aID"] = "194159",
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
+							["aID"] = "194159",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8698.0084,
+							["serial"] = "Creature-0-4229-2444-17344-194159-00002E8108",
+							["fight_component"] = true,
 							["end_time"] = 1672381202,
-							["dps_started"] = false,
-							["total"] = 8698.0084,
+							["damage_taken"] = 172496.0084,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Relentless Gust",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1965,17 +1968,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-194159-00002E8108",
+							["last_event"] = 1672381199,
+							["dps_started"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381199,
-							["damage_taken"] = 172496.0084,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672381194,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 8698.0084,
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
@@ -1987,45 +1991,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "193994",
 							["classe"] = "UNKNOW",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004971,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8301",
 							["fight_component"] = true,
-							["dps_started"] = false,
 							["total"] = 0.004971,
 							["end_time"] = 1672381202,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
-							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8301",
+							["last_event"] = 0,
+							["dps_started"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 40025.004971,
 							["start_time"] = 1672381202,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "193994",
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 581,
 					["tipo"] = 3,
+					["combatId"] = 581,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 581,
 					["tipo"] = 7,
+					["combatId"] = 581,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.006368,
@@ -2041,7 +2045,6 @@ _detalhes_database = {
 							["total"] = 0.006368,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -2053,118 +2056,119 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.006368,
-							["last_event"] = 1672381197,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381197,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1103.006368,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 581,
 					["tipo"] = 9,
+					["combatId"] = 581,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 57,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 57,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381202,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 9,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+									[292364] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
+										["id"] = 292364,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[387678] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 387678,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -2173,22 +2177,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 8,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 581,
 					["tipo"] = 2,
+					["combatId"] = 581,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2199,12 +2203,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64601.053,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381193,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 966,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					152203.98755, -- [1]
@@ -2219,42 +2225,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:20:02",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Relentless Gust",
-				["TotalElapsedCombatTime"] = 8.241000000001804,
-				["CombatEndedAt"] = 64609.294,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:54",
-				["end_time"] = 64609.294,
-				["combat_id"] = 581,
-				["tempo_start"] = 1672381193,
-				["frags"] = {
-					["Relentless Gust"] = 1,
-					["Agitated Weedling"] = 1,
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -2269,28 +2248,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:20:02",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Relentless Gust",
+				["TotalElapsedCombatTime"] = 8.241000000001804,
+				["CombatEndedAt"] = 64609.294,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2298,16 +2289,30 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64600.945,
-				["TimeData"] = {
+				["end_time"] = 64609.294,
+				["combat_id"] = 581,
+				["data_inicio"] = "01:19:54",
+				["frags"] = {
+					["Relentless Gust"] = 1,
+					["Agitated Weedling"] = 1,
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 966,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64600.945,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [5]
 			{
 				{
-					["combatId"] = 580,
 					["tipo"] = 2,
+					["combatId"] = 580,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2320,35 +2325,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 36980.006539,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006539,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 36980.006539,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381193,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 23966.30365460247,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381193,
 							["tipo"] = 1,
-							["damage_taken"] = 0.006539,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381192,
+							["last_dps"] = 23966.30365460247,
 							["start_time"] = 1672381192,
 							["delay"] = 0,
-							["last_event"] = 1672381192,
+							["damage_taken"] = 0.006539,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -2358,22 +2363,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Intrusive Pupstinger"] = 36980,
 							},
-							["total"] = 36980.007258,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381193,
+							["last_event"] = 1672381192,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 36980.007258,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381193,
+							["total"] = 36980.007258,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -2404,17 +2408,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381192,
+							["tipo"] = 1,
 							["damage_taken"] = 0.007258,
 							["start_time"] = 1672381192,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -2426,45 +2431,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001003,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8302",
+							["fight_component"] = true,
+							["total"] = 0.001003,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381193,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.001003,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8302",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 36980.001003,
 							["start_time"] = 1672381193,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381193,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 580,
 					["tipo"] = 3,
+					["combatId"] = 580,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 580,
 					["tipo"] = 7,
+					["combatId"] = 580,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.006993,
@@ -2480,7 +2485,6 @@ _detalhes_database = {
 							["total"] = 0.006993,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -2492,107 +2496,108 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.006993,
-							["last_event"] = 1672381192,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381192,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 552.006993,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 580,
 					["tipo"] = 9,
+					["combatId"] = 580,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 6,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 6,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381193,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 1,
 										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+									[393961] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -2601,22 +2606,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 3,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 580,
 					["tipo"] = 2,
+					["combatId"] = 580,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2627,12 +2632,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64599.4,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381192,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 965,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					36979.986996, -- [1]
@@ -2647,40 +2654,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:54",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Intrusive Pupstinger",
-				["TotalElapsedCombatTime"] = 1.544999999998254,
-				["CombatEndedAt"] = 64600.945,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:52",
-				["end_time"] = 64600.945,
-				["combat_id"] = 580,
-				["tempo_start"] = 1672381192,
-				["frags"] = {
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -2695,28 +2677,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:54",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Intrusive Pupstinger",
+				["TotalElapsedCombatTime"] = 1.544999999998254,
+				["CombatEndedAt"] = 64600.945,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2724,16 +2718,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64599.286,
-				["TimeData"] = {
+				["end_time"] = 64600.945,
+				["combat_id"] = 580,
+				["data_inicio"] = "01:19:52",
+				["frags"] = {
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 965,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64599.286,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [6]
 			{
 				{
-					["combatId"] = 579,
 					["tipo"] = 2,
+					["combatId"] = 579,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2747,35 +2753,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 69539.003723,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003723,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 69539.003723,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381191,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 12364.68771745333,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381191,
 							["tipo"] = 1,
-							["damage_taken"] = 0.003723,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381189,
+							["last_dps"] = 12364.68771745333,
 							["start_time"] = 1672381185,
 							["delay"] = 0,
-							["last_event"] = 1672381189,
+							["damage_taken"] = 0.003723,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -2786,22 +2792,21 @@ _detalhes_database = {
 								["Agitated Weedling"] = 35008,
 								["Intrusive Pupstinger"] = 34531,
 							},
-							["total"] = 69539.00883400001,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381191,
+							["last_event"] = 1672381189,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 69539.00883400001,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381191,
+							["total"] = 69539.00883400001,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -2833,17 +2838,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381189,
+							["tipo"] = 1,
 							["damage_taken"] = 0.008834,
 							["start_time"] = 1672381185,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -2855,33 +2861,33 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00882,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8197",
+							["fight_component"] = true,
+							["total"] = 0.00882,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381191,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.00882,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8197",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 34531.00882,
 							["start_time"] = 1672381191,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381191,
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
@@ -2893,45 +2899,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "193994",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007977,
+							["serial"] = "Creature-0-4229-2444-17344-193994-00002E82F5",
+							["fight_component"] = true,
+							["total"] = 0.007977,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381191,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "193994",
-							["total"] = 0.007977,
-							["serial"] = "Creature-0-4229-2444-17344-193994-00002E82F5",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 35008.007977,
 							["start_time"] = 1672381191,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381191,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 579,
 					["tipo"] = 3,
+					["combatId"] = 579,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 579,
 					["tipo"] = 7,
+					["combatId"] = 579,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.007267,
@@ -2947,7 +2953,6 @@ _detalhes_database = {
 							["total"] = 0.007267,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -2959,129 +2964,130 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.007267,
-							["last_event"] = 1672381189,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381189,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1104.007267,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 579,
 					["tipo"] = 9,
+					["combatId"] = 579,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 41,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 41,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381191,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 6,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
+										["id"] = 1126,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 393961,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 6,
 										["id"] = 97033,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -3090,22 +3096,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 8,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 579,
 					["tipo"] = 2,
+					["combatId"] = 579,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3116,12 +3122,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64592.936,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381185,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 964,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					69538.982044, -- [1]
@@ -3136,42 +3144,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:52",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Agitated Weedling",
-				["TotalElapsedCombatTime"] = 5.624000000003434,
-				["CombatEndedAt"] = 64598.56000000001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:46",
-				["end_time"] = 64598.56000000001,
-				["combat_id"] = 579,
-				["tempo_start"] = 1672381185,
-				["frags"] = {
-					["Rising Tempest"] = 1,
-					["Agitated Weedling"] = 1,
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -3186,28 +3167,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:52",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Weedling",
+				["TotalElapsedCombatTime"] = 5.624000000003434,
+				["CombatEndedAt"] = 64598.56000000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -3215,16 +3208,30 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64592.936,
-				["TimeData"] = {
+				["end_time"] = 64598.56000000001,
+				["combat_id"] = 579,
+				["data_inicio"] = "01:19:46",
+				["frags"] = {
+					["Rising Tempest"] = 1,
+					["Agitated Weedling"] = 1,
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 964,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64592.936,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [7]
 			{
 				{
-					["combatId"] = 578,
 					["tipo"] = 2,
+					["combatId"] = 578,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3237,35 +3244,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 409655.002533,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002533,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 409655.002533,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381181,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 63043.24446491623,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381181,
 							["tipo"] = 1,
-							["damage_taken"] = 0.002533,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381180,
+							["last_dps"] = 63043.24446491623,
 							["start_time"] = 1672381175,
 							["delay"] = 0,
-							["last_event"] = 1672381180,
+							["damage_taken"] = 0.002533,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -3275,22 +3282,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Relentless Gust"] = 409655,
 							},
-							["total"] = 409655.008607,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381181,
+							["last_event"] = 1672381180,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 409655.008607,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381181,
+							["total"] = 409655.008607,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -3321,17 +3327,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381180,
+							["tipo"] = 1,
 							["damage_taken"] = 0.008607,
 							["start_time"] = 1672381175,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -3344,21 +3351,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 27925.005792,
-							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["aID"] = "194159",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 27925.005792,
+							["serial"] = "Creature-0-4229-2444-17344-194159-00002E8115",
+							["fight_component"] = true,
+							["total"] = 27925.005792,
+							["damage_taken"] = 409655.005792,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381185,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Relentless Gust",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3389,28 +3395,29 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194159",
-							["serial"] = "Creature-0-4229-2444-17344-194159-00002E8115",
+							["last_event"] = 1672381184,
+							["end_time"] = 1672381185,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381184,
-							["damage_taken"] = 409655.005792,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1672381176,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 578,
 					["tipo"] = 3,
+					["combatId"] = 578,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 578,
 					["tipo"] = 7,
+					["combatId"] = 578,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.007877,
@@ -3426,7 +3433,6 @@ _detalhes_database = {
 							["total"] = 0.007877,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -3438,118 +3444,119 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.007877,
-							["last_event"] = 1672381180,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381180,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 551.007877,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 578,
 					["tipo"] = 9,
+					["combatId"] = 578,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 42,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 42,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381181,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 6,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
+										["id"] = 292364,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1126] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 1126,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 6,
 										["id"] = 97033,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -3558,14 +3565,14 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 11,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
@@ -3587,8 +3594,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 578,
 					["tipo"] = 2,
+					["combatId"] = 578,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3599,12 +3606,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64582.138,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381175,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 963,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					437579.997022, -- [1]
@@ -3619,40 +3628,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:42",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Relentless Gust",
-				["TotalElapsedCombatTime"] = 6.387999999999011,
-				["CombatEndedAt"] = 64588.526,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:35",
-				["end_time"] = 64588.526,
-				["combat_id"] = 578,
-				["tempo_start"] = 1672381175,
-				["frags"] = {
-					["Relentless Gust"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -3667,28 +3651,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:42",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Relentless Gust",
+				["TotalElapsedCombatTime"] = 6.387999999999011,
+				["CombatEndedAt"] = 64588.526,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -3696,16 +3692,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64582.028,
-				["TimeData"] = {
+				["end_time"] = 64588.526,
+				["combat_id"] = 578,
+				["data_inicio"] = "01:19:35",
+				["frags"] = {
+					["Relentless Gust"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 963,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64582.028,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [8]
 			{
 				{
-					["combatId"] = 577,
 					["tipo"] = 2,
+					["combatId"] = 577,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3720,35 +3728,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 187712.002903,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002903,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 187712.002903,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381174,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 57246.72244686995,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381174,
 							["tipo"] = 1,
-							["damage_taken"] = 0.002903,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381174,
+							["last_dps"] = 57246.72244686995,
 							["start_time"] = 1672381171,
 							["delay"] = 0,
-							["last_event"] = 1672381174,
+							["damage_taken"] = 0.002903,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -3760,22 +3768,21 @@ _detalhes_database = {
 								["Agitated Weedling"] = 73112,
 								["Intrusive Pupstinger"] = 39144,
 							},
-							["total"] = 187712.002297,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381174,
+							["last_event"] = 1672381174,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 187712.002297,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381174,
+							["total"] = 187712.002297,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -3808,17 +3815,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381174,
+							["tipo"] = 1,
 							["damage_taken"] = 0.002297,
 							["start_time"] = 1672381171,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -3831,21 +3839,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 18570.008542,
-							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["aID"] = "194159",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18570.008542,
+							["serial"] = "Creature-0-4229-2444-17344-194159-00002E8115",
+							["fight_component"] = true,
+							["total"] = 18570.008542,
+							["damage_taken"] = 75456.008542,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381174,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Relentless Gust",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -3876,16 +3883,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194159",
-							["serial"] = "Creature-0-4229-2444-17344-194159-00002E8115",
+							["last_event"] = 1672381174,
+							["end_time"] = 1672381174,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381174,
-							["damage_taken"] = 75456.008542,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1672381172,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
@@ -3897,33 +3905,33 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "193994",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008742,
+							["serial"] = "Creature-0-4229-2444-17344-193994-00002E826A",
+							["fight_component"] = true,
+							["total"] = 0.008742,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381174,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "193994",
-							["total"] = 0.008742,
-							["serial"] = "Creature-0-4229-2444-17344-193994-00002E826A",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 73112.008742,
 							["start_time"] = 1672381174,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381174,
 						}, -- [4]
 						{
 							["flag_original"] = 2600,
@@ -3935,45 +3943,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003264,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E81F0",
+							["fight_component"] = true,
+							["total"] = 0.003264,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381174,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.003264,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E81F0",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 39144.003264,
 							["start_time"] = 1672381174,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381174,
 						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 577,
 					["tipo"] = 3,
+					["combatId"] = 577,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 577,
 					["tipo"] = 7,
+					["combatId"] = 577,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.005371,
@@ -3989,7 +3997,6 @@ _detalhes_database = {
 							["total"] = 0.005371,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -4001,129 +4008,130 @@ _detalhes_database = {
 										["counter"] = 6,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.005371,
-							["last_event"] = 1672381173,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381173,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1656.005371,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 577,
 					["tipo"] = 9,
+					["combatId"] = 577,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 24,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 24,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381174,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 3,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
+										["id"] = 1126,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 393961,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 3,
 										["id"] = 97033,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -4132,22 +4140,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 5,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 577,
 					["tipo"] = 2,
+					["combatId"] = 577,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4158,12 +4166,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64578.325,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381171,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 962,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					206281.994443, -- [1]
@@ -4178,41 +4188,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:35",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Relentless Gust",
-				["TotalElapsedCombatTime"] = 3.278999999994994,
-				["CombatEndedAt"] = 64581.604,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:31",
-				["end_time"] = 64581.604,
-				["combat_id"] = 577,
-				["tempo_start"] = 1672381171,
-				["frags"] = {
-					["Agitated Weedling"] = 2,
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -4227,28 +4211,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:35",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Relentless Gust",
+				["TotalElapsedCombatTime"] = 3.278999999994994,
+				["CombatEndedAt"] = 64581.604,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -4256,16 +4252,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64578.325,
-				["TimeData"] = {
+				["end_time"] = 64581.604,
+				["combat_id"] = 577,
+				["data_inicio"] = "01:19:31",
+				["frags"] = {
+					["Agitated Weedling"] = 2,
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 962,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64578.325,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [9]
 			{
 				{
-					["combatId"] = 576,
 					["tipo"] = 2,
+					["combatId"] = 576,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4278,35 +4287,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 41534.008793,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008793,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 41534.008793,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381171,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 7906.721643446399,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381171,
 							["tipo"] = 1,
-							["damage_taken"] = 0.008793,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381166,
+							["last_dps"] = 7906.721643446399,
 							["start_time"] = 1672381166,
 							["delay"] = 0,
-							["last_event"] = 1672381166,
+							["damage_taken"] = 0.008793,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -4316,22 +4325,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Agitated Weedling"] = 41534,
 							},
-							["total"] = 41534.002886,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381171,
+							["last_event"] = 1672381166,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 41534.002886,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381171,
+							["total"] = 41534.002886,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -4362,17 +4370,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381166,
+							["tipo"] = 1,
 							["damage_taken"] = 0.002886,
 							["start_time"] = 1672381166,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -4384,45 +4393,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "193994",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001459,
+							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8263",
+							["fight_component"] = true,
+							["total"] = 0.001459,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381171,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "193994",
-							["total"] = 0.001459,
-							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8263",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 41534.001459,
 							["start_time"] = 1672381171,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381171,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 576,
 					["tipo"] = 3,
+					["combatId"] = 576,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 576,
 					["tipo"] = 7,
+					["combatId"] = 576,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.008473,
@@ -4438,7 +4447,6 @@ _detalhes_database = {
 							["total"] = 0.008473,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -4450,118 +4458,119 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.008473,
-							["last_event"] = 1672381166,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381166,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 552.008473,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 576,
 					["tipo"] = 9,
+					["combatId"] = 576,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 35,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 35,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381171,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 5,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
+										["id"] = 292364,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1126] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 1126,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 5,
 										["id"] = 97033,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -4570,22 +4579,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 7,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 576,
 					["tipo"] = 2,
+					["combatId"] = 576,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4596,12 +4605,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64572.984,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381166,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 961,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					41533.985174, -- [1]
@@ -4616,40 +4627,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:31",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Agitated Weedling",
-				["TotalElapsedCombatTime"] = 5.252999999996973,
-				["CombatEndedAt"] = 64578.237,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:26",
-				["end_time"] = 64578.237,
-				["combat_id"] = 576,
-				["tempo_start"] = 1672381166,
-				["frags"] = {
-					["Agitated Weedling"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -4664,28 +4650,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:31",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Weedling",
+				["TotalElapsedCombatTime"] = 5.252999999996973,
+				["CombatEndedAt"] = 64578.237,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -4693,16 +4691,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64572.984,
-				["TimeData"] = {
+				["end_time"] = 64578.237,
+				["combat_id"] = 576,
+				["data_inicio"] = "01:19:26",
+				["frags"] = {
+					["Agitated Weedling"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 961,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64572.984,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [10]
 			{
 				{
-					["combatId"] = 575,
 					["tipo"] = 2,
+					["combatId"] = 575,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4716,35 +4726,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 70668.00527600001,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005276,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 70668.00527600001,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381165,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 24769.71793758528,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381165,
 							["tipo"] = 1,
-							["damage_taken"] = 0.005276,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381164,
+							["last_dps"] = 24769.71793758528,
 							["start_time"] = 1672381162,
 							["delay"] = 0,
-							["last_event"] = 1672381164,
+							["damage_taken"] = 0.005276,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -4755,22 +4765,21 @@ _detalhes_database = {
 								["Agitated Weedling"] = 34489,
 								["Intrusive Pupstinger"] = 36179,
 							},
-							["total"] = 70668.00442,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381165,
+							["last_event"] = 1672381164,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 70668.00442,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381165,
+							["total"] = 70668.00442,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -4802,17 +4811,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381164,
+							["tipo"] = 1,
 							["damage_taken"] = 0.00442,
 							["start_time"] = 1672381162,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -4824,33 +4834,33 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007133,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8265",
+							["fight_component"] = true,
+							["total"] = 0.007133,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381165,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.007133,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E8265",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 36179.007133,
 							["start_time"] = 1672381165,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381165,
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
@@ -4862,45 +4872,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "193994",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003443,
+							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8265",
+							["fight_component"] = true,
+							["total"] = 0.003443,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381165,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Agitated Weedling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "193994",
-							["total"] = 0.003443,
-							["serial"] = "Creature-0-4229-2444-17344-193994-00002E8265",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 34489.003443,
 							["start_time"] = 1672381165,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381165,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 575,
 					["tipo"] = 3,
+					["combatId"] = 575,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 575,
 					["tipo"] = 7,
+					["combatId"] = 575,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.001009,
@@ -4916,7 +4926,6 @@ _detalhes_database = {
 							["total"] = 0.001009,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -4928,129 +4937,130 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.001009,
-							["last_event"] = 1672381164,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381164,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1104.001009,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 575,
 					["tipo"] = 9,
+					["combatId"] = 575,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 22,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 22,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381165,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 3,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
+										["id"] = 1126,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 393961,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 3,
 										["id"] = 97033,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -5059,22 +5069,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 4,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 575,
 					["tipo"] = 2,
+					["combatId"] = 575,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5085,12 +5095,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64569.468,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381162,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 960,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					70667.994201, -- [1]
@@ -5105,41 +5117,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:25",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Agitated Weedling",
-				["TotalElapsedCombatTime"] = 2.745000000002619,
-				["CombatEndedAt"] = 64572.213,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:23",
-				["end_time"] = 64572.213,
-				["combat_id"] = 575,
-				["tempo_start"] = 1672381162,
-				["frags"] = {
-					["Agitated Weedling"] = 1,
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -5154,28 +5140,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:25",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Weedling",
+				["TotalElapsedCombatTime"] = 2.745000000002619,
+				["CombatEndedAt"] = 64572.213,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -5183,16 +5181,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64569.36,
-				["TimeData"] = {
+				["end_time"] = 64572.213,
+				["combat_id"] = 575,
+				["data_inicio"] = "01:19:23",
+				["frags"] = {
+					["Agitated Weedling"] = 1,
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 960,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64569.36,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [11]
 			{
 				{
-					["combatId"] = 574,
 					["tipo"] = 2,
+					["combatId"] = 574,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -5205,35 +5216,35 @@ _detalhes_database = {
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["total"] = 38786.004355,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004355,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["total"] = 38786.004355,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1672381162,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
 							["spec"] = 102,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 27566.45654230338,
-							["custom"] = 0,
+							["grupo"] = true,
+							["end_time"] = 1672381162,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004355,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672381160,
+							["last_dps"] = 27566.45654230338,
 							["start_time"] = 1672381160,
 							["delay"] = 0,
-							["last_event"] = 1672381160,
+							["damage_taken"] = 0.004355,
 						}, -- [1]
 						{
 							["flag_original"] = 69905,
@@ -5243,22 +5254,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Intrusive Pupstinger"] = 38786,
 							},
-							["total"] = 38786.006122,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["end_time"] = 1672381162,
+							["last_event"] = 1672381160,
+							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 38786.006122,
-							["on_hold"] = false,
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["dps_started"] = false,
-							["end_time"] = 1672381162,
+							["total"] = 38786.006122,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[383060] = {
 										["c_amt"] = 0,
@@ -5289,17 +5299,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672381160,
+							["tipo"] = 1,
 							["damage_taken"] = 0.006122,
 							["start_time"] = 1672381160,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -5311,45 +5322,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "194142",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008818,
+							["serial"] = "Creature-0-4229-2444-17344-194142-00002E82E1",
+							["fight_component"] = true,
+							["total"] = 0.008818,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672381162,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Intrusive Pupstinger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "194142",
-							["total"] = 0.008818,
-							["serial"] = "Creature-0-4229-2444-17344-194142-00002E82E1",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 38786.008818,
 							["start_time"] = 1672381162,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672381162,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 574,
 					["tipo"] = 3,
+					["combatId"] = 574,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 574,
 					["tipo"] = 7,
+					["combatId"] = 574,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.007711,
@@ -5365,7 +5376,6 @@ _detalhes_database = {
 							["total"] = 0.007711,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -5377,129 +5387,130 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.007711,
-							["last_event"] = 1672381160,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672381160,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 552.007711,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 574,
 					["tipo"] = 9,
+					["combatId"] = 574,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 16,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 16,
 							["pets"] = {
 								"Ruby Whelpling <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672381162,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 2,
 										["id"] = 225787,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
+										["id"] = 1126,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 393961,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[292364] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 2,
 										["id"] = 97033,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
+										["id"] = 93827,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
@@ -5508,22 +5519,22 @@ _detalhes_database = {
 							["flag_original"] = 69905,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Ruby Whelpling <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[382778] = 3,
 							},
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "PET",
 							["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 574,
 					["tipo"] = 2,
+					["combatId"] = 574,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5534,12 +5545,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64567.73800000001,
-				["overall_added"] = true,
+				["tempo_start"] = 1672381160,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 959,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					38785.988298, -- [1]
@@ -5554,40 +5567,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:19:22",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Intrusive Pupstinger",
-				["TotalElapsedCombatTime"] = 1.528999999994994,
-				["CombatEndedAt"] = 64569.267,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:19:21",
-				["end_time"] = 64569.267,
-				["combat_id"] = 574,
-				["tempo_start"] = 1672381160,
-				["frags"] = {
-					["Intrusive Pupstinger"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -5602,28 +5590,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:19:22",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Intrusive Pupstinger",
+				["TotalElapsedCombatTime"] = 1.528999999994994,
+				["CombatEndedAt"] = 64569.267,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -5631,16 +5631,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["start_time"] = 64567.73800000001,
-				["TimeData"] = {
+				["end_time"] = 64569.267,
+				["combat_id"] = 574,
+				["data_inicio"] = "01:19:21",
+				["frags"] = {
+					["Intrusive Pupstinger"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 959,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64567.73800000001,
+				["TimeData"] = {
+				},
+				["overall_added"] = true,
 			}, -- [12]
 			{
 				{
-					["combatId"] = 573,
 					["tipo"] = 2,
+					["combatId"] = 573,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -5651,36 +5663,36 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["aID"] = "61-0CA8EB69",
+							["serial"] = "Player-61-0CA8EB69",
 							["pets"] = {
 							},
 							["spec"] = 102,
 							["classe"] = "DRUID",
+							["aID"] = "61-0CA8EB69",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006838,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
 							["end_time"] = 1672380823,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 0.006838,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-61-0CA8EB69",
+							["total"] = 0.006838,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 5864.006838,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1672380823,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["damage_taken"] = 5864.006838,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5694,22 +5706,23 @@ _detalhes_database = {
 								["Zulbathal"] = 1539,
 								["Daxisius <Vordai>"] = 7680,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-188666-00002E68E1",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["friendlyfire"] = {
+							},
+							["fight_component"] = true,
 							["aID"] = "188666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9219.006329,
-							["end_time"] = 1672381160,
-							["fight_component"] = true,
-							["dps_started"] = false,
+							["damage_taken"] = 31534.006329,
+							["monster"] = true,
 							["total"] = 9219.006329,
-							["classe"] = "UNKNOW",
 							["on_hold"] = false,
+							["tipo"] = 1,
 							["nome"] = "Unleashed Lavaburst",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5768,45 +5781,42 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-188666-00002E68E1",
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 31534.006329,
+							["last_event"] = 1672380826,
+							["last_dps"] = 0,
 							["start_time"] = 1672381147,
 							["delay"] = 1672380826,
-							["last_event"] = 1672380826,
+							["end_time"] = 1672381160,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.00407,
-							["total"] = 4325.00407,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Zulbathal"] = 4325,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E815D",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186823",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4325.00407,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 0.00407,
+							["monster"] = true,
 							["end_time"] = 1672380823,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380818,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5864,28 +5874,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E815D",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380818,
-							["damage_taken"] = 0.00407,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380809,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 4325.00407,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 573,
 					["tipo"] = 3,
+					["combatId"] = 573,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 573,
 					["tipo"] = 7,
+					["combatId"] = 573,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.007503,
@@ -5899,183 +5911,183 @@ _detalhes_database = {
 							["total"] = 0.007503,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1300,
 							["alternatepower"] = 6.007503,
-							["last_event"] = 0,
-							["aID"] = "61-0CA8EB69",
 							["tipo"] = 3,
+							["aID"] = "61-0CA8EB69",
+							["last_event"] = 0,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.007503,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 573,
 					["tipo"] = 9,
+					["combatId"] = 573,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
+							["classe"] = "DRUID",
+							["buff_uptime"] = 205,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 205,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["last_event"] = 1672380823,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[374160] = {
-										["activedamt"] = 1,
-										["id"] = 374160,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 374160,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
 							["aID"] = "61-0CA8EB69",
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[378012] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E815D",
 							["aID"] = "186823",
 						}, -- [2]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Unleashed Lavaburst",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[383237] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-188666-00002E80BE",
 							["aID"] = "188666",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 573,
 					["tipo"] = 2,
+					["combatId"] = 573,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6109,39 +6121,21 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "01:13:43",
 				["cleu_timeline"] = {
 				},
@@ -6157,13 +6151,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -6173,29 +6167,48 @@ _detalhes_database = {
 				},
 				["end_time"] = 64230.252,
 				["combat_id"] = 573,
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags"] = {
+					["Kindlet"] = 1,
 				},
 				["overall_added"] = true,
 				["spells_cast_timeline"] = {
 				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "01:13:18",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Kindlet"] = 1,
-				},
-				["start_time"] = 64205.213,
 				["TimeData"] = {
 				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 64205.213,
 				["contra"] = "Unleashed Lavaburst",
+				["data_inicio"] = "01:13:18",
 			}, -- [13]
 			{
 				{
-					["combatId"] = 572,
 					["tipo"] = 2,
+					["combatId"] = 572,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -6209,22 +6222,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 17565.003434,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 17565.003434,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380734,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -6418,22 +6417,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 17565.003434,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 1305.559940092369,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 17565.003434,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380734,
 							["tipo"] = 1,
-							["damage_taken"] = 9867.003434,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380732,
+							["last_dps"] = 1305.559940092369,
 							["start_time"] = 1672380720,
 							["delay"] = 0,
-							["last_event"] = 1672380732,
+							["damage_taken"] = 9867.003434,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.00484,
-							["total"] = 28760.00484,
 							["damage_from"] = {
 								["Ruby Egg Guardian"] = true,
 								["Oggrosh"] = true,
@@ -6447,23 +6459,22 @@ _detalhes_database = {
 								["Zulbathal"] = 1860,
 								["Janniss"] = 6009,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E8116",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186823",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 28760.00484,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 124059.00484,
+							["monster"] = true,
 							["end_time"] = 1672380798,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380778,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -6527,22 +6538,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E8116",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380778,
-							["damage_taken"] = 124059.00484,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380757,
 							["delay"] = 1672380778,
-							["tipo"] = 1,
+							["total"] = 28760.00484,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 572,
 					["tipo"] = 3,
+					["combatId"] = 572,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -6551,7 +6564,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
+							["aID"] = "61-0CA8EB69",
 							["totalover"] = 0.002448,
 							["total_without_pet"] = 3821.002448,
 							["total"] = 3821.002448,
@@ -6570,13 +6583,12 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.002448,
 							["healing_taken"] = 3821.002448,
 							["end_time"] = 1672380798,
+							["spec"] = 102,
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -6596,31 +6608,32 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 3821,
 										},
-										["n_amt"] = 1,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 3821,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 3821,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["classe"] = "DRUID",
 							["start_time"] = 1672380795,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672380795,
+							["heal_enemy_amt"] = 0,
 							["totaldenied"] = 0.002448,
 							["delay"] = 0,
-							["last_event"] = 1672380795,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 572,
 					["tipo"] = 7,
+					["combatId"] = 572,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.008112,
@@ -6637,7 +6650,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -6649,256 +6661,257 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 17.008112,
+							["tipo"] = 3,
 							["last_event"] = 1672380732,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 552.008112,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 572,
 					["tipo"] = 9,
+					["combatId"] = 572,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 149,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 2,
-										["id"] = 387678,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 4,
 										["id"] = 393959,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+									[393961] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
+										["id"] = 393961,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393763] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 393763,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[397734] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 22,
 							["nome"] = "Zulbathal",
@@ -6913,36 +6926,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380734,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378012] = 3,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E8116",
 							["aID"] = "186823",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 572,
 					["tipo"] = 2,
+					["combatId"] = 572,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6953,7 +6966,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64203.998,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380720,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -6962,7 +6975,9 @@ _detalhes_database = {
 						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 957,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					46324.95582000001, -- [1]
@@ -6977,15 +6992,80 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = -0.003907000000000105,
 						["dispell"] = 0,
+						["interrupt"] = -0.003907000000000105,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					17565, -- [1]
+					3821, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:12:14",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lavacaller Primalist",
+				["TotalElapsedCombatTime"] = 13.45399999999791,
+				["CombatEndedAt"] = 64140.949,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 17565.003434,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 64140.949,
+				["combat_id"] = 572,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Lavacaller Primalist",
+				["frags"] = {
+					["Lavacaller Primalist"] = 1,
+				},
+				["combat_counter"] = 957,
+				["data_inicio"] = "01:12:01",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -7088,86 +7168,19 @@ _detalhes_database = {
 						["n"] = 4,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:12:14",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lavacaller Primalist",
-				["TotalElapsedCombatTime"] = 13.45399999999791,
-				["CombatEndedAt"] = 64140.949,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:12:01",
-				["end_time"] = 64140.949,
-				["combat_id"] = 572,
-				["tempo_start"] = 1672380720,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Lavacaller Primalist"] = 1,
-				},
-				["totals_grupo"] = {
-					17565, -- [1]
-					3821, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 17565.003434,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 64127.495,
-				["contra"] = "Lavacaller Primalist",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [14]
 			{
 				{
-					["combatId"] = 571,
 					["tipo"] = 2,
+					["combatId"] = 571,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.002601,
-							["total"] = 13364.002601,
 							["damage_from"] = {
 								["Ruby Egg Guardian"] = true,
 								["Zulbathal"] = true,
@@ -7177,23 +7190,22 @@ _detalhes_database = {
 								["Zulbathal"] = 11133,
 								["Janniss"] = 2231,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186823-0000AE8119",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186823",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 13364.002601,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 28030.002601,
+							["monster"] = true,
 							["end_time"] = 1672380720,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380719,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -7253,16 +7265,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-0000AE8119",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380719,
-							["damage_taken"] = 28030.002601,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380705,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 13364.002601,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -7275,22 +7289,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 26727.005242,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 26727.005242,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380720,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -7449,6 +7449,38 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[202497] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1244,
+										["g_amt"] = 0,
+										["n_max"] = 639,
+										["targets"] = {
+											["Lavacaller Primalist"] = 2943,
+										},
+										["n_dmg"] = 1699,
+										["n_min"] = 506,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 506,
+											[11] = 2304,
+										},
+										["total"] = 2943,
+										["c_max"] = 1244,
+										["id"] = 202497,
+										["r_dmg"] = 0,
+										["spellschool"] = 72,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1244,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[194153] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -7482,62 +7514,44 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[202497] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1244,
-										["g_amt"] = 0,
-										["n_max"] = 639,
-										["targets"] = {
-											["Lavacaller Primalist"] = 2943,
-										},
-										["n_dmg"] = 1699,
-										["n_min"] = 506,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[8] = 506,
-											[11] = 2304,
-										},
-										["total"] = 2943,
-										["c_max"] = 1244,
-										["id"] = 202497,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1244,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 26727.005242,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 1830.115395919007,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 26727.005242,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380720,
 							["tipo"] = 1,
-							["damage_taken"] = 11133.005242,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380718,
+							["last_dps"] = 1830.115395919007,
 							["start_time"] = 1672380706,
 							["delay"] = 0,
-							["last_event"] = 1672380718,
+							["damage_taken"] = 11133.005242,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 571,
 					["tipo"] = 3,
+					["combatId"] = 571,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 571,
 					["tipo"] = 7,
+					["combatId"] = 571,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.006563,
@@ -7554,7 +7568,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -7566,245 +7579,246 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.006563,
+							["tipo"] = 3,
 							["last_event"] = 1672380720,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 551.006563,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 571,
 					["tipo"] = 9,
+					["combatId"] = 571,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 140,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 2,
-										["id"] = 48518,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 9,
-										["appliedamt"] = 2,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 29,
 							["nome"] = "Zulbathal",
@@ -7820,36 +7834,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380720,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378012] = 4,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-0000AE8119",
 							["aID"] = "186823",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 571,
 					["tipo"] = 2,
+					["combatId"] = 571,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7879,39 +7893,21 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					26727, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "01:12:00",
 				["cleu_timeline"] = {
 				},
@@ -7927,13 +7923,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -7943,29 +7939,48 @@ _detalhes_database = {
 				},
 				["end_time"] = 64126.99,
 				["combat_id"] = 571,
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags"] = {
+					["Lavacaller Primalist"] = 1,
 				},
 				["overall_added"] = true,
 				["spells_cast_timeline"] = {
 				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "01:11:45",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Lavacaller Primalist"] = 1,
-				},
-				["start_time"] = 64112.156,
 				["TimeData"] = {
 				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					26727, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 64112.156,
 				["contra"] = "Lavacaller Primalist",
+				["data_inicio"] = "01:11:45",
 			}, -- [15]
 			{
 				{
-					["combatId"] = 570,
 					["tipo"] = 2,
+					["combatId"] = 570,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7979,22 +7994,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 38499.001636,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 30026.001636,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380696,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -8185,22 +8186,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 30026.001636,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2673.727455795985,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 38499.001636,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380696,
 							["tipo"] = 1,
-							["damage_taken"] = 9963.001636,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380695,
+							["last_dps"] = 2673.727455795985,
 							["start_time"] = 1672380682,
 							["delay"] = 0,
-							["last_event"] = 1672380695,
+							["damage_taken"] = 9963.001636,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.005467,
-							["total"] = 9963.005466999999,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -8208,23 +8222,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 9963,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7FB8",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186825",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9963.005466999999,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 38499.005467,
+							["monster"] = true,
 							["end_time"] = 1672380696,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380695,
 							["nome"] = "Molten Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -8281,21 +8294,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186825",
-							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7FB8",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380695,
-							["damage_taken"] = 38499.005467,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380684,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 9963.005466999999,
 						}, -- [2]
 						{
 							["flag_original"] = 74001,
 							["totalabsorbed"] = 0.001344,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -8303,19 +8317,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380695,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8473.001344,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380696,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001344,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -8374,23 +8388,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 8473.001344,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380695,
-							["damage_taken"] = 0.001344,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380683,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 570,
 					["tipo"] = 3,
+					["combatId"] = 570,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -8422,10 +8437,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 3,
@@ -8447,28 +8461,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 407,
 										["c_curado"] = 19858,
-										["n_curado"] = 1630,
 										["totaldenied"] = 0,
 										["n_amt"] = 10,
+										["n_curado"] = 1630,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380689,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380703,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.002777,
 							["delay"] = 0,
-							["last_event"] = 1672380703,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 570,
 					["tipo"] = 7,
+					["combatId"] = 570,
 					["_ActorTable"] = {
 						{
 							["received"] = 469.003683,
@@ -8486,7 +8501,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 469,
@@ -8498,311 +8512,312 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.003683,
+							["tipo"] = 3,
 							["last_event"] = 1672380695,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.003683,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 570,
 					["tipo"] = 9,
+					["combatId"] = 570,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 207,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 2,
-										["id"] = 343648,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 2,
-										["id"] = 48518,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 9,
-										["appliedamt"] = 2,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 12,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 2,
-										["id"] = 393959,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 30,
@@ -8819,29 +8834,29 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380696,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Molten Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378150] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7FB8",
 							["aID"] = "186825",
 						}, -- [2]
@@ -8849,22 +8864,22 @@ _detalhes_database = {
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 570,
 					["tipo"] = 2,
+					["combatId"] = 570,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8875,12 +8890,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64110.497,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380682,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 955,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					48461.95215599999, -- [1]
@@ -8895,15 +8912,84 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					30026, -- [1]
+					21488, -- [2]
+					{
+						0, -- [1]
+						[0] = 469,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:11:37",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Molten Primalist",
+				["TotalElapsedCombatTime"] = 64103.555,
+				["CombatEndedAt"] = 64103.555,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 20673.002777,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 38499.001636,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 64103.555,
+				["combat_id"] = 570,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Molten Primalist",
+				["frags"] = {
+					["Kindlet"] = 1,
+					["Molten Primalist"] = 1,
+					["Unleashed Lavaburst"] = 1,
+					["Tarasek Elementalist"] = 1,
+				},
+				["combat_counter"] = 955,
+				["data_inicio"] = "01:11:22",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -9022,85 +9108,15 @@ _detalhes_database = {
 						["n"] = 7,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:11:37",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Molten Primalist",
-				["TotalElapsedCombatTime"] = 64103.555,
-				["CombatEndedAt"] = 64103.555,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:11:22",
-				["end_time"] = 64103.555,
-				["combat_id"] = 570,
-				["tempo_start"] = 1672380682,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Kindlet"] = 1,
-					["Molten Primalist"] = 1,
-					["Unleashed Lavaburst"] = 1,
-					["Tarasek Elementalist"] = 1,
-				},
-				["totals_grupo"] = {
-					30026, -- [1]
-					21488, -- [2]
-					{
-						0, -- [1]
-						[0] = 469,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 20673.002777,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 38499.001636,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 64089.156,
-				["contra"] = "Molten Primalist",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [16]
 			{
 				{
-					["combatId"] = 569,
 					["tipo"] = 2,
+					["combatId"] = 569,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -9114,22 +9130,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 27553.004894,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 19392.004894,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380678,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -9291,39 +9293,6 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[194153] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1480,
-										["targets"] = {
-											["Lavacaller Primalist"] = 1480,
-										},
-										["n_dmg"] = 1480,
-										["n_min"] = 1480,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 1480,
-											[11] = 1480,
-											[5] = 1480,
-										},
-										["total"] = 1480,
-										["c_max"] = 0,
-										["id"] = 194153,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[202497] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
@@ -9357,23 +9326,69 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[194153] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1480,
+										["targets"] = {
+											["Lavacaller Primalist"] = 1480,
+										},
+										["n_dmg"] = 1480,
+										["n_min"] = 1480,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 1480,
+											[11] = 1480,
+											[5] = 1480,
+										},
+										["total"] = 1480,
+										["c_max"] = 0,
+										["id"] = 194153,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 19392.004894,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2168.332800345898,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 27553.004894,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380678,
 							["tipo"] = 1,
-							["damage_taken"] = 10332.004894,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380677,
+							["last_dps"] = 2168.332800345898,
 							["start_time"] = 1672380665,
 							["delay"] = 0,
-							["last_event"] = 1672380677,
+							["damage_taken"] = 10332.004894,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.005591,
-							["total"] = 10332.005591,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -9381,23 +9396,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 10332,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E80F1",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186823",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10332.005591,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 27553.005591,
+							["monster"] = true,
 							["end_time"] = 1672380682,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380679,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -9455,21 +9469,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E80F1",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380679,
-							["damage_taken"] = 27553.005591,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380666,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 10332.005591,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.003243,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -9477,19 +9492,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380677,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8161.003243,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380678,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.003243,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -9548,29 +9563,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 8161.003243,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380677,
-							["damage_taken"] = 0.003243,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380666,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 569,
 					["tipo"] = 3,
+					["combatId"] = 569,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 569,
 					["tipo"] = 7,
+					["combatId"] = 569,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.008534,
@@ -9587,7 +9603,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -9599,278 +9614,279 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.008534,
+							["tipo"] = 3,
 							["last_event"] = 1672380682,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.008534,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 569,
 					["tipo"] = 9,
+					["combatId"] = 569,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 137,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 2,
-										["id"] = 157228,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 6,
-										["appliedamt"] = 2,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 2,
-										["id"] = 393959,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 27,
 							["nome"] = "Zulbathal",
@@ -9886,29 +9902,29 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380678,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378012] = 2,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E80F1",
 							["aID"] = "186823",
 						}, -- [2]
@@ -9916,22 +9932,22 @@ _detalhes_database = {
 							["flag_original"] = 74001,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 569,
 					["tipo"] = 2,
+					["combatId"] = 569,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9942,12 +9958,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64089.156,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380665,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 954,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					37884.96838900002, -- [1]
@@ -9962,15 +9980,82 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					19392, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:11:19",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lavacaller Primalist",
+				["TotalElapsedCombatTime"] = 64085.59400000001,
+				["CombatEndedAt"] = 64085.59400000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 27553.004894,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 64085.59400000001,
+				["combat_id"] = 569,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Lavacaller Primalist",
+				["frags"] = {
+					["Molten Primalist"] = 1,
+					["Unleashed Lavaburst"] = 1,
+					["Lavacaller Primalist"] = 1,
+				},
+				["combat_counter"] = 954,
+				["data_inicio"] = "01:11:06",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -10053,83 +10138,15 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:11:19",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lavacaller Primalist",
-				["TotalElapsedCombatTime"] = 64085.59400000001,
-				["CombatEndedAt"] = 64085.59400000001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:11:06",
-				["end_time"] = 64085.59400000001,
-				["combat_id"] = 569,
-				["tempo_start"] = 1672380665,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Molten Primalist"] = 1,
-					["Unleashed Lavaburst"] = 1,
-					["Lavacaller Primalist"] = 1,
-				},
-				["totals_grupo"] = {
-					19392, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 27553.004894,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 64072.887,
-				["contra"] = "Lavacaller Primalist",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [17]
 			{
 				{
-					["combatId"] = 568,
 					["tipo"] = 2,
+					["combatId"] = 568,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -10143,22 +10160,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 30666.003579,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 22898.003579,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380658,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 1,
@@ -10358,22 +10361,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 22898.003579,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2541.732580108792,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 30666.003579,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380658,
 							["tipo"] = 1,
-							["damage_taken"] = 4386.003579,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380657,
+							["last_dps"] = 2541.732580108792,
 							["start_time"] = 1672380646,
 							["delay"] = 0,
-							["last_event"] = 1672380657,
+							["damage_taken"] = 4386.003579,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.001107,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -10381,19 +10397,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380657,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7768.001107,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380658,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001107,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10452,22 +10468,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 7768.001107,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380657,
-							["damage_taken"] = 0.001107,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380649,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.004955,
-							["total"] = 4386.004955,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -10475,23 +10491,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 4386,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-188666-00002E80C9",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "188666",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4386.004955,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 30666.004955,
+							["monster"] = true,
 							["end_time"] = 1672380658,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380654,
 							["nome"] = "Unleashed Lavaburst",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10522,28 +10537,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "188666",
-							["serial"] = "Creature-0-4229-2444-17344-188666-00002E80C9",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380654,
-							["damage_taken"] = 30666.004955,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380648,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 4386.004955,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 568,
 					["tipo"] = 3,
+					["combatId"] = 568,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 568,
 					["tipo"] = 7,
+					["combatId"] = 568,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.004143,
@@ -10560,7 +10577,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -10572,267 +10588,268 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.004143,
+							["tipo"] = 3,
 							["last_event"] = 1672380665,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.004143,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 568,
 					["tipo"] = 9,
+					["combatId"] = 568,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 152,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 1,
-										["id"] = 191034,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 31,
 							["nome"] = "Zulbathal",
@@ -10848,36 +10865,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380658,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 568,
 					["tipo"] = 2,
+					["combatId"] = 568,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10888,12 +10905,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64071.996,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380646,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 953,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					35052, -- [1]
@@ -10908,39 +10927,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:10:58",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Unleashed Lavaburst",
-				["TotalElapsedCombatTime"] = 64065.079,
-				["CombatEndedAt"] = 64065.079,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:10:46",
-				["end_time"] = 64065.079,
-				["combat_id"] = 568,
-				["tempo_start"] = 1672380646,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Unleashed Lavaburst"] = 1,
 				},
 				["totals_grupo"] = {
 					22898, -- [1]
@@ -10955,26 +10950,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:10:58",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Unleashed Lavaburst",
+				["TotalElapsedCombatTime"] = 64065.079,
+				["CombatEndedAt"] = 64065.079,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -10982,19 +10990,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 64065.079,
+				["combat_id"] = 568,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 64053.014,
 				["contra"] = "Unleashed Lavaburst",
+				["frags"] = {
+					["Unleashed Lavaburst"] = 1,
+				},
+				["combat_counter"] = 953,
+				["data_inicio"] = "01:10:46",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64053.014,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [18]
 			{
 				{
-					["combatId"] = 567,
 					["tipo"] = 2,
+					["combatId"] = 567,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -11008,22 +11026,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 37390.008845,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 28784.008845,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380631,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 1,
@@ -11223,22 +11227,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 28784.008845,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2331.629386692434,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 37390.008845,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380631,
 							["tipo"] = 1,
-							["damage_taken"] = 11273.008845,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380630,
+							["last_dps"] = 2331.629386692434,
 							["start_time"] = 1672380615,
 							["delay"] = 0,
-							["last_event"] = 1672380630,
+							["damage_taken"] = 11273.008845,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.007017,
-							["total"] = 11273.007017,
 							["damage_from"] = {
 								["Sendrax <Zulbathal>"] = true,
 								["Zulbathal"] = true,
@@ -11247,23 +11264,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 11273,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186825-00002E80B1",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186825",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 11273.007017,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 37390.007017,
+							["monster"] = true,
 							["end_time"] = 1672380631,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380630,
 							["nome"] = "Molten Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -11320,21 +11336,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186825",
-							["serial"] = "Creature-0-4229-2444-17344-186825-00002E80B1",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380630,
-							["damage_taken"] = 37390.007017,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380616,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 11273.007017,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 375.00124,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -11342,19 +11359,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380629,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8606.00124,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380631,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.00124,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -11413,29 +11430,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 8606.00124,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380629,
-							["damage_taken"] = 0.00124,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380618,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 567,
 					["tipo"] = 3,
+					["combatId"] = 567,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 567,
 					["tipo"] = 7,
+					["combatId"] = 567,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.008044,
@@ -11452,7 +11470,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -11464,245 +11481,246 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.008044,
+							["tipo"] = 3,
 							["last_event"] = 1672380646,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.008044,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 567,
 					["tipo"] = 9,
+					["combatId"] = 567,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 188,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 6,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 1,
-										["id"] = 191034,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 27,
 							["nome"] = "Zulbathal",
@@ -11716,52 +11734,52 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380631,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 74001,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [2]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Molten Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378150] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186825-00002E80B1",
 							["aID"] = "186825",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 567,
 					["tipo"] = 2,
+					["combatId"] = 567,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -11772,12 +11790,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64053.014,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380615,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 952,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					48662.969185, -- [1]
@@ -11792,40 +11812,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:10:32",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Molten Primalist",
-				["TotalElapsedCombatTime"] = 64038.789,
-				["CombatEndedAt"] = 64038.789,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:10:16",
-				["end_time"] = 64038.789,
-				["combat_id"] = 567,
-				["tempo_start"] = 1672380615,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Unleashed Lavaburst"] = 1,
-					["Molten Primalist"] = 1,
 				},
 				["totals_grupo"] = {
 					28784, -- [1]
@@ -11840,26 +11835,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:10:32",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Molten Primalist",
+				["TotalElapsedCombatTime"] = 64038.789,
+				["CombatEndedAt"] = 64038.789,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -11867,19 +11875,30 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 64038.789,
+				["combat_id"] = 567,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 64022.753,
 				["contra"] = "Molten Primalist",
+				["frags"] = {
+					["Unleashed Lavaburst"] = 1,
+					["Molten Primalist"] = 1,
+				},
+				["combat_counter"] = 952,
+				["data_inicio"] = "01:10:16",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64022.753,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [19]
 			{
 				{
-					["combatId"] = 566,
 					["tipo"] = 2,
+					["combatId"] = 566,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -11893,22 +11912,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 29589.001806,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 28682.001806,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380605,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 2,
@@ -11938,31 +11943,31 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[164815] = {
-										["c_amt"] = 0,
+									[191037] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 1279,
 										["g_amt"] = 0,
-										["n_max"] = 452,
+										["n_max"] = 347,
 										["targets"] = {
-											["Infused Ruby Whelpling"] = 1730,
+											["Infused Ruby Whelpling"] = 3035,
 										},
-										["n_dmg"] = 1730,
-										["n_min"] = 374,
+										["n_dmg"] = 1756,
+										["n_min"] = 245,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1730,
-										["c_max"] = 0,
-										["id"] = 164815,
+										["counter"] = 8,
+										["total"] = 3035,
+										["c_max"] = 706,
+										["id"] = 191037,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 72,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 573,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 6,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -11994,31 +11999,31 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[191037] = {
-										["c_amt"] = 2,
+									[164815] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 1279,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 347,
+										["n_max"] = 452,
 										["targets"] = {
-											["Infused Ruby Whelpling"] = 3035,
+											["Infused Ruby Whelpling"] = 1730,
 										},
-										["n_dmg"] = 1756,
-										["n_min"] = 245,
+										["n_dmg"] = 1730,
+										["n_min"] = 374,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 3035,
-										["c_max"] = 706,
-										["id"] = 191037,
+										["counter"] = 4,
+										["total"] = 1730,
+										["c_max"] = 0,
+										["id"] = 164815,
 										["r_dmg"] = 0,
-										["spellschool"] = 72,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 573,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -12079,22 +12084,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 28682.001806,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 5676.002648375376,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 29589.001806,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380605,
 							["tipo"] = 1,
-							["damage_taken"] = 2236.001806,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380605,
+							["last_dps"] = 5676.002648375376,
 							["start_time"] = 1672380600,
 							["delay"] = 0,
-							["last_event"] = 1672380605,
+							["damage_taken"] = 2236.001806,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.007061,
-							["total"] = 2236.007061,
 							["damage_from"] = {
 								["Sendrax <Zulbathal>"] = true,
 								["Zulbathal"] = true,
@@ -12103,23 +12121,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 2236,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186822-00012E80B8",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186822",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2236.007061,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 33258.007061,
+							["monster"] = true,
 							["end_time"] = 1672380605,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380604,
 							["nome"] = "Infused Ruby Whelpling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -12150,21 +12167,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186822",
-							["serial"] = "Creature-0-4229-2444-17344-186822-00012E80B8",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380604,
-							["damage_taken"] = 33258.007061,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380601,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 2236.007061,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.007653,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -12172,19 +12190,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380603,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 907.007653,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380605,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.007653,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -12215,29 +12233,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 907.007653,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380603,
-							["damage_taken"] = 0.007653,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380601,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 566,
 					["tipo"] = 3,
+					["combatId"] = 566,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 566,
 					["tipo"] = 7,
+					["combatId"] = 566,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.003812,
@@ -12254,7 +12273,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -12266,141 +12284,141 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.003812,
+							["tipo"] = 3,
 							["last_event"] = 1672380615,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.003812,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 566,
 					["tipo"] = 9,
+					["combatId"] = 566,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 3,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 1,
-										["appliedamt"] = 2,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 2,
+										["id"] = 164812,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 81,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -12418,127 +12436,128 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 1,
-										["id"] = 191034,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 8,
 							["nome"] = "Zulbathal",
@@ -12551,20 +12570,20 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380605,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 566,
 					["tipo"] = 2,
+					["combatId"] = 566,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12575,12 +12594,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64022.753,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380600,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 951,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					31824.984596, -- [1]
@@ -12595,39 +12616,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:10:06",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Infused Ruby Whelpling",
-				["TotalElapsedCombatTime"] = 64012.885,
-				["CombatEndedAt"] = 64012.885,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:10:01",
-				["end_time"] = 64012.885,
-				["combat_id"] = 566,
-				["tempo_start"] = 1672380600,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Infused Ruby Whelpling"] = 3,
 				},
 				["totals_grupo"] = {
 					28682, -- [1]
@@ -12642,26 +12639,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:10:06",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Infused Ruby Whelpling",
+				["TotalElapsedCombatTime"] = 64012.885,
+				["CombatEndedAt"] = 64012.885,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -12669,19 +12679,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 64012.885,
+				["combat_id"] = 566,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 64007.672,
 				["contra"] = "Infused Ruby Whelpling",
+				["frags"] = {
+					["Infused Ruby Whelpling"] = 3,
+				},
+				["combat_counter"] = 951,
+				["data_inicio"] = "01:10:01",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 64007.672,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [20]
 			{
 				{
-					["combatId"] = 565,
 					["tipo"] = 2,
+					["combatId"] = 565,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -12696,88 +12716,22 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["spec"] = 102,
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 11522.004896,
+							["aID"] = "61-0CA8EB69",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 44243.004896,
-							["end_time"] = 1672380596,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
 							["dps_started"] = false,
-							["total"] = 53291.004896,
-							["aID"] = "61-0CA8EB69",
+							["end_time"] = 1672380596,
 							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[194153] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 4897,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Lavacaller Primalist"] = 4897,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[17] = 4897,
-											[20] = 4897,
-										},
-										["total"] = 4897,
-										["c_max"] = 4897,
-										["id"] = 194153,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 4897,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[393869] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Firava the Rekindler"] = 84,
-										},
-										["n_dmg"] = 84,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[14] = 84,
-											[17] = 84,
-											[20] = 84,
-										},
-										["total"] = 84,
-										["c_max"] = 0,
-										["id"] = 393869,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[164812] = {
 										["c_amt"] = 7,
 										["b_amt"] = 0,
@@ -12815,6 +12769,73 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[194153] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 4897,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Lavacaller Primalist"] = 4897,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[17] = 4897,
+											[20] = 4897,
+										},
+										["total"] = 4897,
+										["c_max"] = 4897,
+										["id"] = 194153,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 4897,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[81281] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 594,
+										["targets"] = {
+											["Firava the Rekindler"] = 2376,
+										},
+										["n_dmg"] = 2376,
+										["n_min"] = 594,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[11] = 2376,
+											[17] = 2376,
+											[8] = 1188,
+											[14] = 2376,
+											[20] = 2376,
+										},
+										["total"] = 2376,
+										["c_max"] = 0,
+										["id"] = 81281,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[191037] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
@@ -12831,8 +12852,8 @@ _detalhes_database = {
 										["counter"] = 16,
 										["ChartData"] = {
 											[14] = 4090,
-											[20] = 5735,
 											[17] = 5467,
+											[20] = 5735,
 											[11] = 1838,
 										},
 										["total"] = 5735,
@@ -12960,58 +12981,56 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[81281] = {
+									[393869] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 594,
+										["n_max"] = 84,
 										["targets"] = {
-											["Firava the Rekindler"] = 2376,
+											["Firava the Rekindler"] = 84,
 										},
-										["n_dmg"] = 2376,
-										["n_min"] = 594,
+										["n_dmg"] = 84,
+										["n_min"] = 84,
 										["g_dmg"] = 0,
-										["counter"] = 4,
+										["counter"] = 1,
 										["ChartData"] = {
-											[11] = 2376,
-											[17] = 2376,
-											[8] = 1188,
-											[14] = 2376,
-											[20] = 2376,
+											[14] = 84,
+											[17] = 84,
+											[20] = 84,
 										},
-										["total"] = 2376,
+										["total"] = 84,
 										["c_max"] = 0,
-										["id"] = 81281,
+										["id"] = 393869,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 72,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2488.141044728138,
-							["custom"] = 0,
+							["total"] = 53291.004896,
 							["last_event"] = 1672380595,
-							["damage_taken"] = 11522.004896,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 2488.141044728138,
 							["start_time"] = 1672380575,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["spec"] = 102,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.005682,
-							["aID"] = "195915",
 							["damage_from"] = {
 								["Ruby Egg Guardian"] = true,
 								["Oggrosh"] = true,
@@ -13021,22 +13040,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Oggrosh"] = 13902,
 							},
-							["end_time"] = 1672380596,
+							["serial"] = "Creature-0-4229-2444-17344-195915-00002E7FF8",
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "195915",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 13902.005682,
-							["monster"] = true,
+							["damage_taken"] = 120224.005682,
 							["dps_started"] = false,
-							["total"] = 13902.005682,
+							["end_time"] = 1672380596,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672380587,
 							["nome"] = "Firava the Rekindler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -13096,22 +13116,21 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-195915-00002E7FF8",
-							["last_dps"] = 0,
+							["total"] = 13902.005682,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380587,
-							["damage_taken"] = 120224.005682,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380575,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 916.002597,
-							["aID"] = "186823",
 							["damage_from"] = {
 								["Ruby Egg Guardian"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -13121,22 +13140,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 11522,
 							},
-							["end_time"] = 1672380596,
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E8047",
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "186823",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 11522.002597,
-							["monster"] = true,
+							["damage_taken"] = 26051.002597,
 							["dps_started"] = false,
-							["total"] = 11522.002597,
+							["end_time"] = 1672380596,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672380596,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -13194,44 +13214,42 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E8047",
-							["last_dps"] = 0,
+							["total"] = 11522.002597,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380596,
-							["damage_taken"] = 26051.002597,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380578,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.00796,
-							["friendlyfire"] = {
-							},
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Firava the Rekindler"] = 8161,
 								["Lavacaller Primalist"] = 887,
 							},
-							["on_hold"] = false,
 							["pets"] = {
 							},
-							["end_time"] = 1672380596,
-							["classe"] = "PET",
+							["on_hold"] = false,
+							["last_event"] = 1672380595,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9048.007959999999,
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
+							["end_time"] = 1672380596,
 							["total"] = 9048.007959999999,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -13291,22 +13309,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "190171",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380595,
+							["tipo"] = 1,
 							["damage_taken"] = 0.00796,
 							["start_time"] = 1672380580,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 565,
 					["tipo"] = 3,
+					["combatId"] = 565,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -13338,10 +13358,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 1,
@@ -13362,9 +13381,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 407,
 										["c_curado"] = 407,
-										["n_curado"] = 7349,
 										["totaldenied"] = 0,
 										["n_amt"] = 14,
+										["n_curado"] = 7349,
 										["absorbed"] = 0,
 									},
 									[388380] = {
@@ -13385,31 +13404,32 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 1220,
 										},
-										["n_amt"] = 2,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1220,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 1220,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380576,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380599,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.007305,
 							["delay"] = 0,
-							["last_event"] = 1672380599,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 565,
 					["tipo"] = 7,
+					["combatId"] = 565,
 					["_ActorTable"] = {
 						{
 							["received"] = 470.001462,
@@ -13427,7 +13447,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 470,
@@ -13439,344 +13458,345 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.001462,
+							["tipo"] = 3,
 							["last_event"] = 1672380600,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.001462,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 565,
 					["tipo"] = 9,
+					["combatId"] = 565,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 17,
-										["appliedamt"] = 2,
+										["id"] = 164815,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+									[81281] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+									[393957] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 21,
-										["appliedamt"] = 2,
+										["id"] = 164812,
 										["refreshamt"] = 7,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 306,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 2,
-										["id"] = 8936,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 15,
-										["appliedamt"] = 2,
+										["id"] = 8936,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 1,
-										["id"] = 191034,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 50,
@@ -13794,29 +13814,29 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380596,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[378012] = 3,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E8047",
 							["aID"] = "186823",
 						}, -- [2]
@@ -13824,22 +13844,22 @@ _detalhes_database = {
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 565,
 					["tipo"] = 2,
+					["combatId"] = 565,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -13850,12 +13870,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 64006.879,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380575,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 950,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					78714.97404200002, -- [1]
@@ -13870,15 +13892,82 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = -0.006331000000000087,
 						["dispell"] = 0,
+						["interrupt"] = -0.006331000000000087,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					44243, -- [1]
+					8976, -- [2]
+					{
+						0, -- [1]
+						[0] = 470,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:09:57",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lavacaller Primalist",
+				["TotalElapsedCombatTime"] = 64003.875,
+				["CombatEndedAt"] = 64003.875,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 8440.007305,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 53291.004896,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 64003.875,
+				["combat_id"] = 565,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Firava the Rekindler",
+				["frags"] = {
+					["Firava the Rekindler"] = 1,
+					["Lavacaller Primalist"] = 1,
+				},
+				["combat_counter"] = 950,
+				["data_inicio"] = "01:09:35",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -13973,83 +14062,15 @@ _detalhes_database = {
 						["n"] = 4,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:09:57",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lavacaller Primalist",
-				["TotalElapsedCombatTime"] = 64003.875,
-				["CombatEndedAt"] = 64003.875,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:09:35",
-				["end_time"] = 64003.875,
-				["combat_id"] = 565,
-				["tempo_start"] = 1672380575,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Firava the Rekindler"] = 1,
-					["Lavacaller Primalist"] = 1,
-				},
-				["totals_grupo"] = {
-					44243, -- [1]
-					8976, -- [2]
-					{
-						0, -- [1]
-						[0] = 470,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 8440.007305,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 53291.004896,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63982.335,
-				["contra"] = "Firava the Rekindler",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [21]
 			{
 				{
-					["combatId"] = 564,
 					["tipo"] = 2,
+					["combatId"] = 564,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -14065,22 +14086,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 54213.006513,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 50814.006513,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380561,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -14113,38 +14120,40 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[164815] = {
-										["c_amt"] = 3,
+									[393869] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 2593,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 452,
+										["n_max"] = 55,
 										["targets"] = {
-											["Tarasek Elementalist"] = 3886,
-											["Infused Ruby Whelpling"] = 4036,
+											["Tarasek Elementalist"] = 159,
+											["Infused Ruby Whelpling"] = 427,
 										},
-										["n_dmg"] = 5329,
-										["n_min"] = 384,
+										["n_dmg"] = 586,
+										["n_min"] = 50,
 										["g_dmg"] = 0,
-										["counter"] = 16,
+										["counter"] = 11,
 										["ChartData"] = {
-											[14] = 3130,
-											[20] = 7020,
-											[17] = 5664,
-											[11] = 384,
+											[11] = 586,
+											[17] = 586,
+											[8] = 436,
+											[14] = 586,
+											[5] = 216,
+											[20] = 586,
 										},
-										["total"] = 7922,
-										["c_max"] = 904,
-										["id"] = 164815,
+										["total"] = 586,
+										["c_max"] = 0,
+										["id"] = 393869,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 72,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 785,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 13,
+										["n_amt"] = 11,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -14253,31 +14262,31 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[393869] = {
+									[202497] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["n_max"] = 548,
 										["targets"] = {
-											["Tarasek Elementalist"] = 159,
-											["Infused Ruby Whelpling"] = 427,
+											["Infused Ruby Whelpling"] = 799,
+											["Tarasek Elementalist"] = 2050,
 										},
-										["n_dmg"] = 586,
-										["n_min"] = 50,
+										["n_dmg"] = 2849,
+										["n_min"] = 398,
 										["g_dmg"] = 0,
-										["counter"] = 11,
+										["counter"] = 6,
 										["ChartData"] = {
-											[11] = 586,
-											[17] = 586,
-											[8] = 436,
-											[14] = 586,
-											[5] = 216,
-											[20] = 586,
+											[11] = 810,
+											[17] = 1756,
+											[8] = 409,
+											[14] = 1208,
+											[5] = 409,
+											[20] = 2304,
 										},
-										["total"] = 586,
+										["total"] = 2849,
 										["c_max"] = 0,
-										["id"] = 393869,
+										["id"] = 202497,
 										["r_dmg"] = 0,
 										["spellschool"] = 72,
 										["extra"] = {
@@ -14286,7 +14295,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 11,
+										["n_amt"] = 6,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -14327,43 +14336,6 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[202497] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 548,
-										["targets"] = {
-											["Infused Ruby Whelpling"] = 799,
-											["Tarasek Elementalist"] = 2050,
-										},
-										["n_dmg"] = 2849,
-										["n_min"] = 398,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[11] = 810,
-											[17] = 1756,
-											[8] = 409,
-											[14] = 1208,
-											[5] = 409,
-											[20] = 2304,
-										},
-										["total"] = 2849,
-										["c_max"] = 0,
-										["id"] = 202497,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[194153] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
@@ -14380,8 +14352,8 @@ _detalhes_database = {
 										["counter"] = 7,
 										["ChartData"] = {
 											[14] = 2877,
-											[20] = 5747,
 											[17] = 5747,
+											[20] = 5747,
 											[11] = 2877,
 										},
 										["total"] = 5747,
@@ -14399,23 +14371,71 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[164815] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 2593,
+										["g_amt"] = 0,
+										["n_max"] = 452,
+										["targets"] = {
+											["Tarasek Elementalist"] = 3886,
+											["Infused Ruby Whelpling"] = 4036,
+										},
+										["n_dmg"] = 5329,
+										["n_min"] = 384,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["ChartData"] = {
+											[14] = 3130,
+											[17] = 5664,
+											[20] = 7020,
+											[11] = 384,
+										},
+										["total"] = 7922,
+										["c_max"] = 904,
+										["id"] = 164815,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 785,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 50814.006513,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2377.346365242552,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 54213.006513,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380561,
 							["tipo"] = 1,
-							["damage_taken"] = 25527.006513,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380561,
+							["last_dps"] = 2377.346365242552,
 							["start_time"] = 1672380539,
 							["delay"] = 0,
-							["last_event"] = 1672380561,
+							["damage_taken"] = 25527.006513,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 1122.008368,
-							["total"] = 18149.008368,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -14423,23 +14443,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 18149,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "190080",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18149.008368,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 24624.008368,
+							["monster"] = true,
 							["end_time"] = 1672380575,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380563,
 							["nome"] = "Tarasek Elementalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -14497,21 +14516,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "190080",
-							["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380563,
-							["damage_taken"] = 24624.008368,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380551,
 							["delay"] = 1672380563,
-							["tipo"] = 1,
+							["total"] = 18149.008368,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 344.008911,
-							["total"] = 7378.008911,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -14519,23 +14539,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 7378,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186822-00012E807B",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186822",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7378.008911,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 29589.008911,
+							["monster"] = true,
 							["end_time"] = 1672380561,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380555,
 							["nome"] = "Infused Ruby Whelpling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -14568,21 +14587,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186822",
-							["serial"] = "Creature-0-4229-2444-17344-186822-00012E807B",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380555,
-							["damage_taken"] = 29589.008911,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380538,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 7378.008911,
 						}, -- [3]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.001243,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -14591,19 +14611,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380559,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3399.001243,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380561,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001243,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -14635,23 +14655,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 3399.001243,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380559,
-							["damage_taken"] = 0.001243,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380546,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 564,
 					["tipo"] = 3,
+					["combatId"] = 564,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -14683,10 +14704,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -14706,11 +14726,11 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 1831,
 										},
-										["n_amt"] = 4,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1831,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 1831,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -14733,28 +14753,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 407,
 										["c_curado"] = 407,
-										["n_curado"] = 20760,
 										["totaldenied"] = 0,
 										["n_amt"] = 10,
+										["n_curado"] = 20760,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380558,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380574,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.006015,
 							["delay"] = 1672380540,
-							["last_event"] = 1672380574,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 564,
 					["tipo"] = 7,
+					["combatId"] = 564,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.008433,
@@ -14772,7 +14793,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -14784,267 +14804,268 @@ _detalhes_database = {
 										["counter"] = 8,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 6.008433,
+							["tipo"] = 3,
 							["last_event"] = 1672380575,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1879.008433,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 564,
 					["tipo"] = 9,
+					["combatId"] = 564,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 4,
+										["id"] = 164812,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 3,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 286,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 17,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 2,
-										["id"] = 387678,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 2,
-										["id"] = 191034,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 10,
-										["appliedamt"] = 2,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 35,
@@ -15061,36 +15082,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380561,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Tarasek Elementalist",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[378012] = 4,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
 							["aID"] = "190080",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 564,
 					["tipo"] = 2,
+					["combatId"] = 564,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -15101,7 +15122,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63982.335,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380538,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -15110,7 +15131,9 @@ _detalhes_database = {
 						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 949,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					79739.9849, -- [1]
@@ -15125,15 +15148,82 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					50814, -- [1]
+					22998, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:09:22",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Infused Ruby Whelpling",
+				["TotalElapsedCombatTime"] = 63968.664,
+				["CombatEndedAt"] = 63968.664,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 1831.006015,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 54213.006513,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63968.664,
+				["combat_id"] = 564,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Infused Ruby Whelpling",
+				["frags"] = {
+					["Tarasek Elementalist"] = 1,
+					["Infused Ruby Whelpling"] = 3,
+				},
+				["combat_counter"] = 949,
+				["data_inicio"] = "01:08:59",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -15316,83 +15406,15 @@ _detalhes_database = {
 						["n"] = 14,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:09:22",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Infused Ruby Whelpling",
-				["TotalElapsedCombatTime"] = 63968.664,
-				["CombatEndedAt"] = 63968.664,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:08:59",
-				["end_time"] = 63968.664,
-				["combat_id"] = 564,
-				["tempo_start"] = 1672380538,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Tarasek Elementalist"] = 1,
-					["Infused Ruby Whelpling"] = 3,
-				},
-				["totals_grupo"] = {
-					50814, -- [1]
-					22998, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 1831.006015,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 54213.006513,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63945.86,
-				["contra"] = "Infused Ruby Whelpling",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [22]
 			{
 				{
-					["combatId"] = 563,
 					["tipo"] = 2,
+					["combatId"] = 563,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -15412,22 +15434,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 122860.001033,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 103471.001033,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380497,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -15562,10 +15570,10 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {
-											[35] = 996,
 											[32] = 996,
-											[29] = 996,
+											[35] = 996,
 											[26] = 996,
+											[29] = 996,
 										},
 										["total"] = 996,
 										["c_max"] = 0,
@@ -15777,47 +15785,6 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[191037] = {
-										["c_amt"] = 10,
-										["b_amt"] = 0,
-										["c_dmg"] = 7722,
-										["g_amt"] = 0,
-										["n_max"] = 1111,
-										["targets"] = {
-											["Molten Primalist"] = 5859,
-											["Lavacaller Primalist"] = 5860,
-											["Primal Revenant"] = 8571,
-										},
-										["n_dmg"] = 12568,
-										["n_min"] = 213,
-										["g_dmg"] = 0,
-										["counter"] = 39,
-										["ChartData"] = {
-											[26] = 17185,
-											[14] = 10637,
-											[29] = 17824,
-											[32] = 18859,
-											[20] = 17185,
-											[11] = 3640,
-											[35] = 19692,
-											[23] = 17185,
-											[17] = 15299,
-										},
-										["total"] = 20290,
-										["c_max"] = 1147,
-										["id"] = 191037,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 426,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 29,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[81281] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -15897,23 +15864,77 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[191037] = {
+										["c_amt"] = 10,
+										["b_amt"] = 0,
+										["c_dmg"] = 7722,
+										["g_amt"] = 0,
+										["n_max"] = 1111,
+										["targets"] = {
+											["Molten Primalist"] = 5859,
+											["Lavacaller Primalist"] = 5860,
+											["Primal Revenant"] = 8571,
+										},
+										["n_dmg"] = 12568,
+										["n_min"] = 213,
+										["g_dmg"] = 0,
+										["counter"] = 39,
+										["ChartData"] = {
+											[26] = 17185,
+											[14] = 10637,
+											[29] = 17824,
+											[32] = 18859,
+											[20] = 17185,
+											[11] = 3640,
+											[35] = 19692,
+											[23] = 17185,
+											[17] = 15299,
+										},
+										["total"] = 20290,
+										["c_max"] = 1147,
+										["id"] = 191037,
+										["r_dmg"] = 0,
+										["spellschool"] = 72,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 426,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 29,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 103471.001033,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 3194.986244161426,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 122860.001033,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380497,
 							["tipo"] = 1,
-							["damage_taken"] = 51026.001033,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380496,
+							["last_dps"] = 3194.986244161426,
 							["start_time"] = 1672380459,
 							["delay"] = 0,
-							["last_event"] = 1672380496,
+							["damage_taken"] = 51026.001033,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.003161,
-							["total"] = 32748.003161,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -15922,23 +15943,22 @@ _detalhes_database = {
 								["Zulbathal"] = 26112,
 								["Sendrax <Zulbathal>"] = 6636,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-195917-00002E79BC",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "195917",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 32748.003161,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 60903.003161,
+							["monster"] = true,
 							["end_time"] = 1672380497,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380495,
 							["nome"] = "Primal Revenant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -16023,21 +16043,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "195917",
-							["serial"] = "Creature-0-4229-2444-17344-195917-00002E79BC",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380495,
-							["damage_taken"] = 60903.003161,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380469,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 32748.003161,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 404.002782,
-							["aID"] = "190171",
 							["damage_from"] = {
 								["Primal Revenant"] = true,
 								["Lavacaller Primalist"] = true,
@@ -16049,19 +16070,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380495,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 19389.002782,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380497,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 7829.002782,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -16122,22 +16143,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 19389.002782,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380495,
-							["damage_taken"] = 7829.002782,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380459,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.002012,
-							["total"] = 13654.002012,
 							["damage_from"] = {
 								["Sendrax <Zulbathal>"] = true,
 								["Sendrax <Zulbathal> <Zulbathal>"] = true,
@@ -16146,23 +16167,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 13654,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7D87",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186825",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 13654.002012,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 37477.002012,
+							["monster"] = true,
 							["end_time"] = 1672380497,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380484,
 							["nome"] = "Molten Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -16221,21 +16241,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186825",
-							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7D87",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380484,
-							["damage_taken"] = 37477.002012,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380477,
 							["delay"] = 1672380484,
-							["tipo"] = 1,
+							["total"] = 13654.002012,
 						}, -- [4]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.004445,
-							["total"] = 10809.004445,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -16244,23 +16265,22 @@ _detalhes_database = {
 								["Zulbathal"] = 9616,
 								["Sendrax <Zulbathal>"] = 1193,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E7DAB",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186823",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10809.004445,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 24480.004445,
+							["monster"] = true,
 							["end_time"] = 1672380497,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380477,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -16318,22 +16338,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E7DAB",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380477,
-							["damage_taken"] = 24480.004445,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380478,
 							["delay"] = 1672380477,
-							["tipo"] = 1,
+							["total"] = 10809.004445,
 						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 563,
 					["tipo"] = 3,
+					["combatId"] = 563,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -16364,10 +16386,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 4,
@@ -16388,28 +16409,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 407,
 										["c_curado"] = 20525,
-										["n_curado"] = 23930,
 										["totaldenied"] = 0,
 										["n_amt"] = 26,
+										["n_curado"] = 23930,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380503,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380508,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.008989,
 							["delay"] = 1672380508,
-							["last_event"] = 1672380508,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 563,
 					["tipo"] = 7,
+					["combatId"] = 563,
 					["_ActorTable"] = {
 						{
 							["received"] = 1410.006302,
@@ -16427,7 +16449,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 1410,
@@ -16439,311 +16460,312 @@ _detalhes_database = {
 										["counter"] = 6,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 12.006302,
+							["tipo"] = 3,
 							["last_event"] = 1672380496,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.006302,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 563,
 					["tipo"] = 9,
+					["combatId"] = 563,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 37,
-										["appliedamt"] = 3,
+										["id"] = 164812,
 										["refreshamt"] = 10,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 2,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 31,
-										["appliedamt"] = 4,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 506,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 3,
-										["id"] = 279709,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 30,
-										["appliedamt"] = 3,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 5,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 11,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 3,
-										["id"] = 157228,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 25,
-										["appliedamt"] = 3,
+										["id"] = 157228,
 										["refreshamt"] = 7,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 2,
-										["id"] = 48517,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 11,
-										["appliedamt"] = 2,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 2,
-										["id"] = 387678,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 4,
-										["appliedamt"] = 2,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 2,
-										["id"] = 191034,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 17,
-										["appliedamt"] = 2,
+										["id"] = 191034,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 82,
@@ -16751,73 +16773,73 @@ _detalhes_database = {
 							["spec"] = 102,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[202347] = 1,
-								[190984] = 1,
-								[191034] = 3,
 								[88747] = 1,
+								[190984] = 1,
+								[8921] = 9,
+								[202347] = 1,
 								[8936] = 6,
 								[93402] = 3,
 								[194153] = 2,
-								[8921] = 9,
+								[191034] = 3,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380497,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[378012] = 3,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E7DAB",
 							["aID"] = "186823",
 						}, -- [2]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Molten Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378150] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7D87",
 							["aID"] = "186825",
 						}, -- [3]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Primal Revenant",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[387277] = 2,
 								[387037] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-195917-00002E79BC",
 							["aID"] = "195917",
 						}, -- [4]
@@ -16825,22 +16847,22 @@ _detalhes_database = {
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 2,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [5]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 563,
 					["tipo"] = 2,
+					["combatId"] = 563,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -16851,7 +16873,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63945.346,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380459,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -16860,7 +16882,9 @@ _detalhes_database = {
 						["last"] = 5,
 					},
 				},
-				["combat_counter"] = 948,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					180070.979658, -- [1]
@@ -16875,15 +16899,84 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					103471, -- [1]
+					44455, -- [2]
+					{
+						0, -- [1]
+						[0] = 1410,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:08:18",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lavacaller Primalist",
+				["TotalElapsedCombatTime"] = 63904.73800000001,
+				["CombatEndedAt"] = 63904.73800000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 42682.008989,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 122860.001033,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63904.73800000001,
+				["combat_id"] = 563,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Lavacaller Primalist",
+				["frags"] = {
+					["Molten Primalist"] = 1,
+					["Oggrosh"] = 1,
+					["Primal Revenant"] = 1,
+					["Lavacaller Primalist"] = 1,
+				},
+				["combat_counter"] = 948,
+				["data_inicio"] = "01:07:39",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -17042,85 +17135,15 @@ _detalhes_database = {
 						["n"] = 11,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:08:18",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lavacaller Primalist",
-				["TotalElapsedCombatTime"] = 63904.73800000001,
-				["CombatEndedAt"] = 63904.73800000001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:07:39",
-				["end_time"] = 63904.73800000001,
-				["combat_id"] = 563,
-				["tempo_start"] = 1672380459,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Molten Primalist"] = 1,
-					["Oggrosh"] = 1,
-					["Primal Revenant"] = 1,
-					["Lavacaller Primalist"] = 1,
-				},
-				["totals_grupo"] = {
-					103471, -- [1]
-					44455, -- [2]
-					{
-						0, -- [1]
-						[0] = 1410,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 42682.008989,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 122860.001033,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63866.284,
-				["contra"] = "Lavacaller Primalist",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [23]
 			{
 				{
-					["combatId"] = 562,
 					["tipo"] = 2,
+					["combatId"] = 562,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -17136,22 +17159,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 85744.006844,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 76519.006844,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380450,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -17307,8 +17316,8 @@ _detalhes_database = {
 										["counter"] = 2,
 										["ChartData"] = {
 											[14] = 2414,
-											[20] = 3450,
 											[17] = 2414,
+											[20] = 3450,
 											[11] = 2414,
 										},
 										["total"] = 3450,
@@ -17482,8 +17491,8 @@ _detalhes_database = {
 										["counter"] = 3,
 										["ChartData"] = {
 											[14] = 3939,
-											[20] = 3939,
 											[17] = 3939,
+											[20] = 3939,
 											[11] = 2626,
 										},
 										["total"] = 3939,
@@ -17574,22 +17583,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 76519.006844,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 3645.268550463829,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 85744.006844,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380450,
 							["tipo"] = 1,
-							["damage_taken"] = 14883.006844,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380449,
+							["last_dps"] = 3645.268550463829,
 							["start_time"] = 1672380427,
 							["delay"] = 0,
-							["last_event"] = 1672380449,
+							["damage_taken"] = 14883.006844,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006328,
-							["total"] = 22410.006328,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -17598,23 +17620,22 @@ _detalhes_database = {
 								["Zulbathal"] = 9304,
 								["Sendrax <Zulbathal>"] = 13106,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "195917",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 22410.006328,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 61245.006328,
+							["monster"] = true,
 							["end_time"] = 1672380450,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380447,
 							["nome"] = "Primal Revenant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -17700,21 +17721,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "195917",
-							["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380447,
-							["damage_taken"] = 61245.006328,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380428,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 22410.006328,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.006426,
-							["aID"] = "190171",
 							["damage_from"] = {
 								["Primal Revenant"] = true,
 							},
@@ -17724,19 +17746,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380446,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9225.006426,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380450,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 13106.006426,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -17796,17 +17818,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 9225.006426,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380446,
-							["damage_taken"] = 13106.006426,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380432,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
@@ -17821,21 +17844,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 6938.002648,
-							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["aID"] = "186823",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6938.002648,
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E7F6B",
+							["fight_component"] = true,
+							["total"] = 6938.002648,
+							["damage_taken"] = 24499.002648,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672380450,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -17895,22 +17917,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E7F6B",
+							["last_event"] = 1672380441,
+							["end_time"] = 1672380450,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380441,
-							["damage_taken"] = 24499.002648,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1672380427,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 562,
 					["tipo"] = 3,
+					["combatId"] = 562,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -17942,10 +17965,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -17965,31 +17987,32 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 610,
 										},
-										["n_amt"] = 1,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 610,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 610,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380449,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380428,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.005586,
 							["delay"] = 1672380428,
-							["last_event"] = 1672380428,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 562,
 					["tipo"] = 7,
+					["combatId"] = 562,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.004935,
@@ -18007,7 +18030,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -18019,333 +18041,334 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.004935,
+							["tipo"] = 3,
 							["last_event"] = 1672380459,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 940.0049349999999,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 562,
 					["tipo"] = 9,
+					["combatId"] = 562,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 2,
+										["id"] = 164812,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 2,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 21,
-										["appliedamt"] = 2,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 316,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 16,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 3,
-										["id"] = 393955,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 11,
-										["appliedamt"] = 3,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 2,
-										["id"] = 48517,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 13,
-										["appliedamt"] = 2,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 2,
-										["id"] = 387678,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 4,
-										["appliedamt"] = 2,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 2,
-										["id"] = 343648,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 343648,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 2,
-										["id"] = 393959,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 12,
-										["appliedamt"] = 2,
+										["id"] = 393959,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 2,
-										["id"] = 191034,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 16,
-										["appliedamt"] = 2,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 58,
@@ -18353,41 +18376,41 @@ _detalhes_database = {
 							["spec"] = 102,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[78674] = 1,
-								[190984] = 2,
-								[8921] = 4,
 								[88747] = 1,
+								[190984] = 2,
+								[191034] = 2,
+								[78674] = 1,
 								[202347] = 1,
 								[93402] = 2,
 								[194153] = 4,
-								[191034] = 2,
+								[8921] = 4,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380450,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Primal Revenant",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[387037] = 1,
 								[387277] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
 							["aID"] = "195917",
 						}, -- [2]
@@ -18395,38 +18418,38 @@ _detalhes_database = {
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [3]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378012] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E7C6F",
 							["aID"] = "186823",
 						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 562,
 					["tipo"] = 2,
+					["combatId"] = 562,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -18437,12 +18460,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63865.735,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380427,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 947,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					115091.966159, -- [1]
@@ -18457,40 +18482,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:07:31",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Primal Revenant",
-				["TotalElapsedCombatTime"] = 63857.523,
-				["CombatEndedAt"] = 63857.523,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:07:07",
-				["end_time"] = 63857.523,
-				["combat_id"] = 562,
-				["tempo_start"] = 1672380427,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Primal Revenant"] = 1,
-					["Lavacaller Primalist"] = 1,
 				},
 				["totals_grupo"] = {
 					76519, -- [1]
@@ -18505,19 +18505,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:07:31",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Primal Revenant",
+				["TotalElapsedCombatTime"] = 63857.523,
+				["CombatEndedAt"] = 63857.523,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -18525,27 +18540,36 @@ _detalhes_database = {
 							["Zulbathal"] = 610.005586,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Zulbathal"] = 85744.006844,
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63857.523,
+				["combat_id"] = 562,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63834.001,
 				["contra"] = "Primal Revenant",
+				["frags"] = {
+					["Primal Revenant"] = 1,
+					["Lavacaller Primalist"] = 1,
+				},
+				["combat_counter"] = 947,
+				["data_inicio"] = "01:07:07",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63834.001,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [24]
 			{
 				{
-					["combatId"] = 561,
 					["tipo"] = 2,
+					["combatId"] = 561,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -18559,22 +18583,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 28351.005658,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 27283.005658,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380392,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -18754,22 +18764,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 27283.005658,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 3327.973430919031,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 28351.005658,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380392,
 							["tipo"] = 1,
-							["damage_taken"] = 4787.005658,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380391,
+							["last_dps"] = 3327.973430919031,
 							["start_time"] = 1672380385,
 							["delay"] = 0,
-							["last_event"] = 1672380391,
+							["damage_taken"] = 4787.005658,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.005641,
-							["total"] = 4787.005641,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -18777,23 +18800,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Zulbathal"] = 4787,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186822-00002E7FDF",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186822",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4787.005641,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 28351.005641,
+							["monster"] = true,
 							["end_time"] = 1672380392,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380391,
 							["nome"] = "Infused Ruby Whelpling",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -18825,21 +18847,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186822",
-							["serial"] = "Creature-0-4229-2444-17344-186822-00002E7FDF",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380391,
-							["damage_taken"] = 28351.005641,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380383,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 4787.005641,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.001798,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -18847,19 +18870,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380389,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1068.001798,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380392,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001798,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -18890,29 +18913,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 1068.001798,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380389,
-							["damage_taken"] = 0.001798,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380385,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 561,
 					["tipo"] = 3,
+					["combatId"] = 561,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 561,
 					["tipo"] = 7,
+					["combatId"] = 561,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.001953,
@@ -18929,7 +18953,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -18941,245 +18964,246 @@ _detalhes_database = {
 										["counter"] = 6,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 12.001953,
+							["tipo"] = 3,
 							["last_event"] = 1672380427,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1408.001953,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 561,
 					["tipo"] = 9,
+					["combatId"] = 561,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
+										["id"] = 164815,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[81281] = {
 										["appliedamt"] = 3,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 2,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 1,
-										["appliedamt"] = 2,
+										["id"] = 393957,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 3,
+										["id"] = 164812,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 114,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 13,
 							["nome"] = "Zulbathal",
@@ -19192,20 +19216,20 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380392,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 561,
 					["tipo"] = 2,
+					["combatId"] = 561,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -19216,7 +19240,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63834.001,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380383,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -19225,7 +19249,9 @@ _detalhes_database = {
 						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 946,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					33137.96708999999, -- [1]
@@ -19240,39 +19266,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:06:32",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Infused Ruby Whelpling",
-				["TotalElapsedCombatTime"] = 63799.128,
-				["CombatEndedAt"] = 63799.128,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:06:24",
-				["end_time"] = 63799.128,
-				["combat_id"] = 561,
-				["tempo_start"] = 1672380383,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Infused Ruby Whelpling"] = 3,
 				},
 				["totals_grupo"] = {
 					27283, -- [1]
@@ -19287,26 +19289,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:06:32",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Infused Ruby Whelpling",
+				["TotalElapsedCombatTime"] = 63799.128,
+				["CombatEndedAt"] = 63799.128,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -19314,19 +19329,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63799.128,
+				["combat_id"] = 561,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63790.609,
 				["contra"] = "Infused Ruby Whelpling",
+				["frags"] = {
+					["Infused Ruby Whelpling"] = 3,
+				},
+				["combat_counter"] = 946,
+				["data_inicio"] = "01:06:24",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63790.609,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [25]
 			{
 				{
-					["combatId"] = 560,
 					["tipo"] = 2,
+					["combatId"] = 560,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -19340,22 +19365,8 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["total"] = 28239.007353,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 20217.007353,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380377,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 1,
@@ -19544,22 +19555,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 20217.007353,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2733.424388055814,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 28239.007353,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380377,
 							["tipo"] = 1,
-							["damage_taken"] = 6411.007353,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380377,
+							["last_dps"] = 2733.424388055814,
 							["start_time"] = 1672380367,
 							["delay"] = 0,
-							["last_event"] = 1672380377,
+							["damage_taken"] = 6411.007353,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.004796,
-							["total"] = 9068.004796000001,
 							["damage_from"] = {
 								["Ruby Egg Guardian"] = true,
 								["Zulbathal"] = true,
@@ -19571,23 +19595,22 @@ _detalhes_database = {
 								["Zulbathal"] = 6411,
 								["Janniss"] = 2657,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186823",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9068.004796000001,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 55933.004796,
+							["monster"] = true,
 							["end_time"] = 1672380383,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380380,
 							["nome"] = "Lavacaller Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -19645,21 +19668,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186823",
-							["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380380,
-							["damage_taken"] = 55933.004796,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380370,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 9068.004796000001,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.001255,
-							["aID"] = "190171",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -19667,19 +19691,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-							["on_hold"] = false,
 							["classe"] = "PET",
+							["last_event"] = 1672380377,
+							["aID"] = "190171",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8022.001255,
+							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
 							["end_time"] = 1672380377,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001255,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -19738,29 +19762,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total"] = 8022.001255,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380377,
-							["damage_taken"] = 0.001255,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380369,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 560,
 					["tipo"] = 3,
+					["combatId"] = 560,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 560,
 					["tipo"] = 7,
+					["combatId"] = 560,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.006371,
@@ -19777,7 +19802,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -19789,245 +19813,246 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.006371,
+							["tipo"] = 3,
 							["last_event"] = 1672380377,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.006371,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 560,
 					["tipo"] = 9,
+					["combatId"] = 560,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 92,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
+										["id"] = 393955,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[279709] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+									[343648] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 23,
 							["nome"] = "Zulbathal",
@@ -20042,29 +20067,29 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380377,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lavacaller Primalist",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[378012] = 2,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
 							["aID"] = "186823",
 						}, -- [2]
@@ -20072,22 +20097,22 @@ _detalhes_database = {
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 1,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 560,
 					["tipo"] = 2,
+					["combatId"] = 560,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -20098,12 +20123,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63790.087,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380367,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 945,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					37306.97076500001, -- [1]
@@ -20118,15 +20145,81 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					20217, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:06:18",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lavacaller Primalist",
+				["TotalElapsedCombatTime"] = 10.33099999999831,
+				["CombatEndedAt"] = 63784.833,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 28239.007353,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63784.833,
+				["combat_id"] = 560,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Lavacaller Primalist",
+				["frags"] = {
+					["Lavacaller Primalist"] = 2,
+					["Infused Ruby Whelpling"] = 3,
+				},
+				["combat_counter"] = 945,
+				["data_inicio"] = "01:06:08",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -20221,87 +20314,19 @@ _detalhes_database = {
 						["n"] = 3,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:06:18",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lavacaller Primalist",
-				["TotalElapsedCombatTime"] = 10.33099999999831,
-				["CombatEndedAt"] = 63784.833,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:06:08",
-				["end_time"] = 63784.833,
-				["combat_id"] = 560,
-				["tempo_start"] = 1672380367,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Lavacaller Primalist"] = 2,
-					["Infused Ruby Whelpling"] = 3,
-				},
-				["totals_grupo"] = {
-					20217, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 28239.007353,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63774.502,
-				["contra"] = "Lavacaller Primalist",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [26]
 			{
 				{
-					["combatId"] = 559,
 					["tipo"] = 2,
+					["combatId"] = 559,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 1099.006299,
-							["spec"] = 102,
 							["damage_from"] = {
 								["Molten Primalist"] = true,
 							},
@@ -20312,23 +20337,61 @@ _detalhes_database = {
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["on_hold"] = false,
-							["end_time"] = 1672380348,
 							["aID"] = "61-0CA8EB69",
+							["spec"] = 102,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 55672.006299,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["end_time"] = 1672380348,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 74673.006299,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
+									[81281] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 521,
+										["targets"] = {
+											["Firava the Rekindler"] = 2084,
+										},
+										["n_dmg"] = 2084,
+										["n_min"] = 521,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[26] = 2084,
+											[14] = 2084,
+											[29] = 2084,
+											[8] = 1042,
+											[17] = 2084,
+											[5] = 521,
+											[20] = 2084,
+											[11] = 2084,
+											[23] = 2084,
+										},
+										["total"] = 2084,
+										["c_max"] = 0,
+										["id"] = 81281,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[194153] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
@@ -20363,6 +20426,46 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[164812] = {
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 8673,
+										["g_amt"] = 0,
+										["n_max"] = 525,
+										["targets"] = {
+											["Firava the Rekindler"] = 19583,
+											["Molten Primalist"] = 3689,
+										},
+										["n_dmg"] = 14599,
+										["n_min"] = 440,
+										["g_dmg"] = 0,
+										["counter"] = 40,
+										["ChartData"] = {
+											[26] = 19951,
+											[14] = 7619,
+											[29] = 23272,
+											[8] = 4270,
+											[17] = 11983,
+											[5] = 3290,
+											[20] = 14252,
+											[11] = 6712,
+											[23] = 16975,
+										},
+										["total"] = 23272,
+										["c_max"] = 1058,
+										["id"] = 164812,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 907,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 31,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -20402,84 +20505,6 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[393869] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 128,
-										["targets"] = {
-											["Firava the Rekindler"] = 323,
-										},
-										["n_dmg"] = 323,
-										["n_min"] = 57,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[26] = 251,
-											[14] = 57,
-											[29] = 251,
-											[8] = 57,
-											[17] = 57,
-											[5] = 57,
-											[20] = 57,
-											[11] = 57,
-											[23] = 123,
-										},
-										["total"] = 323,
-										["c_max"] = 0,
-										["id"] = 393869,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[81281] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 521,
-										["targets"] = {
-											["Firava the Rekindler"] = 2084,
-										},
-										["n_dmg"] = 2084,
-										["n_min"] = 521,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[26] = 2084,
-											[14] = 2084,
-											[29] = 2084,
-											[8] = 1042,
-											[17] = 2084,
-											[5] = 521,
-											[20] = 2084,
-											[11] = 2084,
-											[23] = 2084,
-										},
-										["total"] = 2084,
-										["c_max"] = 0,
-										["id"] = 81281,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -20580,9 +20605,9 @@ _detalhes_database = {
 											[11] = 1111,
 											[17] = 1630,
 											[8] = 549,
-											[26] = 4170,
-											[29] = 4667,
 											[14] = 1111,
+											[29] = 4667,
+											[26] = 4170,
 											[23] = 4170,
 											[20] = 3198,
 										},
@@ -20601,62 +20626,62 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[164812] = {
-										["c_amt"] = 9,
+									[393869] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 8673,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 525,
+										["n_max"] = 128,
 										["targets"] = {
-											["Firava the Rekindler"] = 19583,
-											["Molten Primalist"] = 3689,
+											["Firava the Rekindler"] = 323,
 										},
-										["n_dmg"] = 14599,
-										["n_min"] = 440,
+										["n_dmg"] = 323,
+										["n_min"] = 57,
 										["g_dmg"] = 0,
-										["counter"] = 40,
+										["counter"] = 4,
 										["ChartData"] = {
-											[26] = 19951,
-											[14] = 7619,
-											[29] = 23272,
-											[8] = 4270,
-											[17] = 11983,
-											[5] = 3290,
-											[20] = 14252,
-											[11] = 6712,
-											[23] = 16975,
+											[26] = 251,
+											[14] = 57,
+											[29] = 251,
+											[8] = 57,
+											[17] = 57,
+											[5] = 57,
+											[20] = 57,
+											[11] = 57,
+											[23] = 123,
 										},
-										["total"] = 23272,
-										["c_max"] = 1058,
-										["id"] = 164812,
+										["total"] = 323,
+										["c_max"] = 0,
+										["id"] = 393869,
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
+										["spellschool"] = 72,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 907,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 31,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2353.759063797835,
-							["custom"] = 0,
+							["total"] = 74673.006299,
 							["tipo"] = 1,
-							["damage_taken"] = 9225.006299,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380347,
+							["last_dps"] = 2353.759063797835,
 							["start_time"] = 1672380316,
 							["delay"] = 0,
-							["last_event"] = 1672380347,
+							["damage_taken"] = 9225.006299,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006901,
-							["aID"] = "195915",
 							["damage_from"] = {
 								["Ruby Egg Guardian"] = true,
 								["Sendrax <Zulbathal>"] = true,
@@ -20668,22 +20693,23 @@ _detalhes_database = {
 								["Sendrax <Zulbathal>"] = 31299,
 								["Janniss"] = 48340,
 							},
-							["end_time"] = 1672380367,
+							["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "195915",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 118141.006901,
-							["monster"] = true,
+							["damage_taken"] = 261363.006901,
 							["dps_started"] = false,
-							["total"] = 118141.006901,
+							["end_time"] = 1672380367,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672380353,
 							["nome"] = "Firava the Rekindler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -20773,44 +20799,42 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
-							["last_dps"] = 0,
+							["total"] = 118141.006901,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380353,
-							["damage_taken"] = 261363.006901,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380330,
 							["delay"] = 1672380353,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.007722,
-							["friendlyfire"] = {
-							},
 							["damage_from"] = {
 								["Firava the Rekindler"] = true,
 							},
 							["targets"] = {
 								["Firava the Rekindler"] = 19001,
 							},
-							["on_hold"] = false,
 							["pets"] = {
 							},
-							["end_time"] = 1672380348,
-							["classe"] = "PET",
+							["on_hold"] = false,
+							["last_event"] = 1672380347,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 19001.007722,
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["dps_started"] = false,
+							["end_time"] = 1672380348,
 							["total"] = 19001.007722,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -20869,21 +20893,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "190171",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380347,
+							["tipo"] = 1,
 							["damage_taken"] = 31299.007722,
 							["start_time"] = 1672380319,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "PET",
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 580.005501,
-							["aID"] = "186825",
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Janniss"] = true,
@@ -20892,22 +20917,23 @@ _detalhes_database = {
 								["Zulbathal"] = 9225,
 								["Janniss"] = 1176,
 							},
-							["end_time"] = 1672380348,
+							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "186825",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10401.005501,
-							["monster"] = true,
+							["damage_taken"] = 34211.005501,
 							["dps_started"] = false,
-							["total"] = 10401.005501,
+							["end_time"] = 1672380348,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672380336,
 							["nome"] = "Molten Primalist",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -20966,23 +20992,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
-							["last_dps"] = 0,
+							["total"] = 10401.005501,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380336,
-							["damage_taken"] = 34211.005501,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380332,
 							["delay"] = 1672380336,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 559,
 					["tipo"] = 3,
+					["combatId"] = 559,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -21014,10 +21040,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -21037,31 +21062,32 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 1831,
 										},
-										["n_amt"] = 2,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1831,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 1831,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380347,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380321,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.002017,
 							["delay"] = 1672380321,
-							["last_event"] = 1672380321,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 559,
 					["tipo"] = 7,
+					["combatId"] = 559,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.005369,
@@ -21079,7 +21105,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -21091,88 +21116,88 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.005369,
+							["tipo"] = 3,
 							["last_event"] = 1672380367,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.005369,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 559,
 					["tipo"] = 9,
+					["combatId"] = 559,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 2,
+										["id"] = 164815,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[127797] = {
-										["activedamt"] = 0,
-										["id"] = 127797,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 127797,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 31,
-										["appliedamt"] = 2,
+										["id"] = 164812,
 										["refreshamt"] = 10,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 397,
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[127797] = {
 										["id"] = 127797,
@@ -21182,304 +21207,305 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 25,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[373579] = {
-										["activedamt"] = 1,
-										["id"] = 373579,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 373579,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 9,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 2,
-										["id"] = 191034,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 15,
-										["appliedamt"] = 2,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 69,
-							["cc_done_targets"] = {
-								["Firava the Rekindler"] = 1,
+							["spell_cast"] = {
+								[8921] = 9,
+								[191034] = 1,
+								[88747] = 1,
+								[102793] = 1,
+								[93402] = 3,
+								[194153] = 4,
+								[102383] = 1,
 							},
 							["cc_done"] = 1.006125,
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
-							["spell_cast"] = {
-								[191034] = 1,
-								[8921] = 9,
-								[102383] = 1,
-								[102793] = 1,
-								[93402] = 3,
-								[194153] = 4,
-								[88747] = 1,
+							["cc_done_targets"] = {
+								["Firava the Rekindler"] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["classe"] = "DRUID",
 							["buff_uptime_targets"] = {
 							},
-							["last_event"] = 1672380348,
+							["tipo"] = 4,
 							["pets"] = {
 								"Sendrax <Zulbathal>", -- [1]
 							},
-							["classe"] = "DRUID",
+							["last_event"] = 1672380348,
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Firava the Rekindler",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[396856] = 2,
 								[396975] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
 							["aID"] = "195915",
 						}, -- [2]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Molten Primalist",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[378150] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
 							["aID"] = "186825",
 						}, -- [3]
@@ -21487,22 +21513,22 @@ _detalhes_database = {
 							["flag_original"] = 8465,
 							["ownerName"] = "Zulbathal",
 							["nome"] = "Sendrax <Zulbathal>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["spell_cast"] = {
 								[391903] = 2,
 							},
-							["tipo"] = 4,
 							["aID"] = "190171",
+							["classe"] = "PET",
 							["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 							["last_event"] = 0,
 						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 559,
 					["tipo"] = 2,
+					["combatId"] = 559,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -21532,39 +21558,21 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					55672, -- [1]
-					1831, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "01:05:48",
 				["cleu_timeline"] = {
 				},
@@ -21580,14 +21588,14 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 							["Zulbathal"] = 1831.002017,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -21597,30 +21605,49 @@ _detalhes_database = {
 				},
 				["end_time"] = 63755.09400000001,
 				["combat_id"] = 559,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "01:05:17",
-				["CombatSkillCache"] = {
-				},
 				["frags"] = {
 					["Molten Primalist"] = 1,
 					["Firava the Rekindler"] = 1,
 				},
-				["start_time"] = 63723.369,
+				["overall_added"] = true,
+				["spells_cast_timeline"] = {
+				},
 				["TimeData"] = {
 				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					55672, -- [1]
+					1831, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 63723.369,
 				["contra"] = "Firava the Rekindler",
+				["data_inicio"] = "01:05:17",
 			}, -- [27]
 			{
 				{
-					["combatId"] = 558,
 					["tipo"] = 2,
+					["combatId"] = 558,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -21637,22 +21664,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 150811.002515,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 150811.002515,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380160,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -21670,18 +21683,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 1922,
 											[14] = 1922,
-											[44] = 1922,
+											[41] = 1922,
 											[29] = 1922,
 											[8] = 935,
-											[41] = 1922,
-											[17] = 1922,
+											[44] = 1922,
+											[32] = 1922,
 											[5] = 935,
-											[38] = 1922,
 											[20] = 1922,
+											[38] = 1922,
 											[11] = 1922,
 											[35] = 1922,
 											[23] = 1922,
-											[32] = 1922,
+											[17] = 1922,
 										},
 										["total"] = 1922,
 										["c_max"] = 0,
@@ -21716,18 +21729,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 36742,
 											[14] = 17025,
-											[44] = 56030,
+											[41] = 52471,
 											[29] = 39334,
 											[8] = 7490,
-											[41] = 52471,
-											[17] = 21780,
+											[44] = 56030,
+											[32] = 40707,
 											[5] = 6215,
-											[38] = 47010,
 											[20] = 26141,
+											[38] = 47010,
 											[11] = 12294,
 											[35] = 43603,
 											[23] = 30144,
-											[32] = 40707,
+											[17] = 21780,
 										},
 										["total"] = 57104,
 										["c_max"] = 1012,
@@ -21761,18 +21774,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 368,
 											[14] = 204,
-											[44] = 784,
+											[41] = 602,
 											[29] = 368,
 											[8] = 54,
-											[41] = 602,
-											[17] = 258,
+											[44] = 784,
+											[32] = 431,
 											[5] = 54,
-											[38] = 602,
 											[20] = 258,
+											[38] = 602,
 											[11] = 204,
 											[35] = 602,
 											[23] = 368,
-											[32] = 431,
+											[17] = 258,
 										},
 										["total"] = 784,
 										["c_max"] = 0,
@@ -21912,18 +21925,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 2438,
 											[14] = 1201,
-											[44] = 7596,
+											[41] = 7596,
 											[29] = 3424,
 											[8] = 801,
-											[41] = 7596,
-											[17] = 1613,
+											[44] = 7596,
+											[32] = 3424,
 											[5] = 801,
-											[38] = 6337,
 											[20] = 1613,
+											[38] = 6337,
 											[11] = 1201,
 											[35] = 4413,
 											[23] = 2438,
-											[32] = 3424,
+											[17] = 1613,
 										},
 										["total"] = 8304,
 										["c_max"] = 989,
@@ -21988,18 +22001,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 993,
 											[14] = 993,
-											[44] = 3346,
+											[41] = 993,
 											[29] = 993,
 											[8] = 993,
-											[41] = 993,
-											[17] = 993,
+											[44] = 3346,
+											[32] = 993,
 											[5] = 993,
-											[38] = 993,
 											[20] = 993,
+											[38] = 993,
 											[11] = 993,
 											[35] = 993,
 											[23] = 993,
-											[32] = 993,
+											[17] = 993,
 										},
 										["total"] = 5042,
 										["c_max"] = 0,
@@ -22033,18 +22046,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 7935,
 											[14] = 7935,
-											[44] = 18835,
+											[41] = 7935,
 											[29] = 7935,
 											[8] = 7935,
-											[41] = 7935,
-											[17] = 7935,
+											[44] = 18835,
+											[32] = 7935,
 											[5] = 7935,
-											[38] = 7935,
 											[20] = 7935,
+											[38] = 7935,
 											[11] = 7935,
 											[35] = 7935,
 											[23] = 7935,
-											[32] = 7935,
+											[17] = 7935,
 										},
 										["total"] = 18835,
 										["c_max"] = 7858,
@@ -22079,18 +22092,18 @@ _detalhes_database = {
 										["ChartData"] = {
 											[26] = 10045,
 											[14] = 4689,
-											[44] = 13603,
+											[41] = 13237,
 											[29] = 10045,
 											[8] = 859,
-											[41] = 13237,
-											[17] = 4908,
+											[44] = 13603,
+											[32] = 10561,
 											[5] = 216,
-											[38] = 12701,
 											[20] = 6444,
+											[38] = 12701,
 											[11] = 3497,
 											[35] = 11761,
 											[23] = 8280,
-											[32] = 10561,
+											[17] = 4908,
 										},
 										["total"] = 13976,
 										["c_max"] = 686,
@@ -22108,46 +22121,58 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 150811.002515,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 3225.97280187838,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 150811.002515,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380160,
 							["tipo"] = 1,
-							["damage_taken"] = 50471.002515,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380160,
+							["last_dps"] = 3225.97280187838,
 							["start_time"] = 1672380114,
 							["delay"] = 0,
-							["last_event"] = 1672380160,
+							["damage_taken"] = 50471.002515,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.001554,
-							["total"] = 38641.001554,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 38641,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191917-00002E78BA",
 							["pets"] = {
 								"Magma Droplet <Erupting Magma>", -- [1]
 							},
-							["monster"] = true,
+							["aID"] = "191917",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 37172.001554,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 66725.001554,
+							["monster"] = true,
 							["end_time"] = 1672380160,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380160,
 							["nome"] = "Erupting Magma",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -22231,21 +22256,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191917",
-							["serial"] = "Creature-0-4229-2444-17344-191917-00002E78BA",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380160,
-							["damage_taken"] = 66725.001554,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380133,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 38641.001554,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.001431,
-							["aID"] = "191983",
 							["damage_from"] = {
 								["Ruby Culler"] = true,
 								["Oggrosh"] = true,
@@ -22256,22 +22282,23 @@ _detalhes_database = {
 								["Oggrosh"] = 8087,
 								["Zulbathal"] = 11830,
 							},
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4229-2444-17344-191983-00002E6DF8",
 							["pets"] = {
 							},
-							["end_time"] = 1672380316,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "191983",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 36570.001431,
-							["monster"] = true,
+							["damage_taken"] = 188451.001431,
 							["dps_started"] = false,
-							["total"] = 36570.001431,
+							["end_time"] = 1672380316,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672380196,
 							["nome"] = "Erupting Droplet",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 7,
@@ -22289,7 +22316,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 76,
 										["a_dmg"] = 0,
-										["total"] = 29621,
+										["r_amt"] = 0,
 										["c_max"] = 1014,
 										["MISS"] = 2,
 										["id"] = 1,
@@ -22304,7 +22331,7 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["n_amt"] = 64,
 										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["total"] = 29621,
 									}, -- [1]
 									[376756] = {
 										["c_amt"] = 0,
@@ -22415,44 +22442,43 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-191983-00002E6DF8",
-							["last_dps"] = 0,
+							["total"] = 36570.001431,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380196,
-							["damage_taken"] = 188451.001431,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380233,
 							["delay"] = 1672380196,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 8776,
 							["totalabsorbed"] = 0.003508,
-							["aID"] = "194526",
-							["serial"] = "Creature-0-4229-2444-17344-194526-00002E7EE8",
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 1469,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-194526-00002E7EE8",
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["classe"] = "PET",
+							["aID"] = "194526",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1469.003508,
+							["damage_taken"] = 13276.003508,
 							["dps_started"] = false,
 							["end_time"] = 1672380160,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["ownerName"] = "Erupting Magma",
 							["nome"] = "Magma Droplet <Erupting Magma>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -22510,23 +22536,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["last_event"] = 1672380141,
 							["total"] = 1469.003508,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380141,
-							["damage_taken"] = 13276.003508,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380157,
 							["delay"] = 1672380141,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 558,
 					["tipo"] = 3,
+					["combatId"] = 558,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -22558,10 +22585,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 8,
@@ -22583,28 +22609,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 407,
 										["c_curado"] = 21975,
-										["n_curado"] = 33458,
 										["totaldenied"] = 0,
 										["n_amt"] = 32,
+										["n_curado"] = 33458,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380265,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380180,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.004024,
 							["delay"] = 1672380180,
-							["last_event"] = 1672380180,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 558,
 					["tipo"] = 7,
+					["combatId"] = 558,
 					["_ActorTable"] = {
 						{
 							["received"] = 1878.004477,
@@ -22622,7 +22649,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 1878,
@@ -22634,322 +22660,323 @@ _detalhes_database = {
 										["counter"] = 20,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 30.004477,
+							["tipo"] = 3,
 							["last_event"] = 1672380316,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 2820.004477,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 558,
 					["tipo"] = 9,
+					["combatId"] = 558,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 3,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 4,
+										["id"] = 164815,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 9,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 46,
-										["appliedamt"] = 9,
+										["id"] = 164812,
 										["refreshamt"] = 13,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 590,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 2,
-										["id"] = 279709,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 30,
-										["appliedamt"] = 2,
+										["id"] = 279709,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 2,
-										["id"] = 88747,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 27,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 4,
-										["id"] = 393955,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 17,
-										["appliedamt"] = 4,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 2,
-										["id"] = 157228,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 25,
-										["appliedamt"] = 2,
+										["id"] = 157228,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 4,
-										["id"] = 387678,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 11,
-										["appliedamt"] = 4,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 3,
-										["id"] = 393763,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 27,
-										["appliedamt"] = 3,
+										["id"] = 393763,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 4,
-										["id"] = 191034,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 26,
-										["appliedamt"] = 4,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 77,
@@ -22958,27 +22985,28 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[102560] = 1,
-								[93402] = 3,
-								[8921] = 14,
 								[88747] = 2,
+								[191034] = 4,
+								[93402] = 3,
 								[8936] = 4,
 								[202347] = 2,
 								[194153] = 1,
-								[191034] = 4,
+								[8921] = 14,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380160,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Erupting Droplet",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
@@ -22986,30 +23014,29 @@ _detalhes_database = {
 								[370049] = 6,
 								[376754] = 11,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7ED8",
 							["aID"] = "191983",
 						}, -- [2]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Erupting Magma",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[391998] = 6,
 								[383864] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 								"Magma Droplet <Erupting Magma>", -- [1]
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191917-00002E78BA",
 							["aID"] = "191917",
 						}, -- [3]
@@ -23032,8 +23059,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 558,
 					["tipo"] = 2,
+					["combatId"] = 558,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -23044,7 +23071,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63723.231,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380114,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -23053,7 +23080,9 @@ _detalhes_database = {
 						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 943,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					226021.938384, -- [1]
@@ -23068,15 +23097,83 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					150811, -- [1]
+					55433, -- [2]
+					{
+						0, -- [1]
+						[0] = 1878,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:02:41",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Erupting Droplet",
+				["TotalElapsedCombatTime"] = 63567.877,
+				["CombatEndedAt"] = 63567.877,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 23903.004024,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 150811.002515,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63567.877,
+				["combat_id"] = 558,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Erupting Droplet",
+				["frags"] = {
+					["Erupting Magma"] = 1,
+					["Magma Droplet"] = 1,
+					["Erupting Droplet"] = 16,
+				},
+				["combat_counter"] = 943,
+				["data_inicio"] = "01:01:54",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -23295,84 +23392,15 @@ _detalhes_database = {
 						["n"] = 19,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:02:41",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Erupting Droplet",
-				["TotalElapsedCombatTime"] = 63567.877,
-				["CombatEndedAt"] = 63567.877,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:01:54",
-				["end_time"] = 63567.877,
-				["combat_id"] = 558,
-				["tempo_start"] = 1672380114,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Erupting Magma"] = 1,
-					["Magma Droplet"] = 1,
-					["Erupting Droplet"] = 16,
-				},
-				["totals_grupo"] = {
-					150811, -- [1]
-					55433, -- [2]
-					{
-						0, -- [1]
-						[0] = 1878,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 23903.004024,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 150811.002515,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63521.128,
-				["contra"] = "Erupting Droplet",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [28]
 			{
 				{
-					["combatId"] = 557,
 					["tipo"] = 2,
+					["combatId"] = 557,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -23388,22 +23416,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 39304.00543000001,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 39304.00543000001,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380108,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 3,
@@ -23741,22 +23755,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 39304.00543000001,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2501.687061930659,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 39304.00543000001,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380108,
 							["tipo"] = 1,
-							["damage_taken"] = 12693.00543,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380112,
+							["last_dps"] = 2501.687061930659,
 							["start_time"] = 1672380092,
 							["delay"] = 0,
-							["last_event"] = 1672380112,
+							["damage_taken"] = 12693.00543,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.003138,
-							["total"] = 11484.003138,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Oggrosh"] = true,
@@ -23765,24 +23792,23 @@ _detalhes_database = {
 								["Zulbathal"] = 10049,
 								["Oggrosh"] = 1435,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
 							["pets"] = {
 								"Magma Droplet <Erupting Magma>", -- [1]
 							},
-							["monster"] = true,
+							["aID"] = "191917",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 11484.003138,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 55944.003138,
+							["monster"] = true,
 							["end_time"] = 1672380108,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380104,
 							["nome"] = "Erupting Magma",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -23866,21 +23892,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191917",
-							["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380104,
-							["damage_taken"] = 55944.003138,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380098,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 11484.003138,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 1063.001453,
-							["total"] = 10252.001453,
 							["damage_from"] = {
 								["Ruby Culler"] = true,
 								["Oggrosh"] = true,
@@ -23891,23 +23918,22 @@ _detalhes_database = {
 								["Oggrosh"] = 6415,
 								["Zulbathal"] = 2644,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7EB2",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "191983",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10252.001453,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 54662.001453,
+							["monster"] = true,
 							["end_time"] = 1672380114,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380112,
 							["nome"] = "Erupting Droplet",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -23998,21 +24024,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191983",
-							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7EB2",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380112,
-							["damage_taken"] = 54662.001453,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380092,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 10252.001453,
 						}, -- [3]
 						{
 							["flag_original"] = 8776,
 							["totalabsorbed"] = 0.007864,
-							["aID"] = "194526",
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Oggrosh"] = true,
@@ -24022,44 +24049,45 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4229-2444-17344-194526-00002E7EC5",
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["classe"] = "PET",
+							["aID"] = "194526",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007864,
+							["damage_taken"] = 7380.007864,
 							["dps_started"] = false,
 							["end_time"] = 1672380108,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["ownerName"] = "Erupting Magma",
 							["nome"] = "Magma Droplet <Erupting Magma>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["last_event"] = 0,
 							["total"] = 0.007864,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 7380.007864,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1672380108,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 557,
 					["tipo"] = 3,
+					["combatId"] = 557,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 557,
 					["tipo"] = 7,
+					["combatId"] = 557,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.007129,
@@ -24076,7 +24104,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -24088,245 +24115,246 @@ _detalhes_database = {
 										["counter"] = 6,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.007129,
+							["tipo"] = 3,
 							["last_event"] = 1672380114,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 1410.007129,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 557,
 					["tipo"] = 9,
+					["combatId"] = 557,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 7,
-										["appliedamt"] = 3,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 2,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 3,
+										["id"] = 164812,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 164,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 1,
-										["id"] = 191034,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 2,
-										["id"] = 88747,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 41,
 							["nome"] = "Zulbathal",
@@ -24342,54 +24370,54 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380108,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Erupting Magma",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[391998] = 2,
 								[383864] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
 							["aID"] = "191917",
 						}, -- [2]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Erupting Droplet",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[376754] = 3,
 								[370042] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7212",
 							["aID"] = "191983",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 557,
 					["tipo"] = 2,
+					["combatId"] = 557,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -24400,12 +24428,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63518.348,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380092,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 942,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					61039.98380799999, -- [1]
@@ -24420,41 +24450,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:01:49",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Erupting Magma",
-				["TotalElapsedCombatTime"] = 63515.429,
-				["CombatEndedAt"] = 63515.429,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:01:33",
-				["end_time"] = 63515.429,
-				["combat_id"] = 557,
-				["tempo_start"] = 1672380092,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Erupting Magma"] = 1,
-					["Magma Droplet"] = 1,
-					["Erupting Droplet"] = 4,
 				},
 				["totals_grupo"] = {
 					39304, -- [1]
@@ -24469,26 +24473,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:01:49",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Erupting Magma",
+				["TotalElapsedCombatTime"] = 63515.429,
+				["CombatEndedAt"] = 63515.429,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -24496,19 +24513,31 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63515.429,
+				["combat_id"] = 557,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63499.718,
 				["contra"] = "Erupting Magma",
+				["frags"] = {
+					["Erupting Magma"] = 1,
+					["Magma Droplet"] = 1,
+					["Erupting Droplet"] = 4,
+				},
+				["combat_counter"] = 942,
+				["data_inicio"] = "01:01:33",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63499.718,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [29]
 			{
 				{
-					["combatId"] = 556,
 					["tipo"] = 2,
+					["combatId"] = 556,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -24520,22 +24549,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 1388.00864,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1388.00864,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672380089,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -24594,22 +24609,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1388.00864,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 578.5780075037019,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 1388.00864,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672380089,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00864,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380088,
+							["last_dps"] = 578.5780075037019,
 							["start_time"] = 1672380086,
 							["delay"] = 0,
-							["last_event"] = 1672380088,
+							["damage_taken"] = 0.00864,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 400.007464,
-							["total"] = 400.007464,
 							["damage_from"] = {
 								["Ruby Culler"] = true,
 								["Oggrosh"] = true,
@@ -24618,23 +24646,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Oggrosh"] = 400,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7EAE",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "191983",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 400.007464,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 9741.007464,
+							["monster"] = true,
 							["end_time"] = 1672380089,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672380086,
 							["nome"] = "Erupting Droplet",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -24691,28 +24718,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191983",
-							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7EAE",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672380086,
-							["damage_taken"] = 9741.007464,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380086,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 400.007464,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 556,
 					["tipo"] = 3,
+					["combatId"] = 556,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 556,
 					["tipo"] = 7,
+					["combatId"] = 556,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.003246,
@@ -24729,7 +24758,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -24741,183 +24769,184 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.003246,
+							["tipo"] = 3,
 							["last_event"] = 1672380092,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.003246,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 556,
 					["tipo"] = 9,
+					["combatId"] = 556,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 25,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 2,
-							["nome"] = "Zulbathal",
-							["spec"] = 102,
-							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
-							["last_event"] = 1672380089,
+							["spec"] = 102,
+							["grupo"] = true,
+							["classe"] = "DRUID",
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["nome"] = "Zulbathal",
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["last_event"] = 1672380089,
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Erupting Droplet",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[370042] = 3,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7EA1",
 							["aID"] = "191983",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 556,
 					["tipo"] = 2,
+					["combatId"] = 556,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -24928,12 +24957,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63499.718,
-				["overall_added"] = true,
+				["tempo_start"] = 1672380086,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 941,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					1787.987493, -- [1]
@@ -24948,39 +24979,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "01:01:29",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Erupting Droplet",
-				["TotalElapsedCombatTime"] = 2.398999999997614,
-				["CombatEndedAt"] = 63496.078,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "01:01:27",
-				["end_time"] = 63496.078,
-				["combat_id"] = 556,
-				["tempo_start"] = 1672380086,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Erupting Droplet"] = 1,
 				},
 				["totals_grupo"] = {
 					1388, -- [1]
@@ -24995,26 +25002,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "01:01:29",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Erupting Droplet",
+				["TotalElapsedCombatTime"] = 2.398999999997614,
+				["CombatEndedAt"] = 63496.078,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -25022,24 +25042,33 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63496.078,
+				["combat_id"] = 556,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63493.679,
 				["contra"] = "Erupting Droplet",
+				["frags"] = {
+					["Erupting Droplet"] = 1,
+				},
+				["combat_counter"] = 941,
+				["data_inicio"] = "01:01:27",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63493.679,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [30]
 			{
 				{
-					["combatId"] = 555,
 					["tipo"] = 2,
+					["combatId"] = 555,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.003886,
-							["spec"] = 102,
 							["damage_from"] = {
 								["Erupting Droplet"] = true,
 							},
@@ -25048,22 +25077,21 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["end_time"] = 1672380084,
 							["aID"] = "61-0CA8EB69",
+							["spec"] = 102,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 19580.003886,
-							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-61-0CA8EB69",
+							["dps_started"] = false,
+							["end_time"] = 1672380084,
+							["classe"] = "DRUID",
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 19580.003886,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -25230,21 +25258,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 1517.82975860448,
-							["custom"] = 0,
+							["total"] = 19580.003886,
 							["tipo"] = 1,
-							["damage_taken"] = 3598.003886,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672380082,
+							["last_dps"] = 1517.82975860448,
 							["start_time"] = 1672380071,
 							["delay"] = 0,
-							["last_event"] = 1672380082,
+							["damage_taken"] = 3598.003886,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 5238.008051,
-							["aID"] = "191983",
 							["damage_from"] = {
 								["Ruby Culler"] = true,
 								["Oggrosh"] = true,
@@ -25256,22 +25285,23 @@ _detalhes_database = {
 								["Oggrosh"] = 2301,
 								["Zulbathal"] = 3598,
 							},
-							["end_time"] = 1672380084,
+							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E50",
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "191983",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7669.008051,
-							["monster"] = true,
+							["damage_taken"] = 59700.008051,
 							["dps_started"] = false,
-							["total"] = 7669.008051,
+							["end_time"] = 1672380084,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672380084,
 							["nome"] = "Erupting Droplet",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -25412,23 +25442,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E50",
-							["last_dps"] = 0,
+							["total"] = 7669.008051,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672380084,
-							["damage_taken"] = 59700.008051,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380071,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 555,
 					["tipo"] = 3,
+					["combatId"] = 555,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -25460,10 +25490,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -25483,31 +25512,32 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 3052,
 										},
-										["n_amt"] = 8,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 3052,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 8,
+										["n_curado"] = 3052,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672380075,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672380080,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.004512,
 							["delay"] = 0,
-							["last_event"] = 1672380080,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 555,
 					["tipo"] = 7,
+					["combatId"] = 555,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.003509,
@@ -25525,7 +25555,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -25537,190 +25566,191 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.003509,
+							["tipo"] = 3,
 							["last_event"] = 1672380086,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.003509,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 555,
 					["tipo"] = 9,
+					["combatId"] = 555,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 4,
+										["id"] = 164812,
 										["refreshamt"] = 9,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 140,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 1,
-										["id"] = 191034,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 12,
@@ -25732,17 +25762,18 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672380084,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Erupting Droplet",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
@@ -25750,20 +25781,19 @@ _detalhes_database = {
 								[370049] = 3,
 								[376754] = 5,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E33",
 							["aID"] = "191983",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 555,
 					["tipo"] = 2,
+					["combatId"] = 555,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -25793,39 +25823,21 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					19580, -- [1]
-					3052, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "01:01:25",
 				["cleu_timeline"] = {
 				},
@@ -25841,14 +25853,14 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 							["Zulbathal"] = 3052.004512,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -25858,29 +25870,48 @@ _detalhes_database = {
 				},
 				["end_time"] = 63491.476,
 				["combat_id"] = 555,
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags"] = {
+					["Erupting Droplet"] = 6,
 				},
 				["overall_added"] = true,
 				["spells_cast_timeline"] = {
 				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "01:01:12",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Erupting Droplet"] = 6,
-				},
-				["start_time"] = 63478.576,
 				["TimeData"] = {
 				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					19580, -- [1]
+					3052, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 63478.576,
 				["contra"] = "Erupting Droplet",
+				["data_inicio"] = "01:01:12",
 			}, -- [31]
 			{
 				{
-					["combatId"] = 554,
 					["tipo"] = 2,
+					["combatId"] = 554,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -25890,41 +25921,40 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
+							["serial"] = "Player-61-0CA8EB69",
 							["pets"] = {
 							},
 							["spec"] = 102,
+							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004559,
+							["end_time"] = 1672379992,
+							["dps_started"] = false,
+							["total"] = 0.004559,
 							["friendlyfire"] = {
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1672379992,
-							["friendlyfire_total"] = 0,
-							["aID"] = "61-0CA8EB69",
+							["last_event"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 0.004559,
-							["serial"] = "Player-61-0CA8EB69",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 1057.004559,
 							["start_time"] = 1672379992,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "61-0CA8EB69",
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 1372.002542,
-							["aID"] = "186684",
 							["damage_from"] = {
 								["Daxisius <Vordai>"] = true,
 							},
@@ -25932,22 +25962,23 @@ _detalhes_database = {
 								["Zulbathal"] = 1057,
 								["Vordai"] = 1372,
 							},
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4229-2444-17344-186684-00002E7121",
 							["pets"] = {
 							},
-							["end_time"] = 1672380071,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "186684",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2429.002542,
-							["monster"] = true,
+							["damage_taken"] = 3025.002542,
 							["dps_started"] = false,
-							["total"] = 2429.002542,
+							["end_time"] = 1672380071,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672379993,
 							["nome"] = "Lava Phoenix",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -25979,29 +26010,29 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-186684-00002E7121",
-							["last_dps"] = 0,
+							["total"] = 2429.002542,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672379993,
-							["damage_taken"] = 3025.002542,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672380064,
 							["delay"] = 1672379993,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 554,
 					["tipo"] = 3,
+					["combatId"] = 554,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 554,
 					["tipo"] = 7,
+					["combatId"] = 554,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.005398,
@@ -26017,25 +26048,25 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1300,
 							["alternatepower"] = 14.005398,
+							["tipo"] = 3,
 							["last_event"] = 1672380071,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.005398,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 554,
 					["tipo"] = 9,
+					["combatId"] = 554,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -26044,171 +26075,171 @@ _detalhes_database = {
 							},
 							["spec"] = 102,
 							["grupo"] = true,
+							["pets"] = {
+							},
 							["spell_cast"] = {
 								[372610] = 1,
 							},
 							["buff_uptime"] = 65,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
 							["tipo"] = 4,
-							["aID"] = "61-0CA8EB69",
+							["classe"] = "DRUID",
+							["last_event"] = 1672379992,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388376] = {
-										["activedamt"] = 1,
-										["id"] = 388376,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 388376,
 										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[368901] = {
-										["activedamt"] = 1,
-										["id"] = 368901,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 368901,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-61-0CA8EB69",
-							["last_event"] = 1672379992,
+							["aID"] = "61-0CA8EB69",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 554,
 					["tipo"] = 2,
+					["combatId"] = 554,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -26219,7 +26250,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63478.576,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379987,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -26228,7 +26259,9 @@ _detalhes_database = {
 						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 939,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2428.952041999985, -- [1]
@@ -26243,38 +26276,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = -0.001125000000000043,
 						["dispell"] = 0,
+						["interrupt"] = -0.001125000000000043,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["data_fim"] = "00:59:53",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lava Phoenix",
-				["TotalElapsedCombatTime"] = 63399.77400000001,
-				["CombatEndedAt"] = 63399.77400000001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:59:48",
-				["end_time"] = 63399.77400000001,
-				["combat_id"] = 554,
-				["tempo_start"] = 1672379987,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
 				},
 				["totals_grupo"] = {
 					0, -- [1]
@@ -26289,26 +26299,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:59:53",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lava Phoenix",
+				["TotalElapsedCombatTime"] = 63399.77400000001,
+				["CombatEndedAt"] = 63399.77400000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -26316,19 +26339,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63399.77400000001,
+				["combat_id"] = 554,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63394.787,
 				["contra"] = "Lava Phoenix",
+				["frags"] = {
+				},
+				["combat_counter"] = 939,
+				["data_inicio"] = "00:59:48",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63394.787,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [32]
 			{
 				{
-					["combatId"] = 553,
 					["tipo"] = 2,
+					["combatId"] = 553,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -26341,22 +26373,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 64694.007484,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 64694.007484,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379969,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 1,
@@ -26560,45 +26578,57 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 64694.007484,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 3835.992142544193,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 64694.007484,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379969,
 							["tipo"] = 1,
-							["damage_taken"] = 9192.007484,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379969,
+							["last_dps"] = 3835.992142544193,
 							["start_time"] = 1672379952,
 							["delay"] = 0,
-							["last_event"] = 1672379969,
+							["damage_taken"] = 9192.007484,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.005557,
-							["total"] = 9192.005557,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 9192,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186792-00002E7D7D",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186792",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9192.005557,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 64694.005557,
+							["monster"] = true,
 							["end_time"] = 1672379969,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672379967,
 							["nome"] = "Qalashi Skirmisher",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -26683,22 +26713,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186792",
-							["serial"] = "Creature-0-4229-2444-17344-186792-00002E7D7D",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672379967,
-							["damage_taken"] = 64694.005557,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379954,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 9192.005557,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 553,
 					["tipo"] = 3,
+					["combatId"] = 553,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -26729,10 +26761,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 0,
@@ -26753,28 +26784,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1318,
 										["totaldenied"] = 0,
 										["n_amt"] = 6,
+										["n_curado"] = 1318,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672379962,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672379959,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.006078,
 							["delay"] = 1672379959,
-							["last_event"] = 1672379959,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 553,
 					["tipo"] = 7,
+					["combatId"] = 553,
 					["_ActorTable"] = {
 						{
 							["received"] = 470.001704,
@@ -26792,7 +26824,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 470,
@@ -26804,304 +26835,304 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 6.001704,
+							["tipo"] = 3,
 							["last_event"] = 1672379969,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.001704,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 553,
 					["tipo"] = 9,
+					["combatId"] = 553,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["dispell"] = 1.008197,
 							["buff_uptime"] = 211,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 7,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 2,
-										["id"] = 157228,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 12,
-										["appliedamt"] = 2,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 2,
-										["id"] = 393959,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 11,
-										["appliedamt"] = 2,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["dispell_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[2908] = {
 										["dispell"] = 1,
@@ -27115,14 +27146,13 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 57,
+							["classe"] = "DRUID",
 							["dispell_oque"] = {
 								[369788] = 1,
-							},
-							["dispell_targets"] = {
-								["Qalashi Skirmisher"] = 1,
 							},
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
@@ -27140,35 +27170,37 @@ _detalhes_database = {
 							},
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 1672379969,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["dispell_targets"] = {
+								["Qalashi Skirmisher"] = 1,
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Qalashi Skirmisher",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[369788] = 1,
 								[369751] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186792-00002E7D7D",
 							["aID"] = "186792",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 553,
 					["tipo"] = 2,
+					["combatId"] = 553,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -27179,7 +27211,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63386.18500000001,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379952,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -27188,7 +27220,9 @@ _detalhes_database = {
 						["last"] = 4,
 					},
 				},
-				["combat_counter"] = 938,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					73885.980098, -- [1]
@@ -27203,39 +27237,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 1,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:59:30",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Qalashi Skirmisher",
-				["TotalElapsedCombatTime"] = 63376.405,
-				["CombatEndedAt"] = 63376.405,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:59:13",
-				["end_time"] = 63376.405,
-				["combat_id"] = 553,
-				["tempo_start"] = 1672379952,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Qalashi Skirmisher"] = 1,
 				},
 				["totals_grupo"] = {
 					64694, -- [1]
@@ -27250,19 +27260,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 1,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:59:30",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Qalashi Skirmisher",
+				["TotalElapsedCombatTime"] = 63376.405,
+				["CombatEndedAt"] = 63376.405,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -27270,27 +27295,35 @@ _detalhes_database = {
 							["Zulbathal"] = 1318.006078,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Zulbathal"] = 64694.007484,
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63376.405,
+				["combat_id"] = 553,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63359.54,
 				["contra"] = "Qalashi Skirmisher",
+				["frags"] = {
+					["Qalashi Skirmisher"] = 1,
+				},
+				["combat_counter"] = 938,
+				["data_inicio"] = "00:59:13",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63359.54,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [33]
 			{
 				{
-					["combatId"] = 552,
 					["tipo"] = 2,
+					["combatId"] = 552,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -27303,22 +27336,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 121950.005788,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 121950.005788,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379942,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -27369,9 +27388,9 @@ _detalhes_database = {
 											[11] = 6611,
 											[17] = 10885,
 											[8] = 5093,
-											[23] = 16105,
-											[14] = 8699,
 											[5] = 4081,
+											[14] = 8699,
+											[23] = 16105,
 											[20] = 14930,
 										},
 										["total"] = 16734,
@@ -27404,9 +27423,9 @@ _detalhes_database = {
 										["counter"] = 2,
 										["ChartData"] = {
 											[14] = 75,
-											[23] = 226,
 											[17] = 226,
 											[20] = 226,
+											[23] = 226,
 										},
 										["total"] = 226,
 										["c_max"] = 0,
@@ -27437,9 +27456,9 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["ChartData"] = {
-											[23] = 4617,
 											[20] = 3084,
 											[17] = 3084,
+											[23] = 4617,
 										},
 										["total"] = 4617,
 										["c_max"] = 3084,
@@ -27471,9 +27490,9 @@ _detalhes_database = {
 										["counter"] = 1,
 										["ChartData"] = {
 											[14] = 1683,
-											[23] = 1683,
 											[17] = 1683,
 											[20] = 1683,
+											[23] = 1683,
 										},
 										["total"] = 1683,
 										["c_max"] = 0,
@@ -27507,9 +27526,9 @@ _detalhes_database = {
 											[11] = 5727,
 											[17] = 8103,
 											[8] = 4346,
-											[23] = 11794,
-											[14] = 6648,
 											[5] = 2964,
+											[14] = 6648,
+											[23] = 11794,
 											[20] = 9594,
 										},
 										["total"] = 12365,
@@ -27579,9 +27598,9 @@ _detalhes_database = {
 											[11] = 73451,
 											[17] = 73451,
 											[8] = 73451,
-											[23] = 73451,
-											[14] = 73451,
 											[5] = 45788,
+											[14] = 73451,
+											[23] = 73451,
 											[20] = 73451,
 										},
 										["total"] = 73451,
@@ -27613,9 +27632,9 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 8,
 										["ChartData"] = {
-											[23] = 2298,
 											[20] = 1597,
 											[17] = 693,
+											[23] = 2298,
 										},
 										["total"] = 2696,
 										["c_max"] = 0,
@@ -27649,9 +27668,9 @@ _detalhes_database = {
 											[11] = 1173,
 											[17] = 1736,
 											[8] = 586,
-											[23] = 3798,
-											[14] = 1736,
 											[5] = 586,
+											[14] = 1736,
+											[23] = 3798,
 											[20] = 2362,
 										},
 										["total"] = 5423,
@@ -27670,45 +27689,57 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 121950.005788,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 4705.224391851614,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 121950.005788,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379942,
 							["tipo"] = 1,
-							["damage_taken"] = 39949.005788,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379941,
+							["last_dps"] = 4705.224391851614,
 							["start_time"] = 1672379916,
 							["delay"] = 0,
-							["last_event"] = 1672379941,
+							["damage_taken"] = 39949.005788,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 4092.006437,
-							["total"] = 39949.006437,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 39949,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "186777",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 39949.006437,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 121950.006437,
+							["monster"] = true,
 							["end_time"] = 1672379942,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672379941,
 							["nome"] = "Meatgrinder Sotok",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -27766,22 +27797,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "186777",
-							["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672379941,
-							["damage_taken"] = 121950.006437,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379920,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 39949.006437,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 552,
 					["tipo"] = 3,
+					["combatId"] = 552,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -27813,10 +27846,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -27836,11 +27868,11 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 5254,
 										},
-										["n_amt"] = 3,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 5254,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 5254,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -27863,28 +27895,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 24206,
 										["totaldenied"] = 0,
 										["n_amt"] = 11,
+										["n_curado"] = 24206,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672379932,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672379951,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.006268,
 							["delay"] = 1672379929,
-							["last_event"] = 1672379951,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 552,
 					["tipo"] = 7,
+					["combatId"] = 552,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.004889,
@@ -27902,7 +27935,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -27914,333 +27946,334 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.004889,
+							["tipo"] = 3,
 							["last_event"] = 1672379952,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 469.004889,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 552,
 					["tipo"] = 9,
+					["combatId"] = 552,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[387572] = {
-										["activedamt"] = 0,
-										["id"] = 387572,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 387572,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 5,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 282,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 8,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48517] = {
-										["activedamt"] = 1,
-										["id"] = 48517,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 48517,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387710] = {
-										["activedamt"] = 1,
-										["id"] = 387710,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 387710,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 102560,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387572] = {
-										["activedamt"] = 1,
-										["id"] = 387572,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387572,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 26,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[191034] = {
-										["activedamt"] = 2,
-										["id"] = 191034,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 11,
-										["appliedamt"] = 2,
+										["id"] = 191034,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 69,
@@ -28259,36 +28292,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672379942,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Meatgrinder Sotok",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[392594] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
 							["aID"] = "186777",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 552,
 					["tipo"] = 2,
+					["combatId"] = 552,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -28299,12 +28332,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63356.688,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379916,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 937,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					161899, -- [1]
@@ -28319,15 +28354,81 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					121950, -- [1]
+					29460, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:59:03",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Meatgrinder Sotok",
+				["TotalElapsedCombatTime"] = 63349.788,
+				["CombatEndedAt"] = 63349.788,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 10913.006268,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 121950.005788,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63349.788,
+				["combat_id"] = 552,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Meatgrinder Sotok",
+				["frags"] = {
+					["Meatgrinder Sotok"] = 1,
+				},
+				["combat_counter"] = 937,
+				["data_inicio"] = "00:58:37",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -28478,82 +28579,15 @@ _detalhes_database = {
 						["n"] = 11,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:59:03",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Meatgrinder Sotok",
-				["TotalElapsedCombatTime"] = 63349.788,
-				["CombatEndedAt"] = 63349.788,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:58:37",
-				["end_time"] = 63349.788,
-				["combat_id"] = 552,
-				["tempo_start"] = 1672379916,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Meatgrinder Sotok"] = 1,
-				},
-				["totals_grupo"] = {
-					121950, -- [1]
-					29460, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 10913.006268,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 121950.005788,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63323.87,
-				["contra"] = "Meatgrinder Sotok",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [34]
 			{
 				{
-					["combatId"] = 551,
 					["tipo"] = 2,
+					["combatId"] = 551,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -28565,22 +28599,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 516.004317,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 516.004317,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379892,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 0,
@@ -28611,22 +28631,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 516.004317,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 255.1950133525501,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 516.004317,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379892,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004317,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379890,
+							["last_dps"] = 255.1950133525501,
 							["start_time"] = 1672379890,
 							["delay"] = 0,
-							["last_event"] = 1672379890,
+							["damage_taken"] = 0.004317,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.005503,
-							["total"] = 1316.005503,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 								["Janniss"] = true,
@@ -28634,23 +28667,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Janniss"] = 1316,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191446-00002E79CF",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "191446",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1316.005503,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 8272.005503,
+							["monster"] = true,
 							["end_time"] = 1672379892,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672379891,
 							["nome"] = "Qalashi Scoundrel",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -28681,28 +28713,30 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191446",
-							["serial"] = "Creature-0-4229-2444-17344-191446-00002E79CF",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672379891,
-							["damage_taken"] = 8272.005503,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379891,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 1316.005503,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 551,
 					["tipo"] = 3,
+					["combatId"] = 551,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 551,
 					["tipo"] = 7,
+					["combatId"] = 551,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.006127,
@@ -28718,192 +28752,192 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1300,
 							["alternatepower"] = 6.006127,
+							["tipo"] = 3,
 							["last_event"] = 1672379916,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.006127,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 551,
 					["tipo"] = 9,
+					["combatId"] = 551,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 20,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387710] = {
-										["activedamt"] = 1,
-										["id"] = 387710,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 387710,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 2,
-							["nome"] = "Zulbathal",
-							["spec"] = 102,
-							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
-							["last_event"] = 1672379892,
+							["spec"] = 102,
+							["grupo"] = true,
+							["classe"] = "DRUID",
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["nome"] = "Zulbathal",
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["last_event"] = 1672379892,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 551,
 					["tipo"] = 2,
+					["combatId"] = 551,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -28914,7 +28948,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63323.87,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379890,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -28923,7 +28957,9 @@ _detalhes_database = {
 						["last"] = 0,
 					},
 				},
-				["combat_counter"] = 936,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					1831.967360999999, -- [1]
@@ -28938,40 +28974,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:58:13",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Qalashi Scoundrel",
-				["TotalElapsedCombatTime"] = 2.022000000004482,
-				["CombatEndedAt"] = 63299.762,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:58:11",
-				["end_time"] = 63299.762,
-				["combat_id"] = 551,
-				["tempo_start"] = 1672379890,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Qalashi Ragetamer"] = 1,
-					["Qalashi Scoundrel"] = 1,
 				},
 				["totals_grupo"] = {
 					516, -- [1]
@@ -28986,26 +28997,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:58:13",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Qalashi Scoundrel",
+				["TotalElapsedCombatTime"] = 2.022000000004482,
+				["CombatEndedAt"] = 63299.762,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -29013,19 +29037,30 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63299.762,
+				["combat_id"] = 551,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63297.74,
 				["contra"] = "Qalashi Scoundrel",
+				["frags"] = {
+					["Qalashi Ragetamer"] = 1,
+					["Qalashi Scoundrel"] = 1,
+				},
+				["combat_counter"] = 936,
+				["data_inicio"] = "00:58:11",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63297.74,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [35]
 			{
 				{
-					["combatId"] = 550,
 					["tipo"] = 2,
+					["combatId"] = 550,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -29038,22 +29073,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 37776.005556,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 37776.005556,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379825,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 1,
@@ -29277,22 +29298,35 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37776.005556,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2166.676544651853,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 37776.005556,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379825,
 							["tipo"] = 1,
-							["damage_taken"] = 17933.005556,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379824,
+							["last_dps"] = 2166.676544651853,
 							["start_time"] = 1672379814,
 							["delay"] = 0,
-							["last_event"] = 1672379824,
+							["damage_taken"] = 17933.005556,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 684.004629,
-							["total"] = 23540.004629,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
@@ -29300,23 +29334,22 @@ _detalhes_database = {
 								["Zulbathal"] = 17933,
 								["Verdastrasza"] = 5607,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "191672",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 23540.004629,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 37776.004629,
+							["monster"] = true,
 							["end_time"] = 1672379890,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672379829,
 							["nome"] = "Lava Tarantula",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -29402,22 +29435,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191672",
-							["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672379829,
-							["damage_taken"] = 37776.004629,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379868,
 							["delay"] = 1672379829,
-							["tipo"] = 1,
+							["total"] = 23540.004629,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 550,
 					["tipo"] = 3,
+					["combatId"] = 550,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -29450,10 +29485,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[388380] = {
 										["c_amt"] = 0,
@@ -29473,11 +29507,11 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Zulbathal"] = 1167,
 										},
-										["n_amt"] = 2,
-										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1167,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 1167,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -29501,28 +29535,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 9982,
-										["n_curado"] = 5706,
 										["totaldenied"] = 0,
 										["n_amt"] = 10,
+										["n_curado"] = 5706,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672379869,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672379843,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.007526,
 							["delay"] = 1672379843,
-							["last_event"] = 1672379843,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 550,
 					["tipo"] = 7,
+					["combatId"] = 550,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.008497,
@@ -29540,7 +29575,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -29552,78 +29586,78 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 7.008497,
+							["tipo"] = 3,
 							["last_event"] = 1672379890,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.008497,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 550,
 					["tipo"] = 9,
+					["combatId"] = 550,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 175,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[368896] = {
 										["activedamt"] = 1,
@@ -29638,204 +29672,205 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388380] = {
-										["activedamt"] = 1,
-										["id"] = 388380,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 388380,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[388376] = {
-										["activedamt"] = 1,
-										["id"] = 388376,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 388376,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 31,
@@ -29852,36 +29887,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672379825,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Lava Tarantula",
 							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[384471] = 2,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
 							["aID"] = "191672",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 550,
 					["tipo"] = 2,
+					["combatId"] = 550,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -29915,76 +29950,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					37776, -- [1]
-					16855, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:57:06",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lava Tarantula",
-				["TotalElapsedCombatTime"] = 63232.534,
-				["CombatEndedAt"] = 63232.534,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 1167.007526,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 37776.005556,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 63232.534,
-				["combat_id"] = 550,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -30159,21 +30133,83 @@ _detalhes_database = {
 						["n"] = 14,
 					},
 				},
-				["data_inicio"] = "00:56:48",
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:57:06",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Lava Tarantula",
+				["TotalElapsedCombatTime"] = 63232.534,
+				["CombatEndedAt"] = 63232.534,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 1167.007526,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 37776.005556,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63232.534,
+				["combat_id"] = 550,
 				["frags"] = {
 					["Lava Tarantula"] = 1,
 				},
-				["start_time"] = 63215.099,
+				["overall_added"] = true,
+				["spells_cast_timeline"] = {
+				},
 				["TimeData"] = {
 				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					37776, -- [1]
+					16855, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 63215.099,
 				["contra"] = "Lava Tarantula",
+				["data_inicio"] = "00:56:48",
 			}, -- [36]
 			{
 				{
-					["combatId"] = 549,
 					["tipo"] = 2,
+					["combatId"] = 549,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -30186,22 +30222,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 48817.004043,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 48817.004043,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379777,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 2,
@@ -30398,37 +30420,6 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[81281] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 751,
-										["targets"] = {
-											["Qalashi Flameshatter"] = 2253,
-										},
-										["n_dmg"] = 2253,
-										["n_min"] = 751,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[11] = 1502,
-										},
-										["total"] = 2253,
-										["c_max"] = 0,
-										["id"] = 81281,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[88751] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -30458,6 +30449,37 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[81281] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 751,
+										["targets"] = {
+											["Qalashi Flameshatter"] = 2253,
+										},
+										["n_dmg"] = 2253,
+										["n_min"] = 751,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[11] = 1502,
+										},
+										["total"] = 2253,
+										["c_max"] = 0,
+										["id"] = 81281,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -30495,44 +30517,58 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 48817.004043,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 3683.468199123546,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 48817.004043,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379777,
 							["tipo"] = 1,
-							["damage_taken"] = 14212.004043,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379777,
+							["last_dps"] = 3683.468199123546,
 							["start_time"] = 1672379764,
 							["delay"] = 0,
-							["last_event"] = 1672379777,
+							["damage_taken"] = 14212.004043,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.008967,
-							["aID"] = "191136",
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 14212,
 							},
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4229-2444-17344-191136-00002E7D39",
 							["pets"] = {
 							},
-							["end_time"] = 1672379808,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
+							["aID"] = "191136",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 14212.008967,
-							["monster"] = true,
+							["damage_taken"] = 48817.008967,
 							["dps_started"] = false,
-							["total"] = 14212.008967,
+							["end_time"] = 1672379808,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1672379787,
 							["nome"] = "Qalashi Flameshatter",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[368984] = {
 										["c_amt"] = 0,
@@ -30590,23 +30626,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4229-2444-17344-191136-00002E7D39",
-							["last_dps"] = 0,
+							["total"] = 14212.008967,
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1672379787,
-							["damage_taken"] = 48817.008967,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379791,
 							["delay"] = 1672379787,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 549,
 					["tipo"] = 3,
+					["combatId"] = 549,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -30615,7 +30651,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
+							["aID"] = "61-0CA8EB69",
 							["totalover"] = 0.001183,
 							["total_without_pet"] = 20285.001183,
 							["total"] = 20285.001183,
@@ -30633,13 +30669,12 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.001183,
 							["healing_taken"] = 20285.001183,
 							["end_time"] = 1672379808,
+							["spec"] = 102,
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 2,
@@ -30660,28 +30695,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 472,
 										["c_curado"] = 945,
-										["n_curado"] = 19340,
 										["totaldenied"] = 0,
 										["n_amt"] = 13,
+										["n_curado"] = 19340,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["classe"] = "DRUID",
 							["start_time"] = 1672379791,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "61-0CA8EB69",
+							["last_event"] = 1672379798,
+							["heal_enemy_amt"] = 0,
 							["totaldenied"] = 0.001183,
 							["delay"] = 1672379798,
-							["last_event"] = 1672379798,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 549,
 					["tipo"] = 7,
+					["combatId"] = 549,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.004737,
@@ -30698,7 +30734,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -30710,267 +30745,268 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 7.004737,
+							["tipo"] = 3,
 							["last_event"] = 1672379777,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.004737,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 549,
 					["tipo"] = 9,
+					["combatId"] = 549,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 146,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
+										["id"] = 279709,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393955] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 1,
-										["id"] = 88747,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 2,
-										["id"] = 393763,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 11,
-										["appliedamt"] = 2,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 51,
 							["nome"] = "Zulbathal",
@@ -30987,36 +31023,36 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672379777,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Qalashi Flameshatter",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[368984] = 2,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-191136-00002E7D39",
 							["aID"] = "191136",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 549,
 					["tipo"] = 2,
+					["combatId"] = 549,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -31027,7 +31063,7 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63207.723,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379764,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -31036,7 +31072,9 @@ _detalhes_database = {
 						["last"] = 6,
 					},
 				},
-				["combat_counter"] = 934,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					63028.989896, -- [1]
@@ -31051,15 +31089,80 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					48817, -- [1]
+					20285, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:56:18",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Qalashi Flameshatter",
+				["TotalElapsedCombatTime"] = 63184.677,
+				["CombatEndedAt"] = 63184.677,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 48817.004043,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63184.677,
+				["combat_id"] = 549,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Qalashi Flameshatter",
+				["frags"] = {
+					["Qalashi Flameshatter"] = 1,
+				},
+				["combat_counter"] = 934,
+				["data_inicio"] = "00:56:05",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -31310,81 +31413,15 @@ _detalhes_database = {
 						["n"] = 21,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:56:18",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Qalashi Flameshatter",
-				["TotalElapsedCombatTime"] = 63184.677,
-				["CombatEndedAt"] = 63184.677,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:56:05",
-				["end_time"] = 63184.677,
-				["combat_id"] = 549,
-				["tempo_start"] = 1672379764,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Qalashi Flameshatter"] = 1,
-				},
-				["totals_grupo"] = {
-					48817, -- [1]
-					20285, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 48817.004043,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63171.424,
-				["contra"] = "Qalashi Flameshatter",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [37]
 			{
 				{
-					["combatId"] = 548,
 					["tipo"] = 2,
+					["combatId"] = 548,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -31396,22 +31433,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 9414.008985,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 9414.008985,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379759,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -31574,63 +31597,77 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9414.008985,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 1840.830853538801,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 9414.008985,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379759,
 							["tipo"] = 1,
-							["damage_taken"] = 0.008985,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379754,
+							["last_dps"] = 1840.830853538801,
 							["start_time"] = 1672379749,
 							["delay"] = 0,
-							["last_event"] = 1672379754,
+							["damage_taken"] = 0.008985,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.002298,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1672379759,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 							},
-							["serial"] = "Creature-0-4229-2444-17344-186965-00002E7D63",
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "186965",
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002298,
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4229-2444-17344-186965-00002E7D63",
+							["fight_component"] = true,
 							["total"] = 0.002298,
+							["aID"] = "186965",
 							["ownerName"] = "Lava Phoenix",
 							["nome"] = "Smoldering Feather <Lava Phoenix>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["end_time"] = 1672379759,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["on_hold"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 9414.002298,
+							["friendlyfire_total"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["last_dps"] = 0,
 							["start_time"] = 1672379759,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["damage_taken"] = 9414.002298,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 548,
 					["tipo"] = 3,
+					["combatId"] = 548,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -31661,10 +31698,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 1,
@@ -31685,28 +31721,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 473,
 										["c_curado"] = 473,
-										["n_curado"] = 375,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
+										["n_curado"] = 375,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672379750,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672379752,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.002498,
 							["delay"] = 0,
-							["last_event"] = 1672379752,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 548,
 					["tipo"] = 7,
+					["combatId"] = 548,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.005906,
@@ -31723,237 +31760,237 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.005906,
+							["tipo"] = 3,
 							["last_event"] = 1672379764,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.005906,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 548,
 					["tipo"] = 9,
+					["combatId"] = 548,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 123,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 3,
 										["id"] = 393955,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
+										["id"] = 24858,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[393961] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 393961,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[343648] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 8,
@@ -31967,20 +32004,20 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672379759,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 548,
 					["tipo"] = 2,
+					["combatId"] = 548,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -31991,12 +32028,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63171.424,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379749,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 933,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					9413.982108999999, -- [1]
@@ -32011,39 +32050,15 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:56:00",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Smoldering Feather <Lava Phoenix>",
-				["TotalElapsedCombatTime"] = 63166.638,
-				["CombatEndedAt"] = 63166.638,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:55:50",
-				["end_time"] = 63166.638,
-				["combat_id"] = 548,
-				["tempo_start"] = 1672379749,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Qalashi Marauder"] = 1,
 				},
 				["totals_grupo"] = {
 					9414, -- [1]
@@ -32058,19 +32073,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:56:00",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Smoldering Feather <Lava Phoenix>",
+				["TotalElapsedCombatTime"] = 63166.638,
+				["CombatEndedAt"] = 63166.638,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -32078,27 +32108,35 @@ _detalhes_database = {
 							["Zulbathal"] = 848.0024980000001,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Zulbathal"] = 9414.008985,
 						}, -- [1]
 					},
 				},
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 63166.638,
+				["combat_id"] = 548,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 63156.41,
 				["contra"] = "Smoldering Feather",
+				["frags"] = {
+					["Qalashi Marauder"] = 1,
+				},
+				["combat_counter"] = 933,
+				["data_inicio"] = "00:55:50",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63156.41,
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [38]
 			{
 				{
-					["combatId"] = 547,
 					["tipo"] = 2,
+					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -32111,22 +32149,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 31225.001327,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 31225.001327,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379747,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[190984] = {
 										["c_amt"] = 0,
@@ -32322,45 +32346,57 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 31225.001327,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2488.841170653028,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 31225.001327,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379747,
 							["tipo"] = 1,
-							["damage_taken"] = 4473.001327,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379747,
+							["last_dps"] = 2488.841170653028,
 							["start_time"] = 1672379735,
 							["delay"] = 0,
-							["last_event"] = 1672379747,
+							["damage_taken"] = 4473.001327,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.00173,
-							["total"] = 4473.00173,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 4473,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-191637-00002E7935",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "191637",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4473.00173,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 31225.00173,
+							["monster"] = true,
 							["end_time"] = 1672379747,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672379746,
 							["nome"] = "Lava Phoenix",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -32392,22 +32428,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "191637",
-							["serial"] = "Creature-0-4229-2444-17344-191637-00002E7935",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672379746,
-							["damage_taken"] = 31225.00173,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379740,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 4473.00173,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 547,
 					["tipo"] = 3,
+					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -32438,10 +32476,9 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Zulbathal"] = true,
 							},
-							["heal_enemy_amt"] = 0,
+							["spec"] = 102,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8936] = {
 										["c_amt"] = 2,
@@ -32462,28 +32499,29 @@ _detalhes_database = {
 										},
 										["c_min"] = 472,
 										["c_curado"] = 944,
-										["n_curado"] = 6412,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
+										["n_curado"] = 6412,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
 							["start_time"] = 1672379742,
-							["spec"] = 102,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1672379748,
 							["aID"] = "61-0CA8EB69",
 							["totaldenied"] = 0.004914,
 							["delay"] = 0,
-							["last_event"] = 1672379748,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 547,
 					["tipo"] = 7,
+					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
 							["received"] = 470.003611,
@@ -32501,7 +32539,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 470,
@@ -32513,267 +32550,268 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.003611,
+							["tipo"] = 3,
 							["last_event"] = 1672379749,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 0.003611,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 547,
 					["tipo"] = 9,
+					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 164815,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 132,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 8936,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 1,
-										["id"] = 393955,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 2,
-										["id"] = 157228,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 9,
-										["appliedamt"] = 2,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 1,
-										["id"] = 387678,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 2,
-										["id"] = 48518,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 8,
-										["appliedamt"] = 2,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393959] = {
-										["activedamt"] = 1,
-										["id"] = 393959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 393959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 28,
@@ -32790,20 +32828,20 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1672379747,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 547,
 					["tipo"] = 2,
+					["combatId"] = 547,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -32814,12 +32852,14 @@ _detalhes_database = {
 					"Zulbathal", -- [1]
 				},
 				["CombatStartedAt"] = 63156.41,
-				["overall_added"] = true,
+				["tempo_start"] = 1672379735,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 932,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					35697.985453, -- [1]
@@ -32834,15 +32874,81 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					31225, -- [1]
+					7356, -- [2]
+					{
+						0, -- [1]
+						[0] = 470,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "00:55:48",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lava Phoenix",
+				["TotalElapsedCombatTime"] = 12.54599999999482,
+				["CombatEndedAt"] = 63154.784,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Zulbathal"] = 7120.004914,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zulbathal"] = 31225.001327,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 63154.784,
+				["combat_id"] = 547,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Lava Phoenix",
+				["frags"] = {
+					["Lava Phoenix"] = 1,
+				},
+				["combat_counter"] = 932,
+				["data_inicio"] = "00:55:35",
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Zulbathal"] = {
@@ -32921,82 +33027,15 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "00:55:48",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Lava Phoenix",
-				["TotalElapsedCombatTime"] = 12.54599999999482,
-				["CombatEndedAt"] = 63154.784,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "00:55:35",
-				["end_time"] = 63154.784,
-				["combat_id"] = 547,
-				["tempo_start"] = 1672379735,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Lava Phoenix"] = 1,
-				},
-				["totals_grupo"] = {
-					31225, -- [1]
-					7356, -- [2]
-					{
-						0, -- [1]
-						[0] = 470,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zulbathal"] = 7120.004914,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Zulbathal"] = 31225.001327,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
 				["start_time"] = 63142.23800000001,
-				["contra"] = "Lava Phoenix",
 				["TimeData"] = {
 				},
+				["overall_added"] = true,
 			}, -- [39]
 			{
 				{
-					["combatId"] = 546,
 					["tipo"] = 2,
+					["combatId"] = 546,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -33010,22 +33049,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 63666.003033,
-							["on_hold"] = false,
 							["aID"] = "61-0CA8EB69",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 63666.003033,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1672379731,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 1,
@@ -33238,37 +33263,6 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[81281] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 751,
-										["targets"] = {
-											["Qalashi Ragetamer"] = 1502,
-										},
-										["n_dmg"] = 1502,
-										["n_min"] = 751,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[20] = 1502,
-										},
-										["total"] = 1502,
-										["c_max"] = 0,
-										["id"] = 81281,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[88751] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -33289,6 +33283,37 @@ _detalhes_database = {
 										["total"] = 8004,
 										["c_max"] = 0,
 										["id"] = 88751,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[81281] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 751,
+										["targets"] = {
+											["Qalashi Ragetamer"] = 1502,
+										},
+										["n_dmg"] = 1502,
+										["n_min"] = 751,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[20] = 1502,
+										},
+										["total"] = 1502,
+										["c_max"] = 0,
+										["id"] = 81281,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
 										["extra"] = {
@@ -33338,45 +33363,57 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["spec"] = 102,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 63666.003033,
+							["on_hold"] = false,
 							["serial"] = "Player-61-0CA8EB69",
-							["last_dps"] = 2929.597047350025,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 63666.003033,
+							["classe"] = "DRUID",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zulbathal",
+							["spec"] = 102,
+							["grupo"] = true,
+							["end_time"] = 1672379731,
 							["tipo"] = 1,
-							["damage_taken"] = 7584.003033,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1672379730,
+							["last_dps"] = 2929.597047350025,
 							["start_time"] = 1672379710,
 							["delay"] = 0,
-							["last_event"] = 1672379730,
+							["damage_taken"] = 7584.003033,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.00154,
-							["total"] = 7584.00154,
 							["damage_from"] = {
 								["Zulbathal"] = true,
 							},
 							["targets"] = {
 								["Zulbathal"] = 7584,
 							},
+							["serial"] = "Creature-0-4229-2444-17344-190766-00002E78DD",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "190766",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7584.00154,
-							["on_hold"] = false,
-							["dps_started"] = false,
+							["damage_taken"] = 62745.00154,
+							["monster"] = true,
 							["end_time"] = 1672379731,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_event"] = 1672379729,
 							["nome"] = "Qalashi Ragetamer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -33460,16 +33497,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "190766",
-							["serial"] = "Creature-0-4229-2444-17344-190766-00002E78DD",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1672379729,
-							["damage_taken"] = 62745.00154,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1672379716,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 7584.00154,
 						}, -- [2]
 						{
 							["flag_original"] = 2600,
@@ -33481,45 +33520,45 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "192138",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007241,
+							["serial"] = "Creature-0-4229-2444-17344-192138-00002E72BC",
+							["fight_component"] = true,
+							["total"] = 0.007241,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1672379731,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Lava Pincer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "192138",
-							["total"] = 0.007241,
-							["serial"] = "Creature-0-4229-2444-17344-192138-00002E72BC",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 921.007241,
 							["start_time"] = 1672379731,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1672379731,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 546,
 					["tipo"] = 3,
+					["combatId"] = 546,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 546,
 					["tipo"] = 7,
+					["combatId"] = 546,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.004919,
@@ -33536,7 +33575,6 @@ _detalhes_database = {
 							["resource_type"] = 8,
 							["nome"] = "Zulbathal",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[59914] = {
 										["total"] = 0,
@@ -33548,282 +33586,282 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["spec"] = 102,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.004919,
+							["tipo"] = 3,
 							["last_event"] = 1672379735,
 							["aID"] = "61-0CA8EB69",
-							["tipo"] = 3,
 							["serial"] = "Player-61-0CA8EB69",
 							["totalover"] = 470.004919,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 546,
 					["tipo"] = 9,
+					["combatId"] = 546,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[164812] = {
-										["activedamt"] = 0,
-										["id"] = 164812,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 1,
+										["id"] = 164812,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[202347] = {
-										["activedamt"] = 0,
-										["id"] = 202347,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 202347,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393957] = {
-										["activedamt"] = 0,
-										["id"] = 393957,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 393957,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[164815] = {
-										["activedamt"] = 0,
-										["id"] = 164815,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 19,
-										["appliedamt"] = 2,
+										["id"] = 164815,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[81281] = {
-										["activedamt"] = 0,
-										["id"] = 81281,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 81281,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["dispell"] = 1.005225,
 							["buff_uptime"] = 237,
 							["aID"] = "61-0CA8EB69",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[279709] = {
-										["activedamt"] = 1,
-										["id"] = 279709,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 279709,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[397734] = {
-										["activedamt"] = 1,
-										["id"] = 397734,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 397734,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[225787] = {
-										["activedamt"] = 1,
-										["id"] = 225787,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 225787,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 24858,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393961] = {
-										["activedamt"] = 1,
-										["id"] = 393961,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 393961,
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[93827] = {
-										["activedamt"] = 1,
-										["id"] = 93827,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 93827,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[88747] = {
-										["activedamt"] = 2,
-										["id"] = 88747,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = 88747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393955] = {
-										["activedamt"] = 2,
-										["id"] = 393955,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 9,
-										["appliedamt"] = 2,
+										["id"] = 393955,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 157228,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[387678] = {
-										["activedamt"] = 2,
-										["id"] = 387678,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 4,
-										["appliedamt"] = 2,
+										["id"] = 387678,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48518] = {
-										["activedamt"] = 1,
-										["id"] = 48518,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 48518,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 1126,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[393763] = {
-										["activedamt"] = 1,
-										["id"] = 393763,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 393763,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[97033] = {
-										["activedamt"] = 1,
-										["id"] = 97033,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 97033,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292364] = {
-										["activedamt"] = 1,
-										["id"] = 292364,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 292364,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[343648] = {
-										["activedamt"] = 1,
-										["id"] = 343648,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 343648,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[292486] = {
-										["activedamt"] = 1,
-										["id"] = 292486,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 292486,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["dispell_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[2908] = {
 										["dispell"] = 1,
@@ -33837,60 +33875,61 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 75,
+							["classe"] = "DRUID",
 							["dispell_oque"] = {
 								[369788] = 1,
-							},
-							["dispell_targets"] = {
-								["Qalashi Ragetamer"] = 1,
 							},
 							["nome"] = "Zulbathal",
 							["spec"] = 102,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[88747] = 2,
+								[78674] = 3,
 								[190984] = 2,
 								[8921] = 1,
-								[78674] = 3,
+								[202347] = 2,
 								[93402] = 2,
 								[2908] = 1,
 								[194153] = 1,
-								[202347] = 2,
+								[88747] = 2,
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 1672379731,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-61-0CA8EB69",
-							["tipo"] = 4,
+							["dispell_targets"] = {
+								["Qalashi Ragetamer"] = 1,
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["tipo"] = 4,
 							["nome"] = "Qalashi Ragetamer",
 							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[369788] = 1,
 								[369751] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4229-2444-17344-190766-00002E78DD",
 							["aID"] = "190766",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 546,
 					["tipo"] = 2,
+					["combatId"] = 546,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -33920,10 +33959,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 1,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -33943,16 +33982,17 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 1,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "00:55:32",
 				["cleu_timeline"] = {
 				},
@@ -33963,18 +34003,39 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "00:55:10",
+				["end_time"] = 63138.746,
+				["combat_id"] = 546,
+				["frags"] = {
+					["Qalashi Ragetamer"] = 1,
+					["Lava Pincer"] = 1,
+				},
+				["overall_added"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["TimeData"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 63117.014,
+				["contra"] = "Qalashi Ragetamer",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -33982,27 +34043,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 63138.746,
-				["combat_id"] = 546,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "00:55:10",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Qalashi Ragetamer"] = 1,
-					["Lava Pincer"] = 1,
-				},
-				["start_time"] = 63117.014,
-				["TimeData"] = {
-				},
-				["contra"] = "Qalashi Ragetamer",
 			}, -- [40]
 		},
 	},
@@ -34052,7 +34092,7 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 	},
-	["last_version"] = "10.0.2 10337",
+	["last_version"] = "10.0.2 10403",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -34096,6 +34136,24 @@ _detalhes_database = {
 	["active_profile"] = "Shanyt-Argent Dawn",
 	["last_realversion"] = 148,
 	["ignore_nicktag"] = false,
+	["combat_counter"] = 972,
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["mythic_plus_log"] = {
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -34190,7 +34248,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				299.9999694824219, -- [1]
+				500.0000915527344, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -34201,16 +34262,26 @@ _detalhes_database = {
 			["point"] = "CENTER",
 			["row_texture"] = "Details Serenity",
 			["square_grow_direction"] = "right",
+			["author"] = "Details! Team",
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
+			["use_spark"] = true,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -34222,43 +34293,17 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.2, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
-			["use_spark"] = true,
+			["y"] = 1.52587890625e-05,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["y"] = 1.52587890625e-05,
+			["font_size"] = 10,
 			["use_square_mode"] = false,
 			["main_frame_locked"] = false,
-			["main_frame_size"] = {
-				299.9999694824219, -- [1]
-				500.0000915527344, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_day"] = "30",
+	["last_day"] = "07",
 	["cd_tracker"] = {
 		["enabled"] = false,
 		["cds_enabled"] = {
@@ -34270,13 +34315,17 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
-	["combat_counter"] = 970,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1674366425,
+		["last_version"] = 15,
+	},
 	["character_data"] = {
-		["logons"] = 215,
+		["logons"] = 217,
 	},
 	["combat_id"] = 585,
 	["savedStyles"] = {
 	},
+	["force_font_outline"] = "",
 	["local_instances_config"] = {
 		{
 			["modo"] = 2,
@@ -34348,7 +34397,6 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -34388,25 +34436,25 @@ _detalhes_database = {
 						["Tarasek Elementalist"] = true,
 						["Magma Droplet <Baron Ashflow>"] = true,
 						["Infused Ruby Whelpling"] = true,
-						["Lavacaller Primalist"] = true,
+						["Qalashi Flameshatter"] = true,
 						["Magma Droplet <Erupting Magma>"] = true,
 						["Erupting Magma"] = true,
 						["Qalashi Ragetamer"] = true,
-						["Lava Tarantula"] = true,
 						["Lava Phoenix"] = true,
-						["Ancient Hornswog"] = true,
 						["Dragonhunter Igordan"] = true,
+						["Ancient Hornswog"] = true,
+						["Rampaging Water"] = true,
 						["Summoned Typhoon"] = true,
 						["Soggymaw Crabtrapper"] = true,
-						["Rampaging Water"] = true,
+						["Conscripted Crab"] = true,
 						["Baron Crustcore"] = true,
 						["Primal Revenant"] = true,
 						["Primal Proto-Drake"] = true,
+						["Lava Tarantula"] = true,
 						["Encroaching Lava"] = true,
-						["Qalashi Flameshatter"] = true,
 						["Sogglmoggl"] = true,
+						["Lavacaller Primalist"] = true,
 						["Bound Shoresnapper"] = true,
-						["Conscripted Crab"] = true,
 						["Qalashi Scoundrel"] = true,
 						["Soggymaw Seabasher"] = true,
 					},
@@ -34428,26 +34476,26 @@ _detalhes_database = {
 						["Summoned Tsunami"] = 23801,
 						["Rampaging Wind"] = 100729,
 						["Relentless Gust"] = 588592,
-						["Agitated Weedling"] = 443516,
+						["Intrusive Pupstinger"] = 265571,
 						["Qalashi Flameshatter"] = 97546,
 						["Whirglgurgl"] = 60225,
-						["Intrusive Pupstinger"] = 265571,
-						["Firava the Rekindler"] = 102580,
 						["Unleashed Lavaburst"] = 30666,
+						["Firava the Rekindler"] = 102580,
 						["Tarasek Elementalist"] = 24624,
-						["Primal Proto-Whelp"] = 62955,
 						["Hardened Lava <Dragonhunter Igordan>"] = 2204,
-						["Waking Duck"] = 21774,
+						["Primal Proto-Whelp"] = 62955,
 						["Infused Ruby Whelpling"] = 87529,
+						["Waking Duck"] = 21774,
+						["Lavacaller Primalist"] = 166301,
 						["Summoned Zephyr"] = 22798,
 						["Qalashi Scavenger"] = 146821,
-						["Lavacaller Primalist"] = 166301,
-						["Magma Droplet <Erupting Magma>"] = 13601,
 						["Erupting Magma"] = 88784,
 						["Erupting Droplet"] = 108698,
-						["Lava Tarantula"] = 37776,
+						["Ancient Hornswog"] = 95435,
 						["Conscripted Crab"] = 7461,
+						["Lava Tarantula"] = 37776,
 						["Lava Phoenix"] = 31225,
+						["Agitated Weedling"] = 443516,
 						["Qalashi Ragetamer"] = 130481,
 						["Lava Flick"] = 921,
 						["Qalashi Metalshaper"] = 121809,
@@ -34456,10 +34504,10 @@ _detalhes_database = {
 						["Summoned Typhoon"] = 26789,
 						["Soggymaw Crabtrapper"] = 24013,
 						["Rampaging Water"] = 144230,
-						["Ancient Hornswog"] = 95435,
+						["Baron Crustcore"] = 71404,
 						["Primal Revenant"] = 122148,
 						["Primal Proto-Drake"] = 218155,
-						["Baron Crustcore"] = 71404,
+						["Magma Droplet <Erupting Magma>"] = 13601,
 						["Encroaching Lava"] = 118696,
 						["Sogglmoggl"] = 59641,
 						["Soggymaw Wavebringer"] = 38988,
@@ -34467,24 +34515,24 @@ _detalhes_database = {
 						["Qalashi Scoundrel"] = 187992,
 						["Soggymaw Seabasher"] = 122658,
 					},
-					["damage_taken"] = 816659.5520879996,
+					["serial"] = "Player-61-0CA8EB69",
 					["pets"] = {
 						"Denizen of the Dream <Zulbathal>", -- [1]
 						"Sendrax <Zulbathal>", -- [2]
 						"Ruby Whelpling <Zulbathal>", -- [3]
 					},
-					["serial"] = "Player-61-0CA8EB69",
-					["aID"] = "61-0CA8EB69",
+					["classe"] = "DRUID",
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 						[128] = 79874,
 					},
 					["total_without_pet"] = 3917081.552088,
 					["end_time"] = 1672318639,
-					["on_hold"] = false,
 					["dps_started"] = false,
 					["total"] = 5338953.552088002,
-					["classe"] = "DRUID",
-					["friendlyfire_total"] = 0,
+					["damage_taken"] = 816659.5520879996,
+					["tipo"] = 1,
 					["nome"] = "Zulbathal",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -34504,22 +34552,22 @@ _detalhes_database = {
 									["Encroaching Lava"] = 3339,
 									["Qalashi Djaradin"] = 2555,
 									["Tarasek Elementalist"] = 1032,
-									["Primal Proto-Drake"] = 3310,
 									["Lavacaller Primalist"] = 1046,
-									["Infused Ruby Whelpling"] = 985,
+									["Windyfin Windbringer"] = 2151,
+									["Ancient Hornswog"] = 4208,
 									["Qalashi Metalshaper"] = 3846,
 									["Primal Lava Elemental"] = 9941,
-									["Baron Crustcore"] = 2497,
+									["Rampaging Wind"] = 910,
 									["Erupting Droplet"] = 3886,
 									["Soggymaw Crabtrapper"] = 2038,
-									["Summoned Tsunami"] = 3139,
-									["Ancient Hornswog"] = 4208,
-									["Primal Revenant"] = 934,
-									["Rampaging Wind"] = 910,
-									["Waking Duck"] = 9195,
-									["Windyfin Windbringer"] = 2151,
-									["Qalashi Flameshatter"] = 1014,
 									["Rampaging Water"] = 854,
+									["Baron Crustcore"] = 2497,
+									["Primal Revenant"] = 934,
+									["Primal Proto-Drake"] = 3310,
+									["Waking Duck"] = 9195,
+									["Summoned Tsunami"] = 3139,
+									["Qalashi Flameshatter"] = 1014,
+									["Infused Ruby Whelpling"] = 985,
 									["Smoldering Feather <Lava Phoenix>"] = 1922,
 									["Qalashi Scoundrel"] = 1987,
 									["Soggymaw Seabasher"] = 1015,
@@ -34575,25 +34623,25 @@ _detalhes_database = {
 									["Tarasek Elementalist"] = 10998,
 									["Dragonhunter Igordan"] = 29686,
 									["Infused Ruby Whelpling"] = 27494,
-									["Lavacaller Primalist"] = 44780,
+									["Bound Shoresnapper"] = 4897,
 									["Magma Droplet <Erupting Magma>"] = 1713,
 									["Erupting Magma"] = 29798,
-									["Lava Tarantula"] = 4349,
-									["Qalashi Ragetamer"] = 36567,
-									["Ancient Hornswog"] = 21968,
 									["Lava Phoenix"] = 7249,
+									["Qalashi Ragetamer"] = 36567,
 									["Qalashi Metalshaper"] = 32373,
+									["Ancient Hornswog"] = 21968,
+									["Rampaging Water"] = 39169,
 									["Primal Scythid Queen"] = 19474,
 									["Summoned Typhoon"] = 5450,
 									["Soggymaw Crabtrapper"] = 9424,
-									["Rampaging Water"] = 39169,
+									["Conscripted Crab"] = 4669,
 									["Baron Crustcore"] = 27238,
 									["Primal Revenant"] = 29478,
 									["Primal Proto-Drake"] = 129213,
+									["Lava Tarantula"] = 4349,
 									["Encroaching Lava"] = 63989,
-									["Bound Shoresnapper"] = 4897,
 									["Sogglmoggl"] = 16648,
-									["Conscripted Crab"] = 4669,
+									["Lavacaller Primalist"] = 44780,
 									["Smoldering Feather <Lava Phoenix>"] = 5134,
 									["Qalashi Scoundrel"] = 36941,
 									["Soggymaw Seabasher"] = 28029,
@@ -34632,24 +34680,24 @@ _detalhes_database = {
 									["Lava Snail"] = 103,
 									["Windyfin Windbringer"] = 123,
 									["Qalashi Djaradin"] = 187,
-									["Infused Ruby Whelpling"] = 686,
+									["Tarasek Elementalist"] = 159,
 									["Bound Shoresnapper"] = 74,
 									["Qalashi Ragetamer"] = 154,
-									["Tarasek Elementalist"] = 159,
-									["Lavacaller Primalist"] = 494,
+									["Firava the Rekindler"] = 407,
+									["Summoned Typhoon"] = 162,
 									["Erupting Magma"] = 434,
 									["Qalashi Skirmisher"] = 362,
-									["Summoned Typhoon"] = 162,
-									["Erupting Droplet"] = 960,
+									["Infused Ruby Whelpling"] = 686,
+									["Sogglmoggl"] = 112,
 									["Rampaging Water"] = 91,
-									["Firava the Rekindler"] = 407,
+									["Qalashi Metalshaper"] = 87,
 									["Primal Revenant"] = 543,
 									["Rampaging Wind"] = 88,
-									["Qalashi Metalshaper"] = 87,
+									["Lavacaller Primalist"] = 494,
 									["Soggymaw Wavebringer"] = 180,
-									["Sogglmoggl"] = 112,
-									["Whirglgurgl"] = 249,
 									["Qalashi Flameshatter"] = 121,
+									["Whirglgurgl"] = 249,
+									["Erupting Droplet"] = 960,
 									["Qalashi Scoundrel"] = 96,
 									["Soggymaw Seabasher"] = 154,
 								},
@@ -34686,23 +34734,23 @@ _detalhes_database = {
 									["Qalashi Djaradin"] = 38638,
 									["Soggymaw Wavebringer"] = 4643,
 									["Qalashi Ragetamer"] = 12714,
-									["Unleashed Lavaburst"] = 3572,
 									["Lava Tarantula"] = 14561,
+									["Baron Crustcore"] = 6587,
 									["Primal Lava Elemental"] = 8352,
 									["Primal Scythid Queen"] = 14900,
-									["Lavacaller Primalist"] = 19838,
+									["Rampaging Wind"] = 16730,
 									["Soggymaw Crabtrapper"] = 4244,
 									["Rampaging Water"] = 20975,
-									["Baron Crustcore"] = 6587,
+									["Ancient Hornswog"] = 8028,
 									["Primal Revenant"] = 3919,
-									["Rampaging Wind"] = 16730,
+									["Primal Proto-Drake"] = 7324,
 									["Lava Phoenix"] = 14209,
-									["Qalashi Skirmisher"] = 19464,
 									["Qalashi Flameshatter"] = 17649,
 									["Qalashi Metalshaper"] = 8866,
-									["Ancient Hornswog"] = 8028,
+									["Qalashi Skirmisher"] = 19464,
+									["Unleashed Lavaburst"] = 3572,
 									["Qalashi Scoundrel"] = 43827,
-									["Primal Proto-Drake"] = 7324,
+									["Lavacaller Primalist"] = 19838,
 								},
 								["n_dmg"] = 254779,
 								["n_min"] = 0,
@@ -34723,22 +34771,46 @@ _detalhes_database = {
 								["r_amt"] = 0,
 								["IMMUNE"] = 1,
 							},
-							[387572] = {
-								["c_amt"] = 0,
+							[88751] = {
+								["c_amt"] = 10,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 73776,
 								["g_amt"] = 0,
-								["n_max"] = 10493,
+								["n_max"] = 4602,
 								["targets"] = {
-									["Meatgrinder Sotok"] = 73451,
+									["Dragonhunter Igordan"] = 8523,
+									["Lava Tarantula"] = 4002,
+									["Windyfin Skybasher"] = 14480,
+									["Windyfin Squallstalker"] = 3068,
+									["Qalashi Scavenger"] = 10712,
+									["Windyfin Windbringer"] = 9207,
+									["Qalashi Djaradin"] = 3570,
+									["Bound Shoresnapper"] = 3069,
+									["Qalashi Ragetamer"] = 8004,
+									["Lavacaller Primalist"] = 6083,
+									["Erupting Magma"] = 10503,
+									["Primal Scythid Queen"] = 4201,
+									["Summoned Typhoon"] = 3705,
+									["Firava the Rekindler"] = 5941,
+									["Rampaging Water"] = 7605,
+									["Infused Ruby Whelpling"] = 27680,
+									["Primal Revenant"] = 2645,
+									["Rampaging Wind"] = 7676,
+									["Sogglmoggl"] = 14660,
+									["Qalashi Metalshaper"] = 13805,
+									["Qalashi Flameshatter"] = 7706,
+									["Whirglgurgl"] = 7410,
+									["Erupting Droplet"] = 21557,
+									["Qalashi Scoundrel"] = 10776,
+									["Soggymaw Seabasher"] = 29576,
 								},
-								["n_dmg"] = 73451,
+								["n_dmg"] = 172388,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 8,
-								["total"] = 73451,
-								["c_max"] = 0,
-								["id"] = 387572,
+								["counter"] = 60,
+								["total"] = 246164,
+								["c_max"] = 9204,
+								["id"] = 88751,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -34746,7 +34818,7 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 8,
+								["n_amt"] = 50,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -34757,9 +34829,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 2103,
 								["targets"] = {
-									["Ancient Hornswog"] = 4206,
 									["Baron Ashflow"] = 1917,
 									["Encroaching Lava"] = 786,
+									["Ancient Hornswog"] = 4206,
 								},
 								["n_dmg"] = 6909,
 								["n_min"] = 0,
@@ -34799,14 +34871,14 @@ _detalhes_database = {
 									["Summoned Typhoon"] = 1392,
 									["Infused Ruby Whelpling"] = 594,
 									["Rampaging Water"] = 3284,
-									["Lavacaller Primalist"] = 3939,
-									["Primal Revenant"] = 1984,
 									["Firava the Rekindler"] = 4460,
-									["Erupting Droplet"] = 1650,
-									["Qalashi Metalshaper"] = 9930,
+									["Primal Revenant"] = 1984,
+									["Lavacaller Primalist"] = 3939,
 									["Qalashi Flameshatter"] = 5037,
-									["Whirglgurgl"] = 5563,
+									["Qalashi Metalshaper"] = 9930,
 									["Sogglmoggl"] = 10125,
+									["Whirglgurgl"] = 5563,
+									["Erupting Droplet"] = 1650,
 									["Qalashi Scoundrel"] = 7206,
 									["Soggymaw Seabasher"] = 11324,
 								},
@@ -34902,8 +34974,8 @@ _detalhes_database = {
 									["Windyfin Squallstalker"] = 6608,
 									["Ancient Hornswog"] = 11411,
 									["Magma Droplet <Erupting Magma>"] = 8219,
-									["Erupting Magma"] = 3979,
 									["Qalashi Scoundrel"] = 10342,
+									["Erupting Magma"] = 3979,
 									["Qalashi Djaradin"] = 10505,
 									["Whirglgurgl"] = 11844,
 									["Bound Shoresnapper"] = 18527,
@@ -34943,18 +35015,18 @@ _detalhes_database = {
 									["Qalashi Scavenger"] = 3769,
 									["Lava Snail"] = 1335,
 									["Magma Droplet <Baron Ashflow>"] = 990,
-									["Erupting Magma"] = 9497,
+									["Tarasek Elementalist"] = 967,
 									["Encroaching Lava"] = 12290,
 									["Lavacaller Primalist"] = 12945,
-									["Tarasek Elementalist"] = 967,
+									["Firava the Rekindler"] = 7689,
 									["Bound Shoresnapper"] = 1584,
 									["Qalashi Ragetamer"] = 7577,
-									["Qalashi Flameshatter"] = 3185,
-									["Firava the Rekindler"] = 7689,
 									["Primal Lava Elemental"] = 4380,
+									["Meatgrinder Sotok"] = 1683,
+									["Erupting Magma"] = 9497,
 									["Primal Scythid Queen"] = 2296,
 									["Infused Ruby Whelpling"] = 4780,
-									["Meatgrinder Sotok"] = 1683,
+									["Qalashi Flameshatter"] = 3185,
 									["Summoned Tsunami"] = 3510,
 									["Ancient Hornswog"] = 8922,
 									["Primal Revenant"] = 6337,
@@ -35018,26 +35090,26 @@ _detalhes_database = {
 									["Qalashi Scavenger"] = 20841,
 									["Qalashi Metalshaper"] = 18937,
 									["Infused Ruby Whelpling"] = 10111,
-									["Lavacaller Primalist"] = 21706,
+									["Encroaching Lava"] = 10459,
 									["Erupting Droplet"] = 1177,
 									["Magma Droplet <Erupting Magma>"] = 1988,
-									["Erupting Magma"] = 9639,
 									["Lava Tarantula"] = 4297,
+									["Lava Phoenix"] = 3812,
 									["Qalashi Ragetamer"] = 21571,
 									["Lava Flick"] = 921,
 									["Baron Crustcore"] = 18383,
-									["Lava Phoenix"] = 3812,
+									["Rampaging Water"] = 29139,
 									["Primal Scythid Queen"] = 15134,
 									["Summoned Typhoon"] = 4182,
 									["Soggymaw Crabtrapper"] = 4601,
-									["Rampaging Water"] = 29139,
+									["Conscripted Crab"] = 2306,
 									["Ancient Hornswog"] = 16572,
 									["Primal Revenant"] = 19358,
 									["Primal Proto-Drake"] = 18375,
+									["Erupting Magma"] = 9639,
 									["Primal Proto-Whelp"] = 3541,
-									["Encroaching Lava"] = 10459,
 									["Sogglmoggl"] = 6606,
-									["Conscripted Crab"] = 2306,
+									["Lavacaller Primalist"] = 21706,
 									["Smoldering Feather <Lava Phoenix>"] = 1353,
 									["Qalashi Scoundrel"] = 23034,
 									["Soggymaw Seabasher"] = 9598,
@@ -35060,119 +35132,86 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[202497] = {
-								["c_amt"] = 94,
+							[191037] = {
+								["c_amt"] = 142,
 								["b_amt"] = 0,
-								["c_dmg"] = 116173,
+								["c_dmg"] = 80767,
 								["g_amt"] = 0,
-								["n_max"] = 841,
+								["n_max"] = 1111,
 								["targets"] = {
-									["Molten Primalist"] = 6966,
-									["Baron Ashflow"] = 7473,
-									["Windyfin Skybasher"] = 11672,
-									["Windyfin Squallstalker"] = 1027,
-									["Meatgrinder Sotok"] = 5423,
-									["Lava Snail"] = 2906,
-									["Windyfin Windbringer"] = 4236,
-									["Qalashi Djaradin"] = 29183,
-									["Soggymaw Wavebringer"] = 3085,
-									["Primal Lava Elemental"] = 14601,
-									["Qalashi Skirmisher"] = 20576,
-									["Erupting Droplet"] = 2409,
-									["Summoned Tsunami"] = 2435,
-									["Rampaging Wind"] = 8208,
-									["Qalashi Flameshatter"] = 12356,
-									["Whirglgurgl"] = 4279,
-									["Firava the Rekindler"] = 5950,
-									["Dragonhunter Igordan"] = 16145,
-									["Waking Duck"] = 490,
-									["Unleashed Lavaburst"] = 2787,
-									["Summoned Zephyr"] = 1152,
-									["Qalashi Scavenger"] = 15688,
-									["Tarasek Elementalist"] = 2050,
-									["Primal Proto-Whelp"] = 2849,
-									["Infused Ruby Whelpling"] = 2017,
-									["Lavacaller Primalist"] = 9810,
-									["Magma Droplet <Erupting Magma>"] = 986,
-									["Erupting Magma"] = 6906,
-									["Lava Tarantula"] = 3898,
-									["Qalashi Ragetamer"] = 14024,
-									["Ancient Hornswog"] = 7860,
-									["Lava Phoenix"] = 1162,
-									["Qalashi Metalshaper"] = 15803,
-									["Primal Scythid Queen"] = 9191,
-									["Summoned Typhoon"] = 2016,
-									["Soggymaw Crabtrapper"] = 2279,
-									["Rampaging Water"] = 11676,
-									["Baron Crustcore"] = 7921,
-									["Primal Revenant"] = 13012,
-									["Primal Proto-Drake"] = 11094,
-									["Encroaching Lava"] = 6689,
-									["Bound Shoresnapper"] = 542,
-									["Sogglmoggl"] = 3409,
-									["Conscripted Crab"] = 486,
-									["Smoldering Feather <Lava Phoenix>"] = 548,
-									["Qalashi Scoundrel"] = 19801,
-									["Soggymaw Seabasher"] = 6411,
+									["Molten Primalist"] = 8623,
+									["Windyfin Skybasher"] = 7204,
+									["Windyfin Squallstalker"] = 1461,
+									["Meatgrinder Sotok"] = 3714,
+									["Lava Snail"] = 5227,
+									["Windyfin Windbringer"] = 3405,
+									["Qalashi Djaradin"] = 3543,
+									["Soggymaw Wavebringer"] = 2784,
+									["Primal Lava Elemental"] = 9811,
+									["Qalashi Skirmisher"] = 4451,
+									["Erupting Droplet"] = 13190,
+									["Rampaging Wind"] = 2063,
+									["Qalashi Flameshatter"] = 4671,
+									["Whirglgurgl"] = 5416,
+									["Firava the Rekindler"] = 7330,
+									["Dragonhunter Igordan"] = 13120,
+									["Summoned Zephyr"] = 10635,
+									["Tarasek Elementalist"] = 2979,
+									["Qalashi Ragetamer"] = 2747,
+									["Infused Ruby Whelpling"] = 8417,
+									["Erupting Magma"] = 8392,
+									["Lavacaller Primalist"] = 10801,
+									["Bound Shoresnapper"] = 1443,
+									["Summoned Typhoon"] = 2406,
+									["Magma Droplet <Erupting Magma>"] = 695,
+									["Rampaging Water"] = 8685,
+									["Baron Crustcore"] = 3402,
+									["Primal Revenant"] = 15619,
+									["Primal Proto-Drake"] = 22765,
+									["Encroaching Lava"] = 11788,
+									["Ancient Hornswog"] = 2933,
+									["Sogglmoggl"] = 4517,
+									["Primal Proto-Whelp"] = 9876,
+									["Qalashi Metalshaper"] = 2458,
+									["Qalashi Scoundrel"] = 6201,
+									["Soggymaw Seabasher"] = 9082,
 								},
-								["n_dmg"] = 225314,
+								["n_dmg"] = 161087,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 465,
-								["total"] = 341487,
-								["c_max"] = 1681,
-								["id"] = 202497,
+								["counter"] = 735,
+								["total"] = 241854,
+								["c_max"] = 1504,
+								["id"] = 191037,
 								["r_dmg"] = 0,
+								["EVADE"] = 1,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 371,
 								["b_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
+								["n_amt"] = 586,
 								["r_amt"] = 0,
+								["IMMUNE"] = 6,
 							},
-							[88751] = {
-								["c_amt"] = 10,
+							[387572] = {
+								["c_amt"] = 0,
 								["b_amt"] = 0,
-								["c_dmg"] = 73776,
+								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4602,
+								["n_max"] = 10493,
 								["targets"] = {
-									["Dragonhunter Igordan"] = 8523,
-									["Lava Tarantula"] = 4002,
-									["Windyfin Skybasher"] = 14480,
-									["Windyfin Squallstalker"] = 3068,
-									["Qalashi Scavenger"] = 10712,
-									["Windyfin Windbringer"] = 9207,
-									["Qalashi Djaradin"] = 3570,
-									["Bound Shoresnapper"] = 3069,
-									["Qalashi Ragetamer"] = 8004,
-									["Firava the Rekindler"] = 5941,
-									["Erupting Magma"] = 10503,
-									["Primal Scythid Queen"] = 4201,
-									["Summoned Typhoon"] = 3705,
-									["Lavacaller Primalist"] = 6083,
-									["Rampaging Water"] = 7605,
-									["Infused Ruby Whelpling"] = 27680,
-									["Primal Revenant"] = 2645,
-									["Rampaging Wind"] = 7676,
-									["Erupting Droplet"] = 21557,
-									["Qalashi Metalshaper"] = 13805,
-									["Sogglmoggl"] = 14660,
-									["Whirglgurgl"] = 7410,
-									["Qalashi Flameshatter"] = 7706,
-									["Qalashi Scoundrel"] = 10776,
-									["Soggymaw Seabasher"] = 29576,
+									["Meatgrinder Sotok"] = 73451,
 								},
-								["n_dmg"] = 172388,
+								["n_dmg"] = 73451,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 60,
-								["total"] = 246164,
-								["c_max"] = 9204,
-								["id"] = 88751,
+								["counter"] = 8,
+								["total"] = 73451,
+								["c_max"] = 0,
+								["id"] = 387572,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -35180,7 +35219,7 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 50,
+								["n_amt"] = 8,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -35195,29 +35234,29 @@ _detalhes_database = {
 									["Dragonhunter Igordan"] = 6472,
 									["Lava Tarantula"] = 2035,
 									["Windyfin Skybasher"] = 6384,
-									["Unleashed Lavaburst"] = 1261,
+									["Meatgrinder Sotok"] = 2696,
 									["Summoned Zephyr"] = 326,
 									["Qalashi Scavenger"] = 10225,
 									["Lava Snail"] = 516,
 									["Hardened Lava <Dragonhunter Igordan>"] = 532,
-									["Infused Ruby Whelpling"] = 949,
-									["Windyfin Windbringer"] = 4512,
 									["Qalashi Djaradin"] = 16007,
+									["Windyfin Windbringer"] = 4512,
+									["Lavacaller Primalist"] = 4627,
 									["Lava Phoenix"] = 1753,
 									["Soggymaw Wavebringer"] = 1756,
 									["Qalashi Ragetamer"] = 11285,
-									["Lavacaller Primalist"] = 4627,
-									["Meatgrinder Sotok"] = 2696,
+									["Infused Ruby Whelpling"] = 949,
+									["Qalashi Flameshatter"] = 3309,
 									["Erupting Magma"] = 4260,
 									["Primal Scythid Queen"] = 6860,
 									["Summoned Typhoon"] = 837,
-									["Qalashi Flameshatter"] = 3309,
-									["Summoned Tsunami"] = 1607,
 									["Waking Duck"] = 911,
-									["Primal Revenant"] = 3280,
-									["Rampaging Wind"] = 7403,
-									["Qalashi Skirmisher"] = 8577,
 									["Rampaging Water"] = 10426,
+									["Rampaging Wind"] = 7403,
+									["Primal Revenant"] = 3280,
+									["Unleashed Lavaburst"] = 1261,
+									["Qalashi Skirmisher"] = 8577,
+									["Summoned Tsunami"] = 1607,
 									["Qalashi Metalshaper"] = 12641,
 									["Whirglgurgl"] = 704,
 									["Smoldering Feather <Lava Phoenix>"] = 457,
@@ -35250,8 +35289,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Primal Proto-Drake"] = 0,
-									["Encroaching Lava"] = 0,
 									["Qalashi Metalshaper"] = 0,
+									["Encroaching Lava"] = 0,
+									["Erupting Droplet"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -35301,69 +35341,78 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[191037] = {
-								["c_amt"] = 142,
+							[202497] = {
+								["c_amt"] = 94,
 								["b_amt"] = 0,
-								["c_dmg"] = 80767,
+								["c_dmg"] = 116173,
 								["g_amt"] = 0,
-								["n_max"] = 1111,
+								["n_max"] = 841,
 								["targets"] = {
-									["Molten Primalist"] = 8623,
-									["Windyfin Skybasher"] = 7204,
-									["Windyfin Squallstalker"] = 1461,
-									["Meatgrinder Sotok"] = 3714,
-									["Lava Snail"] = 5227,
-									["Windyfin Windbringer"] = 3405,
-									["Qalashi Djaradin"] = 3543,
-									["Soggymaw Wavebringer"] = 2784,
-									["Primal Lava Elemental"] = 9811,
-									["Qalashi Skirmisher"] = 4451,
-									["Erupting Droplet"] = 13190,
-									["Rampaging Wind"] = 2063,
-									["Qalashi Flameshatter"] = 4671,
-									["Whirglgurgl"] = 5416,
-									["Firava the Rekindler"] = 7330,
-									["Dragonhunter Igordan"] = 13120,
-									["Summoned Zephyr"] = 10635,
-									["Tarasek Elementalist"] = 2979,
-									["Qalashi Ragetamer"] = 2747,
-									["Infused Ruby Whelpling"] = 8417,
-									["Erupting Magma"] = 8392,
-									["Lavacaller Primalist"] = 10801,
-									["Primal Proto-Whelp"] = 9876,
-									["Summoned Typhoon"] = 2406,
-									["Magma Droplet <Erupting Magma>"] = 695,
-									["Rampaging Water"] = 8685,
-									["Ancient Hornswog"] = 2933,
-									["Primal Revenant"] = 15619,
-									["Primal Proto-Drake"] = 22765,
-									["Encroaching Lava"] = 11788,
-									["Bound Shoresnapper"] = 1443,
-									["Sogglmoggl"] = 4517,
-									["Qalashi Metalshaper"] = 2458,
-									["Baron Crustcore"] = 3402,
-									["Qalashi Scoundrel"] = 6201,
-									["Soggymaw Seabasher"] = 9082,
+									["Molten Primalist"] = 6966,
+									["Baron Ashflow"] = 7473,
+									["Windyfin Skybasher"] = 11672,
+									["Windyfin Squallstalker"] = 1027,
+									["Meatgrinder Sotok"] = 5423,
+									["Lava Snail"] = 2906,
+									["Windyfin Windbringer"] = 4236,
+									["Qalashi Djaradin"] = 29183,
+									["Soggymaw Wavebringer"] = 3085,
+									["Primal Lava Elemental"] = 14601,
+									["Qalashi Skirmisher"] = 20576,
+									["Erupting Droplet"] = 2409,
+									["Summoned Tsunami"] = 2435,
+									["Rampaging Wind"] = 8208,
+									["Qalashi Flameshatter"] = 12356,
+									["Whirglgurgl"] = 4279,
+									["Firava the Rekindler"] = 5950,
+									["Dragonhunter Igordan"] = 16145,
+									["Waking Duck"] = 490,
+									["Unleashed Lavaburst"] = 2787,
+									["Summoned Zephyr"] = 1152,
+									["Qalashi Scavenger"] = 15688,
+									["Tarasek Elementalist"] = 2050,
+									["Primal Proto-Whelp"] = 2849,
+									["Infused Ruby Whelpling"] = 2017,
+									["Bound Shoresnapper"] = 542,
+									["Magma Droplet <Erupting Magma>"] = 986,
+									["Erupting Magma"] = 6906,
+									["Lava Phoenix"] = 1162,
+									["Qalashi Ragetamer"] = 14024,
+									["Qalashi Metalshaper"] = 15803,
+									["Ancient Hornswog"] = 7860,
+									["Rampaging Water"] = 11676,
+									["Primal Scythid Queen"] = 9191,
+									["Summoned Typhoon"] = 2016,
+									["Soggymaw Crabtrapper"] = 2279,
+									["Conscripted Crab"] = 486,
+									["Baron Crustcore"] = 7921,
+									["Primal Revenant"] = 13012,
+									["Primal Proto-Drake"] = 11094,
+									["Lava Tarantula"] = 3898,
+									["Encroaching Lava"] = 6689,
+									["Sogglmoggl"] = 3409,
+									["Lavacaller Primalist"] = 9810,
+									["Smoldering Feather <Lava Phoenix>"] = 548,
+									["Qalashi Scoundrel"] = 19801,
+									["Soggymaw Seabasher"] = 6411,
 								},
-								["n_dmg"] = 161087,
+								["n_dmg"] = 225314,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 735,
-								["total"] = 241854,
-								["c_max"] = 1504,
-								["id"] = 191037,
+								["counter"] = 465,
+								["total"] = 341487,
+								["c_max"] = 1681,
+								["id"] = 202497,
 								["r_dmg"] = 0,
-								["EVADE"] = 1,
 								["extra"] = {
 								},
-								["b_dmg"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 586,
+								["a_amt"] = 0,
+								["n_amt"] = 371,
+								["b_dmg"] = 0,
 								["r_amt"] = 0,
-								["IMMUNE"] = 6,
 							},
 						},
 						["tipo"] = 2,
@@ -35373,11 +35422,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1672316893,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["aID"] = "61-0CA8EB69",
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
@@ -35402,21 +35451,20 @@ _detalhes_database = {
 						["Latishaz"] = 9304,
 						["Expedition Guarantor"] = 10523,
 					},
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-135-190056-00002D8E87",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1672318639,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 112544.054284,
-					["serial"] = "Creature-0-4229-2444-135-190056-00002D8E87",
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
+					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 112544.054284,
-					["friendlyfire"] = {
-					},
-					["aID"] = "190056",
+					["last_dps"] = 0,
+					["last_event"] = 0,
 					["nome"] = "Primal Proto-Drake",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -35489,15 +35537,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["end_time"] = 1672318639,
+					["damage_taken"] = 525625.0542839998,
 					["on_hold"] = false,
-					["last_event"] = 0,
+					["aID"] = "190056",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 525625.0542839998,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1672318502,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [2]
 				{
 					["flag_original"] = 2600,
@@ -35517,9 +35566,9 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["aID"] = "195597",
-					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 228044.051033,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 31818.051033,
@@ -35527,7 +35576,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1672318639,
 					["fight_component"] = true,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Primal Proto-Whelp",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -35573,10 +35622,10 @@ _detalhes_database = {
 					["total"] = 31818.051033,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 228044.051033,
+					["on_hold"] = false,
 					["start_time"] = 1672318528,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["aID"] = "195597",
 				}, -- [3]
 				{
 					["flag_original"] = 8465,
@@ -35593,8 +35642,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["classe"] = "PET",
 					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -35603,7 +35651,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4229-2444-135-198489-00002D8EB8",
 					["dps_started"] = false,
 					["end_time"] = 1672318661,
-					["classe"] = "PET",
+					["damage_taken"] = 83.049131,
 					["ownerName"] = "Zulbathal",
 					["nome"] = "Denizen of the Dream <Zulbathal>",
 					["spells"] = {
@@ -35642,15 +35690,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total"] = 21126.049131,
 					["aID"] = "198489",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 83.049131,
+					["last_dps"] = 0,
 					["start_time"] = 1672318547,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 				}, -- [4]
 				{
 					["flag_original"] = 68168,
@@ -35666,17 +35715,17 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4229-2444-135-187111-00002D8F6A",
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
-					["aID"] = "187111",
+					["last_dps"] = 0,
+					["dps_started"] = false,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 10541.01119,
-					["end_time"] = 1672318941,
-					["dps_started"] = false,
+					["fight_component"] = true,
+					["monster"] = true,
 					["total"] = 10541.01119,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Ancient Hornswog",
 					["spells"] = {
@@ -35765,15 +35814,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1672318941,
 					["friendlyfire_total"] = 0,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
 					["damage_taken"] = 95435.01118999999,
 					["start_time"] = 1672318906,
 					["delay"] = 0,
-					["monster"] = true,
+					["aID"] = "187111",
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
@@ -35790,17 +35839,17 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4229-2444-135-192227-00002D92FA",
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["friendlyfire"] = {
-					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 32127.062822,
 					["total"] = 32127.062822,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1672319773,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Encroaching Lava",
 					["spells"] = {
@@ -35894,15 +35943,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["aID"] = "192227",
-					["damage_taken"] = 143320.062822,
+					["on_hold"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 143320.062822,
 					["start_time"] = 1672319647,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
@@ -35919,17 +35968,17 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4229-2444-135-187321-00002D82CC",
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["friendlyfire"] = {
-					},
-					["aID"] = "187321",
+					["friendlyfire_total"] = 0,
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 31703.051342,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["monster"] = true,
-					["end_time"] = 1672319853,
-					["on_hold"] = false,
+					["total"] = 31703.051342,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Primal Lava Elemental",
 					["spells"] = {
@@ -35993,15 +36042,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire_total"] = 0,
+					["end_time"] = 1672319853,
 					["last_dps"] = 0,
-					["total"] = 31703.051342,
+					["on_hold"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
 					["damage_taken"] = 161406.051342,
 					["start_time"] = 1672319774,
 					["delay"] = 0,
-					["classe"] = "UNKNOW",
+					["aID"] = "187321",
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
@@ -36017,16 +36066,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 125777.014632,
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["aID"] = "192266",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 16920.014632,
 					["total"] = 16920.014632,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1672320442,
-					["last_dps"] = 0,
+					["damage_taken"] = 125777.014632,
 					["tipo"] = 1,
 					["nome"] = "Baron Crustcore",
 					["spells"] = {
@@ -36170,16 +36219,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1672320411,
-					["serial"] = "Creature-0-4229-2444-135-192266-00002D92C2",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1672320411,
+					["serial"] = "Creature-0-4229-2444-135-192266-00002D92C2",
+					["dps_started"] = false,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -36194,16 +36243,16 @@ _detalhes_database = {
 					["pets"] = {
 						"Magma Droplet <Baron Ashflow>", -- [1]
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 66445.01660599999,
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["aID"] = "192274",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 17352.016606,
 					["total"] = 18166.016606,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1672320515,
-					["last_dps"] = 0,
+					["damage_taken"] = 66445.01660599999,
 					["tipo"] = 1,
 					["nome"] = "Baron Ashflow",
 					["spells"] = {
@@ -36345,16 +36394,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1672320485,
-					["serial"] = "Creature-0-4229-2444-135-192274-00002D932F",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1672320485,
+					["serial"] = "Creature-0-4229-2444-135-192274-00002D932F",
+					["dps_started"] = false,
 				}, -- [9]
 				{
 					["flag_original"] = 8776,
@@ -36368,16 +36417,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "PET",
-					["damage_taken"] = 5642.009643,
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["aID"] = "194526",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 814.009643,
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1672320515,
-					["last_dps"] = 0,
+					["damage_taken"] = 5642.009643,
 					["ownerName"] = "Baron Ashflow",
 					["nome"] = "Magma Droplet <Baron Ashflow>",
 					["spells"] = {
@@ -36445,10 +36494,10 @@ _detalhes_database = {
 					["total"] = 814.009643,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1672320501,
 					["serial"] = "Creature-0-4229-2444-135-194526-00002D95F5",
-					["aID"] = "194526",
+					["classe"] = "PET",
 				}, -- [10]
 				{
 					["flag_original"] = 68136,
@@ -36461,20 +36510,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1672376181,
-					["friendlyfire_total"] = 0,
+					["aID"] = "187442",
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2800.018176,
-					["last_event"] = 0,
-					["aID"] = "187442",
+					["serial"] = "Creature-0-4229-2444-17344-187442-00002DE302",
 					["dps_started"] = false,
-					["total"] = 2800.018176,
+					["end_time"] = 1672376181,
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["nome"] = "Waking Duck",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -36505,45 +36553,45 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
-					["serial"] = "Creature-0-4229-2444-17344-187442-00002DE302",
+					["total"] = 2800.018176,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 21774.018176,
 					["start_time"] = 1672376144,
 					["delay"] = 0,
-					["damage_taken"] = 21774.018176,
+					["friendlyfire_total"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 2980.035504,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 15047,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-195032-00002E7495",
 					["pets"] = {
 					},
-					["end_time"] = 1672377731,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "195032",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 15047.035504,
-					["fight_component"] = true,
+					["end_time"] = 1672377731,
 					["dps_started"] = false,
 					["total"] = 15047.035504,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Djaradin",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 2,
@@ -36627,44 +36675,44 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-195032-00002E7495",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 194316.035504,
 					["start_time"] = 1672377681,
 					["delay"] = 0,
-					["damage_taken"] = 194316.035504,
+					["fight_component"] = true,
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.033559,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 11398,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-191833-00002E74A8",
 					["pets"] = {
 					},
-					["end_time"] = 1672377768,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "191833",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 11398.033559,
-					["fight_component"] = true,
+					["end_time"] = 1672377768,
 					["dps_started"] = false,
 					["total"] = 11398.033559,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Scavenger",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -36721,21 +36769,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191833-00002E74A8",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 146821.033559,
 					["start_time"] = 1672377724,
 					["delay"] = 0,
-					["damage_taken"] = 146821.033559,
+					["fight_component"] = true,
 				}, -- [13]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.009191,
-					["aID"] = "191812",
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -36743,19 +36791,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 411.009191,
+					["aID"] = "191812",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.009191,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-191812-00002E75DC",
+					["fight_component"] = true,
 					["end_time"] = 1672377891,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Crumbling Pebbles",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -36786,45 +36834,45 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 0.009191,
-					["serial"] = "Creature-0-4229-2444-17344-191812-00002E75DC",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 411.009191,
+					["last_dps"] = 0,
 					["start_time"] = 1672377888,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [14]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 3440.028882,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 21759,
 					},
-					["end_time"] = 1672378027,
+					["serial"] = "Creature-0-4229-2444-17344-187494-00002E7462",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "187494",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 21759.028882,
-					["fight_component"] = true,
+					["end_time"] = 1672378027,
 					["dps_started"] = false,
 					["total"] = 21759.028882,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Rampaging Wind",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -36881,21 +36929,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187494-00002E7462",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 100729.028882,
 					["start_time"] = 1672377999,
 					["delay"] = 0,
-					["damage_taken"] = 100729.028882,
+					["fight_component"] = true,
 				}, -- [15]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 1587.035939,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -36903,23 +36951,23 @@ _detalhes_database = {
 						["Zulbathal"] = 10823,
 						["Bonabek"] = 1060,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-187493-00002E7562",
 					["pets"] = {
 					},
-					["end_time"] = 1672378153,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "187493",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 11883.035939,
-					["fight_component"] = true,
+					["end_time"] = 1672378153,
 					["dps_started"] = false,
 					["total"] = 11883.035939,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Rampaging Water",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -36978,21 +37026,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187493-00002E7562",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 144230.035939,
 					["start_time"] = 1672378093,
 					["delay"] = 0,
-					["damage_taken"] = 144230.035939,
+					["fight_component"] = true,
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.08126900000000001,
-					["total"] = 99405.08126900002,
 					["damage_from"] = {
 						["Summoned Ripple"] = true,
 						["Zulbathal"] = true,
@@ -37001,23 +37049,22 @@ _detalhes_database = {
 						["Summoned Ripple"] = 97043,
 						["Zulbathal"] = 2362,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-187543-00002E67D3",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["aID"] = "187543",
 					["dps_started"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 99405.08126900002,
-					["on_hold"] = false,
+					["total"] = 99405.08126900002,
 					["monster"] = true,
 					["end_time"] = 1672378295,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Summoned Zephyr",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 18,
@@ -37051,44 +37098,45 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["aID"] = "187543",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187543-00002E67D3",
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 61368.081269,
 					["start_time"] = 1672378018,
 					["delay"] = 0,
-					["damage_taken"] = 61368.081269,
+					["fight_component"] = true,
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 544.0191570000001,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 23473,
 					},
-					["end_time"] = 1672378541,
+					["serial"] = "Creature-0-4229-2444-17344-187320-00002E7052",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "187320",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 23473.019157,
-					["fight_component"] = true,
+					["end_time"] = 1672378541,
 					["dps_started"] = false,
 					["total"] = 23473.019157,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Soggymaw Seabasher",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 4,
@@ -37146,16 +37194,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187320-00002E7052",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 122658.019157,
 					["start_time"] = 1672378459,
 					["delay"] = 0,
-					["damage_taken"] = 122658.019157,
+					["fight_component"] = true,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -37166,23 +37215,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 2080,
 					},
-					["dps_started"] = false,
+					["serial"] = "Vehicle-0-4229-2444-17344-187410-00002E7043",
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["monster"] = true,
 					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2080.00754,
-					["on_hold"] = false,
 					["end_time"] = 1672378604,
-					["monster"] = true,
-					["total"] = 2080.00754,
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["total"] = 2080.00754,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Summoned Tsunami",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -37213,17 +37262,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Vehicle-0-4229-2444-17344-187410-00002E7043",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 23801.00754,
 					["start_time"] = 1672378587,
 					["delay"] = 0,
-					["damage_taken"] = 23801.00754,
+					["dps_started"] = false,
 				}, -- [19]
 				{
 					["flag_original"] = 2632,
@@ -37234,24 +37283,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 20174,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-188859-00002E7043",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "188859",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 20174.00415,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672378604,
 					["dps_started"] = false,
 					["total"] = 20174.00415,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Sogglmoggl",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -37334,44 +37382,44 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-188859-00002E7043",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 59641.00415,
 					["start_time"] = 1672378556,
 					["delay"] = 0,
-					["damage_taken"] = 59641.00415,
+					["monster"] = true,
 				}, -- [20]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 2655.019596000001,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 13828,
 					},
-					["end_time"] = 1672378723,
+					["serial"] = "Creature-0-4229-2444-17344-187432-00002E7304",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "187432",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 13828.019596,
-					["fight_component"] = true,
+					["end_time"] = 1672378723,
 					["dps_started"] = false,
 					["total"] = 13828.019596,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Windyfin Windbringer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -37428,44 +37476,44 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187432-00002E7304",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 58375.01959600001,
 					["start_time"] = 1672378685,
 					["delay"] = 0,
-					["damage_taken"] = 58375.01959600001,
+					["fight_component"] = true,
 				}, -- [21]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 4200.045024,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 21250,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-187431-00002E72CC",
 					["pets"] = {
 					},
-					["end_time"] = 1672378723,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "187431",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 21250.045024,
-					["fight_component"] = true,
+					["end_time"] = 1672378723,
 					["dps_started"] = false,
 					["total"] = 21250.045024,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Windyfin Skybasher",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 3,
@@ -37523,16 +37571,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187431-00002E72CC",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 171514.045024,
 					["start_time"] = 1672378639,
 					["delay"] = 0,
-					["damage_taken"] = 171514.045024,
+					["fight_component"] = true,
 				}, -- [22]
 				{
 					["flag_original"] = 68168,
@@ -37543,23 +37592,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 895,
 					},
-					["dps_started"] = false,
+					["serial"] = "Vehicle-0-4229-2444-17344-187414-00002E74DB",
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["monster"] = true,
 					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 895.0064759999999,
-					["on_hold"] = false,
 					["end_time"] = 1672378956,
-					["monster"] = true,
-					["total"] = 895.0064759999999,
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["total"] = 895.0064759999999,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Summoned Typhoon",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -37590,17 +37639,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Vehicle-0-4229-2444-17344-187414-00002E74DB",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 26789.006476,
 					["start_time"] = 1672378946,
 					["delay"] = 0,
-					["damage_taken"] = 26789.006476,
+					["dps_started"] = false,
 				}, -- [23]
 				{
 					["flag_original"] = 2632,
@@ -37611,24 +37660,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 15957,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-188860-00002E74DB",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "188860",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 15957.005623,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672378956,
 					["dps_started"] = false,
 					["total"] = 15957.005623,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Whirglgurgl",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -37738,16 +37786,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-188860-00002E74DB",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 60225.00562300001,
 					["start_time"] = 1672378932,
 					["delay"] = 0,
-					["damage_taken"] = 60225.00562300001,
+					["monster"] = true,
 				}, -- [24]
 				{
 					["flag_original"] = 2632,
@@ -37759,24 +37808,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Kalego"] = 10923,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-184853-00002E79A9",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "184853",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 10923.018748,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672378956,
 					["dps_started"] = false,
 					["total"] = 10923.018748,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Primal Scythid Queen",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -37864,21 +37912,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-184853-00002E79A9",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 124375.018748,
 					["start_time"] = 1672378923,
 					["delay"] = 0,
-					["damage_taken"] = 124375.018748,
+					["monster"] = true,
 				}, -- [25]
 				{
 					["flag_original"] = 4680,
 					["totalabsorbed"] = 0.01512,
-					["aID"] = "190193",
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -37887,19 +37935,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "PET",
+					["damage_taken"] = 32440.01512,
+					["aID"] = "190193",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1997.01512,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-190193-00002E70EB",
+					["fight_component"] = true,
 					["end_time"] = 1672379143,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Bound Shoresnapper",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -37957,17 +38005,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 1997.01512,
-					["serial"] = "Creature-0-4229-2444-17344-190193-00002E70EB",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 32440.01512,
+					["last_dps"] = 0,
 					["start_time"] = 1672379131,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [26]
 				{
 					["flag_original"] = 68168,
@@ -37978,24 +38027,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 2880,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-187433-00002E70E9",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "187433",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2880.013783,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672379143,
 					["dps_started"] = false,
 					["total"] = 2880.013783,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Windyfin Squallstalker",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -38051,16 +38099,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187433-00002E70E9",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 23817.013783,
 					["start_time"] = 1672379127,
 					["delay"] = 0,
-					["damage_taken"] = 23817.013783,
+					["monster"] = true,
 				}, -- [27]
 				{
 					["flag_original"] = 2632,
@@ -38071,24 +38120,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 4479,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-187971-00002E702E",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "187971",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4479.010135,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672379173,
 					["dps_started"] = false,
 					["total"] = 4479.010135,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Soggymaw Crabtrapper",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -38119,21 +38167,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187971-00002E702E",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 24013.010135,
 					["start_time"] = 1672379153,
 					["delay"] = 0,
-					["damage_taken"] = 24013.010135,
+					["monster"] = true,
 				}, -- [28]
 				{
 					["flag_original"] = 70216,
 					["totalabsorbed"] = 479.014549,
-					["aID"] = "190133",
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -38142,19 +38190,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "PET",
+					["damage_taken"] = 7461.014549,
+					["aID"] = "190133",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 479.014549,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-190133-00002E702F",
+					["fight_component"] = true,
 					["end_time"] = 1672379173,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Conscripted Crab",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -38184,17 +38232,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 479.014549,
-					["serial"] = "Creature-0-4229-2444-17344-190133-00002E702F",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 7461.014549,
+					["last_dps"] = 0,
 					["start_time"] = 1672379165,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [29]
 				{
 					["flag_original"] = 68168,
@@ -38205,24 +38254,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 9622,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-187263-00002E7147",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "187263",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 9622.011145,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672379220,
 					["dps_started"] = false,
 					["total"] = 9622.011145,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Soggymaw Wavebringer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -38280,21 +38328,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187263-00002E7147",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 38988.011145,
 					["start_time"] = 1672379200,
 					["delay"] = 0,
-					["damage_taken"] = 38988.011145,
+					["monster"] = true,
 				}, -- [30]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.028929,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Swnc"] = true,
 						["Zulbathal"] = true,
@@ -38303,23 +38351,23 @@ _detalhes_database = {
 						["Zulbathal"] = 27166,
 						["Swnc"] = 39310,
 					},
-					["end_time"] = 1672379349,
+					["serial"] = "Creature-0-4229-2444-17344-190767-00002E6FA9",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "190767",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 66476.02892900001,
-					["fight_component"] = true,
+					["end_time"] = 1672379349,
 					["dps_started"] = false,
 					["total"] = 66476.02892900001,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Metalshaper",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -38485,16 +38533,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-190767-00002E6FA9",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 182650.028929,
 					["start_time"] = 1672379297,
 					["delay"] = 0,
-					["damage_taken"] = 182650.028929,
+					["fight_component"] = true,
 				}, -- [31]
 				{
 					["flag_original"] = 2632,
@@ -38505,28 +38554,28 @@ _detalhes_database = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
-						["Wind Serpent"] = 46352,
+						["Vordai"] = 0,
 						["Zulbathal"] = 5530,
+						["Wind Serpent"] = 46352,
 					},
-					["total"] = 51882.06862699999,
+					["serial"] = "Creature-0-4229-2444-17344-191637-00002E785C",
 					["pets"] = {
 						"Smoldering Feather <Lava Phoenix>", -- [1]
 					},
-					["friendlyfire"] = {
-					},
+					["aID"] = "191637",
+					["fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 51882.06862699999,
-					["dps_started"] = false,
-					["fight_component"] = true,
+					["total"] = 51882.06862699999,
 					["monster"] = true,
 					["end_time"] = 1672379349,
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
 					["nome"] = "Lava Phoenix",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 2,
@@ -38535,8 +38584,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1689,
 								["targets"] = {
-									["Wind Serpent"] = 46352,
+									["Vordai"] = 0,
 									["Zulbathal"] = 5530,
+									["Wind Serpent"] = 46352,
 								},
 								["n_dmg"] = 45410,
 								["n_min"] = 0,
@@ -38560,44 +38610,44 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["aID"] = "191637",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191637-00002E785C",
+					["last_dps"] = 0,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 135994.068627,
 					["start_time"] = 1672379272,
 					["delay"] = 0,
-					["damage_taken"] = 135994.068627,
+					["dps_started"] = false,
 				}, -- [32]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 5602.020128,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 37999,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-191136-00002E6F05",
 					["pets"] = {
 					},
-					["end_time"] = 1672379386,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "191136",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 37999.020128,
-					["fight_component"] = true,
+					["end_time"] = 1672379386,
 					["dps_started"] = false,
 					["total"] = 37999.020128,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Flameshatter",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -38681,21 +38731,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191136-00002E6F05",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 97546.020128,
 					["start_time"] = 1672379353,
 					["delay"] = 0,
-					["damage_taken"] = 97546.020128,
+					["fight_component"] = true,
 				}, -- [33]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 5062.039662,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Swnc"] = true,
 						["Shiyla"] = true,
@@ -38710,23 +38760,23 @@ _detalhes_database = {
 						["Gwiffonrawr"] = 3801,
 						["Janniss"] = 1316,
 					},
-					["end_time"] = 1672379386,
+					["serial"] = "Creature-0-4229-2444-17344-191446-00002E7B03",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "191446",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 70972.039662,
-					["fight_component"] = true,
+					["end_time"] = 1672379386,
 					["dps_started"] = false,
 					["total"] = 70972.039662,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Scoundrel",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 2,
@@ -38845,21 +38895,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191446-00002E7B03",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 414912.039662,
 					["start_time"] = 1672379295,
 					["delay"] = 0,
-					["damage_taken"] = 414912.039662,
+					["fight_component"] = true,
 				}, -- [34]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.016634,
-					["aID"] = "192137",
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -38867,37 +38917,37 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 921.016634,
+					["aID"] = "192137",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.016634,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-192137-00002E6EAF",
+					["fight_component"] = true,
 					["end_time"] = 1672379386,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Lava Flick",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 0.016634,
-					["serial"] = "Creature-0-4229-2444-17344-192137-00002E6EAF",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 921.016634,
+					["last_dps"] = 0,
 					["start_time"] = 1672379383,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [35]
 				{
 					["flag_original"] = 68136,
 					["totalabsorbed"] = 0.019217,
-					["aID"] = "191628",
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -38906,19 +38956,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 26117.019217,
+					["aID"] = "191628",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4463.019217,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-191628-00002E4103",
+					["fight_component"] = true,
 					["end_time"] = 1672379386,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Lava Snail",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -38977,22 +39027,22 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 4463.019217,
-					["serial"] = "Creature-0-4229-2444-17344-191628-00002E4103",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 26117.019217,
+					["last_dps"] = 0,
 					["start_time"] = 1672379374,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [36]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.011234,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 						["Frothing Pustule"] = true,
@@ -39002,23 +39052,23 @@ _detalhes_database = {
 						["Zulbathal"] = 23979,
 						["Janniss"] = 1722,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-190766-00002E724E",
 					["pets"] = {
 					},
-					["end_time"] = 1672379430,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "190766",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 25701.011234,
-					["fight_component"] = true,
+					["end_time"] = 1672379430,
 					["dps_started"] = false,
 					["total"] = 25701.011234,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Ragetamer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -39102,21 +39152,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-190766-00002E724E",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 152414.011234,
 					["start_time"] = 1672379380,
 					["delay"] = 0,
-					["damage_taken"] = 152414.011234,
+					["fight_component"] = true,
 				}, -- [37]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 2846.014091,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 						["Caladbohlg"] = true,
@@ -39125,24 +39175,24 @@ _detalhes_database = {
 						["Zulbathal"] = 25839,
 						["Caladbohlg"] = 124,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-191611-00002E7BC4",
 					["pets"] = {
 						"Hardened Lava <Dragonhunter Igordan>", -- [1]
 					},
-					["end_time"] = 1672379487,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "191611",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 18191.01409100001,
-					["fight_component"] = true,
+					["end_time"] = 1672379487,
 					["dps_started"] = false,
 					["total"] = 25963.01409100001,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Dragonhunter Igordan",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -39225,44 +39275,43 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191611-00002E7BC4",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 131606.014091,
 					["start_time"] = 1672379447,
 					["delay"] = 0,
-					["damage_taken"] = 131606.014091,
+					["fight_component"] = true,
 				}, -- [38]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.009701,
-					["serial"] = "Creature-0-4229-2444-17344-187043-00002E7C3F",
-					["fight_component"] = true,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 7772,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-187043-00002E7C3F",
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
-					["end_time"] = 1672379487,
+					["last_dps"] = 0,
 					["aID"] = "187043",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 7772.009701,
-					["last_event"] = 0,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 7772.009701,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1672379487,
+					["on_hold"] = false,
 					["ownerName"] = "Dragonhunter Igordan",
 					["nome"] = "Hardened Lava <Dragonhunter Igordan>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[369900] = {
 								["c_amt"] = 0,
@@ -39292,44 +39341,45 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["total"] = 7772.009701,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 2204.009701,
 					["start_time"] = 1672379483,
 					["delay"] = 0,
-					["damage_taken"] = 2204.009701,
+					["friendlyfire_total"] = 0,
 				}, -- [39]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.013154,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 						["Zulbathal"] = 18028,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-186792-00002E796A",
 					["pets"] = {
 					},
-					["end_time"] = 1672379700,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "186792",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 18028.013154,
-					["fight_component"] = true,
+					["end_time"] = 1672379700,
 					["dps_started"] = false,
 					["total"] = 18028.013154,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Qalashi Skirmisher",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -39413,21 +39463,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-186792-00002E796A",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 126778.013154,
 					["start_time"] = 1672379669,
 					["delay"] = 0,
-					["damage_taken"] = 126778.013154,
+					["fight_component"] = true,
 				}, -- [40]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.013333,
-					["aID"] = "192138",
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
@@ -39435,72 +39485,73 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 921.013333,
+					["aID"] = "192138",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.013333,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-192138-00002E72BC",
+					["fight_component"] = true,
 					["end_time"] = 1672379732,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Lava Pincer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 0.013333,
-					["serial"] = "Creature-0-4229-2444-17344-192138-00002E72BC",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 921.013333,
+					["last_dps"] = 0,
 					["start_time"] = 1672379729,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [41]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.003461,
-					["on_hold"] = false,
+					["monster"] = true,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 					},
 					["targets"] = {
 					},
-					["monster"] = true,
 					["pets"] = {
 					},
-					["end_time"] = 1672379760,
+					["last_dps"] = 0,
+					["fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003461,
-					["fight_component"] = true,
 					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-186965-00002E7D63",
 					["dps_started"] = false,
-					["total"] = 0.003461,
-					["tipo"] = 1,
+					["end_time"] = 1672379760,
+					["aID"] = "186965",
 					["ownerName"] = "Lava Phoenix",
 					["nome"] = "Smoldering Feather <Lava Phoenix>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["aID"] = "186965",
-					["serial"] = "Creature-0-4229-2444-17344-186965-00002E7D63",
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
+					["total"] = 0.003461,
+					["tipo"] = 1,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 9414.003461,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1672379757,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 9414.003461,
 				}, -- [42]
 				{
 					["flag_original"] = 2632,
@@ -39512,24 +39563,23 @@ _detalhes_database = {
 						["Zulbathal"] = 17933,
 						["Verdastrasza"] = 2763,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "191672",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 20696.011816,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672379826,
 					["dps_started"] = false,
 					["total"] = 20696.011816,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Lava Tarantula",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -39613,16 +39663,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 37776.01181600001,
 					["start_time"] = 1672379806,
 					["delay"] = 0,
-					["damage_taken"] = 37776.01181600001,
+					["monster"] = true,
 				}, -- [43]
 				{
 					["flag_original"] = 68168,
@@ -39633,24 +39684,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 39949,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "186777",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 39949.008965,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672379943,
 					["dps_started"] = false,
 					["total"] = 39949.008965,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Meatgrinder Sotok",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -39707,16 +39757,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 121950.008965,
 					["start_time"] = 1672379918,
 					["delay"] = 0,
-					["damage_taken"] = 121950.008965,
+					["monster"] = true,
 				}, -- [44]
 				{
 					["flag_original"] = 68168,
@@ -39732,24 +39783,23 @@ _detalhes_database = {
 						["Oggrosh"] = 15115,
 						["Zulbathal"] = 17363,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E50",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "191983",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 38509.024653,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672380085,
 					["dps_started"] = false,
 					["total"] = 38509.024653,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Erupting Droplet",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 3,
@@ -39891,16 +39941,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E50",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 263499.024653,
 					["start_time"] = 1672380004,
 					["delay"] = 0,
-					["damage_taken"] = 263499.024653,
+					["monster"] = true,
 				}, -- [45]
 				{
 					["flag_original"] = 68168,
@@ -39913,25 +39964,24 @@ _detalhes_database = {
 						["Zulbathal"] = 48690,
 						["Oggrosh"] = 1435,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
 					["pets"] = {
 						"Magma Droplet <Erupting Magma>", -- [1]
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "191917",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 48656.00854,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1672380109,
 					["dps_started"] = false,
 					["total"] = 50125.00854,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Erupting Magma",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -40015,22 +40065,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 122669.00854,
 					["start_time"] = 1672380069,
 					["delay"] = 0,
-					["damage_taken"] = 122669.00854,
+					["monster"] = true,
 				}, -- [46]
 				{
 					["flag_original"] = 8776,
 					["totalabsorbed"] = 0.019098,
-					["serial"] = "Creature-0-4229-2444-17344-194526-00002E7EC5",
-					["fight_component"] = true,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 						["Oggrosh"] = true,
@@ -40038,22 +40087,22 @@ _detalhes_database = {
 					["targets"] = {
 						["Zulbathal"] = 1469,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-194526-00002E7EC5",
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
-					["end_time"] = 1672380109,
+					["last_dps"] = 0,
 					["aID"] = "194526",
+					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1469.019098,
-					["last_event"] = 0,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 1469.019098,
-					["classe"] = "PET",
+					["end_time"] = 1672380109,
+					["on_hold"] = false,
 					["ownerName"] = "Erupting Magma",
 					["nome"] = "Magma Droplet <Erupting Magma>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -40110,21 +40159,22 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["total"] = 1469.019098,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 20656.019098,
 					["start_time"] = 1672380103,
 					["delay"] = 0,
-					["damage_taken"] = 20656.019098,
+					["friendlyfire_total"] = 0,
 				}, -- [47]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.0296,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Ruby Egg Guardian"] = true,
 						["Oggrosh"] = true,
@@ -40138,23 +40188,23 @@ _detalhes_database = {
 						["Oggrosh"] = 25414,
 						["Janniss"] = 45701,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
 					["pets"] = {
 					},
-					["end_time"] = 1672380348,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "195915",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 142633.0296,
-					["fight_component"] = true,
+					["end_time"] = 1672380348,
 					["dps_started"] = false,
 					["total"] = 142633.0296,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Firava the Rekindler",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -40246,16 +40296,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 395736.0296,
 					["start_time"] = 1672380284,
 					["delay"] = 0,
-					["damage_taken"] = 395736.0296,
+					["fight_component"] = true,
 				}, -- [48]
 				{
 					["flag_original"] = 2632,
@@ -40277,24 +40328,22 @@ _detalhes_database = {
 						["Zulbathal"] = 44115,
 						["Janniss"] = 10830,
 					},
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 59920.044654,
-					["on_hold"] = false,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
 					["monster"] = true,
 					["total"] = 59920.044654,
-					["end_time"] = 1672380348,
-					["aID"] = "186825",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Molten Primalist",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 3,
@@ -40355,13 +40404,15 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
+					["damage_taken"] = 212200.044654,
+					["end_time"] = 1672380348,
+					["aID"] = "186825",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 212200.044654,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1672380260,
 					["delay"] = 0,
 					["last_dps"] = 0,
@@ -40369,7 +40420,6 @@ _detalhes_database = {
 				{
 					["flag_original"] = 8465,
 					["totalabsorbed"] = 779.0454350000001,
-					["last_event"] = 0,
 					["damage_from"] = {
 						["Lavacaller Primalist"] = true,
 						["Firava the Rekindler"] = true,
@@ -40377,29 +40427,28 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Molten Primalist"] = 18994,
-						["Unleashed Lavaburst"] = 7768,
-						["Lavacaller Primalist"] = 19766,
 						["Tarasek Elementalist"] = 2553,
+						["Lavacaller Primalist"] = 19766,
+						["Unleashed Lavaburst"] = 7768,
 						["Infused Ruby Whelpling"] = 2821,
 						["Firava the Rekindler"] = 27162,
 						["Primal Revenant"] = 24003,
 					},
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
-					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
 					["aID"] = "190171",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 103067.045435,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
 					["dps_started"] = false,
 					["total"] = 103067.045435,
-					["classe"] = "PET",
+					["last_dps"] = 0,
 					["ownerName"] = "Zulbathal",
 					["nome"] = "Sendrax <Zulbathal>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 4,
@@ -40409,9 +40458,9 @@ _detalhes_database = {
 								["n_max"] = 512,
 								["targets"] = {
 									["Molten Primalist"] = 5800,
-									["Unleashed Lavaburst"] = 1171,
-									["Lavacaller Primalist"] = 6574,
 									["Tarasek Elementalist"] = 2553,
+									["Lavacaller Primalist"] = 6574,
+									["Unleashed Lavaburst"] = 1171,
 									["Infused Ruby Whelpling"] = 2821,
 									["Firava the Rekindler"] = 6713,
 									["Primal Revenant"] = 4213,
@@ -40466,16 +40515,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
+					["on_hold"] = false,
 					["end_time"] = 1672380348,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 52234.04543499999,
 					["start_time"] = 1672380163,
 					["delay"] = 0,
-					["damage_taken"] = 52234.04543499999,
+					["classe"] = "PET",
 				}, -- [50]
 				{
 					["flag_original"] = 68168,
@@ -40495,24 +40546,22 @@ _detalhes_database = {
 						["Sendrax <Zulbathal>"] = 1193,
 						["Janniss"] = 8151,
 					},
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 79031.034321,
-					["on_hold"] = false,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
 					["monster"] = true,
 					["total"] = 79031.034321,
-					["end_time"] = 1672380378,
-					["aID"] = "186823",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Lavacaller Primalist",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -40522,8 +40571,9 @@ _detalhes_database = {
 								["n_max"] = 1402,
 								["targets"] = {
 									["Ruby Egg Guardian"] = 2722,
-									["Sendrax <Zulbathal>"] = 1193,
+									["Oggrosh"] = 0,
 									["Zulbathal"] = 12603,
+									["Sendrax <Zulbathal>"] = 1193,
 									["Janniss"] = 2657,
 								},
 								["n_dmg"] = 17191,
@@ -40576,13 +40626,15 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
+					["damage_taken"] = 219479.034321,
+					["end_time"] = 1672380378,
+					["aID"] = "186823",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 219479.034321,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1672380253,
 					["delay"] = 0,
 					["last_dps"] = 0,
@@ -40590,7 +40642,6 @@ _detalhes_database = {
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 344.030626,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Oggrosh"] = true,
 						["Sendrax <Zulbathal>"] = true,
@@ -40601,23 +40652,23 @@ _detalhes_database = {
 						["Zulbathal"] = 14401,
 						["Janniss"] = 2630,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-186822-00002E7FD2",
 					["pets"] = {
 					},
-					["end_time"] = 1672380378,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "186822",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 17031.030626,
-					["fight_component"] = true,
+					["end_time"] = 1672380378,
 					["dps_started"] = false,
 					["total"] = 17031.030626,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Infused Ruby Whelpling",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 4,
@@ -40650,21 +40701,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-186822-00002E7FD2",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 137727.030626,
 					["start_time"] = 1672380332,
 					["delay"] = 0,
-					["damage_taken"] = 137727.030626,
+					["fight_component"] = true,
 				}, -- [52]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.011523,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Zulbathal"] = true,
 						["Sendrax <Zulbathal>"] = true,
@@ -40673,23 +40724,23 @@ _detalhes_database = {
 						["Zulbathal"] = 35416,
 						["Sendrax <Zulbathal>"] = 19742,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
 					["pets"] = {
 					},
-					["end_time"] = 1672380451,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "195917",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 55158.011523,
-					["fight_component"] = true,
+					["end_time"] = 1672380451,
 					["dps_started"] = false,
 					["total"] = 55158.011523,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Primal Revenant",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -40775,21 +40826,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 122148.011523,
 					["start_time"] = 1672380398,
 					["delay"] = 0,
-					["damage_taken"] = 122148.011523,
+					["fight_component"] = true,
 				}, -- [53]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 1122.02348,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Ruby Egg Guardian"] = true,
 						["Sendrax <Zulbathal>"] = true,
@@ -40800,23 +40851,23 @@ _detalhes_database = {
 						["Zulbathal"] = 16947,
 						["Oggrosh"] = 3620,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
 					["pets"] = {
 					},
-					["end_time"] = 1672380562,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "190080",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 20567.02348,
-					["fight_component"] = true,
+					["end_time"] = 1672380562,
 					["dps_started"] = false,
 					["total"] = 20567.02348,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Tarasek Elementalist",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -40875,21 +40926,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 38192.02348,
 					["start_time"] = 1672380534,
 					["delay"] = 0,
-					["damage_taken"] = 38192.02348,
+					["fight_component"] = true,
 				}, -- [54]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 630.035338,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Ruby Egg Guardian"] = true,
 						["Oggrosh"] = true,
@@ -40906,23 +40957,23 @@ _detalhes_database = {
 						["Zulbathal"] = 5925,
 						["Daxisius <Vordai>"] = 6166,
 					},
+					["serial"] = "Creature-0-4229-2444-17344-188666-00002E80AB",
 					["pets"] = {
 					},
-					["end_time"] = 1672380597,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "188666",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 34838.035338,
-					["fight_component"] = true,
+					["end_time"] = 1672380597,
 					["dps_started"] = false,
 					["total"] = 34838.035338,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Unleashed Lavaburst",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -41013,22 +41064,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-188666-00002E80AB",
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 140021.035338,
 					["start_time"] = 1672380552,
 					["delay"] = 0,
-					["damage_taken"] = 140021.035338,
+					["fight_component"] = true,
 				}, -- [55]
 				{
 					["flag_original"] = 69905,
 					["totalabsorbed"] = 0.08459200000000001,
-					["friendlyfire"] = {
-					},
 					["damage_from"] = {
 					},
 					["targets"] = {
@@ -41038,20 +41088,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
 					["on_hold"] = false,
-					["classe"] = "PET",
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1297679.084592,
-					["end_time"] = 1672381162,
+					["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
 					["dps_started"] = false,
-					["total"] = 1297679.084592,
-					["aID"] = "",
+					["end_time"] = 1672381162,
+					["damage_taken"] = 0.08459200000000001,
 					["ownerName"] = "Zulbathal",
 					["nome"] = "Ruby Whelpling <Zulbathal>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[383060] = {
 								["c_amt"] = 0,
@@ -41083,15 +41132,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
+					["friendlyfire"] = {
+					},
+					["aID"] = "",
+					["classe"] = "PET",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.08459200000000001,
+					["last_dps"] = 0,
 					["start_time"] = 1672381104,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["total"] = 1297679.084592,
 				}, -- [56]
 				{
 					["flag_original"] = 2600,
@@ -41104,33 +41156,33 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["aID"] = "194142",
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.05207199999999999,
-					["last_event"] = 0,
-					["aID"] = "194142",
+					["serial"] = "Creature-0-4229-2444-17344-194142-00002E82E1",
 					["dps_started"] = false,
-					["total"] = 0.05207199999999999,
-					["fight_component"] = true,
+					["end_time"] = 1672381162,
 					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["nome"] = "Intrusive Pupstinger",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
-					["end_time"] = 1672381162,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
-					["serial"] = "Creature-0-4229-2444-17344-194142-00002E82E1",
+					["fight_component"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 366851.052072,
 					["start_time"] = 1672381159,
 					["delay"] = 0,
-					["damage_taken"] = 366851.052072,
+					["total"] = 0.05207199999999999,
 				}, -- [57]
 				{
 					["flag_original"] = 2600,
@@ -41145,19 +41197,19 @@ _detalhes_database = {
 					["pets"] = {
 						"Rising Tempest <Relentless Gust>", -- [1]
 					},
+					["aID"] = "194159",
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 121750.068291,
-					["last_event"] = 0,
-					["aID"] = "194159",
+					["serial"] = "Creature-0-4229-2444-17344-194159-00002E8115",
 					["dps_started"] = false,
-					["total"] = 121750.068291,
-					["fight_component"] = true,
+					["end_time"] = 1672381162,
 					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["nome"] = "Relentless Gust",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 3,
@@ -41189,18 +41241,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
-					["end_time"] = 1672381162,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
-					["serial"] = "Creature-0-4229-2444-17344-194159-00002E8115",
+					["fight_component"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 782749.0682909999,
 					["start_time"] = 1672381121,
 					["delay"] = 0,
-					["damage_taken"] = 782749.0682909999,
+					["total"] = 121750.068291,
 				}, -- [58]
 				{
 					["flag_original"] = 2600,
@@ -41213,71 +41265,71 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["aID"] = "193994",
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.05251600000000001,
-					["last_event"] = 0,
-					["aID"] = "193994",
+					["serial"] = "Creature-0-4229-2444-17344-193994-00002E8265",
 					["dps_started"] = false,
-					["total"] = 0.05251600000000001,
-					["fight_component"] = true,
+					["end_time"] = 1672381165,
 					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["nome"] = "Agitated Weedling",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
-					["end_time"] = 1672381165,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
-					["serial"] = "Creature-0-4229-2444-17344-193994-00002E8265",
+					["fight_component"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 506877.052516,
 					["start_time"] = 1672381162,
 					["delay"] = 0,
-					["damage_taken"] = 506877.052516,
+					["total"] = 0.05251600000000001,
 				}, -- [59]
 				{
 					["flag_original"] = 8776,
 					["totalabsorbed"] = 0.012405,
-					["serial"] = "Creature-0-4229-2444-17344-194575-00002E8303",
 					["damage_from"] = {
 						["Ruby Whelpling <Hookermann>"] = true,
 					},
 					["targets"] = {
 					},
-					["end_time"] = 1672381192,
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
 					["aID"] = "194575",
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.012405,
-					["last_event"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-194575-00002E8303",
 					["dps_started"] = false,
-					["total"] = 0.012405,
-					["classe"] = "PET",
+					["end_time"] = 1672381192,
+					["last_dps"] = 0,
 					["ownerName"] = "Relentless Gust",
 					["nome"] = "Rising Tempest <Relentless Gust>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
 					["on_hold"] = false,
+					["classe"] = "PET",
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 33436.01240499999,
 					["start_time"] = 1672381189,
 					["delay"] = 0,
-					["damage_taken"] = 33436.01240499999,
+					["total"] = 0.012405,
 				}, -- [60]
 			},
 		}, -- [1]
@@ -41287,7 +41339,7 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1297,
 					["targets_overheal"] = {
-						["Zulbathal"] = 370,
+						["Zulbathal"] = 0,
 					},
 					["pets"] = {
 					},
@@ -41297,7 +41349,7 @@ _detalhes_database = {
 					["total_without_pet"] = 270327.224222,
 					["total"] = 270327.224222,
 					["targets_absorbs"] = {
-						["Zulbathal"] = 55338,
+						["Zulbathal"] = 0,
 					},
 					["heal_enemy"] = {
 					},
@@ -41306,7 +41358,7 @@ _detalhes_database = {
 					["totalabsorb"] = 59715.224222,
 					["last_hps"] = 0,
 					["targets"] = {
-						["Zulbathal"] = 230533,
+						["Zulbathal"] = 0,
 					},
 					["totalover_without_pet"] = 0.224222,
 					["healing_taken"] = 282184.224222,
@@ -41316,7 +41368,7 @@ _detalhes_database = {
 						["Zulbathal"] = true,
 						["Latishaz"] = true,
 					},
-					["classe"] = "DRUID",
+					["heal_enemy_amt"] = 0,
 					["nome"] = "Zulbathal",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -41340,9 +41392,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 47955,
-								["totaldenied"] = 0,
 								["n_amt"] = 140,
 								["n_curado"] = 162657,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[388380] = {
@@ -41365,27 +41417,28 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_amt"] = 79,
 								["n_curado"] = 59715,
 								["totaldenied"] = 0,
+								["n_amt"] = 79,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "DRUID",
 					["start_time"] = 1672318506,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 					["spec"] = 102,
 					["totaldenied"] = 0.224222,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1304,
-					["healing_from"] = {
+					["targets_overheal"] = {
+						["Zulbathal"] = 0,
 					},
 					["pets"] = {
 					},
@@ -41394,7 +41447,8 @@ _detalhes_database = {
 					["totalover"] = 1210.01379,
 					["total_without_pet"] = 11857.01379,
 					["total"] = 11857.01379,
-					["spec"] = 1467,
+					["targets_absorbs"] = {
+					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
@@ -41408,8 +41462,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.01379,
 					["fight_component"] = true,
 					["end_time"] = 1672318877,
-					["targets_overheal"] = {
-						["Zulbathal"] = 0,
+					["healing_from"] = {
 					},
 					["nome"] = "Latishaz",
 					["spells"] = {
@@ -41434,24 +41487,23 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 10649,
-								["totaldenied"] = 0,
 								["n_amt"] = 5,
 								["n_curado"] = 1208,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
+					["tipo"] = 2,
 					["classe"] = "EVOKER",
-					["last_event"] = 0,
 					["start_time"] = 1672318861,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["aID"] = "61-0EED887C",
 					["totaldenied"] = 0.01379,
 					["delay"] = 0,
-					["targets_absorbs"] = {
-					},
+					["spec"] = 1467,
 				}, -- [2]
 			},
 		}, -- [2]
@@ -41460,9 +41512,9 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 11637.55057000001,
-					["resource"] = 6635.445167928472,
+					["resource"] = 9654.476185833111,
 					["targets"] = {
-						["Zulbathal"] = 7907,
+						["Zulbathal"] = 0,
 					},
 					["pets"] = {
 					},
@@ -41471,6 +41523,7 @@ _detalhes_database = {
 					["passiveover"] = 0.002785,
 					["fight_component"] = true,
 					["total"] = 11637.55057000001,
+					["flag_original"] = 1297,
 					["nome"] = "Zulbathal",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -41479,7 +41532,7 @@ _detalhes_database = {
 								["id"] = 59914,
 								["totalover"] = 0,
 								["targets"] = {
-									["Zulbathal"] = 7898,
+									["Zulbathal"] = 0,
 								},
 								["counter"] = 316,
 							},
@@ -41496,14 +41549,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1297,
 					["aID"] = "61-0CA8EB69",
 					["totalover"] = 0.002785,
-					["last_event"] = 0,
 					["alternatepower"] = 11.55057,
+					["tipo"] = 3,
+					["last_event"] = 0,
 					["spec"] = 102,
 					["serial"] = "Player-61-0CA8EB69",
-					["tipo"] = 3,
+					["resource_type"] = 8,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -41584,15 +41637,15 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[127797] = {
-								["refreshamt"] = 0,
+							[33786] = {
+								["counter"] = 0,
 								["activedamt"] = 0,
-								["appliedamt"] = 5,
-								["id"] = 127797,
-								["uptime"] = 30,
+								["appliedamt"] = 1,
+								["id"] = 33786,
+								["uptime"] = 6,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[387572] = {
 								["refreshamt"] = 0,
@@ -41604,22 +41657,22 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[33786] = {
-								["counter"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 33786,
-								["uptime"] = 6,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
 							[81281] = {
 								["refreshamt"] = 6,
 								["activedamt"] = 0,
 								["appliedamt"] = 45,
 								["id"] = 81281,
 								["uptime"] = 165,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[127797] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 5,
+								["id"] = 127797,
+								["uptime"] = 30,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -41889,12 +41942,22 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[373579] = {
+							[397734] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 13,
-								["appliedamt"] = 13,
-								["id"] = 373579,
-								["uptime"] = 216,
+								["activedamt"] = 114,
+								["appliedamt"] = 114,
+								["id"] = 397734,
+								["uptime"] = 1815,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[279709] = {
+								["refreshamt"] = 48,
+								["activedamt"] = 84,
+								["appliedamt"] = 84,
+								["id"] = 279709,
+								["uptime"] = 650,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -41909,23 +41972,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[102560] = {
-								["refreshamt"] = 1,
-								["activedamt"] = 23,
-								["appliedamt"] = 23,
-								["id"] = 102560,
-								["uptime"] = 185,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[88747] = {
+							[97033] = {
 								["refreshamt"] = 0,
-								["appliedamt"] = 44,
-								["activedamt"] = 44,
-								["uptime"] = 42,
-								["id"] = 88747,
-								["actived_at"] = 3344758372,
+								["activedamt"] = 114,
+								["appliedamt"] = 114,
+								["id"] = 97033,
+								["uptime"] = 1815,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -41941,12 +41993,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[279709] = {
-								["refreshamt"] = 48,
-								["activedamt"] = 84,
-								["appliedamt"] = 84,
-								["id"] = 279709,
-								["uptime"] = 650,
+							[373579] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 13,
+								["appliedamt"] = 13,
+								["id"] = 373579,
+								["uptime"] = 216,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -41961,35 +42013,36 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[97033] = {
+							[88747] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 114,
-								["appliedamt"] = 114,
-								["id"] = 97033,
-								["uptime"] = 1815,
+								["appliedamt"] = 44,
+								["activedamt"] = 44,
+								["uptime"] = 42,
+								["id"] = 88747,
+								["actived_at"] = 3344758372,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[397734] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 114,
-								["appliedamt"] = 114,
-								["id"] = 397734,
-								["uptime"] = 1815,
+							[102560] = {
+								["refreshamt"] = 1,
+								["activedamt"] = 23,
+								["appliedamt"] = 23,
+								["id"] = 102560,
+								["uptime"] = 185,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[292364] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 114,
-								["appliedamt"] = 114,
-								["id"] = 292364,
-								["uptime"] = 1815,
+							[388376] = {
+								["counter"] = 0,
+								["activedamt"] = 7,
+								["appliedamt"] = 7,
+								["id"] = 388376,
+								["uptime"] = 26,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 8,
 							},
 							[225787] = {
 								["refreshamt"] = 0,
@@ -42041,12 +42094,32 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[292364] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 114,
+								["appliedamt"] = 114,
+								["id"] = 292364,
+								["uptime"] = 1815,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[157228] = {
 								["refreshamt"] = 56,
 								["activedamt"] = 94,
 								["appliedamt"] = 94,
 								["id"] = 157228,
 								["uptime"] = 558,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[378991] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 0,
+								["id"] = 378991,
+								["uptime"] = 0,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -42062,12 +42135,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[378991] = {
+							[93827] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 0,
-								["id"] = 378991,
-								["uptime"] = 0,
+								["activedamt"] = 114,
+								["appliedamt"] = 114,
+								["id"] = 93827,
+								["uptime"] = 1815,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -42082,26 +42155,6 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[93827] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 114,
-								["appliedamt"] = 114,
-								["id"] = 93827,
-								["uptime"] = 1815,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[388376] = {
-								["counter"] = 0,
-								["activedamt"] = 7,
-								["appliedamt"] = 7,
-								["id"] = 388376,
-								["uptime"] = 26,
-								["targets"] = {
-								},
-								["refreshamt"] = 8,
-							},
 						},
 						["tipo"] = 9,
 					},
@@ -42111,13 +42164,6 @@ _detalhes_database = {
 						[394643] = 1,
 					},
 					["debuff_uptime"] = 3726,
-					["dispell_targets"] = {
-						["Qalashi Skirmisher"] = 2,
-						["Qalashi Djaradin"] = 2,
-						["Qalashi Scoundrel"] = 2,
-						["Qalashi Ragetamer"] = 2,
-						["Soggymaw Seabasher"] = 1,
-					},
 					["buff_uptime_targets"] = {
 					},
 					["spec"] = 102,
@@ -42132,7 +42178,6 @@ _detalhes_database = {
 					},
 					["serial"] = "Player-61-0CA8EB69",
 					["cc_break_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[81281] = {
 								["cc_break_oque"] = {
@@ -42146,15 +42191,11 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["interrupt_targets"] = {
-						["Primal Proto-Drake"] = 1,
-						["Baron Crustcore"] = 1,
-						["Baron Ashflow"] = 1,
+						["tipo"] = 9,
 					},
 					["buff_uptime"] = 19822,
+					["debuff_uptime_targets"] = {
+					},
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
 							[127797] = {
@@ -42191,9 +42232,7 @@ _detalhes_database = {
 						[369788] = 8,
 						[377502] = 1,
 					},
-					["fight_component"] = true,
 					["dispell_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[2908] = {
 								["dispell"] = 9,
@@ -42212,9 +42251,19 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
+					},
+					["fight_component"] = true,
+					["classe"] = "DRUID",
+					["dispell_targets"] = {
+						["Qalashi Skirmisher"] = 2,
+						["Qalashi Djaradin"] = 2,
+						["Qalashi Scoundrel"] = 2,
+						["Qalashi Ragetamer"] = 2,
+						["Soggymaw Seabasher"] = 1,
 					},
 					["cc_done"] = 7.023643000000001,
-					["nome"] = "Zulbathal",
+					["interrupt"] = 3.011871999999999,
 					["grupo"] = true,
 					["spell_cast"] = {
 						[202347] = 72,
@@ -42231,10 +42280,10 @@ _detalhes_database = {
 						[102560] = 8,
 						[190984] = 116,
 						[77764] = 1,
-						[339] = 1,
-						[102793] = 3,
-						[387572] = 1,
 						[102383] = 5,
+						[339] = 1,
+						[387572] = 1,
+						[102793] = 3,
 						[93402] = 143,
 						[78675] = 11,
 						[1850] = 1,
@@ -42244,7 +42293,6 @@ _detalhes_database = {
 						[339] = 1,
 					},
 					["cooldowns_defensive_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[77764] = {
 								["id"] = 77764,
@@ -42254,41 +42302,46 @@ _detalhes_database = {
 								["counter"] = 1,
 							},
 						},
+						["tipo"] = 9,
 					},
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["classe"] = "DRUID",
 					["cc_break_targets"] = {
 						["Primal Scythid Queen"] = 1,
 					},
-					["last_event"] = 0,
-					["interrupt"] = 3.011871999999999,
+					["nome"] = "Zulbathal",
+					["interrupt_targets"] = {
+						["Primal Proto-Drake"] = 1,
+						["Baron Crustcore"] = 1,
+						["Baron Ashflow"] = 1,
+					},
 				}, -- [1]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["nome"] = "Primal Proto-Drake",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
 					["spell_cast"] = {
 						[386991] = 25,
 					},
+					["fight_component"] = true,
 					["aID"] = "184869",
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4229-2444-135-184869-00002D8E48",
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4229-2444-135-184869-00002D8E48",
+					["pets"] = {
+					},
 				}, -- [2]
 				{
 					["flag_original"] = 8465,
 					["ownerName"] = "Zulbathal",
 					["nome"] = "Denizen of the Dream <Zulbathal>",
-					["tipo"] = 4,
+					["classe"] = "PET",
 					["pets"] = {
 					},
 					["last_event"] = 0,
-					["classe"] = "PET",
 					["aID"] = "198489",
+					["tipo"] = 4,
 					["serial"] = "Creature-0-4229-2444-135-198489-00002D8EB8",
 					["spell_cast"] = {
 						[188046] = 54,
@@ -42319,89 +42372,89 @@ _detalhes_database = {
 				}, -- [4]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["nome"] = "Ancient Hornswog",
-					["pets"] = {
-					},
 					["spell_cast"] = {
 						[382749] = 2,
 						[392660] = 2,
 					},
+					["pets"] = {
+					},
 					["fight_component"] = true,
-					["aID"] = "187111",
 					["tipo"] = 4,
-					["classe"] = "UNKNOW",
+					["aID"] = "187111",
+					["last_event"] = 0,
 					["serial"] = "Creature-0-4229-2444-135-187111-00002D8F6A",
 					["flag_original"] = 68168,
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
+					["aID"] = "187321",
+					["nome"] = "Primal Lava Elemental",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[383237] = 6,
 					},
-					["nome"] = "Primal Lava Elemental",
-					["classe"] = "UNKNOW",
-					["pets"] = {
-					},
 					["monster"] = true,
-					["fight_component"] = true,
 					["last_event"] = 0,
-					["aID"] = "187321",
-					["serial"] = "Creature-0-4229-2444-135-187321-0000AD8785",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-135-187321-0000AD8785",
+					["fight_component"] = true,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["nome"] = "Encroaching Lava",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[370049] = 6,
 						[370042] = 2,
 					},
-					["nome"] = "Encroaching Lava",
-					["last_event"] = 0,
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["aID"] = "187326",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4229-2444-135-187326-00012D93D1",
 					["monster"] = true,
+					["aID"] = "187326",
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4229-2444-135-187326-00012D93D1",
+					["fight_component"] = true,
 				}, -- [7]
 				{
 					["monster"] = true,
-					["flag_original"] = 68168,
+					["aID"] = "192266",
 					["nome"] = "Baron Crustcore",
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-4229-2444-135-192266-00002D92C2",
 					["spell_cast"] = {
 						[378397] = 2,
 						[370259] = 1,
 						[395121] = 2,
 					},
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["aID"] = "192266",
-					["serial"] = "Creature-0-4229-2444-135-192266-00002D92C2",
-					["pets"] = {
-					},
 				}, -- [8]
 				{
 					["monster"] = true,
-					["flag_original"] = 68168,
+					["aID"] = "192274",
 					["nome"] = "Baron Ashflow",
+					["flag_original"] = 68168,
+					["pets"] = {
+						"Magma Droplet <Baron Ashflow>", -- [1]
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-4229-2444-135-192274-00002D932F",
 					["spell_cast"] = {
 						[383864] = 1,
 						[391998] = 2,
 						[394643] = 1,
-					},
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["aID"] = "192274",
-					["serial"] = "Creature-0-4229-2444-135-192274-00002D932F",
-					["pets"] = {
-						"Magma Droplet <Baron Ashflow>", -- [1]
 					},
 				}, -- [9]
 				{
@@ -42422,167 +42475,167 @@ _detalhes_database = {
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "195032",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Djaradin",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[369788] = 4,
 						[369751] = 4,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-195032-00002E7495",
 					["last_event"] = 0,
+					["aID"] = "195032",
+					["serial"] = "Creature-0-4229-2444-17344-195032-00002E7495",
+					["pets"] = {
+					},
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "191833",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Scavenger",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[377900] = 3,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-191833-00002E74A8",
 					["last_event"] = 0,
+					["aID"] = "191833",
+					["serial"] = "Creature-0-4229-2444-17344-191833-00002E74A8",
+					["pets"] = {
+					},
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "187494",
+					["fight_component"] = true,
 					["nome"] = "Rampaging Wind",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[388706] = 7,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-187494-00002E7462",
 					["last_event"] = 0,
+					["aID"] = "187494",
+					["serial"] = "Creature-0-4229-2444-17344-187494-00002E7462",
+					["pets"] = {
+					},
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "187493",
+					["fight_component"] = true,
 					["nome"] = "Rampaging Water",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[372495] = 5,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-187493-00002E7562",
 					["last_event"] = 0,
+					["aID"] = "187493",
+					["serial"] = "Creature-0-4229-2444-17344-187493-00002E7562",
+					["pets"] = {
+					},
 				}, -- [14]
 				{
 					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["monster"] = true,
+					["aID"] = "187320",
 					["nome"] = "Soggymaw Seabasher",
+					["monster"] = true,
 					["pets"] = {
 					},
 					["spell_cast"] = {
 						[377502] = 7,
 					},
-					["fight_component"] = true,
 					["tipo"] = 4,
-					["aID"] = "187320",
-					["serial"] = "Creature-0-4229-2444-17344-187320-00002E7052",
 					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-187320-00002E7052",
+					["fight_component"] = true,
 				}, -- [15]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Sogglmoggl",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[395648] = 7,
 						[395652] = 2,
 					},
-					["nome"] = "Sogglmoggl",
-					["pets"] = {
-					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "188859",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-188859-00002E7043",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-188859-00002E7043",
+					["flag_original"] = 2632,
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
-					["monster"] = true,
-					["aID"] = "187432",
+					["fight_component"] = true,
 					["nome"] = "Windyfin Windbringer",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[373194] = 5,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-187432-00002E7304",
 					["last_event"] = 0,
+					["aID"] = "187432",
+					["serial"] = "Creature-0-4229-2444-17344-187432-00002E7304",
+					["pets"] = {
+					},
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "187431",
+					["fight_component"] = true,
 					["nome"] = "Windyfin Skybasher",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[373201] = 6,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-187431-00002E72CC",
 					["last_event"] = 0,
+					["aID"] = "187431",
+					["serial"] = "Creature-0-4229-2444-17344-187431-00002E72CC",
+					["pets"] = {
+					},
 				}, -- [18]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Whirglgurgl",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[393804] = 2,
 						[393812] = 1,
 					},
-					["nome"] = "Whirglgurgl",
-					["pets"] = {
-					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "188860",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-188860-00002E74DB",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-188860-00002E74DB",
+					["flag_original"] = 2632,
 				}, -- [19]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Primal Scythid Queen",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[392854] = 2,
 						[377029] = 2,
 					},
-					["nome"] = "Primal Scythid Queen",
-					["pets"] = {
-					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "184853",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-184853-00002E79A9",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-184853-00002E79A9",
+					["flag_original"] = 68168,
 				}, -- [20]
 				{
 					["fight_component"] = true,
@@ -42601,87 +42654,87 @@ _detalhes_database = {
 				}, -- [21]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[373034] = 1,
-					},
+					["last_event"] = 0,
 					["nome"] = "Windyfin Squallstalker",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[373034] = 1,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "187433",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187433-00002E70E9",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-187433-00002E70E9",
+					["flag_original"] = 68168,
 				}, -- [22]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[373483] = 5,
-					},
+					["last_event"] = 0,
 					["nome"] = "Soggymaw Wavebringer",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[373483] = 5,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "187263",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-187263-00002E7147",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-187263-00002E7147",
+					["flag_original"] = 68168,
 				}, -- [23]
 				{
 					["flag_original"] = 2632,
-					["monster"] = true,
-					["aID"] = "190767",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Metalshaper",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
-						[370212] = 4,
-						[370208] = 4,
 						[370104] = 5,
 						[377963] = 6,
+						[370212] = 4,
+						[370208] = 4,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-190767-00002E6FA9",
 					["last_event"] = 0,
+					["aID"] = "190767",
+					["serial"] = "Creature-0-4229-2444-17344-190767-00002E6FA9",
+					["pets"] = {
+					},
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "191136",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Flameshatter",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[368984] = 6,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-191136-00002E6F05",
 					["last_event"] = 0,
+					["aID"] = "191136",
+					["serial"] = "Creature-0-4229-2444-17344-191136-00002E6F05",
+					["pets"] = {
+					},
 				}, -- [25]
 				{
 					["flag_original"] = 2632,
-					["monster"] = true,
-					["aID"] = "191446",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Scoundrel",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[369788] = 6,
 						[369751] = 6,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-191446-00002E7B03",
 					["last_event"] = 0,
+					["aID"] = "191446",
+					["serial"] = "Creature-0-4229-2444-17344-191446-00002E7B03",
+					["pets"] = {
+					},
 				}, -- [26]
 				{
 					["fight_component"] = true,
@@ -42700,46 +42753,46 @@ _detalhes_database = {
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "190766",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Ragetamer",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[369788] = 2,
 						[369751] = 3,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-190766-00002E724E",
 					["last_event"] = 0,
+					["aID"] = "190766",
+					["serial"] = "Creature-0-4229-2444-17344-190766-00002E724E",
+					["pets"] = {
+					},
 				}, -- [28]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[369865] = 13,
-						[369946] = 2,
-					},
+					["last_event"] = 0,
 					["nome"] = "Dragonhunter Igordan",
 					["pets"] = {
 						"Lava Trap <Dragonhunter Igordan>", -- [1]
 						"Hardened Lava <Dragonhunter Igordan>", -- [2]
 					},
+					["spell_cast"] = {
+						[369865] = 13,
+						[369946] = 2,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "191611",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191611-00002E7BC4",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-191611-00002E7BC4",
+					["flag_original"] = 68168,
 				}, -- [29]
 				{
 					["flag_original"] = 2600,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 9,
 					},
 					["pets"] = {
 					},
@@ -42749,7 +42802,6 @@ _detalhes_database = {
 					["spellschool"] = 12,
 					["ownerName"] = "Dragonhunter Igordan",
 					["nome"] = "Lava Trap <Dragonhunter Igordan>",
-					["damage_spellid"] = 369900,
 					["debuff_uptime_targets"] = {
 						["Zulbathal"] = {
 							["uptime"] = 22,
@@ -42759,17 +42811,18 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
+					["aID"] = "187043",
 					["last_event"] = 0,
 					["damage_twin"] = "Hardened Lava",
-					["aID"] = "187043",
+					["damage_spellid"] = 369900,
 					["serial"] = "Creature-0-4229-2444-17344-187043-00002E7C3F",
 					["tipo"] = 4,
 				}, -- [30]
 				{
 					["fight_component"] = true,
+					["aID"] = "187043",
 					["ownerName"] = "Dragonhunter Igordan",
 					["nome"] = "Hardened Lava <Dragonhunter Igordan>",
-					["aID"] = "187043",
 					["pets"] = {
 					},
 					["flag_original"] = 8776,
@@ -42783,94 +42836,94 @@ _detalhes_database = {
 				}, -- [31]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "186792",
+					["fight_component"] = true,
 					["nome"] = "Qalashi Skirmisher",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[369788] = 2,
 						[369751] = 2,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-186792-00002E796A",
 					["last_event"] = 0,
+					["aID"] = "186792",
+					["serial"] = "Creature-0-4229-2444-17344-186792-00002E796A",
+					["pets"] = {
+					},
 				}, -- [32]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[384471] = 2,
-					},
+					["last_event"] = 0,
 					["nome"] = "Lava Tarantula",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[384471] = 2,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "191672",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-191672-00002E3401",
+					["flag_original"] = 2632,
 				}, -- [33]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[392594] = 1,
-					},
+					["last_event"] = 0,
 					["nome"] = "Meatgrinder Sotok",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[392594] = 1,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "186777",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-186777-00002E7D4D",
+					["flag_original"] = 68168,
 				}, -- [34]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Erupting Droplet",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[370042] = 11,
 						[370049] = 9,
 						[376754] = 19,
 					},
-					["nome"] = "Erupting Droplet",
-					["pets"] = {
-					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "191983",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E33",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-191983-00002E7E33",
+					["flag_original"] = 2632,
 				}, -- [35]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[391998] = 8,
-						[383864] = 2,
-					},
+					["last_event"] = 0,
 					["nome"] = "Erupting Magma",
 					["pets"] = {
 						"Magma Droplet <Erupting Magma>", -- [1]
 					},
+					["spell_cast"] = {
+						[391998] = 8,
+						[383864] = 2,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "191917",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-191917-00002E78B4",
+					["flag_original"] = 68168,
 				}, -- [36]
 				{
 					["fight_component"] = true,
+					["aID"] = "194526",
 					["ownerName"] = "Erupting Magma",
 					["nome"] = "Magma Droplet <Erupting Magma>",
-					["aID"] = "194526",
 					["pets"] = {
 					},
 					["flag_original"] = 74312,
@@ -42884,146 +42937,146 @@ _detalhes_database = {
 				}, -- [37]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Firava the Rekindler",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[396856] = 3,
 						[396975] = 1,
 					},
-					["nome"] = "Firava the Rekindler",
-					["pets"] = {
-					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
 					["aID"] = "195915",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-195915-00002E7F75",
+					["flag_original"] = 68168,
 				}, -- [38]
 				{
 					["flag_original"] = 2632,
-					["monster"] = true,
+					["aID"] = "186825",
 					["nome"] = "Molten Primalist",
-					["last_event"] = 0,
+					["monster"] = true,
 					["pets"] = {
 					},
 					["spell_cast"] = {
 						[378150] = 6,
 					},
-					["fight_component"] = true,
 					["tipo"] = 4,
-					["aID"] = "186825",
-					["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
 					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-186825-00002E7B5E",
+					["fight_component"] = true,
 				}, -- [39]
 				{
 					["flag_original"] = 8465,
 					["ownerName"] = "Zulbathal",
 					["nome"] = "Sendrax <Zulbathal>",
-					["tipo"] = 4,
-					["spell_cast"] = {
-						[391903] = 11,
-					},
-					["last_event"] = 0,
 					["classe"] = "PET",
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
+					["last_event"] = 0,
 					["aID"] = "190171",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4229-2444-17344-190171-00002E7F95",
+					["spell_cast"] = {
+						[391903] = 11,
+					},
 				}, -- [40]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
+					["aID"] = "186823",
 					["nome"] = "Lavacaller Primalist",
-					["last_event"] = 0,
+					["monster"] = true,
 					["pets"] = {
 					},
 					["spell_cast"] = {
 						[378012] = 19,
 					},
-					["fight_component"] = true,
 					["tipo"] = 4,
-					["aID"] = "186823",
-					["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
 					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-186823-00002E77A5",
+					["fight_component"] = true,
 				}, -- [41]
 				{
 					["flag_original"] = 2632,
-					["monster"] = true,
-					["aID"] = "195917",
+					["fight_component"] = true,
 					["nome"] = "Primal Revenant",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["spell_cast"] = {
 						[387037] = 2,
 						[387277] = 3,
 					},
+					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
 					["last_event"] = 0,
+					["aID"] = "195917",
+					["serial"] = "Creature-0-4229-2444-17344-195917-00002E7EAC",
+					["pets"] = {
+					},
 				}, -- [42]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[378012] = 4,
-					},
+					["last_event"] = 0,
 					["nome"] = "Tarasek Elementalist",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[378012] = 4,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "190080",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4229-2444-17344-190080-00002E7D4B",
+					["flag_original"] = 2632,
 				}, -- [43]
 				{
 					["flag_original"] = 2632,
-					["monster"] = true,
+					["aID"] = "188666",
 					["nome"] = "Unleashed Lavaburst",
-					["last_event"] = 0,
-					["pets"] = {
-					},
-					["fight_component"] = true,
+					["monster"] = true,
 					["spell_cast"] = {
 						[383237] = 2,
 					},
+					["fight_component"] = true,
 					["tipo"] = 4,
-					["aID"] = "188666",
-					["serial"] = "Creature-0-4229-2444-17344-188666-00002E7FDA",
 					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4229-2444-17344-188666-00002E7FDA",
+					["pets"] = {
+					},
 				}, -- [44]
 				{
 					["flag_original"] = 69905,
 					["ownerName"] = "Zulbathal",
 					["nome"] = "Ruby Whelpling <Zulbathal>",
-					["tipo"] = 4,
-					["spell_cast"] = {
-						[382778] = 71,
-					},
-					["last_event"] = 0,
 					["classe"] = "PET",
 					["pets"] = {
 					},
-					["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
+					["last_event"] = 0,
 					["aID"] = "",
+					["tipo"] = 4,
+					["serial"] = "Vehicle-0-4229-2444-17344-186771-00002E82E2",
+					["spell_cast"] = {
+						[382778] = 71,
+					},
 				}, -- [45]
 				{
 					["fight_component"] = true,
+					["last_event"] = 0,
 					["nome"] = "Relentless Gust",
+					["pets"] = {
+					},
+					["flag_original"] = 2600,
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["aID"] = "194159",
+					["serial"] = "Creature-0-4229-2444-17344-194159-00002E8275",
 					["spell_cast"] = {
 						[391958] = 4,
 					},
-					["flag_original"] = 2600,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["aID"] = "194159",
-					["serial"] = "Creature-0-4229-2444-17344-194159-00002E8275",
-					["classe"] = "UNKNOW",
 				}, -- [46]
 			},
 		}, -- [4]
@@ -43376,22 +43429,16 @@ _detalhes_database = {
 		["last_events_tables"] = {
 		},
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1673009089,
-		["last_version"] = 15,
-	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
 	["data_harvested_for_charts"] = {
+	},
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
@@ -43407,6 +43454,15 @@ _detalhes_database = {
 	["cached_roles"] = {
 	},
 	["cached_specs"] = {
+		["Player-61-0EE73848"] = 1467,
+		["Player-61-0EF083CE"] = 252,
+		["Player-61-0EEC63CB"] = 263,
+		["Player-61-0EEDF970"] = 262,
 		["Player-61-0CA8EB69"] = 102,
+		["Player-61-0EDDBF97"] = 1468,
+		["Player-61-0EB8B069"] = 64,
+		["Player-60-0EEED978"] = 261,
+		["Player-77-0B0F4AF2"] = 260,
+		["Player-61-0BB41B72"] = 250,
 	},
 }

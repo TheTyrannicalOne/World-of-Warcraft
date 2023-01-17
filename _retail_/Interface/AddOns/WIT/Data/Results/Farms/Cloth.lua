@@ -182,6 +182,22 @@ core.Data.Results.Farms.GildedSeaweave = {
 }
 
 
+-- Dragonflight
+
+core.Data.Results.Farms.Wildercloth = {
+    Id = 'WilderclothTheAzureSpan',
+    Activity = core.Activity.Cloth,
+    ItemId = core.Items.Cloths.Wildercloth,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheAzureSpan },
+    Routes = { core.Data.Routes.Cloth.Wildercloth },
+    Results = {
+        { Id = core.Items.Cloths.TatteredWildercloth, Quantity = 114 },
+		{ Id = core.Items.Cloths.Wildercloth, Quantity = 21 },
+
+
+    }
+}
 
 
 

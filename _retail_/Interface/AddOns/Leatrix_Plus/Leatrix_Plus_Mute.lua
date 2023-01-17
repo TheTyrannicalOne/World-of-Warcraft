@@ -519,6 +519,11 @@
 
 		},
 
+		-- Shouts (sound/interface/)
+		["MuteVigor"] = {
+			"ui_70_artifact_forge_trait_goldtrait.ogg#1489541",
+		},
+
 	}
 
 	----------------------------------------------------------------------
@@ -644,6 +649,20 @@
 			"companiondrake_cast_oneshot_4633278.ogg#4633278", "companiondrake_cast_oneshot_4633280.ogg#4633280", "companiondrake_cast_oneshot_4633282.ogg#4633282", "companiondrake_cast_oneshot_4633284.ogg#4633284", "companiondrake_cast_oneshot_4633286.ogg#4633286", "companiondrake_cast_oneshot_4633288.ogg#4633288", "companiondrake_cast_oneshot_4633290.ogg#4633290", "companiondrake_cast_oneshot_4641087.ogg#4641087", "companiondrake_cast_oneshot_4641089.ogg#4641089", "companiondrake_cast_oneshot_4641091.ogg#4641091", "companiondrake_cast_oneshot_4641093.ogg#4641093", "companiondrake_cast_oneshot_4641095.ogg#4641095", "companiondrake_cast_oneshot_4641097.ogg#4641097", "companiondrake_cast_oneshot_4641099.ogg#4641099",
 			"companiondrake_flying_4633316.ogg#4633316", "companiondrake_flying_4634009.ogg#4634009", "companiondrake_flying_4634011.ogg#4634011", "companiondrake_flying_4634013.ogg#4634013", "companiondrake_flying_4634015.ogg#4634015", "companiondrake_flying_4634017.ogg#4634017", "companiondrake_flying_4634019.ogg#4634019", "companiondrake_flying_4634021.ogg#4634021",
 
+			-- Passive loops (not used because many are generic sounds used elsewhere in the game)
+
+			-- Highland Drake passive loop (SKIT:211567)
+			-- sound/doodad/go_ui_mainmenu_dragonisles_oneshot
+			-- "4633292.ogg#4633292", "4633294.ogg#4633294", "4633296.ogg#4633296", "4633298.ogg#4633298", "4633300.ogg#4633300", "4633302.ogg#4633302",
+			-- sound/doodad/go_SoundID_oneshot_
+			-- "4633338.ogg#4633338", "4633340.ogg#4633340", "4633342.ogg#4633342", "4633344.ogg#4633344", "4633346.ogg#4633346", "4633348.ogg#4633348", "4633350.ogg#4633350", "4633352.ogg#4633352", "4633354.ogg#4633354", "4633356.ogg#4633356",
+			-- Unknown but likely sound/doodad/ (SKIT:211467)
+			-- "4633358.ogg#4633358", "4633360.ogg#4633360", "4633362.ogg#4633362", "4633364.ogg#4633364", "4633366.ogg#4633366", "4633368.ogg#4633368",
+			-- Unknown (SKIT:204927)
+			-- "4674577.ogg#4674577", "4674579.ogg#4674579", "4674581.ogg#4674581", "4674583.ogg#4674583", "4674585.ogg#4674585",
+
+			-- Windborne Velocidrake passive loop uses SKIT:217018 (starting with sound file ID 596033, sound/doodad/blackrockv2_drake_wingflap_)
+
 		},
 
 		-- Furlines
@@ -712,6 +731,26 @@
 			"sound/creature/goblinhovercraft/mon_goblinhovercraft_fly.ogg#1859977",
 			"sound/creature/goblinhovercraft/mon_goblinhovercraft_idle01.ogg#1859978",
 			"sound/creature/goblinhovercraft/mon_goblinhovercraft_mountspecial.ogg#2059826",
+
+		},
+
+		-- Lunarwing (Archdruid's Lunarwing Form)
+		["MuteLunarwing"] = {
+
+			-- sound/creature/owlmount/mon_owlmount_attack
+			"01.ogg#1563197", "02.ogg#1563198", "03.ogg#1563199", "04.ogg#1563200", "05.ogg#1563182",
+
+			-- sound/creature/owlmount/mon_owlmount_chuff
+			"01.ogg#1563183", "02.ogg#1563184", "03.ogg#1563185", "04.ogg#1563186", "05.ogg#1563187",
+
+			-- sound/creature/owlmount/mon_owlmount_mountspecial
+			"01.ogg#1563188", "02.ogg#1563189",
+
+			-- sound/creature/owlmount/mon_owlmount_summon
+			"01.ogg#1563190", "02.ogg#1563191",
+
+			-- sound/creature/owlmount/mon_owlmount_wound
+			"01.ogg#1563192", "02.ogg#1563193", "03.ogg#1563194", "04.ogg#1563195", "05.ogg#1563196",
 
 		},
 

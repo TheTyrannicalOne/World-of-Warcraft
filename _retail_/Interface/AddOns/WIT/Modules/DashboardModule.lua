@@ -7,10 +7,11 @@ core.DashboardModule.ConfigKey = "Dashboard"
 
 function core.DashboardModule.GetData()
     local farms = {}
+    local ignoredIds = core.Config.GetUserIgnoredFarms()
 
     if core.Config.GetModulesConfig().Dashboard.ShowCurrentContent then
         for _, farm in pairs(core.Data.Results.Farms) do
-            if farm.Content == core.Content.Shadowlands then
+            if farm.Content == core.Content.Dragonflight and not core.TableHelper.IndexOf(ignoredIds, farm.Id) then
                 table.insert(farms, farm)
             end
         end
@@ -23,7 +24,7 @@ function core.DashboardModule.GetData()
         end
 
         for _, farm in pairs(allFarms) do
-            if dashboardFarms[farm.Id] then
+            if dashboardFarms[farm.Id] and not core.TableHelper.IndexOf(ignoredIds, farm.Id) then
                 table.insert(farms, farm)
             end
         end

@@ -347,6 +347,9 @@ private.NPC_GUIDE = {
 	}; --Phenran
 	["1932712022"] = { 
 		[RSConstants.ENTRANCE] = { x = 0.4833, y = 0.7416 };
+		[RSConstants.STEP1] = { x = 0.4772, y = 0.7447, comment = AL["NOTE_193271_2"] };
+		[RSConstants.STEP2] = { x = 0.4775, y = 0.7370, comment = AL["NOTE_193271_1"] };
+		[RSConstants.STEP3] = { x = 0.4684, y = 0.7355, comment = AL["NOTE_193271_3"] };
 	}; --Shadeslash Trakken
 	["1931322022"] = { 
 		[RSConstants.ENTRANCE] = { x = 0.6261, y = 0.5461 };
@@ -403,9 +406,6 @@ private.NPC_GUIDE = {
 	["1873062022"] = { 
 		[RSConstants.FLAG] = { x = 0.322, y = 0.524, comment = AL["NOTE_187306_1"] };
 	}; --Morchok <Harbinger of Twilight>
-	["1932712022"] = { 
-		[RSConstants.ENTRANCE] = { x = 0.4845, y = 0.7426 };
-	}; --Shadeslash Trakken
 	["1881242023"] = { 
 		[RSConstants.ENTRANCE] = { x = 0.792, y = 0.3655 };
 	}; --Irontree
@@ -577,6 +577,17 @@ private.NPC_GUIDE = {
 	["1925572023"] = { 
 		[RSConstants.FLAG] = { x = 0.7043, y = 0.6349, comment = AL["NOTE_192557_1"] };
 	}; --Quackers the Terrible
+	["1919502023"] = { 
+		[RSConstants.ENTRANCE] = { x = 0.5969, y = 0.6848 };
+		[RSConstants.DOT..1] = { x = 0.5050, y = 0.7020, comment = AL["NOTE_191950_1"] };
+		[RSConstants.DOT..2] = { x = 0.5270, y = 0.6580, comment = AL["NOTE_191950_1"] };
+		[RSConstants.DOT..3] = { x = 0.5460, y = 0.6940, comment = AL["NOTE_191950_1"] };
+		[RSConstants.DOT..4] = { x = 0.5210, y = 0.7050, comment = AL["NOTE_191950_1"] };
+		[RSConstants.DOT..5] = { x = 0.5310, y = 0.7200, comment = AL["NOTE_191950_1"] };
+		[RSConstants.DOT..6] = { x = 0.4970 , y = 0.6870, comment = AL["NOTE_191950_1"] };		
+		[RSConstants.DOT..7] = { x = 0.5273 , y = 0.6993, comment = AL["NOTE_191950_1"] };		
+		[RSConstants.DOT..8] = { x = 0.5376 , y = 0.6746, comment = AL["NOTE_191950_1"] };	
+	}; --Porta the Overgrown
 }
 
 ---============================================================================
@@ -1119,6 +1130,19 @@ private.CONTAINER_GUIDE = {
 		[RSConstants.ENTRANCE..1] = { x = 0.3063, y = 0.5147 };
 		[RSConstants.ENTRANCE..2] = { x = 0.2942, y = 0.5272 };
 	}; --Onyx Gem Cluster
+	["3780102023"] = { 
+		[RSConstants.STEP1..1] = { x = 0.2661, y = 0.4876, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..2] = { x = 0.2686, y = 0.4733, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..3] = { x = 0.2758, y = 0.5276, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..4] = { x = 0.2774, y = 0.5084, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..5] = { x = 0.2935, y = 0.4888, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..6] = { x = 0.2949, y = 0.5166, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..7] = { x = 0.3050, y = 0.4596, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..8] = { x = 0.3618, y = 0.4690, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP1..9] = { x = 0.3213, y = 0.4689, comment = AL["NOTE_378010_1"] };
+		[RSConstants.STEP2] = { x = 0.6703, y = 0.4372, comment = AL["NOTE_378010_2"] };
+		[RSConstants.STEP3] = { x = 0.6697, y = 0.5036, comment = AL["NOTE_378010_3"] };
+	}; --Forgotten Dragon Treasure
 }
 
 ---============================================================================

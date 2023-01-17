@@ -33,6 +33,8 @@ core.Data.Results.Farms.CrystalInfusedLeather,
 
 core.Data.Results.Farms.DesolateLeather,
 
+core.Data.Results.Farms.DenseHide,
+
 }
 
-table.insert(core.Modules, core.FarmResultModule('Skinning', skinningData, 'Farming'))
+table.insert(core.Modules, core.FarmResultModule('Skinning', skinningData, 'Farming', core.Activity.Skinning))

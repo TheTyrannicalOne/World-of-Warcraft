@@ -169,6 +169,26 @@ core.Data.Results.Farms.IridescentAmberjack = {
 }
 
 
+-- Dragonflight
+
+core.Data.Results.Farms.IslefinDoradoMultifarm = {
+    Id = 'TheWakingShoreMultifarm',
+    Activity = core.Activity.Fishing,
+    ItemId = core.Items.Fish.IslefinDorado,
+    Content = core.Content.Dragonflight,
+    Locations = { core.Locations.Dragonflight.TheWakingShore },
+    Routes = { core.Data.Routes.Herb.ArdenwealdMultifarm },
+    Results = {
+        { Id = core.Items.Fish.AileronSeamoth, Quantity = 47 },
+		{ Id = core.Items.Fish.CeruleanSpinefish, Quantity = 51 },
+		{ Id = core.Items.Fish.DullSpinedClam, Quantity = 27 },
+		{ Id = core.Items.Fish.IslefinDorado, Quantity = 27 },
+		{ Id = core.Items.Fish.ScalebellyMackerel, Quantity = 77 },
+		
+		
+
+    }
+}
 
 
 

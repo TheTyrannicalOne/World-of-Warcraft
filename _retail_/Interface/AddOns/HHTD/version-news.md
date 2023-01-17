@@ -4,6 +4,14 @@ H.H.T.D.
 *Change log*
 ------------
 
+
+**version 2.4.10 (2023-01-07):**
+
+- Update libNameplateRegistry to fix issue with object nameplates.
+
+- Add support for Evoker Class
+
+
 **version 2.4.9.14 (2022-11-28):**
 
 - TOC update for retail.

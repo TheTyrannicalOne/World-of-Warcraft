@@ -1,6 +1,6 @@
 # Instance Achievement Tracker
 
-## [V4.8.0-Release](https://github.com/Dragnogd/Instance-Achievement-Tracker/tree/V4.8.0-Release) (2022-12-11)
-[Full Changelog](https://github.com/Dragnogd/Instance-Achievement-Tracker/commits/V4.8.0-Release) [Previous Releases](https://github.com/Dragnogd/Instance-Achievement-Tracker/releases)
+## [V4.11.0-Release](https://github.com/Dragnogd/Instance-Achievement-Tracker/tree/V4.11.0-Release) (2023-01-15)
+[Full Changelog](https://github.com/Dragnogd/Instance-Achievement-Tracker/commits/V4.11.0-Release) [Previous Releases](https://github.com/Dragnogd/Instance-Achievement-Tracker/releases)
 
-- Release V4.8.0  
+- Reset You Must Be Made of Hide when exisitng instance not after every pull  

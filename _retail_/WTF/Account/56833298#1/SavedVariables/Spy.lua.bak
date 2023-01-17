@@ -297,8 +297,8 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Banuumine - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -712,6 +712,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Vadder - Argent Dawn"] = {

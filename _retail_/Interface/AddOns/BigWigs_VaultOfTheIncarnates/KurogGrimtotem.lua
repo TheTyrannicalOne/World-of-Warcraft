@@ -185,7 +185,6 @@ function mod:GetOptions()
 		"avoid",
 		"damage",
 		"ultimate",
-		"berserk",
 		-- Fire Altar
 		{382563, "SAY", "SAY_COUNTDOWN"}, -- Magma Burst
 		373329, -- Molten Rupture
@@ -201,13 +200,13 @@ function mod:GetOptions()
 		395893, -- Erupting Bedrock
 		374691, -- Seismic Rupture
 		-- Storm Altar
-		{373487, "SAY", "SAY_COUNTDOWN"}, -- Lightning Crash
-		{390920, "SAY", "SAY_COUNTDOWN"}, -- Shocking Burst
+		{373487, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Lightning Crash
+		{390920, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Shocking Burst
 		shockingBurstMarker,
 		374215, -- Thunder Strike
 		-- Stage 2
 		{374321, "TANK"}, -- Breaking Gravel
-		{374427, "SAY", "SAY_COUNTDOWN"}, -- Ground Shatter
+		{374427, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Ground Shatter
 		374430, -- Violent Upheaval
 		374623, -- Frost Binds
 		374624, -- Freezing Tempest
@@ -224,6 +223,7 @@ function mod:GetOptions()
 		{391268, "TANK"}, -- Earth Smite
 		{393429, "TANK", "SAY"}, -- Storm Smite
 		394719, -- Orb Lightning
+		"berserk",
 	}, {
 		["stages"] = "general",
 		[382563] = -25040, -- Fire Altar
@@ -359,8 +359,8 @@ function mod:OnEngage()
 	self:Bar(372158, 10.2) -- Sundering Strike
 	self:Bar("stages", 125, CL.stage:format(2), 374779) -- Primal Barrier
 
-	if not self:Easy() then
-		self:Berserk(self:Mythic() and 600 or 540, true)
+	if self:Mythic() then
+		self:ScheduleTimer("Berserk", 540, 60, true) -- 10min, only on Mythic and rarely encountered, so delay starting it
 	end
 end
 
@@ -423,7 +423,7 @@ do
 		self:StopBar(CL.count:format(L.ultimate_bartext:format(alterSpellNameMap[currentAltar]["ultimate"]), ultimateCount))
 		currentAltar = newAltar
 
-		self:Message("stages", "cyan", alterSpellNameMap[currentAltar]["stage"])
+		self:Message("stages", "cyan", alterSpellNameMap[currentAltar]["stage"], false)
 		self:PlaySound("stages", "long")
 
 		local t = GetTime()
@@ -539,7 +539,10 @@ function mod:PrimalBarrierRemoved(args)
 	if barrierRemovedCount < 2 then
 		self:Bar("stages", 125, CL.stage:format(2), 374779) -- Primal Barrier
 	else
-		self:Bar(396241, self:Easy() and 96 or 94, L.primal_attunement) -- Primal Attunement
+		local timer = self:Easy() and 96 or 94
+		self:Bar(396241, timer, L.primal_attunement) -- Primal Attunement (Soft Enrage)
+		self:ScheduleTimer("Message", timer-30, 396241, "yellow", CL.custom_sec:format(L.primal_attunement, 30))
+		self:ScheduleTimer("Message", timer-10, 396241, "red", CL.custom_sec:format(L.primal_attunement, 10))
 	end
 end
 
@@ -989,8 +992,8 @@ do
 	local function printTarget(self, name, guid)
 		self:TargetMessage(374622, "yellow", name) -- Storm Break
 		if self:Me(guid) then
-			self:PlaySound(391696, "warning") -- debuffmove
-			self:Say(391696)
+			self:PlaySound(374622, "warning") -- debuffmove
+			self:Say(374622)
 		end
 	end
 
@@ -998,20 +1001,20 @@ do
 		self:GetBossTarget(printTarget, 0.1, args.sourceGUID)
 		self:Bar(391696, 20) -- Lethal Current
 	end
+end
 
-	function mod:LethalCurrentApplied(args)
-		self:TargetMessage(args.spellId, "orange", args.destName) -- Storm Break
-		if self:Me(args.destGUID) then
-			self:PlaySound(args.spellId, "warning") -- debuffmove
-			self:Say(args.spellId)
-			self:SayCountdown(args.spellId, 6)
-		end
+function mod:LethalCurrentApplied(args)
+	self:TargetMessage(args.spellId, "orange", args.destName)
+	if self:Me(args.destGUID) then
+		self:PlaySound(args.spellId, "warning") -- debuffmove
+		self:Say(args.spellId)
+		self:SayCountdown(args.spellId, 6)
 	end
+end
 
-	function mod:LethalCurrentRemoved(args)
-		if self:Me(args.destGUID) then
-			self:CancelSayCountdown(args.spellId)
-		end
+function mod:LethalCurrentRemoved(args)
+	if self:Me(args.destGUID) then
+		self:CancelSayCountdown(args.spellId)
 	end
 end
 
@@ -1064,7 +1067,7 @@ function mod:IntermissionAddDeath(args)
 end
 
 -- Stage 3
-function mod:PrimalAttunement(args)
+function mod:PrimalAttunement(args) -- Soft Enrage
 	self:Message(args.spellId, "red", L.primal_attunement)
 	self:PlaySound(args.spellId, "warning") -- danger
 	self:StopBar(L.primal_attunement)

@@ -98,9 +98,12 @@ core.Items.Herbs = {
 	Nightshade = 171315,
 	
 	
+	-- Dragonflight 
 	
-	
-	
+	Hochenblume = 191460,
+	BubblePoppy = 191467,
+	Saxifrage = 191464,
+	Writhebark = 191470,
 	
 	
 }

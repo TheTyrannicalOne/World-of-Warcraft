@@ -1,6 +1,7 @@
 
 WoWProCharDB = {
 	["EnableGrailQuestline"] = false,
+	["SetWaypoint"] = false,
 	["BuildingLocations"] = {
 	},
 	["EnableGrailQuestLevel"] = false,
@@ -231,7 +232,7 @@ WoWProCharDB = {
 		[34365] = "LudoGarrCampaign",
 		[38253] = "FlucloTanaanJungle",
 		[13832] = "LudoFishing",
-		[13836] = "LudoFishing",
+		[36309] = "LudoBuildingsAlliance",
 		[34281] = "LudoGarrCampaign",
 		[36341] = "LudoGarrCampaign",
 		[37890] = "FlucloTanaanJungle",
@@ -281,7 +282,7 @@ WoWProCharDB = {
 		[34336] = "LudoGarrCampaign",
 		[34347] = "LudoGarrCampaign",
 		[34027] = "LudoGarrCampaign",
-		[36309] = "LudoBuildingsAlliance",
+		[13836] = "LudoFishing",
 		[35081] = "LudoBuildingsAlliance",
 		[33113] = "LudoGarrissonSupportA",
 		[36646] = "LudoBuildingsAlliance",
@@ -315,7 +316,7 @@ WoWProCharDB = {
 			["skipped"] = {
 			},
 			["done"] = false,
-			["progress"] = 16,
+			["progress"] = 19,
 			["completion"] = {
 				"Player level exceeds step limit", -- [1]
 				65436, -- [2]
@@ -333,6 +334,9 @@ WoWProCharDB = {
 				66596, -- [14]
 				66596, -- [15]
 				66596, -- [16]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [17]
+				"AutoCompleteQuestUpdate: Accept", -- [18]
+				"AutoCompleteQuestUpdate: complete", -- [19]
 				[56] = false,
 			},
 		},
@@ -513,8 +517,8 @@ WoWProCharDB = {
 		[2585] = {
 			["skillLvl"] = 13,
 			["skillMax"] = 175,
-			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Fishing",
+			["skillMod"] = 0,
 		},
 		[185] = {
 			["skillLvl"] = 1,
@@ -562,16 +566,16 @@ WoWProCharDB = {
 		[70122] = false,
 		[-85679] = true,
 		[72374] = false,
-		[70197] = false,
+		[70197] = true,
 		[72373] = false,
 		[72709] = false,
 		[70750] = false,
-		[-85660] = true,
+		[72375] = false,
 		[65451] = false,
 		[65453] = false,
 		[69910] = false,
 		[-85656] = true,
-		[72375] = false,
+		[-85660] = true,
 		[-85664] = true,
 		[72068] = false,
 		[70125] = false,

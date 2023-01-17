@@ -55,6 +55,7 @@ P["sle"] = {
 		["character"] = {
 			["enable"] = false,
 			["showWarning"] = true,
+			["addCharacterWidth"] = 0,
 			["ilvl"] = {
 				["colorType"] = "NONE",
 				["xOffset"] = 0,
@@ -69,6 +70,7 @@ P["sle"] = {
 				["font"] = "PT Sans Narrow",
 				["fontSize"] = 12,
 				["fontStyle"] = "OUTLINE",
+				showReal = true,
 			},
 			["gem"] = {
 				["xOffset"] = 0,
@@ -121,6 +123,7 @@ P["sle"] = {
 				["font"] = "PT Sans Narrow",
 				["fontSize"] = 12,
 				["fontStyle"] = "OUTLINE",
+				showReal = true,
 			},
 			["gem"] = {
 				["xOffset"] = 0,
@@ -752,11 +755,12 @@ P["sle"] = {
 			},
 			exPack = {
 				enable = true,
+				expansion = 'df',
 				styleOptions = 'sltheme',
-				width = 256,
-				height = 256,
+				width = 450,
+				height = 225,
 				xOffset = 0,
-				yOffset = 0,
+				yOffset = -20,
 				inversePoint = false,
 				anchorPoint = 'TOP',
 				attachTo = 'SL_TopPanel',
@@ -1305,7 +1309,9 @@ P["sle"] = {
 				sc = false,
 				ep = false,
 				nzoth = false,
-				nathria = true,
+				nathria = false,
+				sod = false,
+				voti = true,
 			},
 		},
 	},

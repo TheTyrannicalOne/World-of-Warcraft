@@ -16,9 +16,9 @@ OPie_SavedData = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
-				["WorldMarkers"] = false,
+				["WorldMarkers"] = "ALT-V",
 				["Mounts24"] = "ALT-Q",
-				["aidMarkers"] = "ALT-V",
+				["aidMarkers"] = false,
 				["Mounts7"] = "ALT-Q",
 				["Utility"] = "ALT-E",
 			},
@@ -528,10 +528,10 @@ OPie_SavedData = {
 					460, -- [2]
 					["sliceToken"] = "ABuejtRGNKt",
 				}, -- [3]
-				["limit"] = "Avisar-Dalaran",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Avisar-Dalaran",
 			},
 			["Utility11"] = {
 				{
@@ -694,8 +694,8 @@ OPie_SavedData = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
 				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
 			},

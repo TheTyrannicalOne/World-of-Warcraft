@@ -25,6 +25,15 @@ local function edit(row)
     end
 end
 
+
+local function setActivity(row, activity)
+    row.Data.Activity = activity
+
+    local module = core.UI.MainWindow.CurrentModule()
+    module.ClearCache()
+    module.Refresh()
+end
+
 local function duplicate(row)
     local farms = core.Config.GetUserFarms()
     local data = core.TableHelper.DeepCopy(row.Data)
@@ -45,6 +54,20 @@ end
 local function export(row)
     local text = core.ExportHelper.Serialize(row.Data)
     core.UI.ShowDialog({ Text = core.GetString("ImportStringMessage"), Button1 = core.GetString("Ok"), HasEditBox = true, TextBoxValue = text, SelectText = true })
+end
+
+local function addSetActivityItem(menu, row, activity)
+    local name = "Activity" .. (activity or 0)
+    table.insert(menu, {
+        Name = name,
+        DisplayName = core.GetString(name),
+        Action = setActivity,
+        IsEnabled = function(row, activity) return row.Data.Activity ~= activity end,
+--        IsChecked = row.Data.Activity == activity,
+--        IsCheckable = true,
+        ActionArg = row,
+        ActionArg2 = activity,
+    })
 end
 
 local function customResultItemMenu(module, row)
@@ -76,6 +99,28 @@ local function customResultItemMenu(module, row)
         DisplayName = core.GetString("Remove"),
         Action = remove,
         ActionArg = row,
+    })
+
+    local activities = {}
+
+    addSetActivityItem(activities, row)
+    addSetActivityItem(activities, row, core.Activity.Mining)
+    addSetActivityItem(activities, row, core.Activity.Herbalism)
+    addSetActivityItem(activities, row, core.Activity.Skinning)
+    addSetActivityItem(activities, row, core.Activity.Fishing)
+    addSetActivityItem(activities, row, core.Activity.Cloth)
+    addSetActivityItem(activities, row, core.Activity.Transmog)
+    addSetActivityItem(activities, row, core.Activity.Misc)
+    addSetActivityItem(activities, row, core.Activity.Mounts)
+    addSetActivityItem(activities, row, core.Activity.Toys)
+    addSetActivityItem(activities, row, core.Activity.RawGold)
+    addSetActivityItem(activities, row, core.Activity.BattlePets)
+    addSetActivityItem(activities, row, core.Activity.MultiFarms)
+
+    table.insert(menu, {
+        Name = "Category",
+        DisplayName = core.GetString("Category"),
+        Children = activities
     })
 
     return menu

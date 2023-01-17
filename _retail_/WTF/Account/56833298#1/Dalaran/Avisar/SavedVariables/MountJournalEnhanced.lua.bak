@@ -53,18 +53,18 @@ MJEPersonalSettings = {
 			["Black Market"] = true,
 			["PVP"] = true,
 			["Vendor"] = true,
-			["Reputation"] = true,
+			["Instance"] = true,
 			["Class"] = true,
 			["World Event"] = true,
 			["Garrison"] = true,
-			["Achievement"] = true,
+			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
-			["Profession"] = true,
 			["Drop"] = true,
-			["Island Expedition"] = true,
+			["Profession"] = true,
+			["Achievement"] = true,
 			["Quest"] = true,
-			["Instance"] = true,
+			["Reputation"] = true,
 		},
 		["rarity"] = {
 			true, -- [1]
@@ -73,8 +73,7 @@ MJEPersonalSettings = {
 			true, -- [4]
 			true, -- [5]
 		},
-		["color"] = {
-		},
+		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
 		["mountType"] = {
@@ -156,8 +155,8 @@ MJEPersonalSettings = {
 				["Crows"] = true,
 				["Roc"] = true,
 				["Eagle"] = true,
-				["Talonbirds"] = true,
 				["Mechanical Birds"] = true,
+				["Talonbirds"] = true,
 				["Hawkstriders"] = true,
 				["Tallstriders"] = true,
 				["Pandaren Phoenixes"] = true,
@@ -244,8 +243,6 @@ MJEPersonalSettings = {
 				["Sea Serpents"] = true,
 				["Turtles"] = true,
 			},
-			["Crabs"] = true,
-			["Jellyfish"] = true,
 			["Ungulates"] = {
 				["Mammoths"] = true,
 				["Riverbeasts"] = true,
@@ -259,6 +256,8 @@ MJEPersonalSettings = {
 				["Camels"] = true,
 				["Runestag"] = true,
 			},
+			["Jellyfish"] = true,
+			["Crabs"] = true,
 			["Amphibian"] = {
 				["Crawgs"] = true,
 				["Toads"] = true,
@@ -303,7 +302,8 @@ MJEPersonalSettings = {
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,
-		["hiddenIngame"] = false,
+		["color"] = {
+		},
 	},
 	["personalHiddenMounts"] = false,
 	["searchInNotes"] = true,

@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 10.0.27 (4th January 2023)
+-- 	Leatrix Plus 10.0.30 (16th January 2023)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -18,7 +18,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "10.0.27"
+	LeaPlusLC["AddonVer"] = "10.0.30"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -836,18 +836,19 @@
 			LeaPlusLC:MakeCB(MountPanel, "MuteGyrocopters", "Gyrocopters", 16, -232, false, "If checked, gyrocopters will be muted.|n|nThis applies to Mimiron's Head, Mecha-Mogul MK2 and other gyrocopter mounts.|n|nEnabling this option will also mute airplane gear shift sounds.")
 
 			LeaPlusLC:MakeCB(MountPanel, "MuteHovercraft", "Hovercraft", 150, -92, false, "If checked, hovercraft will be quieter.|n|nThis applies to Xiwyllag ATV.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteMechSteps", "Mechsteps", 150, -112, false, "If checked, footsteps for mechanical mounts will be muted.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteStriders", "Mechstriders", 150, -132, false, "If checked, mechanostriders will be quieter.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteMechsuits", "Mechsuits", 150, -152, false, "If checked, mechsuits will be quieter.|n|nThis applies to Felsteel Annihilator, Lightforged Warframe, Sky Golem and other mechsuits.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteOttuks", "Ottuks", 150, -172, false, "If checked, ottuks will be quieter.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteRazorwings", "Razorwings", 150, -192, false, "If checked, razorwings will be muted.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteRockets", "Rockets", 150, -212, false, "If checked, rockets will be muted.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteSoulEaters", "Soul Eaters", 150, -232, false, "If checked, Gladiator Soul Eater mounts will be quieter.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteLunarwing", "Lunarwing", 150, -112, false, "If checked, Archdruid's Lunarwing Form will be quieter.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteMechSteps", "Mechsteps", 150, -132, false, "If checked, footsteps for mechanical mounts will be muted.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteStriders", "Mechstriders", 150, -152, false, "If checked, mechanostriders will be quieter.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteMechsuits", "Mechsuits", 150, -172, false, "If checked, mechsuits will be quieter.|n|nThis applies to Felsteel Annihilator, Lightforged Warframe, Sky Golem and other mechsuits.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteOttuks", "Ottuks", 150, -192, false, "If checked, ottuks will be quieter.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteRazorwings", "Razorwings", 150, -212, false, "If checked, razorwings will be muted.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteRockets", "Rockets", 150, -232, false, "If checked, rockets will be muted.")
 
-			LeaPlusLC:MakeCB(MountPanel, "MuteSoulseekers", "Soulseekers", 284, -92, false, "If checked, soulseekers will be quieter.|n|nThis applies to Corridor Creeper, Mawsworn Soulhunter and Bound Shadehound.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteTravelers", "Travelers", 284, -112, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteUnicorns", "Unicorns", 284, -132, false, "If checked, unicorns will be quieter.|n|nThis applies to Lucid Nightmare, Wild Dreamrunner, Pureheart Courser and other unicorn mounts.")
-			LeaPlusLC:MakeCB(MountPanel, "MuteZeppelins", "Zeppelins", 284, -152, false, "If checked, zeppelins will be muted.|n|nThis applies to zeppelin mounts and transports.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteSoulEaters", "Soul Eaters", 284, -92, false, "If checked, Gladiator Soul Eater mounts will be quieter.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteSoulseekers", "Soulseekers", 284, -112, false, "If checked, soulseekers will be quieter.|n|nThis applies to Corridor Creeper, Mawsworn Soulhunter and Bound Shadehound.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteTravelers", "Travelers", 284, -132, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteUnicorns", "Unicorns", 284, -152, false, "If checked, unicorns will be quieter.|n|nThis applies to Lucid Nightmare, Wild Dreamrunner, Pureheart Courser and other unicorn mounts.")
+			LeaPlusLC:MakeCB(MountPanel, "MuteZeppelins", "Zeppelins", 284, -172, false, "If checked, zeppelins will be muted.|n|nThis applies to zeppelin mounts and transports.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(mountTable) do
@@ -973,6 +974,9 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteArena", "Arena", 284, -92, false, "If checked, arena announcers will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 284, -112, false, "If checked, your character will not shout and wail during combat.")
 
+			LeaPlusLC:MakeTx(SoundPanel, "Dragons", 284, -152)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteVigor", "Vigor", 284, -172, false, "If checked, the dragonriding vigor recharging sound will be muted.")
+
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
 				LeaPlusCB[k].f:SetWidth(90)
@@ -1040,6 +1044,7 @@
 						LeaPlusLC[k] = "On"
 					end
 					LeaPlusLC["MuteReady"] = "Off"
+					LeaPlusLC["MuteVigor"] = "Off"
 					SetupMute()
 				else
 					SoundPanel:Show()
@@ -2962,26 +2967,37 @@
 			LeaPlusLC:MakeTx(SellJunkFrame, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellShowSummary", "Show vendor summary in chat", 16, -92, false, "If checked, a vendor summary will be shown in chat when junk is automatically sold.")
 			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellNoKeeperTahult", "Exclude Keeper Ta'hult's pet items", 16, -112, false, L["If checked, the following junk items required to purchase pets from Keeper Ta'hult in Oribos will not be sold automatically."] .. L["|cff889D9D|n"] .. L["|n- A Frayed Knot|n- Dark Iron Baby Booties|n- Ground Gear|n- Large Slimy Bone|n- Rabbits Foot|n- Robbles Wobbly Staff|n- Rotting Bear Carcass|n- The Stoppable Force|n- Very Unlucky Rock"] .. "|r")
-			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellNoGreyTransmog", "Exclude uncollected grey armor and weapons", 16, -132, false, L["If checked, grey armor and weapons that you have not collected the appearance from will not be sold.|n|nUse this setting if you plan to collect transmog appearances from grey armor and weapons."])
-			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellNoGreyGear", "Exclude all grey armor and weapons", 16, -152, false, L["If checked, grey armor and weapons will not be sold.|n|nUse this setting if you plan to sell grey armor and weapons in the auction house."])
+			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellNoGreyGear", "Exclude all grey gear", 16, -132, false, L["If checked, grey gear will not be sold.|n|nUse this setting if you plan to sell grey gear in the auction house."])
 
-			-- Set Exclude uncollected grey gear lock status
-			local NoGreyTransmogTipText = LeaPlusCB["AutoSellNoGreyTransmog"].tiptext
+			LeaPlusLC:MakeTx(SellJunkFrame, "Transmog", 16, -172)
+			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellExcludeMyChar", "Exclude gear designed for my character", 16, -192, false, L["If checked, uncollected grey gear that is designed for your character will not be sold.|n|nUse this setting if you plan to collect transmog appearances from grey gear that is designed for your character."])
+			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellExcludeMyAlts", "Exclude gear designed for my alts", 16, -212, false, L["If checked, uncollected grey gear that is designed for your alts will not be sold.|n|nUse this setting if you plan to collect transmog appearances from grey gear that is designed for your alts."])
+
+			-- Exclude all grey gear checkbox lock
+			local NoGreyTransmogTipText = LeaPlusCB["AutoSellExcludeMyChar"].tiptext
+			local NoGreyTransmogCharTipText = LeaPlusCB["AutoSellExcludeMyAlts"].tiptext
 			local function SetTransmogLockFunc()
 				if not LeaPlusLC.NewPatch then
-					LeaPlusLC:LockItem(LeaPlusCB["AutoSellNoGreyTransmog"], true)
-					LeaPlusCB["AutoSellNoGreyTransmog"].tiptext = NoGreyTransmogTipText .. "|n|n|cff00AAFF" .. L["This is for game patch 10.0.5.|n|nIn 10.0.5, you will be able to transmogrify grey armor and weapons so this setting could be very useful."]
+					LeaPlusLC:LockItem(LeaPlusCB["AutoSellExcludeMyChar"], true)
+					LeaPlusCB["AutoSellExcludeMyChar"].tiptext = NoGreyTransmogTipText .. "|n|n|cff00AAFF" .. L["This is for game patch 10.0.5.|n|nIn 10.0.5, you will be able to transmogrify grey armor and weapons so this setting could be very useful."]
+					LeaPlusLC:LockItem(LeaPlusCB["AutoSellExcludeMyAlts"], true)
+					LeaPlusCB["AutoSellExcludeMyAlts"].tiptext = NoGreyTransmogCharTipText .. "|n|n|cff00AAFF" .. L["This is for game patch 10.0.5.|n|nIn 10.0.5, you will be able to transmogrify grey armor and weapons so this setting could be very useful."]
 				else
 					if LeaPlusLC["AutoSellNoGreyGear"] == "On" then
-						LeaPlusLC:LockItem(LeaPlusCB["AutoSellNoGreyTransmog"], true)
-						LeaPlusCB["AutoSellNoGreyTransmog"].tiptext = NoGreyTransmogTipText .. "|n|n|cff00AAFF" .. L["You have excluded all grey armor and weapons from being sold so this setting is ignored."]
+						LeaPlusLC:LockItem(LeaPlusCB["AutoSellExcludeMyChar"], true)
+						LeaPlusCB["AutoSellExcludeMyChar"].tiptext = NoGreyTransmogTipText .. "|n|n|cff00AAFF" .. L["You have excluded all grey armor and weapons from being sold so this setting is ignored."]
+						LeaPlusLC:LockItem(LeaPlusCB["AutoSellExcludeMyAlts"], true)
+						LeaPlusCB["AutoSellExcludeMyAlts"].tiptext = NoGreyTransmogCharTipText .. "|n|n|cff00AAFF" .. L["You have excluded all grey armor and weapons from being sold so this setting is ignored."]
 					else
-						LeaPlusLC:LockItem(LeaPlusCB["AutoSellNoGreyTransmog"], false)
-						LeaPlusCB["AutoSellNoGreyTransmog"].tiptext = NoGreyTransmogTipText
+						LeaPlusLC:LockItem(LeaPlusCB["AutoSellExcludeMyChar"], false)
+						LeaPlusCB["AutoSellExcludeMyChar"].tiptext = NoGreyTransmogTipText
+						LeaPlusLC:LockItem(LeaPlusCB["AutoSellExcludeMyAlts"], false)
+						LeaPlusCB["AutoSellExcludeMyAlts"].tiptext = NoGreyTransmogCharTipText
 					end
 				end
 			end
 			LeaPlusCB["AutoSellNoGreyGear"]:HookScript("OnClick", SetTransmogLockFunc)
+			LeaPlusCB["AutoSellExcludeMyChar"]:HookScript("OnClick", SetTransmogLockFunc)
 			SetTransmogLockFunc()
 
 			-- Help button hidden
@@ -3001,7 +3017,8 @@
 				LeaPlusLC["AutoSellShowSummary"] = "On"
 				LeaPlusLC["AutoSellNoKeeperTahult"] = "On"
 				LeaPlusLC["AutoSellNoGreyGear"] = "Off"
-				LeaPlusLC["AutoSellNoGreyTransmog"] = "On"; SetTransmogLockFunc() -- Must be after AutoSellNoGreyGear
+				LeaPlusLC["AutoSellExcludeMyChar"] = "On"; SetTransmogLockFunc() -- Must be after AutoSellNoGreyGear
+				LeaPlusLC["AutoSellExcludeMyAlts"] = "On"; SetTransmogLockFunc() -- Must be after AutoSellNoGreyGear
 
 				-- Refresh panel
 				SellJunkFrame:Hide(); SellJunkFrame:Show()
@@ -3015,7 +3032,8 @@
 					LeaPlusLC["AutoSellShowSummary"] = "On"
 					LeaPlusLC["AutoSellNoKeeperTahult"] = "On"
 					LeaPlusLC["AutoSellNoGreyGear"] = "Off"
-					LeaPlusLC["AutoSellNoGreyTransmog"] = "On"; SetTransmogLockFunc() -- Must be after AutoSellNoGreyGear
+					LeaPlusLC["AutoSellExcludeMyChar"] = "On"; SetTransmogLockFunc() -- Must be after AutoSellNoGreyGear
+					LeaPlusLC["AutoSellExcludeMyAlts"] = "Off"; SetTransmogLockFunc() -- Must be after AutoSellNoGreyGear
 				else
 					SellJunkFrame:Show()
 					LeaPlusLC:HideFrames()
@@ -3263,17 +3281,16 @@
 			eb.Text:SetScript("OnLeave", GameTooltip_Hide)
 
 			-- Show item ID in item tooltips while configuration panel is showing
-			if TooltipDataProcessor then
-				TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(self)
-					if SellJunkFrame:IsShown() then
-						local void, itemLink = self:GetItem()
-						if itemLink then
-							local itemID = GetItemInfoFromHyperlink(itemLink)
-							if itemID then self:AddLine(L["Item ID"] .. ": " .. itemID) end
-						end
+			TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(self)
+				if self ~= GameTooltip then return end
+				if SellJunkFrame:IsShown() then
+					local void, itemLink = self:GetItem()
+					if itemLink then
+						local itemID = GetItemInfoFromHyperlink(itemLink)
+						if itemID then self:AddLine(L["Item ID"] .. ": " .. itemID) end
 					end
-				end)
-			end
+				end
+			end)
 
 			-- Vendor function
 			local function SellJunkFunc()
@@ -3305,18 +3322,31 @@
 							-- Exclude grey gear
 							if Rarity == 0 and classID and (classID == itemTypeWeapon or classID == itemTypeArmor) then -- Weapon or armor
 								if LeaPlusLC["AutoSellNoGreyGear"] == "On" then
-									-- Exclude all grey gear
+									-- Exclude all grey gear is checked so do not sell
 									Rarity = 20
 									ItemPrice = 0
 								else
 									-- Exclude uncollected grey gear (exclude all grey gear is off)
-									if LeaPlusLC["AutoSellNoGreyTransmog"] == "On" and LeaPlusLC.NewPatch then -- remove LeaPlusLC.NewPatch in 10.0.5
-										local appearanceID, sourceID = C_TransmogCollection.GetItemInfo(itemID)
-										if sourceID then
-											local void, void, void, void, isCollected = C_TransmogCollection.GetAppearanceSourceInfo(sourceID)
-											if not isCollected then
-												Rarity = 20
-												ItemPrice = 0
+									if LeaPlusLC.NewPatch then -- remove LeaPlusLC.NewPatch in 10.0.5
+										if LeaPlusLC["AutoSellExcludeMyChar"] == "On" or LeaPlusLC["AutoSellExcludeMyAlts"] == "On" then
+											local appearanceID, sourceID = C_TransmogCollection.GetItemInfo(itemID)
+											if sourceID then
+												local void, void, void, void, isCollected = C_TransmogCollection.GetAppearanceSourceInfo(sourceID)
+												local hasItemData, canCollect = C_TransmogCollection.PlayerCanCollectSource(sourceID)
+												if not isCollected then
+													-- Item is not collected at all
+													if not canCollect then
+														if LeaPlusLC["AutoSellExcludeMyAlts"] == "On" then
+															-- Gear is designed for my alts and exclude gear designed for my alts is checked so do not sell
+															Rarity = 20
+															ItemPrice = 0
+														end
+													elseif LeaPlusLC["AutoSellExcludeMyChar"] == "On" then
+														-- Gear is designed for my character and exclude gear designed for my character is checked so do not sell
+														Rarity = 20
+														ItemPrice = 0
+													end
+												end
 											end
 										end
 									end
@@ -4280,9 +4310,9 @@
 			-- Mute or unmute when option is clicked
 			LeaPlusCB["MuteCustomSounds"]:HookScript("OnClick", function()
 				if LeaPlusLC["MuteCustomSounds"] == "On" then
-					MuteCustomListFunc(false, true)
+					MuteCustomListFunc(false, false)
 				else
-					MuteCustomListFunc(true, true)
+					MuteCustomListFunc(true, false)
 				end
 			end)
 
@@ -6143,6 +6173,7 @@
 			local transTable = {
 
 				-- Single spell IDs
+				["TransAtomic"] = {399502}, -- Atomically Recalibrated toy
 				["TransLantern"] = {44212}, -- Weighted Jack-o'-Lantern
 				["TransWitch"] = {279509}, -- Lucille's Sewing Needle (witch)
 				["TransTurkey"] = {61781}, -- Turkey (Pilgrim's Bounty)
@@ -6232,12 +6263,13 @@
 
 			-- Add checkboxes
 			LeaPlusLC:MakeTx(transPanel, "General", 16, -72)
-			LeaPlusLC:MakeCB(transPanel, "TransLantern", "Lantern", 16, -92, false, "If checked, the Weighted Jack-o'-Lantern transform will be removed when applied.")
+			LeaPlusLC:MakeCB(transPanel, "TransAtomic", "Atomic", 16, -92, false, "If checked, the Atomically Recalibrated transform (from the Atomic Recalibrator toy) will be removed when applied.")
 			LeaPlusLC:MakeCB(transPanel, "TransHallowed", "Hallowed", 16, -112, false, "If checked, the Hallowed Wand transforms will be removed when applied.")
-			LeaPlusLC:MakeCB(transPanel, "TransWitch", "Witch", 16, -132, false, "If checked, the Lucille's Sewing Needle transform (witch) will be removed when applied.")
-			LeaPlusLC:MakeCB(transPanel, "TransTurkey", "Turkey", 16, -152, false, "If checked, the Turkey transform (Pilgrim's Bounty) will be removed when applied.")
+			LeaPlusLC:MakeCB(transPanel, "TransLantern", "Lantern", 16, -132, false, "If checked, the Weighted Jack-o'-Lantern transform will be removed when applied.")
+			LeaPlusLC:MakeCB(transPanel, "TransProfessions", "Professions", 16, -152, false, "If checked, the Dragonflight profession transforms will be removed when applied.|n|nThis does not apply to fishing.")
 			LeaPlusLC:MakeCB(transPanel, "TransSpraybots", "Spraybots", 16, -172, false, "If checked, the Spraybot transforms will be removed when applied.")
-			LeaPlusLC:MakeCB(transPanel, "TransProfessions", "Professions", 16, -192, false, "If checked, the Dragonflight profession transforms will be removed when applied.|n|nThis does not apply to fishing.")
+			LeaPlusLC:MakeCB(transPanel, "TransTurkey", "Turkey", 16, -192, false, "If checked, the Turkey transform (Pilgrim's Bounty) will be removed when applied.")
+			LeaPlusLC:MakeCB(transPanel, "TransWitch", "Witch", 16, -212, false, "If checked, the Lucille's Sewing Needle transform (witch) will be removed when applied.")
 
 			-- Function to populate cTable with spell IDs for settings that are enabled
 			local function UpdateList()
@@ -6398,6 +6430,9 @@
 					LeaPlusCB["TrainAllButton"]:GetFontString():SetWidth(gap - 8)
 				end
 
+				-- Give button global scope (useful for compatibility with other addons and essential for ElvUI)
+				_G.LeaPlusGlobalTrainAllButton = LeaPlusCB["TrainAllButton"]
+
 				-- Button tooltip
 				LeaPlusCB["TrainAllButton"]:SetScript("OnEnter", function(self)
 					-- Get number of available skills and total cost
@@ -6459,7 +6494,6 @@
 					if E.private.skins.blizzard.enable and E.private.skins.blizzard.trainer then
 						LeaPlusCB["TrainAllButton"]:ClearAllPoints()
 						LeaPlusCB["TrainAllButton"]:SetPoint("RIGHT", ClassTrainerTrainButton, "LEFT", -6, 0)
-						_G.LeaPlusGlobalTrainAllButton = LeaPlusCB["TrainAllButton"]
 						E:GetModule("Skins"):HandleButton(_G.LeaPlusGlobalTrainAllButton)
 						if LeaPlusCB["TrainAllButton"]:GetWidth() > gap then
 							LeaPlusCB["TrainAllButton"]:GetFontString():SetWordWrap(false)
@@ -9103,7 +9137,10 @@
 			end
 
 			-- Show tooltip
-			local function ShowTip()
+			local function ShowTip(self)
+
+				-- Required for Dragonflight (or not self:IsTooltipType(Enum.TooltipDataType.Unit))
+				if self ~= GameTooltip then return end
 
 				-- Do nothing if CTRL, SHIFT and ALT are being held
 				if IsControlKeyDown() and IsAltKeyDown() and IsShiftKeyDown() then
@@ -10940,7 +10977,8 @@
 				LeaPlusLC:LoadVarChk("AutoSellJunk", "Off")					-- Sell junk automatically
 				LeaPlusLC:LoadVarChk("AutoSellShowSummary", "On")			-- Sell junk summary in chat
 				LeaPlusLC:LoadVarChk("AutoSellNoKeeperTahult", "On")		-- Sell junk exclude Keeper Ta'hult
-				LeaPlusLC:LoadVarChk("AutoSellNoGreyTransmog", "On")		-- Sell junk exclude uncollected gear
+				LeaPlusLC:LoadVarChk("AutoSellExcludeMyChar", "On")			-- Sell junk exclude gear designed for my character
+				LeaPlusLC:LoadVarChk("AutoSellExcludeMyAlts", "On")			-- Sell junk exclude gear designed for my alts
 				LeaPlusLC:LoadVarChk("AutoSellNoGreyGear", "Off")			-- Sell junk exclude all grey gear
 				LeaPlusLC:LoadVarStr("AutoSellExcludeList", "")				-- Sell junk exclude list
 				LeaPlusLC:LoadVarChk("AutoRepairGear", "Off")				-- Repair automatically
@@ -11316,7 +11354,8 @@
 			LeaPlusDB["AutoSellJunk"] 			= LeaPlusLC["AutoSellJunk"]
 			LeaPlusDB["AutoSellShowSummary"] 	= LeaPlusLC["AutoSellShowSummary"]
 			LeaPlusDB["AutoSellNoKeeperTahult"] = LeaPlusLC["AutoSellNoKeeperTahult"]
-			LeaPlusDB["AutoSellNoGreyTransmog"] = LeaPlusLC["AutoSellNoGreyTransmog"]
+			LeaPlusDB["AutoSellExcludeMyChar"]	= LeaPlusLC["AutoSellExcludeMyChar"]
+			LeaPlusDB["AutoSellExcludeMyAlts"]	= LeaPlusLC["AutoSellExcludeMyAlts"]
 			LeaPlusDB["AutoSellNoGreyGear"] 	= LeaPlusLC["AutoSellNoGreyGear"]
 			LeaPlusDB["AutoSellExcludeList"] 	= LeaPlusLC["AutoSellExcludeList"]
 			LeaPlusDB["AutoRepairGear"] 		= LeaPlusLC["AutoRepairGear"]
@@ -13980,6 +14019,30 @@
 					LeaPlusLC:Print("Gossip frame not open.")
 				end
 				return
+			elseif str == "traits" then
+				-- Set dragonriding traits
+				if IsAddOnLoaded("Blizzard_GenericTraitUI") and GenericTraitFrame:IsShown() then
+					local c = C_Traits.GetConfigIDBySystemID(1)
+					for count = 1, 10 do
+						for i, n in ipairs(C_Traits.GetTreeNodes(672)) do
+							local f = C_Traits.GetNodeInfo(c, n)
+							if #f.entryIDs < 2 then
+								-- One trait only
+								C_Traits.PurchaseRank(c, n)
+							else
+								-- Two trait choices
+								C_Traits.SetSelection(c, n, f.entryIDs[2]) -- 1 for left-side trait, 2 for right-side trait
+							end
+						end
+					end
+					-- Save changes
+					C_Traits.CommitConfig(c)
+					-- Reload to clear everything
+					ReloadUI()
+				else
+					LeaPlusLC:Print("Open the dragonriding trait frame first!")
+				end
+				return
 			elseif str == "admin" then
 				-- Preset profile (used for testing)
 				LpEvt:UnregisterAllEvents()						-- Prevent changes
@@ -13998,6 +14061,7 @@
 				LeaPlusDB["AutoAcceptRes"] = "On"				-- Accept resurrection
 				LeaPlusDB["AutoReleasePvP"] = "On"				-- Release in PvP
 				LeaPlusDB["AutoSellJunk"] = "On"				-- Sell junk automatically
+				LeaPlusDB["AutoSellExcludeMyAlts"] = "Off"		-- Sell junk exclude gear designed for my alts
 				LeaPlusDB["AutoSellExcludeList"] = ""			-- Sell junk exclusions list
 				LeaPlusDB["AutoRepairGear"] = "On"				-- Repair automatically
 
@@ -14239,6 +14303,7 @@
 					LeaPlusDB[k] = "On"
 				end
 				LeaPlusDB["MuteReady"] = "Off"	-- Mute ready check
+				LeaPlusDB["MuteVigor"] = "Off"	-- Mute vigor
 
 				-- Mute mount sounds (LeaPlusLC["MuteMountSounds"])
 				for k, v in pairs(LeaPlusLC["mountTable"]) do

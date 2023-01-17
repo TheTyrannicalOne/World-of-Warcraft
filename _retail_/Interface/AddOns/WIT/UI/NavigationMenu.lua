@@ -137,7 +137,7 @@ local function ShowRecorder()
 end
 
 local function ShowflipEditor()
-    core.Recorder().Show()
+    core.FlipEditor().Show()
     core.UI.MainWindow.Hide()
 end
 
@@ -149,8 +149,8 @@ local function ImportFarm()
 
             if strlen(text) > 0 then
                 local result, data = core.ExportHelper.Deserialize(text)
-                if result and data.Id and data.Time then
-                    local farms = core.Config.GetUserFarms()
+                if result and data.Id and (data.Time or data.IsFlip) then
+                    local farms = data.IsFlip and core.Config.GetUserFlips() or core.Config.GetUserFarms()
 
                     for i, farm in pairs(farms) do
                         if farm.Id == data.Id then
@@ -165,6 +165,8 @@ local function ImportFarm()
 
                     if core.UI.MainWindow.CurrentModule() == core.UserDataModule then
                         core.UI.MainWindow.ShowModule(core.UserDataModule)
+                    elseif core.UI.MainWindow.CurrentModule() == core.UserFlipDataModule then
+                        core.UI.MainWindow.ShowModule(core.UserFlipDataModule)
                     elseif core.UI.MainWindow.CurrentModule() == core.DashboardModule then
                         core.UI.MainWindow.ShowModule(core.DashboardModule)
                     end
@@ -320,6 +322,7 @@ local function buildNavigationMenu()
             Category = "Transmog"
         },
         core.UserDataModule,
+        core.UserFlipDataModule,
         { IsSeparator = true },
         core.FarmPlannerModule,
         { IsSeparator = true },
@@ -346,11 +349,11 @@ local function buildNavigationMenu()
                     DisplayName = core.GetString("Recorder"),
                     Action = ShowRecorder
                 },
-                --{
-                --    Name = "flipEditor",
-                --    DisplayName = core.GetString("flipEditor"),
-                --    Action = ShowflipEditor
-                --},
+                {
+                    Name = "flipEditor",
+                    DisplayName = core.GetString("FlipEditor"),
+                    Action = ShowflipEditor
+                },
                 {
                     Name = "Import",
                     DisplayName = core.GetString("Import"),

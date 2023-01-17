@@ -12,18 +12,17 @@ HandyNotes_NooksAndCranniesDB = {
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 	},
 	["profiles"] = {
-		["Shanyt - Argent Dawn"] = {
+		["Avisar - Dalaran"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
+		},
+		["Shanyt - Argent Dawn"] = {
 		},
 	},
 }
 HandyNotes_NooksAndCranniesCACHE = {
-	["version"] = 47213,
+	["version"] = 47631,
 	["mapName"] = {
-		[539] = "Shadowmoon Valley",
-		[85] = "Orgrimmar",
-		[627] = "Dalaran",
-		[371] = "The Jade Forest",
+		[551] = "The Masters' Cavern",
 	},
 }

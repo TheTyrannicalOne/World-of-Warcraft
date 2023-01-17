@@ -20,7 +20,7 @@ DataStore_TalentsDB = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1672706776,
+				["lastUpdate"] = 1673071134,
 				["Specializations"] = {
 					[3] = 0,
 				},
@@ -266,7 +266,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1672380702,
+				["lastUpdate"] = 1673072497,
 				["Specializations"] = {
 					0, -- [1]
 				},
@@ -313,7 +313,7 @@ DataStore_TalentsDB = {
 					[284] = "1|187507|226|7|Protection",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1672810682,
+				["lastUpdate"] = 1673982634,
 				["Specializations"] = {
 					0, -- [1]
 				},
@@ -463,7 +463,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 47213,
+			["Version"] = 47631,
 		},
 		["HUNTER"] = {
 			["Locale"] = "enUS",

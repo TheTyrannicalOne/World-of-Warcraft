@@ -125,6 +125,15 @@ NarciStatisticsDB = {
 		"5h 47m 8s", -- [4]
 		285, -- [5]
 	},
+	["AddOnActionForbidden"] = {
+		["timeLastError"] = 1673239669,
+		["addons"] = {
+			["MBB"] = {
+				["count"] = 4,
+				["timeLastError"] = 1673239669,
+			},
+		},
+	},
 }
 NarciTurntableOptions = nil
 NarciCharacterProfiles = {
@@ -143,7 +152,7 @@ NarciCharacterProfiles = {
 		["name"] = "Zulbathal",
 		["birth"] = 1652077348,
 		["serverID"] = "61",
-		["lastVisit"] = 1672374207,
+		["lastVisit"] = 1673072497,
 		["outfits"] = {
 			{
 				["s"] = "101189,95085,98375,101191,0,83203,107509,101192,95089,95106,101195,97104,0",
@@ -231,7 +240,7 @@ NarciCharacterProfiles = {
 		["name"] = "Shanyt",
 		["birth"] = 1651529834,
 		["serverID"] = "75",
-		["lastVisit"] = 1672800499,
+		["lastVisit"] = 1673982632,
 		["outfits"] = {
 			{
 				["s"] = "19684,44897,62761,24793,83202,83203,33402,33179,71940,26234,22010,0,0",
@@ -297,7 +306,7 @@ NarciCharacterProfiles = {
 		["name"] = "Avisar",
 		["birth"] = 1652077639,
 		["serverID"] = "3683",
-		["lastVisit"] = 1672707098,
+		["lastVisit"] = 1673071111,
 		["outfits"] = {
 		},
 		["class"] = 2,

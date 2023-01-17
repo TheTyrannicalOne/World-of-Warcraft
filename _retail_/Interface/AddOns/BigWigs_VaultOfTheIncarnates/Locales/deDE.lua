@@ -35,6 +35,8 @@ if L then
 
 	L.custom_on_stop_timers = "Fähigkeitenleisten immer anzeigen"
 	L.custom_on_stop_timers_desc = "Fähigkeiten, welche immer angezeigt werden: Leitfähiges Zeichen"
+
+	L.skipped_cast = "%s (%d) übersprungen"
 end
 
 L = BigWigs:NewBossLocale("Sennarth, The Cold Breath", "deDE")
@@ -149,21 +151,20 @@ if L then
 	-- Intermission: The Vault Falters
 	L.storm_break = "Teleport"
 	L.ball_lightning = "Kugeln"
-	-- L.fuses_reached = "%d |4Fuse:Fuses; Reached" -- 1 Fuse Reached, 2 Fuses Reached
 	-- Stage Three: Storm Incarnate
 	L.magnetic_charge = "Magnetische Ladung"
 
-	-- L.storm_nova_cast = "Storm Nova CastBar"
-	-- L.storm_nova_cast_desc = "Cast Bar for Storm Nova"
+	L.storm_nova_cast = "Sturmnova Zauberleiste"
+	L.storm_nova_cast_desc = "Zauberleiste für Sturmnova"
 
-	-- L.custom_on_repeating_stormcharged = "Repeating Positive or Negative"
-	-- L.custom_on_repeating_stormcharged_desc = "Repeating Positive or Negative say messages with icons {rt1}, {rt3} to find matches to remove your debuffs."
+	L.custom_on_repeating_stormcharged = "Positiv oder Negativ wiederholen"
+	L.custom_on_repeating_stormcharged_desc = "Gibt wiederholt Positive oder Negative Chatnachrichten mit Symbolen {rt1}, {rt3} aus, um Übereinstimmungen zum Entfernen des Schwächungszaubers zu finden."
 
-	-- L.skipped_cast = "Skipped %s (%d)"
+	L.skipped_cast = "%s (%d) übersprungen"
 
-	-- L.custom_off_raidleader_devastation = "Lighting Devastation: Leader Mode"
-	-- L.custom_off_raidleader_devastation_desc = "Show a bar for the Lighting Devastation (Breath) on the other side as well."
-	-- L.breath_other = "%s [Opposite]" -- Breath on opposite platform
+	L.custom_off_raidleader_devastation = "Blitzverheerung: Leiter-Modus"
+	L.custom_off_raidleader_devastation_desc = "Zeigt eine Leiste für Blitzverheerung (Atem) auch auf der anderen Seite an."
+	L.breath_other = "%s [Gegenseite]" -- Breath on opposite platform
 end
 
 L = BigWigs:NewBossLocale("Vault of the Incarnates Trash", "deDE")

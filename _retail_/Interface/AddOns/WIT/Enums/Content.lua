@@ -11,3 +11,4 @@ core.Content.WoD = 6
 core.Content.Legion = 7
 core.Content.BFA = 8
 core.Content.Shadowlands = 9
+core.Content.Dragonflight = 10

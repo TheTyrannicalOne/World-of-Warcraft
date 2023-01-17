@@ -31,4 +31,4 @@ core.Data.Results.Flips.MaroonInk1,
 
 }
 
-table.insert(core.Modules, core.DestroyingResultModule('Inktrader', InktraderData, 'Flipping'))
+table.insert(core.Modules, core.DestroyingResultModule('Inktrader', InktraderData, 'Flipping', core.FlipActivity.InkTrader))
