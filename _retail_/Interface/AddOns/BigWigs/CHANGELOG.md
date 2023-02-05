@@ -1,8 +1,10 @@
 # BigWigs
 
-## [v264.1](https://github.com/BigWigsMods/BigWigs/tree/v264.1) (2023-01-28)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v264...v264.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v264.2](https://github.com/BigWigsMods/BigWigs/tree/v264.2) (2023-02-05)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v264.1...v264.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Libs: Update CallbackHandler embed  
-- VaultOfTheIncarnates/RaszagethTheStormEater: Fix intermission add count  
-- Update itIT (#1337)  
+- Update zhCN (#1345)  
+- Update zhCN (#1343)  
+- Update zhTW (#1342)  
+- VaultOfTheIncarnates/RaszagethTheStormEater: Add additional Stage 3 timers for Mythic  
+- VaultOfTheIncarnates/SennarthTheColdBreath: Add an extra heroic time for Enveloping Winds  
