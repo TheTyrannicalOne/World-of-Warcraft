@@ -20,6 +20,9 @@ if L then
 	L.shattering_impact = "Einschlag"
 	L.concussive_slam = "Tank Linie"
 	L.infused_fallout = "Staub"
+
+	L.custom_on_repeating_fallout = "Erfüllten Niederschlag wiederholen"
+	L.custom_on_repeating_fallout_desc = "Gibt wiederholt Chatnachrichten für Erfüllten Niederschlag mit Symbol {rt7} aus, um einen Partner zu finden."
 end
 
 L = BigWigs:NewBossLocale("The Primal Council", "deDE")
@@ -48,6 +51,8 @@ if L then
 	L.webs = "Spinnweben"
 	L.web = "Spinnwebe"
 	L.gossamer_burst = "Heranziehen"
+	L.gossamer_burst_castbar = "Gespinstausbruch Zauberleiste / Countdown"
+	L.gossamer_burst_castbar_desc = "Eine Zauberleiste für Gespinstausbruch mit standardmäßig aktiviertem Countdown."
 	L.repelling_burst = "Zurückstoßen"
 end
 

@@ -224,6 +224,7 @@ local L = app.L;
 	L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."-点击）正确已收集。";
 	L.FUTURE_UNOBTAINABLE = "未来不可获取！";
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "这是已经确认或极有可能在已知的未来补丁中无法获取的内容。";
+	L.TRADING_POST = "商栈";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -785,6 +786,7 @@ for key,value in pairs({
 		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "巨龙时代季节性促销",			-- Dragonflight Seasonal Promotions
+		[-585] = "暗黑破坏神IV",													-- Diablo IV
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
@@ -870,9 +872,10 @@ for key,value in pairs({
 		[-1126] = "西部",												-- West
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
-		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
+		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
-		[-1143] = "每2小时稀有",											-- Every 2 Hours Rare
+		[-1143] = "每30分钟稀有",										-- TODO: DF Rare Rotation
+		[-1144] = "每周专业知识",										-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -942,6 +945,20 @@ for key,value in pairs({
 	[-169] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
 	[-799] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
 	[-903] = "这些物品可以从可重复的宝箱、祈愿蟋蟀、世界任务或桌面任务中掉落。",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 
@@ -1068,6 +1085,9 @@ for key, value in pairs({
 	[21015] = "蹄印",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "蹄印",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "塞拉摩卫兵徽章",	-- Theramore Guard Badge
+	[21581] = "第二次兽人战争的结局",	-- Aftermath of the Second War
+	[21582] = "跨越黑暗之门",	-- Beyond the Dark Portal
+	[21583] = "卡多雷和永恒之井",	-- The Kaldorei and the Well of Eternity
 	[22245] = "一袋肉",	-- Sack of Meat
 	[22246] = "瑟莱德丝之泪",	-- Tear of Theradras
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from wotlk Wowhead
@@ -1201,6 +1221,45 @@ for key, value in pairs({
 	[175586] = "加隆的马车",	-- Jaron's Wagon
 	[175587] = "破损的箱子",	-- Damaged Crate
 	[175629] = "加隆的补给物资",	-- Jaron's Supplies
+	[175724] = "萨格拉斯的背叛",	-- Sargeras and the Betrayal
+	[175725] = "上古之神和艾泽拉斯的秩序",	-- The Old Gods and the Ordering of Azeroth
+	[175726] = "巨龙军团",	-- Charge of the Dragonflights
+	[175727] = "上古战争",	-- The War of the Ancients
+	[175729] = "海加尔山和伊利丹的礼物",	-- Mount Hyjal and Illidan's Gift
+	[175730] = "世界之树和翡翠梦境",	-- The World Tree and the Emerald Dream
+	[175731] = "高等精灵的流放",	-- Exile of the High Elves
+	[175732] = "哨兵和长期卫戍",	-- The Sentinels and the Long Vigil
+	[175733] = "奎尔萨拉斯的建立",	-- The Founding of Quel'Thalas
+	[175734] = "阿拉索与巨魔战争",	-- Arathor and the Troll Wars
+	[175735] = "提瑞斯法的守护者",	-- The Guardians of Tirisfal
+	[175736] = "铁炉堡 - 矮人的觉醒",	-- Ironforge - the Awakening of the Dwarves
+	[175737] = "七大王国",	-- The Seven Kingdoms
+	[175738] = "艾格文和猎龙之战",	-- Aegwynn and the Dragon Hunt
+	[175739] = "三锤之战",	-- War of the Three Hammers
+	[175740] = "最后的守护者",	-- The Last Guardian
+	[175741] = "基尔加丹和阴影契约",	-- Kil'jaeden and the Shadow Pact
+	[175742] = "部落的崛起",	-- Rise of the Horde
+	[175745] = "黑暗之门和暴风城的陷落",	-- The Dark Portal and the Fall of Stormwind
+	[175746] = "洛丹伦联盟",	-- The Alliance of Lordaeron
+	[175747] = "远征德拉诺",	-- The Invasion of Draenor
+	[175748] = "巫妖王的诞生",	-- The Birth of the Lich King
+	[175749] = "冰冠堡垒和冰封王座",	-- Icecrown and the Frozen Throne
+	[175750] = "格瑞姆巴托之战",	-- The Battle of Grim Batol
+	[175751] = "兽人的消沉",	-- Lethargy of the Orcs
+	[175752] = "新的部落",	-- The New Horde
+	[175753] = "蜘蛛之战",	-- War of the Spider
+	[175754] = "克尔苏加德和天灾军团的建立",	-- Kel'Thuzad and the Forming of the Scourge
+	[175756] = "洛丹伦的天灾",	-- The Scourge of Lordaeron
+	[175757] = "太阳之井 - 奎尔萨拉斯的陷落",	-- Sunwell - The Fall of Quel'Thalas
+	[175758] = "阿克蒙德的归来和卡利姆多之旅",	-- Archimonde's Return and the Flight to Kalimdor
+	[175759] = "背叛者的历程",	-- The Betrayer Ascendant
+	[175760] = "血精灵的崛起",	-- Rise of the Blood Elves
+	[175761] = "瘟疫之地的内战",	-- Civil War in the Plaguelands
+	[175762] = "巫妖王的胜利",	-- The Lich King Triumphant
+	[175763] = "古老的仇恨 - 卡利姆多的开拓",	-- Old Hatreds - The Colonization of Kalimdor
+	[175854] = "两个帝国",	-- The Twin Empires
+	[175855] = "帝国的陷落",	-- Empires' Fall
+	[175856] = "夺灵者的愤怒",	-- Wrath of Soulflayer
 	[175888] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175891] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175892] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
@@ -1505,18 +1564,35 @@ for key, value in pairs({
 	[194049] = "联盟篝火",	-- Alliance Bonfire
 	[194105] = "传声盒413号",	-- Buzzbox 413
 	[194122] = "传声盒723号",	-- Buzzbox 723
+	[194213] = "冬水仙",	-- Winter Hyacinth
+	[194238] = "达克玛尔之剑",	-- Blade of Drak'Mar
+	[194341] = "积满灰尘的日记",	-- Dusty Journal
 	[194378] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194387] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194388] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194389] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194390] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194391] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
+	[194423] = "被偷走的锦标赛邀请函",	-- Stolen Tournament Invitation
+	[194424] = "黑骑士的命令",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
 	[194479] = "血池",	-- Pool of Blood	--TODO: This was taken from wotlk Wowhead
+	[194537] = "温德尔·巴尔弗爵士的坟墓",	-- Sir Wendell's Grave
+	[194538] = "康纳尔·铁拳的坟墓",	-- Connall's Grave
+	[194539] = "洛林·阳焰的坟墓",	-- Lorien's Grave
 	[194555] = "档案馆控制台",	-- Archivum Console
+	[194618] = "长枪架",	-- Lance Rack
+	[194622] = "长枪架",	-- Lance Rack
 	[194714] = "恶心的工作台",	-- Disgusting Workbench
+	[194908] = "长枪架",	-- Lance Rack
+	[194909] = "长枪架",	-- Lance Rack
 	[195022] = "毒皮暴掠龙蛋",	-- Venomhide Ravasaur Egg
 	[195037] = "异种蝎卵",	-- Silithid Egg
 	[195134] = "大炸弹",	-- The Bomb	--TODO: This was manually translated
+	[195274] = "被偷走的陆行鸟腿",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "被丢弃的灵魂水晶",	-- Discarded Soul Crystal
 	[195431] = "总部无线电",	-- Headquarters Radio
 	[195433] = "上古石板碎片",	-- Ancient Tablets
 	[195435] = "武器柜",	-- Weapons Cabinet
@@ -1531,6 +1607,7 @@ for key, value in pairs({
 	[196393] = "损坏的圣物",	-- Broken Relic
 	[196832] = "上层占卜石",	-- Upper Scrying Stone	--TODO: This was manually translated
 	[196833] = "下层占卜石",	-- Lower Scrying Stone	--TODO: This was manually translated
+	[201367] = "迷雾之心",	-- Heart of the Mists
 	[201578] = "技师招募海报",	-- Wrenchmen Recruitment Poster	--TODO: This was manually translated
 	[202080] = "达尔特的卵",	-- Dart's Nest
 	[202081] = "塔克的卵",	-- Takk's Nest
@@ -1631,6 +1708,13 @@ for key, value in pairs({
 	[209620] = "暗月宝箱",	-- Darkmoon Treasure Chest
 	[209673] = "玉虎立柱",	-- Jade Tiger Pillar
 	[209845] = "极品美酒",	-- Mouthwatering Brew
+	[210005] = "武器架",	-- Weapon Rack
+	[210015] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210016] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210017] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210018] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210019] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210020] = "武器架",	-- Weapon Rack
 	[210565] = "黑色泥土",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "奇怪的文字",	-- Curious Text
@@ -2616,8 +2700,10 @@ for key, value in pairs({
 	[277344] = "珍贵的奥古雷信物",	-- Precious Augari Keepsakes
 	[277346] = "丢失的奥古雷宝箱",	-- Missing Augari Chest
 	[277373] = "微光海草",	-- Glimmering Seaweed
+	[277384] = "被遗弃的宝藏",	-- Abandoned Treasure
 	[277459] = "猪塑像",	-- Pig Effigy
 	[277561] = "督军的宝箱",	-- Warlord's Cache
+	[277637] = "浸透虚空的宝箱",	-- Void-Seeped Cache
 	[277715] = "纳兹曼尼诅咒宝箱",	-- Cursed Nazmani Chest
 	[277885] = "温加的宝藏",	-- Wunja's Trove
 	--TODO: [277897] = "Seething Cache",	-- Seething Cache
@@ -3513,7 +3599,7 @@ for key, value in pairs({
 	[380643] = "速冻卷轴",	-- Flashfrozen Scroll
 	[380647] = "被遗忘的奥术宝典",	-- Forgotten Arcane Tomne
 	--TODO: [380648] = "Odd Book",	-- Odd Book
-	--TODO: [380652] = "Fractured Titanic Sphere",	-- Fractured Titanic Sphere
+	[380652] = "有裂痕的泰坦之球",	-- Fractured Titanic Sphere
 	[380653] = "耶努的风筝",	-- Yennu's Kite
 	[380654] = "亡者胸甲",	-- Dead Man's Chestplate
 	[380709] = "驯鹰者护手设计图",	-- Falconer Gauntlet Drawings
@@ -3558,8 +3644,10 @@ for key, value in pairs({
 	[381485] = "冒险者丢失的肥皂块",	-- Adventurer's Lost Soap Bar
 	--TODO: [381510] = "Flying Fish Bones",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	--TODO: [381512] = "Wooden Pole",	-- Wooden Pole
 	[381513] = "旧镐",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	[381575] = "鸭子陷阱工具",	-- Duck Trap Kit
 	[381579] = "档案员的请求",	-- Archivists' Request
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
@@ -3580,16 +3668,20 @@ for key, value in pairs({
 	[382071] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
-	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382193] = "元素宝箱",	-- Chest of the Elements
+	[382325] = "玛瑙宝石簇",	-- Onyx Gem Cluster
+	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383733] = "翻动过的泥土",	-- Disturbed Dirt
+	[383734] = "翻动过的泥土",	-- Disturbed Dirt
+	[383735] = "翻动过的泥土",	-- Disturbed Dirt	--TODO: this was manually translated
 	[384318] = "不起眼的书签",	-- Inconspicuous Bookmark
 	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	--TODO: [385021] = "Petrified Dragon Egg",	-- Petrified Dragon Egg
 	[385022] = "被侵蚀的化石",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

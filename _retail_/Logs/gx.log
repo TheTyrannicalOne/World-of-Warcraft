@@ -1,75 +1,35 @@
-1/17 11:15:55.738  LogOpen
-1/17 11:15:55.738  World of Warcraft Retail x86_64 10.0.2.47631
-1/17 11:15:55.738  Windows 10 (10.0.19045) x86_64
-1/17 11:15:55.738  Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12 | Max Frequency: 3.4GHz
-1/17 11:15:55.738  15.9 GB System Memory
-1/17 11:15:55.738  On AC Power - Battery Not Present
-1/17 11:15:56.427  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1f0000000f0af2) location:2 dx11:true dx12:true
-1/17 11:15:56.427  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
-1/17 11:15:56.427  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
-1/17 11:15:56.427  Nvidia driver version: r527_92
-1/17 11:15:56.472  Choosing gpu by name: "NVIDIA GeForce RTX 2080 Ti"
-1/17 11:15:56.472  D3d12 Device Create
-1/17 11:15:56.472  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
-1/17 11:15:56.800  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
-1/17 11:15:56.800  Ray Tracing Support: DXR 1.1
-1/17 11:15:56.800  Variable Rate Shading Tier Supported: 2
-1/17 11:15:59.316  NotifyOnDeviceCreate
-1/17 11:15:59.328  D3d12 Device Create Successful
-1/17 11:15:59.328  Using shader family dx_6_0
-1/17 11:15:59.328  <IsGPUDriverOutOfDate> No
-1/17 11:15:59.328  Detected Graphics Defaults: 3 (CPU = 3, GPU = 7, MEM = 7) WindowSize: 2560x1440
-1/17 11:15:59.328  GxLowLatencyMode: None
-1/17 11:15:59.493  Render Settings Changed. New Render Size: 2560x1440
-1/17 11:16:02.631  Render Settings Changed
-1/17 11:16:02.631  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:41C 
-1/17 11:21:02.641  Periodic Gpu Status Report: Current Frequency:1.70GHz Temperature:41C 
-1/17 11:26:02.645  Periodic Gpu Status Report: Current Frequency:2.00GHz Temperature:47C 
-1/17 11:31:02.656  Periodic Gpu Status Report: Current Frequency:1.85GHz Temperature:48C 
-1/17 11:36:02.672  Periodic Gpu Status Report: Current Frequency:1.26GHz Temperature:42C 
-1/17 11:41:02.682  Periodic Gpu Status Report: Current Frequency:1.63GHz Temperature:43C 
-1/17 11:46:02.684  Periodic Gpu Status Report: Current Frequency:1.53GHz Temperature:43C 
-1/17 11:51:02.685  Periodic Gpu Status Report: Current Frequency:1.47GHz Temperature:43C 
-1/17 11:56:02.687  Periodic Gpu Status Report: Current Frequency:1.58GHz Temperature:44C 
-1/17 12:01:02.696  Periodic Gpu Status Report: Current Frequency:1.47GHz Temperature:42C 
-1/17 12:06:02.705  Periodic Gpu Status Report: Current Frequency:1.30GHz Temperature:41C 
-1/17 12:11:02.716  Periodic Gpu Status Report: Current Frequency:1.37GHz Temperature:42C 
-1/17 12:16:02.726  Periodic Gpu Status Report: Current Frequency:1.53GHz Temperature:43C 
-1/17 12:21:02.727  Periodic Gpu Status Report: Current Frequency:1.34GHz Temperature:42C 
-1/17 12:26:02.728  Periodic Gpu Status Report: Current Frequency:1.58GHz Temperature:43C 
-1/17 12:31:02.798  Periodic Gpu Status Report: Current Frequency:1.20GHz Temperature:39C 
-1/17 12:36:02.810  Periodic Gpu Status Report: Current Frequency:1.46GHz Temperature:41C 
-1/17 12:41:02.819  Periodic Gpu Status Report: Current Frequency:1.18GHz Temperature:39C 
-1/17 12:46:02.833  Periodic Gpu Status Report: Current Frequency:1.61GHz Temperature:42C 
-1/17 12:51:02.849  Periodic Gpu Status Report: Current Frequency:1.49GHz Temperature:42C 
-1/17 12:56:02.902  Periodic Gpu Status Report: Current Frequency:1.18GHz Temperature:40C 
-1/17 13:01:02.919  Periodic Gpu Status Report: Current Frequency:1.18GHz Temperature:38C 
-1/17 13:06:02.942  Periodic Gpu Status Report: Current Frequency:1.18GHz Temperature:38C 
-1/17 13:11:02.989  Periodic Gpu Status Report: Current Frequency:1.18GHz Temperature:38C 
-1/17 13:16:03.027  Periodic Gpu Status Report: Current Frequency:0.78GHz Temperature:33C 
-1/17 13:21:03.062  Periodic Gpu Status Report: Current Frequency:0.60GHz Temperature:34C 
-1/17 13:26:03.072  Periodic Gpu Status Report: Current Frequency:0.76GHz Temperature:34C 
-1/17 13:31:03.095  Periodic Gpu Status Report: Current Frequency:0.98GHz Temperature:34C 
-1/17 13:36:03.127  Periodic Gpu Status Report: Current Frequency:0.52GHz Temperature:32C 
-1/17 13:41:03.176  Periodic Gpu Status Report: Current Frequency:0.50GHz Temperature:32C 
-1/17 13:46:03.179  Periodic Gpu Status Report: Current Frequency:0.50GHz Temperature:32C 
-1/17 13:51:03.227  Periodic Gpu Status Report: Current Frequency:0.70GHz Temperature:32C 
-1/17 13:56:03.277  Periodic Gpu Status Report: Current Frequency:0.72GHz Temperature:32C 
-1/17 14:01:03.277  Periodic Gpu Status Report: Current Frequency:0.42GHz Temperature:32C 
-1/17 14:06:03.328  Periodic Gpu Status Report: Current Frequency:0.42GHz Temperature:32C 
-1/17 14:11:04.627  Periodic Gpu Status Report: Current Frequency:1.22GHz Temperature:35C 
-1/17 14:16:04.640  Periodic Gpu Status Report: Current Frequency:1.39GHz Temperature:42C 
-1/17 14:21:04.649  Periodic Gpu Status Report: Current Frequency:1.29GHz Temperature:42C 
-1/17 14:26:04.649  Periodic Gpu Status Report: Current Frequency:1.29GHz Temperature:42C 
-1/17 14:31:04.662  Periodic Gpu Status Report: Current Frequency:1.42GHz Temperature:43C 
-1/17 14:36:04.671  Periodic Gpu Status Report: Current Frequency:1.29GHz Temperature:42C 
-1/17 14:41:04.673  Periodic Gpu Status Report: Current Frequency:1.29GHz Temperature:42C 
-1/17 14:46:04.681  Periodic Gpu Status Report: Current Frequency:1.38GHz Temperature:40C 
-1/17 14:51:04.682  Periodic Gpu Status Report: Current Frequency:1.18GHz Temperature:38C 
-1/17 14:56:04.690  Periodic Gpu Status Report: Current Frequency:1.22GHz Temperature:38C 
-1/17 15:01:04.705  Periodic Gpu Status Report: Current Frequency:1.42GHz Temperature:41C 
-1/17 15:06:04.710  Periodic Gpu Status Report: Current Frequency:1.30GHz Temperature:42C 
-1/17 15:11:04.711  Periodic Gpu Status Report: Current Frequency:1.39GHz Temperature:43C 
-1/17 15:12:20.968  D3d12 Device Destroy
-1/17 15:12:20.968  NotifyOnDeviceDestroy
-1/17 15:12:22.749  GxShutdown
+2/4 23:37:56.528  LogOpen
+2/4 23:37:56.528  World of Warcraft Retail x86_64 10.0.5.47936
+2/4 23:37:56.528  Windows 10 (10.0.19045) x86_64
+2/4 23:37:56.528  Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12 | Max Frequency: 3.4GHz
+2/4 23:37:56.528  15.9 GB System Memory
+2/4 23:37:56.528  On AC Power - Battery Not Present
+2/4 23:37:57.371  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1f0000000f0b08) location:2 dx11:true dx12:true
+2/4 23:37:57.371  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
+2/4 23:37:57.371  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
+2/4 23:37:57.371  Nvidia driver version: r528_10
+2/4 23:37:57.498  Choosing gpu by name: "NVIDIA GeForce RTX 2080 Ti"
+2/4 23:37:57.498  D3d12 Device Create
+2/4 23:37:57.498  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
+2/4 23:37:57.777  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
+2/4 23:37:57.777  Ray Tracing Support: DXR 1.1
+2/4 23:37:57.777  Variable Rate Shading Tier Supported: 2
+2/4 23:37:58.492  NotifyOnDeviceCreate
+2/4 23:37:58.492  D3d12 Device Create Successful
+2/4 23:37:58.492  Using shader family dx_6_0
+2/4 23:37:58.492  <IsGPUDriverOutOfDate> No
+2/4 23:37:58.492  Detected Graphics Defaults: 3 (CPU = 3, GPU = 7, MEM = 7) WindowSize: 2560x1440
+2/4 23:37:58.506  GxLowLatencyMode: None
+2/4 23:37:58.650  Render Settings Changed. New Render Size: 2560x1440
+2/4 23:38:01.874  Render Settings Changed
+2/4 23:38:01.874  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:36C 
+2/4 23:43:01.883  Periodic Gpu Status Report: Current Frequency:1.77GHz Temperature:46C 
+2/4 23:48:01.896  Periodic Gpu Status Report: Current Frequency:1.98GHz Temperature:49C 
+2/4 23:53:01.904  Periodic Gpu Status Report: Current Frequency:2.04GHz Temperature:51C 
+2/4 23:58:01.905  Periodic Gpu Status Report: Current Frequency:1.22GHz Temperature:45C 
+2/5 00:03:01.928  Periodic Gpu Status Report: Current Frequency:2.03GHz Temperature:49C 
+2/5 00:08:01.929  Periodic Gpu Status Report: Current Frequency:1.29GHz Temperature:41C 
+2/5 00:13:01.936  Periodic Gpu Status Report: Current Frequency:1.20GHz Temperature:39C 
+2/5 00:15:41.179  D3d12 Device Destroy
+2/5 00:15:41.179  NotifyOnDeviceDestroy
+2/5 00:15:41.918  GxShutdown

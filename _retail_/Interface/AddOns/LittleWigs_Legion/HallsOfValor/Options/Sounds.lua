@@ -1,8 +1,8 @@
 
 BigWigs:AddSounds("Hymdall", {
 	[191284] = "long",
-	[193092] = "info",
-	[193235] = {"alarm","alert"},
+	[193092] = "alarm",
+	[193235] = {"alert","underyou"},
 })
 
 BigWigs:AddSounds("Hyrja", {
@@ -21,8 +21,9 @@ BigWigs:AddSounds("Fenryr", {
 
 BigWigs:AddSounds("God-King Skovald", {
 	[193659] = "alarm",
-	[193668] = "warning",
-	[193702] = "alarm",
+	[193668] = {"alarm","alert"},
+	[193702] = "underyou",
+	[193783] = "info",
 	[193826] = "long",
 })
 

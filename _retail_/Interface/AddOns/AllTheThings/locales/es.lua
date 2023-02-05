@@ -222,6 +222,7 @@ local L = app.L;
 	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
 	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
 	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
+	L.TRADING_POST = "Puesto Comercial";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -867,7 +868,8 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Retos aéreos",									-- Aerial Challenges
-		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent
@@ -932,6 +934,20 @@ for key,value in pairs({
 	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 	--TODO: [-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 
@@ -1058,6 +1074,9 @@ for key,value in pairs({
 	[21015] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Identificación de guardia de Theramore",	-- Theramore Guard Badge
+	[21581] = "Las secuelas de la Segunda Guerra",	-- Aftermath of the Second War
+	[21582] = "Más allá del Portal Oscuro",	-- Beyond the Dark Portal
+	[21583] = "Los kaldorei y el Pozo de la Eternidad",	-- The Kaldorei and the Well of Eternity
 	[22245] = "Saco de carne",	-- Sack of Meat
 	[22246] = "Lágrima de Theradras",	-- Tear of Theradras
 	[35251] = "Cofre de Karnitol",	-- Karnitol's Chest
@@ -1191,6 +1210,45 @@ for key,value in pairs({
 	[175586] = "Carro de Jaron",	-- Jaron's Wagon
 	[175587] = "Cajón dañado",	-- Damaged Crate
 	[175629] = "Suministros de Jaron",	-- Jaron's Supplies
+	[175724] = "Sargeras y la traición",	-- Sargeras and the Betrayal
+	[175725] = "Los dioses antiguos y el orden de Azeroth",	-- The Old Gods and the Ordering of Azeroth
+	[175726] = "Encomienda a los Vuelos",	-- Charge of the Dragonflights
+	[175727] = "La Guerra de los Ancestros",	-- The War of the Ancients
+	[175729] = "El Monte Hyjal y el Obsequio de Illidan",	-- Mount Hyjal and Illidan's Gift
+	[175730] = "El Árbol del Mundo y el Sueño Esmeralda",	-- The World Tree and the Emerald Dream
+	[175731] = "El exilio de los elfos nobles",	-- Exile of the High Elves
+	[175732] = "Los centinelas y la gran vigilia",	-- The Sentinels and the Long Vigil
+	[175733] = "La fundación de Quel'Thalas",	-- The Founding of Quel'Thalas
+	[175734] = "Arathor y las Guerras Trols",	-- Arathor and the Troll Wars
+	[175735] = "Los guardianes de Tirisfal",	-- The Guardians of Tirisfal
+	[175736] = "Forjaz: el despertar de los enanos",	-- Ironforge - the Awakening of the Dwarves
+	[175737] = "Los siete reinos",	-- The Seven Kingdoms
+	[175738] = "Aegwynn y la caza del dragón",	-- Aegwynn and the Dragon Hunt
+	[175739] = "La Guerra de los Tres Martillos",	-- War of the Three Hammers
+	[175740] = "El último guardián",	-- The Last Guardian
+	[175741] = "Kil'jaeden y el Pacto de las Sombras",	-- Kil'jaeden and the Shadow Pact
+	[175742] = "El levantamiento de la Horda",	-- Rise of the Horde
+	[175745] = "El Portal Oscuro y la caída de Ventormenta",	-- The Dark Portal and the Fall of Stormwind
+	[175746] = "La alianza de Lordaeron",	-- The Alliance of Lordaeron
+	[175747] = "La invasión de Draenor",	-- The Invasion of Draenor
+	[175748] = "El nacimiento del Rey Exánime",	-- The Birth of the Lich King
+	[175749] = "Corona de Hielo y el Trono Helado",	-- Icecrown and the Frozen Throne
+	[175750] = "La batalla de Grim Batol",	-- The Battle of Grim Batol
+	[175751] = "El letargo de los orcos",	-- Lethargy of the Orcs
+	[175752] = "La nueva Horda",	-- The New Horde
+	[175753] = "La guerra de la Araña",	-- War of the Spider
+	[175754] = "Kel'Thuzad y la formación de la Plaga",	-- Kel'Thuzad and the Forming of the Scourge
+	[175756] = "La Plaga de Lordaeron",	-- The Scourge of Lordaeron
+	[175757] = "La Fuente del Sol: la caída de Quel'Thalas",	-- Sunwell - The Fall of Quel'Thalas
+	[175758] = "El retorno de Archimonde y el Vuelo a Kalimdor",	-- Archimonde's Return and the Flight to Kalimdor
+	[175759] = "El ascendiente traidor",	-- The Betrayer Ascendant
+	[175760] = "El levantamiento de los elfos de sangre",	-- Rise of the Blood Elves
+	[175761] = "Guerra civil en las Tierras de la Peste",	-- Civil War in the Plaguelands
+	[175762] = "El triunfante Rey Exánime",	-- The Lich King Triumphant
+	[175763] = "Antiguas rencillas: la colonización de Kalimdor",	-- Old Hatreds - The Colonization of Kalimdor
+	[175854] = "Los Imperios Gemelos",	-- The Twin Empires
+	[175855] = "La caída de los imperios",	-- Empires' Fall
+	[175856] = "La cólera del Cazador de Almas",	-- Wrath of Soulflayer
 	[175888] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
 	[175891] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
 	[175892] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
@@ -1495,18 +1553,35 @@ for key,value in pairs({
 	[194049] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[194105] = "Caja mecánica 413",	-- Buzzbox 413
 	[194122] = "Caja mecánica 723",	-- Buzzbox 723
+	[194213] = "Jacinto de invierno",	-- Winter Hyacinth
+	[194238] = "Hoja de Drak'Mar",	-- Blade of Drak'Mar
+	[194341] = "Diario polvoriento",	-- Dusty Journal
 	[194378] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194387] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194388] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194389] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194390] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194391] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
+	[194423] = "Invitación para el torneo robada",	-- Stolen Tournament Invitation
+	[194424] = "Órdenes del Caballero Negro",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	[194463] = "Bloque de piedra pequeño",	-- Small Stone Block	--TODO: This was taken from wotlk Wowhead
 	[194479] = "Charco de sangre",	-- Pool of Blood
+	[194537] = "Tumba de Sir Wendell",	-- Sir Wendell's Grave
+	[194538] = "Tumba de Conall",	-- Connall's Grave
+	[194539] = "Tumba de Lorien",	-- Lorien's Grave
 	[194555] = "Consola de El Archivum",	-- Archivum Console
+	[194618] = "Expositor de lanzas",	-- Lance Rack
+	[194622] = "Expositor de lanzas",	-- Lance Rack
 	[194714] = "Banco de trabajo desagradable",	-- Disgusting Workbench
+	[194908] = "Expositor de lanzas",	-- Lance Rack
+	[194909] = "Expositor de lanzas",	-- Lance Rack
 	[195022] = "Huevo de Pellejo Venenoso",	-- Venomhide Ravasaur Egg
 	[195037] = "Huevo de silítido",	-- Silithid Egg
 	[195134] = "La Bomba",	-- The Bomb
+	[195274] = "Pata de zancaalta robada",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "Cristal de alma desechado",	-- Discarded Soul Crystal
 	[195431] = "Radio de puesto de mando",	-- Headquarters Radio
 	[195433] = "Tablillas antiguas",	-- Ancient Tablets
 	[195435] = "Armario de armas",	-- Weapons Cabinet
@@ -1521,6 +1596,7 @@ for key,value in pairs({
 	[196393] = "Reliquia rota",	-- Broken Relic
 	[196832] = "Piedra de visión alta",	-- Upper Scrying Stone
 	[196833] = "Piedra de visión baja",	-- Lower Scrying Stone
+	[201367] = "Corazón de la neblina",	-- Heart of the Mists
 	[201578] = "Póster de reclutamiento de manijeros",	-- Wrenchmen Recruitment Poster
 	[202080] = "Nido de Dardo",	-- Dart's Nest
 	[202081] = "Nido de Takk",	-- Takk's Nest
@@ -1621,6 +1697,13 @@ for key,value in pairs({
 	[209620] = "Arqueta de la Luna Negra",	-- Darkmoon Treasure Chest
 	[209673] = "Pilar de tigre de jade",	-- Jade Tiger Pillar
 	[209845] = "Brebaje apetitoso",	-- Mouthwatering Brew
+	[210005] = "Expositor de armas",	-- Weapon Rack
+	[210015] = "Expositor de armas",	-- Weapon Rack
+	[210016] = "Expositor de armas",	-- Weapon Rack
+	[210017] = "Expositor de armas",	-- Weapon Rack
+	[210018] = "Expositor de armas",	-- Weapon Rack
+	[210019] = "Expositor de armas",	-- Weapon Rack
+	[210020] = "Expositor de armas",	-- Weapon Rack
 	[210565] = "Tierra oscura",	-- Dark Soil
 	[211424] = "Pergamino de alquimia",	-- Alchemy Scroll
 	[211754] = "Texto curioso",	-- Curious Text
@@ -2606,8 +2689,10 @@ for key,value in pairs({
 	[277344] = "Recuerdos Augari preciados",	-- Precious Augari Keepsakes
 	[277346] = "Cofre Augari desaparecido",	-- Missing Augari Chest
 	[277373] = "Algas de luz trémula",	-- Glimmering Seaweed
+	[277384] = "Tesoro abandonado",	-- Abandoned Treasure
 	[277459] = "Efigie de cerdo",	-- Pig Effigy
 	[277561] = "Alijo del señor de la guerra",	-- Warlord's Cache
+	[277637] = "Alijo calado de Vacío",	-- Void-Seeped Cache
 	[277715] = "Cofre Nazmani maldito",	-- Cursed Nazmani Chest
 	[277885] = "Tesoro de Wunja",	-- Wunja's Trove
 	[277897] = "Alijo hirviente",	-- Seething Cache
@@ -3526,7 +3611,7 @@ for key,value in pairs({
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
 	[381110] = "Joyero olvidado",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
-	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
+	[381157] = "Montón de zafiros",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	[381160] = "Brújula perdida",	-- Lost Compass
 	[381216] = "Lupa de perito",	-- Surveyor's Magnifying Glass
@@ -3548,9 +3633,11 @@ for key,value in pairs({
 	[381485] = "Pastilla de jabón para aventureros perdida",	-- Adventurer's Lost Soap Bar
 	[381510] = "Raspas de pez volador",	-- Flying Fish Bones
 	[381511] = "Punta de arpón",	-- Harpoon Head
+	[381512] = "Poste de madera",	-- Wooden Pole
 	[381513] = "Piqueta vieja",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
-	[381579] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381575] = "Equipo de trampa para patos",	-- Duck Trap Kit
+	[381579] = "Petición de los archivistas",	-- Archivists' Request
 	[381650] = "Petición de los archivistas",	-- Archivists' Request
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
 	[381661] = "Petición de los archivistas",	-- Archivists' Request
@@ -3558,7 +3645,7 @@ for key,value in pairs({
 	[381663] = "Tormentas de maná para principiantes",	-- Manastorming For Beginners
 	[381664] = "Petición de los archivistas",	-- Archivists' Request
 	[381667] = "Petición de los archivistas",	-- Archivists' Request
-	[381668] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Petición de los archivistas",	-- Archivists' Request
 	[381669] = "Petición de los archivistas",	-- Archivists' Request
 	[381670] = "Petición de los archivistas",	-- Archivists' Request
 	[381671] = "Petición de los archivistas",	-- Archivists' Request
@@ -3572,14 +3659,18 @@ for key,value in pairs({
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "Cofre de los elementos",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382621] = "Consola del catalizador de reanimación",	-- Revival Catalyst Console
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
+	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383733] = "Tierra revuelta",	-- Disturbed Dirt
+	[383734] = "Tierra revuelta",	-- Disturbed Dirt
+	[383735] = "Tierra revuelta",	-- Disturbed Dirt
 	[384318] = "Marcapáginas discreto",	-- Inconspicuous Bookmark
 	[384370] = "Notas deliberadamente descuidadas",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Huevo de dragón petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fósil erosionado",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

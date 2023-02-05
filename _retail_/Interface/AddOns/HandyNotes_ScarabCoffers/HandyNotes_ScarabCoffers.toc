@@ -1,8 +1,8 @@
-﻿## Interface: 100002
+﻿## Interface: 100005
 ## Title: HandyNotes_ScarabCoffers
 ## Notes: Scarab Coffer locations in AQ40/20
 ## Author: Keyboardturner
-## Version: 4
+## Version: 5
 ## DefaultState: enabled
 ## SavedVariables: HandyNotes_ScarabCoffersDB
 ## RequiredDeps: HandyNotes

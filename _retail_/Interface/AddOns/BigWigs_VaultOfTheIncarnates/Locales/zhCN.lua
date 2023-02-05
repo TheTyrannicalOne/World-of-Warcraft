@@ -20,6 +20,9 @@ if L then
 	L.shattering_impact = "猛击"
 	L.concussive_slam = "坦克直线"
 	L.infused_fallout = "爆尘"
+
+	--L.custom_on_repeating_fallout = "Repeating Infused Fallout"
+	--L.custom_on_repeating_fallout_desc = "Repeating Infused Fallout say messages with icon {rt7} to find a partner."
 end
 
 L = BigWigs:NewBossLocale("The Primal Council", "zhCN")
@@ -48,6 +51,8 @@ if L then
 	L.webs = "蛛网"
 	L.web = "蛛网"
 	L.gossamer_burst = "拉近"
+	-- L.gossamer_burst_castbar = "Gossamer Burst Cast Bar / Countdown"
+	-- L.gossamer_burst_castbar_desc = "A Cast Bar for Gossamer Burst with Countdown enabled by default."
 	L.repelling_burst = "推离"
 end
 

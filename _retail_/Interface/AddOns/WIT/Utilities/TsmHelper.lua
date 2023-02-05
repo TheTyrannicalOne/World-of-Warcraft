@@ -52,7 +52,7 @@ end
 local function getPriceSourceForItem(itemId)
     local priceSource = TSMHelper.GetCustomPrice(itemId)
 
-    if not priceSource and (type(itemId) == "string" or itemId > 152500) then
+    if not priceSource and (type(itemId) == "string" or itemId > core.Config.CurrentContentMinItemId) then
         priceSource = core.Config.GetPriceSource()
         
         if priceSource == priceSources[1] then
@@ -222,7 +222,7 @@ end
 
 function TSMHelper.GetInventoryContent(priceSource)
     for i = 1, 10 do
-        local list = TSMHelper.GetBagsContent({0, 1, 2, 3, 4}, priceSource)
+        local list = TSMHelper.GetBagsContent({0, 1, 2, 3, 4, 5}, priceSource)
         if list ~= nil then
             return list
         end
@@ -234,8 +234,12 @@ end
 function TSMHelper.GetBankValue(priceSource)
     local bags = { BANK_CONTAINER }
     local bankSlots = GetNumBankSlots()
-    for num = NUM_BAG_SLOTS+1, NUM_BAG_SLOTS+bankSlots do
+    for num = (NUM_TOTAL_EQUIPPED_BAG_SLOTS or 4)+1, (NUM_TOTAL_EQUIPPED_BAG_SLOTS or 4)+bankSlots do
         table.insert(bags, num)
+    end
+
+    if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and IsReagentBankUnlocked() then
+        table.insert(bags, REAGENTBANK_CONTAINER)
     end
 
     for i = 1, 10 do
@@ -253,22 +257,20 @@ function TSMHelper.GetBagsValue(bags, priceSource)
     local isValidData = true
 
     for _, bag in pairs(bags) do
-        local slots=GetContainerNumSlots(bag)
+        local slots=C_Container.GetContainerNumSlots(bag)
 
         for slot=1,slots do
-            local _,c,_,q,_,_,link,_,_,id = GetContainerItemInfo(bag,slot)
-
-            if c and id then
-                local _, _, _, _, _, _, _, _, _, _, itemSellPrice = GetItemInfo(link)
-                local isBound = C_Item.IsBound(ItemLocation:CreateFromBagAndSlot(bag, slot))
+            local info = C_Container.GetContainerItemInfo(bag,slot)
+            if info then
                 local price = nil
-                local itemId = id == TSMHelper.PetCageItemId and 'p:'.. strmatch(link,"Hbattlepet:(%d+):") or id
-                if (isBound and not TSMHelper.HasCustomPrice(itemId)) or core.ScrapHelper.IsJunk(id) or (q ~= nil and q or -1) < core.Config.GetBagValueMinQuality() or (core.TSMHelper.GetItemPrice(itemId, priceSource) or 0) < core.Config.GetBagValueMinPrice() * 10000 then
+                local itemId = info.itemID == TSMHelper.PetCageItemId and 'p:'.. strmatch(info.hyperlink,"Hbattlepet:(%d+):") or info.itemID
+                if (info.isBound and not TSMHelper.HasCustomPrice(itemId)) or core.ScrapHelper.IsJunk(info.itemID) or (info.quality ~= nil and info.quality or -1) < core.Config.GetBagValueMinQuality() or (core.TSMHelper.GetItemPrice(itemId, priceSource) or 0) < core.Config.GetBagValueMinPrice() * 10000 then
+                    local _, _, _, _, _, _, _, _, _, _, itemSellPrice = GetItemInfo(info.hyperlink)
                     local belowThresholdValue = core.Config.GetBelowThresholdValue()
                     if belowThresholdValue == 1 then
                         price = itemSellPrice or 0
                     elseif belowThresholdValue == 2 then
-                        price = core.TSMHelper.GetItemDestroyingPrice(id) or itemSellPrice or 0
+                        price = core.TSMHelper.GetItemDestroyingPrice(info.itemID) or itemSellPrice or 0
                     else
                         price = 0
                     end
@@ -277,9 +279,9 @@ function TSMHelper.GetBagsValue(bags, priceSource)
                 end
 
                 if price ~= nil then
-                    sum = sum + price * c;
+                    sum = sum + price * info.stackCount;
                 end
-            elseif GetContainerItemID(bag,slot) then
+            elseif info and info.hasLoot then
                 isValidData = false
             end
         end
@@ -297,10 +299,10 @@ function TSMHelper.GetBagsContent(bags, priceSource)
     local isValidData = true
 
     for _, bag in pairs(bags) do
-        local slots=GetContainerNumSlots(bag)
+        local slots=C_Container.GetContainerNumSlots(bag)
 
         for slot=1,slots do
-            local _,c,_,q,_,_,link,_,_,id = GetContainerItemInfo(bag,slot)
+            local _,c,_,q,_,_,link,_,_,id = C_Container.GetContainerItemInfo(bag,slot)
 
             if c and id then
                 local _, _, _, _, _, _, _, _, _, _, itemSellPrice = GetItemInfo(link)
@@ -334,7 +336,7 @@ function TSMHelper.GetBagsContent(bags, priceSource)
                         table.insert(list, { Id = itemId, ItemLink = link, Quantity = c, Price = price })
                     end
                 end
-            elseif GetContainerItemID(bag,slot) then
+            elseif C_Container.GetContainerItemID(bag,slot) then
                 isValidData = false
             end
         end

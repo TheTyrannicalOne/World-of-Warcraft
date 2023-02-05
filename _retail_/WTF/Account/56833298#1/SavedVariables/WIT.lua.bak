@@ -1,5 +1,6 @@
 
 WITDB = {
+	["Version"] = "v4.0.16d",
 	["Settings"] = {
 		["FarmPlannerIds"] = {
 		},
@@ -15,28 +16,27 @@ WITDB = {
 		["CustomPriceSource"] = "DBMinBuyout",
 		["Recorder"] = {
 		},
-		["LegacyPricingSelect"] = "DBMarket",
+		["CustomItemPrices"] = {
+		},
 		["MinimapIcon"] = {
 		},
-		["FlipEditor"] = {
-		},
-		["DataSource"] = 1,
+		["HideMinimapIcon"] = false,
+		["BelowTresholdValue"] = 1,
 		["RecorderMinPrice"] = 0,
 		["BagValueMinQuality"] = 1,
 		["TUJCustomItemPrices"] = {
 		},
-		["TUJLegacyPricingSelect"] = "market",
+		["RecorderMinQuality"] = 1,
 		["LegacyCustomPriceSource"] = "DBMinBuyout",
 		["PricingSelect"] = "DBMarket",
 		["TUJLegacyCustomPriceSource"] = "market",
 		["TUJCustomPriceSource"] = "market",
-		["RecorderMinQuality"] = 1,
-		["BelowTresholdValue"] = 1,
-		["HideMinimapIcon"] = false,
-		["CustomItemPrices"] = {
+		["TUJLegacyPricingSelect"] = "market",
+		["DataSource"] = 1,
+		["FlipEditor"] = {
 		},
+		["LegacyPricingSelect"] = "DBMarket",
 	},
-	["Version"] = "v4.0.16",
 	["UserData"] = {
 		["IgnoredFarms"] = {
 		},

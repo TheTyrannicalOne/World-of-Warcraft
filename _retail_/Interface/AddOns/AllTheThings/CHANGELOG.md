@@ -1,24 +1,26 @@
 # AllTheThings
 
-## [DF-3.1.14](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.14) (2023-01-16)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.13...DF-3.1.14) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.2.1](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.1) (2023-02-02)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.0...DF-3.2.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Functional changes
+### Goblin Weather Machine Twitch Drop
 
-- Some further adjustments to inaccurate quest check/report
-  - Instantly-completed quests should not trigger the report... hopefully
-  - Report dialog now includes if the character has previously completed the quest, and currently-known Professions
-- Adjusted some logic that should greatly reduce frame stutter when changing through certain Zones.
-- Adjusted auto-filling of Creatures within ATT windows to include Things which are listed under the 'Drops' Header and tagged for the specific Creature (i.e. Rares which drop shared Items).
+Watch select Twitch Streamers with Drops enabled for at least 4 hours between February 1st, 10:00 a.m. & February 5th, 11:59 p.m. PST. More details [here](https://worldofwarcraft.com/en-us/news/23896794/dragonflight-twitch-drops-get-your-goblin-weather-machine-now).
 
-### Functional fixes
 
-- Fixed some Headers becoming something else entirely.
+### Trading Post is live!
+
+Check out Trading Post in your faction capital, ATT has it as a new top category. All future rewards will be added when confirmed but you can see our guesses in Debug mode now 🤭
 
 
 ### Data additions/fixes
 
-- Usual updates to Dragonflight Professions, (World/Weekly) Quests, Renown activities, Rares, Treasures.
-- Some attempts to fix sourceQuests on various quests which are immediately available to alts on accounts with completed DF campaigns.
+- Big update to Ohn'ahran Plains Rares, thanks to @adavak. And Dragonflight Rares in general.
+- Many more Dragonflight fixes.
+- Changes to Fishing gear transmog/activities.
+- Ongoing fixes to Poor/Common quality items.
+- Trial of Style updates, check out new rewards!
+- French updates, thanks to @Machou.
+- WotLK updates.
 - Other fixes.

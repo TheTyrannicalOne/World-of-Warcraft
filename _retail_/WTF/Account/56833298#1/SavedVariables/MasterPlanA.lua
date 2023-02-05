@@ -1,92 +1,50 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["curOil"] = 95910,
-			["summary"] = {
-				["lastOilTime"] = 1673966278,
-				["tt2"] = 1671931701,
-				["tt3"] = 1673064467,
-				["ti1"] = 118531,
-				["tt1"] = 1671807152,
-				["ti3"] = 127855,
-				["inProgress"] = {
-					[485] = 1673980651,
-					[381] = 1674002155,
-					[397] = 1674002255,
-					[132] = 1673987762,
-					[676] = 1673994968,
-					[543] = 1673980675,
-					[179] = 1673979806,
-					[398] = 1673994959,
-					[192] = 1673979805,
-					[481] = 1673980659,
-					[570] = 1673980672,
-					[129] = 1673980647,
-					[574] = 1674031069,
-					[555] = 1674031081,
-					[745] = 1674031078,
-				},
-				["ti2"] = 122486,
-			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1673966359,
-			["curRes"] = 6780,
-			["class"] = "WARRIOR",
-		},
-		["Bathal"] = {
-			["class"] = "DEATHKNIGHT",
-			["faction"] = "Horde",
-		},
-		["Jingojaggot"] = {
-			["faction"] = "Horde",
+	["Zul'jin"] = {
+		["Okona"] = {
 			["class"] = "PRIEST",
-		},
-		["Brotus"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Horde",
 		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
+		["Zulbathal"] = {
 			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+		["Neltharigos"] = {
+			["faction"] = "Horde",
+			["class"] = "EVOKER",
+		},
+		["Valmagus"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Horde",
+		},
+		["Alatra"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Horde",
 		},
 	},
 	["Dalaran"] = {
 		["Rotclaugh"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Tendralas"] = {
-			["class"] = "PRIEST",
 			["faction"] = "Alliance",
+			["class"] = "PRIEST",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 		["Illingrath"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Varlouris"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 		["Thorinbane"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
-		},
-		["Malivant"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Avisar"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Alliance",
 		},
 		["Galvarton"] = {
@@ -100,27 +58,67 @@ MasterPlanAG = {
 			["curRes"] = 1355,
 			["class"] = "DRUID",
 		},
-	},
-	["Zul'jin"] = {
-		["Okona"] = {
-			["faction"] = "Horde",
-			["class"] = "PRIEST",
-		},
-		["Zulbathal"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-		["Neltharigos"] = {
-			["class"] = "EVOKER",
-			["faction"] = "Horde",
-		},
-		["Alatra"] = {
-			["faction"] = "Horde",
-			["class"] = "HUNTER",
-		},
-		["Valmagus"] = {
-			["faction"] = "Horde",
+		["Avisar"] = {
+			["faction"] = "Alliance",
 			["class"] = "PALADIN",
 		},
+		["Malivant"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["class"] = "WARRIOR",
+			["summary"] = {
+				["lastOilTime"] = 1675551189,
+				["tt2"] = 1674354889,
+				["tt3"] = 1675378678,
+				["ti1"] = 118531,
+				["tt1"] = 1675553775,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[485] = 1675565578,
+					[132] = 1675572725,
+					[736] = 1675552997,
+					[265] = 1675579973,
+					[725] = 1675552992,
+					[267] = 1675565582,
+					[202] = 1675554437,
+					[359] = 1675569031,
+					[675] = 1675579941,
+					[189] = 1675553834,
+					[677] = 1675587138,
+					[325] = 1675579921,
+					[737] = 1675552994,
+				},
+				["ti2"] = 122486,
+			},
+			["curOil"] = 95065,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1675168781,
+			["curRes"] = 2755,
+			["faction"] = "Horde",
+		},
+		["Bathal"] = {
+			["faction"] = "Horde",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Jingojaggot"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Horde",
+		},
+		["Brotus"] = {
+			["faction"] = "Horde",
+			["class"] = "SHAMAN",
+		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

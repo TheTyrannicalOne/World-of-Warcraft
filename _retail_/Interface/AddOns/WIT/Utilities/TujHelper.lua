@@ -128,7 +128,7 @@ end
 local function getPriceSourceForItem(itemId)
     local priceSource = TUJHelper.GetCustomPrice(itemId)
 
-    if not priceSource and (type(itemId) == "string" or itemId > 152500) then
+    if not priceSource and (type(itemId) == "string" or itemId > core.Config.CurrentContentMinItemId) then
         priceSource = core.Config.GetTUJPriceSource()
         
         if priceSource == priceSources[1] then

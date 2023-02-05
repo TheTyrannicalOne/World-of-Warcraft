@@ -1,9 +1,12 @@
 ﻿-- Thanks to SOCD and QuickQuest for inspiration
+local addonName, FBStorage = ...
+local  FBI = FBStorage
+local FBConstants = FBI.FBConstants;
 
 local _
 
 local LEW = LibStub("LibEventWindow-1.0");
-local GSB = FishingBuddy.GetSettingBool;
+local GSB = function(...) return FBI:GetSettingBool(...); end;
 
 local function GetNPCID()
 	return tonumber(string.match(UnitGUID('npc') or UnitGUID('target') or '', 'Creature%-.-%-.-%-.-%-.-%-(.-)%-'))
@@ -17,7 +20,7 @@ local function procLunkerQuests(index, title, level, isTrivial, frequency, isRep
 	if (n > 0) then
 		C_GossipInfo.SelectAvailableQuest(index)
 	end
-	
+
 	if ... then
 		return procLunkerQuests(index + 1, ...)
 	else
@@ -31,7 +34,7 @@ local _fqframe = LEW:CreateWindow()
 _fqframe:Register('GOSSIP_SHOW', function()
 	local npcID = GetNPCID()
 	if (GSB("HandleQuests")) then
-	
+
 		if (npcID == 77733) then
 			-- print ("Hi Ron Ashton!");
 		elseif (npcID == 85984) then
@@ -58,7 +61,7 @@ end, true)
 _fqframe:Register('QUEST_PROGRESS', function(_, ...)
 	if (GSB("HandleQuests") and GSB("AutoLunker")) then
 		local npcID = GetNPCID()
-	
+
 		if (npcID == 85984) then
 			local title = GetTitleText()
 			local n = GetItemCount(title)
@@ -72,7 +75,7 @@ end, true)
 _fqframe:Register('QUEST_COMPLETE', function(_, ...)
 	if (GSB("HandleQuests") and GSB("AutoLunker")) then
 		local npcID = GetNPCID()
-	
+
 		if (npcID == 85984) then
 			local title = GetTitleText()
 			local n = GetItemCount(title)
@@ -106,5 +109,5 @@ local QuestOptions = {
 }
 
 _fqframe:Register("VARIABLES_LOADED", function(_, ...)
-	FishingBuddy.OptionsFrame.HandleOptions(GENERAL, nil, QuestOptions);
+	FBI.OptionsFrame.HandleOptions(GENERAL, nil, QuestOptions);
 end, true)

@@ -9,6 +9,10 @@ if L then
 	L.versatility = "+5% 全能"
 	L.healing_taken = "+10% 治疗效果"
 
+	L.vexamus_warmup_trigger = "维克萨姆斯开始制造强大的奥术炸弹"
+	L.overgrown_ancient_warmup_trigger = "艾基斯塔兹！生命法术太浓了"
+	L.crawth_warmup_trigger = "至少起作用了。小心点。"
+
 	L.corrupted_manafiend = "被腐化的嗜魔者"
 	L.spellbound_scepter = "缚法节杖"
 	L.arcane_ravager = "奥术抢劫者"

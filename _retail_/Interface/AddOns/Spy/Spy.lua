@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "3.10.1"
+Spy.Version = "3.10.2"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -2219,14 +2219,18 @@ function Spy:LeftCombatEvent()
 end
 
 function Spy:PlayerDeadEvent()
-	if (Spy.LastAttack and (GetTime() - Spy.LastAttackTime) < 1 ) then
-		local playerData = SpyPerCharDB.PlayerData[Spy.LastAttack]
-		if playerData then
-			if not playerData.loses then
-				playerData.loses = 0
+	if Spy.LastAttack then
+		local timeDiff = GetTime() - Spy.LastAttackTime
+		if (timeDiff < .5 ) then
+--			print("Killed by ", Spy.LastAttack, " ", timeDiff, " seconds ago")
+			local playerData = SpyPerCharDB.PlayerData[Spy.LastAttack]
+			if playerData then
+				if not playerData.loses then
+					playerData.loses = 0
+				end
+				playerData.loses = playerData.loses + 1
 			end
-			playerData.loses = playerData.loses + 1
-		end
+		end	
 	end
 end
 

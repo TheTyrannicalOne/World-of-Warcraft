@@ -1,5 +1,5 @@
-## Interface: 100002
-## Version: v10.0.1
+## Interface: 100005
+## Version: v10.0.2
 ## Title: LegionInvasionTimer
 ## Author: Funkydude
 ## Notes: Shows the Legion invasion timer.

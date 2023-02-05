@@ -222,6 +222,7 @@ local L = app.L;
 	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
 	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
 	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
+	L.TRADING_POST = "교역소";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -863,7 +864,8 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		[-1142] = "비행 도전",											-- Aerial Challenges
-		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -928,6 +930,20 @@ for key,value in pairs({
 	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 	--TODO: [-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 
@@ -1054,6 +1070,9 @@ for key,value in pairs({
 	[21015] = "발굽 자국",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "발굽 자국",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "테라모어 경비병 휘장",	-- Theramore Guard Badge
+	[21581] = "2차 대전쟁의 여파",	-- Aftermath of the Second War
+	[21582] = "어둠의 문 저편",	-- Beyond the Dark Portal
+	[21583] = "칼도레이와 영원의 샘",	-- The Kaldorei and the Well of Eternity
 	[22245] = "고기 부대",	-- Sack of Meat
 	[22246] = "테라드라스의 눈물",	-- Tear of Theradras
 	[35251] = "카니톨의 궤짝",	-- Karnitol's Chest
@@ -1187,6 +1206,45 @@ for key,value in pairs({
 	[175586] = "야론의 짐마차",	-- Jaron's Wagon
 	[175587] = "부서진 상자",	-- Damaged Crate
 	[175629] = "야론의 보급품",	-- Jaron's Supplies
+	[175724] = "살게라스와 배반",	-- Sargeras and the Betrayal
+	[175725] = "고대 신들과 아제로스의 질서 구현",	-- The Old Gods and the Ordering of Azeroth
+	[175726] = "용군단의 임무",	-- Charge of the Dragonflights
+	[175727] = "고대의 전쟁",	-- The War of the Ancients
+	[175729] = "하이잘 산과 일리단의 선물",	-- Mount Hyjal and Illidan's Gift
+	[175730] = "세계수와 에메랄드의 꿈",	-- The World Tree and the Emerald Dream
+	[175731] = "추방당한 하이 엘프",	-- Exile of the High Elves
+	[175732] = "파수대와 긴 불침번",	-- The Sentinels and the Long Vigil
+	[175733] = "쿠엘탈라스 건국",	-- The Founding of Quel'Thalas
+	[175734] = "아라소르와 트롤 전쟁",	-- Arathor and the Troll Wars
+	[175735] = "티리스팔의 수호자",	-- The Guardians of Tirisfal
+	[175736] = "아이언포지 - 드워프의 탄생",	-- Ironforge - the Awakening of the Dwarves
+	[175737] = "일곱 왕국",	-- The Seven Kingdoms
+	[175738] = "에이그윈과 용 사냥",	-- Aegwynn and the Dragon Hunt
+	[175739] = "세 망치의 전쟁",	-- War of the Three Hammers
+	[175740] = "최후의 수호자",	-- The Last Guardian
+	[175741] = "킬제덴과 암흑 조약",	-- Kil'jaeden and the Shadow Pact
+	[175742] = "호드의 등장",	-- Rise of the Horde
+	[175745] = "어둠의 문과 스톰윈드의 함락",	-- The Dark Portal and the Fall of Stormwind
+	[175746] = "로데론의 얼라이언스",	-- The Alliance of Lordaeron
+	[175747] = "드레노어 침략",	-- The Invasion of Draenor
+	[175748] = "리치 왕의 탄생",	-- The Birth of the Lich King
+	[175749] = "얼음왕관과 얼어붙은 왕좌",	-- Icecrown and the Frozen Throne
+	[175750] = "그림 바톨 전투",	-- The Battle of Grim Batol
+	[175751] = "오크족의 무기력증",	-- Lethargy of the Orcs
+	[175752] = "새로운 호드",	-- The New Horde
+	[175753] = "거미 전쟁",	-- War of the Spider
+	[175754] = "켈투자드와 스컬지의 형성",	-- Kel'Thuzad and the Forming of the Scourge
+	[175756] = "로데론의 스컬지",	-- The Scourge of Lordaeron
+	[175757] = "태양샘 - 쿠엘탈라스의 몰락",	-- Sunwell - The Fall of Quel'Thalas
+	[175758] = "아키몬드의 귀환과 칼림도어로의 비행",	-- Archimonde's Return and the Flight to Kalimdor
+	[175759] = "떠오르는 배반자",	-- The Betrayer Ascendant
+	[175760] = "블러드 엘프의 등장",	-- Rise of the Blood Elves
+	[175761] = "역병지대의 내란",	-- Civil War in the Plaguelands
+	[175762] = "리치 왕의 승리",	-- The Lich King Triumphant
+	[175763] = "오랜 증오 - 칼림도어에서의 식민지 건설",	-- Old Hatreds - The Colonization of Kalimdor
+	[175854] = "쌍둥이 제국",	-- The Twin Empires
+	[175855] = "제국의 몰락",	-- Empires' Fall
+	[175856] = "영혼약탈자의 격노",	-- Wrath of Soulflayer
 	[175888] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175891] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175892] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
@@ -1491,18 +1549,35 @@ for key,value in pairs({
 	[194049] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[194105] = "윙윙상자 413",	-- Buzzbox 413
 	[194122] = "윙윙상자 723",	-- Buzzbox 723
+	[194213] = "겨울 히아신스",	-- Winter Hyacinth
+	--TODO: [194238] = "Blade of Drak'Mar",	-- Blade of Drak'Mar
+	[194341] = "먼지투성이 일지",	-- Dusty Journal
 	[194378] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194387] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194388] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194389] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194390] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194391] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
+	--TODO: [194423] = "Stolen Tournament Invitation",	-- Stolen Tournament Invitation
+	--TODO: [194424] = "Black Knight's Orders",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
 	[194479] = "피 웅덩이",	-- Pool of Blood
+	[194537] = "웬델 경의 무덤",	-- Sir Wendell's Grave
+	[194538] = "코날의 무덤",	-- Connall's Grave
+	[194539] = "로리엔의 무덤",	-- Lorien's Grave
 	[194555] = "고대 기록관 조작대",	-- Archivum Console
+	[194618] = "창 선반",	-- Lance Rack
+	[194622] = "창 선반",	-- Lance Rack
 	[194714] = "구역질나는 작업대",	-- Disgusting Workbench
+	[194908] = "창 선반",	-- Lance Rack
+	[194909] = "창 선반",	-- Lance Rack
 	[195022] = "맹독가죽 알",	-- Venomhide Ravasaur Egg
 	[195037] = "실리시드 알",	-- Silithid Egg
 	[195134] = "폭탄",	-- The Bomb
+	[195274] = "도난당한 타조 다리",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "버려진 영혼의 수정",	-- Discarded Soul Crystal
 	[195431] = "본부 무전기",	-- Headquarters Radio
 	[195433] = "고대 서판",	-- Ancient Tablets
 	[195435] = "무기함",	-- Weapons Cabinet
@@ -1517,6 +1592,7 @@ for key,value in pairs({
 	[196393] = "부서진 유물",	-- Broken Relic
 	[196832] = "위쪽 수정점 구슬",	-- Upper Scrying Stone
 	[196833] = "아래쪽 수정점 구슬",	-- Lower Scrying Stone
+	[201367] = "안개의 심장",	-- Heart of the Mists
 	[201578] = "정비공 모집 전단",	-- Wrenchmen Recruitment Poster
 	[202080] = "바람뿔의 둥지",	-- Dart's Nest
 	[202081] = "타크의 둥지",	-- Takk's Nest
@@ -1617,6 +1693,13 @@ for key,value in pairs({
 	[209620] = "다크문 보물 상자",	-- Darkmoon Treasure Chest
 	[209673] = "비취 호랑이 기둥",	-- Jade Tiger Pillar
 	[209845] = "군침도는 맥주",	-- Mouthwatering Brew
+	[210005] = "무기 선반",	-- Weapon Rack
+	[210015] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210016] = "무기 선반",	-- Weapon Rack
+	[210017] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210018] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210019] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210020] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
 	[210565] = "검은 토양",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "수수께끼의 문서",	-- Curious Text
@@ -1960,7 +2043,7 @@ for key,value in pairs({
 	[233649] = "도박꾼의 주머니",	-- Gambler's Purse
 	[233650] = "모험가 철퇴",	-- Adventurer's Mace
 	[233651] = "잃어버린 펜던트",	-- Lost Pendant
-	--TODO: [233658] = "Adventurer's Pouch",	-- Adventurer's Pouch
+	[233658] = "모험가 주머니",	-- Adventurer's Pouch
 	[233696] = "탐사용 주요 보급품",	-- Important Exploration Supplies
 	[233697] = "서슬니 보관함",	-- Saberon Stash
 	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder
@@ -2602,8 +2685,10 @@ for key,value in pairs({
 	[277344] = "귀중한 아우가리 유품",	-- Precious Augari Keepsakes
 	[277346] = "사라진 아우가리 상자",	-- Missing Augari Chest
 	[277373] = "반짝이는 해초",	-- Glimmering Seaweed
+	--TODO: [277384] = "Abandoned Treasure",	-- Abandoned Treasure
 	[277459] = "돼지 입상",	-- Pig Effigy
 	[277561] = "전쟁군주의 보관함",	-- Warlord's Cache
+	[277637] = "공허가 스민 보관함",	-- Void-Seeped Cache
 	[277715] = "저주받은 나즈마니 상자",	-- Cursed Nazmani Chest
 	[277885] = "운자의 보물",	-- Wunja's Trove
 	--TODO: [277897] = "Seething Cache",	-- Seething Cache
@@ -3544,8 +3629,10 @@ for key,value in pairs({
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
 	[381510] = "날치 뼈",	-- Flying Fish Bones
 	[381511] = "작살 머리",	-- Harpoon Head
+	[381512] = "목재 장대",	-- Wooden Pole
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	--TODO: [381575] = "Duck Trap Kit",	-- Duck Trap Kit
 	[381579] = "기록관의 요청",	-- Archivists' Request
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
@@ -3568,14 +3655,18 @@ for key,value in pairs({
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
+	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383733] = "흐트러진 흙",	-- Disturbed Dirt
+	[383734] = "흐트러진 흙",	-- Disturbed Dirt
+	[383735] = "흐트러진 흙",	-- Disturbed Dirt
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
 	[384370] = "섬세한 방황의 기록",	-- Deliberately Delinquent Notes
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg
 	[385022] = "부식된 화석",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

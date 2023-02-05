@@ -9,12 +9,12 @@ local charClassID, charData, charName, guildName, playedLevel, playedLevelUpdate
 local loggingOut = false
 local bankOpen, guildBankOpen, reagentBankUpdated, transmogOpen = false, false, false, false
 local maxScannedToys = 0
-local dirtyAchievements, dirtyAuras, dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyEquipment,
-    dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus,
-    dirtyPets, dirtyQuests, dirtyReputations, dirtyRested, dirtySpells, dirtyToys, dirtyTransmog,
-    dirtyVault, dirtyXp =
+local dirtyAchievements, dirtyAuras, dirtyBags, dirtyChromieTime, dirtyCovenant, dirtyCurrencies,
+    dirtyEquipment, dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts,
+    dirtyMythicPlus, dirtyPets, dirtyQuests, dirtyReputations, dirtyRested, dirtySpells, dirtyToys,
+    dirtyTransmog, dirtyVault, dirtyXp =
     false, false, false, false, false, false, false, false, false, false, false, false, false, false,
-    false, false, false, false, false, false, false
+    false, false, false, false, false, false, false, false
 local dirtyCallings, callingData = false, nil
 local dirtyBag, dirtyGuildBank, guildBankQueried, requestingPlayedTime = {}, false, false, true
 
@@ -96,6 +96,7 @@ function events:PLAYER_ENTERING_WORLD()
     wwtc:UpdateCharacterData()
     
     dirtyAuras = true
+    dirtyChromieTime = true
     dirtyCovenant = true
     dirtyCurrencies = true
     dirtyEquipment = true
@@ -177,6 +178,7 @@ end
 -- Fires when the contents of a bag changes
 function events:BAG_UPDATE(bagID)
     dirtyBag[bagID] = true
+    dirtyBags = true -- TODO remove this if Blizzard ever fixes DELAYED not triggering
 end
 function events:BAG_UPDATE_DELAYED()
     dirtyBags = true
@@ -245,12 +247,19 @@ function events:CHALLENGE_MODE_MAPS_UPDATE()
     dirtyMythicPlus = true
     dirtyVault = true
 end
+-- Fires when you stop using a fancy frame
+function events:PLAYER_INTERACTION_MANAGER_FRAME_HIDE(type)
+    if type == Enum.PlayerInteractionType.ChromieTime then
+        dirtyChromieTime = true
+    end
+end
 -- Vault
 function events:WEEKLY_REWARDS_UPDATE()
     dirtyVault = true
 end
 -- Quest changes, spammy
 function events:QUEST_LOG_UPDATE()
+    dirtyChromieTime = true
     dirtyQuests = true
 end
 -- Finished looting something
@@ -260,6 +269,7 @@ function events:LOOT_CLOSED()
 end
 -- Popup "you got loot" box
 function events:SHOW_LOOT_TOAST()
+    wwtc:SetPlayerBagsDirty()
     dirtyLockouts = true
     dirtyQuests = true
 end
@@ -365,6 +375,11 @@ function wwtc:Timer()
     if dirtyCallings then
         dirtyCallings = false
         wwtc:ScanCallings()
+    end
+
+    if dirtyChromieTime then
+        dirtyChromieTime = false
+        wwtc:ScanChromieTime()
     end
 
     if dirtyCovenant then
@@ -612,6 +627,13 @@ function wwtc:BuildEJData()
     end
 end
 
+function wwtc:SetPlayerBagsDirty()
+    for i = 0, NUM_TOTAL_BAG_FRAMES do
+        dirtyBag[i] = true
+    end
+    dirtyBags = true
+end
+
 -- Update various character data
 function wwtc:UpdateCharacterData()
     if charData == nil then return end
@@ -632,7 +654,6 @@ function wwtc:UpdateCharacterData()
 
         charData.copper = GetMoney()
 
-        wwtc:UpdateChromieTime()
         wwtc:UpdateHonor()
         wwtc:UpdateWarMode()
 
@@ -672,7 +693,7 @@ function wwtc:UpdateGuildData()
     end
 end
 
-function wwtc:UpdateChromieTime()
+function wwtc:ScanChromieTime()
     if charData == nil then return end
 
     charData.chromieTime = UnitChromieTimeID("player")

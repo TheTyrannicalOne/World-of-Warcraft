@@ -3,831 +3,853 @@ ElvCharacterDB = {
 	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
-			"i think its because its a raid group", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:10796:Player-75-0E95DBD2:1:1:28:23:4294967295:4294967295:4294967295:4294967295|h[Heroic: Neltharion's Lair]|h|r!", -- [1]
+			"Avilithia-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Avilithia-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			574, -- [11]
-			"Player-75-058380E2", -- [12]
+			752, -- [11]
+			"Player-75-0E95DBD2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673240004,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffff7c0aAvilithia-TheScryers|r",
+			[51] = 1674927265,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [1]
 		{
-			"But I did it in party", -- [1]
-			"Deliorra-Jubei'Thos", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:4477:Player-75-0E95DBD2:1:1:28:23:4294967295:4294967295:4294967295:4294967295|h[Looking For Many]|h|r!", -- [1]
+			"Avilithia-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Deliorra-Jubei'Thos", -- [5]
+			"Avilithia-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			576, -- [11]
-			"Player-3725-0B66174C", -- [12]
+			753, -- [11]
+			"Player-75-0E95DBD2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Deliorra-Jubei'Thos|r",
-			[51] = 1673240010,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffff7c0aAvilithia-TheScryers|r",
+			[51] = 1674927265,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [2]
 		{
-			"if a party then it completes", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			578, -- [11]
-			"Player-75-058380E2", -- [12]
+			405, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673240012,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952069,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [3]
 		{
-			"did yu guys not get credit either?", -- [1]
-			"Fukspencer-Illidan", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fukspencer-Illidan", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			593, -- [11]
-			"Player-57-0B309BF9", -- [12]
+			406, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Fukspencer-Illidan|r",
-			[51] = 1673240100,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952139,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [4]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16615:Player-75-058380E2:1:1:8:23:4294967295:4294967295:4294967295:4294967295|h[Blood Bank]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			632, -- [11]
-			"Player-75-058380E2", -- [12]
+			408, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673240623,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952116,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [5]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14637:Player-75-058380E2:1:1:10:23:4294967295:4294967295:4294967295:4294967295|h[Your Covenant's Flavor]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1, -- [11]
-			"Player-75-058380E2", -- [12]
+			412, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673355100,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952153,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [6]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14777:Player-75-058380E2:1:1:10:23:4294967295:4294967295:4294967295:4294967295|h[Restoration Expert]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2, -- [11]
-			"Player-75-058380E2", -- [12]
+			415, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673355100,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952186,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [7]
 		{
-			"forgotten gryphon is up", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Shanyt", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			7, -- [11]
-			"Player-75-058380E2", -- [12]
+			416, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673355345,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952229,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [8]
 		{
-			"qalashi war mammoth is up ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Shanyt", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			13, -- [11]
-			"Player-75-058380E2", -- [12]
+			417, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673355498,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952245,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [9]
 		{
-			"ae", -- [1]
-			"Wawa-SteamwheedleCartel", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Wawa-SteamwheedleCartel", -- [5]
+			"", -- [4]
+			"Shanyt", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			29, -- [11]
-			"Player-1071-0D6D7127", -- [12]
+			418, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dWawa-SteamwheedleCartel|r",
-			[51] = 1673355755,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952260,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [10]
 		{
-			"wtf the supply crate phases out when i land on it", -- [1]
-			"Loln-EmeraldDream", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Loln-EmeraldDream", -- [5]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			419, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952279,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [11]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			420, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952298,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [12]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			421, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952370,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [13]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			422, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1674952323,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [14]
+		{
+			"mantai is up", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - The Azure Span", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			38, -- [11]
-			"Player-162-0902E795", -- [12]
+			435, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa330c9Loln-EmeraldDream|r",
-			[51] = 1673355835,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1674952464,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:16461:Player-75-058380E2:1:1:10:23:4294967295:4294967295:4294967295:4294967295|h[Stormed Off]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			126, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673357092,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [12]
-		{
-			"ty", -- [1]
-			"Billywater-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Billywater-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			202, -- [11]
-			"Player-3723-0B0207F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaBillywater-Barthilas|r",
-			[51] = 1673357908,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [13]
-		{
-			"[FIS] Interrupted Trickclaw Mystic's |cff71d5ff|Hspell:395946:0|h[Putrid Bolt]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			975, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673386011,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
-		{
-			"[FIS] Interrupted High Shaman Rotknuckle's |cff71d5ff|Hspell:383143:0|h[Curse of Debilitation]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1020, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673386242,
-			[50] = "CHAT_MSG_PARTY",
 		}, -- [15]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16573:Player-75-058380E2:1:1:10:23:4294967295:4294967295:4294967295:4294967295|h[Legendary Photographs]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16566:Player-75-0E95DBD2:1:1:28:23:4294967295:4294967295:4294967295:4294967295|h[Great Shot!]|h|r!", -- [1]
+			"Avilithia-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Avilithia-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1352, -- [11]
-			"Player-75-058380E2", -- [12]
+			457, -- [11]
+			"Player-75-0E95DBD2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673388742,
+			[52] = "|cffff7c0aAvilithia-TheScryers|r",
+			[51] = 1674952656,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [16]
 		{
-			"thanks all", -- [1]
-			"Bonfire-EarthenRing", -- [2]
+			"anyone on that can make a lariat with a great chance to proc to be 392", -- [1]
+			"Kyl-TheScryers", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Bonfire-EarthenRing", -- [5]
+			"2. Trade - City", -- [4]
+			"Kyl-TheScryers", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			58, -- [11]
-			"Player-100-09D54EF8", -- [12]
+			657, -- [11]
+			"Player-75-0EF2DF7F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc7ebBonfire-EarthenRing|r",
-			[51] = 1673409801,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cff33937fKyl-TheScryers|r",
+			[51] = 1674953790,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [17]
 		{
-			"np", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"help at south", -- [1]
+			"Ghostnoodle-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"1. General - The Primalist Future", -- [4]
+			"Ghostnoodle-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - The Primalist Future", -- [9]
 			0, -- [10]
-			63, -- [11]
-			"Player-125-07C03F19", -- [12]
+			102, -- [11]
+			"Player-100-05698BBD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673409805,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffff468Ghostnoodle-EarthenRing|r",
+			[51] = 1674970914,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [18]
 		{
-			"Hydraulic, you coming back?", -- [1]
-			"Versa-Dalaran", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16292:Player-75-058380E2:1:1:28:23:4294967295:4294967295:4294967295:4294967295|h[Mastering the Waygates]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Versa-Dalaran", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			182, -- [11]
-			"Player-3683-0D63E653", -- [12]
+			166, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff33937fVersa-Dalaran|r",
-			[51] = 1673410155,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1674971776,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [19]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16443:Player-75-0280C688:1:1:10:23:4294967295:4294967295:4294967295:4294967295|h[Soupervisor]|h|r!", -- [1]
-			"Zymor-ArgentDawn", -- [2]
+			"silly question, where do you spend valor?", -- [1]
+			"Zaxsin-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Zymor-ArgentDawn", -- [5]
+			"2. Trade - City", -- [4]
+			"Zaxsin-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			213, -- [11]
-			"Player-75-0280C688", -- [12]
+			173, -- [11]
+			"Player-75-081CDAE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddZymor|r",
-			[51] = 1673410269,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cfffff468Zaxsin|r",
+			[51] = 1675033138,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [20]
 		{
-			"wanna do a raid group?", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"in the pvp room.", -- [1]
+			"Knexous-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"2. Trade - City", -- [4]
+			"Knexous-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			391, -- [11]
-			"Player-125-07C03F19", -- [12]
+			174, -- [11]
+			"Player-75-03EA636F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673410646,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfff48cbaKnexous|r",
+			[51] = 1675033089,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [21]
 		{
-			"people wanna join", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"i can show you, if you'd like.", -- [1]
+			"Knexous-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"2. Trade - City", -- [4]
+			"Knexous-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			395, -- [11]
-			"Player-125-07C03F19", -- [12]
+			175, -- [11]
+			"Player-75-03EA636F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673410719,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfff48cbaKnexous|r",
+			[51] = 1675033096,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [22]
 		{
-			"I can swap out trying to do quests at same time", -- [1]
-			"Versa-Dalaran", -- [2]
+			"any recrafters for |cffa335ee|Hitem:193001::192984:192945:192945::::70:253::13:8:8836:8840:8902:8960:8784:8782:8802:8790:6:28:2164:29:32:30:36:38:8:40:260:48:192552::::Player-75-00DEE90E:|h[Elemental Lariat |A:Professions-ChatIcon-Quality-Tier5:17:17::1|a]|h|r available?", -- [1]
+			"Painstrike-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Versa-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Painstrike-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			401, -- [11]
-			"Player-3683-0D63E653", -- [12]
+			176, -- [11]
+			"Player-75-0EE46E22", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff33937fVersa-Dalaran|r",
-			[51] = 1673410696,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffaad372Painstrike|r",
+			[51] = 1675033182,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [23]
 		{
-			"goning inside now", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"i found it ty!", -- [1]
+			"Zaxsin-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"2. Trade - City", -- [4]
+			"Zaxsin-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			430, -- [11]
-			"Player-125-07C03F19", -- [12]
+			187, -- [11]
+			"Player-75-081CDAE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673410767,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffff468Zaxsin|r",
+			[51] = 1675033235,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [24]
 		{
-			"we are inside", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"you are very welcome!", -- [1]
+			"Knexous-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"2. Trade - City", -- [4]
+			"Knexous-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			497, -- [11]
-			"Player-125-07C03F19", -- [12]
+			188, -- [11]
+			"Player-75-03EA636F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673411103,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfff48cbaKnexous|r",
+			[51] = 1675033246,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [25]
 		{
-			"sup", -- [1]
-			"Starscale-Area52", -- [2]
+			"Oh, and hey!", -- [1]
+			"Knexous-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Starscale-Area52", -- [5]
+			"2. Trade - City", -- [4]
+			"Knexous-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			630, -- [11]
-			"Player-3676-0DF8BA8B", -- [12]
+			189, -- [11]
+			"Player-75-03EA636F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff33937fStarscale-Area52|r",
-			[51] = 1673411447,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfff48cbaKnexous|r",
+			[51] = 1675033251,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [26]
 		{
-			"hi", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"A friend and I are about to run a |cffa335ee|Hkeystone:180653:200:2:10:0:0:0|h[Keystone: Halls of Valor (2)]|h|r. would you like to join us?", -- [1]
+			"Knexous-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"2. Trade - City", -- [4]
+			"Knexous-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			633, -- [11]
-			"Player-125-07C03F19", -- [12]
+			192, -- [11]
+			"Player-75-03EA636F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673411453,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfff48cbaKnexous|r",
+			[51] = 1675033222,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [27]
 		{
-			"<3", -- [1]
-			"Lorys-ShadowCouncil", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:17321:Player-75-058380E2:1:1:29:23:4294967295:4294967295:4294967295:4294967295|h[Elders of the Dragon Isles]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lorys-ShadowCouncil", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			634, -- [11]
-			"Player-125-0A58A9D8", -- [12]
+			251, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddLorys-ShadowCouncil|r",
-			[51] = 1673411453,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675036109,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [28]
 		{
-			"want heals or just dps", -- [1]
-			"Starscale-Area52", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16278:Player-75-0BB5DC96:1:1:29:23:4294967295:4294967295:4294967295:4294967295|h[Uldaman: Legacy of Tyr]|h|r!", -- [1]
+			"Lhegacy-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Starscale-Area52", -- [5]
+			"Lhegacy-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			635, -- [11]
-			"Player-3676-0DF8BA8B", -- [12]
+			439, -- [11]
+			"Player-75-0BB5DC96", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff33937fStarscale-Area52|r",
-			[51] = 1673411457,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffaad372Lhegacy-TheScryers|r",
+			[51] = 1675037762,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [29]
 		{
-			"any", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:15805:Player-75-0BB5DC96:1:1:29:23:4294967295:4294967295:4294967295:4294967295|h[Level 70]|h|r!", -- [1]
+			"Lhegacy-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"Lhegacy-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			636, -- [11]
-			"Player-125-07C03F19", -- [12]
+			441, -- [11]
+			"Player-75-0BB5DC96", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673411405,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffaad372Lhegacy-TheScryers|r",
+			[51] = 1675037767,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [30]
 		{
-			"i dont die ", -- [1]
-			"Borein-BlackwaterRaiders", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16736:Player-75-007E7562:1:1:29:23:4294967295:4294967295:4294967295:4294967295|h[Grand Theft Mammoth]|h|r!", -- [1]
+			"Kronar-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Borein-BlackwaterRaiders", -- [5]
+			"Kronar-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			641, -- [11]
-			"Player-125-07C03F19", -- [12]
+			462, -- [11]
+			"Player-75-007E7562", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Borein-BlackwaterRaiders|r",
-			[51] = 1673411423,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffaad372Kronar|r",
+			[51] = 1675038204,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [31]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16266:Player-75-09BCED74:1:1:11:23:4294967295:4294967295:4294967295:4294967295|h[Ruby Life Pools]|h|r!", -- [1]
+			"%s has earned the achievement |cffffff00|Hachievement:16493:Player-75-007E7562:1:1:29:23:4294967295:4294967295:4294967295:4294967295|h[Petty Theft Mammoth]|h|r!", -- [1]
+			"Kronar-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kronar-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			533, -- [11]
+			"Player-75-007E7562", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Kronar|r",
+			[51] = 1675040051,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [32]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16257:Player-75-09BCED74:1:1:29:23:4294967295:4294967295:4294967295:4294967295|h[Mythic: Brackenhide Hollow]|h|r!", -- [1]
 			"Taseena-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"Taseena-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			589, -- [11]
+			"Player-75-09BCED74", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Taseena-TheScryers|r",
+			[51] = 1675041474,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [33]
+		{
+			"doing tarolekk if you want in", -- [1]
+			"Leuqar-Barthilas", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Leuqar-Barthilas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			190, -- [11]
+			"Player-3723-0A31C889", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Leuqar-Barthilas|r",
+			[51] = 1675172709,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [34]
+		{
+			"ty all", -- [1]
+			"Leuqar-Barthilas", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Leuqar-Barthilas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			203, -- [11]
+			"Player-3723-0A31C889", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Leuqar-Barthilas|r",
+			[51] = 1675172797,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [35]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16587:Player-75-009A7F30:1:1:31:23:4294967295:4294967295:4294967295:4294967295|h[Lead Climber]|h|r!", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jharl-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			219, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aJharl|r",
+			[51] = 1675172941,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [36]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16790:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Curious Coin]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			268, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675255866,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [37]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16575:Player-75-09F9F1F6:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Waking Shores Glyph Hunter]|h|r!", -- [1]
+			"Gremlyk-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gremlyk-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			537, -- [11]
+			"Player-75-09F9F1F6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dGremlyk|r",
+			[51] = 1675259350,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [38]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:17305:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Trading Post: Dragonflight]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1, -- [11]
-			"Player-75-09BCED74", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Taseena-TheScryers|r",
-			[51] = 1673493852,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [32]
-		{
-			"|cffffd100|HclubFinder:ClubFinder-1-420580-75-109847558|h[Guild: Antilogy]|h|r Tired of running with scrubs? Wish you could raid with the Elite? Want to get gear for free and have a guaranteed spot each week? Well, that's not us, but we are recruiting anyways. Join Us! ", -- [1]
-			"Hàru-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hàru-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			29, -- [11]
-			"Player-75-0ED26F35", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffffffffHàru|r",
-			[51] = 1673494134,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"|cffffd000|Htrade:Player-75-06636F35:195097:164|h[Blacksmithing]|h|r Khazgorite tools and 4-5* quality maces availavle", -- [1]
-			"Ðaniel-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ðaniel-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			395, -- [11]
-			"Player-75-06636F35", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff48cbaÐaniel|r",
-			[51] = 1673495055,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:16278:Player-75-09BCED74:1:1:11:23:4294967295:4294967295:4294967295:4294967295|h[Uldaman: Legacy of Tyr]|h|r!", -- [1]
-			"Taseena-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Taseena-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			541, -- [11]
-			"Player-75-09BCED74", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Taseena-TheScryers|r",
-			[51] = 1673495386,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [35]
-		{
-			"im in que for pvp", -- [1]
-			"Ironclad-Illidan", -- [2]
-			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Ironclad-Illidan", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
-			0, -- [10]
-			116, -- [11]
-			"Player-57-0D1D2051", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dIronclad-Illidan|r",
-			[51] = 1673530250,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"Interrupted Tarolekk, the Stomper's |cff71d5ff|Hspell:384365:0|h[Disruptive Shout]|h|r!", -- [1]
-			"Bensi-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bensi-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			128, -- [11]
-			"Player-3723-0AD5DF1F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaBensi-Barthilas|r",
-			[51] = 1673530292,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [37]
-		{
-			"[FIS] Interrupted Tarolekk, the Stomper's |cff71d5ff|Hspell:390983:0|h[Fireball]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			129, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -835,209 +857,187 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673530297,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [38]
-		{
-			"Interrupted Tarolekk, the Stomper's |cff71d5ff|Hspell:384365:0|h[Disruptive Shout]|h|r!", -- [1]
-			"Bensi-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bensi-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			130, -- [11]
-			"Player-3723-0AD5DF1F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaBensi-Barthilas|r",
-			[51] = 1673530347,
-			[50] = "CHAT_MSG_PARTY",
+			[51] = 1675288398,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [39]
 		{
-			"ty", -- [1]
-			"Trogg-Nesingwary", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Trogg-Nesingwary", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			140, -- [11]
-			"Player-1184-0B230A8A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aTrogg-Nesingwary|r",
-			[51] = 1673530376,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [40]
-		{
-			"  gj", -- [1]
-			"Cerela-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Cerela-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			180, -- [11]
-			"Player-163-0B929450", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff33937fCerela-TwistingNether|r",
-			[51] = 1673530749,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [41]
-		{
-			"crate!", -- [1]
-			"Veylen-Zul'jin", -- [2]
+			"ZENET UP", -- [1]
+			"Aleerin-EmeraldDream", -- [2]
 			"", -- [3]
 			"1. General - Ohn'ahran Plains", -- [4]
-			"Veylen-Zul'jin", -- [5]
+			"Aleerin-EmeraldDream", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - Ohn'ahran Plains", -- [9]
 			0, -- [10]
-			206, -- [11]
-			"Player-61-0AC25962", -- [12]
+			4, -- [11]
+			"Player-162-06F5E192", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfff48cbaVeylen-Zul'jin|r",
-			[51] = 1673531056,
+			[52] = "|cfffff468Aleerin-EmeraldDream|r",
+			[51] = 1675288507,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"TAGGED", -- [1]
+			"Aleerin-EmeraldDream", -- [2]
+			"", -- [3]
+			"1. General - Ohn'ahran Plains", -- [4]
+			"Aleerin-EmeraldDream", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Ohn'ahran Plains", -- [9]
+			0, -- [10]
+			5, -- [11]
+			"Player-162-06F5E192", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Aleerin-EmeraldDream|r",
+			[51] = 1675288509,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"you butt", -- [1]
+			"Hollyforest-EmeraldDream", -- [2]
+			"", -- [3]
+			"1. General - The Azure Span", -- [4]
+			"Hollyforest-EmeraldDream", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - The Azure Span", -- [9]
+			0, -- [10]
+			101, -- [11]
+			"Player-162-0B735CB6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc7ebHollyforest-EmeraldDream|r",
+			[51] = 1675289413,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [42]
 		{
-			"already gone?", -- [1]
-			"Cerela-TwistingNether", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16273:Player-75-007E7562:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Azure Vault]|h|r!", -- [1]
+			"Kronar-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Cerela-TwistingNether", -- [5]
+			"", -- [4]
+			"Kronar-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			210, -- [11]
-			"Player-163-0B929450", -- [12]
+			579, -- [11]
+			"Player-75-007E7562", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff33937fCerela-TwistingNether|r",
-			[51] = 1673531139,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffaad372Kronar|r",
+			[51] = 1675294151,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [43]
 		{
-			"it's northeast", -- [1]
-			"Veylen-Zul'jin", -- [2]
+			"[FIS] Interrupted Qalashi Stonemender's |cff71d5ff|Hspell:395871:0|h[Stone Bulwark]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Veylen-Zul'jin", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			212, -- [11]
-			"Player-61-0AC25962", -- [12]
+			723, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff48cbaVeylen-Zul'jin|r",
-			[51] = 1673531145,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675295454,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [44]
 		{
-			"where you start the story", -- [1]
-			"Veylen-Zul'jin", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16532:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Friends with Sabellian]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Veylen-Zul'jin", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			213, -- [11]
-			"Player-61-0AC25962", -- [12]
+			733, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff48cbaVeylen-Zul'jin|r",
-			[51] = 1673531149,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675295475,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [45]
 		{
-			"still here for a bit", -- [1]
-			"Trinto-Maelstrom", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16760:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[The Obsidian Bloodline]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Trinto-Maelstrom", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			214, -- [11]
-			"Player-163-09384EE4", -- [12]
+			736, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aTrinto-Maelstrom|r",
-			[51] = 1673531150,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675295475,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [46]
 		{
-			"neela firebane is up", -- [1]
+			"[FIS] Interrupted Qalashi Flameslinger's |cff71d5ff|Hspell:395756:0|h[Magma Bolt Volley]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
+			"", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			349, -- [11]
+			761, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
+			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673532542,
-			[50] = "CHAT_MSG_CHANNEL",
+			[51] = 1675295614,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [47]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16541:Player-75-058380E2:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[Longhunter]|h|r!", -- [1]
+			"[FIS] Interrupted Qalashi Magmacrafter's |cff71d5ff|Hspell:395756:0|h[Magma Bolt Volley]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1047,7 +1047,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			227, -- [11]
+			823, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1055,341 +1055,363 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673542983,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[51] = 1675295918,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [48]
 		{
-			"you're supposed to ", -- [1]
-			"Glaedrr-Auchindoun", -- [2]
+			"[FIS] Interrupted Qalashi Stonemender's |cff71d5ff|Hspell:395871:0|h[Stone Bulwark]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Glaedrr-Auchindoun", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			296, -- [11]
-			"Player-67-0EDD3302", -- [12]
+			834, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff33937fGlaedrr-Auchindoun|r",
-			[51] = 1673543754,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675295972,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [49]
 		{
-			"I love you all, wanna date?", -- [1]
-			"Grlmrawk-EmeraldDream", -- [2]
+			"[FIS] Interrupted Pitchstone Rumbler's |cff71d5ff|Hspell:381535:0|h[Heavy Impacts]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Grlmrawk-EmeraldDream", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			321, -- [11]
-			"Player-162-0889CBAE", -- [12]
+			856, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dGrlmrawk-EmeraldDream|r",
-			[51] = 1673543835,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675296086,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [50]
 		{
-			"i love u all, wanna date?", -- [1]
-			"Grlmrawk-EmeraldDream", -- [2]
+			"tirboris is up", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"1. General - The Waking Shores", -- [4]
-			"Grlmrawk-EmeraldDream", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - The Waking Shores", -- [9]
 			0, -- [10]
-			334, -- [11]
-			"Player-162-0889CBAE", -- [12]
+			995, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dGrlmrawk-EmeraldDream|r",
-			[51] = 1673544146,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675296714,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [51]
 		{
-			"my cheeks are puffy because both bottom winsdoms were removed this week, so our smooches will be epic", -- [1]
-			"Grlmrawk-EmeraldDream", -- [2]
+			"[FIS] Interrupted Weaponmaster Vordak's |cff71d5ff|Hspell:387410:0|h[Erupting Earth]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Grlmrawk-EmeraldDream", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			340, -- [11]
-			"Player-162-0889CBAE", -- [12]
+			1050, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dGrlmrawk-EmeraldDream|r",
-			[51] = 1673544179,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675296970,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [52]
 		{
-			"anyone wanna date and smooch?  H H H", -- [1]
-			"Grlmrawk-EmeraldDream", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16736:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Grand Theft Mammoth]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Grlmrawk-EmeraldDream", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			341, -- [11]
-			"Player-162-0889CBAE", -- [12]
+			1170, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dGrlmrawk-EmeraldDream|r",
-			[51] = 1673544202,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675297948,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [53]
 		{
-			"We have the same first name, it'd be weird.", -- [1]
-			"Grimhayze-Maelstrom", -- [2]
+			"for |cffffff00|Hquest:72528:2474|h[Revival Catalyst]|h|r i am not getting any progress for doing group content", -- [1]
+			"Demondrake-Tichondrius", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Grimhayze-Maelstrom", -- [5]
+			"1. General - The Azure Span", -- [4]
+			"Demondrake-Tichondrius", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			342, -- [11]
-			"Player-163-049F1219", -- [12]
+			1714, -- [11]
+			"Player-11-0E368D3F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffff468Grimhayze-Maelstrom|r",
-			[51] = 1673544182,
+			[52] = "|cffa330c9Demondrake-Tichondrius|r",
+			[51] = 1675300266,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [54]
 		{
-			"honmor for the great hunt up", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"ive done the world boss, dragonbane keep. and killed 2 rares", -- [1]
+			"Demondrake-Tichondrius", -- [2]
 			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - The Azure Span", -- [4]
+			"Demondrake-Tichondrius", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			428, -- [11]
-			"Player-75-058380E2", -- [12]
+			1740, -- [11]
+			"Player-11-0E368D3F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673545430,
+			[52] = "|cffa330c9Demondrake-Tichondrius|r",
+			[51] = 1675300291,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [55]
 		{
-			"crate", -- [1]
-			"Zinatal-EmeraldDream", -- [2]
+			"no percent?", -- [1]
+			"Demondrake-Tichondrius", -- [2]
 			"", -- [3]
-			"1. General - Thaldraszus", -- [4]
-			"Zinatal-EmeraldDream", -- [5]
+			"1. General - The Azure Span", -- [4]
+			"Demondrake-Tichondrius", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Thaldraszus", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			68, -- [11]
-			"Player-162-081613ED", -- [12]
+			1745, -- [11]
+			"Player-11-0E368D3F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Zinatal-EmeraldDream|r",
-			[51] = 1673551338,
+			[52] = "|cffa330c9Demondrake-Tichondrius|r",
+			[51] = 1675300299,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [56]
 		{
-			"|cffffff00|Hworldmap:2025:5759:5666|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Zinatal-EmeraldDream", -- [2]
+			"last week i completed that in lfr, dunno if it counts this week or not", -- [1]
+			"Kozmookramer-Galakrond", -- [2]
 			"", -- [3]
-			"1. General - Thaldraszus", -- [4]
-			"Zinatal-EmeraldDream", -- [5]
+			"1. General - The Azure Span", -- [4]
+			"Kozmookramer-Galakrond", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Thaldraszus", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			74, -- [11]
-			"Player-162-081613ED", -- [12]
+			1749, -- [11]
+			"Player-54-06D51221", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Zinatal-EmeraldDream|r",
-			[51] = 1673551358,
+			[52] = "|cff0070ddKozmookramer-Galakrond|r",
+			[51] = 1675300304,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [57]
 		{
-			"nice one", -- [1]
-			"Zinatal-EmeraldDream", -- [2]
+			"should probably say instanced content", -- [1]
+			"Lonelyhour-Blackhand", -- [2]
 			"", -- [3]
-			"1. General - Thaldraszus", -- [4]
-			"Zinatal-EmeraldDream", -- [5]
+			"1. General - The Azure Span", -- [4]
+			"Lonelyhour-Blackhand", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Thaldraszus", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			81, -- [11]
-			"Player-162-081613ED", -- [12]
+			1762, -- [11]
+			"Player-54-0B175E96", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Zinatal-EmeraldDream|r",
-			[51] = 1673551417,
+			[52] = "|cffc69b6dLonelyhour-Blackhand|r",
+			[51] = 1675300312,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [58]
 		{
-			"|cffffd000|Htrade:Player-75-06636F35:195097:164|h[Blacksmithing]|h|rlf work!", -- [1]
-			"Ðaniel-ArgentDawn", -- [2]
+			"i did world boss in a group through group finder", -- [1]
+			"Demondrake-Tichondrius", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ðaniel-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			216, -- [11]
-			"Player-75-06636F35", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff48cbaÐaniel|r",
-			[51] = 1673552089,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:16279:Player-75-058380E2:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[Heroic: Uldaman: Legacy of Tyr]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			642, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673554791,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [60]
-		{
-			"|cffffff00|Hworldmap:2022:2540:6082|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r rare", -- [1]
-			"Ashirio-TheVentureCo", -- [2]
-			"", -- [3]
-			"1. General - The Waking Shores", -- [4]
-			"Ashirio-TheVentureCo", -- [5]
+			"1. General - The Azure Span", -- [4]
+			"Demondrake-Tichondrius", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - The Waking Shores", -- [9]
+			"General - The Azure Span", -- [9]
 			0, -- [10]
-			844, -- [11]
-			"Player-163-0B84FD8C", -- [12]
+			1783, -- [11]
+			"Player-11-0E368D3F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc41e3aAshirio-TheVentureCo|r",
-			[51] = 1673558560,
+			[52] = "|cffa330c9Demondrake-Tichondrius|r",
+			[51] = 1675300333,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"i havent selected my vault yet, maybe that affects it?", -- [1]
+			"Demondrake-Tichondrius", -- [2]
+			"", -- [3]
+			"1. General - The Azure Span", -- [4]
+			"Demondrake-Tichondrius", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - The Azure Span", -- [9]
+			0, -- [10]
+			1802, -- [11]
+			"Player-11-0E368D3F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa330c9Demondrake-Tichondrius|r",
+			[51] = 1675300345,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"anyone else getting revival catalyst progress stuck at 0%?", -- [1]
+			"Demondrake-Tichondrius", -- [2]
+			"", -- [3]
+			"1. General - The Azure Span", -- [4]
+			"Demondrake-Tichondrius", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - The Azure Span", -- [9]
+			0, -- [10]
+			1905, -- [11]
+			"Player-11-0E368D3F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa330c9Demondrake-Tichondrius|r",
+			[51] = 1675300454,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [61]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16500:Player-75-007E7562:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[Elemental Overload]|h|r!", -- [1]
-			"Kronar-ArgentDawn", -- [2]
+			"why am i phased out?", -- [1]
+			"Sinblade-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kronar-ArgentDawn", -- [5]
+			"Sinblade-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			845, -- [11]
-			"Player-75-007E7562", -- [12]
+			69, -- [11]
+			"Player-3676-0DC5F724", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Kronar|r",
-			[51] = 1673558644,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cfffff468Sinblade-Area52|r",
+			[51] = 1675306452,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [62]
 		{
-			"LF jewelcrafter", -- [1]
-			"Vortigon-ArgentDawn", -- [2]
+			"wtf", -- [1]
+			"Sinblade-Area52", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vortigon-ArgentDawn", -- [5]
+			"", -- [4]
+			"Sinblade-Area52", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			919, -- [11]
-			"Player-75-0CB2D507", -- [12]
+			73, -- [11]
+			"Player-3676-0DC5F724", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffaad372Vortigon|r",
-			[51] = 1673560483,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffff468Sinblade-Area52|r",
+			[51] = 1675306466,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [63]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14771:Player-75-058380E2:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[The Afterlife Express]|h|r!", -- [1]
+			"anyone know why i cant see any of you?", -- [1]
+			"Sinblade-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sinblade-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			75, -- [11]
+			"Player-3676-0DC5F724", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Sinblade-Area52|r",
+			[51] = 1675306476,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [64]
+		{
+			"[FIS] Interrupted Rimetalon Spellflinger's |cff71d5ff|Hspell:396366:0|h[Frigid Torment]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1399,7 +1421,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1061, -- [11]
+			137, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1407,143 +1429,55 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673562469,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [64]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:16532:Player-75-007E7562:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[Friends with Sabellian]|h|r!", -- [1]
-			"Kronar-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kronar-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1108, -- [11]
-			"Player-75-007E7562", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Kronar|r",
-			[51] = 1673565984,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[51] = 1675307208,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [65]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16760:Player-75-007E7562:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[The Obsidian Bloodline]|h|r!", -- [1]
-			"Kronar-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16808:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Friend of the Dragon Isles]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kronar-ArgentDawn", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1109, -- [11]
-			"Player-75-007E7562", -- [12]
+			466, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Kronar|r",
-			[51] = 1673565984,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675308245,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [66]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16571:Player-75-05EDA3B6:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[Well Supplied]|h|r!", -- [1]
-			"Zyborg-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:10816:Player-75-08C6E363:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Mythic: Court of Stars]|h|r!", -- [1]
+			"Silvelle-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zyborg-ArgentDawn", -- [5]
+			"Silvelle-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1335, -- [11]
-			"Player-75-05EDA3B6", -- [12]
+			567, -- [11]
+			"Player-75-08C6E363", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc41e3aZyborg|r",
-			[51] = 1673569875,
+			[52] = "|cfff48cbaSilvelle-TheScryers|r",
+			[51] = 1675309180,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [67]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14770:Player-75-058380E2:1:1:12:23:4294967295:4294967295:4294967295:4294967295|h[What We Ride in the Shadows]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1337, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673569942,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [68]
-		{
-			"|cffffd100|HclubFinder:ClubFinder-1-420580-75-109847558|h[Guild: Antilogy]|h|r Our DPS does massive crit damage, our healers practice real life Wack-a-Mole, our tanks taunt UFC fighters. In instances bosses walk up to us, drop their loot and kill themselves. Not really, but we have fun. Join us!", -- [1]
-			"Hàru-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hàru-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			314, -- [11]
-			"Player-75-0ED26F35", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffffffffHàru|r",
-			[51] = 1673830134,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
-		{
-			"can anyone craft rings?", -- [1]
-			"Pyonken-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pyonken-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			398, -- [11]
-			"Player-75-0EF0E0BD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Pyonken|r",
-			[51] = 1673889788,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:16569:Player-75-09BCED74:1:1:16:23:4294967295:4294967295:4294967295:4294967295|h[Cobalt Enthusiast]|h|r!", -- [1]
+			"%s has earned the achievement |cffffff00|Hachievement:14797:Player-75-09BCED74:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Epic]|h|r!", -- [1]
 			"Taseena-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1553,7 +1487,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			74, -- [11]
+			673, -- [11]
 			"Player-75-09BCED74", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1561,87 +1495,197 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffaad372Taseena-TheScryers|r",
-			[51] = 1673904328,
+			[51] = 1675310073,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [71]
+		}, -- [68]
 		{
-			"some ally here", -- [1]
-			"Rhelik-Frostwolf", -- [2]
+			"ah crap", -- [1]
+			"Senli-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Rhelik-Frostwolf", -- [5]
+			"Senli-Mal'Ganis", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			801, -- [11]
+			"Player-3684-0E0AA5B7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Senli-Mal'Ganis|r",
+			[51] = 1675310885,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [69]
+		{
+			"ty all", -- [1]
+			"Lucasboy-Mal'Ganis", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lucasboy-Mal'Ganis", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			855, -- [11]
+			"Player-3684-0DC10E6C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLucasboy-Mal'Ganis|r",
+			[51] = 1675311164,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [70]
+		{
+			"Need that plate chest?", -- [1]
+			"Lucasboy-Mal'Ganis", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lucasboy-Mal'Ganis", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			859, -- [11]
+			"Player-3684-0DC10E6C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLucasboy-Mal'Ganis|r",
+			[51] = 1675311174,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [71]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16410:Player-75-058380E2:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Siege on Dragonbane Keep: Snack Attack]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1632, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675314202,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [72]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16262:Player-75-09BCED74:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Mythic: Halls of Infusion]|h|r!", -- [1]
+			"Taseena-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Taseena-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1729, -- [11]
+			"Player-75-09BCED74", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Taseena-TheScryers|r",
+			[51] = 1675314749,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [73]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16339:Player-75-09BCED74:1:2:1:23:4294967295:4294967295:4294967295:4294967295|h[Myths of the Dragonflight Dungeons]|h|r!", -- [1]
+			"Taseena-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Taseena-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1730, -- [11]
+			"Player-75-09BCED74", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Taseena-TheScryers|r",
+			[51] = 1675314749,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [74]
+		{
+			"Any chad engineers online?", -- [1]
+			"Shocknproc-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Shocknproc-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			263, -- [11]
+			"Player-75-0B82B35C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddShocknproc|r",
+			[51] = 1675380220,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16498:Player-75-009A7F30:1:2:4:23:4294967295:4294967295:4294967295:4294967295|h[Elemental Overflow]|h|r!", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jharl-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			94, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aJharl|r",
+			[51] = 1675552262,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [76]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:16338:Player-75-058380E2:1:2:4:23:4294967295:4294967295:4294967295:4294967295|h[Fang Flap Fire Fighter]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			146, -- [11]
-			"Player-127-0A038439", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRhelik-Frostwolf|r",
-			[51] = 1673904918,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [72]
-		{
-			"care", -- [1]
-			"Rhelik-Frostwolf", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rhelik-Frostwolf", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			147, -- [11]
-			"Player-127-0A038439", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRhelik-Frostwolf|r",
-			[51] = 1673904922,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [73]
-		{
-			"is this pvp area", -- [1]
-			"Quazihobo-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Quazihobo-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			18, -- [11]
-			"Player-11-060712A2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aQuazihobo-Tichondrius|r",
-			[51] = 1673910775,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [74]
-		{
-			"[FIS] Interrupted Forge-Keep Custodian's |cff71d5ff|Hspell:385883:0|h[Maintenance]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			37, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1649,143 +1693,33 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673911104,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [75]
-		{
-			"good night! Allie everywhere", -- [1]
-			"Azurax-SteamwheedleCartel", -- [2]
-			"", -- [3]
-			"1. General - The Azure Span", -- [4]
-			"Azurax-SteamwheedleCartel", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Azure Span", -- [9]
-			0, -- [10]
-			66, -- [11]
-			"Player-1071-07325D21", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8788eeAzurax-SteamwheedleCartel|r",
-			[51] = 1673911492,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
-		{
-			"horde lost it", -- [1]
-			"Dumplíngs-EmeraldDream", -- [2]
-			"", -- [3]
-			"1. General - The Azure Span", -- [4]
-			"Dumplíngs-EmeraldDream", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Azure Span", -- [9]
-			0, -- [10]
-			67, -- [11]
-			"Player-162-0B927FAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Dumplíngs-EmeraldDream|r",
-			[51] = 1673911493,
-			[50] = "CHAT_MSG_CHANNEL",
+			[51] = 1675552932,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [77]
 		{
-			"this server fucken sucks as horde ", -- [1]
-			"Dumplíngs-EmeraldDream", -- [2]
+			"Craggravated Elemental (2.26m/2.26m 100.00%) 45.27 84.95 |cffffff00|Hworldmap:2025:4526:8494|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Erodoreal-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - The Azure Span", -- [4]
-			"Dumplíngs-EmeraldDream", -- [5]
+			"1. General - Thaldraszus", -- [4]
+			"Erodoreal-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - The Azure Span", -- [9]
+			"General - Thaldraszus", -- [9]
 			0, -- [10]
-			72, -- [11]
-			"Player-162-0B927FAE", -- [12]
+			382, -- [11]
+			"Player-75-0EA3C6C1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cff00ff98Dumplíngs-EmeraldDream|r",
-			[51] = 1673911451,
+			[52] = "|cffaad372Erodoreal|r",
+			[51] = 1675554036,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [78]
 		{
-			"amen brother", -- [1]
-			"Duckbolt-EarthenRing", -- [2]
-			"", -- [3]
-			"1. General - The Azure Span", -- [4]
-			"Duckbolt-EarthenRing", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Azure Span", -- [9]
-			0, -- [10]
-			73, -- [11]
-			"Player-100-0E0A0CA7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff0070ddDuckbolt-EarthenRing|r",
-			[51] = 1673911534,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
-		{
-			"come get your piece of pvp gear over at Nezascar", -- [1]
-			"Freyvin-EmeraldDream", -- [2]
-			"", -- [3]
-			"1. General - The Azure Span", -- [4]
-			"Freyvin-EmeraldDream", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Azure Span", -- [9]
-			0, -- [10]
-			75, -- [11]
-			"Player-162-09402033", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa330c9Freyvin-EmeraldDream|r",
-			[51] = 1673911555,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
-		{
-			"omw", -- [1]
-			"Azurax-SteamwheedleCartel", -- [2]
-			"", -- [3]
-			"1. General - The Azure Span", -- [4]
-			"Azurax-SteamwheedleCartel", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - The Azure Span", -- [9]
-			0, -- [10]
-			82, -- [11]
-			"Player-1071-07325D21", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8788eeAzurax-SteamwheedleCartel|r",
-			[51] = 1673911510,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:16588:Player-75-058380E2:1:1:16:23:4294967295:4294967295:4294967295:4294967295|h[How Did These Get Here?]|h|r!", -- [1]
+			"[FIS] Interrupted Mellg the Ancient's |cff71d5ff|Hspell:396475:0|h[Poison Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1795,7 +1729,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			90, -- [11]
+			511, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1803,404 +1737,470 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1673911639,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [82]
+			[51] = 1675555016,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [79]
 		{
-			"omw", -- [1]
-			"Mamasmoke-Mal'Ganis", -- [2]
+			"[FIS] Interrupted Mellg the Ancient's |cff71d5ff|Hspell:396475:0|h[Poison Blast]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mamasmoke-Mal'Ganis", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			168, -- [11]
-			"Player-3684-0E078018", -- [12]
+			512, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mamasmoke-Mal'Ganis|r",
-			[51] = 1673912306,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675554974,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [80]
+		{
+			"[FIS] Interrupted Grod the Ancient's |cff71d5ff|Hspell:396432:0|h[Primal Flames]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			514, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675555064,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [81]
+		{
+			"[FIS] Interrupted Grod the Ancient's |cff71d5ff|Hspell:396432:0|h[Primal Flames]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			516, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675555022,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [82]
+		{
+			"[FIS] Interrupted Grod the Ancient's |cff71d5ff|Hspell:396432:0|h[Primal Flames]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			517, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675555097,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [83]
 		{
-			"let them get it low then gank them?", -- [1]
-			"Mamasmoke-Mal'Ganis", -- [2]
+			"[FIS] Interrupted Thornmu the Ancient's |cff71d5ff|Hspell:396447:0|h[Wintry Blast]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mamasmoke-Mal'Ganis", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			179, -- [11]
-			"Player-3684-0E078018", -- [12]
+			528, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mamasmoke-Mal'Ganis|r",
-			[51] = 1673912501,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675555164,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [84]
 		{
-			"that rogue is nuts", -- [1]
-			"Rustybreath-Barthilas", -- [2]
+			"[FIS] Interrupted Thornmu the Ancient's |cff71d5ff|Hspell:396447:0|h[Wintry Blast]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Rustybreath-Barthilas", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			180, -- [11]
-			"Player-3723-0C12F44B", -- [12]
+			530, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff33937fRustybreath-Barthilas|r",
-			[51] = 1673912517,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675555181,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [85]
 		{
-			"shreder?", -- [1]
-			"Mamasmoke-Mal'Ganis", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16522:Player-75-058380E2:1:2:4:23:4294967295:4294967295:4294967295:4294967295|h[A True Explorer]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mamasmoke-Mal'Ganis", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			182, -- [11]
-			"Player-3684-0E078018", -- [12]
+			565, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mamasmoke-Mal'Ganis|r",
-			[51] = 1673912472,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675555494,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [86]
 		{
-			"its our tag still", -- [1]
-			"Shakinass-Tichondrius", -- [2]
+			"[FIS] Interrupted Movtivator Krathos's |cff71d5ff|Hspell:369788:0|h[Battle Cry]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shakinass-Tichondrius", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			184, -- [11]
-			"Player-11-0DD5940F", -- [12]
+			717, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaShakinass-Tichondrius|r",
-			[51] = 1673912483,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675556996,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [87]
 		{
-			"ima rez and tag it again", -- [1]
-			"Shakinass-Tichondrius", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shakinass-Tichondrius", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			185, -- [11]
-			"Player-11-0DD5940F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaShakinass-Tichondrius|r",
-			[51] = 1673912491,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [88]
-		{
-			"when it slow ", -- [1]
-			"Shakinass-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shakinass-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			186, -- [11]
-			"Player-11-0DD5940F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaShakinass-Tichondrius|r",
-			[51] = 1673912557,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [89]
-		{
-			"they are killing it", -- [1]
-			"Shakinass-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shakinass-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			188, -- [11]
-			"Player-11-0DD5940F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaShakinass-Tichondrius|r",
-			[51] = 1673912562,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [90]
-		{
-			"lol nice do we jhust need to be in range?", -- [1]
-			"Mamasmoke-Mal'Ganis", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mamasmoke-Mal'Ganis", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			195, -- [11]
-			"Player-3684-0E078018", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Mamasmoke-Mal'Ganis|r",
-			[51] = 1673912527,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [91]
-		{
-			"i dont think so", -- [1]
-			"Shakinass-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shakinass-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			198, -- [11]
-			"Player-11-0DD5940F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaShakinass-Tichondrius|r",
-			[51] = 1673912634,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [92]
-		{
-			"im waiting till 3 percent lol", -- [1]
-			"Shakinass-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shakinass-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			199, -- [11]
-			"Player-11-0DD5940F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaShakinass-Tichondrius|r",
-			[51] = 1673912590,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [93]
-		{
-			"lmao got it", -- [1]
-			"Mamasmoke-Mal'Ganis", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mamasmoke-Mal'Ganis", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			211, -- [11]
-			"Player-3684-0E078018", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Mamasmoke-Mal'Ganis|r",
-			[51] = 1673912693,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [94]
-		{
-			"|cffffff00Ohn'iri Springs is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ohn'ahran Plains", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ohn'ahran Plains", -- [9]
-			0, -- [10]
-			303, -- [11]
+			746, -- [11]
 			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1673913588,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557276,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [88]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			747, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557240,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [89]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			748, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557316,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [90]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			749, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557350,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [91]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			754, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557313,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [92]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			755, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557387,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [93]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			756, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557410,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [94]
+		{
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			757, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557366,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [95]
 		{
-			"BOX", -- [1]
-			"Dransem-EmeraldDream", -- [2]
+			"Catch the ball!", -- [1]
+			"Wildwater Ottuk", -- [2]
 			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Dransem-EmeraldDream", -- [5]
+			"", -- [4]
+			"Shanyt", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			459, -- [11]
-			"Player-162-0B997414", -- [12]
+			758, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Dransem-EmeraldDream|r",
-			[51] = 1673915331,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "Wildwater Ottuk",
+			[51] = 1675557440,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [96]
 		{
-			"ally got it", -- [1]
-			"Dransem-EmeraldDream", -- [2]
+			"[FIS] Interrupted Malgain Rockknell's |cff71d5ff|Hspell:396774:0|h[Seismic Shield]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Ohn'ahran Plains", -- [4]
-			"Dransem-EmeraldDream", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ohn'ahran Plains", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			460, -- [11]
-			"Player-162-0B997414", -- [12]
+			772, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Dransem-EmeraldDream|r",
-			[51] = 1673915300,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675557841,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [97]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16573:Player-75-0280C688:1:1:17:23:4294967295:4294967295:4294967295:4294967295|h[Legendary Photographs]|h|r!", -- [1]
-			"Zymor-ArgentDawn", -- [2]
+			"[FIS] Interrupted Waterpots's |cff71d5ff|Hspell:396075:0|h[Living Whirl]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zymor-ArgentDawn", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1, -- [11]
-			"Player-75-0280C688", -- [12]
+			789, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddZymor|r",
-			[51] = 1673972226,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675557902,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [98]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:16564:Player-75-0280C688:1:1:17:23:4294967295:4294967295:4294967295:4294967295|h[It Takes a Tuskarr Family]|h|r!", -- [1]
-			"Zymor-ArgentDawn", -- [2]
+			"[FIS] Interrupted Bouldron's |cff71d5ff|Hspell:387343:0|h[Tectonic Spike]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zymor-ArgentDawn", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			60, -- [11]
-			"Player-75-0280C688", -- [12]
+			853, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddZymor|r",
-			[51] = 1673973666,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1675558206,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [99]
 	},
 	["ChatEditHistory"] = {
-		"/y slurpo is up", -- [1]
-		"/opie", -- [2]
-		"/i yes indeed", -- [3]
-		"/i 1 more needed", -- [4]
-		"/mbb buttons", -- [5]
-		"/mbb buttons quwuwstatusburron", -- [6]
-		"/mbb", -- [7]
-		"/mbb show", -- [8]
-		"/mbb reset postion", -- [9]
-		"/mbb reset all", -- [10]
-		"/raid same", -- [11]
-		"/raid i think its because its a raid group", -- [12]
-		"/raid if a party then it completes", -- [13]
-		"/y forgotten gryphon is up", -- [14]
-		"/1 forgotten gryphon is up", -- [15]
-		"/1 qalashi war mammoth is up", -- [16]
-		"/s TY!", -- [17]
-		"/1 neela firebane is up", -- [18]
-		"/1 honmor for the great hunt up", -- [19]
+		"/p turboris is up", -- [1]
+		"/p cool", -- [2]
+		"/p thanksfor the kill sorry got to dip and eat dinner", -- [3]
+		"/p indeed", -- [4]
+		"/p thanks", -- [5]
+		"/kalielstracker", -- [6]
+		"/1 worldcarver atir is up", -- [7]
+		"/kalielstracker show", -- [8]
+		"/kalielstracker opt", -- [9]
+		"/sleep", -- [10]
+		"/xloot", -- [11]
+		"/1 sharwing up", -- [12]
+		"/invite Kadrus-blackhand", -- [13]
+		"/1 mantai is up", -- [14]
+		"/love", -- [15]
+		"/1 tirboris is up", -- [16]
+		"/LOVE", -- [17]
+		"/s thanks!", -- [18]
+		"/dance", -- [19]
 		"/wa", -- [20]
 	},
 	["CliqueDatatext"] = {

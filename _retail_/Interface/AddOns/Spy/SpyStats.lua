@@ -14,6 +14,7 @@ local PAGE_SIZE = 34
 local TAB_PLAYER = 1
 local VIEW_PLAYER_HISTORY = 1
 local COLOR_NORMAL = {1, 1, 1}
+local COLOR_SAME_FACTION = {0, 1, 0}
 local COLOR_KOS = {1, 0, 0}
 
 GUI.ListFrameLines = {
@@ -122,9 +123,8 @@ function SpyStats:UpdateView()
 		self.view = VIEW_PLAYER_HISTORY
 
         SpyStatsWinsLosesCheckbox:ClearAllPoints()	
---      SpyStatsWinsLosesCheckbox:SetPoint("LEFT", SpyStatsKosCheckboxText, "RIGHT", 12, -1) -- Patch 10.0 change
+--		SpyStatsWinsLosesCheckbox:SetPoint("LEFT", SpyStatsKosCheckboxText, "RIGHT", 12, -1)
         SpyStatsWinsLosesCheckbox:SetPoint("LEFT", SpyStatsKosCheckbox, "RIGHT", 12, -1)
-		
         if (self.sortBy == "name") or (self.sortBy == "level") or (self.sortBy == "class") then
             self.sortBy = "time"
         end 
@@ -235,7 +235,9 @@ function SpyStats:Refresh()
             local r, g, b
             if unit.kos and (age < 60) then
                 r, g, b = unpack(COLOR_KOS)
-            else
+            elseif unit.faction and unit.faction == Spy.FactionName then
+                r, g, b = unpack(COLOR_SAME_FACTION)
+			else
                 r, g, b = unpack(COLOR_NORMAL)
             end
 

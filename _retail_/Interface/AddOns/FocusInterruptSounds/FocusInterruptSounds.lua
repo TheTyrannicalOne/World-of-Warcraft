@@ -58,6 +58,7 @@ local DEFAULT_LOW_PRIORITY_SPELLS =
 388862; AA Surge
 371306; AV Arcane Bolt
 377503; AV Condensed Frost
+381530; NO Storm Shock
 ]];
 -- 376399; ignore test
 -- 392279; ignore test

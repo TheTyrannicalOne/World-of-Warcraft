@@ -1,5 +1,5 @@
 local WIT, core = ...
-core.Config = {}
+core.Config = core.Config or {}
 
 local Config = core.Config
 

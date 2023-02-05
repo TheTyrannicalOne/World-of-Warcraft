@@ -1,12 +1,13 @@
 
 NarciBarberShopDB = {
+	["ToggleRandomAppearance"] = false,
+	["ToggleNotification"] = true,
 	["Hotkeys"] = {
-		["ZoomIn"] = "W",
+		["RotateRight"] = "D",
 		["RotateLeft"] = "A",
 		["ZoomOut"] = "S",
-		["RotateRight"] = "D",
+		["ZoomIn"] = "W",
 	},
-	["ToggleNotification"] = true,
 	["PlayerData"] = {
 		["0CBEA15E"] = {
 			["playerName"] = "Durlok",
@@ -34,18 +35,18 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Zul'jin",
 		},
-		["0CB6231E"] = {
-			["playerName"] = "Varlouris",
-			["realmID"] = "3683",
+		["0EB84EA0"] = {
+			["playerName"] = "Valmagus",
+			["realmID"] = "61",
 			["SavedLooks"] = {
-				[34] = {
+				[10] = {
 					["male"] = {
 					},
 					["female"] = {
 					},
 				},
 			},
-			["realmName"] = "Dalaran",
+			["realmName"] = "Zul'jin",
 		},
 		["058380E2"] = {
 			["playerName"] = "Shanyt",
@@ -81,6 +82,19 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Dalaran",
 		},
+		["0CB6231E"] = {
+			["playerName"] = "Varlouris",
+			["realmID"] = "3683",
+			["SavedLooks"] = {
+				[34] = {
+					["male"] = {
+					},
+					["female"] = {
+					},
+				},
+			},
+			["realmName"] = "Dalaran",
+		},
 		["0B9BB303"] = {
 			["playerName"] = "Darnastris",
 			["realmID"] = "3683",
@@ -94,19 +108,5 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Dalaran",
 		},
-		["0EB84EA0"] = {
-			["playerName"] = "Valmagus",
-			["realmID"] = "61",
-			["SavedLooks"] = {
-				[10] = {
-					["male"] = {
-					},
-					["female"] = {
-					},
-				},
-			},
-			["realmName"] = "Zul'jin",
-		},
 	},
-	["ToggleRandomAppearance"] = false,
 }

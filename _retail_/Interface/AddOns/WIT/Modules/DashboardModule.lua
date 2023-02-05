@@ -11,7 +11,7 @@ function core.DashboardModule.GetData()
 
     if core.Config.GetModulesConfig().Dashboard.ShowCurrentContent then
         for _, farm in pairs(core.Data.Results.Farms) do
-            if farm.Content == core.Content.Dragonflight and not core.TableHelper.IndexOf(ignoredIds, farm.Id) then
+            if farm.Content == core.Config.CurrentContent and not core.TableHelper.IndexOf(ignoredIds, farm.Id) then
                 table.insert(farms, farm)
             end
         end

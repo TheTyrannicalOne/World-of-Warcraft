@@ -1,8 +1,8 @@
-## Interface: 100002
+## Interface: 100005
 ## Title: Bron Cena
 ## Notes: Helps Bron Cena announce his arrival in style
 ## Author: whup
-## Version: v1.6.7
+## Version: v1.6.8
 ## SavedVariables: BronCenaDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0
 ## X-Embeds: Ace3

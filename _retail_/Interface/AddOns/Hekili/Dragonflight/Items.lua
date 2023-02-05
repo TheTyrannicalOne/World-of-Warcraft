@@ -10,6 +10,8 @@ local all = Hekili.Class.specs[ 0 ]
 local FindPlayerAuraByID = ns.FindPlayerAuraByID
 local RegisterEvent = ns.RegisterEvent
 
+local GetSpellCooldown = _G.GetSpellCooldown
+
 
 -- 10.0
 all:RegisterAbilities( {
@@ -95,8 +97,8 @@ all:RegisterAbilities( {
         proc = "random",
     },
     broodkeepers_promise = {
-        cast = 0,
-        cooldown = 90,
+        cast = 1,
+        cooldown = 5,
         gcd = "off",
 
         item = 194307,
@@ -112,7 +114,7 @@ all:RegisterAbilities( {
 
         auras = {
             broodkeepers_promise = {
-                id = 382280,
+                id = 394457,
                 duration = 3600,
                 max_stack = 1,
             },
@@ -322,6 +324,49 @@ all:RegisterAbilities( {
         end,
 
         proc = "versatility",
+
+        auras = {
+            ace_of_earth = {
+                id = 382852,
+                duration = 3600,
+                max_stack = 1
+            },
+            two_of_earth = {
+                id = 382853,
+                duration = 3600,
+                max_stack = 1
+            },
+            three_of_earth = {
+                id = 382854,
+                duration = 3600,
+                max_stack = 1
+            },
+            four_of_earth = {
+                id = 382855,
+                duration = 3600,
+                max_stack = 1
+            },
+            five_of_earth = {
+                id = 382856,
+                duration = 3600,
+                max_stack = 1
+            },
+            six_of_earth = {
+                id = 382857,
+                duration = 3600,
+                max_stack = 1
+            },
+            seven_of_earth = {
+                id = 382858,
+                duration = 3600,
+                max_stack = 1
+            },
+            eight_of_earth = {
+                id = 382859,
+                duration = 3600,
+                max_stack = 1
+            },
+        }
     },
     decoration_of_flame = {
         cast = 0,
@@ -590,6 +635,17 @@ all:RegisterAbilities( {
                 max_stack = 1
             }
         }
+    },
+    mote_of_sanctification = {
+        cast = 0,
+        cooldown = 90,
+        gcd = "off",
+
+        item = 133646,
+        toggle = "cooldowns",
+
+        handler = function()
+        end,
     },
     primal_ritual_shell = {
         cast = 0,

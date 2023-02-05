@@ -24,9 +24,9 @@ BigWigs:AddColors("Razorscale", {
 BigWigs:AddColors("XT-002 Deconstructor", {
 	[62776] = "yellow",
 	[63849] = "yellow",
-	[64193] = "red",
-	[64234] = "blue",
-	[65121] = "blue",
+	[64193] = "orange",
+	[64234] = {"blue","red"},
+	[65121] = {"blue","red"},
 })
 
 BigWigs:AddColors("The Iron Council", {

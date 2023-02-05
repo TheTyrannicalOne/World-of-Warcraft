@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0715,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0716,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:200247::::::::70:71::27:4:6652:1491:5865:8767:1:28:2534:::::|h[Inextinguishable Gavel]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

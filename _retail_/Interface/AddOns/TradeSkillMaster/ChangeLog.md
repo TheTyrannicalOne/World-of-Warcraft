@@ -1,6 +1,6 @@
-## v4.12.24 Changes
+## v4.12.32 Changes
 
-* [Wrath] Fixed various issues with Enchanting
-* [Wrath] Updated to support patch 3.4.1
+* [All] Fixed various UI errors
+* [Retail] Fixed error when opening profession
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 -- LDB.lua
 --
--- Author: Expelliarm5s / November 2022 / All Rights Reserved
+-- Author: Expelliarm5s / January 2023 / All Rights Reserved
 --
--- Version 1.1.29
+-- Version 1.1.30
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 

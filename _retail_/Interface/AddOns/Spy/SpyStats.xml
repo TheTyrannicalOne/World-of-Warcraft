@@ -359,7 +359,7 @@
 						</Scripts>
                     </Button>
                     <Button name="SpyStatsRefreshButton" inherits="UIPanelButtonTemplate" text="REFRESH">
-						<Size x="104" y="22"/>					
+						<Size x="104" y="22"/>
                         <Anchors>
 							<Anchor point="BOTTOMRIGHT">
 								<Offset x="-2" y="-23" />

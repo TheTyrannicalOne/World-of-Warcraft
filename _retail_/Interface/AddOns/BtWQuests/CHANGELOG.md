@@ -1,3 +1,9 @@
+# v2.27.0
+
+- Updated The Spark of Ingenuity questline with the rest of the quests
+- Updated In The Halls of Titans questline with missing follow up
+- Updated for 10.0.5
+
 # v2.26.0
 
 - Added a few missing quests to The Waking Shore
@@ -7,7 +13,6 @@
 - Updated The Spark of Ingenuity questline
 - Updated The Mother Oathstone questline
 - Updated 10,000 Years of Roasting quest chain and renamed it to The Ruby Feast
-
 
 # v2.25.1
 

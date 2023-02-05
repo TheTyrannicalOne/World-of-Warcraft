@@ -1,0 +1,24 @@
+2/4 23:37:52.528  Initialze
+2/4 23:37:52.607  Adding server node 0. Server 'blzddist1-a.akamaihd.net' | Address '23.222.12.34'
+2/4 23:37:52.607  Adding server node 1. Server 'blzddist1-a.akamaihd.net' | Address '23.222.12.43'
+2/4 23:37:52.667  Adding server node 2. Server 'level3.blizzard.com' | Address '8.253.45.249'
+2/4 23:37:52.667  Adding server node 3. Server 'level3.blizzard.com' | Address '8.249.245.254'
+2/4 23:37:52.667  Adding server node 4. Server 'level3.blizzard.com' | Address '8.248.153.254'
+2/4 23:37:52.667  Adding server node 5. Server 'level3.blizzard.com' | Address '8.253.131.111'
+2/4 23:37:52.729  Adding server node 6. Server 'us.cdn.blizzard.com' | Address '137.221.64.3'
+2/4 23:37:52.729  Adding server node 7. Server 'us.cdn.blizzard.com' | Address '137.221.64.4'
+2/4 23:37:52.729  Adding server node 8. Server 'us.cdn.blizzard.com' | Address '137.221.64.2'
+2/4 23:37:52.729  Adding server node 9. Server 'us.cdn.blizzard.com' | Address '137.221.64.5'
+2/4 23:37:52.729  Adding server node 10. Server 'blzddist1-a.akamaihd.net' | Address '23.222.12.34'
+2/4 23:37:52.729  Adding server node 11. Server 'blzddist1-a.akamaihd.net' | Address '23.222.12.43'
+2/4 23:37:52.790  Adding server node 12. Server 'level3.ssl.blizzard.com' | Address '8.249.216.20'
+2/4 23:37:52.790  Adding server node 13. Server 'level3.ssl.blizzard.com' | Address '8.253.139.168'
+2/4 23:37:52.790  Adding server node 14. Server 'level3.ssl.blizzard.com' | Address '8.249.238.20'
+2/4 23:37:52.790  Adding server node 15. Server 'us.cdn.blizzard.com' | Address '137.221.64.3'
+2/4 23:37:52.790  Adding server node 16. Server 'us.cdn.blizzard.com' | Address '137.221.64.4'
+2/4 23:37:52.790  Adding server node 17. Server 'us.cdn.blizzard.com' | Address '137.221.64.2'
+2/4 23:37:52.790  Adding server node 18. Server 'us.cdn.blizzard.com' | Address '137.221.64.5'
+2/4 23:37:52.790  Scanning for KMT sequence numbers.
+2/4 23:37:53.408  Constructing the data group CDN index.
+2/4 23:37:53.408  Constructing the patch group CDN index.
+2/5 00:15:41.974  Shutdown

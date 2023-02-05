@@ -55,66 +55,117 @@ NarcissusDB = {
 	["TalentTreeUseClassBackground"] = false,
 	["TalentTreeShortTooltip"] = true,
 	["IndependentMinimapButton"] = false,
-	["ConduitTooltip"] = false,
-	["installTime"] = 1665263772,
+	["FontHeightItemName"] = 10,
 	["DominationIndicator"] = true,
-	["AutoFilterMail"] = false,
+	["installTime"] = 1665263772,
+	["TalentTreeForPaperDoll"] = false,
+	["AutoFilterGem"] = false,
 	["AutoPlayAnimation"] = true,
 	["AFKScreen"] = false,
-	["ColorChoice"] = 0,
-	["AKFScreenDelay"] = false,
 	["MissingEnchantAlert"] = false,
-	["CameraOrbit"] = true,
-	["TruncateText"] = false,
-	["ShowMinimapButton"] = true,
+	["AKFScreenDelay"] = false,
+	["Tutorials"] = {
+		["Domination"] = true,
+		["ExitConfirmation"] = true,
+		["Movement"] = true,
+		["NPCBrowser"] = true,
+		["SpellVisualBrowser"] = true,
+		["IndependentMinimapButton"] = false,
+		["NPCBrowserEntance"] = true,
+		["WeaponBrowser"] = true,
+		["EquipmentSetManager"] = true,
+	},
+	["DressingRoomShowIconSelect"] = false,
+	["FadeButton"] = false,
+	["ShrinkArea"] = 0,
 	["TalentTreeForEquipmentManager"] = true,
 	["EnableGrainEffect"] = false,
-	["ShrinkArea"] = 0,
+	["NameTranslationPosition"] = 1,
 	["NamePlateNameOffset"] = 0,
 	["CorruptionTooltipModel"] = true,
-	["SearchRelativesHotkey"] = "TAB",
+	["MinimapButton"] = {
+		["Position"] = 2.617993877991494,
+	},
 	["GemManager"] = true,
 	["ModelPanelScale"] = 1,
 	["TooltipTheme"] = "Dark",
 	["HideTextsWithUI"] = true,
-	["MinimapButton"] = {
-		["Position"] = 2.617993877991494,
-	},
+	["SearchRelativesHotkey"] = "TAB",
 	["TalentTreeForInspection"] = true,
-	["NameTranslationPosition"] = 1,
+	["PerksProgramDB"] = {
+		["MonthNames"] = {
+			{
+				["y"] = 2023,
+				["m"] = 0,
+				["n"] = "",
+			}, -- [1]
+			{
+				["y"] = 2023,
+				["m"] = 2,
+				["n"] = "February: Caring and Sharing",
+			}, -- [2]
+		},
+		["VendorItems"] = {
+			[228] = "::perksVendorCategoryID::1::description::Never forget to stop and smell the roses.::price::100::itemModifiedAppearanceID::169064::name::Rosy Corsage::itemID::190855::addedDate::2023/2::",
+			[229] = "::perksVendorCategoryID::1::description::Some roses are better left unsmelled.::price::100::itemModifiedAppearanceID::169065::name::Fetid Bouquet::itemID::190856::addedDate::2023/2::",
+			[231] = "::perksVendorCategoryID::8::description::Includes a hood and cloak.::price::100::transmogSetID::2760::name::Ensemble: Vagabond's Rosy Threads::itemID::202170::addedDate::2023/2::",
+			[230] = "::perksVendorCategoryID::8::description::Includes a scarf and cloak.::price::100::transmogSetID::2759::name::Ensemble: Wanderer's Rosy Trappings::itemID::202167::addedDate::2023/2::",
+			[223] = "::perksVendorCategoryID::2::description::A beacon of hope; a guiding light in the darkness.::price::900::mountID::376::name::Celestial Steed::itemID::54811::addedDate::2023/2::",
+			[8] = "::perksVendorCategoryID::1::description::Forged in the still-burning embers of Pyroth, this flail serves as a reminder of Firelord Smolderon's victory.::price::750::itemModifiedAppearanceID::168078::name::Fury of the Firelord::itemID::189898::addedDate::2023/2::",
+			[224] = "::perksVendorCategoryID::3::description::Ancient Gorian blood runs through Garrlok's veins. As far as anyone knows, only his diminutive stature keeps his imperial ambitions in check.::price::750::speciesID::3252::name::Garrlok::itemID::190607::addedDate::2023/2::",
+			[9] = "::perksVendorCategoryID::1::description::A master of subterfuge never leaves home without their trusty bandolier.::price::250::itemModifiedAppearanceID::168077::name::Infiltrator's Bandolier::itemID::189897::addedDate::2023/2::",
+			[225] = "::perksVendorCategoryID::1::description::The call of the void is unrelenting.::price::500::itemModifiedAppearanceID::169059::name::Shattered Voidspire::itemID::190846::addedDate::2023/2::",
+			[227] = "::perksVendorCategoryID::1::description::Everything is better in pink!::price::75::itemModifiedAppearanceID::168541::name::Iridescent Warcloak::itemID::190434::addedDate::2023/2::",
+			[110] = "::perksVendorCategoryID::1::description::A pointed reminder of past strife within the Blue Dragonflight.::price::200::itemModifiedAppearanceID::168288::name::Shard of Frozen Secrets::itemID::190143::addedDate::2023/2::",
+			[76] = "::perksVendorCategoryID::1::description::Some scoundrels prefer a bit of flair over stealthier alternatives.::price::250::itemModifiedAppearanceID::168824::name::Operative's Bandolier::itemID::190599::addedDate::2023/2::",
+			[6] = "::perksVendorCategoryID::1::description::It's no Light's Vengeance, but it'll do.::price::100::itemModifiedAppearanceID::168051::name::Squire's Warhammer::itemID::189871::addedDate::2023/2::",
+			[114] = "::perksVendorCategoryID::8::description::Walk the plank! In style.::price::650::transmogSetID::2340::name::Ensemble: Swashbuckling Buccaneer's Slops::itemID::190799::addedDate::2023/2::",
+			[60] = "::perksVendorCategoryID::1::description::A well-placed arrow can prove a practical solution for even the magically inclined Azurewing.::price::200::itemModifiedAppearanceID::168224::name::Azure Scalesworn Longbow::itemID::190071::addedDate::2023/2::",
+		},
+		["CurrentMonthData"] = {
+			["items"] = {
+				114, -- [1]
+				227, -- [2]
+				6, -- [3]
+				230, -- [4]
+				223, -- [5]
+				229, -- [6]
+				9, -- [7]
+				231, -- [8]
+				8, -- [9]
+				60, -- [10]
+				228, -- [11]
+				76, -- [12]
+				225, -- [13]
+				110, -- [14]
+				224, -- [15]
+			},
+			["month"] = 2,
+		},
+	},
 	["PhotoModeButton"] = {
 		["HideTexts"] = true,
 	},
-	["FadeButton"] = false,
-	["DressingRoomShowIconSelect"] = false,
-	["Tutorials"] = {
-		["Domination"] = true,
-		["ExitConfirmation"] = true,
-		["SpellVisualBrowser"] = true,
-		["NPCBrowser"] = true,
-		["EquipmentSetManager"] = true,
-		["IndependentMinimapButton"] = false,
-		["NPCBrowserEntance"] = true,
-		["WeaponBrowser"] = true,
-		["Movement"] = true,
-	},
+	["ShowMinimapButton"] = true,
+	["TruncateText"] = false,
+	["CameraOrbit"] = true,
 	["BorderTheme"] = "Bright",
-	["AutoFilterGem"] = false,
-	["TalentTreeForPaperDoll"] = false,
+	["ColorChoice"] = 0,
+	["AutoFilterMail"] = false,
 	["SearchSuggestEnable"] = true,
-	["FontHeightItemName"] = 10,
+	["ConduitTooltip"] = false,
 	["DressingRoomUseTargetModel"] = true,
 }
 NarciAchievementOptions = {
-	["ShowRedMark"] = false,
+	["IncompleteFirst"] = true,
 	["UseAsDefault"] = false,
 	["DIY"] = {
 	},
-	["Theme"] = 1,
+	["UsedAsPrimary"] = true,
 	["Scale"] = 1,
 	["ReplaceToast"] = true,
-	["UsedAsPrimary"] = true,
-	["IncompleteFirst"] = true,
+	["Theme"] = 1,
+	["ShowRedMark"] = false,
 }
 NarciStatisticsDB = {
 	["InstalledDate"] = 1626024726,
@@ -126,13 +177,13 @@ NarciStatisticsDB = {
 		285, -- [5]
 	},
 	["AddOnActionForbidden"] = {
-		["timeLastError"] = 1673239669,
 		["addons"] = {
 			["MBB"] = {
 				["count"] = 4,
 				["timeLastError"] = 1673239669,
 			},
 		},
+		["timeLastError"] = 1673239669,
 	},
 }
 NarciTurntableOptions = nil
@@ -161,15 +212,19 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 11,
 	},
-	["071FB336"] = {
-		["race"] = 8,
-		["name"] = "Brotus",
-		["birth"] = 1663525037,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310296,
+	["0B9BB303"] = {
+		["race"] = 4,
+		["name"] = "Darnastris",
+		["birth"] = 1656301020,
+		["serverID"] = "3683",
+		["lastVisit"] = 1668719243,
 		["outfits"] = {
+			{
+				["s"] = "66666,77343,77345,104602,0,83203,104604,106582,84223,1190,1188,102094:-1:3273,0",
+				["n"] = "in the buff",
+			}, -- [1]
 		},
-		["class"] = 7,
+		["class"] = 8,
 	},
 	["0AB08C15"] = {
 		["race"] = 8,
@@ -211,19 +266,15 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 3,
 	},
-	["0CBEA15E"] = {
+	["071FB336"] = {
 		["race"] = 8,
-		["name"] = "Durlok",
-		["birth"] = 1652077511,
-		["serverID"] = "96",
-		["lastVisit"] = 1671715619,
+		["name"] = "Brotus",
+		["birth"] = 1663525037,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310296,
 		["outfits"] = {
-			{
-				["s"] = "0,94302,96928,92510,0,0,92151,91058,94306,91060,94402,94851,0",
-				["n"] = "Best I got now",
-			}, -- [1]
 		},
-		["class"] = 11,
+		["class"] = 7,
 	},
 	["0EB84EA0"] = {
 		["race"] = 10,
@@ -235,12 +286,32 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
+	["0EDD1AD5"] = {
+		["race"] = 70,
+		["name"] = "Neltharigos",
+		["birth"] = 1668845699,
+		["serverID"] = "61",
+		["lastVisit"] = 1668854683,
+		["outfits"] = {
+		},
+		["class"] = 13,
+	},
+	["0A31081D"] = {
+		["race"] = 5,
+		["name"] = "Jingojaggot",
+		["birth"] = 1664126175,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310110,
+		["outfits"] = {
+		},
+		["class"] = 5,
+	},
 	["058380E2"] = {
 		["race"] = 5,
 		["name"] = "Shanyt",
 		["birth"] = 1651529834,
 		["serverID"] = "75",
-		["lastVisit"] = 1673982632,
+		["lastVisit"] = 1675572002,
 		["outfits"] = {
 			{
 				["s"] = "19684,44897,62761,24793,83202,83203,33402,33179,71940,26234,22010,0,0",
@@ -281,26 +352,6 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 1,
 	},
-	["0A31081D"] = {
-		["race"] = 5,
-		["name"] = "Jingojaggot",
-		["birth"] = 1664126175,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310110,
-		["outfits"] = {
-		},
-		["class"] = 5,
-	},
-	["0EDD1AD5"] = {
-		["race"] = 70,
-		["name"] = "Neltharigos",
-		["birth"] = 1668845699,
-		["serverID"] = "61",
-		["lastVisit"] = 1668854683,
-		["outfits"] = {
-		},
-		["class"] = 13,
-	},
 	["0BE4455C"] = {
 		["race"] = 1,
 		["name"] = "Avisar",
@@ -311,19 +362,19 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
-	["0B9BB303"] = {
-		["race"] = 4,
-		["name"] = "Darnastris",
-		["birth"] = 1656301020,
-		["serverID"] = "3683",
-		["lastVisit"] = 1668719243,
+	["0CBEA15E"] = {
+		["race"] = 8,
+		["name"] = "Durlok",
+		["birth"] = 1652077511,
+		["serverID"] = "96",
+		["lastVisit"] = 1671715619,
 		["outfits"] = {
 			{
-				["s"] = "66666,77343,77345,104602,0,83203,104604,106582,84223,1190,1188,102094:-1:3273,0",
-				["n"] = "in the buff",
+				["s"] = "0,94302,96928,92510,0,0,92151,91058,94306,91060,94402,94851,0",
+				["n"] = "Best I got now",
 			}, -- [1]
 		},
-		["class"] = 8,
+		["class"] = 11,
 	},
 	["0DE12200"] = {
 		["race"] = 35,
@@ -335,4 +386,6 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 5,
 	},
+}
+NarciPhotoModeDB = {
 }

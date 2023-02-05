@@ -21,6 +21,7 @@ end
 local _
 
 local LG = LibStub("LibGraph-2.0");
+local FBAPI = LibStub("FishingBuddyApi-1.0", true);
 
 GraphHandler.BAR = "BAR";
 GraphHandler.LEGEND = "LEGEND";
@@ -65,7 +66,7 @@ end
 
 local function Legend_OnClick(self, button)
    if ( button == "LeftButton" and IsShiftKeyDown() and self.item ) then
-       FishingBuddy.ChatLink(self.item, self.name, self.color);
+       FBAPI:ChatLink(self.item, self.name, self.color);
    elseif ( self.ClickHandler ) then
        self:ClickHandler(button);
    end

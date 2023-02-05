@@ -1,56 +1,90 @@
 
 MasterPlanAG = {
-	["Zul'jin"] = {
-		["Okona"] = {
+	["IgnoreRewards"] = {
+	},
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["curOil"] = 95065,
+			["summary"] = {
+				["lastOilTime"] = 1675551189,
+				["inProgress"] = {
+					[485] = 1675565578,
+					[132] = 1675572725,
+					[736] = 1675552997,
+					[265] = 1675579973,
+					[725] = 1675552992,
+					[267] = 1675565582,
+					[202] = 1675554437,
+					[359] = 1675569031,
+					[675] = 1675579941,
+					[189] = 1675553834,
+					[737] = 1675552994,
+					[325] = 1675579921,
+					[677] = 1675587138,
+				},
+				["ti3"] = 127855,
+				["ti2"] = 122486,
+				["tt1"] = 1675553775,
+				["ti1"] = 118531,
+				["tt3"] = 1675378678,
+				["tt2"] = 1674354889,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1675168781,
+			["curRes"] = 2755,
+			["class"] = "WARRIOR",
+		},
+		["Bathal"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Horde",
+		},
+		["Jingojaggot"] = {
+			["faction"] = "Horde",
 			["class"] = "PRIEST",
-			["faction"] = "Horde",
 		},
-		["Zulbathal"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
-		},
-		["Neltharigos"] = {
-			["faction"] = "Horde",
-			["class"] = "EVOKER",
-		},
-		["Valmagus"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Horde",
-		},
-		["Alatra"] = {
-			["class"] = "HUNTER",
+		["Brotus"] = {
+			["class"] = "SHAMAN",
 			["faction"] = "Horde",
 		},
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["class"] = "DRUID",
 			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
 		["Rotclaugh"] = {
-			["class"] = "DEATHKNIGHT",
 			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
 		},
 		["Tendralas"] = {
-			["faction"] = "Alliance",
 			["class"] = "PRIEST",
+			["faction"] = "Alliance",
 		},
 		["Darnastris"] = {
-			["class"] = "MAGE",
 			["faction"] = "Alliance",
+			["class"] = "MAGE",
 		},
 		["Illingrath"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Varlouris"] = {
-			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
 		},
 		["Thorinbane"] = {
+			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+		},
+		["Malivant"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Avisar"] = {
+			["class"] = "PALADIN",
 			["faction"] = "Alliance",
 		},
 		["Galvarton"] = {
@@ -64,63 +98,27 @@ MasterPlanAG = {
 			["curRes"] = 1355,
 			["class"] = "DRUID",
 		},
-		["Avisar"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Malivant"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Alliance",
-		},
 	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["lastCacheTime"] = 1673966359,
-			["summary"] = {
-				["lastOilTime"] = 1673966278,
-				["inProgress"] = {
-					[485] = 1673980651,
-					[381] = 1674002155,
-					[397] = 1674002255,
-					[132] = 1673987762,
-					[676] = 1673994968,
-					[543] = 1673980675,
-					[179] = 1673979806,
-					[745] = 1674031078,
-					[570] = 1673980672,
-					[555] = 1674031081,
-					[481] = 1673980659,
-					[129] = 1673980647,
-					[574] = 1674031069,
-					[192] = 1673979805,
-					[398] = 1673994959,
-				},
-				["ti3"] = 127855,
-				["ti2"] = 122486,
-				["tt1"] = 1671807152,
-				["ti1"] = 118531,
-				["tt3"] = 1673064467,
-				["tt2"] = 1671931701,
-			},
+	["Zul'jin"] = {
+		["Okona"] = {
 			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 6780,
-			["curOil"] = 95910,
-		},
-		["Bathal"] = {
-			["faction"] = "Horde",
-			["class"] = "DEATHKNIGHT",
-		},
-		["Jingojaggot"] = {
 			["class"] = "PRIEST",
+		},
+		["Zulbathal"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+		["Neltharigos"] = {
+			["class"] = "EVOKER",
 			["faction"] = "Horde",
 		},
-		["Brotus"] = {
+		["Alatra"] = {
 			["faction"] = "Horde",
-			["class"] = "SHAMAN",
+			["class"] = "HUNTER",
 		},
-	},
-	["IgnoreRewards"] = {
+		["Valmagus"] = {
+			["faction"] = "Horde",
+			["class"] = "PALADIN",
+		},
 	},
 }

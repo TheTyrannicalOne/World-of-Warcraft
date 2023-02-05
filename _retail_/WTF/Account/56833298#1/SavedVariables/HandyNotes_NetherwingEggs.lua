@@ -8,8 +8,8 @@ HandyNotes_NetherwingEggsDB = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
-		["Neltharigos - Zul'jin"] = "Default",
 		["Bathal - Argent Dawn"] = "Default",
+		["Neltharigos - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

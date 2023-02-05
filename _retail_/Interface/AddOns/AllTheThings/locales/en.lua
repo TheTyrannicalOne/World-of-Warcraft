@@ -240,6 +240,7 @@ app.L = {
 	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
 	["FUTURE_UNOBTAINABLE"] = "Future Unobtainable!";
 	["FUTURE_UNOBTAINABLE_TOOLTIP"] = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
+	["TRADING_POST"] = "Trading Post";
 
 	["TIER_DATA"] = {
 		{	-- Classic
@@ -1012,6 +1013,7 @@ app.L = {
 		[-27] = "Interface\\Icons\\Achievement_Boss_Overlord_Wyrmthalak",					-- Lower (Blackrock Spire)
 		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
 		[-31] = app.asset("Category_Promo"),												-- Promotions
+		[-32] = "Interface\\Icons\\inv_sword_48",											-- Honor Titles
 		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
@@ -1259,6 +1261,7 @@ app.L = {
 		[-582] = app.asset("Expansion_WOTLK"),												-- Northrend Heroic Upgrade ("Cheap")
 		[-583] = app.asset("Expansion_WOTLK"),												-- Northrend Epic Upgrade
 		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
+		[-585] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo IV
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1423,7 +1426,8 @@ app.L = {
 		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
-		[-1143] = 237274,																			-- Every 2 Hours Rare
+		[-1143] = 237274,																			-- Every 30 min Rare
+		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1440,7 +1444,7 @@ app.L = {
 	-- T3
 		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 	-- Island Expeditions
-		[-3338] = app.asset("Category_Zones"),											-- Island Expeditions
+		[-3338] = "Interface\\Icons\\achievement_zone_darkshore_01",						-- Island Expeditions
 	-- Tournament
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
 	-- Class Trial
@@ -1521,6 +1525,9 @@ app.L = {
 		[-2186] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x
 		[-2187] = app.asset("Expansion_BFA"),									-- Patch 8.x.x
 		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
+	-- Temporary headers for unsorted poor and common items
+		[-123456] = "Interface\\Icons\\Inv_chest_cloth_46",						-- Poor Quality Items
+		[-123457] = "Interface\\Icons\\Inv_gauntlets_16",						-- Common Quality Items
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
@@ -1550,6 +1557,7 @@ app.L = {
 		[-27] = "Lower",														-- Lower (Blackrock Spire)
 		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
+		[-32] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,						-- Honor Titles
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
@@ -1948,7 +1956,7 @@ app.L = {
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
-	[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
+		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Temp Sets for Creation Catalyst
@@ -1981,7 +1989,8 @@ app.L = {
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
-		[-1143] = "Every 2 Hours Rare",												-- Every 2 Hours Rare
+		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
+		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
@@ -2089,6 +2098,9 @@ app.L = {
 		[-2186] = "7.x.x",														-- Patch 7.x.x
 		[-2187] = "8.x.x",														-- Patch 8.x.x
 		[-2188] = "9.x.x",														-- Patch 9.x.x
+	-- Temporary headers for unsorted poor and common items
+		[-123456] = BATTLE_PET_BREED_QUALITY1,									-- Poor
+		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",

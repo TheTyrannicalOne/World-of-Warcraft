@@ -8,8 +8,8 @@ HandyNotes_NooksAndCranniesDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
@@ -21,8 +21,9 @@ HandyNotes_NooksAndCranniesDB = {
 	},
 }
 HandyNotes_NooksAndCranniesCACHE = {
-	["version"] = 47631,
+	["version"] = 47936,
 	["mapName"] = {
-		[551] = "The Masters' Cavern",
+		[539] = "Shadowmoon Valley",
+		[371] = "The Jade Forest",
 	},
 }

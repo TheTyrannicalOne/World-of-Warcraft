@@ -5,7 +5,7 @@
 local mod, CL = BigWigs:NewBoss("General Vezax", 603, 1648)
 if not mod then return end
 mod:RegisterEnableMob(33271)
-mod:SetEncounterID(1134)
+mod:SetEncounterID(mod:Classic() and 755 or 1134)
 -- mod:SetRespawnTime(0) -- resets, doesn't respawn
 
 --------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(_, msg)
 	if msg == L.vapor_trigger then
 		self:MessageOld("vapor", "green", nil, L.vapor_message:format(vaporCount), 63322)
 		vaporCount = vaporCount + 1
-		if vaporCount < 7 then
+		if vaporCount < (self:Classic() and 9 or 7) then
 			self:Bar("vapor", 30, L.vapor_bar:format(vaporCount), 63322)
 		end
 	elseif msg == L.animus_trigger then

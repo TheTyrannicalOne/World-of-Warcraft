@@ -48,10 +48,10 @@ AchievementTrackerNPCCacheClassic = {}
 
 -- Purpose:         Information about the current release. This is mianly used to detect which addon should output messages to chat to avoid spam
 Config.majorVersion = 4						--Addon with a higher major version change have priority over a lower major version
-Config.minorVersion = 11    				--Addon with a minor version change have prioirty over a lower minor version
+Config.minorVersion = 14    				--Addon with a minor version change have prioirty over a lower minor version
 Config.revisionVersion = 0					--Addon with a revision change have the same priorty as a lower revision verison
 Config.releaseType = ""                     --Release type (Alpha, Beta, Release)
-Config.classicPhase = 1                     --What phase classic realms are currently running
+Config.classicPhase = 2                     --What phase classic realms are currently running
 
 ------------------------------------------------------
 ---- Game Versions
@@ -1292,18 +1292,22 @@ function Config:CreateGUI()
         for instance,v in pairs(core.Instances[i].Raids) do
             local instanceName
 
-            if core.gameVersionMajor == 3 and i == 3 then
-                --For wrath we must fetch the localisaed names as the encounter journal is not avaliable
-                if core.Instances[i].Raids[instance].classicPhase == Config.classicPhase then
-                    instanceName = core.Instances[i].Raids[instance].nameLocalised
-                end
-            else
-                --All other expansions have the encounter journal so pass the ID to fetch from API
-                instanceName = Config:getLocalisedInstanceName(core.Instances[i].Raids[instance].name)
-            end
+            if (core.gameVersionMajor > 3 and core.Instances[i].Raids[instance].classicOnly ~= true) or (core.gameVersionMajor == 3 and core.Instances[i].Raids[instance].retailOnly ~= true) then
+                --Do not load classic only instance on retail and visa versa
 
-            if instanceName ~= nil then
-                table.insert(localisedRaidNames, {name = instanceName, id = instance});
+                if core.gameVersionMajor == 3 and i == 3 then
+                    --For wrath we must fetch the localisaed names as the encounter journal is not avaliable
+                    if core.Instances[i].Raids[instance].classicPhase <= Config.classicPhase then
+                        instanceName = core.Instances[i].Raids[instance].nameLocalised
+                    end
+                else
+                    --All other expansions have the encounter journal so pass the ID to fetch from API
+                    instanceName = Config:getLocalisedInstanceName(core.Instances[i].Raids[instance].name)
+                end
+
+                if instanceName ~= nil then
+                    table.insert(localisedRaidNames, {name = instanceName, id = instance});
+                end
             end
         end
         for instance,v in pairs(core.Instances[i].Dungeons) do
@@ -1311,7 +1315,7 @@ function Config:CreateGUI()
 
             if core.gameVersionMajor == 3 and i == 3 then
                 --For wrath we must fetch the localisaed names as the encounter journal is not avaliable
-                if core.Instances[i].Dungeons[instance].classicPhase == Config.classicPhase then
+                if core.Instances[i].Dungeons[instance].classicPhase <= Config.classicPhase then
                     instanceName = core.Instances[i].Dungeons[instance].nameLocalised
                 end
             else
@@ -1963,11 +1967,7 @@ function Instance_OnClick(self)
                     elseif (GetLocale() == 'ruRU') then
                         button.contentText:SetFont("p", "Fonts\\FRIZQT___CYR.TTF", 12, "OUTLINE");
                     else
-                        if core.gameVersionMajor > 9 then
-                            button.contentText:SetFont("p","Fonts\\FRIZQT__.TTF", 13, "OUTLINE");
-                        else
-                            button.contentText:SetFont("Fonts\\FRIZQT__.TTF", 12);
-                        end
+                        button.contentText:SetFont("p","Fonts\\FRIZQT__.TTF", 13, "OUTLINE");
                     end
                     local achievementLink = GetAchievementLink(instanceLocation["boss" .. counter2].achievement)
                     achievementLink = achievementLink:gsub("&", "&amp;"); -- & in the achievement name would resolve the html syntax wrong

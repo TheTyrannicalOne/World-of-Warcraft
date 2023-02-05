@@ -224,6 +224,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.FORCE_REFRESH_REQUIRED = "Может потребоваться Полное Обновление коллекции ("..SHIFT_KEY_TEXT.."+Клик).";
 	L.FUTURE_UNOBTAINABLE = "Будущие Недоступные!";
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Это контент, который точно или очень вероятно будет недоступен в будущем патче.";
+	L.TRADING_POST = "Торговая лавка";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -851,7 +852,8 @@ for key,value in pairs({
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1142] = "Воздушные испытания",							-- Aerial Challenges
-		[-1143] = "Редкие каждые 2 часа",							-- Every 2 Hours Rare
+		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
+		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
@@ -919,6 +921,20 @@ for key,value in pairs({
 	[-169] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
 	[-799] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 	[-903] = "Эти предметы можно получить в награду из повторяемых сокровищ, заветных сверчков, локальных заданий или заданий командирского стола.",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 
@@ -1045,6 +1061,9 @@ for key,value in pairs({
 	[21015] = "Следы копыт",	-- Hoofprints
 	[21016] = "Следы копыт",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Кокарда Тераморской стражи",	-- Theramore Guard Badge
+	[21581] = "Последствия Второй войны",	-- Aftermath of the Second War
+	[21582] = "За Темным порталом",	-- Beyond the Dark Portal
+	[21583] = "Калдорай и Источник Вечности",	-- The Kaldorei and the Well of Eternity
 	[22245] = "Мешок мяса",	-- Sack of Meat
 	[22246] = "Слеза Терадрас",	-- Tear of Theradras
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
@@ -1178,6 +1197,45 @@ for key,value in pairs({
 	[175586] = "Фургон Джерона",	-- Jaron's Wagon
 	[175587] = "Поврежденный ящик",	-- Damaged Crate
 	[175629] = "Припасы Джерона",	-- Jaron's Supplies
+	[175724] = "Саргерас и Предательство",	-- Sargeras and the Betrayal
+	[175725] = "Древние боги и формирование Азерота",	-- The Old Gods and the Ordering of Azeroth
+	[175726] = "Создание Драконов",	-- Charge of the Dragonflights
+	[175727] = "\"Война древних\"",	-- The War of the Ancients
+	[175729] = "Гора Хиджал и дар Иллидана",	-- Mount Hyjal and Illidan's Gift
+	[175730] = "Древо Жизни и Изумрудный Сон",	-- The World Tree and the Emerald Dream
+	[175731] = "Изгнание высших эльфов",	-- Exile of the High Elves
+	[175732] = "Часовые и долгое бдение",	-- The Sentinels and the Long Vigil
+	[175733] = "Основание Кель'Таласа",	-- The Founding of Quel'Thalas
+	[175734] = "Аратор и Тролльские Войны",	-- Arathor and the Troll Wars
+	[175735] = "Хранители Тирисфаля",	-- The Guardians of Tirisfal
+	[175736] = "Стальгорн – Пробуждение дворфов",	-- Ironforge - the Awakening of the Dwarves
+	[175737] = "Семь королевств",	-- The Seven Kingdoms
+	[175738] = "Эгвин и Драконья Охота",	-- Aegwynn and the Dragon Hunt
+	[175739] = "Война Трех Кланов",	-- War of the Three Hammers
+	[175740] = "Последний хранитель",	-- The Last Guardian
+	[175741] = "Кил'джеден и Пакт Тьмы",	-- Kil'jaeden and the Shadow Pact
+	[175742] = "Возвышение Орды",	-- Rise of the Horde
+	[175745] = "\"Темный портал и падение Штормграда\"",	-- The Dark Portal and the Fall of Stormwind
+	[175746] = "Альянс Лордерона",	-- The Alliance of Lordaeron
+	[175747] = "Вторжение в Дренор",	-- The Invasion of Draenor
+	[175748] = "Рождение Короля-лича",	-- The Birth of the Lich King
+	[175749] = "Ледяная Корона и Ледяной Трон",	-- Icecrown and the Frozen Throne
+	[175750] = "\"Битва при Грим Батол\"",	-- The Battle of Grim Batol
+	[175751] = "Долгий сон орков",	-- Lethargy of the Orcs
+	[175752] = "Новая Орда",	-- The New Horde
+	[175753] = "\"Война пауков\"",	-- War of the Spider
+	[175754] = "Кел'Тузад и создание Плети",	-- Kel'Thuzad and the Forming of the Scourge
+	[175756] = "Плеть Лордерона",	-- The Scourge of Lordaeron
+	[175757] = "Солнечный Колодец – Падение Кель'Таласа",	-- Sunwell - The Fall of Quel'Thalas
+	[175758] = "Возвращение Архимонда и побег в Калимдор",	-- Archimonde's Return and the Flight to Kalimdor
+	[175759] = "Восход Предателя",	-- The Betrayer Ascendant
+	[175760] = "Возвышение эльфов крови",	-- Rise of the Blood Elves
+	[175761] = "Гражданская война в Чумных землях",	-- Civil War in the Plaguelands
+	[175762] = "Триумф Короля-лича",	-- The Lich King Triumphant
+	[175763] = "Древняя ненависть – Колонизация Калимдора",	-- Old Hatreds - The Colonization of Kalimdor
+	[175854] = "Империи-близнецы",	-- The Twin Empires
+	[175855] = "Падение Империи",	-- Empires' Fall
+	[175856] = "Гнев Свежевателя Душ",	-- Wrath of Soulflayer
 	[175888] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
 	[175891] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
 	[175892] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
@@ -1482,18 +1540,35 @@ for key,value in pairs({
 	[194049] = "Большой костер Альянса",	-- Alliance Bonfire
 	[194105] = "Жужжалка 413",	-- Buzzbox 413
 	[194122] = "Жужжалка 723",	-- Buzzbox 723
+	[194213] = "Зимний гиацинт",	-- Winter Hyacinth
+	[194238] = "Меч Драк'Мара",	-- Blade of Drak'Mar
+	[194341] = "Пыльный дневник",	-- Dusty Journal
 	[194378] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194387] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194388] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194389] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194390] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194391] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
+	[194423] = "Украденное приглашение на турнир",	-- Stolen Tournament Invitation
+	[194424] = "Приказы для Черного рыцаря",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	[194463] = "Небольшой камень",	-- Small Stone Block
 	[194479] = "Лужа крови",	-- Pool of Blood
+	[194537] = "Могила сэра Венделла",	-- Sir Wendell's Grave
+	[194538] = "Могила Коналла",	-- Connall's Grave
+	[194539] = "Могила Лориена",	-- Lorien's Grave
 	[194555] = "Панель управления Архивом",	-- Archivum Console
+	[194618] = "Подставка для копий",	-- Lance Rack
+	[194622] = "Подставка для копий",	-- Lance Rack
 	[194714] = "Отвратительная рабочая скамейка",	-- Disgusting Workbench
+	[194908] = "Подставка для копий",	-- Lance Rack
+	[194909] = "Подставка для копий",	-- Lance Rack
 	[195022] = "Яйцо ядошкурого равазавра",	-- Venomhide Ravasaur Egg
 	[195037] = "Яйцо силитида",	-- Silithid Egg
 	[195134] = "Бомба",	-- The Bomb
+	[195274] = "Украденный окорочок долгонога",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "Выброшенный кристалл души",	-- Discarded Soul Crystal
 	[195431] = "Штабное радио",	-- Headquarters Radio
 	[195433] = "Древние таблички",	-- Ancient Tablets
 	[195435] = "Оружейный шкаф",	-- Weapons Cabinet
@@ -1508,6 +1583,7 @@ for key,value in pairs({
 	[196393] = "Разбитая реликвия",	-- Broken Relic
 	[196832] = "Верхний гадальный камень",	-- Upper Scrying Stone
 	[196833] = "Нижний гадальный камень",	-- Lower Scrying Stone
+	[201367] = "Сердце тумана",	-- Heart of the Mists
 	[201578] = "Объявление о найме механиков",	-- Wrenchmen Recruitment Poster
 	[202080] = "Гнездо Дарта",	-- Dart's Nest
 	[202081] = "Гнездо Такка",	-- Takk's Nest
@@ -1608,6 +1684,13 @@ for key,value in pairs({
 	[209620] = "Сундук с сокровищами Новолуния",	-- Darkmoon Treasure Chest
 	[209673] = "Пьедестал нефритового тигра",	-- Jade Tiger Pillar
 	[209845] = "Соблазнительный напиток",	-- Mouthwatering Brew
+	[210005] = "Оружейная стойка",	-- Weapon Rack
+	[210015] = "Оружейная стойка",	-- Weapon Rack
+	[210016] = "Оружейная стойка",	-- Weapon Rack
+	[210017] = "Оружейная стойка",	-- Weapon Rack
+	[210018] = "Оружейная стойка",	-- Weapon Rack
+	[210019] = "Оружейная стойка",	-- Weapon Rack
+	[210020] = "Оружейная стойка",	-- Weapon Rack
 	[210565] = "Темная земля",	-- Dark Soil
 	[211424] = "Алхимический свиток",	-- Alchemy Scroll
 	[211754] = "Любопытный текст",	-- Curious Text
@@ -2593,8 +2676,10 @@ for key,value in pairs({
 	[277344] = "Бесценные сувениры авгари",	-- Precious Augari Keepsakes
 	[277346] = "Пропавший сундук авгари",	-- Missing Augari Chest
 	[277373] = "Поблескивающие водоросли",	-- Glimmering Seaweed
+	[277384] = "Брошенное сокровище",	-- Abandoned Treasure
 	[277459] = "Свиной фетиш",	-- Pig Effigy
 	[277561] = "Тайник военачальника",	-- Warlord's Cache
+	[277637] = "Тронутый Бездной тайник",	-- Void-Seeped Cache
 	[277715] = "Проклятый назманийский сундук",	-- Cursed Nazmani Chest
 	[277885] = "Схрон Вунджи",	-- Wunja's Trove
 	[277897] = "Дымящийся тайник",	-- Seething Cache
@@ -3535,8 +3620,10 @@ for key,value in pairs({
 	[381485] = "Потерянное мыло путешественника",	-- Adventurer's Lost Soap Bar
 	[381510] = "Кости летающей рыбы",	-- Flying Fish Bones
 	[381511] = "Наконечник гарпуна",	-- Harpoon Head
+	[381512] = "Деревянный шест",	-- Wooden Pole
 	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381514] = "Отшлифованный волнами базальт",	-- Sea-Polished Basalt
+	[381575] = "Набор для ловли уток",	-- Duck Trap Kit
 	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
@@ -3545,8 +3632,8 @@ for key,value in pairs({
 	[381663] = "\"Манаштормы для новичков\"",	-- Manastorming For Beginners
 	[381664] = "Просьба архивариуса",	-- Archivists' Request
 	[381667] = "Просьба архивариуса",	-- Archivists' Request
-	[381668] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
-	[381669] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Просьба архивариуса",	-- Archivists' Request
+	[381669] = "Просьба архивариуса",	-- Archivists' Request
 	[381670] = "Просьба архивариуса",	-- Archivists' Request
 	[381671] = "Просьба архивариуса",	-- Archivists' Request
 	[381672] = "Просьба архивариуса",	-- Archivists' Request
@@ -3559,14 +3646,18 @@ for key,value in pairs({
 	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382621] = "Консоль катализатора возрождения",	-- Revival Catalyst Console
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
+	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383733] = "Потревоженная почва",	-- Disturbed Dirt
+	[383734] = "Потревоженная почва",	-- Disturbed Dirt
+	[383735] = "Потревоженная почва",	-- Disturbed Dirt
 	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
 	[384370] = "Нарочито непристойные записи",	-- Deliberately Delinquent Notes
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
 	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg
 	[385022] = "Размытая окаменелость",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

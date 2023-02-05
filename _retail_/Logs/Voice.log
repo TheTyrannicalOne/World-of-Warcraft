@@ -1,7 +1,7 @@
-1/17 14:10:10.504  Voice Log Initialize.
-1/17 14:10:10.504  WowConnectionNet: Initialize
-1/17 14:10:10.504  MakeSocketPair attempt: 0, 1, 0, -1, 0
-1/17 14:10:10.504  MakeSocketPair attempt: 0, 23, 0, 0, 0
-1/17 14:10:10.610  VoiceProxy attempting to listen on 127.0.0.1:6724
-1/17 14:10:40.002  WowConnectionNet: Shutdown
-1/17 14:10:40.002  Voice Log Destroy.
+2/4 23:39:28.113  Voice Log Initialize.
+2/4 23:39:28.117  WowConnectionNet: Initialize
+2/4 23:39:28.117  MakeSocketPair attempt: 0, 1, 0, -1, 0
+2/4 23:39:28.117  MakeSocketPair attempt: 0, 23, 0, 0, 0
+2/4 23:39:28.222  VoiceProxy attempting to listen on 127.0.0.1:6724
+2/4 23:39:58.004  WowConnectionNet: Shutdown
+2/4 23:39:58.004  Voice Log Destroy.

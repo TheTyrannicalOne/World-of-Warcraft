@@ -20,6 +20,9 @@ if L then
 	L.shattering_impact = "Impact"
 	L.concussive_slam = "Ligne Tank"
 	L.infused_fallout = "Poussière"
+
+	--L.custom_on_repeating_fallout = "Repeating Infused Fallout"
+	--L.custom_on_repeating_fallout_desc = "Repeating Infused Fallout say messages with icon {rt7} to find a partner."
 end
 
 L = BigWigs:NewBossLocale("The Primal Council", "frFR")
@@ -48,6 +51,8 @@ if L then
 	L.webs = "Toiles"
 	L.web = "Toile"
 	L.gossamer_burst = "Attirer"
+	-- L.gossamer_burst_castbar = "Gossamer Burst Cast Bar / Countdown"
+	-- L.gossamer_burst_castbar_desc = "A Cast Bar for Gossamer Burst with Countdown enabled by default."
 	L.repelling_burst = "Repousser"
 end
 

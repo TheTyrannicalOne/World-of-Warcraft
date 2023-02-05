@@ -6,8 +6,8 @@ RareShareDB = {
 		["PartyRaidChatAnnounce"] = true,
 		["MapPin"] = true,
 		["CChannel"] = {
-			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 1,
+			["CName"] = "General - Zereth Mortis",
 		},
 		["TomTom"] = {
 			["Rares"] = true,

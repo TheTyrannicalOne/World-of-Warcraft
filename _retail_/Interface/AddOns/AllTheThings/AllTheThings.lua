@@ -389,6 +389,7 @@ FunctionRunner.SetPerFrame = function(count, instant)
 		FunctionRunner.Run(SetPerFrame, count);
 	end
 end
+FunctionRunner.Reset = Reset; -- for testing
 
 app.FunctionRunner = FunctionRunner;
 end
@@ -2144,7 +2145,7 @@ local function GetSourceID(itemLink)
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
 		if sourceID then return sourceID, true; end
 
-		-- if app.DEBUG_PRINT then print("Failed to directly retrieve SourceID",itemLink) end
+		-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
 		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
 		if slotName then
 			local slots = inventorySlotsMap[slotName];
@@ -2160,7 +2161,7 @@ local function GetSourceID(itemLink)
 					if sourceID and sourceID ~= 0 then
 						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
 						local sourceItemLink = select(6, C_TransmogCollection_GetAppearanceSourceInfo(sourceID));
-						-- print("SourceID from DressUpModel",sourceID,sourceItemLink)
+						-- app.PrintDebug("SourceID from DressUpModel",sourceID,sourceItemLink)
 						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
 							return sourceID, true;
 						end
@@ -2195,9 +2196,6 @@ local function VerifySourceID(item)
 	end
 	-- check that the group's itemlink still returns the same sourceID as saved in the group
 	if item.link and not item.retries then
-		-- quality below UNCOMMON means no source
-		if item.q and item.q < 2 then return true; end
-
 		local linkInfoSourceID = GetSourceID(item.link);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
@@ -2254,7 +2252,7 @@ app.IsComplete = function(o)
 	return true;
 end
 app.GetSourceID = GetSourceID;
-app.MaximumItemInfoRetries = 400;
+app.MaximumItemInfoRetries = 40;
 local function GetUnobtainableTexture(groupORu)
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
@@ -2424,9 +2422,9 @@ local function GetItemIDAndModID(modItemID)
 	if modItemID and tonumber(modItemID) then
 		-- print("GetItemIDAndModID",modItemID)
 		local itemID = math.floor(modItemID);
-		modItemID = (modItemID - itemID) * 100;
+		modItemID = (modItemID - itemID) * 100.0 + 0.0000005;
 		local modID = math.floor(modItemID);
-		modItemID = (modItemID - modID) * 10000;
+		modItemID = (modItemID - modID) * 10000.0 + 0.0000005;
 		local bonusID = math.floor(modItemID);
 		-- print(itemID,modID,bonusID)
 		return itemID, modID, bonusID;
@@ -2534,7 +2532,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		for _,factionID in ipairs(DFmajorFactionIDs) do
 			info = C_MajorFactions.GetMajorFactionData(factionID);
 			tinsert(majorFactionInfo, "|");
-			tinsert(majorFactionInfo, info.name:sub(1,3));
+			tinsert(majorFactionInfo, info.name:sub(1,4));
 			tinsert(majorFactionInfo, ":");
 			tinsert(majorFactionInfo, info.renownLevel);
 		end
@@ -3570,6 +3568,7 @@ local ResolveFunctions = {
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
+					or criteriaType == 52 or criteriaType == 53	-- Class/Race (TODO?)
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
@@ -4051,9 +4050,10 @@ ResolveSymbolicLink = function(o)
 					if PruneFinalized then
 						s.g = nil;
 					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
+						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
@@ -4066,9 +4066,10 @@ ResolveSymbolicLink = function(o)
 					if PruneFinalized then
 						s.g = nil;
 					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
+						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
@@ -4356,7 +4357,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if topLevelSearch then
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and (sourceInfo.quality or 0) > 1 then
+					if sourceInfo then
 						local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
 						if #allVisualSources < 1 then
 							-- Items with SourceInfo which don't register as having any visual data...
@@ -4496,7 +4497,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource and (otherSource.quality or 0) > 1 then
+											if otherSource then
 												local link = select(2, GetItemInfo(otherSource.itemID));
 												if not link then
 													link = RETRIEVING_DATA;
@@ -4530,7 +4531,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 
 						if app.IsReady and sourceGroup.missing and itemID ~= 53097 then
-							tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
+							tinsert(info, { left = Colorize("Item Source not found in the AllTheThings " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
 							tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
 						end
@@ -5130,8 +5131,7 @@ end
 
 -- Auto-Expansion logic
 do
-local included = {};
-local knownSkills, isInWindow;
+local knownSkills;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 local SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
@@ -5150,7 +5150,7 @@ app.SetSkipPurchases = function(level)
 	end
 end
 -- Determines searches required for costs using this group
-local function DeterminePurchaseGroups(group, depth)
+local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	local itemID = group.itemID;
 	local reqSkipLevel = itemID and SkipPurchases[itemID];
@@ -5164,21 +5164,21 @@ local function DeterminePurchaseGroups(group, depth)
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
 		local groupHash = group.hash;
-		local clone, hash, includeDepth;
+		local depth, included = FillData.Depth, FillData.Included;
+		local clone, hash;
 		for _,o in ipairs(collectibles) do
 			hash = o.hash;
 			-- don't add copies of this group if it matches the 'cost' group, or has already been added at a lower depth
 			-- technically this allows something to become nested at a high depth, and then multiple times at lower depths...
 			-- but hopefully that's ok and is a bit better for visibility than to exclude things
-			if hash ~= groupHash then
-				includeDepth = included[hash];
-				if not includeDepth or includeDepth >= depth then
-					included[hash] = depth;
-					clone = CreateObject(o);
-					-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
-					-- clone.indicatorIcon = "Interface_Vendor";
-					tinsert(groups, clone);
-				end
+			if hash ~= groupHash and not included[hash] then
+				-- once something is filled, don't fill under it regardless of depth
+				included[hash] = depth;
+				-- app.PrintDebug("Purchase @",depth,groupHash,"=>",hash)
+				clone = CreateObject(o);
+				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
+				-- clone.indicatorIcon = "Interface_Vendor";
+				tinsert(groups, clone);
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
@@ -5190,7 +5190,7 @@ local function DeterminePurchaseGroups(group, depth)
 		return groups;
 	end
 end
-local function DetermineCraftedGroups(group)
+local function DetermineCraftedGroups(group, FillData)
 	local itemID = group.itemID;
 	if not itemID then return; end
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -5200,6 +5200,7 @@ local function DetermineCraftedGroups(group)
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 
 	local craftableItemIDs = {};
+	local included = FillData.Included;
 	-- item is BoP
 	if filterSkill then
 		local craftedItemID, searchRecipes, recipe, skillID;
@@ -5263,22 +5264,17 @@ local function DetermineCraftedGroups(group)
 end
 local function DetermineSymlinkGroups(group)
 	if group.sym then
-		-- groups which are being filled in a Window can be done async
-		if isInWindow then
-			-- app.PrintDebug("DSG-Async",group.hash);
-			app.FillSymlinkAsync(group);
-		else
-			-- app.PrintDebug("DSG-Now",group.hash);
-			local groups = ResolveSymbolicLink(group);
-			-- make sure this group doesn't waste time getting resolved again somehow
-			group.sym = nil;
-			-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
-			return groups;
-		end
+		-- app.PrintDebug("DSG-Now",group.hash);
+		local groups = ResolveSymbolicLink(group);
+		-- make sure this group doesn't waste time getting resolved again somehow
+		group.sym = nil;
+		-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
+		return groups;
 	end
 end
 local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
+	[-20] = true,	-- COMMON_VENDOR_ITEMS
 	[-26] = true,	-- DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
@@ -5297,26 +5293,30 @@ local function DetermineNPCDrops(group)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
-					-- where headerID is allowed and the nested difficultyID matches
-					if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
-						-- copy the header under the NPC groups
-						-- app.PrintDebug("Fill under",headerID)
-						if groups then tinsert(groups, CreateObject(npcGroup))
-						else groups = { CreateObject(npcGroup) }; end
+					if npcGroup.hash ~= group.hash then
+						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						-- where headerID is allowed and the nested difficultyID matches
+						if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
+							-- copy the header under the NPC groups
+							-- app.PrintDebug("NPCDrops Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+							if groups then tinsert(groups, CreateObject(npcGroup))
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 				return groups;
 			else
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
-					-- where headerID is allowed
-					if headerID and NPCExpandHeaders[headerID] then
-						-- copy the header under the NPC groups
-						-- app.PrintDebug("Fill under",group.hash)
-						if groups then tinsert(groups, CreateObject(npcGroup))
-						else groups = { CreateObject(npcGroup) }; end
+					if npcGroup.hash ~= group.hash then
+						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						-- where headerID is allowed
+						if headerID and NPCExpandHeaders[headerID] then
+							-- copy the header under the NPC groups
+							-- app.PrintDebug("NPCDrops",group.hash,"<==",npcGroup.hash)
+							if groups then tinsert(groups, CreateObject(npcGroup))
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 				return groups;
@@ -5324,19 +5324,37 @@ local function DetermineNPCDrops(group)
 		end
 	end
 end
+local function SkipFillingGroup(group)
+	if group.skipFilling then return true; end
+	-- do not fill 'saved' groups in ATT tooltips
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID or group.encounterID) then return true; end
+		local parent = group.parent;
+		-- parent is a saved quest, then do not fill with stuff
+		if parent and parent.questID and parent.saved then return true; end
+	end
+end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
-local function FillGroupsRecursive(group, depth)
+local function FillGroupsRecursive(group, FillData)
+	-- app.PrintDebug("FillGroups",group.hash,depth)
+	if SkipFillingGroup(group) then return; end
+
+	-- app.PrintDebug("FillGroups",group.hash,depth)
 	-- increment depth if things are being nested
-	depth = (depth or 0) + 1;
+	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group, depth),
-		DetermineCraftedGroups(group),
+		DeterminePurchaseGroups(group, FillData),
+		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
-	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- if groups and #groups > 0 then
+	-- 	app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
+	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
 
@@ -5348,35 +5366,30 @@ local function FillGroupsRecursive(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-				FillGroupsRecursive(o, depth);
+				FillGroupsRecursive(o, FillData);
 			-- end
 		end
 	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
-local function FillGroupsRecursiveAsync(group, depth)
-	-- do not fill 'saved' groups in ATT windows
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
-		local parent = group.parent;
-		-- parent is a saved quest, then do not fill with stuff
-		if parent and parent.questID and parent.saved then return; end
-	end
+local function FillGroupsRecursiveAsync(group, FillData)
+	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
+	if SkipFillingGroup(group) then return; end
 
 	-- increment depth if things are being nested
-	depth = (depth or 0) + 1;
+	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group, depth),
-		DetermineCraftedGroups(group),
+		DeterminePurchaseGroups(group, FillData),
+		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
-	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- if groups and #groups > 0 then
+	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
+	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
 	if #groups > 0 then
@@ -5392,30 +5405,33 @@ local function FillGroupsRecursiveAsync(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, depth);
+			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, FillData);
 			-- end
 		end
 	end
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
-	-- Clear search history -- never re-list the starting Thing
-	included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 };
+	-- Check if this group is inside a Window or not
+	local isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
+	-- Setup the FillData for this fill operation
+	local FillData = {
+		Included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 },
+		Depth = 0,
+		IsInWindow = isInWindow,
+	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
-	-- Check if this group is inside a Window or not
-	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
 	if isInWindow then
-		-- 50 seems pretty good for time vs. stutter possibility
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
-		app.FunctionRunner.SetPerFrame(50);
-		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
+		app.FunctionRunner.SetPerFrame(25);
+		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group, FillData);
 	else
-		FillGroupsRecursive(group);
+		FillGroupsRecursive(group, FillData);
 	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
@@ -5435,6 +5451,7 @@ app.BuildCost = function(group)
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 				["sourceIgnored"] = true,
 				["OnUpdate"] = app.AlwaysShowUpdate,
+				["skipFilling"] = true,
 				["g"] = {},
 			};
 		local costItem;
@@ -5492,6 +5509,8 @@ app.ThingKeys = {
 local SpecificSources = {
 	["headerID"] = {
 		[-1] = true,	-- COMMON_BOSS_DROPS
+		[-20] = true,	-- COMMON_VENDOR_ITEMS
+		[-26] = true,	-- DROPS
 	},
 };
 local tremove = tremove;
@@ -5624,6 +5643,7 @@ app.BuildSourceParent = function(group)
 				["description"] = L["SOURCES_DESC"],
 				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
+				["skipFilling"] = true,
 				["g"] = {},
 			};
 			local clonedParent, keepSource;
@@ -7560,6 +7580,18 @@ local ObjectFunctions = {
 	["costProgress"] = function(t)
 		return 0;
 	end,
+	-- whether something is considered 'missing' by seeing if it can search for itself
+	["_missing"] = function(t)
+		local key = t.key;
+		local o = app.SearchForObject(key, t[key]);
+		local missing = true;
+		while o do
+			missing = rawget(o, "_missing");
+			o = not missing and (o.sourceParent or o.parent) or nil;
+		end
+		rawset(t, "_missing", missing);
+		return missing;
+	end,
 };
 local objFunc;
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
@@ -7814,7 +7846,7 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		else
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
-			rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
+			rawset(QuestTitleFromID, questID, L["QUEST_NAMES"][questID] or "Quest #"..questID.."*");
 		end
 	end
 	-- see if this Quest is awaiting Reward population & Updates
@@ -7845,8 +7877,14 @@ app.CollectibleAsQuest = function(t)
 	return
 	-- must have a questID associated
 	questID
-	-- must not be repeatable, unless considering repeatable quests as collectible
-	and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+	-- must not be repeatable
+	and (not t.repeatable or
+		-- unless considering repeatable quests as collectible
+		(app.Settings:GetTooltipSetting("Repeatable")
+			-- and the quest is actually able to remain in a 'completed' state
+			and (not rawget(t, "repeatable")
+				-- or is only being collected on first completion
+				or app.Settings:GetTooltipSetting("RepeatableFirstTime"))))
 	and
 	(
 		(	-- Regular Quests
@@ -8564,7 +8602,11 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 		local warning;
 		for _,group in pairs(nextQuests) do
 			if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
+				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+					title,
+					app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+					group.text or RETRIEVING_DATA,
+					app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
 				warning = true;
 			end
 		end
@@ -9166,6 +9208,7 @@ harvesterFields.text = function(t)
 				["achievementID"] = IDNumber,
 				["parentCategoryID"] = GetAchievementCategory(achievementID) or -1,
 				["icon"] = Image,
+				["isGuild"] = isGuildAch and true or nil,
 			};
 			if Description ~= nil and Description ~= "" then
 				info.description = Description;
@@ -9195,7 +9238,7 @@ harvesterFields.text = function(t)
 								crit.assetID = nil;
 								if crit.rank and crit.rank == 1 then
 									crit.rank = nil;
-									break;
+									-- break;
 								end
 							elseif criteriaType == 36 or criteriaType == 41 or criteriaType == 42 then
 								-- 36: Items (Generic)
@@ -9269,12 +9312,12 @@ harvesterFields.text = function(t)
 								-- https://wowwiki-archive.fandom.com/wiki/API_GetAchievementCriteriaInfo
 								if crit.rank and totalCriteria == 1 then
 									info.rank = crit.rank;
-									break;
+									-- break;
 								end
 							elseif criteriaType == 29 or criteriaType == 69 then	-- Cast X Spell Y Times
 								if crit.rank and totalCriteria == 1 then
 									info.rank = crit.rank;
-									break;
+									-- break;
 								else
 									crit.spellID = crit.assetID;
 									crit.criteriaType = nil;
@@ -9335,7 +9378,7 @@ harvesterFields.text = function(t)
 							-- https://wowwiki-archive.fandom.com/wiki/API_GetAchievementCriteriaInfo
 							if crit.rank and totalCriteria == 1 then
 								info.rank = crit.rank;
-								break;
+								-- break;
 							end
 						elseif criteriaType == 38 or criteriaType == 39 or criteriaType == 58 or criteriaType == 63 or criteriaType == 65 or criteriaType == 66 or criteriaType == 76 or criteriaType == 77 or criteriaType == 82 or criteriaType == 83 or criteriaType == 84 or criteriaType == 85 or criteriaType == 86 or criteriaType == 107 or criteriaType == 128 or criteriaType == 152 or criteriaType == 153 or criteriaType == 163 then	-- Ignored
 							-- 38: Team Rating, which is irrelevant.
@@ -9366,7 +9409,7 @@ harvesterFields.text = function(t)
 								if totalCriteria == 1 then
 									-- Generic, such as the Bread Winner
 									info.rank = crit.rank;
-									break;
+									-- break;
 								else
 									crit.cost = { { "g", crit.assetID, crit.rank } };
 									crit.criteriaType = nil;
@@ -9374,7 +9417,7 @@ harvesterFields.text = function(t)
 									info.rank = nil;
 								end
 							else
-								break;
+								-- break;
 							end
 						end
 						-- 155: Collect Battle Pets from a Raid, no assetID though RIP
@@ -9393,6 +9436,8 @@ harvesterFields.text = function(t)
 			rawset(t, "collected", true);
 			return Name;
 		end
+		-- Save an empty value just so the Saved Variable table is always in order for easier partial-replacements if needed
+		HarvestedAchievementDatabase[achievementID] = 0;
 	end
 
 	AllTheThingsHarvestItems = HarvestedAchievementDatabase;
@@ -9669,9 +9714,9 @@ local function default_link(t)
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		-- this returns nil for non-existent speciesID, which may be in unsorted
-		local numCollected = C_PetJournal_GetNumCollectedInfo(key);
-		if numCollected and numCollected > 0 then
+		if not C_PetJournal_GetNumCollectedInfo(key) then
+			app.print("SpeciesID " .. key .. " was not found.");
+		elseif C_PetJournal_GetNumCollectedInfo(key) > 0 then
 			rawset(t, key, 1);
 			return 1;
 		end
@@ -9865,12 +9910,16 @@ local function CacheInfo(t, field)
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
 		local _, text, _, icon = GetSpecializationInfoForSpecID(specc);
-		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		if text then
+			text = "|c" .. t.classColorCode .. text .. "|r";
+		end
 		_t.text = text;
 		_t.icon = icon;
 	else
 		local text = GetClassInfo(t.classID);
-		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		if text then
+			text = "|c" .. t.classColorCode .. text .. "|r";
+		end
 		_t.text = text;
 		_t.icon = classIcons[t.classID]
 	end
@@ -9887,7 +9936,7 @@ local fields = {
 		elseif t.maps then
 			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
 		end
-		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		text = "|c" .. t.classColorCode .. text .. "|r";
 		rawset(t, "text", text);
 		return text;
 	end,
@@ -9905,6 +9954,10 @@ local fields = {
 	end,
 	["classColors"] = function(t)
 		return RAID_CLASS_COLORS[select(2, GetClassInfo(math_floor(t.classID)))];
+	end,
+	["classColorCode"] = function(t)
+		local colors = t.classColors;
+		return colors and colors.colorStr or app.Colors.SourceIgnored;
 	end,
 };
 app.BaseCharacterClass = app.BaseObjectFields(fields, "BaseCharacterClass");
@@ -11466,7 +11519,7 @@ local function HandleItemRetries(t)
 	local retries = rawget(_t, "retries");
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
-			local itemName = "Item #" .. tostring(id) .. "*";
+			local itemName = L["ITEM_NAMES"][id] or "Item #" .. tostring(id) .. "*";
 			rawset(_t, "title", L["FAILED_ITEM_INFO"]);
 			rawset(_t, "link", nil);
 			rawset(_t, "s", nil);
@@ -11519,9 +11572,11 @@ local function default_link(t)
 		modID = t.modID or modID;
 		if not bonusID or bonusID < 1 then
 			bonusID = nil;
+			t.bonusID = nil;
 		end
 		if not modID or modID < 1 then
 			modID = nil;
+			t.modID = nil;
 		end
 		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if bonusID and modID then
@@ -11537,7 +11592,13 @@ local function default_link(t)
 		-- save this link so it doesn't need to be built again
 		rawset(t, "rawlink", itemLink);
 		return RawSetItemInfoFromLink(t, itemLink);
+	-- elseif t.s then
+		-- local s = t.s;
+		-- This is supposed to be an Item but instead is a raw Source... likely doesn't exist
+		-- local link = "|cffff80ff|Htransmogappearance:" .. s .. "|h[Source " .. s .. "]|h|r";
+		-- This is weird...
 	end
+	return UNKNOWN;
 end
 local function default_icon(t)
 	return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
@@ -11753,11 +11814,24 @@ end
 app.BaseCommonItem = app.BaseObjectFields(fields, "BaseCommonItem");
 
 -- Appearance Lib (Item Source)
-local fields = RawCloneData(itemFields);
-fields.key = function(t) return "s"; end;
 -- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
-fields.collectible = itemFields.collectibleAsTransmog;
-fields.collected = itemFields.collectedAsTransmog;
+local fields = RawCloneData(itemFields, {
+	["key"] = function(t) return "s"; end,
+	["collectible"] = itemFields.collectibleAsTransmog;
+	["collected"] = itemFields.collectedAsTransmog;
+	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
+	["itemID"] = function(t)
+		local sourceInfo = C_TransmogCollection_GetSourceInfo(t.s);
+		if sourceInfo then
+			rawset(t, "itemID", sourceInfo.itemID);
+			-- since no good translation for itemModID to our modID/bonusID system only save for basic Item sources
+			if sourceInfo.itemModID == 0 then
+				app.SaveHarvestSource(t);
+			end
+		end
+		return rawget(t, "itemID");
+	end,
+});
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
 
 app.CreateItemSource = function(sourceID, itemID, t)
@@ -12163,9 +12237,6 @@ itemHarvesterFields.text = function(t)
 			if not app.IsBoP(info) then
 				info.b = nil;
 			end
-			if info.q and info.q < 1 then
-				info.q = nil;
-			end
 			if info.iLvl and info.iLvl < 2 then
 				info.iLvl = nil;
 			end
@@ -12441,7 +12512,7 @@ app.ImportRawLink = function(group, rawlink)
 			if (tonumber(bonusCount) or 0) > 0 then
 				-- Don't use bonusID 3524 as an actual bonusID
 				local b = bonusID1 and tonumber(bonusID1) or nil;
-				if b ~= 3524 then
+				if b ~= 3524 and b ~= 0 then
 					group.bonusID = b;
 				end
 			end
@@ -12465,7 +12536,7 @@ app.SaveHarvestSource = function(data)
 			AllTheThingsHarvestItems[itemID] = item;
 		end
 		local bonusID = data.bonusID;
-		if bonusID then
+		if bonusID and bonusID > 0 then
 			local bonuses = item.bonuses;
 			if not bonuses then
 				bonuses = {};
@@ -13038,6 +13109,12 @@ local AlternateDataTypes = {
 		local name = GetCategoryInfo(id);
 		t.name = name;
 	end,
+	["crit"] = function(t, id)
+		local ach = math.floor(id);
+		local crit = math.floor(100 * (id - ach) + 0.005);
+		local name = GetAchievementCriteriaInfo(ach, crit);
+		t.name = name;
+	end,
 };
 local cache = app.CreateCache("headerCode");
 local function CacheInfo(t, field)
@@ -13457,11 +13534,14 @@ local fields = {
 		return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
 	end,
 	["lifetimeRank"] = function(t)
-		return select(3, GetPVPLifetimeStats());
+		return select(3, GetPVPLifetimeStats()) or 0;
 	end,
-	["collectible"] = app.ReturnFalse,
+	["collectible"] = app.ReturnTrue,
 	["collected"] = function(t)
-		return t.lifetimeRank >= t.pvpRankID;
+		return t.lifetimeRank >= (t.pvpRankID + 4);
+	end,
+	["u"] = function(t)
+		return 2;
 	end,
 	["OnTooltip"] = function(t)
 		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
@@ -14761,8 +14841,13 @@ local function TopLevelUpdateGroup(group)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 -- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,
--- then triggering a 1/2 second delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
+-- then triggering a delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
 -- and was the cause for the update
+local DGUDelay = 0.5;
+-- Allows changing the Delayed group update frequency between 0.1 - 2 seconds, mainly for testing
+app.SetDGUDelay = function(delay)
+	DGUDelay = math.min(2, math.max(0.1, tonumber(delay)));
+end
 local function DirectGroupUpdate(group, got)
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	if not app.RecursiveDirectGroupRequirementsFilter(group) then
@@ -14804,7 +14889,7 @@ local function DirectGroupUpdate(group, got)
 	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
-		DelayedCallback(window.Update, 0.5, window, window.isQuestChain, got);
+		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
@@ -15298,7 +15383,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
-								newItem.collectible = (otherSourceInfo.quality or 0) > 1;
+								-- newItem.collectible = otherSourceInfo.quality ~= nil;
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
 									newItem.collected = true;
@@ -15316,6 +15401,7 @@ function app:CreateMiniListForGroup(group)
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g,
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["skipFilling"] = true,
 						["sourceIgnored"] = true,
 					};
 				else
@@ -15324,6 +15410,7 @@ function app:CreateMiniListForGroup(group)
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["skipFilling"] = true,
 						["sourceIgnored"] = true,
 					};
 				end
@@ -15377,7 +15464,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, search);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
+							if otherSourceInfo then
 								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
@@ -15389,8 +15476,16 @@ function app:CreateMiniListForGroup(group)
 						end
 					end
 					-- add the group showing the related Set information for this popout
-					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g }) }
-					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g })) end
+					if not group.g then group.g = { app.CreateGearSet(setID, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFilling"] = true,
+						["g"] = g }) }
+					else tinsert(group.g, app.CreateGearSet(setID, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFilling"] = true,
+						["g"] = g })) end
 				end
 			end
 		end
@@ -15571,6 +15666,7 @@ function app:CreateMiniListForGroup(group)
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 					["OnUpdate"] = app.AlwaysShowUpdate,
 					["sourceIgnored"] = true,
+					["skipFilling"] = true,
 					-- copy any sourceQuests into the header incase the root is not actually a quest
 					["sourceQuests"] = root.sourceQuests,
 				};
@@ -15728,38 +15824,38 @@ local function SetRowData(self, row, data)
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
 		-- WARNING: DEV ONLY START
-		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
+		-- no or bad sourceID or requested to reSource
 		elseif data.reSource then
-			if not data.q or data.q > 1 then
-				-- If it doesn't, the source ID will need to be harvested.
-				local s, success = GetSourceID(text) or (data.artifactID and data.s);
-				if s and s > 0 then
-					-- only save the source if it is different than what we already have
-					if not data.s or data.s < 1 or data.s ~= s or (data.artifactID and data.s) then
-						print("SourceID Update",data.text,data.s,"=>",s);
-						-- print(GetItemInfo(text))
-						data.s = s;
-						if data.collected then
-							data.parent.progress = data.parent.progress + 1;
-						end
-						if data.artifactID then
-							local artifact = AllTheThingsArtifactsItems[data.artifactID];
-							if not artifact then
-								artifact = {};
-							end
-							artifact[data.isOffHand and 1 or 2] = s;
-							AllTheThingsArtifactsItems[data.artifactID] = artifact;
-						else
-							app.SaveHarvestSource(data);
-						end
+			-- If it doesn't, the source ID will need to be harvested.
+			local s, success = GetSourceID(text) or (data.artifactID and data.s);
+			if s and s > 0 then
+				-- only save the source if it is different than what we already have, or being forced
+				if not data.s or data.s < 1 or data.s ~= s or data.artifactID then
+					print("SourceID Update",text,data.modItemID,data.s,"=>",s);
+					-- print(GetItemInfo(text))
+					data.s = s;
+					if data.collected then
+						data.parent.progress = data.parent.progress + 1;
 					end
-				elseif success then
-					print("Success without a SourceID", text);
-				else
-					-- print("NARP", text);
-					data.s = nil;
-					data.parent.total = data.parent.total - 1;
+					if data.artifactID then
+						local artifact = AllTheThingsArtifactsItems[data.artifactID];
+						if not artifact then
+							artifact = {};
+						end
+						artifact[data.isOffHand and 1 or 2] = s;
+						AllTheThingsArtifactsItems[data.artifactID] = artifact;
+					else
+						app.SaveHarvestSource(data);
+					end
+				elseif data.forceSource then
+					app.SaveHarvestSource(data);
 				end
+			elseif success then
+				print("Success without a SourceID", text);
+			else
+				-- print("NARP", text);
+				data.s = nil;
+				data.parent.total = data.parent.total - 1;
 			end
 			data.reSource = nil;
 		end
@@ -17458,7 +17554,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar:SetValue(1);
 		container:Show();
 		window:Update();
-		app.ResetCustomWindowParam(suffix);
 	end
 	return window;
 end
@@ -17961,6 +18056,17 @@ function app:GetDataCache()
 		db.text = BATTLE_PET_SOURCE_10;
 		db.name = db.text;
 		db.icon = app.asset("Category_InGameShop");
+		tinsert(g, db);
+	end
+
+	-- Trading Post
+	if app.Categories.TradingPost then
+		db = {};
+		db.g = app.Categories.TradingPost;
+		db.expanded = false;
+		db.text = L["TRADING_POST"];	-- Probably some global string Later
+		db.name = db.text;
+		db.icon = app.asset("Category_TradingPost");
 		tinsert(g, db);
 	end
 
@@ -18767,18 +18873,21 @@ function app:CustomWindowUpdate(suffix)
 end
 -- Retrieves the value of the specific attribute for the given window suffix
 app.GetCustomWindowParam = function(suffix, name)
-	local params = customWindowUpdates.params;
-	if params[suffix] then return params[suffix][name] end
+	local params = customWindowUpdates.params[suffix];
+	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
+	return params and params[name];
 end
 -- Defines the value of the specific attribute for the given window suffix
 app.SetCustomWindowParam = function(suffix, name, value)
 	local params = customWindowUpdates.params;
 	if params[suffix] then params[suffix][name] = value;
 	else params[suffix] = { [name] = value } end
+	-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
 end
 -- Removes the custom attributes for a given window suffix
 app.ResetCustomWindowParam = function(suffix)
 	customWindowUpdates.params[suffix] = nil;
+	-- app.PrintDebug("ResetCustomWindowParam",suffix)
 end
 customWindowUpdates["AchievementHarvester"] = function(self, ...)
 	-- /run AllTheThings:GetWindow("AchievementHarvester"):Toggle();
@@ -18824,7 +18933,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 				end
 			end;
 			-- add a bunch of raw, delay-loaded items in order into the window
-			local groupCount = math.ceil(self.Limit / self.PartitionSize);
+			local groupCount = math.floor(self.Limit / self.PartitionSize);
 			local g, overrides = {}, {visible=true};
 			local partition, partitionStart, partitionGroups;
 			local dlo, obj = app.DelayLoadedObject, app.CreateAchievementHarvester;
@@ -19872,58 +19981,41 @@ customWindowUpdates["Harvester"] = function(self, force)
 			db.back = 1;
 
 			local harvested = {};
-			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
-			self.min = minID;
-			self.max = maxID;
+			local oldRetries = app.MaximumItemInfoRetries;
+			app.PrintDebug(self.Suffix, app.GetCustomWindowParam(self.Suffix, "min"))
+			local min = app.GetCustomWindowParam(self.Suffix, "min") or 0;
+			local max = app.GetCustomWindowParam(self.Suffix, "max") or 999999;
+			local force = app.GetCustomWindowParam(self.Suffix, "force");
+			app.print("Set Harvest ItemID Bounds:",min,max);
 			app.MaximumItemInfoRetries = 10;
+			local g = {};
+			local i,m,b;
+			local modItemID;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				-- ignore items that dont meet the customHarvest range if specified
-				if (not minID or minID <= itemID) and (not maxID or itemID <= maxID) then
+				if min <= itemID and itemID <= max then
 					-- clean any cached modID from the itemID
-					itemID = GetItemIDAndModID(itemID);
-					-- print("Checking for Source",itemID)
-					for i,group in ipairs(groups) do
+					-- app.PrintDebug("Check",itemID)
+					-- clone the Item for this item cache
+					for _,item in ipairs(groups) do
 						-- only use the matching cached Item
-						if group.itemID == itemID and not harvested[group.modItemID or itemID] then
-							harvested[group.modItemID or itemID] = true;
-							-- print("sourceID harvest",group.modItemID)
-							if group.bonusID then
-								-- Harvest using a BonusID?
-								-- print("Check w/ Bonus",itemID,group.bonusID)
-								if (not VerifySourceID(group)) then
-									-- print("Harvest w/ Bonus",itemID,group.bonusID)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = group.modID, bonusID = group.bonusID}));
-								end
-							elseif group.modID then
-								-- Harvest using a ModID?
-								-- print("Check w/ Mod",itemID,group.modID)
-								if (not VerifySourceID(group)) then
-									-- print("Harvest w/ Mod",itemID,group.modID)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = group.modID}));
-								end
-							else
-								-- Harvest with no special ID?
-								-- print("Check Base",itemID)
-								if (not VerifySourceID(group)) then
-									-- print("Harvest",itemID)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID)}));
-								end
-							end
-						-- else print("Cached skip",group.key,group[group.key]);
+						modItemID = item.modItemID or item.itemID;
+						if not harvested[modItemID] then
+							harvested[modItemID] = true;
+							i,m,b = GetItemIDAndModID(modItemID);
+							-- app.PrintDebug("Harvest",modItemID,i,m,b)
+							tinsert(g, app.CreateItem(tonumber(i), {visible = true, reSource = true, forceSource = force, s = item.s, modID = m, bonusID = b}));
 						end
 					end
 				end
 			end
 			wipe(harvested);
-			-- remove the custom harvest flags
-			app.customHarvestMin = nil;
-			app.customHarvestMax = nil;
 			-- add artifacts
 			for artifactID,groups in pairs(fieldCache["artifactID"]) do
 				for _,group in pairs(groups) do
 					if not rawget(group, "s") then
-						tinsert(db.g, setmetatable({
+						tinsert(g, setmetatable({
 							visible = true,
 							artifactID = tonumber(artifactID),
 							silentItemID = group.silentItemID,
@@ -19934,9 +20026,10 @@ customWindowUpdates["Harvester"] = function(self, force)
 				end
 			end
 			-- total doesnt change
-			local total = #db.g;
+			local total = #g;
 			db.total = total;
 			db.progress = 0;
+			db.g = g;
 			self:SetData(db);
 			self:BuildData();
 			self.ScrollBar:SetValue(1);
@@ -19968,14 +20061,15 @@ customWindowUpdates["Harvester"] = function(self, force)
 						app.Settings:ToggleDebugMode();
 						self.forcedDebug = nil;
 					end
-					app.print("Source Harvest Complete! ItemIDs:",self.min,"->",self.max);
+					app.print("Source Harvest Complete! ItemIDs:",min,"->",max);
 					-- revert the number of retries to retrieve item information
 					app.MaximumItemInfoRetries = oldRetries or 400;
-					-- TODO: reset the window so it can be used to harvest again without reloading, only via the command, not another update
+					-- reset the window so it can be used to harvest again without reloading, only via the command, not another update
 					self.UpdateDone = nil;
-					-- self.initialized = nil;
-					-- self:SetData(nil);
+					self:SetData(nil);
 					self:BaseUpdate();
+					self.initialized = nil;
+					self:Toggle();
 					return;
 				end
 				if not rowSourced then
@@ -20027,16 +20121,11 @@ customWindowUpdates["SourceFinder"] = function(self)
 												local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
 												itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID,
 												isCraftingReagent = GetItemInfo(itemID);
-												if itemRarity and itemRarity < 2 then
-													source.fails = source.fails + 1;
-													self.shouldFullRefresh = true;
-												else
-													local searchResults = iCache[itemID];
-													if searchResults and #searchResults > 0 then
-														if not searchResults[1].collectible then
-															source.fails = source.fails + 1;
-															self.shouldFullRefresh = true;
-														end
+												local searchResults = iCache[itemID];
+												if searchResults and #searchResults > 0 then
+													if not searchResults[1].collectible then
+														source.fails = source.fails + 1;
+														self.shouldFullRefresh = true;
 													end
 												end
 											else
@@ -21243,34 +21332,54 @@ customWindowUpdates["Sync"] = function(self)
 		self:BaseUpdate(true);
 	end
 end;
-customWindowUpdates["quests"] = function(self, force, got)
+customWindowUpdates["list"] = function(self, force, got)
 	if not self.initialized then
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
 		self.initialized = true;
-		self.PartitionSize = 1000;
-		self.Limit = 80000;
 		force = true;
 		local HaveQuestData = HaveQuestData;
-		local DGU, Run = app.DirectGroupUpdate, app.FunctionRunner.Run;
+		local DGU, SearchObject = app.DirectGroupUpdate, app.SearchForObject;
 
 		-- custom params for initialization
-		local onlyMissing = app.GetCustomWindowParam("quests", "missing");
-		local onlyCached = app.GetCustomWindowParam("quests", "cached");
+		local dataType = (app.GetCustomWindowParam("list", "type") or "quest").."ID";
+		local onlyMissing = app.GetCustomWindowParam("list", "missing");
+		local onlyCached = app.GetCustomWindowParam("list", "cached");
+		local harvesting = app.GetCustomWindowParam("list", "harvesting");
+		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
+		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
 		-- print("Quests - onlyMissing",onlyMissing)
+
+		-- manual type adjustments to match internal use
+		if dataType == "sourceID" or dataType == "sID" then
+			dataType = "s";
+		end
+
+		local ObjectTypeFuncs = {
+			["questID"] = GetPopulatedQuestObject,
+		};
+
+		local function CreateTypeObject(type, id)
+			local func = ObjectTypeFuncs[type];
+			if func then
+				return func(id);
+			end
+			-- allow arbitrary type object constructors by searching for the field and cloning the found data
+			return CreateObject(SearchObject(type, id) or {[type]=id});
+		end
 
 		-- info about the Window
 		self:SetData({
-			["text"] = L["QUESTS_CHECKBOX"],
+			["text"] = "Full Data List - "..(dataType or "None"),
 			["icon"] = app.asset("Interface_Quest_header"),
-			["description"] = L["QUESTS_DESC"].."\n\n1 - "..self.Limit,
+			["description"] = "1 - "..self.Limit,
 			["visible"] = true,
 			["expanded"] = true,
 			["indent"] = 0,
 		});
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
-		local groupCount = self.Limit / self.PartitionSize - 1;
+		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local g, overrides = {}, {
 			visible = true,
 			indent = 2,
@@ -21278,19 +21387,20 @@ customWindowUpdates["quests"] = function(self, force, got)
 				return o._missing and 1 or 0;
 			end,
 			text = function(o, key)
-				if o.text and o.text ~= RETRIEVING_DATA then
-					return "#"..o.questID..": "..o.text;
+				local text, key = o.text, o.key;
+				if text and text ~= RETRIEVING_DATA then
+					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,
 			OnLoad = function(self)
 				-- app.PrintDebug("DGU-OnLoad:",self.hash)
-				Run(DGU, self);
+				DGU(self);
 			end,
 		};
 		if onlyMissing then
 			if onlyCached then
 				overrides.visible = function(o, key)
-					return o._missing and HaveQuestData(o.questID);
+					return o._missing and (o.questID and HaveQuestData(o.questID));
 				end
 			else
 				overrides.visible = function(o, key)
@@ -21298,12 +21408,21 @@ customWindowUpdates["quests"] = function(self, force, got)
 				end
 			end
 		end
+		if harvesting then
+			-- allows the group to be removed from the window if it has been properly loaded
+			overrides.visible = function(o)
+				-- __o is set in the DLO when the object is built
+				-- app.PrintDebug(o.hash,o.text)
+				if o.text == RETRIEVING_DATA then return true; end
+				return;
+			end
+		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=0,groupCount,1 do
 			partitionStart = j * self.PartitionSize;
 			partitionGroups = {};
-			-- define a sub-group for a range of quests
+			-- define a sub-group for a range of things
 			partition = {
 				["text"] = tostring(partitionStart + 1).."+",
 				["icon"] = app.asset("Interface_Quest_header"),
@@ -21311,7 +21430,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 				["g"] = partitionGroups,
 			};
 			for i=1,self.PartitionSize,1 do
-				tinsert(partitionGroups, dlo(GetPopulatedQuestObject, "text", overrides, partitionStart + i));
+				tinsert(partitionGroups, dlo(CreateTypeObject, "text", overrides, dataType, partitionStart + i));
 			end
 			tinsert(g, partition);
 		end
@@ -24171,6 +24290,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		cmd = args[1];
 		-- app.print(args)
 		-- first arg is always the window/command to execute
+		app.ResetCustomWindowParam(cmd);
 		for k=2,#args do
 			local customArg, customValue = args[k];
 			customArg, customValue = strsplit("=",customArg);
@@ -24198,8 +24318,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
 			app:GetWindow("Random"):Toggle();
 			return true;
-		elseif cmd == "quests" then
-			app:GetWindow("quests"):Toggle();
+		elseif cmd == "list" then
+			app:GetWindow("list"):Toggle();
 			return true;
 		elseif cmd == "rwp" then
 			app:GetWindow("RWP"):Toggle();
@@ -24327,10 +24447,10 @@ SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	if cmd then
-		local min,max,reset = strsplit(",",cmd);
-		app.customHarvestMin = tonumber(min) or 1;
-		app.customHarvestMax = tonumber(max) or 210000;
-		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
+		local min,max,reset,force = strsplit(",",cmd);
+		app.SetCustomWindowParam("Harvester", "min", tonumber(min));
+		app.SetCustomWindowParam("Harvester", "max", tonumber(max));
+		app.SetCustomWindowParam("Harvester", "force", force and true);
 		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
 		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
 		if reset then app.print("Harvest Data Reset!"); end
@@ -24746,17 +24866,17 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 end
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
 app.events.CRITERIA_UPDATE = function(...)
-	-- print("CRITERIA_UPDATE",...)
+	-- app.PrintDebug("CRITERIA_UPDATE",...)
 	-- sometimes triggers many times at once but RefreshQuestInfo unhooks CRITERIA_UPDATE until quest refresh completes
 	app.RefreshQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	-- print("QUEST_TURNED_IN")
+	-- app.PrintDebug("QUEST_TURNED_IN")
 	app.LastQuestTurnedIn = questID;
 	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	-- print("QUEST_LOG_UPDATE")
+	-- app.PrintDebug("QUEST_LOG_UPDATE")
 	app.RefreshQuestInfo();
 end
 -- app.events.QUEST_FINISHED = function()
@@ -24769,7 +24889,7 @@ app.events.QUEST_REMOVED = function(questID)
 	app:RefreshWindows();
 end
 app.events.QUEST_ACCEPTED = function(questID)
-	-- print("QUEST_ACCEPTED",questID)
+	-- app.PrintDebug("QUEST_ACCEPTED",questID)
 	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq, title;

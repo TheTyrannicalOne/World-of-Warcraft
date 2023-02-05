@@ -502,9 +502,9 @@ function Spy:CreateMainWindow()
 	
 		local theFrame = Spy.MainWindow
 		theFrame:SetResizable(true)
---		theFrame:SetMinResize(90, 34) 		Removed in patch 10.0.0
---		theFrame:SetMaxResize(300, 264) 	Removed in patch 10.0.0
-		theFrame:SetResizeBounds(90, 34, 300, 264) 
+--		theFrame:SetMinResize(90, 34)
+--		theFrame:SetMaxResize(300, 264)
+		theFrame:SetResizeBounds(90, 34, 300, 264)
 		theFrame:SetScript("OnSizeChanged",
 		function(self)
 			if (self.isResizing) then
@@ -1347,7 +1347,7 @@ function Spy:CreateKoSButton()
 end
 
 --hooksecurefunc("TargetFrame_Update", function()
-hooksecurefunc(TargetFrame, "Update", function() -- Patch 10.0 change
+hooksecurefunc(TargetFrame, "Update", function()
 	if Spy.db.profile.ShowKoSButton then
 		if (UnitIsEnemy("player","target") and UnitIsPlayer("target")) then
 			local name = GetUnitName("target", true)	

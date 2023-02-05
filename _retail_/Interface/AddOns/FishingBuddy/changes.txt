@@ -1,3 +1,17 @@
+Version 1.20.2
+- Works with the fan-fix version of Outfitter
+
+Version 1.20.1
+- Remove outdated equpment event
+
+Version 1.20
+- Complete rewrite for improved code
+- Better tracking of fishing, options to come
+
+Version 1.19.4
+- Most of the toys and bobbers work now
+- Should be better behaved after entering combat
+
 Version 1.19.3
 - Revert CallbackHandler change
 

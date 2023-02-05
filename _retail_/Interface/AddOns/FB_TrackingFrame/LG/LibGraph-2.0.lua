@@ -1,6 +1,6 @@
 --[[
 Name: LibGraph-2.0
-Revision: $Rev: 60 $
+Revision: $Rev: 68 $
 Author(s): Cryect (cryect@gmail.com), Xinhuan
 Website: http://www.wowace.com/
 Documentation: http://www.wowace.com/wiki/GraphLib
@@ -11,7 +11,7 @@ Description: Allows for easy creation of graphs
 --Thanks to Nelson Minar for catching several errors where width was being used instead of height (damn copy and paste >_>)
 
 local major = "LibGraph-2.0"
-local minor = 90000 + tonumber(("$Revision: 60 $"):match("(%d+)"))
+local minor = 90000 + tonumber(("$Revision: 68 $"):match("(%d+)"))
 
 
 --Search for just Addon\\ at the front since the interface part often gets trimmed
@@ -20,6 +20,7 @@ local minor = 90000 + tonumber(("$Revision: 60 $"):match("(%d+)"))
 local TextureDirectory
 do
 	local path = string.match(debugstack(1, 1, 0), "AddOns[\\/](.+)LibGraph%-2%.0%.lua")
+
 	if path then
 		TextureDirectory = "Interface\\AddOns\\"..path
 	else
@@ -27,11 +28,30 @@ do
 	end
 end
 
-
 if not LibStub then error(major .. " requires LibStub") end
 
 local lib, oldLibMinor = LibStub:NewLibrary(major, minor)
 if not lib then return end
+
+--manually set the path in case want to use custom textures
+function lib:SetTextureDirectory(path)
+	-- Disabled as this function is not safe across runtime library upgrades.
+	--
+	--  1. If a texture directory is set by Addon A and then Addon B loads a
+	--     newer version of the library, the configured path is lost.
+	--
+	--  2. If Addon B loads a newer version of the library and then Addon A
+	--     loads an older version and customizes the path, it may set the path
+	--     to a directory with missing textures that were only added in the
+	--     newer version.
+	--
+	--  3. If the library can't figure out the path to assets automatically
+	--     it would error before defining this function anyway, preventing
+	--     any "manual" fixups for specifying the texture path.
+
+	-- assert(type(path) == "string", "Usage: lib:SetTextureDirectory(string: path)")
+	-- TextureDirectory = path
+end
 
 local GraphFunctions = {}
 

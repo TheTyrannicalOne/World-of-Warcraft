@@ -22,7 +22,7 @@
 		<Scripts>
 			<OnClick>
 				<!-- This function will look for global functions with the name of the parent -->
-				FishingMenuButton_OnClick(self);
+				FBEnvironment.FishingMenuButton_OnClick(self);
 			</OnClick>
 		</Scripts>		
 		<ButtonText name="$parentTitleText" inherits="GameFontNormalSmallLeft" justifyH="LEFT" parentKey="text">

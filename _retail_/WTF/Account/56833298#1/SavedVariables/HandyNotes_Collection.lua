@@ -8,8 +8,8 @@ HandyNotes_CollectionDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
@@ -17,19 +17,7 @@ HandyNotes_CollectionDB = {
 	},
 }
 HandyNotes_CollectionCACHE = {
-	["npcName"] = {
-		[81330] = "Warleader Tome",
-	},
-	["itemLink"] = {
-		[121815] = "|cffa335ee|Hitem:121815::::::::70:71:::::::::|h[Voidtalon of the Dark Star]|h|r",
-		[120276] = "|cff0070dd|Hitem:120276::::::::70:71:::::::::|h[Outrider's Bridle Chain]|h|r",
-		["121815"] = "|cffa335ee|Hitem:121815::::::::70:71:::::::::|h[Voidtalon of the Dark Star]|h|r",
-	},
-	["version"] = 47631,
-	["itemIcon"] = {
-		[121815] = "|T1094600:0:0:0:-1|t ",
-		[120276] = "|T971291:0:0:0:-1|t ",
-	},
+	["version"] = 47936,
 }
 HandyNotes_CollectionSTATUS = {
 	["mountId"] = {

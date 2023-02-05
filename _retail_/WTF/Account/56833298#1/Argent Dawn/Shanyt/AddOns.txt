@@ -479,3 +479,5 @@ WoWPro_Achievements: enabled
 WoWPro_Dailies: enabled
 WoWPro_Profession: enabled
 WoWPro_WorldEvents: enabled
+ElvUI_ExtraDataTexts: disabled
+ElvUI_SecondsToBuff: disabled

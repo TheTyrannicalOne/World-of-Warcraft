@@ -20,6 +20,9 @@ if L then
 	L.shattering_impact = "Войда"
 	L.concussive_slam = "Танк фронтал"
 	L.infused_fallout = "Пыль"
+
+	--L.custom_on_repeating_fallout = "Repeating Infused Fallout"
+	--L.custom_on_repeating_fallout_desc = "Repeating Infused Fallout say messages with icon {rt7} to find a partner."
 end
 
 L = BigWigs:NewBossLocale("The Primal Council", "ruRU")
@@ -48,6 +51,8 @@ if L then
 	L.webs = "Сети"
 	L.web = "Паутина"
 	L.gossamer_burst = "Притягивание"
+	-- L.gossamer_burst_castbar = "Gossamer Burst Cast Bar / Countdown"
+	-- L.gossamer_burst_castbar_desc = "A Cast Bar for Gossamer Burst with Countdown enabled by default."
 	L.repelling_burst = "Отталкивание"
 end
 

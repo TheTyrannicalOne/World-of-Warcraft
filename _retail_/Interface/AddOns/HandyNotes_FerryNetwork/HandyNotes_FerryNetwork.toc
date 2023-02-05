@@ -1,6 +1,6 @@
-## Interface: 100002
+## Interface: 100005
 ## Title: HandyNotes_FerryNetwork
-## Version: v1.3.6
+## Version: v1.3.7
 ## Notes: HandyNotes plugin for Alliance players which shows Ferry Master Network 'flight' path locations on the world map
 ## Author: Numy
 ## OptionalDeps: TomTom

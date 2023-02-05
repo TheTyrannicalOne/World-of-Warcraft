@@ -6,21 +6,21 @@ DataStore_AgendaDB = {
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 	},
 	["global"] = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2023-01-24",
+			["NextWeeklyReset"] = "2023-02-07",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
@@ -63,7 +63,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648345057,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1673986322,
+				["lastUpdate"] = 1675573685,
 			},
 		},
 	},

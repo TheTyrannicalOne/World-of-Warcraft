@@ -1,5 +1,8 @@
 -- Display some information about the people who helped
 -- Some information about whom to thank
+local addonName, FBStorage = ...
+local  FBI = FBStorage
+local FBConstants = FBI.FBConstants;
 
 local credits = {};
 
@@ -399,7 +402,7 @@ local AboutOptions = {
 };
 
 local function OnEvent(self, _, ...)
-	FishingBuddy.OptionsFrame.HandleOptions(FBConstants.ABOUT_TAB, "Interface\\Icons\\Inv_Misc_Questionmark", AboutOptions, nil, nil, true);
+	FBI.OptionsFrame.HandleOptions(FBConstants.ABOUT_TAB, "Interface\\Icons\\Inv_Misc_Questionmark", AboutOptions, nil, nil, true);
 	self:UnregisterEvent("VARIABLES_LOADED");
 end
 

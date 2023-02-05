@@ -1,6 +1,6 @@
 --[[
 Name: LibTourist-3.0
-Revision: $Rev: 282 $
+Revision: $Rev: 284 $
 Author(s): Odica (owner), originally created by ckknight and Arrowmaster
 Documentation: https://www.wowace.com/projects/libtourist-3-0/pages/api-reference
 SVN: svn://svn.wowace.com/wow/libtourist-3-0/mainline/trunk
@@ -9,7 +9,7 @@ License: MIT
 ]]
 
 local MAJOR_VERSION = "LibTourist-3.0"
-local MINOR_VERSION = 90000 + tonumber(("$Revision: 282 $"):match("(%d+)"))
+local MINOR_VERSION = 90000 + tonumber(("$Revision: 284 $"):match("(%d+)"))
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 local C_Map = C_Map
@@ -4716,7 +4716,18 @@ do
 	transports["EREDATH_ANTORANWASTES_TELEPORT"] = string.format(X_Y_TELEPORT, BZ["Eredath"], BZ["Antoran Wastes"])
 	transports["ANTORANWASTES_EREDATH_TELEPORT"] = string.format(X_Y_TELEPORT, BZ["Antoran Wastes"], BZ["Eredath"])
 	
+	-- Dragon Flight portals
+	transports["VALDRAKKEN_ORGRIMMAR_PORTAL"] = string.format(X_Y_PORTAL, BZ["Valdrakken"], BZ["Orgrimmar"])
+	transports["ORGRIMMAR_VALDRAKKEN_PORTAL"] = string.format(X_Y_PORTAL, BZ["Orgrimmar"], BZ["Valdrakken"])
+	transports["VALDRAKKEN_STORMWIND_PORTAL"] = string.format(X_Y_PORTAL, BZ["Valdrakken"], BZ["Stormwind City"])
+	transports["STORMWIND_VALDRAKKEN_PORTAL"] = string.format(X_Y_PORTAL, BZ["Stormwind City"], BZ["Valdrakken"])
 
+	transports["VALDRAKKEN_SHADOWMOONDRAENOR_PORTAL"] = string.format(X_Y_PORTAL, BZ["Valdrakken"], BZ["Shadowmoon Valley"].." ("..BZ["Draenor"]..")")
+	transports["VALDRAKKEN_DALARANBROKENISLES_PORTAL"] = string.format(X_Y_PORTAL, BZ["Valdrakken"], BZ["Dalaran"].." ("..BZ["Broken Isles"]..")")
+	transports["VALDRAKKEN_JADEFOREST_PORTAL"] = string.format(X_Y_PORTAL, BZ["Valdrakken"], BZ["The Jade Forest"])
+
+	
+	
 	
 	local zones = {}
 
@@ -6322,6 +6333,66 @@ do
 	}
 	
 	
+	-- Dragon Isles
+
+	zones[transports["ORGRIMMAR_VALDRAKKEN_PORTAL"]] = {
+		paths = {
+			[BZ["Valdrakken"]] = true,
+		},
+		faction = "Horde",
+		type = "Portal",
+	}
+
+	zones[transports["VALDRAKKEN_ORGRIMMAR_PORTAL"]] = {
+		paths = {
+			[BZ["Orgrimmar"]] = true,
+		},
+		faction = "Horde",
+		type = "Portal",
+	}
+	
+	zones[transports["STORMWIND_VALDRAKKEN_PORTAL"]] = {
+		paths = {
+			[BZ["Valdrakken"]] = true,
+		},
+		faction = "Alliance",
+		type = "Portal",
+	}
+
+	zones[transports["VALDRAKKEN_STORMWIND_PORTAL"]] = {
+		paths = {
+			[BZ["Stormwind City"]] = true,
+		},
+		faction = "Alliance",
+		type = "Portal",
+	}
+	
+	
+	zones[transports["VALDRAKKEN_SHADOWMOONDRAENOR_PORTAL"]] = {
+		paths = {
+			[BZ["Shadowmoon Valley"].." ("..BZ["Draenor"]..")"] = true,
+		},
+		type = "Portal",
+	}
+	
+	zones[transports["VALDRAKKEN_DALARANBROKENISLES_PORTAL"]] = {
+		paths = {
+			[BZ["Dalaran"].." ("..BZ["Broken Isles"]..")"] = true,
+		},
+		type = "Portal",
+	}
+	
+	zones[transports["VALDRAKKEN_JADEFOREST_PORTAL"]] = {
+		paths = {
+			[BZ["The Jade Forest"]] = true,
+		},
+		type = "Portal",
+	}
+	
+	
+	
+	
+	
 	-- ZONES, INSTANCES AND COMPLEXES ---------------------------------------------------------
 
 	-- ===============ZONES=================
@@ -6357,7 +6428,8 @@ do
 			[transports["STORMWIND_COT_PORTAL"]] = true,
 			[transports["STORMWIND_AZSUNA_PORTAL"]] = true,
 			[transports["STORMWIND_ORIBOS_PORTAL"]] = true,
-			--[transports["STORMWIND_WAKINGSHORES_BOAT"]] = true,
+			[transports["STORMWIND_VALDRAKKEN_PORTAL"]] = true,
+			[transports["STORMWIND_WAKINGSHORES_BOAT"]] = true,
 		},
 		flightnodes = {
 			[2] = true,      -- Stormwind, Elwynn (A)
@@ -7297,7 +7369,8 @@ do
 			[transports["ORGRIMMAR_AZSUNA_PORTAL"]] = true,
 			[transports["ORGRIMMAR_ORIBOS_PORTAL"]] = true,
 			[transports["ORGRIMMAR_COT_PORTAL"]] = true,
-			--[transports["ORGRIMMAR_WAKINGSHORES_ZEPPELIN"]] = true,
+			[transports["ORGRIMMAR_VALDRAKKEN_PORTAL"]] = true,
+			[transports["ORGRIMMAR_WAKINGSHORES_ZEPPELIN"]] = true,
 		},
 		flightnodes = {
 			[23] = true,     -- Orgrimmar, Durotar (H)
@@ -10137,6 +10210,11 @@ do
 	zones[BZ["Valdrakken"]] = {
 		paths = {
 			[BZ["Thaldraszus"]] = true,
+			[transports["VALDRAKKEN_ORGRIMMAR_PORTAL"]] = true,
+			[transports["VALDRAKKEN_STORMWIND_PORTAL"]] = true,
+			[transports["VALDRAKKEN_SHADOWMOONDRAENOR_PORTAL"]] = true,
+			[transports["VALDRAKKEN_DALARANBROKENISLES_PORTAL"]] = true,
+			[transports["VALDRAKKEN_JADEFOREST_PORTAL"]] = true,
 		},
 		flightnodes = {
 			[2810] = true,   -- Valdrakken, Thaldraszus (N)

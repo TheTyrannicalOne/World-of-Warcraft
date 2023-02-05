@@ -8,11 +8,14 @@ local mod, CL = BigWigs:NewBoss("Court of Stars Trash", 1571)
 if not mod then return end
 mod.displayName = CL.trash
 mod:RegisterEnableMob(
+	104251, -- Duskwatch Sentry
+	107073, -- Duskwatch Reinforcement
 	104246, -- Duskwatch Guard
 	111563, -- Duskwatch Guard
 	104270, -- Guardian Construct
 	104278, -- Felbound Enforcer
 	104277, -- Legion Hound
+	104300, -- Shadow Mistress
 	107435, -- Gerenth the Vile & Suspicious Noble
 	104273, -- Jazshariu
 	104275, -- Imacu'tya
@@ -45,6 +48,7 @@ mod:RegisterEnableMob(
 -- Locals
 --
 
+local knownClues, clueCount = {}, 0
 local englishSpyFound = "I found the spy!"
 local englishClueNames = {
 	"Cape",
@@ -69,6 +73,8 @@ local englishClueNames = {
 
 local L = mod:GetLocale()
 if L then
+	L.duskwatch_sentry = "Duskwatch Sentry"
+	L.duskwatch_reinforcement = "Duskwatch Reinforcement"
 	L.Guard = "Duskwatch Guard"
 	L.Construct = "Guardian Construct"
 	L.Enforcer = "Felbound Enforcer"
@@ -133,6 +139,8 @@ function mod:GetOptions()
 		"announce_buff_items",
 		"custom_on_use_buff_items",
 		{"spy_helper", "INFOBOX"},
+		210261, -- Sound Alarm (Duskwatch Sentry)
+		212773, -- Subdue (Duskwatch Reinforcement)
 		209027, -- Quelling Strike (Duskwatch Guard)
 		209033, -- Fortification (Duskwatch Guard)
 		225100, -- Charging Station (Guardian Construct)
@@ -142,6 +150,7 @@ function mod:GetOptions()
 		211464, -- Fel Detonation (Felbound Enforcer)
 		211391, -- Felblaze Puddle (Legion Hound)
 		211470, -- Bewitch (Shadow Mistress)
+		{211473, "TANK_HEALER"}, -- Shadow Slash (Shadow Mistress)
 		214692, -- Shadow Bolt Volley (Gerenth the Vile)
 		214688, -- Carrion Swarm (Gerenth the Vile)
 		214690, -- Cripple (Gerenth the Vile)
@@ -167,6 +176,8 @@ function mod:GetOptions()
 		214697, -- Picking Up (Arcane Keys)
 	}, {
 		["announce_buff_items"] = "general",
+		[210261] = L.duskwatch_sentry,
+		[212773] = L.duskwatch_reinforcement,
 		[209027] = L.Guard,
 		[225100] = L.Construct,
 		[211464] = L.Enforcer,
@@ -190,6 +201,13 @@ function mod:GetOptions()
 end
 
 function mod:OnBossEnable()
+	-- Duskwatch Sentry
+	self:Log("SPELL_CAST_START", "SoundAlarm", 210261)
+
+	-- Duskwatch Reinforcement
+	self:Log("SPELL_CAST_START", "Subdue", 212773)
+	self:Log("SPELL_AURA_APPLIED", "SubdueApplied", 212773)
+
 	-- Charging Station, Shadow Bolt Volley, Carrion Swarm, Drain Magic, Wild Detonation, Nightfall Orb, Seal Magic, Fortification, Uncontrolled Blast, Wild Magic, Mighty Stomp, Shadowflame Breath, Bewitch
 	self:Log("SPELL_CAST_START", "AlertCasts", 225100, 214692, 214688, 209485, 209477, 209410, 209404, 209033, 216110, 216096, 216000, 216006, 211470)
 	-- Quelling Strike, Fel Detonation, Searing Glare, Eye Storm, Drifting Embers, Charged Blast, Suppress, Charged Smash, Drifting Embers
@@ -206,6 +224,9 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_REMOVED", "SingleTargetDebuffsRemoved", 209413, 214690, 211470) -- Suppress, Cripple, Bewitch
 	-- Eye Storm
 	self:Log("SPELL_CAST_SUCCESS", "EyeStorm", 212784)
+
+	-- Shadow Mistress
+	self:Log("SPELL_CAST_START", "ShadowSlash", 211473)
 
 	-- Imacu'tya
 	self:Log("SPELL_CAST_START", "WhirlingBlades", 209378)
@@ -244,6 +265,11 @@ function mod:OnBossEnable()
 	for i = 1, #frames do
 		frames[i]:RegisterEvent("GOSSIP_SHOW")
 	end
+end
+
+function mod:OnBossDisable()
+	clueCount = 0
+	knownClues = {}
 end
 
 --------------------------------------------------------------------------------
@@ -426,13 +452,6 @@ do
 		return ("|T%d:0|t"):format(id)
 	end
 
-	local knownClues, clueCount = {}, 0
-
-	function mod:OnBossDisable()
-		clueCount = 0
-		knownClues = {}
-	end
-
 	local function sendChatMessage(msg, english)
 		if IsInGroup() then
 			BigWigsLoader.SendChatMessage(english and ("[LittleWigs] %s / %s"):format(msg, english) or ("[LittleWigs] %s"):format(msg), IsInGroup(2) and "INSTANCE_CHAT" or "PARTY")
@@ -490,10 +509,9 @@ do
 
 	function mod:CHAT_MSG_MONSTER_SAY(_, msg, _, _, _, target)
 		if msg:find(L.spyFoundPattern) and self:GetOption("spy_helper") > 0 then
-			self:MessageOld("spy_helper", "green", "info", L.spyFound:format(self:ColorName(target)), false)
+			self:Message("spy_helper", "green", L.spyFound:format(self:ColorName(target)), false)
+			self:PlaySound("spy_helper", "info")
 			self:CloseInfo("spy_helper")
-			clueCount = 0
-			knownClues = {}
 			if target == self:UnitName("player") then
 				sendChatMessage(L.spyFoundChat, englishSpyFound ~= L.spyFoundChat and englishSpyFound)
 				self:CustomIcon(false, "target", 8)
@@ -657,24 +675,50 @@ local function throttleMessages(key)
 	end
 end
 
+-- Duskwatch Sentry
+
+function mod:SoundAlarm(args)
+	self:Message(args.spellId, "red", CL.casting:format(args.spellName))
+	self:PlaySound(args.spellId, "warning")
+end
+
+-- Duskwatch Reinforcement
+
+function mod:Subdue(args)
+	self:Message(args.spellId, "red", CL.casting:format(args.spellName))
+	self:PlaySound(args.spellId, "warning")
+end
+
+function mod:SubdueApplied(args)
+	if self:Dispeller("magic") or self:Me(args.destGUID) then
+		self:TargetMessage(args.spellId, "orange", args.destName)
+		self:PlaySound(args.spellId, "alarm")
+	end
+end
+
+-- Generic Casts
+
 function mod:AlertCasts(args)
 	if throttleMessages(args.spellId) then return end
-	self:MessageOld(args.spellId, "yellow", "alert", CL.casting:format(args.spellName))
+	self:Message(args.spellId, "yellow", CL.casting:format(args.spellName))
+	self:PlaySound(args.spellId, "alert")
 end
 
 function mod:AlarmCasts(args)
 	if throttleMessages(args.spellId) then return end
-	self:MessageOld(args.spellId, "red", "alarm", CL.casting:format(args.spellName))
+	self:Message(args.spellId, "red", CL.casting:format(args.spellName))
+	self:PlaySound(args.spellId, "alarm")
 end
 
 do
 	local prev = 0
 	function mod:PeriodicDamage(args)
 		if self:Me(args.destGUID) then
-			local t = GetTime()
-			if t-prev > 1.5 then
+			local t = args.time
+			if t - prev > 1.5 then
 				prev = t
-				self:MessageOld(args.spellId, "blue", "warning", CL.underyou:format(args.spellName))
+				self:PersonalMessage(args.spellId, "underyou")
+				self:PlaySound(args.spellId, "underyou")
 			end
 		end
 	end
@@ -717,7 +761,13 @@ end
 function mod:EyeStorm(args)
 	self:Message(args.spellId, "yellow")
 	self:PlaySound(args.spellId, "long")
-	self:CastBar(args.spellId, 8)
+end
+
+-- Shadow Mistress
+
+function mod:ShadowSlash(args)
+	self:Message(args.spellId, "purple")
+	self:PlaySound(args.spellId, "alarm")
 end
 
 -- Imacu'tya
@@ -804,10 +854,11 @@ end
 do
 	local prev = 0
 	function mod:PickingUp(args)
-		local t = GetTime()
-		if t-prev > 10 then
+		local t = args.time
+		if t - prev > 10 then
 			prev = t
-			self:TargetMessageOld(args.spellId, args.sourceName, "cyan", "info")
+			self:TargetMessage(args.spellId, "cyan", args.sourceName)
+			self:PlaySound(args.spellId, "info", nil, args.sourceName)
 		end
 	end
 end
@@ -815,10 +866,11 @@ end
 do
 	local prev = 0
 	function mod:PickingUpSuccess(args)
-		local t = GetTime()
-		if t-prev > 10 then
+		local t = args.time
+		if t - prev > 10 then
 			prev = t
-			self:TargetMessageOld(args.spellId, args.sourceName, "green", "long", args.destName)
+			self:TargetMessage(args.spellId, "green", args.sourceName, args.destName)
+			self:PlaySound(args.spellId, "long", nil, args.sourceName)
 		end
 	end
 end

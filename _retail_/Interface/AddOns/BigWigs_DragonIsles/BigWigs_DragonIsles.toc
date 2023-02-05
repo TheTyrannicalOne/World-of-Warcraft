@@ -1,4 +1,4 @@
-## Interface: 100002
+## Interface: 100005
 
 ## Title: BigWigs [|cffeda55fDragon Isles|r]
 ## Title-deDE: BigWigs [|cffeda55fDracheninseln|r]
@@ -22,7 +22,7 @@
 ## Notes-ruRU: BigWigs Dragon Isles Modules
 ## Notes-zhCN: BigWigs 巨龙群岛模块
 ## Notes-zhTW: BigWigs Dragon Isles Modules
-## Version: v263
+## Version: v264.1
 
 ## LoadOnDemand: 1
 ## Dependencies: BigWigs

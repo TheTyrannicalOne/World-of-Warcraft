@@ -1,7 +1,7 @@
 ## Interface: 100002
 ## Title: |c00ffff00WorthIt|r
 ## Author: DALAGG
-## Version: v4.0.16c
+## Version: v4.0.16d
 ## DefaultState: enabled
 ## SavedVariables: WITDB
 ## Dependencies: TradeSkillMaster
@@ -14,6 +14,7 @@ Enums\Enums.xml
 Data\Data.xml
 Utilities\Utilities.xml
 Core.lua
+Config\ProductConfig.lua
 Config\Config.lua
 Modules\Modules.xml
 UI\UI.xml
